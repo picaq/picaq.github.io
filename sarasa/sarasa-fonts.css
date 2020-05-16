@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Sarasa Mono J';
+    src: local('Sarasa Mono J Light Italic'), local('Sarasa-Mono-J-Light-Italic'),
+        url('../fonts/Sarasa-Mono-J-Light-Italic.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-J-Light-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono J';
+    src: local('Sarasa Mono J Extralight Italic'), local('Sarasa-Mono-J-Extralight-Italic'),
+        url('../fonts/Sarasa-Mono-J-Extralight-Italic.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-J-Extralight-Italic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono J';
+    src: local('Sarasa Mono J Extralight'), local('Sarasa-Mono-J-Extralight'),
+        url('../fonts/Sarasa-Mono-J-Extralight.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-J-Extralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono J';
+    src: local('Sarasa Mono J Bold'), local('Sarasa-Mono-J-Bold'),
+        url('../fonts/Sarasa-Mono-J-Bold.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-J-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono J';
+    src: local('Sarasa Mono J Light'), local('Sarasa-Mono-J-Light'),
+        url('../fonts/Sarasa-Mono-J-Light.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-J-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono J';
+    src: local('Sarasa Mono J Italic'), local('Sarasa-Mono-J-Italic'),
+        url('../fonts/Sarasa-Mono-J-Italic.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-J-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono J';
+    src: local('Sarasa Mono J Semibold'), local('Sarasa-Mono-J-Semibold'),
+        url('../fonts/Sarasa-Mono-J-Semibold.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-J-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono J';
+    src: local('Sarasa Mono J'), local('Sarasa-Mono-J-Regular'),
+        url('../fonts/Sarasa-Mono-J-Regular.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-J-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono J';
+    src: local('Sarasa Mono J Semibold Italic'), local('Sarasa-Mono-J-Semibold-Italic'),
+        url('../fonts/Sarasa-Mono-J-Semibold-Italic.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-J-Semibold-Italic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono J';
+    src: local('Sarasa Mono J Bold Italic'), local('Sarasa-Mono-J-Bold-Italic'),
+        url('../fonts/Sarasa-Mono-J-Bold-Italic.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-J-Bold-Italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono Slab K';
+    src: local('Sarasa Mono Slab K Extralight'), local('Sarasa-Mono-Slab-K-Extralight'),
+        url('../fonts/Sarasa-Mono-Slab-K-Extralight.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-Slab-K-Extralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono Slab K';
+    src: local('Sarasa Mono Slab K Bold Italic'), local('Sarasa-Mono-Slab-K-Bold-Italic'),
+        url('../fonts/Sarasa-Mono-Slab-K-Bold-Italic.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-Slab-K-Bold-Italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono Slab K';
+    src: local('Sarasa Mono Slab K Semibold Italic'), local('Sarasa-Mono-Slab-K-Semibold-Italic'),
+        url('../fonts/Sarasa-Mono-Slab-K-Semibold-Italic.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-Slab-K-Semibold-Italic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono Slab K';
+    src: local('Sarasa Mono Slab K'), local('Sarasa-Mono-Slab-K-Regular'),
+        url('../fonts/Sarasa-Mono-Slab-K-Regular.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-Slab-K-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono Slab K';
+    src: local('Sarasa Mono Slab K Italic'), local('Sarasa-Mono-Slab-K-Italic'),
+        url('../fonts/Sarasa-Mono-Slab-K-Italic.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-Slab-K-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono Slab K';
+    src: local('Sarasa Mono Slab K Light'), local('Sarasa-Mono-Slab-K-Light'),
+        url('../fonts/Sarasa-Mono-Slab-K-Light.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-Slab-K-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono Slab K';
+    src: local('Sarasa Mono Slab K Semibold'), local('Sarasa-Mono-Slab-K-Semibold'),
+        url('../fonts/Sarasa-Mono-Slab-K-Semibold.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-Slab-K-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono Slab K';
+    src: local('Sarasa Mono Slab K Extralight Italic'), local('Sarasa-Mono-Slab-K-Extralight-Italic'),
+        url('../fonts/Sarasa-Mono-Slab-K-Extralight-Italic.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-Slab-K-Extralight-Italic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono Slab K';
+    src: local('Sarasa Mono Slab K Bold'), local('Sarasa-Mono-Slab-K-Bold'),
+        url('../fonts/Sarasa-Mono-Slab-K-Bold.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-Slab-K-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono Slab K';
+    src: local('Sarasa Mono Slab K Light Italic'), local('Sarasa-Mono-Slab-K-Light-Italic'),
+        url('../fonts/Sarasa-Mono-Slab-K-Light-Italic.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-Slab-K-Light-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sarasa Mono CL';
+    src: local('Sarasa Mono CL'), local('Sarasa-Mono-CL-Regular'),
+        url('../fonts/Sarasa-Mono-CL-Regular.woff2') format('woff2'),
+        url('../fonts/Sarasa-Mono-CL-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sarasa UI SC';
+    src: local('Sarasa UI SC Light'), local('Sarasa-UI-SC-Light'),
+        url('../fonts/Sarasa-UI-SC-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Sarasa-UI-SC-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sarasa UI SC';
+    src: local('Sarasa UI SC Light'), local('Sarasa-UI-SC-Light'),
+        url('../fonts/Sarasa-UI-SC-Light.woff2') format('woff2'),
+        url('../fonts/Sarasa-UI-SC-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
