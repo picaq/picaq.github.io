@@ -220,7 +220,7 @@ h1,
 h2,
  /* h3,  */
  h4, h5 {
-    font-family: 'Sarasa UI SC', 'Sarasa Mono J';
+    font-family: 'Sarasa UI SC'; /* including fallback seems to have issues */
 } 
 /* 
 h2, h3, h4, h5 {
