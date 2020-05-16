@@ -90,6 +90,7 @@ h1 {
     color: #78af9f;
     margin-bottom: 0;
     padding-bottom: 0;
+     font-family: 'Sarasa UI SC Extralight' !important; /* desperation */
 }
 
 h1 + p {
@@ -226,7 +227,7 @@ h1,
 h2,
  /* h3,  */
  h4, h5 {
-    font-family: 'Sarasa UI SC'; /* including fallback seems to have issues */
+    font-family: 'Sarasa UI SC', 'Sarasa Mono J'; /* including fallback seems to have issues */
 } 
 /* 
 h2, h3, h4, h5 {
