@@ -186,11 +186,6 @@ h2, h3, h4, h5 {
     font-family: 'Sarasa UI SC';
 }  */
 
-pre.hljs {
-    color: #efdabbde;
-    box-shadow: 1px 2px .5rem rgba(9, 7, 14, 0.219);
-}
-
 
 
 /* strong,  */
@@ -221,12 +216,19 @@ a {color: #659cc8}
 } */
 
 /* pre:not(.hljs),  */
-pre.hljs code  {
-    padding: 1.3rem;
+
+pre.hljs {
+    color: #efdabbde;
+    padding: .9rem 1.8rem; margin:0;
+}
+div   {
+    padding: .5rem;
     overflow: auto;
     background-color: #343233;
     border: 1px solid #efdabb66;
     border-radius: 1.3rem; 
+    box-shadow: 1px 2px .5rem rgba(9, 7, 14, 0.219);
+
 }
 
 blockquote {
