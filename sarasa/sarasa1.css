@@ -80,8 +80,8 @@ main {
 h1 {
     text-align:center;
     font-size: 5rem;
-    font-weight: 200 !important;
-    color: #78af9f !important;
+    font-weight: 200;
+    color: #78af9f;
     margin-bottom: 0;
     padding-bottom: 0;
 }
