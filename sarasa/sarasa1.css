@@ -14,7 +14,7 @@
     }
 
     /* animation */
-html::before {
+/* html::before {
     content: "✮";
     color: #dda032;
     font-size: 10rem;
@@ -30,7 +30,7 @@ html::before {
     from {transform:rotate(0deg);}
     to {transform:rotate(719deg);}
   }
-
+ */
 
 /* main::before {
     background-color: #343233;
