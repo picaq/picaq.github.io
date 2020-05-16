@@ -189,9 +189,9 @@
 
 @font-face {
     font-family: 'Sarasa UI SC';
-    src: local('Sarasa UI SC ExtraLight'), local('Sarasa-UI-SC-ExtraLight'),
-        url('../fonts/Sarasa-UI-SC-ExtraLight.woff2') format('woff2'),
-        url('../fonts/Sarasa-UI-SC-ExtraLight.woff') format('woff');
+    src: local('Sarasa UI SC Extralight'), local('Sarasa-UI-SC-Extralight'),
+        url('../fonts/Sarasa-UI-SC-Extralight.woff2') format('woff2'),
+        url('../fonts/Sarasa-UI-SC-Extralight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
 }
