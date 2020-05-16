@@ -90,8 +90,7 @@ h1 {
     color: #78af9f;
     margin-bottom: 0;
     padding-bottom: 0;
-     font-family: 'Sarasa UI SC Extralight' !important; /* desperation */
-}
+    font-family: 'Sarasa UI SC, Sarasa Mono J'
 
 h1 + p {
     text-align: right;
