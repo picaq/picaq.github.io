@@ -1,0 +1,309 @@
+:root
+    {--red: #c13f21;
+     --lred: #c25c45;
+     --orange: #d36e2d;
+     --yellow: #dda032;
+     --teal: #78af9f;
+     --green: #718c00;
+     --blue: #659cc8;
+     --purple: #ac86c5;
+     --dark: #343233;
+     --light: #efdabb;
+     --med: #aa9c87;
+
+    }
+
+    /* animation */
+html::before {
+    content: "✮";
+    color: #dda032;
+    font-size: 10rem;
+    position: fixed;
+    right: calc(50vw - .5em);
+    top: calc(50vh - .5em);
+    z-index: -12;
+    animation: spin 9s 45 ease-in-out;
+    transform-origin: 0 0;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(719deg);}
+  }
+
+
+/* main::before {
+    background-color: #343233;
+    content:"";
+    position: fixed;
+    left:0; right:0; top:0; bottom:0;
+    z-index: -4;
+} */
+
+
+html
+/* , main, header  */
+    {
+    background-color: #343233 ;
+}
+
+/* main, header {
+    background-color: #a09e9f ;
+} */
+
+body, pre, code, div
+    {
+    font-family: 'Sarasa Mono J', 'Sarasa Mono Slab K';
+    /* font-family: 'Sarasa Mono Slab K' !important; */
+
+    /* font-family: 'Iosevka Web', 'Noto Sans HK', 'Noto Sans JP', 'Noto Sans KR' !important; */
+    /*necessary for web loading */
+    font-variant-ligatures: discretionary-ligatures;
+    color: #efdabb;
+
+}
+
+.center {margin: 0 auto; text-align: center;}
+
+body {
+    font-size: 1rem;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+main {
+    font-size: 1.309rem;
+    padding-top: .01rem;
+}
+
+h1 {
+    text-align:center;
+    font-size: 5rem;
+    font-weight: 200 !important;
+    color: #78af9f !important;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h1 + p {
+    text-align: right;
+    padding: .25em 1.75rem;
+    margin-top: 0;
+
+}
+
+h1 + p + p {
+    padding-top: 1.5rem;
+    /* font-size: 1.618em; */
+    font-size: 1.309em;
+}
+.stars {
+    overflow: hidden !important;    
+}
+.stars::before, .stars::after {
+    display: inline-block;
+    position: relative;
+    letter-spacing: 1.5em;
+    padding-left: 1.5em;
+    /* content: "★☆※＊✩✧✦✫✬✮✪✰☆彡☆ミ✻"; */
+    content: "★☆✩✮☆";
+    z-index: 2;
+    color: #dda032;
+}
+
+.stars::before {
+    right: 0;
+    margin-left: -90vw;
+}
+.stars::after {
+    left: 0;
+    margin-right: -90vw;
+}
+
+
+p, li {
+    line-height: 1.4em;
+}
+
+
+.lang li {
+    display: inline-block;
+    font-size: 1rem;
+    padding: .25rem 1.25rem .25rem 0;
+    line-height: 1.5rem;
+    transition: color .2s ease;
+    font-style: i;
+}
+
+.lang li:nth-child(5n):hover {
+    color: var(--teal)
+}
+.lang li:nth-child(5n+1):hover {
+    color: var(--purple)
+}
+.lang li:nth-child(5n+2):hover {
+    color: var(--orange)
+}
+.lang li:nth-child(5n+3):hover {
+    color: var(--yellow)
+}
+.lang li:nth-child(5n+4):hover {
+    color: var(--lred)
+}
+
+
+h2 {
+    /* font-weight: 400 ; */
+    font-weight: 300 ;
+    color: #d36e2d ;
+    /* letter-spacing: .02em; */
+    font-size: 2rem;
+
+}
+
+h3 {
+    font-weight: 300;
+    font-family: 'Sarasa Mono Slab K';
+    color: #dda032 ;
+    font-size: 1.618rem;
+    letter-spacing: .03em;
+}
+
+h4 {
+    color: #78af9f ;
+    letter-spacing: .04em;
+
+}
+h1,
+h2,
+ /* h3,  */
+ h4, h5 {
+    font-family: 'Sarasa UI SC', 'Sarasa Mono J';
+} 
+/* 
+h2, h3, h4, h5 {
+    font-family: 'Sarasa UI SC';
+}  */
+
+pre.hljs div{
+    color: #efdabbde;
+    box-shadow: 1px 2px .5rem rgba(9, 7, 14, 0.219);
+}
+
+
+
+/* strong,  */
+[id$="alphabet" i] + p, [id$="alphabet" i] + p + p, [id$="nese" i] + p, [id$="korean" i] + p, [id$="alphabet" i] + p {
+    letter-spacing: 1.25em ;
+    line-height: 2em ;
+    /* font-weight: 400 ; */
+    font-size: 1.5em;
+    font-weight: 300 ;
+    margin-right: -1.35rem;
+    margin-left: .15rem;
+    overflow-wrap: break-word;
+}
+
+[id$="ligatures" i] + p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2em ;
+
+}
+
+a {color: #659cc8}
+
+/* pre {
+    background-color: #343233;
+    border: 1px solid #efdabb66;
+    border-radius: 2rem; 
+} */
+
+/* pre:not(.hljs),  */
+pre.hljs code > div {
+    padding: 1.3rem;
+    overflow: auto;
+    background-color: #343233;
+    border: 1px solid #efdabb66;
+    border-radius: 1.3rem; 
+}
+
+blockquote {
+    margin: 0 auto;
+    padding: 0 2.5em;
+    text-align: center;
+}
+pre {
+    text-align: left;
+}
+
+blockquote, blockquote pre {
+    font-family: 'Sarasa Mono J', 'Sarasa Mono Slab K'  ;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 1.3em;   
+}
+    
+blockquote p {
+    line-height: 1.36em;
+    position:relative;
+    z-index: 2;
+}
+
+blockquote > p::before, blockquote > p::after, blockquote > br::after {
+    display: block;
+    position: relative;
+    text-align: justify;
+    /* font-size: 2.5rem; */
+    font-size: 4.5em;
+    font-weight: bold;
+    font-style: normal;
+    opacity: .6;
+    color: #d36e2d;
+    z-index: -1; 
+}
+blockquote:nth-of-type(2) > p::before, blockquote:nth-of-type(2) > p::after {
+    color: #78af9f
+}
+
+blockquote:nth-of-type(3) > p::before, blockquote:nth-of-type(3) > p::after {
+    color: #dda032
+}
+
+blockquote > p {
+    margin-bottom: 0;
+}
+
+blockquote > p::before {
+    content: "“";
+    left: -.22em;
+    top: .36em;   
+}
+
+blockquote > p::after {
+    content: "”";
+    text-align: right;
+    left: .17em;
+    bottom: 0;
+}
+
+.author {
+    position: relative;
+    display: block;
+    top: -1.5em;
+    left: -1em
+}
+
+@media only screen and (max-width: 65mm) {    
+    header :not(h1 + p) {
+        font-size: 80%
+    }
+
+}
+
+main, header 
+{
+    background-color: #343233 ;
+}
