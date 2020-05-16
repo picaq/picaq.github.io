@@ -91,6 +91,7 @@ h1 {
     margin-bottom: 0;
     padding-bottom: 0;
     font-family: 'Sarasa UI SC, Sarasa Mono J'
+}
 
 h1 + p {
     text-align: right;
