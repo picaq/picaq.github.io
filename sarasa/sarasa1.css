@@ -13,6 +13,12 @@
 
     }
 
+/* hide animation */
+html.loaded::before {
+    display: none;
+}
+
+
     /* animation */
 /* html::before {
     content: "✮";
