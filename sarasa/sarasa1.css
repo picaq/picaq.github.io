@@ -352,7 +352,9 @@ blockquote > p::after {
 
 }
 
-main, header 
+/*     unnecessary if star hidden */
+/* main, header 
 {
     background-color: #343233 ;
 }
+ */
