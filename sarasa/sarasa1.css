@@ -126,14 +126,14 @@ p, li {
     line-height: 1.4em;
 }
 
-
+/* old hover style */
+/* 
 .lang li {
     display: inline-block;
     font-size: 1rem;
     padding: .25rem 1.25rem .25rem 0;
     line-height: 1.5rem;
     transition: color .2s ease;
-    font-style: i;
 }
 
 .lang li:nth-child(5n):hover {
@@ -151,6 +151,47 @@ p, li {
 .lang li:nth-child(5n+4):hover {
     color: var(--lred)
 }
+ */
+
+/* new hover style */
+
+::selection {
+  background: var(--blue); /* WebKit/Blink Browsers */
+}
+
+.lang li {
+    display: inline-block;
+    font-size: 1rem;
+    padding: .25rem 1.25rem .25rem 0;
+    line-height: 1.5rem;
+    transition: color .12s ease;
+    transition: opacity .2s ease;
+
+}
+.lang:hover li:not(:hover){
+    opacity: 0.62;      // Dim all other elements
+}
+.lang:hover li:hover{
+   opacity: 1;         // Not the hovered one
+}
+
+.lang li:nth-child(5n):hover, .lang li:nth-child(5n):hover ~ li:nth-child(5n) {
+    color: var(--teal)
+}
+.lang li:nth-child(5n+1):hover, .lang li:nth-child(5n+1):hover ~ li:nth-child(5n+1) {
+    color: var(--purple)
+}
+.lang li:nth-child(5n+2):hover, .lang li:nth-child(5n+2):hover ~ li:nth-child(5n+2)  {
+    color: var(--orange)
+}
+.lang li:nth-child(5n+3):hover, .lang li:nth-child(5n+3):hover ~ li:nth-child(5n+3)  {
+    color: var(--yellow)
+}
+.lang li:nth-child(5n+4):hover, .lang li:nth-child(5n+4):hover ~ li:nth-child(5n+4)  {
+    color: var(--lred)
+}
+
+/* end new hover style */
 
 
 h2 {
