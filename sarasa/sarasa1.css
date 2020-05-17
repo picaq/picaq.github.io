@@ -641,7 +641,7 @@ body::after{
     .speech-bubble {
         margin-bottom: calc(10rem - 5vw);
         margin-top: calc(10rem - 5vw);
-        max-width: calc(100% - 2px);
+        max-width: calc(100% - 3px);
     }
     .speech-bubble:nth-of-type(2n+1) {
         margin-left: -.75rem;
@@ -654,4 +654,8 @@ body::after{
 ::spelling-error {
     color: var(--red);
     font-size: 2rem;
+  }
+
+  h4 {
+    clear: both;
   }
