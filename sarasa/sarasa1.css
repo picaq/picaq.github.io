@@ -193,7 +193,7 @@ p, li {
     line-height: 1.5rem;
     transition: color .12s ease;
     transition: opacity .2s ease;
-    z-index: 22;
+    z-index: 4;
     position: relative;
 
 }
@@ -234,13 +234,14 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-family: 'Sarasa Mono Slab K';
+    /* font-family: 'Sarasa Mono Slab K'; */
     color: #dda032 ;
     font-size: 1.618rem;
     letter-spacing: .03em;
 }
 
 h4 {
+    font-weight: 300;
     color: #78af9f ;
     letter-spacing: .04em;
 
@@ -378,13 +379,13 @@ blockquote > p::after {
     top: -1.5em;
     left: -1em
 }
-
+/* 
 @media only screen and (max-width: 65mm) {    
     header :not(h1 + p) {
         font-size: 80%
     }
 
-}
+} */
 
 /*     unnecessary if star hidden */
 /* main, header 
@@ -514,10 +515,11 @@ body::after{
     shape-margin: .75rem;
     overflow: visible;
     z-index: 4;
+    background-color: var(--dark);
 }
 
-/* 50rem = body max-width, needs to match */
-@media only screen and (max-width: 50rem) {    
+/* 50rem = body max-width, needs to match or be less than */
+@media only screen and (max-width: 48rem) {    
     .speech-bubble {
         margin-bottom: calc(8rem - 5vw);
     }
