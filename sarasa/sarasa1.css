@@ -379,3 +379,15 @@ blockquote > p::after {
     background-color: #343233 ;
 }
  */
+
+ [contenteditable="true"] {
+    outline: none;
+    transition: border-color .15s ease;
+    transition: box-shadow .15s ease;
+}
+
+[contenteditable="true"]:focus {
+    border-color: #dda032cc;
+    box-shadow: 1px 2px .5rem rgba(9, 7, 14, 0.219), inset 0 0 .15rem 0.05rem #d36e2d33, 0 0 .3rem 0.05rem #d36e2d55;
+    
+}
