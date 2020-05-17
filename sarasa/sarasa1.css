@@ -193,7 +193,7 @@ p, li {
     line-height: 1.5rem;
     transition: color .12s ease;
     transition: opacity .2s ease;
-    z-index: 11;
+    z-index: 22;
     position: relative;
 
 }
