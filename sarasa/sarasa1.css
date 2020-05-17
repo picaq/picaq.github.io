@@ -502,6 +502,10 @@ body::after{
     shape-margin: 0rem;
 } */
 
+div > div {
+    margin: 0; padding:0;
+    color: inherit;
+}
 
 .speech-bubble {
 	position: relative;
@@ -522,6 +526,8 @@ body::after{
     z-index: 4;
     background-color: var(--dark);
     transition: margin .24s ease;
+    max-width: calc(100vw - 3rem);
+    word-wrap: break-word;
 }
 
 
@@ -641,13 +647,15 @@ body::after{
     .speech-bubble {
         margin-bottom: calc(10rem - 5vw);
         margin-top: calc(10rem - 5vw);
-        max-width: calc(100% - 2px);
     }
     .speech-bubble:nth-of-type(2n+1) {
         margin-left: -.75rem;
     }
     .speech-bubble:nth-of-type(2) {
         margin-right: -.75rem;
+    }
+    .speech-bubble:nth-of-type(2n+1) pre {
+        margin-left: -.75rem;
     }
 }
 
