@@ -472,3 +472,50 @@ body::after{
     left: calc(1vw + .5em);
     color: var(--lred)
 }
+
+
+.speech-bubble {
+	position: absolute;
+	background: var(--dark);
+    /* border-radius: 3rem; */
+    text-align: center;
+    display: inline;
+    padding: 1rem 1.5rem;
+    /* color: var(--dark); */
+    margin: 0;
+    font-size: 1.618em;
+}
+
+.speech-bubble:nth-of-type(n+1):after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 44%;
+	width: 0;
+	height: 0;
+	border: 1rem solid transparent;
+	border-right-color: var(--med);
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -0.312em;
+    margin-left: -1rem;
+
+}
+
+.speech-bubble:nth-of-type(1) {
+    color: var(--orange);
+    border-color: var(--orange);
+    right: 0;
+    margin-bottom: 5em;
+} 
+.speech-bubble:nth-of-type(1)::after {
+    border-right-color: var(--orange);
+}
+
+.speech-bubble:nth-of-type(2) {
+    color: var(--lred);
+    border-color: var(--lred);
+} 
+.speech-bubble:nth-of-type(2)::after {
+    border-right-color: var(--lred);
+}
