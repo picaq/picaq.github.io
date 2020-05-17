@@ -13,10 +13,25 @@
 
     }
 
+/* semantic coloring */
+    .red {color: var(--red)} 
+    .lred {color: var(--lred)}
+    .orange {color: var(--orange)}
+    .yellow {color: var(--yellow)}
+    .teal {color: var(--teal)}
+    .green {color: var(--green)}
+    .blue {color: var(--blue)}
+    .purple {color: var(--purple)}
+    .dark {color: var(--dark)}
+    .light {color: var(--light)}
+    .med {color: var(--med)}
+
+
 /* hide animation */
 html.loaded::before {
     display: none;
 }
+
 
 
     /* animation */
