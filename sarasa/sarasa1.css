@@ -533,7 +533,6 @@ body::after{
     top: -15em;
 } */
 .speech-bubble:nth-of-type(2n+1) {
-    transform-origin: right;
     float:right;
     /* transform: translate(22em, -22em); */
 
