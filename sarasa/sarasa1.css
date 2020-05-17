@@ -44,7 +44,7 @@ html.loaded::before {
     position: fixed;
     right: calc(50vw - .5em);
     top: calc(50vh - .5em);
-    z-index: -12;
+    z-index: 12;
     animation: spin 9s 45 ease-in-out;
     transform-origin: 0 0;
 }
@@ -288,7 +288,9 @@ pre.hljs {
     color: #efdabbde;
     padding: .9rem 1.8rem; margin:0;
 }
-div   {
+/* div   */
+
+[contenteditable="true"] {
     padding: .5rem;
     overflow: auto;
     background-color: #343233;
@@ -390,4 +392,83 @@ blockquote > p::after {
     border-color: #dda032cc;
     box-shadow: 1px 2px .5rem rgba(9, 7, 14, 0.219), inset 0 0 .15rem 0.05rem #d36e2d33, 0 0 .3rem 0.05rem #d36e2d55;
     
+}
+
+ul:not(.lang) > li::before, li > li::before {
+    content: "★";
+    position: relative;
+    /* original default bullet location */
+    /* right: 1.2em; */
+    right: .3em;
+    color: var(--yellow);
+    transition: opacity .2 ease;
+    opacity: .7;
+  }
+
+li li:hover::before, ul li:hover::before {
+    opacity: 1;
+}
+
+li li::before  {
+    content: "☆" !important;
+}
+
+ul:not(.lang) li, li > ul {
+    list-style: none;
+    /* text-indent: -.82em; */
+    text-indent: -1em;
+  }
+
+
+hr {
+    height: 1.5rem;
+    border: none;
+    display: block;
+    padding: 0 auto;
+
+}
+
+hr.stars::before, hr.stars::after {
+    letter-spacing: 3em;
+    /* content: "★☆※＊✩✧✦✫✬✮✪✰☆彡☆ミ✻"; */
+    /* content: "★☆✩✮☆"; */
+    content: "✮ ✩✮";
+    opacity: .8
+}
+
+hr.stars::after{
+    content: "✩ ✮"
+}
+
+body::after, body::before {
+    content: "♪ ✩ ♭ ✮ ♬ ✮ ♮ ✩ ♫ ✮ ♯ ✮";
+    color: var(--purple);
+    width: 10vw;
+    font-size: 7rem;
+    letter-spacing: 2em;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    overflow: hidden;
+    z-index: -12;
+    opacity: .1;
+    /* animation: back 90s infinite linear; */
+    /* transform-origin: 50vmax 50vmax; */
+}
+body {
+    background-color: var(--dark);
+    border-radius: 10rem;
+    margin-top: 0;
+    box-shadow: 0 0 2rem 1rem var(--dark);
+}
+
+body::before {
+    top: -2em;
+    right: calc(1vw + .33em);
+
+}
+body::after{
+    bottom: -2em;
+    left: calc(1vw + .5em);
+    color: var(--lred)
 }
