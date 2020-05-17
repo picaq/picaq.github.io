@@ -189,7 +189,8 @@ p, li {
 .lang li {
     display: inline-block;
     font-size: 1rem;
-    padding: .25rem 1.25rem .25rem 0;
+    /* padding: .25rem 1.25rem .25rem 0; */
+    padding: .25rem 1rem .25rem 0;
     line-height: 1.5rem;
     transition: color .12s ease;
     transition: opacity .2s ease;
