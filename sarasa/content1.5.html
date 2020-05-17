@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sarasa Gothic Mono 1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="theme-color" content="#d36e2d" />
+<meta name="viewport" content="width=device-width, initial-scale=.75">
+<link rel="canonical" href="https://picaq.github.io/sarasa"/>
+
+<link rel="preload" as="font" href="../fonts/Sarasa-UI-SC-Light.woff2" type="font/woff2" crossorigin="anonymous"> 
+<link rel="preload" as="font" href="../fonts/Sarasa-Mono-J-Regular.woff2" type="font/woff2" crossorigin="anonymous"> 
+<link rel="preload" as="font" href="../fonts/Sarasa-Mono-J-Italic.woff2" type="font/woff2" crossorigin="anonymous"> 
+<link rel="preload" as="font" href="../fonts/Sarasa-Mono-J-Light-Italic.woff2" type="font/woff2" crossorigin="anonymous"> 
+<!-- <link rel="preload" as="font" href="../fonts/Sarasa-UI-SC-Extralight.woff2" type="font/woff2" crossorigin="anonymous">  -->
+<link rel="preload" as="font" href="../fonts/Sarasa-Mono-J-Bold.woff2" type="font/woff2" crossorigin="anonymous"> 
+<!-- <link rel="preload" as="font" href="../fonts/Sarasa-Mono-J-Light.woff2" type="font/woff2" crossorigin="anonymous">  -->
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+/* 
+body {
+	word-wrap: break-word;
+} */
+/* 
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+} */
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	/* border-bottom-width: .12em;
+	border-bottom-style: dotted; */
+}
+
+/* h1, h2, h3, h4, h5 {
+	font-weight: normal;
+} */
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+
+
+code {
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+/* pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+} */
+
+/* pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+} */
+
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #efdabb44;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: var(--lred);
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #d36e2d;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #dda032;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #78af9f;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #659cc8;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #ac86c5;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+
+<link rel="stylesheet" href="sarasa1.css" type="text/css">
+<link rel="stylesheet" href="sarasa-fonts.css" type="text/css">
+<style>
+
+/*
+ * Markdown PDF CSS
+ */
+
+
+
+pre code {
+	/* background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px; */
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+
+
+.emoji {
+	height: 1.4em;
+}
+
+/* code {
+	font-size: 14px;
+	line-height: 19px;
+} */
+
+/* for inline code */
+/* :not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	/* font-size: inherit; */
+/* }  */
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <!-- <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script> -->
+<header>
+<h1 id="sarasa-gothic-mono">Sarasa Gothic Mono</h1>
+<p><em>a.k.a.</em>&emsp;更纱黑体<wbr>&emsp;更紗黑體<wbr>&emsp;更紗ゴシック<wbr>&emsp;사라사고딕</p>
+<p class="center stars"><wbr><em>Rockstar of progamming typography</em><wbr></p>
+	<p class="center teal">fully fledged monospace superfamily designed for coding</p>
+<!--
+	(include why up front)
+- a written paragraph that explains why , in the About: more markety and less factual
+- add suggestive illustrations, not just factual/denotated stuff, add something that alludes to the feeling
+- maybe have animations seeing the code animate, makes it feel dynamic
+- design something that communicates the typeface rather than reflecting how it would be used
+- balance of concept illustrations + factual information
+- reinfoce the personality/concept and the voice that the typeface speaks with
+- Use the typeface to talk to audience in its personality/voice
+- post links to the discussion group to keep giving feeback  
+- upload revisions by thursday
+ -->
+
+<!-- <blockquote><pre>
+if (coffee.Empty) {
+    coffee.Refill();
+}
+else {
+    coffee.Drink();
+}</pre>
+</blockquote> -->
+
+<blockquote>
+	<p>
+	A user interface is like a joke. If you have to explain it, it’s not that good. 
+	</p>
+	<br/> <span class="author">—&thinsp;Martin Leblanc</span>
+</blockquote>
+
+
+<blockquote>
+	<p>
+		Programs must be written for people to read, and only incidentally for machines to execute.
+	</p>
+	<br/> <span class="author">—&thinsp;Harold Abelson</span>
+</blockquote>
+
+
+<blockquote>
+	<p>
+		Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+	</p>
+	<br/> <span class="author">—&thinsp;Martin Fowler</span>
+</blockquote>
+</header>
+<main>
+<h2 id="about">Features</h2>
+<ul>
+<li><span>programming ligatures</span> and math symbols</li>
+<li>true type font hinting designed for <span>pixel-perfect</span> tiny sizes</li>
+<li>condensed for <span>maximum semantic value</span></li>
+<li><span><em>complete</em></span> latin, cyrillic, greek, and east asian language support</li>
+<li>exactly 0.5em set width characters to <em>always</em> <span>perfectly align</span> with 1em width asian characters</li>
+<li>glyph/language alternates</li>
+<li>free and open source</li>
+<li>continuously updated</li>
+
+
+</ul>
+<section id="languages">
+
+	
+<h2 id="human-language-support">Human Language Support</h2>
+<h3>165 Languages!</h3>
+<div class="container region">
+	
+	<section class="align"> 1 <div class="speech-bubble" contenteditable="true"><div>김치를 먹고 싶어요</div></div></div>
+	<section class="align"> 2 <div class="speech-bubble" contenteditable="true"><div>我想食叉燒包</div></div></div>
+	<section class="align"> 3 <div class="speech-bubble" contenteditable="true"><div>Jeg kan godt lide at få <br>folk til at sige<br>“<em>Rødgrød med fløde</em>”</div></div></div>
+	<section class="align"> 4 <div class="speech-bubble" contenteditable="true"><div>Το τζατζίκι πηγαίνει με τα πάντα</div></div></div>
+
+	</div>
+<ul class="lang">
+	<!-- <li>Afrikaans</li><li>Aghem</li><li>Akan</li><li>Albanian</li><li>Asturian</li><li>Asu</li><li>Azerbaijani</li><li>Bafia</li><li>Bambara</li><li>Basaa</li><li>Basque</li><li>Belarusian</li><li>Bemba</li><li>Bena</li><li>Bosnian</li><li>Breton</li><li>Bulgarian</li><li>Catalan</li><li>Cebuano</li><li>Central Atlas Tamazight</li><li>Chechen</li><li>Chiga</li><li>Chinese (Simplified)</li><li>Chinese (Traditional)</li><li>Chinese (Hong Kong)</li><li>Chinese (Classical)</li><li>Colognian</li><li>Cornish</li><li>Croatian</li><li>Czech</li><li>Danish</li><li>Duala</li><li>Dutch</li><li>Embu</li><li>English</li><li>Esperanto</li><li>Estonian</li><li>Ewe</li><li>Ewondo</li><li>Faroese</li><li>Filipino</li><li>Finnish</li><li>French</li><li>Friulian</li><li>Fulah</li><li>Galician</li><li>Ganda</li><li>German</li><li>Greek</li><li>Gusii</li><li>Hausa</li><li>Hawaiian</li><li>Hungarian</li><li>Icelandic</li><li>Igbo</li><li>Inari Sami</li><li>Indonesian</li><li>Interlingua</li><li>Irish</li><li>Italian</li><li>Japanese</li><li>Javanese</li><li>Jola-Fonyi</li><li>Kabuverdianu</li><li>Kabyle</li><li>Kako</li><li>Kalaallisut</li><li>Kalenjin</li><li>Kamba</li><li>Kazakh</li><li>Kikuyu</li><li>Kinyarwanda</li><li>Korean</li><li>Koyra Chiini</li><li>Koyraboro Senni</li><li>Kurdish</li><li>Kwasio</li><li>Kyrgyz</li><li>Lakota</li><li>Langi</li><li>Latvian</li><li>Lingala</li><li>Lithuanian</li><li>Low German</li><li>Lower Sorbian</li><li>Luba-Katanga</li><li>Luo</li><li>Luxembourgish</li><li>Luyia</li><li>Macedonian</li><li>Machame</li><li>Makhuwa-Meetto</li><li>Makonde</li><li>Malagasy</li><li>Malay</li><li>Maltese</li><li>Manx</li><li>Maori</li><li>Masai</li><li>Meru</li><li>Metaʼ</li><li>Mongolian</li><li>Morisyen</li><li>Mundang</li><li>Nama</li><li>Ngiemboon</li><li>North Ndebele</li><li>Northern Sami</li><li>Norwegian Bokmål</li><li>Norwegian Nynorsk</li><li>Nuer</li><li>Nyankole</li><li>Oromo</li><li>Ossetic</li><li>Polish</li><li>Portuguese</li><li>Prussian</li><li>Quechua</li><li>Romanian</li><li>Romansh</li><li>Rombo</li><li>Rundi</li><li>Russian</li><li>Rwa</li><li>Samburu</li><li>Sango</li><li>Sangu</li><li>Scottish Gaelic</li><li>Sena</li><li>Serbian</li><li>Shambala</li><li>Shona</li><li>Slovak</li><li>Slovenian</li><li>Soga</li><li>Somali</li><li>Spanish</li><li>Swahili</li><li>Swedish</li><li>Swiss German</li><li>Tachelhit (shi_latn)</li><li>Taita</li><li>Tajik</li><li>Tasawaq</li><li>Tatar</li><li>Teso</li><li>Tongan</li><li>Turkish</li><li>Turkmen</li><li>Ukrainian</li><li>Upper Sorbian</li><li>Uzbek</li><li>Vai (vai_latn)</li><li>Vietnamese</li><li>Volapük</li><li>Vunjo</li><li>Walser</li><li>Welsh</li><li>Western Frisian</li><li>Wolof</li><li>Xhosa</li><li>Yangben</li><li>Yoruba</li><li>Zarma</li><li>Zulu</li> -->
+	<!-- <li>Afrikaans</li><wbr> <li>Aghem</li><wbr> <li>Akan</li><wbr> <li>Albanian</li><wbr> <li>Asturian</li><wbr> <li>Asu</li><wbr> <li>Azerbaijani</li><wbr> <li>Bafia</li><wbr> <li>Bambara</li><wbr> <li>Basaa</li><wbr> <li>Basque</li><wbr> <li>Belarusian</li><wbr> <li>Bemba</li><wbr> <li>Bena</li><wbr> <li>Bosnian</li><wbr> <li>Breton</li><wbr> <li>Bulgarian</li><wbr> <li>Catalan</li><wbr> <li>Cebuano</li><wbr> <li>Central Atlas Tamazight</li><wbr> <li>Chechen</li><wbr> <li>Chiga</li><wbr> <li>Chinese (Simplified)</li><wbr> <li>Chinese (Traditional)</li><wbr> <li>Chinese (Hong Kong)</li><wbr> <li>Chinese (Classical)</li><wbr> <li>Colognian</li><wbr> <li>Cornish</li><wbr> <li>Croatian</li><wbr> <li>Czech</li><wbr> <li>Danish</li><wbr> <li>Duala</li><wbr> <li>Dutch</li><wbr> <li>Embu</li><wbr> <li>English</li><wbr> <li>Esperanto</li><wbr> <li>Estonian</li><wbr> <li>Ewe</li><wbr> <li>Ewondo</li><wbr> <li>Faroese</li><wbr> <li>Filipino</li><wbr> <li>Finnish</li><wbr> <li>French</li><wbr> <li>Friulian</li><wbr> <li>Fulah</li><wbr> <li>Galician</li><wbr> <li>Ganda</li><wbr> <li>German</li><wbr> <li>Greek</li><wbr> <li>Gusii</li><wbr> <li>Hausa</li><wbr> <li>Hawaiian</li><wbr> <li>Hungarian</li><wbr> <li>Icelandic</li><wbr> <li>Igbo</li><wbr> <li>Inari Sami</li><wbr> <li>Indonesian</li><wbr> <li>Interlingua</li><wbr> <li>Irish</li><wbr> <li>Italian</li><wbr> <li>Japanese</li><wbr> <li>Javanese</li><wbr> <li>Jola-Fonyi</li><wbr> <li>Kabuverdianu</li><wbr> <li>Kabyle</li><wbr> <li>Kako</li><wbr> <li>Kalaallisut</li><wbr> <li>Kalenjin</li><wbr> <li>Kamba</li><wbr> <li>Kazakh</li><wbr> <li>Kikuyu</li><wbr> <li>Kinyarwanda</li><wbr> <li>Korean</li><wbr> <li>Koyra Chiini</li><wbr> <li>Koyraboro Senni</li><wbr> <li>Kurdish</li><wbr> <li>Kwasio</li><wbr> <li>Kyrgyz</li><wbr> <li>Lakota</li><wbr> <li>Langi</li><wbr> <li>Latvian</li><wbr> <li>Lingala</li><wbr> <li>Lithuanian</li><wbr> <li>Low German</li><wbr> <li>Lower Sorbian</li><wbr> <li>Luba-Katanga</li><wbr> <li>Luo</li><wbr> <li>Luxembourgish</li><wbr> <li>Luyia</li><wbr> <li>Macedonian</li><wbr> <li>Machame</li><wbr> <li>Makhuwa-Meetto</li><wbr> <li>Makonde</li><wbr> <li>Malagasy</li><wbr> <li>Malay</li><wbr> <li>Maltese</li><wbr> <li>Manx</li><wbr> <li>Maori</li><wbr> <li>Masai</li><wbr> <li>Meru</li><wbr> <li>Metaʼ</li><wbr> <li>Mongolian</li><wbr> <li>Morisyen</li><wbr> <li>Mundang</li><wbr> <li>Nama</li><wbr> <li>Ngiemboon</li><wbr> <li>North Ndebele</li><wbr> <li>Northern Sami</li><wbr> <li>Norwegian Bokmål</li><wbr> <li>Norwegian Nynorsk</li><wbr> <li>Nuer</li><wbr> <li>Nyankole</li><wbr> <li>Oromo</li><wbr> <li>Ossetic</li><wbr> <li>Polish</li><wbr> <li>Portuguese</li><wbr> <li>Prussian</li><wbr> <li>Quechua</li><wbr> <li>Romanian</li><wbr> <li>Romansh</li><wbr> <li>Rombo</li><wbr> <li>Rundi</li><wbr> <li>Russian</li><wbr> <li>Rwa</li><wbr> <li>Samburu</li><wbr> <li>Sango</li><wbr> <li>Sangu</li><wbr> <li>Scottish Gaelic</li><wbr> <li>Sena</li><wbr> <li>Serbian</li><wbr> <li>Shambala</li><wbr> <li>Shona</li><wbr> <li>Slovak</li><wbr> <li>Slovenian</li><wbr> <li>Soga</li><wbr> <li>Somali</li><wbr> <li>Spanish</li><wbr> <li>Swahili</li><wbr> <li>Swedish</li><wbr> <li>Swiss German</li><wbr> <li>Tachelhit (shi_latn)</li><wbr> <li>Taita</li><wbr> <li>Tajik</li><wbr> <li>Tasawaq</li><wbr> <li>Tatar</li><wbr> <li>Teso</li><wbr> <li>Tongan</li><wbr> <li>Turkish</li><wbr> <li>Turkmen</li><wbr> <li>Ukrainian</li><wbr> <li>Upper Sorbian</li><wbr> <li>Uzbek</li><wbr> <li>Vai (vai_latn)</li><wbr> <li>Vietnamese</li><wbr> <li>Volapük</li><wbr> <li>Vunjo</li><wbr> <li>Walser</li><wbr> <li>Welsh</li><wbr> <li>Western Frisian</li><wbr> <li>Wolof</li><wbr> <li>Xhosa</li><wbr> <li>Yangben</li><wbr> <li>Yoruba</li><wbr> <li>Zarma</li><wbr> <li>Zulu</li><wbr>  -->
+		<li>Afrikaans</li>
+		<li>Aghem</li>
+		<li>Akan</li>
+		<li>Albanian</li>
+		<li>Asturian</li>
+		<li>Asu</li>
+		<li>Azerbaijani</li>
+		<li>Bafia</li>
+		<li>Bambara</li>
+		<li>Basaa</li>
+		<li>Basque</li>
+		<li>Belarusian</li>
+		<li>Bemba</li>
+		<li>Bena</li>
+		<li>Bosnian</li>
+		<li>Breton</li>
+		<li>Bulgarian</li>
+		<li>Catalan</li>
+		<li>Cebuano</li>
+		<li>Central Atlas Tamazight</li>
+		<li>Chechen</li>
+		<li>Chiga</li>
+		<li>Chinese (Simplified)</li>
+		<li>Chinese (Traditional)</li>
+		<li>Chinese (Hong Kong)</li>
+		<li>Chinese (Classical)</li>
+		<li>Colognian</li>
+		<li>Cornish</li>
+		<li>Croatian</li>
+		<li>Czech</li>
+		<li>Danish</li>
+		<li>Duala</li>
+		<li>Dutch</li>
+		<li>Embu</li>
+		<li>English</li>
+		<li>Esperanto</li>
+		<li>Estonian</li>
+		<li>Ewe</li>
+		<li>Ewondo</li>
+		<li>Faroese</li>
+		<li>Filipino</li>
+		<li>Finnish</li>
+		<li>French</li>
+		<li>Friulian</li>
+		<li>Fulah</li>
+		<li>Galician</li>
+		<li>Ganda</li>
+		<li>German</li>
+		<li>Greek</li>
+		<li>Gusii</li>
+		<li>Hausa</li>
+		<li>Hawaiian</li>
+		<li>Hungarian</li>
+		<li>Icelandic</li>
+		<li>Igbo</li>
+		<li>Inari Sami</li>
+		<li>Indonesian</li>
+		<li>Interlingua</li>
+		<li>Irish</li>
+		<li>Italian</li>
+		<li>Japanese</li>
+		<li>Javanese</li>
+		<li>Jola-Fonyi</li>
+		<li>Kabuverdianu</li>
+		<li>Kabyle</li>
+		<li>Kako</li>
+		<li>Kalaallisut</li>
+		<li>Kalenjin</li>
+		<li>Kamba</li>
+		<li>Kazakh</li>
+		<li>Kikuyu</li>
+		<li>Kinyarwanda</li>
+		<li>Korean</li>
+		<li>Koyra Chiini</li>
+		<li>Koyraboro Senni</li>
+		<li>Kurdish</li>
+		<li>Kwasio</li>
+		<li>Kyrgyz</li>
+		<li>Lakota</li>
+		<li>Langi</li>
+		<li>Latvian</li>
+		<li>Lingala</li>
+		<li>Lithuanian</li>
+		<li>Low German</li>
+		<li>Lower Sorbian</li>
+		<li>Luba-Katanga</li>
+		<li>Luo</li>
+		<li>Luxembourgish</li>
+		<li>Luyia</li>
+		<li>Macedonian</li>
+		<li>Machame</li>
+		<li>Makhuwa-Meetto</li>
+		<li>Makonde</li>
+		<li>Malagasy</li>
+		<li>Malay</li>
+		<li>Maltese</li>
+		<li>Manx</li>
+		<li>Maori</li>
+		<li>Masai</li>
+		<li>Meru</li>
+		<li>Metaʼ</li>
+		<li>Mongolian</li>
+		<li>Morisyen</li>
+		<li>Mundang</li>
+		<li>Nama</li>
+		<li>Ngiemboon</li>
+		<li>North Ndebele</li>
+		<li>Northern Sami</li>
+		<li>Norwegian Bokmål</li>
+		<li>Norwegian Nynorsk</li>
+		<li>Nuer</li>
+		<li>Nyankole</li>
+		<li>Oromo</li>
+		<li>Ossetic</li>
+		<li>Polish</li>
+		<li>Portuguese</li>
+		<li>Prussian</li>
+		<li>Quechua</li>
+		<li>Romanian</li>
+		<li>Romansh</li>
+		<li>Rombo</li>
+		<li>Rundi</li>
+		<li>Russian</li>
+		<li>Rwa</li>
+		<li>Samburu</li>
+		<li>Sango</li>
+		<li>Sangu</li>
+		<li>Scottish Gaelic</li>
+		<li>Sena</li>
+		<li>Serbian</li>
+		<li>Shambala</li>
+		<li>Shona</li>
+		<li>Slovak</li>
+		<li>Slovenian</li>
+		<li>Soga</li>
+		<li>Somali</li>
+		<li>Spanish</li>
+		<li>Swahili</li>
+		<li>Swedish</li>
+		<li>Swiss German</li>
+		<li>Tachelhit (shi_latn)</li>
+		<li>Taita</li>
+		<li>Tajik</li>
+		<li>Tasawaq</li>
+		<li>Tatar</li>
+		<li>Teso</li>
+		<li>Tongan</li>
+		<li>Turkish</li>
+		<li>Turkmen</li>
+		<li>Ukrainian</li>
+		<li>Upper Sorbian</li>
+		<li>Uzbek</li>
+		<li>Vai (vai_latn)</li>
+		<li>Vietnamese</li>
+		<li>Volapük</li>
+		<li>Vunjo</li>
+		<li>Walser</li>
+		<li>Welsh</li>
+		<li>Western Frisian</li>
+		<li>Wolof</li>
+		<li>Xhosa</li>
+		<li>Yangben</li>
+		<li>Yoruba</li>
+		<li>Zarma</li>
+		<li>Zulu</li>
+		
+		
+</ul>
+
+
+
+<!-- <p>list of all human language support(might be too long) or list of available character types</p> -->
+</section>
+<h4>Try it out now!</h4>
+<div contenteditable="true"><pre class="hljs"><code> <span class="hljs-emphasis">/* edit me! */ </span>
+
+
+</code></pre></div>
+<h3 id="latin-demo">Latin demo</h3>
+<div contenteditable="true"><pre class="hljs"><code><span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello World"</span>);
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"Olá Mundo"</span>);
+</code></pre></div>
+<h3 id="cyllic--greekmath-demo">Cyllic + Greek/Math demo</h3>
+<div contenteditable="true"><pre class="hljs"><code><span class="hljs-keyword">print</span> <span class="hljs-string">"Привет мир"</span>;
+</code></pre></div>
+<h3 id="asian-language-demo">Asian language demo</h3>
+<div contenteditable="true"><pre class="hljs"><code><span class="hljs-built_in">echo</span> こんにちは世界
+</code></pre></div>
+<h2 id="programming-language-support">Programming Language Support</h2>
+<h3 id="list-of-all-supported-programming-languages">list of all supported programming languages</h3>
+<h3 id="htmlcssjsphp-demo">html/css/js/php demo</h3>
+<h4 id="html">html</h4>
+<div contenteditable="true"><pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cute home"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"about me"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#about"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"hidem"</span> &gt;</span>Illustration<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"search"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"snow-pic-beret.webp"</span>
+         <span class="hljs-attr">onerror</span>=<span class="hljs-string">"this.onerror=null; this.src='snow-pic-beret.png'"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"person with green beret and silly face"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cute plane"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#projects"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"showp"</span>&gt;</span>Projects<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cute kite"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#gallery"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"showg"</span>&gt;</span>Gallery<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#contact"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cute bird"</span>&gt;</span>Contact Me!<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre></div>
+<h4 id="css">css</h4>
+<div contenteditable="true"><pre class="hljs"><code><span class="hljs-selector-tag">html</span>, <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#343233</span>;
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'Sarasa Mono HC'</span>, <span class="hljs-string">'Sarasa Mono J'</span>, <span class="hljs-string">'Sarasa Mono K'</span>, monospace;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#efdabb</span>;
+}
+
+<span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#78af9f</span>;
+}
+</code></pre></div>
+<h3 id="pythonjavacss-demo--maybe">python/java/css demo ? maybe</h3>
+<hr class="center stars">
+
+<h2 id="characters">Characters</h2>
+<h3 id="latin-alphabet">Latin Alphabet</h3>
+<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz</p>
+<p>1234567890‘?’“!”[#]{@}/&amp;&lt;-+÷×=&gt;®©$€£¥¢:;,.*</p>
+<h3 id="cyrillic-alphabet">Cyrillic Alphabet</h3>
+<p>АБВГДЂЕЄЖЗЅИІЈКЛЉМНЊОПРСТЋУФХЦЧЏШЩЪЫЬЭЮЯ
+абвгдђеєжзѕиіјклљмнњопрстћуфхцчџшщъыьэюя</p>
+<h3 id="greek-alphabet">Greek Alphabet</h3>
+<p>ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
+αβγδεζηθικλμνξοπρσςτυφχψω</p>
+<h3 id="japanese">Japanese</h3>
+<p>あいうえおカキクケコさしすせそラリルレロまみむめもワヲンサシスセソ新時代のころを映すタイフ字学校村町森卵ェぃ</p>
+<h3 id="chinese">Chinese</h3>
+<p>一二三四五六七八九十百千萬上中下左右大小春夏秋冬東金木水火土天地日月星黑白紅橙黃綠孝仁愛信義和平子曰父母兄弟夫婦君臣馬牛羊雞犬豕喜怒哀懼見聞聲貝車雨赤青言語魚鳥羽電不乃之乎人以為燕當相知石祖禮稷稻穀絲綱習老者而能讓貴身近運過非革音</p>
+<h3 id="korean">Korean</h3>
+<p>가개갸거게겨고긔기나내냐너네녀노뇌놰뇨누뉘눼뉴느늬니다대댜더데뎌도되돼됴디라래랴러레려로뢰뢔료루튀퉤튜트틔퍼페펴포푀퐤표푸퓌풰퓨프픠해햐허헤혀호회훼휴흐희히</p>
+<h3 id="programming-ligatures">programming ligatures</h3>
+<p>=&gt;  &lt;=  i++  i--  -&gt;  &lt;-&gt;  !=  ===  &lt;=&gt;  !==  == &gt;=  &lt;-  ++++  &amp;&amp;  </p>
+<hr class="center stars">
+<h2 id="family-info">Family info</h2>
+<h3 id="based-off-of">Based off of</h3>
+<ul>
+<li>Source Han Sans</li>
+<li>Iosevka</li>
+</ul>
+<h3 id="features">features</h3>
+<ul>
+<li>number of glyphs
+</li>
+<li>subfamilies (mono, sans (ui), slab mono)
+	<ul>
+		<li>number of weights</li>
+		<li>styles (italic, bold)</li>
+	</ul>
+</li>
+
+</ul>
+<h4 id="ideal-in-small-sizes">ideal in small sizes</h4>
+<p>show blown-up bitmapped small size</p>
+<h4 id="how-to-installuse-good-to-include">How to install/use (good to include)</h4>
+<p>or refer to a link to an FAQ</p>
+<h2 id="designers--developers-foundry-info">Designers &amp; Developers/ foundry info</h2>
+<p>Main Designer/Developer: <a href="https://typeof.net/">Belleve Invis</a></p>
+<p>Published by 兆邦中国(Zhaobang China)</p>
+<p>links to obtain and install</p>
+<ul>
+<li><a href="https://github.com/be5invis/Sarasa-Gothic">Github Repository</a></li>
+<li><a href="https://www.microsoft.com/en-us/p/fF4~B1%EF%BF%BDD1%E4%BD%93/9mw0m424ncz7?SilentAuth=1&amp;wa=wsignin1.0&amp;activetab=pivot:overviewtab">Microsoft Store</a></li>
+</ul>
+</main>
+<footer>
+	<hr class="center stars">
+</footer>
+</body>
+</html>

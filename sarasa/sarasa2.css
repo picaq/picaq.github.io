@@ -1,0 +1,719 @@
+:root
+    {--red: #c13f21;
+     --lred: #c25c45;
+     --orange: #d36e2d;
+     --yellow: #dda032;
+     --teal: #78af9f;
+     --green: #718c00;
+     --blue: #659cc8;
+     --purple: #ac86c5;
+     --gray: #363335;
+     --dark: #312f30;
+     --darkpurple: #353032;
+     --light: #efdabb;
+     --med: #aa9c87;
+
+    }
+
+/* semantic coloring */
+    .red {color: var(--red)} 
+    .lred {color: var(--lred)}
+    .orange {color: var(--orange)}
+    .yellow {color: var(--yellow)}
+    .teal {color: var(--teal)}
+    .green {color: var(--green)}
+    .blue {color: var(--blue)}
+    .purple {color: var(--purple)}
+    .dark {color: var(--dark)}
+    .light {color: var(--light)}
+    .med {color: var(--med)}
+
+
+/* hide animation */
+html.loaded::before {
+    display: none;
+}
+
+
+
+    /* animation */
+/* html::before {
+    content: "✮";
+    color: #dda032;
+    font-size: 10rem;
+    position: fixed;
+    right: calc(50vw - .5em);
+    top: calc(50vh - .5em);
+    z-index: 12;
+    animation: spin 9s 45 ease-in-out;
+    transform-origin: 0 0;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(719deg);}
+  }
+ */
+
+/* main::before {
+    background-color: #343233;
+    content:"";
+    position: fixed;
+    left:0; right:0; top:0; bottom:0;
+    z-index: -4;
+} */
+
+
+html
+/* , main, header  */
+    {
+    background-color: #343233;
+    background-color: var(--dark);
+    margin: 0; padding: 0;
+}
+
+/* main, header {
+    background-color: #a09e9f ;
+} */
+
+body, pre, code, div
+    {
+    font-family: 'Sarasa Mono J', 'Sarasa Mono Slab K';
+    /* font-family: 'Sarasa Mono Slab K' !important; */
+
+    /* font-family: 'Iosevka Web', 'Noto Sans HK', 'Noto Sans JP', 'Noto Sans KR' !important; */
+    /*necessary for web loading */
+    font-variant-ligatures: discretionary-ligatures;
+    color: #efdabb;
+
+}
+
+.center {margin: 0 auto; text-align: center;}
+
+body {
+    font-size: 1rem;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+main {
+    font-size: 1.309rem;
+    padding-top: .01rem;
+}
+
+h1 {
+    text-align:center;
+    font-size: 5rem;
+    /* font-weight: 200; */
+    font-weight: 300;
+    color: #78af9f;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: 'Sarasa UI SC, Sarasa Mono J'
+}
+
+h1 + p {
+    text-align: right;
+    padding: .25em 1.75rem;
+    margin-top: 0;
+
+}
+
+h1 + p + p {
+    padding-top: 1.5rem;
+    /* font-size: 1.618em; */
+    font-size: 1.309em;
+}
+.stars {
+    overflow: hidden !important;    
+}
+.stars::before, .stars::after {
+    display: inline-block;
+    position: relative;
+    letter-spacing: 1.5em;
+    padding-left: 1.5em;
+    /* content: "★☆※＊✩✧✦✫✬✮✪✰☆彡☆ミ✻"; */
+    content: "★☆✩✮☆";
+    z-index: 2;
+    color: #dda032;
+}
+
+.stars::before {
+    right: 0;
+    margin-left: -90vw;
+}
+.stars::after {
+    left: 0;
+    margin-right: -90vw;
+}
+
+
+p, li {
+    line-height: 1.4em;
+}
+
+/* old hover style */
+/* 
+.lang li {
+    display: inline-block;
+    font-size: 1rem;
+    padding: .25rem 1.25rem .25rem 0;
+    line-height: 1.5rem;
+    transition: color .2s ease;
+}
+
+.lang li:nth-child(5n):hover {
+    color: var(--teal)
+}
+.lang li:nth-child(5n+1):hover {
+    color: var(--purple)
+}
+.lang li:nth-child(5n+2):hover {
+    color: var(--orange)
+}
+.lang li:nth-child(5n+3):hover {
+    color: var(--yellow)
+}
+.lang li:nth-child(5n+4):hover {
+    color: var(--lred)
+}
+ */
+
+/* new hover style */
+
+::selection {
+  /* background: var(--blue);  */
+  /* WebKit/Blink Browsers */
+  background: #659cc822;
+}
+
+.lang {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+}
+
+.lang li {
+    display: inline-block;
+    font-size: 1rem;
+    /* padding: .25rem 1.25rem .25rem 0; */
+    padding: .25rem 1rem .25rem 0;
+    line-height: 1.5rem;
+    transition: color .12s ease;
+    transition: opacity .2s ease;
+    z-index: 0;
+    position: static;
+
+}
+.lang:hover li:not(:hover){
+    opacity: 0.62;      /* Dim all other elements */
+}
+.lang:hover li:hover{
+   opacity: 1;         /* Not the hovered one */
+}
+
+.lang li:nth-child(5n):hover, .lang li:nth-child(5n):hover ~ li:nth-child(5n) {
+    color: var(--teal)
+}
+.lang li:nth-child(5n+1):hover, .lang li:nth-child(5n+1):hover ~ li:nth-child(5n+1) {
+    color: var(--purple)
+}
+.lang li:nth-child(5n+2):hover, .lang li:nth-child(5n+2):hover ~ li:nth-child(5n+2)  {
+    color: var(--orange)
+}
+.lang li:nth-child(5n+3):hover, .lang li:nth-child(5n+3):hover ~ li:nth-child(5n+3)  {
+    color: var(--yellow)
+}
+.lang li:nth-child(5n+4):hover, .lang li:nth-child(5n+4):hover ~ li:nth-child(5n+4)  {
+    color: var(--lred)
+}
+
+/* end new hover style */
+
+
+h2 {
+    /* font-weight: 400 ; */
+    font-weight: 300 ;
+    color: #d36e2d ;
+    /* letter-spacing: .02em; */
+    font-size: 2rem;
+
+}
+
+h3 {
+    font-weight: 300;
+    /* font-family: 'Sarasa Mono Slab K'; */
+    color: #dda032 ;
+    font-size: 1.618rem;
+    letter-spacing: .03em;
+}
+
+h4 {
+    font-weight: 300;
+    color: #78af9f ;
+    letter-spacing: .04em;
+
+}
+h1,
+h2,
+ /* h3,  */
+ h4, h5 {
+    font-family: 'Sarasa UI SC', 'Sarasa Mono J'; /* including fallback seems to have issues */
+} 
+/* 
+h2, h3, h4, h5 {
+    font-family: 'Sarasa UI SC';
+}  */
+
+
+
+/* strong,  */
+[id$="alphabet" i] + p, [id$="alphabet" i] + p + p, [id$="nese" i] + p, [id$="korean" i] + p, [id$="alphabet" i] + p {
+    letter-spacing: 1.25em ;
+    line-height: 2em ;
+    /* font-weight: 400 ; */
+    font-size: 1.5em;
+    font-weight: 300 ;
+    margin-right: -1.35rem;
+    margin-left: .15rem;
+    overflow-wrap: break-word;
+}
+
+[id$="ligatures" i] + p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2em ;
+
+}
+
+a {color: #659cc8}
+
+/* pre {
+    background-color: #343233;
+    border: 1px solid #efdabb66;
+    border-radius: 2rem; 
+} */
+
+/* pre:not(.hljs),  */
+
+pre.hljs {
+    color: #efdabbde;
+    margin:0;
+    padding: 0 1.8rem;
+}
+pre.hljs:first-child {
+    padding-top: .9rem;
+}
+pre.hljs:last-child {
+    padding-bottom: .9rem;
+}
+
+/* div   */
+
+[contenteditable="true"] {
+    padding: .5rem;
+    overflow: auto;
+    background-color: #343233;
+    background-color: var(--dark);
+    border: 1px solid #efdabb66;
+    border-radius: 1.3rem; 
+    box-shadow: 1px 2px .5rem rgba(9, 7, 14, 0.219);
+
+}
+
+blockquote {
+    margin: 0 auto;
+    padding: 0 2.5em;
+    text-align: center;
+}
+pre {
+    text-align: left;
+}
+
+blockquote, blockquote pre {
+    font-family: 'Sarasa Mono J', 'Sarasa Mono Slab K'  ;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 1.3em;   
+}
+    
+blockquote p {
+    line-height: 1.36em;
+    position:relative;
+    z-index: 2;
+}
+
+blockquote > p::before, blockquote > p::after, blockquote > br::after {
+    display: block;
+    position: relative;
+    text-align: justify;
+    /* font-size: 2.5rem; */
+    font-size: 4.5em;
+    font-weight: bold;
+    font-style: normal;
+    opacity: .6;
+    color: #d36e2d;
+    z-index: -1; 
+}
+blockquote:nth-of-type(2) > p::before, blockquote:nth-of-type(2) > p::after {
+    color: #78af9f
+}
+
+blockquote:nth-of-type(3) > p::before, blockquote:nth-of-type(3) > p::after {
+    color: #dda032
+}
+
+blockquote > p {
+    margin-bottom: 0;
+}
+
+blockquote > p::before {
+    content: "“";
+    left: -.22em;
+    top: .36em;   
+}
+
+blockquote > p::after {
+    content: "”";
+    text-align: right;
+    left: .17em;
+    bottom: 0;
+}
+
+.author {
+    position: relative;
+    display: block;
+    top: -1.5em;
+    left: -1em
+}
+/* 
+@media only screen and (max-width: 65mm) {    
+    header :not(h1 + p) {
+        font-size: 80%
+    }
+
+} */
+
+/*     unnecessary if star hidden */
+/* main, header 
+{
+    background-color: #343233 ;
+}
+ */
+
+ [contenteditable="true"] {
+    outline: none;
+    transition: border-color .15s ease;
+    transition: box-shadow .15s ease;
+}
+
+[contenteditable="true"]:focus {
+    border-color: #dda032cc;
+    box-shadow: 1px 2px .5rem rgba(9, 7, 14, 0.219), inset 0 0 .15rem 0.05rem #d36e2d33, 0 0 .3rem 0.05rem #d36e2d55;
+    
+}
+
+ul:not(.lang) > li::before, li > li::before {
+    content: "★";
+    position: relative;
+    /* original default bullet location */
+    /* right: 1.2em; */
+    right: .3em;
+    color: var(--yellow);
+    transition: opacity .2 ease;
+    opacity: .7;
+  }
+
+li li:hover::before, ul li:hover::before {
+    opacity: 1;
+}
+
+li li::before  {
+    content: "☆" !important;
+}
+
+ul:not(.lang) li, li > ul {
+    list-style: none;
+    /* text-indent: -.82em; */
+    text-indent: -1em;
+  }
+
+
+hr {
+    height: 1.5rem;
+    border: none;
+    display: block;
+    padding: 0 auto;
+
+}
+
+hr.stars::before, hr.stars::after {
+    letter-spacing: 3em;
+    font-size: 1rem;
+    /* content: "★☆※＊✩✧✦✫✬✮✪✰☆彡☆ミ✻"; */
+    /* content: "★☆✩✮☆"; */
+    content: "✮ ✩✮";
+    opacity: .8
+}
+
+hr.stars::after{
+    content: "✩ ✮"
+}
+
+body::after, body::before {
+    content: "♪ ✩ ♭ ✮ ♬ ✮ ♮ ✩ ♫ ✮ ♯ ✮";
+    color: var(--purple);
+    width: 10vw;
+    font-size: 7rem;
+    letter-spacing: 2em;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    overflow: hidden;
+    z-index: -12;
+    opacity: .1;
+    /* animation: back 90s infinite linear; */
+    /* transform-origin: 50vmax 50vmax; */
+}
+body {
+    background-color: var(--dark);
+    border-radius: 10rem;
+    margin-top: 0;
+    box-shadow: 0 0 2rem 1rem var(--dark);
+    padding-bottom: 2em;
+}
+
+body::before {
+    top: -2em;
+    right: calc(1vw + .33em);
+
+}
+body::after{
+    bottom: -2em;
+    left: calc(1vw + .5em);
+    color: var(--lred)
+}
+
+/* section {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    shape-outside: content-box;
+    shape-margin: 0rem;
+} */
+/* 
+section#languages {
+    /* font-display: block; */
+    /* font-family: 'Sarasa Mono J', monospace;
+}  */
+
+div > div {
+    margin: 0; padding:0;
+    color: inherit;
+}
+
+section { flow-into: sections }
+.region { flow-from: sections }
+
+
+.align {
+    shape-outside: content-box;
+    margin: 0; padding:0;
+    font-size: 1.618rem; 
+    margin: 5rem 1.25rem 2rem;
+    transition: margin .24s ease;
+    max-width: calc(100vw - 3rem);
+    box-sizing: border-box;
+
+}
+
+.speech-bubble div {
+    word-wrap: break-word;
+    padding: 0 1.5rem;
+    z-index: -1;
+    color: inherit;
+}
+.speech-bubble div:first-child {
+    padding-top: 1rem;
+}
+.speech-bubble div:last-child {
+    padding-bottom: 1rem;
+}
+
+.speech-bubble {
+	position: relative;
+	/* background: var(--dark); */
+    /* border-radius: 3rem; */
+    text-align: center;
+    display: inline-block;
+    /* color: var(--dark); */
+    /* margin: 1rem 1.25rem; */
+
+    /* this margin turned into align’s */
+    /* margin: 5rem 1.25rem 2rem; */
+    /* font-size: 1.618rem;     */
+    right: 0;
+    /* shape-outside: padding-box; */
+    /* shape-outside: content-box; */
+    /* shape-margin: .75rem; */
+    overflow: visible;
+    z-index: 0;
+    /* background-color: var(--dark); */
+    /* transition: margin .24s ease;
+    max-width: calc(100vw - 3rem); */
+    box-sizing: border-box;
+}
+
+
+/* .speech-bubble::before {
+    content: "";
+    width: 100%; height: 100%;
+    top: -15em;
+} */
+.align:nth-of-type(2n+1)
+/* , .speech-bubble:nth-of-type(2n+1)  */ {
+    float:right;
+    right: -1rem;
+    /* margin-left: auto; */
+    /* transform: translate(22em, -22em); */
+
+}
+/* .speech-bubble:nth-of-type(2n), */
+.align:nth-of-type(2n) {
+    float:left;
+    left: -1rem;
+}
+
+/* .speech-bubble::before {
+    content: '';
+	position: absolute;
+    top: 44%;
+    box-shadow: 0 0 0 0 var(--dark), 0 6px .5rem rgba(9, 7, 14, 0.219);
+    width: 0;
+	height: 0;
+	border: 1rem solid transparent;
+	border-bottom-color: var(--med);
+	border-bottom: 0;
+    margin-top: -0.312em;
+    box-shadow: 0 2px .5rem rgba(9, 7, 14, 0.219);
+} */
+.speech-bubble::after {
+	content: '';
+	position: absolute;
+	top: 44%;
+	width: 0;
+	height: 0;
+	border: 1rem solid transparent;
+    border-right-color: var(--med);
+	border-left-color: var(--med);
+	border-bottom: 0;
+    margin-top: -0.312em;
+    /* Negative spread radius with equal blur value to make bottom-only */
+    /* box-shadow: 0 2px .5rem rgba(9, 7, 14, 0.219); */
+    /* box-shadow: 0 0 0 0 var(--dark), 0 6px .5rem rgba(9, 7, 14, 0.219); */
+    opacity: .86;
+    z-index: -6
+
+}
+/* .speech-bubble:nth-of-type(2n+1)::before{
+    margin-left: -1rem;
+    left: 0;
+    border-left: 0;
+    border-top: 0;
+}
+.speech-bubble:nth-of-type(2n+2)::before{
+    margin-right: -1rem;
+    right: 0;
+    border-right: 0;
+} */
+
+
+.align:nth-of-type(2n+1) .speech-bubble::after {
+    left: 0;
+    border-left: 0;
+    margin-left: -1rem;
+}
+.align:nth-of-type(2n) .speech-bubble::after {
+    right: 0;
+    border-right: 0;
+    margin-right: -1rem;
+}
+
+.align:nth-of-type(1) {
+    margin-left: 4em;
+    /* margin-left: auto; */
+}
+.align:nth-of-type(2) {
+    margin-right: 4em;
+    /* margin-right: auto; */
+}
+
+.align:nth-of-type(1) .speech-bubble {
+    color: var(--orange);
+    border-color: var(--orange);
+    /* right: -5em; */
+    /* margin-left: 2.8em; */
+} 
+.align:nth-of-type(1) .speech-bubble::after {
+    border-right-color: var(--orange);
+    border-left-color: var(--orange);
+}
+.align:nth-of-type(2) .speech-bubble {
+    color: var(--lred);
+    border-color: var(--lred);
+    /* margin-right: 2.8em; */
+
+} 
+.align:nth-of-type(2) .speech-bubble::after  {
+    border-right-color: var(--lred);
+    border-left-color: var(--lred);
+}
+.align:nth-of-type(3) .speech-bubble{
+    color: var(--purple);
+    border-color: var(--purple);
+} 
+.align:nth-of-type(3) .speech-bubble::after {
+    border-right-color: var(--purple);
+    border-left-color: var(--purple);
+}
+.align:nth-of-type(4) .speech-bubble {
+    color: var(--teal);
+    border-color: var(--teal);
+} 
+.align:nth-of-type(4) .speech-bubble::after {
+    border-right-color: var(--teal);
+    border-left-color: var(--teal);
+}
+
+
+/* 50rem = body max-width, needs to match or be less than */
+@media only screen and (max-width: 40rem) {    
+    .align {
+        margin-bottom: calc(10rem - 5vw);
+        margin-top: calc(10rem - 5vw);
+    }
+    /* .speech-bubble:nth-of-type(2n+1) {
+        margin-left: -.75rem;
+    } */
+    .align:nth-of-type(2) {
+        margin-right: -.75rem;
+    }
+    /* .speech-bubble:nth-of-type(2n+1) div {
+        margin-left: -.75rem;
+    } */
+}
+
+::spelling-error {
+    color: var(--red);
+    font-size: 2rem;
+  }
+
+  h4 {
+    clear: both;
+  }
