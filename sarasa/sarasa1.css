@@ -7,7 +7,8 @@
      --green: #718c00;
      --blue: #659cc8;
      --purple: #ac86c5;
-     --dark: #343233;
+     --gray: #343233;
+     --dark: #353032;
      --light: #efdabb;
      --med: #aa9c87;
 
@@ -65,7 +66,8 @@ html.loaded::before {
 html
 /* , main, header  */
     {
-    background-color: #343233 ;
+    background-color: #343233;
+    background-color: var(--dark);
 }
 
 /* main, header {
@@ -289,6 +291,7 @@ div   {
     padding: .5rem;
     overflow: auto;
     background-color: #343233;
+    background-color: var(--dark);
     border: 1px solid #efdabb66;
     border-radius: 1.3rem; 
     box-shadow: 1px 2px .5rem rgba(9, 7, 14, 0.219);
