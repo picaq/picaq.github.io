@@ -443,6 +443,7 @@ hr {
 
 hr.stars::before, hr.stars::after {
     letter-spacing: 3em;
+    font-size: 1rem;
     /* content: "★☆※＊✩✧✦✫✬✮✪✰☆彡☆ミ✻"; */
     /* content: "★☆✩✮☆"; */
     content: "✮ ✩✮";
@@ -473,6 +474,7 @@ body {
     border-radius: 10rem;
     margin-top: 0;
     box-shadow: 0 0 2rem 1rem var(--dark);
+    padding-bottom: 2em;
 }
 
 body::before {
