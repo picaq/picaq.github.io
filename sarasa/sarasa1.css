@@ -542,7 +542,7 @@ div > div {
     shape-margin: 0;
     overflow: visible;
     z-index: 4;
-    background-color: var(--dark);
+    /* background-color: var(--dark); */
     transition: margin .24s ease;
     max-width: calc(80% - 3rem);
     padding: 0 !important;
