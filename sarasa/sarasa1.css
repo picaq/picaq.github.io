@@ -196,7 +196,7 @@ p, li {
     line-height: 1.5rem;
     transition: color .12s ease;
     transition: opacity .2s ease;
-    z-index: 4;
+    z-index: 0;
     position: relative;
 
 }
@@ -641,11 +641,11 @@ div > div {
     border-color: var(--lred);
     /* margin-right: 2.8em; */
 } 
-.speech-bubble:nth-of-type(1) {
-    margin-left: 3em;
+.speech-bubble:nth-of-type(2n+1) {
+    margin-left: 9rem;
 }
-.speech-bubble:nth-of-type(2) {
-    margin-right: 3em;
+.speech-bubble:nth-of-type(2n) {
+    margin-right: 9rem;
 }
 
 .speech-bubble:nth-of-type(2)::after {
@@ -680,9 +680,9 @@ div > div {
         margin-left: -.75rem;
         padding-left: -.75rem;
     }
-    .speech-bubble:nth-of-type(2) {
+    /* .speech-bubble:nth-of-type(2) {
         margin-right: -.75rem;
-    }
+    } */
     /* .speech-bubble:nth-of-type(2n+1) pre {
         margin-left: -.75rem;
     } */
