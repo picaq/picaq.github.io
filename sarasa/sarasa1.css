@@ -308,7 +308,7 @@ pre.hljs:last-child {
 [contenteditable] {
     padding: .5rem;
     overflow: auto;
-    background-color: #343233;
+    background-color: #34323366;
     background-color: var(--dark);
     border: 1px solid #efdabb66;
     border-radius: 1.3rem; 
@@ -544,7 +544,7 @@ div > div {
     z-index: 4;
     background-color: var(--dark);
     transition: margin .24s ease;
-    max-width: calc(90% - 3rem);
+    max-width: calc(80% - 3rem);
     padding: 0 !important;
     border-bottom: none;
     overflow-wrap: anywhere;
