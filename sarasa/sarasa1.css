@@ -416,12 +416,15 @@ ul:not(.lang) > li::before, li > li::before {
     /* right: 1.2em; */
     right: .3em;
     color: var(--yellow);
-    transition: opacity .2 ease;
+    transition: opacity .2 ease, text-shadow .2 ease;
     opacity: .7;
+    text-shadow: 0 0 .25rem #d36e2d88;
+
   }
 
 li li:hover::before, ul li:hover::before {
     opacity: 1;
+    text-shadow: 0 0 .4rem #d88b2688;
 }
 
 li li::before  {
@@ -449,7 +452,15 @@ hr.stars::before, hr.stars::after {
     /* content: "★☆※＊✩✧✦✫✬✮✪✰☆彡☆ミ✻"; */
     /* content: "★☆✩✮☆"; */
     content: "✮ ✩✮";
-    opacity: .8
+    opacity: .8;
+
+}
+
+.stars::before, .stars::after {
+    text-shadow: 0 0 .22rem #d36e2d66;
+}
+.stars::before:hover, .stars::after:hover {
+    text-shadow: 0 0 .4rem #d88b2688;
 }
 
 hr.stars::after{
