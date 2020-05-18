@@ -539,7 +539,7 @@ div > div {
     right: 0;
     /* shape-outside: content-box; */
     shape-outside: content-box;
-    shape-margin: .75rem;
+    shape-margin: 0;
     overflow: visible;
     z-index: 4;
     background-color: var(--dark);
