@@ -513,6 +513,8 @@ div > div {
     overflow: hidden;
     border-color: inherit;
     color: inherit;
+    overflow-wrap: anywhere;
+    text-overflow: clip;
 }
 
 .speech-bubble div:first-of-type, .speech-bubble pre:first-of-type {
@@ -545,6 +547,8 @@ div > div {
     max-width: calc(75vw - 3rem);
     padding: 0 !important;
     border-bottom: none;
+    overflow-wrap: anywhere;
+    text-overflow: clip;
 
 }
 
