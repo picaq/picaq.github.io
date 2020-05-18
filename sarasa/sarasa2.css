@@ -518,8 +518,8 @@ div > div {
     color: inherit;
 }
 
-section { flow-into: sections }
-.region { flow-from: sections }
+/* section { flow-into: sections }
+.region { flow-from: sections } */
 
 
 .align {

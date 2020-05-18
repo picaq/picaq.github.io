@@ -305,7 +305,7 @@ pre.hljs:last-child {
 
 /* div   */
 
-[contenteditable="true"] {
+[contenteditable] {
     padding: .5rem;
     overflow: auto;
     background-color: #343233;
@@ -397,13 +397,13 @@ blockquote > p::after {
 }
  */
 
- [contenteditable="true"] {
+ [contenteditable] {
     outline: none;
     transition: border-color .15s ease;
     transition: box-shadow .15s ease;
 }
 
-[contenteditable="true"]:focus {
+[contenteditable]:focus {
     border-color: #dda032cc;
     box-shadow: 1px 2px .5rem rgba(9, 7, 14, 0.219), inset 0 0 .15rem 0.05rem #d36e2d33, 0 0 .3rem 0.05rem #d36e2d55;
     
@@ -506,10 +506,21 @@ div > div {
     margin: 0; padding:0;
     color: inherit;
 }
-
-.speech-bubble div {
+.speech-bubble div, .speech-bubble pre {
+    display: inline-block;
     word-wrap: break-word;
-    padding: 1rem 1.5rem;
+    padding: 0 1.5rem;
+    overflow: hidden;
+    border-color: inherit;
+    color: inherit;
+}
+
+.speech-bubble div:first-of-type, .speech-bubble pre:first-of-type {
+    padding-top: 1rem;
+}
+
+.speech-bubble div:last-of-type, .speech-bubble pre:last-of-type {
+    padding-bottom: 1rem;
 }
 
 .speech-bubble {
@@ -522,7 +533,7 @@ div > div {
     /* color: var(--dark); */
     /* margin: 1rem 1.25rem; */
     margin: 5rem 1.25rem 2rem;
-    font-size: 1.618em;    
+    font-size: 1.618rem;    
     right: 0;
     /* shape-outside: content-box; */
     shape-outside: content-box;
@@ -531,7 +542,10 @@ div > div {
     z-index: 4;
     background-color: var(--dark);
     transition: margin .24s ease;
-    max-width: calc(100vw - 3rem);
+    max-width: calc(75vw - 3rem);
+    padding: 0 !important;
+    border-bottom: none;
+
 }
 
 
@@ -607,28 +621,34 @@ div > div {
 }
 
 
-.speech-bubble:nth-of-type(1) {
+.speech-bubble:nth-of-type(1) div {
     color: var(--orange);
     border-color: var(--orange);
     /* right: -5em; */
-    margin-left: 2.8em;
+    /* margin-left: 2.8em; */
 } 
 .speech-bubble:nth-of-type(1)::after {
     border-right-color: var(--orange);
     border-left-color: var(--orange);
 }
 
-.speech-bubble:nth-of-type(2) {
+.speech-bubble:nth-of-type(2) div {
     color: var(--lred);
     border-color: var(--lred);
-    margin-right: 2.8em;
-
+    /* margin-right: 2.8em; */
 } 
+.speech-bubble:nth-of-type(1) {
+    margin-left: 3em;
+}
+.speech-bubble:nth-of-type(2) {
+    margin-right: 3em;
+}
+
 .speech-bubble:nth-of-type(2)::after {
     border-right-color: var(--lred);
     border-left-color: var(--lred);
 }
-.speech-bubble:nth-of-type(3) {
+.speech-bubble:nth-of-type(3) div {
     color: var(--purple);
     border-color: var(--purple);
 } 
@@ -636,7 +656,7 @@ div > div {
     border-right-color: var(--purple);
     border-left-color: var(--purple);
 }
-.speech-bubble:nth-of-type(4) {
+.speech-bubble:nth-of-type(4) div {
     color: var(--teal);
     border-color: var(--teal);
 } 
@@ -654,13 +674,14 @@ div > div {
     }
     .speech-bubble:nth-of-type(2n+1) {
         margin-left: -.75rem;
+        padding-left: -.75rem;
     }
     .speech-bubble:nth-of-type(2) {
         margin-right: -.75rem;
     }
-    .speech-bubble:nth-of-type(2n+1) pre {
+    /* .speech-bubble:nth-of-type(2n+1) pre {
         margin-left: -.75rem;
-    }
+    } */
 }
 
 ::spelling-error {
