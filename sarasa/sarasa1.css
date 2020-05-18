@@ -544,7 +544,7 @@ div > div {
     z-index: 4;
     background-color: var(--dark);
     transition: margin .24s ease;
-    max-width: calc(75vw - 3rem);
+    max-width: calc(90% - 3rem);
     padding: 0 !important;
     border-bottom: none;
     overflow-wrap: anywhere;
