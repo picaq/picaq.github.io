@@ -122,8 +122,8 @@ h1 + p {
 
 h1 + p + p {
     padding-top: 1.5rem;
-    /* font-size: 1.618em; */
-    font-size: 1.309em;
+    font-size: 1.618em;
+    /* font-size: 1.309em; */
 }
 .stars {
     overflow: hidden !important;    
@@ -433,6 +433,10 @@ li li::before  {
     content: "☆" !important;
 }
 
+li li li::before  {
+    content: "★" !important;
+}
+
 ul:not(.lang) li, li > ul {
     list-style: none;
     /* text-indent: -.82em; */
@@ -709,3 +713,20 @@ div > div {
   h4 {
     clear: both;
   }
+
+
+._200 {
+    font-weight: 200;
+}
+
+._300 {
+    font-weight: 300;
+}
+
+._500 {
+    font-weight: 500;
+}
+
+._600 {
+    font-weight: 600;
+}
