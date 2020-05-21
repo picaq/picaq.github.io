@@ -70,6 +70,7 @@ html
     background-color: #343233;
     background-color: var(--dark);
     margin: 0; padding: 0;
+    overflow-x: hidden
 }
 
 /* main, header {
@@ -124,10 +125,11 @@ h1 + p + p {
     padding-top: 1.5rem;
     font-size: 1.618em;
     /* font-size: 1.309em; */
+    vertical-align: text-top;
 }
-.stars {
-    overflow: hidden !important;    
-}
+/* .stars {
+    text-overflow: hidden; 
+} */
 .stars::before, .stars::after {
     display: inline-block;
     position: relative;
@@ -339,7 +341,9 @@ blockquote p {
     z-index: 2;
 }
 
-blockquote > p::before, blockquote > p::after, blockquote > br::after {
+blockquote > p::before, blockquote > p::after
+/* , blockquote > br::after  */
+    {
     display: block;
     position: relative;
     text-align: justify;
