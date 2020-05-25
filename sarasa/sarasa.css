@@ -70,11 +70,9 @@ html
     background-color: #343233;
     background-color: var(--dark);
     margin: 0; padding: 0;
-}
-
-html, body {
     overflow-x: hidden;
 }
+
 
 /* main, header {
     background-color: #a09e9f ;
@@ -710,7 +708,16 @@ div > div {
     /* .speech-bubble:nth-of-type(2n+1) pre {
         margin-left: -.75rem;
     } */
+
+    
 }
+
+@media only screen and (max-width: 64rem) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
 
 ::spelling-error {
     color: var(--red);
