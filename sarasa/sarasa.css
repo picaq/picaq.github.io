@@ -754,3 +754,14 @@ datalist, form {
 label {
     vertical-align: top;
 }
+
+form#glyphs {
+  float: right;
+  display: block;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
