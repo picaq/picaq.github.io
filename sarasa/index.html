@@ -530,29 +530,40 @@ C, C++, C#, JavaScript, PHP, F#, ML, F*, Haskell, Idris, Elm, PureScript, Swift,
 
 
 <h2 id="characters">Characters</h2>
-<!-- 
-	<form id="glyphs">
-	<label for="weight">Weight</label>
-	 <input id="weight" name="weight" type="range" min="200" max="600" step="100" value="300">
-	</form> -->
+
+<form id="glyphs">
+	<label for="weight" class="_200">ExtraLight</label>
+	<input id="weight" name="weight" onclick="change()" onkeyup="change()" onkeydown="change()" type="range" min="200" max="600" step="100" value="300" list="tickmarks">
+	<label for="weight" class="_600">Bold</label>
+<datalist id="tickmarks">
+
+  <option value="200" class="_200" label="ExtraLight"></option>
+  <option value="300"></option>
+  <option value="400" label="Regular"></option>
+  <option value="500"></option>
+  <option value="600" class="_600" label="Bold"></option>
+ 
+</datalist>
+</form>
+
 <h3 id="latin-alphabet">Latin Alphabet</h3>
-<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ
+<p class="west">ABCDEFGHIJKLMNOPQRSTUVWXYZ
 abcdefghijklmnopqrstuvwxyz</p>
-<p>1234567890‘?’“!”[#]{@}/&amp;&lt;-+÷×=&gt;®©$€£¥¢:;,.*</p>
+<p class="west">1234567890‘?’“!”[#]{@}/&amp;&lt;-+÷×=&gt;®©$€£¥¢:;,.*</p>
 <h3 id="cyrillic-alphabet">Cyrillic Alphabet</h3>
-<p>АБВГДЂЕЄЖЗЅИІЈКЛЉМНЊОПРСТЋУФХЦЧЏШЩЪЫЬЭЮЯ
+<p class="west">АБВГДЂЕЄЖЗЅИІЈКЛЉМНЊОПРСТЋУФХЦЧЏШЩЪЫЬЭЮЯ
 абвгдђеєжзѕиіјклљмнњопрстћуфхцчџшщъыьэюя</p>
 <h3 id="greek-alphabet">Greek Alphabet</h3>
-<p>ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
+<p class="west">ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
 αβγδεζηθικλμνξοπρσςτυφχψω</p>
 <h3 id="japanese">Japanese</h3>
-<p>あいうえおカキクケコさしすせそラリルレロまみむめもワヲンサシスセソ新時代のころを映すタイフ字学校村町森卵ェぃ</p>
+<p class="east">あいうえおカキクケコさしすせそラリルレロまみむめもワヲンサシスセソ新時代のころを映すタイフ字学校村町森卵ェぃ</p>
 <h3 id="chinese">Chinese</h3>
-<p>一二三四五六七八九十百千萬上中下左右大小春夏秋冬東金木水火土天地日月星黑白紅橙黃綠孝仁愛信義和平子曰父母兄弟夫婦君臣馬牛羊雞犬豕喜怒哀懼見聞聲貝車雨赤青言語魚鳥羽電不乃之乎人以為燕當相知石祖禮稷稻穀絲綱習老者而能讓貴身近運過非革音</p>
+<p class="east">一二三四五六七八九十百千萬上中下左右大小春夏秋冬東金木水火土天地日月星黑白紅橙黃綠孝仁愛信義和平子曰父母兄弟夫婦君臣馬牛羊雞犬豕喜怒哀懼見聞聲貝車雨赤青言語魚鳥羽電不乃之乎人以為燕當相知石祖禮稷稻穀絲綱習老者而能讓貴身近運過非革音</p>
 <h3 id="korean">Korean</h3>
-<p>가개갸거게겨고긔기나내냐너네녀노뇌놰뇨누뉘눼뉴느늬니다대댜더데뎌도되돼됴디라래랴러레려로뢰뢔료루튀퉤튜트틔퍼페펴포푀퐤표푸퓌풰퓨프픠해햐허헤혀호회훼휴흐희히</p>
+<p class="east">가개갸거게겨고긔기나내냐너네녀노뇌놰뇨누뉘눼뉴느늬니다대댜더데뎌도되돼됴디라래랴러레려로뢰뢔료루튀퉤튜트틔퍼페펴포푀퐤표푸퓌풰퓨프픠해햐허헤혀호회훼휴흐희히</p>
 <h3 id="programming-ligatures">programming ligatures</h3>
-<p>=&gt;  &lt;=  i++  i--  -&gt;  &lt;-&gt;  !=  ===  &lt;=&gt;  !==  == &gt;=  &lt;-  ++++  &amp;&amp;  </p>
+<p class="west"> =&gt;  &lt;=  i++  i--  -&gt;  &lt;-&gt;  !=  ===  &lt;=&gt;  !==  == &gt;=  &lt;-  ++++  &amp;&amp;  </p>
 <hr class="center stars">
 <h2 id="family-info">Family info</h2>
 <h3 id="based-off-of">The Love Child of</h3>
@@ -626,5 +637,7 @@ abcdefghijklmnopqrstuvwxyz</p>
 <footer>
 	<hr class="center stars">
 </footer>
+<script src="sarasa.js"></script>
 </body>
+
 </html>

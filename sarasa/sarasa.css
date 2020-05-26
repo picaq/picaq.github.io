@@ -744,3 +744,13 @@ div > div {
 ._600 {
     font-weight: 600;
 }
+
+datalist, form {
+    /* display: inline; */
+    font-size: 1rem;
+    /* position: absolute */
+}
+
+label {
+    vertical-align: top;
+}
