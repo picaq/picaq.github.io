@@ -788,10 +788,11 @@ section.characters {
 .characters article h3 {
     position: sticky;
     top: 0;
-    background-color: var(--dark);
+    /* background-color: var(--dark); */
     display: inline-block;
     padding-top: .70rem;
     margin-top: 0; margin-bottom: 0;
+    box-shadow: 0 0 .3rem .15rem  #312f3088;
 }
 
 .sticky, #glyphs {
