@@ -838,7 +838,14 @@ section.characters {
     text-shadow: .05rem .08rem .2rem #312f30, .1rem .1rem .1rem #312f30;
 }
 
+#glyphs div div {
+    margin-left: 0;
+}
 
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .clear {
     clear: both;
@@ -847,3 +854,13 @@ section.characters {
 /* .sticky + .content {
     padding-top: 60px;
   } */
+
+
+.slab {
+    font-family: 'Sarasa Mono Slab K';
+
+}
+
+.italic {
+    font-style: italic;
+}

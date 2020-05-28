@@ -539,9 +539,19 @@ C, C++, C#, JavaScript, PHP, F#, ML, F*, Haskell, Idris, Elm, PureScript, Swift,
 				<label for="weight" class="_600" onclick="bold()">Bold</label>
 			</div>
 			<div>
-				<label for="size" onclick="halfRem()">0.5 rem</label>
-				<input id="size" name="size" onclick="changer()" onkeyup="changer()" onkeydown="changer()" type="range" min=".5" max="5" step=".25" value="2" list="tickmarks">
-				<label for="size" onclick="fiveRem()">5 rem</label>
+				<div>
+					<label for="size" onclick="halfRem()">0.5 rem</label>
+					<input id="size" name="size" onclick="changer()" onkeyup="changer()" onkeydown="changer()" type="range" min=".5" max="5" step=".25" value="2" list="tickmarks">
+					<label for="size" onclick="fiveRem()">5 rem</label>
+				</div>
+				<div class="flex">
+					<label for="italic"><em>Italic</em>
+					<input id="italic" type="checkbox" value="italic" onclick="italicize()" name="font-style"></label>
+					<label for="slab" class="slab">Slab
+						<input id="slab" type="checkbox" value="slab" onclick="slabify()" name="font-family"></label>
+				</div>
+
+				
 			</div>
 			<datalist id="tickmarks">
 	
