@@ -776,8 +776,23 @@ section.characters {
     top: 0;
     right: 0;
     width: 100%;
-    background-color: var(--dark);
-  }
+    /* background-color: var(--dark); */
+    margin-top: 0;
+    padding-top: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* float: right; */
+
+
+}
+
+#glyphs div {
+    margin-left: 2em;
+    background-color: #312f30aa;
+}
+
+
 
 .clear {
     clear: both;
