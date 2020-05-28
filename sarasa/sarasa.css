@@ -793,6 +793,7 @@ section.characters {
     padding-top: .70rem;
     margin-top: 0; margin-bottom: 0;
     box-shadow: 0 0 .3rem .15rem  #312f3088;
+    max-width: calc(45vw - 6rem);
 }
 
 .sticky, #glyphs {
@@ -812,6 +813,10 @@ section.characters {
     border-radius: .15rem;
     box-shadow: 0 0 .3rem .15rem  #312f3088;
 
+}
+
+#glyphs{
+    max-width: calc(64vw + 3em);
 }
 
 #glyphs div {
