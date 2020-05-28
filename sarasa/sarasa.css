@@ -268,7 +268,7 @@ h2, h3, h4, h5 {
 /* strong,  */
 [id$="alphabet" i] + p, [id$="alphabet" i] + p + p, [id$="nese" i] + p, [id$="korean" i] + p, [id$="alphabet" i] + p {
     letter-spacing: calc(1em + .5rem) ;
-    line-height: calc(1.75em + .85rem)  ;
+    line-height: calc(1.75em + .85rem) ;
     /* font-weight: 400 ; */
     font-size: 2rem;
     font-weight: 300 ;
@@ -279,10 +279,15 @@ h2, h3, h4, h5 {
 }
 
 [id$="ligatures" i] + p {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: 2rem;
     font-weight: 300;
-    line-height: 2em ;
+    /* line-height: 2em ; */
+    line-height: calc(1.75em + .85rem) ;
+}
 
+.east, .west {
+    margin-top:  calc(.33em + .5rem) ;
 }
 
 a {color: #659cc8}
@@ -723,6 +728,14 @@ div > div {
 }
 
 
+@media only screen and (min-width: 40rem) {
+    /* body */
+    h3     {
+        position: relative;
+        z-index: 10;
+    }
+}
+
 ::spelling-error {
     color: var(--red);
     font-size: 2rem;
@@ -772,6 +785,15 @@ section.characters {
     position: relative;
 }
 
+.characters article h3 {
+    position: sticky;
+    top: 0;
+    background-color: var(--dark);
+    display: inline-block;
+    padding-top: .70rem;
+    margin-top: 0; margin-bottom: 0;
+}
+
 .sticky, #glyphs {
     position: sticky;
     top: 0;
@@ -785,12 +807,16 @@ section.characters {
     justify-content: flex-end;
     /* float: right; */
 
+    background-color: #312f30aa;
+    border-radius: .15rem;
+    box-shadow: 0 0 .3rem .15rem  #312f3088;
 
 }
 
 #glyphs div {
     margin-left: 2em;
-    background-color: #312f30aa;
+
+    text-shadow: .05rem .08rem .2rem #312f30, .1rem .1rem .1rem #312f30;
 }
 
 
