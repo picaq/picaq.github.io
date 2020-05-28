@@ -539,7 +539,7 @@ C, C++, C#, JavaScript, PHP, F#, ML, F*, Haskell, Idris, Elm, PureScript, Swift,
 			</div>
 			<div>
 				<label for="size" onclick="halfRem()">0.5 rem</label>
-				<input id="size" name="size" onclick="change()" onkeyup="change()" onkeydown="change()" type="range" min="200" max="600" step="100" value="300" list="tickmarks">
+				<input id="size" name="size" onclick="changer()" onkeyup="changer()" onkeydown="changer()" type="range" min=".5" max="5" step=".25" value="2" list="tickmarks">
 				<label for="size" onclick="fiveRem()">5 rem</label>
 			</div>
 			<datalist id="tickmarks">
@@ -548,7 +548,13 @@ C, C++, C#, JavaScript, PHP, F#, ML, F*, Haskell, Idris, Elm, PureScript, Swift,
 	    		<option value="300"></option>
 	    		<option value="400" label="Regular"></option>
 	    		<option value="500"></option>
-	    		<option value="600" class="_600" label="Bold"></option>
+				<option value="600" class="_600" label="Bold"></option>
+
+	    		<option value="1" label="1 rem"></option>
+	    		<option value="2" label="2 rem"></option>
+	    		<option value="3" label="3 rem"></option>
+	    		<option value="4" label="4 rem"></option>
+	    		<option value="5" label="5 rem"></option>
 	 
 			</datalist>
 		</form>

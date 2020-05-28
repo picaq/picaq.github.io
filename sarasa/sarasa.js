@@ -23,5 +23,19 @@ function bold() {
     change();
 }
 
+function changer() {
+    let size = document.getElementById("size").value;
+    for ( i = 0; i < all.length; i++ ) {
+      all[i].style.fontSize = size + "rem";
+    }
+}
 
+function halfRem() {
+    size.value = .5;
+    changer();
+}
 
+function fiveRem() {
+    size.value = 5;
+    changer();
+}

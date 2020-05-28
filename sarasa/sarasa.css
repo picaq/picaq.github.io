@@ -267,14 +267,15 @@ h2, h3, h4, h5 {
 
 /* strong,  */
 [id$="alphabet" i] + p, [id$="alphabet" i] + p + p, [id$="nese" i] + p, [id$="korean" i] + p, [id$="alphabet" i] + p {
-    letter-spacing: 1.25em ;
-    line-height: 2em ;
+    letter-spacing: calc(1em + .5rem) ;
+    line-height: calc(1.75em + .85rem)  ;
     /* font-weight: 400 ; */
-    font-size: 1.5em;
+    font-size: 2rem;
     font-weight: 300 ;
     margin-right: -1.35rem;
     margin-left: .15rem;
     overflow-wrap: break-word;
+    transition: font-weight .2s ease;
 }
 
 [id$="ligatures" i] + p {
