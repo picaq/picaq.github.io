@@ -5,6 +5,7 @@
         url('../fonts/Sarasa-Mono-J-Light-Italic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
         url('../fonts/Sarasa-Mono-J-Extralight-Italic.woff') format('woff');
     font-weight: 200;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -23,6 +25,7 @@
         url('../fonts/Sarasa-Mono-J-Extralight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -32,6 +35,7 @@
         url('../fonts/Sarasa-Mono-J-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -41,6 +45,7 @@
         url('../fonts/Sarasa-Mono-J-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -50,6 +55,7 @@
         url('../fonts/Sarasa-Mono-J-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -59,6 +65,7 @@
         url('../fonts/Sarasa-Mono-J-Semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -68,6 +75,7 @@
         url('../fonts/Sarasa-Mono-J-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -77,6 +85,7 @@
         url('../fonts/Sarasa-Mono-J-Semibold-Italic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -86,6 +95,7 @@
         url('../fonts/Sarasa-Mono-J-Bold-Italic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -95,6 +105,7 @@
         url('../fonts/Sarasa-Mono-Slab-K-Extralight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -104,6 +115,7 @@
         url('../fonts/Sarasa-Mono-Slab-K-Bold-Italic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -113,6 +125,7 @@
         url('../fonts/Sarasa-Mono-Slab-K-Semibold-Italic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -122,6 +135,7 @@
         url('../fonts/Sarasa-Mono-Slab-K-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -131,6 +145,7 @@
         url('../fonts/Sarasa-Mono-Slab-K-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -140,6 +155,7 @@
         url('../fonts/Sarasa-Mono-Slab-K-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -149,6 +165,7 @@
         url('../fonts/Sarasa-Mono-Slab-K-Semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -158,6 +175,7 @@
         url('../fonts/Sarasa-Mono-Slab-K-Extralight-Italic.woff') format('woff');
     font-weight: 200;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -167,6 +185,7 @@
         url('../fonts/Sarasa-Mono-Slab-K-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -176,6 +195,7 @@
         url('../fonts/Sarasa-Mono-Slab-K-Light-Italic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -185,6 +205,7 @@
         url('../fonts/Sarasa-Mono-CL-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -194,6 +215,7 @@
         url('../fonts/Sarasa-UI-SC-Extralight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -203,6 +225,7 @@
         url('../fonts/Sarasa-UI-SC-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 
