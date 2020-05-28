@@ -734,7 +734,15 @@ div > div {
         position: relative;
         z-index: 10;
     }
+    .characters article section h3 {
+        max-width: 16rem;
+    }
+
+    
 }
+
+
+
 
 ::spelling-error {
     color: var(--red);
@@ -771,6 +779,11 @@ datalist, form {
 label {
     vertical-align: top;
 }
+
+[onclick] {
+    cursor: pointer;
+}
+
 
 /* form#glyphs {
   float: right;
