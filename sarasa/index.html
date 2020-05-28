@@ -528,24 +528,33 @@ C, C++, C#, JavaScript, PHP, F#, ML, F*, Haskell, Idris, Elm, PureScript, Swift,
 	<br/> <span class="author">—&thinsp;Martin Leblanc</span>
 </blockquote>
 
-
+<section class="characters">
+	<div class="sticky">
+		<form id="glyphs">
+			<label for="weight" class="_200" onclick="xLight()">ExtraLight</label>
+			<input id="weight" name="weight" onclick="change()" onkeyup="change()" onkeydown="change()" type="range" min="200" max="600" step="100" value="300" list="tickmarks">
+			<label for="weight" class="_600" onclick="bold()">Bold</label>
+			<br>
+			<label for="size" onclick="halfRem()">0.5 rem</label>
+			<input id="size" name="size" onclick="change()" onkeyup="change()" onkeydown="change()" type="range" min="200" max="600" step="100" value="300" list="tickmarks">
+			<label for="size" onclick="fiveRem()">5 rem</label>
+	
+			<datalist id="tickmarks">
+	
+	    		<option value="200" class="_200" label="ExtraLight"></option>
+	    		<option value="300"></option>
+	    		<option value="400" label="Regular"></option>
+	    		<option value="500"></option>
+	    		<option value="600" class="_600" label="Bold"></option>
+	 
+			</datalist>
+		</form>
+	</div>
+<article>
 <h2 id="characters">Characters</h2>
 
-<form id="glyphs">
-	<label for="weight" class="_200" onclick="xLight()">ExtraLight</label>
-	<input id="weight" name="weight" onclick="change()" onkeyup="change()" onkeydown="change()" type="range" min="200" max="600" step="100" value="300" list="tickmarks">
-	<label for="weight" class="_600" onclick="bold()">Bold</label>
-<datalist id="tickmarks">
 
-  <option value="200" class="_200" label="ExtraLight"></option>
-  <option value="300"></option>
-  <option value="400" label="Regular"></option>
-  <option value="500"></option>
-  <option value="600" class="_600" label="Bold"></option>
- 
-</datalist>
-</form>
-
+<!-- <section class="characters"></section> -->
 <h3 id="latin-alphabet">Latin Alphabet</h3>
 <p class="west">ABCDEFGHIJKLMNOPQRSTUVWXYZ
 abcdefghijklmnopqrstuvwxyz</p>
@@ -564,7 +573,10 @@ abcdefghijklmnopqrstuvwxyz</p>
 <p class="east">가개갸거게겨고긔기나내냐너네녀노뇌놰뇨누뉘눼뉴느늬니다대댜더데뎌도되돼됴디라래랴러레려로뢰뢔료루튀퉤튜트틔퍼페펴포푀퐤표푸퓌풰퓨프픠해햐허헤혀호회훼휴흐희히</p>
 <h3 id="programming-ligatures">programming ligatures</h3>
 <p class="west"> =&gt;  &lt;=  i++  i--  -&gt;  &lt;-&gt;  !=  ===  &lt;=&gt;  !==  == &gt;=  &lt;-  ++++  &amp;&amp;  </p>
-<hr class="center stars">
+</article>
+</section>
+<hr class="center stars clear">
+
 <h2 id="family-info">Family info</h2>
 <h3 id="based-off-of">The Love Child of</h3>
 <ul>

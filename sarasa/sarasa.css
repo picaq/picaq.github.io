@@ -134,8 +134,8 @@ h1 + p + p {
 .stars::before, .stars::after {
     display: inline-block;
     position: relative;
-    letter-spacing: 1.5em;
-    padding-left: 1.5em;
+    letter-spacing: 1.45em;
+    padding-left: 1.45em;
     /* content: "★☆※＊✩✧✦✫✬✮✪✰☆彡☆ミ✻"; */
     content: "★☆✩✮☆";
     z-index: 2;
@@ -713,8 +713,11 @@ div > div {
 }
 
 @media only screen and (max-width: 64rem) {
-    body {
+    /* body */
+    header     {
         overflow-x: hidden;
+        /* position: relative; */
+        padding: 0;
     }
 }
 
@@ -755,13 +758,31 @@ label {
     vertical-align: top;
 }
 
-form#glyphs {
+/* form#glyphs {
   float: right;
   display: block;
+} */
+
+/* main, .characters, .sticky,  article {
+    overflow-x: visible !important;
+} */
+
+section.characters {
+    position: relative;
 }
 
-.sticky {
-    position: fixed;
+.sticky, #glyphs {
+    position: sticky;
     top: 0;
+    right: 0;
     width: 100%;
+    background-color: var(--dark);
   }
+
+.clear {
+    clear: both;
+}
+
+/* .sticky + .content {
+    padding-top: 60px;
+  } */
