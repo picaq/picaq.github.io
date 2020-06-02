@@ -834,7 +834,7 @@ section.characters {
 
 #glyphs div {
     margin-left: 2em;
-
+    padding-bottom: .25rem;
     text-shadow: .05rem .08rem .2rem #312f30, .1rem .1rem .1rem #312f30;
 }
 
