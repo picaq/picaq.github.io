@@ -63,7 +63,7 @@
     src: local('Sarasa Mono J Semibold'), local('Sarasa-Mono-J-Semibold'),
         url('../fonts/Sarasa-Mono-J-Semibold.woff2') format('woff2'),
         url('../fonts/Sarasa-Mono-J-Semibold.woff') format('woff');
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
@@ -83,7 +83,7 @@
     src: local('Sarasa Mono J Semibold Italic'), local('Sarasa-Mono-J-Semibold-Italic'),
         url('../fonts/Sarasa-Mono-J-Semibold-Italic.woff2') format('woff2'),
         url('../fonts/Sarasa-Mono-J-Semibold-Italic.woff') format('woff');
-    font-weight: 600;
+    font-weight: 500;
     font-style: italic;
     font-display: swap;
 }
@@ -123,7 +123,7 @@
     src: local('Sarasa Mono Slab K Semibold Italic'), local('Sarasa-Mono-Slab-K-Semibold-Italic'),
         url('../fonts/Sarasa-Mono-Slab-K-Semibold-Italic.woff2') format('woff2'),
         url('../fonts/Sarasa-Mono-Slab-K-Semibold-Italic.woff') format('woff');
-    font-weight: 600;
+    font-weight: 500;
     font-style: italic;
     font-display: swap;
 }
@@ -163,7 +163,7 @@
     src: local('Sarasa Mono Slab K Semibold'), local('Sarasa-Mono-Slab-K-Semibold'),
         url('../fonts/Sarasa-Mono-Slab-K-Semibold.woff2') format('woff2'),
         url('../fonts/Sarasa-Mono-Slab-K-Semibold.woff') format('woff');
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
