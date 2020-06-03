@@ -48,7 +48,9 @@ pre[class*="language-"] {
 	/* margin: .5em; */
 } 
 
-
+[contenteditable][title] {
+	padding-bottom: 1.25em;
+}
 
 pre[class*="language-"], textarea.prism-live {
     /* color: #efdabbde; */
@@ -57,7 +59,7 @@ pre[class*="language-"], textarea.prism-live {
     /* padding: 0 1.25em; */
 }
 
-pre[class*="language-"]:last-child, textarea.prism-live {
+pre[class*="language-"]:last-child {
     padding-bottom: 1rem;
 }
 pre[class*="language-"]:first-child, textarea.prism-live {
