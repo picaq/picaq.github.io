@@ -6,6 +6,11 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  * @author Rose Pritchard
  */
 
+ /* prism live */
+ 
+/* textarea {
+	display: none;
+} */
  
 code[class*="language-"],
 pre[class*="language-"] {
@@ -45,8 +50,8 @@ pre[class*="language-"] {
 
 
 
-pre[class*="language-"] {
-    color: #efdabbde;
+pre[class*="language-"], textarea.prism-live {
+    /* color: #efdabbde; */
     margin: 0;
     padding: 0 1.8rem;
     /* padding: 0 1.25em; */
@@ -55,8 +60,17 @@ pre[class*="language-"] {
 pre[class*="language-"]:last-child {
     padding-bottom: 1rem;
 }
-pre[class*="language-"]:first-child {
+pre[class*="language-"]:first-child, textarea.prism-live {
     padding-top: 1rem;
+}
+
+/* importants necessary */
+textarea.prism-live {
+	max-width: 100% !important;
+	white-space: pre-wrap !important;
+	overflow-wrap: break-word !important;
+	line-height: 1.36em !important;
+	overflow: hidden;
 }
 
 /* 

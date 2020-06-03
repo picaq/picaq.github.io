@@ -30,47 +30,12 @@ a:hover {
 	text-decoration: underline;
 }
 
-a:focus,
-input:focus,
-select:focus,
-textarea:focus {
-	outline: 1px solid -webkit-focus-ring-color;
-	outline-offset: -1px;
-}
-
-
 h1 {
 	padding-bottom: 0.3em;
 	line-height: 1.2;
 	/* border-bottom-width: .12em;
 	border-bottom-style: dotted; */
 }
-
-/* h1, h2, h3, h4, h5 {
-	font-weight: normal;
-} */
-
-table {
-	border-collapse: collapse;
-}
-
-table > thead > tr > th {
-	text-align: left;
-	border-bottom: 1px solid;
-}
-
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td {
-	padding: 5px 10px;
-}
-
-table > tbody > tr + tr > td {
-	border-top: 1px solid;
-}
-
-
 
 code {
 	font-size: 1em;
@@ -81,97 +46,13 @@ body.wordWrap pre {
 	white-space: pre-wrap;
 }
 
-/* pre:not(.hljs),
-pre.hljs code > div {
-	padding: 16px;
-	border-radius: 3px;
-	overflow: auto;
-} */
-
-/* pre code {
-	color: var(--vscode-editor-foreground);
-	tab-size: 4;
-} */
-
-/* Tomorrow Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-	color: #efdabb44;
-}
-
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-	color: var(--lred);
-}
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-	color: #d36e2d;
-}
-
-/* Tomorrow Yellow */
-.hljs-attribute {
-	color: #dda032;
-}
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-	color: #78af9f;
-}
-
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-	color: #659cc8;
-}
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-	color: #ac86c5;
-}
-
-/* .hljs {
-	display: block;
-	overflow-x: auto;
-	color: #4d4d4c;
-	padding: 0.5em;
-} */
-/* 
-.hljs-emphasis {
-	font-style: italic;
-}
-
-.hljs-strong {
-	font-weight: bold;
-} */
 </style>
 
 
 <link rel="stylesheet" href="sarasa.css" type="text/css">
 <link rel="stylesheet" href="sarasa-fonts.css" type="text/css">
 <link rel="stylesheet" href="../prism.css" type="text/css">
+<link rel="stylesheet" href="../prism-live.css" type="text/css">
 <style>
 
 /*
@@ -189,22 +70,6 @@ pre code {
 	overflow-wrap: break-word;
 }
 
-
-
-/* .emoji {
-	height: 1.4em;
-} */
-
-/* code {
-	font-size: 14px;
-	line-height: 19px;
-} */
-
-/* for inline code */
-/* :not(pre):not(.hljs) > code {
-	color: #C9AE75; /* Change the old color so it seems less like an error */
-	/* font-size: inherit; */
-/* }  */
 
 /* Page Break : use <div class="page"/> to insert page break
 -------------------------------------------------------- */
@@ -280,19 +145,19 @@ it fills a niche in the world of sterotypically limited, boring monospace type.
 
 
 <h4>Try it out now!</h4>
-<div contenteditable="true"><pre><code class="prism-live lang-javascript">/* edit me! */
+<pre class="prism-live"><code class="prism-live lang-javascript">/* edit me! */
 
-</code></pre></div>
+</code></pre>
 <h3 id="latin-demo">Latin Character Demo</h3>
-<div contenteditable="true"><pre>
+<div contenteditable="true"><pre class="prism-live">
 <code class="prism-live lang-javascript">console.log("Hello World");
 document.write("Olá Mundo");
 </code></pre></div>
 <h3 id="cyllic--greekmath-demo">Cyllic + Greek/Math Character Demo</h3>
-<div contenteditable="true"><pre><code class="prism-live lang-php">print "Привет мир";
+<div contenteditable="true"><pre class="prism-live"><code class="prism-live lang-php">print "Привет мир";
 </code></pre></div>
 <h3 id="asian-language-demo">East Asian (CJK) Charcter Demo</h3>
-<div contenteditable="true"><pre><code class="prism-live lang-bash">echo こんにちは世界
+<div contenteditable="true"><pre class="prism-live"><code class="prism-live lang-bash">echo こんにちは世界
 </code></pre></div>
 
 <h2 id="programming-language-support">Programming Language Support</h2>
@@ -304,7 +169,7 @@ C, C++, C#, JavaScript, PHP, F#, ML, F*, Haskell, Idris, Elm, PureScript, Swift,
 <!-- <h3 id="list-of-all-supported-programming-languages">list of all supported programming languages</h3> -->
 <h3 id="htmlcssjsphp-demo">html/css/js/php demo</h3>
 <h4 id="html">html</h4>
-<div contenteditable="true"><pre><code class="prism-live lang-html">&lt;h1 class="cute home" title="about me"&gt;
+<div contenteditable="true"><pre class="prism-live"><code class="prism-live lang-html">&lt;h1 class="cute home" title="about me"&gt;
     &lt;a href="#about" id="hidem" &gt;Illustration&lt;/a&gt;
 &lt;/h1&gt;
 
@@ -317,7 +182,7 @@ C, C++, C#, JavaScript, PHP, F#, ML, F*, Haskell, Idris, Elm, PureScript, Swift,
 &lt;a href="#contact" class="cute bird"&gt;Contact Me!&lt;/a&gt;
 </code></pre></div>
 <h4 id="css">css</h4>
-<div contenteditable="true"><pre><code class="prism-live lang-css">html, body {
+<div contenteditable="true"><pre class="prism-live"><code class="prism-live lang-css">html, body {
     background-color: #343233;
     font-family: 'Sarasa Mono HC', 'Sarasa Mono J', 'Sarasa Mono K', monospace;
     color: #efdabb;
@@ -331,7 +196,7 @@ h1 {
 
 
 <h4 id="js">javascript</h4>
-<div contenteditable="true"><pre><code class="prism-live lang-javascript">let west = document.querySelectorAll('.west');
+<div contenteditable="true"><pre class="prism-live"><code class="prism-live lang-javascript">let west = document.querySelectorAll('.west');
 	let east = document.querySelectorAll('.east');
 	
 	// let all = [].concat(west, east);
@@ -706,7 +571,11 @@ abcdefghijklmnopqrstuvwxyz</p>
 </footer>
 <script src="sarasa.js"></script>
 <script src="../prism.js"></script>
-<script src="../prism-live.js?load=css,html,javascript"></script>
+<script src="../prism-live.js"></script>
+<!-- <script src="../prism-live.js?load=css,html,javascript"></script> -->
+<script src="../prism-live-markup.js"></script>
+<script src="../prism-live-css.js"></script>
+<script src="../prism-live-javascript.js"></script>
 </body>
 
 </html>
