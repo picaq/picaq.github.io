@@ -191,22 +191,22 @@ h1 {
 
 <h4 id="js">javascript</h4>
 <div contenteditable="true" title="JavaScript"><pre class="prism-live"><code class="prism-live lang-javascript">let west = document.querySelectorAll('.west');
-	let east = document.querySelectorAll('.east');
+let east = document.querySelectorAll('.east');
 	
-	// let all = [].concat(west, east);
-	let all = [...west, ...east];
+// let all = [].concat(west, east);
+let all = [...west, ...east];
 	
-	function change() {
-		let weight = document.getElementById("weight").value;
-		for ( i = 0; i < all.length; i++ ) {
-		  all[i].style.fontWeight = weight;
-		}
+function change() {
+	let weight = document.getElementById("weight").value;
+	for ( i = 0; i &lt; all.length; i++ ) {
+		all[i].style.fontWeight = weight;
 	}
+}
 	
-	function xLight() {
-		weight.value = 200;
-		change();
-	}</code></pre></div>
+function xLight() {
+	weight.value = 200;
+	change();
+}</code></pre></div>
 </section>
 
 <hr class="center stars" style="margin-top: 2rem;">

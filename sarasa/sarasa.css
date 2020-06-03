@@ -846,6 +846,11 @@ section.characters {
 .flex {
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 0;
+}
+
+.flex label {
+    padding: .33em;
 }
 
 .clear {

@@ -11,6 +11,17 @@ let east = document.getElementsByClassName('east');
 // let all = [].concat(west, east);
 let all = [...west, ...east];
 
+// let weightInput = document.getElementById("weight");
+// let sizeInput = document.getElementById("size");
+
+// weightInput.onPointerDown = change;
+// weightInput.onPointerMove = change;
+// weightInput.onPointerUp = change;
+
+// sizeInput.onPointerDown = changer;
+// sizeInput.onPointerMove = changer;
+// sizeInput.onPointerUp = changer;
+
 function change() {
     let weight = document.getElementById("weight").value;
     for ( i = 0; i < all.length; i++ ) {
