@@ -57,7 +57,7 @@ pre[class*="language-"], textarea.prism-live {
     /* padding: 0 1.25em; */
 }
 
-pre[class*="language-"]:last-child {
+pre[class*="language-"]:last-child, textarea.prism-live {
     padding-bottom: 1rem;
 }
 pre[class*="language-"]:first-child, textarea.prism-live {
