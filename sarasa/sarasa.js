@@ -2,11 +2,11 @@
 
 // document.querySelectorAll('.west')
 
-// let west = document.getElementsByClassName('west');
-// let east = document.getElementsByClassName('east');
+let west = document.getElementsByClassName('west');
+let east = document.getElementsByClassName('east');
 
-let west = document.querySelectorAll('.west');
-let east = document.querySelectorAll('.east');
+// let west = document.querySelectorAll('.west');
+// let east = document.querySelectorAll('.east');
 
 // let all = [].concat(west, east);
 let all = [...west, ...east];
@@ -82,3 +82,6 @@ function slabify() {
     
     }
 }
+
+
+document

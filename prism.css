@@ -159,6 +159,8 @@ pre[class*="language-"] {
 , .keyword-else
 , .keyword-while
 , .keyword-case
+, .keyword-default
+, .keyword-return
 {
 	font-style: italic;
 }
