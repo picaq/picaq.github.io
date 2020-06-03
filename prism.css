@@ -96,6 +96,11 @@ pre[class*="language-"] {
 	 /* #e2777a; */
 }
 
+
+.token.dom.variable {
+	color: var(--lred);
+}
+
 .token.function-name {
 	/* color: #6196cc; */
 	color: var(--blue);
