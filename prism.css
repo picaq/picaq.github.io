@@ -6,19 +6,21 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  * @author Rose Pritchard
  */
 
+ 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #ccc;
-	background: none;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
+	/* color: #ccc; */
+	/* background: none; */
+	/* font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; */
+	/* font-size: 1em; */
 	text-align: left;
-	white-space: pre;
+	/* whitespace pre breaks shit up */
+	/* white-space: pre; */
 	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-
+	/* word-break: normal;
+	word-wrap: normal; */
+	/* line-height: 1.5; */
+	overflow-wrap: break-word;
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
 	tab-size: 4;
@@ -32,15 +34,36 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
+	/* padding: 1em; 
+	margin: .5em 0; */
+	overflow-wrap: break-word;
+	display: block;
+	overflow-x: auto;
+	/* padding: 0.5em; */
+	/* margin: .5em; */
+} 
+
+
+
+pre[class*="language-"] {
+    color: #efdabbde;
+    margin: 0;
+    padding: 0 1.8rem;
+    /* padding: 0 1.25em; */
 }
 
+pre[class*="language-"]:last-child {
+    padding-bottom: 1rem;
+}
+pre[class*="language-"]:first-child {
+    padding-top: 1rem;
+}
+
+/* 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
 	background: #2d2d2d;
-}
+} */
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
@@ -54,22 +77,28 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: #999;
+	/* color: #999; */
+	color: var(--med);
+	font-style: italic;
+	/* opacity: .75; */
 }
 
 .token.punctuation {
-	color: #ccc;
+	/* color: #ccc; */
+	color: var(--slight);
 }
 
 .token.tag,
 .token.attr-name,
 .token.namespace,
 .token.deleted {
-	color: #e2777a;
+	color: var(--orange);
+	 /* #e2777a; */
 }
 
 .token.function-name {
-	color: #6196cc;
+	/* color: #6196cc; */
+	color: var(--blue);
 }
 
 .token.boolean,
@@ -81,8 +110,13 @@ pre[class*="language-"] {
 .token.property,
 .token.class-name,
 .token.constant,
-.token.symbol {
-	color: #f8c555;
+.token.symbol,
+
+.token.property-access
+
+	{
+	color: var(--yellow); 
+	/* #f8c555; */
 }
 
 .token.selector,
@@ -90,7 +124,8 @@ pre[class*="language-"] {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-	color: #cc99cd;
+	/* color: #cc99cd; */
+	color: var(--purple);
 }
 
 .token.string,
@@ -98,20 +133,28 @@ pre[class*="language-"] {
 .token.attr-value,
 .token.regex,
 .token.variable {
-	color: #7ec699;
+	color: var(--teal);
+	/* #7ec699; */
 }
 
 .token.operator,
 .token.entity,
 .token.url {
 	color: #67cdcc;
+	color: var(--blue);
 }
 
 .token.important,
 .token.bold {
 	font-weight: bold;
 }
-.token.italic {
+.token.italic, .token.keyword-for
+/* , [class*="keyword-"] */
+, .keyword-if
+, .keyword-else
+, .keyword-while
+, .keyword-case
+{
 	font-style: italic;
 }
 
@@ -120,7 +163,8 @@ pre[class*="language-"] {
 }
 
 .token.inserted {
-	color: green;
+	/* color: green; */
+	color: var(--green);
 }
 
 pre[class*="language-"].line-numbers {
@@ -142,7 +186,7 @@ pre[class*="language-"].line-numbers > code {
 	left: -3.8em;
 	width: 3em; /* works for line-numbers below 1000 lines */
 	letter-spacing: -1px;
-	border-right: 1px solid #999;
+	border-right: 1px solid var(--slight);
 
 	-webkit-user-select: none;
 	-moz-user-select: none;

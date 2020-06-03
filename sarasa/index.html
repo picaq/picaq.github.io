@@ -152,20 +152,20 @@ pre.hljs code > div {
 	color: #ac86c5;
 }
 
-.hljs {
+/* .hljs {
 	display: block;
 	overflow-x: auto;
 	color: #4d4d4c;
 	padding: 0.5em;
-}
-
+} */
+/* 
 .hljs-emphasis {
 	font-style: italic;
 }
 
 .hljs-strong {
 	font-weight: bold;
-}
+} */
 </style>
 
 
@@ -280,19 +280,19 @@ it fills a niche in the world of sterotypically limited, boring monospace type.
 
 
 <h4>Try it out now!</h4>
-<div contenteditable="true"><pre class="hljs"><code> <span class="hljs-emphasis">/* edit me! */ </span>
-
+<div contenteditable="true"><pre><code class="lang-javascript">/* edit me! */
 
 </code></pre></div>
 <h3 id="latin-demo">Latin Character Demo</h3>
-<div contenteditable="true"><pre class="hljs"><code><span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello World"</span>);
-<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"Olá Mundo"</span>);
+<div contenteditable="true"><pre>
+<code class="lang-javascript">console.log("Hello World");
+document.write("Olá Mundo");
 </code></pre></div>
 <h3 id="cyllic--greekmath-demo">Cyllic + Greek/Math Character Demo</h3>
-<div contenteditable="true"><pre class="hljs"><code><span class="hljs-keyword">print</span> <span class="hljs-string">"Привет мир"</span>;
+<div contenteditable="true"><pre><code class="lang-php">print "Привет мир";
 </code></pre></div>
 <h3 id="asian-language-demo">East Asian (CJK) Charcter Demo</h3>
-<div contenteditable="true"><pre class="hljs"><code><span class="hljs-built_in">echo</span> こんにちは世界
+<div contenteditable="true"><pre><code class="lang-bash">echo こんにちは世界
 </code></pre></div>
 
 <h2 id="programming-language-support">Programming Language Support</h2>
@@ -304,31 +304,51 @@ C, C++, C#, JavaScript, PHP, F#, ML, F*, Haskell, Idris, Elm, PureScript, Swift,
 <!-- <h3 id="list-of-all-supported-programming-languages">list of all supported programming languages</h3> -->
 <h3 id="htmlcssjsphp-demo">html/css/js/php demo</h3>
 <h4 id="html">html</h4>
-<div contenteditable="true"><pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cute home"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"about me"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#about"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"hidem"</span> &gt;</span>Illustration<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<div contenteditable="true"><pre><code class="lang-html">&lt;h1 class="cute home" title="about me"&gt;
+    &lt;a href="#about" id="hidem" &gt;Illustration&lt;/a&gt;
+&lt;/h1&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"search"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"snow-pic-beret.webp"</span>
-         <span class="hljs-attr">onerror</span>=<span class="hljs-string">"this.onerror=null; this.src='snow-pic-beret.png'"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"person with green beret and silly face"</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cute plane"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#projects"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"showp"</span>&gt;</span>Projects<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+&lt;img id="search" src="snow-pic-beret.webp"
+         onerror="this.onerror=null; this.src='snow-pic-beret.png'" alt="person with green beret and silly face"&gt;
+&lt;h2 class="cute plane"&gt;&lt;a href="#projects" id="showp"&gt;Projects&lt;/a&gt;&lt;/h2&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cute kite"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#gallery"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"showg"</span>&gt;</span>Gallery<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+&lt;h2 class="cute kite"&gt;&lt;a href="#gallery" id="showg"&gt;Gallery&lt;/a&gt;&lt;/h2&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#contact"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cute bird"</span>&gt;</span>Contact Me!<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+&lt;a href="#contact" class="cute bird"&gt;Contact Me!&lt;/a&gt;
 </code></pre></div>
 <h4 id="css">css</h4>
-<div contenteditable="true"><pre class="hljs"><code><span class="hljs-selector-tag">html</span>, <span class="hljs-selector-tag">body</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#343233</span>;
-    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'Sarasa Mono HC'</span>, <span class="hljs-string">'Sarasa Mono J'</span>, <span class="hljs-string">'Sarasa Mono K'</span>, monospace;
-    <span class="hljs-attribute">color</span>: <span class="hljs-number">#efdabb</span>;
+<div contenteditable="true"><pre><code class="lang-css">html, body {
+    background-color: #343233;
+    font-family: 'Sarasa Mono HC', 'Sarasa Mono J', 'Sarasa Mono K', monospace;
+    color: #efdabb;
 }
 
-<span class="hljs-selector-tag">h1</span> {
-    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-number">#78af9f</span>;
+h1 {
+    font-weight: 300;
+    color: #78af9f;
 }
 </code></pre></div>
 
+
+<h4 id="js">javascript</h4>
+<div contenteditable="true"><pre><code class="lang-javascript">let west = document.querySelectorAll('.west');
+	let east = document.querySelectorAll('.east');
+	
+	// let all = [].concat(west, east);
+	let all = [...west, ...east];
+	
+	function change() {
+		let weight = document.getElementById("weight").value;
+		for ( i = 0; i < all.length; i++ ) {
+		  all[i].style.fontWeight = weight;
+		}
+	}
+	
+	function xLight() {
+		weight.value = 200;
+		change();
+	}
+</code></pre></div>
 
 
 <section id="languages">
