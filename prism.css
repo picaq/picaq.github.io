@@ -64,7 +64,7 @@ pre[class*="language-"]:first-child, textarea.prism-live {
     padding-top: 1rem;
 }
 
-/* importants necessary */
+/* importants necessary finally fixed */
 textarea.prism-live {
 	max-width: 100% !important;
 	white-space: pre-wrap !important;
