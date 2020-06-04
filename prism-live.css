@@ -10,6 +10,7 @@ pre.prism-live {
 	/* padding: .2rem 2rem; */
 	box-sizing: border-box;
 	/* margin: 0; */
+	font-size: inherit;
 }
 
 textarea.prism-live {
@@ -37,6 +38,7 @@ textarea.prism-live {
 	textarea.prism-live {
 		color: inherit;
 		-webkit-text-fill-color: transparent;
+
 	}
 }
 
