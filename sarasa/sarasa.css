@@ -421,6 +421,63 @@ blockquote > p::after {
     
 }
 
+
+/* .code [contenteditable] {
+    position: relative;
+} */
+
+[contenteditable][title]::before {
+    /* content: "JavaScript"; */
+    font-size: 1rem;
+    text-align: right;
+    position: absolute;
+    right: 2.25rem;
+    z-index: 5;
+    color: var(--med);
+    /* font-weight: 300; */
+    transform: translateY(-1.04rem);
+    text-shadow: .05rem .08rem .2rem #312f30, 0 0 .1rem #312f30,  0 0 .2rem #312f30,  0 0 .4rem #312f30,  .1rem .1rem .1rem #312f30;
+
+}
+
+        /* 53rem = body max-width + 2x padding */
+@media only screen and (min-width: 53.25rem) {
+    [contenteditable][title]::before {
+        right: calc( 50vw - 24.75rem )
+    }
+    
+}
+
+/* textarea:hover [contenteditable][title]::before {
+    opacity: .8;
+} */
+
+[title="JavaScript"]::before {
+    content: "JavaScript";
+}
+
+[title="php"]::before {
+    content: "php";
+    font-style: italic;
+}
+
+[title="HTML"]::before {
+    content: "HTML";
+}
+
+[title="CSS"]::before {
+    content: "CSS";
+}
+
+[title="bash"]::before {
+    content: "bash";
+}
+
+[title="python"]::before {
+    content: "python";
+}
+
+
 ul:not(.lang) > li::before, li > li::before {
     content: "★";
     position: relative;
@@ -739,7 +796,6 @@ div > div {
         max-width: 16rem;
     }
 
-    
 }
 
 
