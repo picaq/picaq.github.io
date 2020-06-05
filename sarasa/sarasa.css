@@ -452,28 +452,28 @@ blockquote > p::after {
     opacity: .8;
 } */
 
-[title="JavaScript"]::before {
+[class="JavaScript"]::before {
     content: "JavaScript";
 }
 
-[title="php"]::before {
+[class="php"]::before {
     content: "php";
     font-style: italic;
 }
 
-[title="HTML"]::before {
+[class="HTML"]::before {
     content: "HTML";
 }
 
-[title="CSS"]::before {
+[class="CSS"]::before {
     content: "CSS";
 }
 
-[title="bash"]::before {
+[class="bash"]::before {
     content: "bash";
 }
 
-[title="python"]::before {
+[class="python"]::before {
     content: "python";
 }
 
