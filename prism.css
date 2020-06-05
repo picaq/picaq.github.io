@@ -64,7 +64,8 @@ pre[class*="language-"]:first-child, textarea.prism-live {
 }
 
 [contenteditable][title]::after {
-	content: "\A " ;
+	content: "\A  " ;
+	display: inline;
 }
 
 
