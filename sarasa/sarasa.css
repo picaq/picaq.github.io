@@ -503,7 +503,7 @@ li li::before  {
 }
 
 li li li::before  {
-    content: "★" !important;
+    content: "✮" !important;
 }
 
 ul:not(.lang) li, li > ul {
