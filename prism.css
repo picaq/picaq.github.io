@@ -48,9 +48,6 @@ pre[class*="language-"] {
 	/* margin: .5em; */
 } 
 
-[contenteditable][title] {
-	padding-bottom: 1.25em;
-}
 
 pre[class*="language-"], textarea.prism-live {
     /* color: #efdabbde; */
@@ -59,12 +56,22 @@ pre[class*="language-"], textarea.prism-live {
     /* padding: 0 1.25em; */
 }
 
-pre[class*="language-"]:last-child {
-    padding-bottom: 1rem;
+pre[class*="language-"]:last-child, textarea.prism-live {
+	padding-bottom: 1rem;
 }
 pre[class*="language-"]:first-child, textarea.prism-live {
     padding-top: 1rem;
 }
+
+[contenteditable][title]::after {
+	content: "\A " ;
+}
+
+
+[contenteditable][title] {
+	padding-bottom: 0;
+}
+
 
 /* importants necessary finally fixed */
 textarea.prism-live {
