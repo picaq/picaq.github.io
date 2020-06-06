@@ -68,3 +68,7 @@ pre.prism-live {
 	pre.prism-live > code:empty::before {
 		content: " "
 	}
+
+.prism-live {
+    overflow-x: hidden !important
+}
