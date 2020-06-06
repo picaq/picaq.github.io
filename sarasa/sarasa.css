@@ -827,6 +827,10 @@ div > div {
     font-weight: 600;
 }
 
+._700 {
+    font-weight: 700;
+}
+
 datalist, form {
     /* display: inline; */
     font-size: 1rem;

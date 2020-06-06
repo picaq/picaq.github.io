@@ -24,8 +24,20 @@ let all = [...west, ...east];
 
 function change() {
     let weight = document.getElementById("weight").value;
+    let weighted;
+
+    if ( weight === "500" ) {
+        weighted = "600";
+    }
+    else if ( weight === "600" ) {
+        weighted = "700";
+    }
+    else {
+        weighted = weight;
+    }
+
     for ( i = 0; i < all.length; i++ ) {
-      all[i].style.fontWeight = weight;
+      all[i].style.fontWeight = weighted;
     }
 }
 
