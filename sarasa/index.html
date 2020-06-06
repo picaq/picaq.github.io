@@ -426,13 +426,13 @@ function xLight() {
 		<form id="glyphs">
 			<div>
 				<label for="weight" class="_200" onclick="xLight()">ExtraLight</label>
-				<input id="weight" name="weight" onpointerdown="change()" onpointermove="change()" onpointerup="change()" onclick="change()" onkeyup="change()" onkeydown="change()" type="range" min="200" max="600" step="100" value="300" list="tickmarks">
+				<input id="weight" name="weight" oninput="change()" type="range" min="200" max="600" step="100" value="300" list="tickmarks">
 				<label for="weight" class="_600" onclick="bold()">Bold</label>
 			</div>
 			<div>
 				<div>
 					<label for="size" onclick="halfRem()">0.5 rem</label>
-					<input id="size" name="size" onpointerdown="changer()" onpointermove="changer()" onpointerup="changer()" onclick="changer()" onkeyup="changer()" onkeydown="changer()" type="range" min=".5" max="5" step=".25" value="2" list="tickmarks">
+					<input id="size" name="size" oninput="changer()" type="range" min=".5" max="5" step=".25" value="2" list="tickmarks">
 					<label for="size" onclick="fiveRem()">5 rem</label>
 				</div>
 				<div class="flex">
