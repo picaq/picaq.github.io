@@ -28,6 +28,7 @@
     .dark {color: var(--dark)}
     .light {color: var(--light)}
     .med {color: var(--med)}
+    .slight {color: var(--slight)}
 
 
 /* hide animation */
@@ -929,4 +930,8 @@ section.characters {
 
 .italic {
     font-style: italic;
+}
+
+footer p {
+    padding-bottom: .5rem;
 }
