@@ -953,7 +953,8 @@ input[type="range"] {
     color: transparent;
 }
 
-label:hover ~ .hide, input:hover ~ .hide {
+label:hover ~ .hide, input:hover ~ .hide, 
+input:checked ~ .hide {
     /* display: hidden; */
     display: block;
 }
