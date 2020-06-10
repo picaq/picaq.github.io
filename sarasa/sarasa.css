@@ -953,5 +953,6 @@ input[type="range"] {
 }
 
 label:hover ~ .hide, input:hover ~ .hide {
-    display: hidden;
+    /* display: hidden; */
+    display: block;
 }
