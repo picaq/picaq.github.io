@@ -935,3 +935,9 @@ section.characters {
 footer p {
     padding-bottom: .5rem;
 }
+
+/* chrome input tickmarks */
+
+input[type="range"] {
+    color: var(--slight) !important;
+    }
