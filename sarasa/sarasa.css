@@ -947,12 +947,12 @@ input[type="range"] {
     position: fixed;
     margin: auto auto;
     padding: 0;
-    z-index: 10;
+    z-index: -10;
     left: 50vw;
     top: 50vh;
 }
 
 label:hover ~ .hide, input:hover ~ .hide {
-    display: hidden;
-    /* display: block; */
+    /* display: hidden; */
+    display: block;
 }
