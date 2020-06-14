@@ -11,6 +11,7 @@ pre.prism-live {
 	box-sizing: border-box;
 	/* margin: 0; */
 	font-size: inherit;
+	
 }
 
 textarea.prism-live {
@@ -28,8 +29,10 @@ textarea.prism-live {
 	outline: none;
 	background: transparent;
 	resize: none;
-	--selection-background: hsl(320, 80%, 25%);
-	--selection-color: hsla(0, 0%, 100%, .8);
+	/* --selection-background: hsl(320, 80%, 25%); */
+	--selection-background: #659cc822;
+	/* --selection-color: hsla(0, 0%, 100%, .8); */
+	--selection-color: rgba(255, 255, 255, 0.3);
 	overflow-wrap: anywhere;
 	text-overflow: clip;
 

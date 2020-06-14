@@ -82,7 +82,12 @@ textarea.prism-live {
 	line-height: 1.36em !important;
 	overflow: hidden;
 }
+@-moz-document url-prefix() { 
+	textarea.prism-live {
+		line-height: 1.358em !important;	
+	}
 
+}
 /* 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
