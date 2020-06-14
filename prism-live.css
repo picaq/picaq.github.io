@@ -37,8 +37,10 @@ textarea.prism-live {
 @-moz-document url-prefix() { 
 	textarea.prism-live {
 		padding-bottom: 0;
-		max-width: calc(100% - 0.042em);
+
 	}
+	code.prism-live[class*="language"] {
+		margin-right: 0.042em;
   }
 @supports (not (caret-color: black)) and (-webkit-text-fill-color: black) {
 	textarea.prism-live {
