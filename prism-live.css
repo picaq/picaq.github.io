@@ -21,7 +21,7 @@ textarea.prism-live {
 	height: 100%;
 	z-index: 1;
 	color: transparent;
-	/* color: hsla(0,0%,50%,.4); */
+	color: hsla(0,0%,50%,.4);
 	cursor: text;
 	white-space: pre;
 	border: 0;
@@ -31,9 +31,15 @@ textarea.prism-live {
 	--selection-background: hsl(320, 80%, 25%);
 	--selection-color: hsla(0, 0%, 100%, .8);
 	overflow-wrap: anywhere;
-    text-overflow: clip;
-}
+	text-overflow: clip;
 
+}
+@-moz-document url-prefix() { 
+	textarea.prism-live {
+		padding-bottom: 0;
+		max-width: calc(100% - 0.042em);
+	}
+  }
 @supports (not (caret-color: black)) and (-webkit-text-fill-color: black) {
 	textarea.prism-live {
 		color: inherit;
