@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Display|Libre+Caslon+Text:400,400i,700&display=swap');
+
+html {
+    background: #131313;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    color: #dddddd
+}
+
+
+body {
+    font-family: 'Libre Caslon Text','Adobe Caslon Pro', 'Times New Roman', Times, serif;
+    font-size: 1em;
+    line-height: 1.75em;
+}
+
+.blue {
+    background-image: url(lightblue.jpg);
+}
+
+.gold {
+    background-image: url(lightgold.jpg);
+}
+
+header, main, footer {
+    max-width: 44em;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: center;
+    opacity: .9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Caslon Display', 'Libre Caslon Text','Adobe Caslon Pro','Times New Roman', Times, serif;
+    opacity: .77;
+}
+
+h2 {text-align: center;}
+
+em  {font-family: 'Libre Caslon Text','Times New Roman', Times, serif;}
+
+label:hover {cursor: pointer;}
+
+label {
+    font-size: 1.2rem;
+    display: block;
+    padding: .5em;
+    border-radius: .7em;
+    background-position: 6em;
+    box-shadow: 1px 2px 7px rgba(14, 14, 94, 0.415);
+    margin: .5em .75em;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+input[name="timeClock"], label[for*="show"] {display: none}
+label {color: #bbbbbb}
+label:nth-of-type(4) {color: yellowgreen}
+label:nth-of-type(n + 5) {color: rgb(88, 228, 151)}
+label:nth-of-type(n + 7) {color: rgb(94, 193, 223)}
+
+input[type="radio"] {visibility: hidden;}
+
+#timeNow {
+    padding-left: .85em;
+    opacity: 1;
+    color: rgb(150, 179, 231);
+
+}
+
+.smallcaps, .sleepTime {font-variant: small-caps;}
+
+.oldstyle {font-variant-numeric: oldstyle-nums;}

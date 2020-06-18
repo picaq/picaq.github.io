@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="rgb(48, 62, 88)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SleepyTime PWA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="app.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="launcher-icon-192.png">
+
+</head>
+<!-- <body onLoad="showTheTime();"> -->
+<body>
+    <header>
+        <h1>SleepyTime</h1>
+    </header>
+    
+    <main>
+        <h2 id="timeNow" class="oldstyle smallcaps">time</h2>
+
+
+         <p>
+5&thinsp;&ndash;&thinsp;6 cycles is ideal
+        </p> 
+        <h2>Pick a Wake Time:</h2>
+        <form>
+                <!-- <label class="blue" onClick="change(this.className);"><input type="radio" name="text" value="blue" > Blue </label>
+                
+                <label class="gold" onClick="change(this.className);"><input type="radio" name="text" value="gold"> Gold </label> -->
+                <label><input type="radio" name="text" value="1" > <span id="sleepTime" class="sleepTime">viktor</span> </label>
+
+                <label><input type="radio" name="text" value="2" > <span id="sleepTime2" class="sleepTime">victor</span> </label>
+
+                <label><input type="radio" name="text" value="3" > <span id="sleepTime3" class="sleepTime">victor</span> </label>
+
+                <label><input type="radio" name="text" value="4" > <span id="sleepTime4" class="sleepTime">victor</span> </label>
+
+                <label><input type="radio" name="text" value="5" > <span id="sleepTime5" class="sleepTime">victor</span> </label>
+
+                <label><input type="radio" name="text" value="6" > <span id="sleepTime6" class="sleepTime">victor</span> </label>
+
+                <label><input type="radio" name="text" value="7" > <span id="sleepTime7" class="sleepTime">victor</span> </label>
+                
+                <label><input type="radio" name="text" value="8" > <span id="sleepTime8" class="sleepTime">victor</span> </label>
+
+                <input type="radio" name="timeClock" id="show24"><label for="show24"> 24 hr</label>
+
+                <input type="radio" name="timeClock" id="show12" checked><label for="show12">am/pm</label>
+                
+        </form>
+
+    </main>
+    <script src="main.js"></script>
+    <script src="time.js"></script>
+    <script>
+        function change(color){
+            document.getElementsByTagName("html")[0].className = color;
+        }
+
+
+
+        
+    </script>
+</body>
+</html>
