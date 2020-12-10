@@ -446,8 +446,14 @@ blockquote > p::after {
     [contenteditable][title]::before {
         right: calc( 50vw - 24.75rem )
     }
+
+    #ligature-change [contenteditable][title]::before {
+        right: 2.25rem;
+    }
     
 }
+
+
 
 /* textarea:hover [contenteditable][title]::before {
     opacity: .8;
