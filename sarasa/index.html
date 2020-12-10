@@ -99,6 +99,15 @@ pre code {
 	page-break-after: always;
 }
 
+
+.no-lig, .no-lig code[class*="language-"], no-lig pre[class*="language-"] {
+	/* font-variant-ligatures: no-common-ligatures !important; */
+	font-variant-ligatures: none;
+	font-feature-settings: "liga" 0;
+}
+
+
+
 </style>
 
 </head>
@@ -441,7 +450,7 @@ function xLight() {
 			</div>
 			<div>
 				<div>
-					<label for="size" onclick="halfRem()"small</label>  <!-- 0.5 rem -->
+					<label for="size" onclick="halfRem()"> small </label>  <!-- 0.5 rem -->
 					<input id="size" name="size" oninput="changer()" type="range" min=".5" max="5" step=".25" value="2" list="tickmarks">
 					<label for="size" onclick="fiveRem()">Big</label>  <!-- 5 rem -->
 				</div>
@@ -501,11 +510,11 @@ abcdefghijklmnopqrstuvwxyz</p>
 </section>
 <section>
 <h3 id="chinese">Chinese</h3>
-<p class="east">一二三四五六七八九十百千萬上中下左右大小春夏秋冬東金木水火土天地日月星黑白紅橙黃綠孝仁愛信義和平子曰父母兄弟夫婦君臣馬牛羊雞犬豕喜怒哀懼見聞聲貝車雨赤青言語魚鳥羽電不乃之乎人以為燕當相知石祖禮稷稻穀絲綱習老者而能讓貴身近運過非革音</p>
+<p class="east">一二三四五六七八九十百千萬上中下冬東金木黑白紅橙黃綠孝仁愛信義和平子曰父母兄哀懼見聞聲貝車雨赤不乃之乎人以為相知石禮稷稻穀絲綱老者而運過非革音</p>
 </section>
 <section>
 <h3 id="korean">Korean</h3>
-<p class="east">가개갸거게겨고긔기나내냐너네녀노뇌놰뇨누뉘눼뉴느늬니다대댜더데뎌도되돼됴디라래랴러레려로뢰뢔료루튀퉤튜트틔퍼페펴포푀퐤표푸퓌풰퓨프픠해햐허헤혀호회훼휴흐희히</p>
+<p class="east">가개갸거게겨고긔기나내너네녀노뇌놰뇨누뉘눼늬니다대댜더데뎌도되돼됴디라래랴러레려로뢰뢔료루튀퉤튜트틔퍼페펴포푀퐤표푸퓌풰퓨프픠해햐허헤혀호회훼휴흐희히</p>
 </section>
 <section id="ligature-change">
 <h3 id="programming-ligatures">programming ligatures <label for="ligature"><em style="font-size: smaller; color: var(--light); font-weight: 300;"> toggle</em>
@@ -514,9 +523,12 @@ abcdefghijklmnopqrstuvwxyz</p>
 
 
 
-<div contenteditable="false" title="" class="JavaScript"><pre class="prism-live"><code class="prism-live lang-javascript">allCities.forEach(object => object.country === "United States" ? 
-	console.log(object.cityName + " is in the United States") 
-	: console.log(object.cityName + " is in another country"));</code></pre></div>
+<div contenteditable="false" title="" class="JavaScript"><pre class="prism-live"><code class="prism-live lang-javascript">let cityCount = function(cities, minPopulation, maxPopulation) {
+	let count = 0;
+	cities.forEach( object => object.population &lt;= maxPopulation && object.population >= minPopulation ? count++ : count );
+	return count;
+}
+cityCount(allCities, 1234, 1234567);</code></pre></div>
 </section>
 
 </div>
