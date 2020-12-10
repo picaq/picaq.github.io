@@ -89,6 +89,7 @@ function italicize() {
     }
 }
 
+
 function slabify() {
     let family = document.getElementById("slab");
     if (family.checked === true) {
@@ -107,3 +108,17 @@ function slabify() {
 }
 
 
+function ligature() {
+    let lig = document.getElementById("ligature-change");
+    let ligc = document.getElementById("ligature");
+    if (ligc.checked === true) {
+        // all[i].style.fontStyle = "italic";
+        lig.classList.remove('no-lig');
+        // italicStore = true;
+    }
+    else if (ligc.checked === false) {
+        // all[i].style.fontStyle = "regular";
+        lig.classList.add('no-lig');
+        // italicStore = false;
+    }
+}
