@@ -1,0 +1,3 @@
+[submodule "kimcheese"]
+	path = kimcheese
+	url = https://github.com/picaq/recipe-page.git
