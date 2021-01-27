@@ -7,3 +7,6 @@
 [submodule "bootstrap"]
 	path = bootstrap
 	url = https://github.com/picaq/bootstrap-4.git
+[submodule "kimcheese-boots"]
+	path = kimcheese-boots
+	url = https://github.com/picaq/recipe-page.git
