@@ -10,3 +10,6 @@
 [submodule "kimcheese-boots"]
 	path = kimcheese-boots
 	url = https://github.com/picaq/recipe-page.git
+[submodule "portfolio"]
+	path = portfolio
+	url = https://github.com/picaq/portfolio-website.git
