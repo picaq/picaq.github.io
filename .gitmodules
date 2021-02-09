@@ -13,3 +13,6 @@
 [submodule "portfolio"]
 	path = portfolio
 	url = https://github.com/picaq/portfolio-website.git
+[submodule "JS+HTML-Games"]
+	path = JS+HTML-Games
+	url = https://github.com/picaq/JS-HTML-Games.git
