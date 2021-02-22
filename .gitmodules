@@ -16,3 +16,6 @@
 [submodule "JS+HTML-Games"]
 	path = JS+HTML-Games
 	url = https://github.com/picaq/JS-HTML-Games.git
+[submodule "eventonica"]
+	path = eventonica
+	url = https://github.com/picaq/eventonica.git
