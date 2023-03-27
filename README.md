@@ -1,11 +1,3 @@
-<style>
-html {
-  background: #131313
-}
-
-</style>
-
-
 # picaq.github.io
 Mandy is hosting stuff
 
@@ -18,3 +10,6 @@ This is my github pages repo. It mainly houses the code for [Sarasa Gothic Mono]
 
 ## [repo homepage](https://github.com/picaq)
 ## [my gists](https://gist.github.com/picaq)
+
+
+<link rel="stylesheet" href="readme.css">
