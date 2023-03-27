@@ -1,5 +1,13 @@
+<style>
+html {
+  background: #131313
+}
+
+</style>
+
+
 # picaq.github.io
-hosting stuff
+Mandy is hosting stuff
 
 This is my github pages repo. It mainly houses the code for [Sarasa Gothic Mono](https://picaq.github.io/sarasa/) typography specimen, but also submodules of the latest stable commits of some pure vanilla html/css/js projects.
 
