@@ -9,7 +9,8 @@ This is my github pages repo. It mainly houses the code for [Sarasa Gothic Mono]
   - [KimCheese Recipe + bootstrap](https://picaq.github.io/kimcheese-boots/)
 - ~~[WIP/abandoned portfolio page](https://picaq.github.io/portfolio/)~~
 
-## [repo homepage](https://github.com/picaq)
+## [repository page](https://github.com/picaq/picaq.github.io)
+## [my github profile](https://github.com/picaq/)
 ## [my gists](https://gist.github.com/picaq)
 
 
