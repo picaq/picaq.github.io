@@ -212,19 +212,21 @@ p, li {
    opacity: 1;         /* Not the hovered one */
 }
 
-.lang li:nth-child(5n):hover, .lang li:nth-child(5n):hover ~ li:nth-child(5n) {
+/* colors */
+
+.lang li:nth-child(5n):hover, .lang li:nth-child(5n):hover ~ li:nth-child(5n), .lang li:nth-child(5n):has(~ li:nth-child(5n):hover) {
     color: var(--teal)
 }
-.lang li:nth-child(5n+1):hover, .lang li:nth-child(5n+1):hover ~ li:nth-child(5n+1) {
+.lang li:nth-child(5n+1):hover, .lang li:nth-child(5n+1):hover ~ li:nth-child(5n+1), .lang li:nth-child(5n+1):has(~ li:nth-child(5n+1):hover)  {
     color: var(--purple)
 }
-.lang li:nth-child(5n+2):hover, .lang li:nth-child(5n+2):hover ~ li:nth-child(5n+2)  {
+.lang li:nth-child(5n+2):hover, .lang li:nth-child(5n+2):hover ~ li:nth-child(5n+2), .lang li:nth-child(5n+2):has(~ li:nth-child(5n+2):hover)   {
     color: var(--orange)
 }
-.lang li:nth-child(5n+3):hover, .lang li:nth-child(5n+3):hover ~ li:nth-child(5n+3)  {
+.lang li:nth-child(5n+3):hover, .lang li:nth-child(5n+3):hover ~ li:nth-child(5n+3), .lang li:nth-child(5n+3):has(~ li:nth-child(5n+3):hover)  {
     color: var(--yellow)
 }
-.lang li:nth-child(5n+4):hover, .lang li:nth-child(5n+4):hover ~ li:nth-child(5n+4)  {
+.lang li:nth-child(5n+4):hover, .lang li:nth-child(5n+4):hover ~ li:nth-child(5n+4), .lang li:nth-child(5n+4):has(~ li:nth-child(5n+4):hover)   {
     color: var(--lred)
 }
 
