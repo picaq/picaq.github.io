@@ -280,7 +280,7 @@ h2, h3, h4, h5 {
     margin-right: -1.35rem;
     margin-left: .15rem;
     overflow-wrap: break-word;
-    transition: font-weight .2s ease;
+    transition: font-weight .22s ease, font-size .24s ease-in-out;
 }
 
 [id$="ligatures" i] + p {
@@ -855,6 +855,7 @@ datalist, form {
 
 label {
     vertical-align: top;
+    cursor: pointer;
 }
 
 [onclick] {
