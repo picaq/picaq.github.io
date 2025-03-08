@@ -153,6 +153,7 @@ h1 + p + p {
     margin-right: -90vw;
 }
 
+.stars { z-index: 900;}
 
 p, li {
     line-height: 1.4em;
@@ -363,14 +364,17 @@ blockquote > p::before, blockquote > p::after
     font-weight: bold;
     font-style: normal;
     opacity: .6;
-    color: #d36e2d;
     z-index: -1; 
 }
-blockquote:nth-of-type(2) > p::before, blockquote:nth-of-type(2) > p::after {
+blockquote._1 > p::before, blockquote._1 > p::after {
+    color: #d36e2d;
+}
+
+blockquote._2 > p::before, blockquote._2 > p::after {
     color: #78af9f
 }
 
-blockquote:nth-of-type(3) > p::before, blockquote:nth-of-type(3) > p::after {
+blockquote._3 > p::before, blockquote._3 > p::after {
     color: #dda032
 }
 
