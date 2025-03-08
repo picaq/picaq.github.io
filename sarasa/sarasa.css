@@ -275,18 +275,19 @@ h2, h3, h4, h5 {
     letter-spacing: calc(1em + .5rem) ;
     line-height: calc(1.75em + .85rem) ;
     /* font-weight: 400 ; */
-    font-size: 2rem;
-    font-weight: 300 ;
     margin-right: -1.35rem;
     margin-left: .15rem;
     overflow-wrap: break-word;
+}
+
+[id$="alphabet" i] + p, [id$="alphabet" i] + p + p, [id$="nese" i] + p, [id$="korean" i] + p, [id$="alphabet" i] + p, [id$="ligatures" i] + p,  h2::after, h3::after {
+    font-size: 2rem;
+    font-weight: 300;
     transition: font-weight .22s ease, font-size .24s ease-in-out;
 }
 
 [id$="ligatures" i] + p {
     /* font-size: 1.5rem; */
-    font-size: 2rem;
-    font-weight: 300;
     /* line-height: 2em ; */
     line-height: calc(1.75em + .85rem) ;
 }
@@ -876,6 +877,32 @@ section.characters {
     position: relative;
 }
 
+.characters #characters::after, #characters::before, #human-language-support::after {
+    content: "Abc";
+    color: var(--med);
+    z-index: 1;
+    font-family: 'Sarasa Mono J';
+    font-style: italic;
+    animation-name: spin;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 6;
+    position: absolute;
+    z-index: -12;
+}
+.characters h2#characters::before,  #human-language-support::after {
+    font-family: 'Sarasa Mono Slab K', 'Sarasa Mono Slab J';
+}
+.characters #human-language-support::after {
+    font-style: normal;
+}
+
+@keyframes spin {
+    from { font-weight: 200; }
+    to { font-weight: 700; }
+}
+
 .characters div h3 {
     position: sticky;
     top: 0;
@@ -918,6 +945,10 @@ section.characters {
 
 #glyphs div div {
     margin-left: 0;
+}
+
+.characters p {
+    transform-origin:center center;
 }
 
 .flex {
