@@ -14,8 +14,10 @@ self.addEventListener('install', function(e) {
                 'https://fonts.googleapis.com/css?family=Libre+Caslon+Display|Libre+Caslon+Text:400,400i,700&display=swap',
                 'https://fonts.gstatic.com/s/librecaslondisplay/v1/TuGOUUFxWphYQ6YI6q9Xp61FQzxDRKmzr1lWfxk.woff2',
                 'index.html',
+                'https://picaq.github.io/sarasa/fonts/Sarasa-Mono-J-Regular.woff2',
                 'time.js',
-                'main.js'
+                'main.js',
+
             ]).then(function() {
                 self.skipWaiting();
             });
