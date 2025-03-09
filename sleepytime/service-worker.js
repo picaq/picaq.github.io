@@ -15,6 +15,7 @@ self.addEventListener('install', function(e) {
                 'https://fonts.gstatic.com/s/librecaslondisplay/v1/TuGOUUFxWphYQ6YI6q9Xp61FQzxDRKmzr1lWfxk.woff2',
                 'index.html',
                 'https://picaq.github.io/sarasa/fonts/Sarasa-Mono-J-Regular.woff2',
+                'https://picaq.github.io/sarasa/fonts/Iosevka-Regular.woff2',
                 'time.js',
                 'main.js',
 
