@@ -108,6 +108,8 @@ main {
 
 h1 {
     text-align:center;
+    /* 5.2rem for Sarasa Gothic title */
+    /* font-size: 5.2rem; */
     font-size: 5rem;
     /* font-weight: 200; */
     font-weight: 300;
@@ -121,6 +123,7 @@ h1 + p {
     text-align: right;
     padding: .25em 1.75rem;
     margin-top: 0;
+    white-space: nowrap;
 
 }
 
