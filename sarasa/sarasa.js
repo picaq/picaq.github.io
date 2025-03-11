@@ -1,39 +1,3 @@
-// Register the service worker if available.
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js').then(function(reg) {
-        console.log('Successfully registered service worker', reg);
-    }).catch(function(err) {
-        console.warn('Error whilst registering service worker', err);
-    });
-}
-
-// Set Knockout view model bindings.
-// ko.applyBindings(Page.vm);
-
-window.addEventListener('beforeinstallprompt', (e) => {
-    // Stash the event so it can be triggered later.
-    deferredPrompt = e;
-    // Update UI notify the user they can add to home screen
-    showInstallPromotion();
-  });
-
-  btnAdd.addEventListener('click', (e) => {
-    // hide our user interface that shows our A2HS button
-    btnAdd.style.display = 'none';
-    // Show the prompt
-    deferredPrompt.prompt();
-    // Wait for the user to respond to the prompt
-    deferredPrompt.userChoice
-      .then((choiceResult) => {
-        if (choiceResult.outcome === 'accepted') {
-          console.log('User accepted the A2HS prompt');
-        } else {
-          console.log('User dismissed the A2HS prompt');
-        }
-        deferredPrompt = null;
-      });
-  });
-
 // window.onload = change();
 
 // document.querySelectorAll('.west')
