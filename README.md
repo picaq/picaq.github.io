@@ -17,9 +17,9 @@ This is my github pages repo. It mainly houses the code for [Sarasa Gothic Mono]
 
 ## Not in this repo:
 
-### my personal website (mostly art) [mandychen.art](https://mandychen.art)
+### my personal website ( mostly art ) [mandychen.art](https://mandychen.art)
 ### linkedin [in/mandy-chen-picaq](https://www.linkedin.com/in/mandy-chen-picaq/)
-### codepen (i ❤ css & data viz) [codepen.io/picaq](https://codepen.io/picaq)
+### codepen ( i ♡ css & data viz ) [codepen.io/picaq](https://codepen.io/picaq)
 - [Ceiling light button](https://codepen.io/picaq/pen/RwmQOwZ)
 - [Flexbox footer](https://codepen.io/picaq/pen/NWYObBY)
 - [Hanging Quotes & Typography](https://codepen.io/picaq/pen/PorGQaR)
