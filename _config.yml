@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Mandy writes stuff
+title: Mandy Chen
 email: mandychen.art (@) gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Software engineering, Visual media, Illustration, Musicianship, and Whole food plant-based recipes.
@@ -30,24 +30,40 @@ description: >- # this means to ignore newlines until "baseurl:"
 author: Mandy Chen
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://picaq.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: picaq2
-github_username:  picaq
+# twitter_username: picaq2
+# github_username:  picaq
 # Color scheme supports "light" (default) and "dark"
 # color_scheme: dark
 
 
 # Build settings
 # theme: minima
-nav_external_links:
-  - name: "Twitter"
-    url: "https://twitter.com/your_handle"
-  - name: "Facebook"
-    url: "https://facebook.com/your_page"
-  - name: "GitHub"
-    url: "https://github.com/your_profile"
+# nav_external_links:
+#   - title: "@picaq"
+#     url: "https://github.com/picaq"
+#     hide_icon: false 
+#     opens_in_new_tab: true 
+#   - title: "in/mandy-chen-picaq"
+#     url: "https://www.linkedin.com/in/mandy-chen-picaq/"
+#     hide_icon: false 
+#     opens_in_new_tab: true 
+#   - title: "x/picaq2"
+#     url: "https://twitter.com/picaq2"
+#     hide_icon: false # set to true to hide the external link icon - defaults to false
+#     opens_in_new_tab: true # set to true to open this link in a new tab - defaults to false
+
 theme: just-the-docs
 plugins:
   - jekyll-feed
+head:
+  custom_css:
+    - assets/css/just-the-docs-custom.css  # Theme will auto-load this
+defaults:
+  - scope:
+      path: "" # All files
+    values:
+      layout: custom-default
+
 
 # Enable or disable the site search
 # Supports true (default) or false
@@ -81,8 +97,7 @@ search:
 
 # Footer content
 # appears at the bottom of every page's main content
-# Note: The footer_content option is deprecated and will be removed in a future major release. Please use `_includes/footer_custom.html` for more robust
-markup / liquid-based content.
+# Note: The footer_content option is deprecated and will be removed in a future major release. Please use `_includes/footer_custom.html` for more robust markup / liquid-based content.
 footer_content: "This site uses <a href='https://github.com/just-the-docs/just-the-docs' target='blank'>Just the Docs</a>, a documentation theme for Jekyll."
 
 # Footer last edited timestamp

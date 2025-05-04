@@ -14,7 +14,6 @@ This Jekyll blog was started to:
 2. post my vegan recipes
 3. migrate [my gists](https://gist.github.com/picaq){:target="_blank"} to a structured, searchable place
 
-
 ## About this Theme
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/){:target="_blank"}
