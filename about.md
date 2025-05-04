@@ -6,6 +6,7 @@ nav_order: 1
 ---
 
 # About this blog
+
 ---
 
 Hello, this is Mandy’s blog. I am a software engineer, graphic designer, illustrator and musician.
