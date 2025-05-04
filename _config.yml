@@ -32,6 +32,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://picaq.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: picaq2
 github_username:  picaq
+# Color scheme supports "light" (default) and "dark"
+# color_scheme: dark
+
 
 # Build settings
 # theme: minima

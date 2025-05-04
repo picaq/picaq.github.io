@@ -1,6 +1,8 @@
 # picaq.github.io
 Mandy is hosting stuff
 
+---
+
 This is my github pages repo. It mainly houses the code for [Sarasa Gothic Mono](https://picaq.github.io/sarasa/) typography specimen, but also submodules of the latest stable commits of some pure vanilla html/css/js projects.
 - [Sarasa Gothic Mono](https://picaq.github.io/sarasa/){:target="_blank"} [source](https://github.com/picaq/picaq.github.io/tree/master/sarasa)
 - [EPA UV Index Chart](https://picaq.github.io/epa-uv/){:target="_blank"} [source](https://github.com/picaq/epa-uv)
