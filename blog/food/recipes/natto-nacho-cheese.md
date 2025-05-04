@@ -1,5 +1,6 @@
 ---
 title: Natto Nacho Cheese
+permalink: food/recipes/natto-nacho-cheese
 parent: Recipes
 nav_order: 5
 ---
