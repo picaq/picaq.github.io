@@ -34,7 +34,7 @@ url: "http://picaq.github.io" # the base hostname & protocol for your site, e.g.
 # github_username:  picaq
 # Color scheme supports "light" (default) and "dark"
 # color_scheme: dark
-color_scheme: foo
+# color_scheme: foo
 
 
 # Build settings
