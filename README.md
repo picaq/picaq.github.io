@@ -5,7 +5,7 @@ Mandy is hosting stuff
 
 This is my github pages repo. It is live here at [picaq.github.io](https://picaq.github.io) and contains my personal jekyll blog! 
 
-The repository itself mainly houses the code for [Sarasa Gothic Mono](https://picaq.github.io/sarasa/) typography specimen, 
+[The repository itself](https://github.com/picaq/picaq.github.io) mainly houses the code for [Sarasa Gothic Mono](https://picaq.github.io/sarasa/) typography specimen, 
 but also submodules of the latest stable commits of some pure vanilla html/css/js projects:
 - [Sarasa Gothic Mono](https://picaq.github.io/sarasa/) [source](https://github.com/picaq/picaq.github.io/tree/master/sarasa)
 - [EPA UV Index Chart](https://picaq.github.io/epa-uv/) [source](https://github.com/picaq/epa-uv)
@@ -13,7 +13,7 @@ but also submodules of the latest stable commits of some pure vanilla html/css/j
 - [SleepyTime](https://picaq.github.io/sleepytime/) [source](https://github.com/picaq/picaq.github.io/tree/master/sleepytime)
 - [Boogle Board Game](https://picaq.github.io/JS+HTML-Games/) [source](https://github.com/picaq/JS-HTML-Games)
 - [KimCheese Recipe](https://picaq.github.io/kimcheese-recipe/) [source](https://github.com/picaq/recipe-page)
-  - [KimCheese Recipe + bootstrap](https://picaq.github.io/kimcheese-boots/)}
+  - [KimCheese Recipe + bootstrap](https://picaq.github.io/kimcheese-boots/)
 - ~~[WIP/abandoned portfolio page](https://picaq.github.io/portfolio/)~~
 
 ### [repository page](https://github.com/picaq/picaq.github.io)

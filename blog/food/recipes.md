@@ -5,4 +5,6 @@ parent: Food
 nav_order: 3
 ---
 
-## How to make food
+# Recipes
+
+Below is a list of my published recipes. For most recipes, a stove is not required.
