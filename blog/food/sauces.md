@@ -5,17 +5,56 @@ permalink: food/sauces
 nav_order: 4
 ---
 
-A collection of plant based sauces & flavorings
+# Sauces & Flavorings
 
-## Sauces
+A collection of my personal favorite sauces & flavorings.
+I will include a link to my preferred brands but not directly to the products (there are multiple sizes).
+Generics, where any brand works, are in lowercase.
+
+## Condiments
 
 ### Salty
 
-- Roland vegan ponzu
+- [Roland](https://rolandfoods.com/){:target="_blank"} Vegan Ponzu Sauce
 - tamari
 - shoyu
-
+- kala namak _aka_ black salt
 
 ### Umami
 
-- nutritional yeast
+- nutritional yeast _aka_ “nooch”
+- miso
+- roasted sesame oil
+- garlic powder
+- [Erewhon](https://erewhon.com/){:target="_blank"} Organic Roasted Peanut Butter
+- [Brooklyn Delhi](https://brooklyndelhi.com/){:target="_blank"} Roasted Garlic Achaar
+- [TRUFF][TRUFF]{:target="_blank"} Spicy Marinara Sauce
+
+### Spicy
+
+I have an infinite spice tolerance. Be warned. 
+
+- [Melinda’s](https://melindas.com/){:target="_blank"} Ghost Pepper Hot Sauce
+- [TRUFF][TRUFF][blank] White Hotter Hot Sauce
+- harissa sauce
+  
+### Acid
+
+This is good for blending with bitter foods such as bitter melon and natto
+
+- rice vinegar
+- yellow mustard
+
+### Sweeteners
+
+- blended deglet dates
+- date syrup
+- dark brown sugar
+- molasses
+- stevia
+- allulose
+- monk fruit
+- Trader Joe’s Marshmallows
+
+
+[TRUFF]: https://www.truff.com/
