@@ -49,7 +49,7 @@ url: "http://picaq.github.io" # the base hostname & protocol for your site, e.g.
 #     hide_icon: false # set to true to hide the external link icon - defaults to false
 #     opens_in_new_tab: true # set to true to open this link in a new tab - defaults to false
 
-# theme: just-the-docs #  for local development only! saved in _config_dev.yml
+theme: just-the-docs #  for local development only! saved in _config_dev.yml
 remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-feed
