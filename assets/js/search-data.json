@@ -8,7 +8,7 @@
   },"1": {
     "doc": "About",
     "title": "Why Jekyll?",
-    "content": "There are many CMS options such as WordPress, Squarespace, Wix, and cooler features if I used React, Laraval or Ruby and Rails. Why Jekyll? . | Static sites are blazing fast | Easy fast and free to deploy | A bunch of documentation and prior discussion | Ruby is a joy to use | . ",
+    "content": "There are many CMS options such as WordPress, Squarespace, Wix, and cooler features if I used React, Laraval or Ruby and Rails. Why Jekyll? . | Static sites are blazing fast | Easy fast and free to deploy | A bunch of documentation and prior discussion | Ruby is a joy to use | . Current build and deployment times are about 1 minute each for a 2 minute pipeline. ",
     "url": "/about#why-jekyll",
     
     "relUrl": "/about#why-jekyll"
@@ -30,45 +30,52 @@
     "doc": "Food",
     "title": "Food",
     "content": "I am eating primarily whole food plant based. Generally, I also exclude coconut oil. I post my daily meals on Plantee (invite only) Recipes and ingredients in what I eat will eventually be found here: . ",
-    "url": "/food",
+    "url": "/blog/food",
     
-    "relUrl": "/food"
+    "relUrl": "/blog/food"
   },"5": {
+    "doc": "Gists",
+    "title": "Gists",
+    "content": "My code snippets are hosted on GitHub’s Gists. I plan to move them here eventually. here is a test gist link https://gist.github.com/picaq/0221ab18f8142ad138199d3e6044ec56 . and embed . 400: Invalid request . ",
+    "url": "/blog/gists",
+    
+    "relUrl": "/blog/gists"
+  },"6": {
     "doc": "Natto Nacho Cheese",
     "title": "Natto Nacho cheese",
     "content": "I made natto nacho cheese here’s the recipe . | 50-60 g natto | 1-2 tbsp nooch | 1-1.5 tbsp cashew butter | rice vinegar | tamari | ponzu | yellow mustard | kala namak (and/or salt) | 0.5-2 tsp garlic powder | white pepper powder | 1-2 tsp miso paste (optional) for more umami | sweetener (optional) (date syrup and/or stevia) | cashew milk (optional) to dilute/thin out the final mixture if it is too thick | . ",
     "url": "/food/recipes/natto-nacho-cheese#natto-nacho-cheese",
     
     "relUrl": "/food/recipes/natto-nacho-cheese#natto-nacho-cheese"
-  },"6": {
+  },"7": {
     "doc": "Natto Nacho Cheese",
     "title": "Natto Nacho Cheese",
     "content": " ",
     "url": "/food/recipes/natto-nacho-cheese",
     
     "relUrl": "/food/recipes/natto-nacho-cheese"
-  },"7": {
+  },"8": {
     "doc": "Recipes",
     "title": "Recipes",
     "content": "Below is a list of my published recipes. For most recipes, a stove is not required. ",
     "url": "/food/recipes",
     
     "relUrl": "/food/recipes"
-  },"8": {
+  },"9": {
     "doc": "Sauces",
     "title": "Sauces &amp; Flavorings",
     "content": "A collection of my personal favorite sauces &amp; flavorings. I will include a link to my preferred brands but not directly to the products (there are multiple sizes). Generics, where any brand works, are in lowercase. ",
     "url": "/food/sauces#sauces--flavorings",
     
     "relUrl": "/food/sauces#sauces--flavorings"
-  },"9": {
+  },"10": {
     "doc": "Sauces",
     "title": "Condiments",
     "content": "Salty . | Roland Vegan Ponzu Sauce | tamari | shoyu | kala namak aka black salt | . Umami . | nutritional yeast aka “nooch” | miso | roasted sesame oil | garlic powder | black garlic | Su Chili Crisp Mala「甦」麻辣辣油 | Erewhon Organic Roasted Peanut Butter | Brooklyn Delhi Roasted Garlic Achaar | TRUFF Spicy Marinara Sauce | . Spicy . I have an infinite spice tolerance. Be warned. | Melinda’s Ghost Pepper Hot Sauce | TRUFF White Hotter Hot Sauce | harissa sauce | | white pepper powder | . Acid . This is good for blending with bitter foods such as bitter melon and natto . | rice vinegar | yellow mustard | . Sweet . | blended deglet dates | date syrup | dark brown sugar | molasses | stevia | allulose | monk fruit | Trader Joe’s Marshmallows | . ",
     "url": "/food/sauces#condiments",
     
     "relUrl": "/food/sauces#condiments"
-  },"10": {
+  },"11": {
     "doc": "Sauces",
     "title": "Sauces",
     "content": " ",
