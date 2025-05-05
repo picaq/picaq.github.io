@@ -42,6 +42,7 @@ I have an infinite spice tolerance. Be warned.
 - [Su](https://www.facebook.com/suspicyoil/) Chili Crisp Mala「甦」麻辣辣油
 - harissa sauce
 - white pepper powder
+- [Huy Fong](https://www.huyfong.com/) Sriracha
   
 ### Acid
 
