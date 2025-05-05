@@ -1,6 +1,6 @@
 ---
 title: Food
-permalink: /food
+permalink: blog/food
 nav_order: 2
 ---
 # Food

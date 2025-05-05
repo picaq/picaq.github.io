@@ -12,8 +12,8 @@ nav_order: 1
 Hello, this is Mandy’s blog. I am a software engineer, graphic designer, illustrator and musician.
 
 This Jekyll blog was started to:
-1. make my [README](/) prettier
-2. post my [vegan recipes](/food/recipes)
+1. make my [README](/#picaqgithubio) prettier
+2. post my [vegan recipes](/blog/food/recipes)
 3. migrate [my gists](https://gist.github.com/picaq) to a structured, searchable place
 4. more to come!
 

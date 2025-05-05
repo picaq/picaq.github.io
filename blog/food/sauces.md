@@ -1,7 +1,7 @@
 ---
 title: Sauces
 parent: Food
-permalink: food/sauces
+permalink: blog/food/sauces
 nav_order: 4
 ---
 

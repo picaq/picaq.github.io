@@ -1,6 +1,6 @@
 ---
 title: Recipes
-permalink: /food/recipes
+permalink: blog/food/recipes
 parent: Food
 nav_order: 3
 ---
