@@ -26,6 +26,8 @@ Generics, where any brand works, are in lowercase.
 - miso
 - roasted sesame oil
 - garlic powder
+- black garlic
+- [Su](https://www.facebook.com/suspicyoil/) Chili Crisp Mala「甦」麻辣辣油
 - [Erewhon](https://erewhon.com/) Organic Roasted Peanut Butter
 - [Brooklyn Delhi](https://brooklyndelhi.com/) Roasted Garlic Achaar
 - [TRUFF][TRUFF] Spicy Marinara Sauce
@@ -35,8 +37,9 @@ Generics, where any brand works, are in lowercase.
 I have an infinite spice tolerance. Be warned. 
 
 - [Melinda’s](https://melindas.com/) Ghost Pepper Hot Sauce
-- [TRUFF][TRUFF][blank] White Hotter Hot Sauce
+- [TRUFF][TRUFF] White Hotter Hot Sauce
 - harissa sauce
+- 
 - white pepper powder
   
 ### Acid
@@ -46,7 +49,7 @@ This is good for blending with bitter foods such as bitter melon and natto
 - rice vinegar
 - yellow mustard
 
-### Sweeteners
+### Sweet
 
 - blended deglet dates
 - date syrup
@@ -55,7 +58,7 @@ This is good for blending with bitter foods such as bitter melon and natto
 - stevia
 - allulose
 - monk fruit
-- Trader Joe’s Marshmallows
+- [Trader Joe’s](https://www.traderjoes.com/) Marshmallows
 
 
 [TRUFF]: https://www.truff.com/
