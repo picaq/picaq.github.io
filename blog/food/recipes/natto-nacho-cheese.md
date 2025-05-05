@@ -8,6 +8,8 @@ tags: [natto, cashew, cheese]
 
 ## Natto Nacho cheese
 
+![image](https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3){: style="float: right; max-width: 50%; border-radius: .33rem;margin-left: 1rem;"}
+
 ### Ingredients
 
 - 50-60 g natto
@@ -33,16 +35,16 @@ tags: [natto, cashew, cheese]
 4. Adjust consistency to desired viscosity by adding cashew milk while stirring.
 
 The resulting texture and color should resemble nacho cheese.
-![image](https://github.com/user-attachments/assets/9658417e-cf49-43bd-8fae-7a2c73e25605)
-![image](https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3)
-
 
 ### How does it compare to regular nacho cheese?
 
 - creamy and slightly sticky just like real nacho cheese
 - you can customize the level of umami
-- doesn’t dry out quickly like nacho cheese, which is reliant on a flour/starchy roux that dries and hardens
+- doesn’t dry out quickly like nacho cheese, where the cheese requires heating to stay melted and the roux dries out and hardens as water evaporates
 - high protein, low-carb and somewhat low fat
 - far less oily: the primary source of oil is from the cashew butter
-- less filler (flour/roux, sodium citrate) means more flavor
+- less filler (flour/roux/starch, sodium citrate) means more flavor
 - can be eaten at room temperature, warmed or chilled
+
+
+<!-- ![image](https://github.com/user-attachments/assets/9658417e-cf49-43bd-8fae-7a2c73e25605){: style="float: right; width: 50%"} -->
