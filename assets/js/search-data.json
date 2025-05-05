@@ -27,55 +27,76 @@
     
     "relUrl": "/about"
   },"4": {
+    "doc": "Bookmarklets",
+    "title": "Bookmarklets",
+    "content": "Most javascript I write are either in the form of bookmarklets. Here is its structure: . javascript: (()=&gt;{ console.log(\"some code here\"); })(); . Here is how to use one . ",
+    "url": "/blog/gists/javascript/bookmarklets",
+    
+    "relUrl": "/blog/gists/javascript/bookmarklets"
+  },"5": {
+    "doc": "Bookmarklets",
+    "title": "Formatting",
+    "content": "Compared to normal javascript, a finished bookmarklet is similar to minified js with all extraneous whitespace characters removed. Therefore, a finished bookmarklet: . | must not contain comments | all lines must end with semi-colons, even after a closing curly bracket } | new-lines, even in constants and in template strings, are interpreted differently so the use of \\n is preferred | it is best to have a readable formatted bookmarklet in addition to the finished minified version | . ",
+    "url": "/blog/gists/javascript/bookmarklets#formatting",
+    
+    "relUrl": "/blog/gists/javascript/bookmarklets#formatting"
+  },"6": {
     "doc": "Food",
     "title": "Food",
     "content": "I am eating primarily whole food plant based. Generally, I also exclude coconut oil. I post my daily meals on Plantee (invite only) Recipes and ingredients in what I eat will eventually be found here: . ",
     "url": "/blog/food",
     
     "relUrl": "/blog/food"
-  },"5": {
+  },"7": {
     "doc": "Gists",
     "title": "Gists",
     "content": "My code snippets are hosted on GitHub’s Gists. I plan to move them here eventually. here is a test gist link https://gist.github.com/picaq/0221ab18f8142ad138199d3e6044ec56 . and embed . 400: Invalid request . ",
     "url": "/blog/gists",
     
     "relUrl": "/blog/gists"
-  },"6": {
+  },"8": {
+    "doc": "JavaScript",
+    "title": "JavaScript",
+    "content": "Most javascript I write are either in the form of bookmarklets or ran directly in the console. ",
+    "url": "/blog/gists/javascript",
+    
+    "relUrl": "/blog/gists/javascript"
+  },"9": {
     "doc": "Natto Nacho Cheese",
     "title": "Natto Nacho cheese",
     "content": "I made natto nacho cheese here’s the recipe . | 50-60 g natto | 1-2 tbsp nooch | 1-1.5 tbsp cashew butter | rice vinegar | tamari | ponzu | yellow mustard | kala namak (and/or salt) | 0.5-2 tsp garlic powder | white pepper powder | 1-2 tsp miso paste (optional) for more umami | sweetener (optional) (date syrup and/or stevia) | cashew milk (optional) to dilute/thin out the final mixture if it is too thick | . ",
     "url": "/blog/food/recipes/natto-nacho-cheese#natto-nacho-cheese",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese#natto-nacho-cheese"
-  },"7": {
+  },"10": {
     "doc": "Natto Nacho Cheese",
     "title": "Natto Nacho Cheese",
     "content": " ",
     "url": "/blog/food/recipes/natto-nacho-cheese",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese"
-  },"8": {
+  },"11": {
     "doc": "Recipes",
     "title": "Recipes",
     "content": "Below is a list of my published recipes. For most recipes, a stove is not required. ",
     "url": "/blog/food/recipes",
     
     "relUrl": "/blog/food/recipes"
-  },"9": {
+  },"12": {
     "doc": "Sauces",
     "title": "Sauces &amp; Flavorings",
     "content": "A collection of my personal favorite sauces &amp; flavorings. I will include a link to my preferred brands but not directly to the products (there are multiple sizes). Generics, where any brand works, are in lowercase. ",
     "url": "/blog/food/sauces#sauces--flavorings",
     
     "relUrl": "/blog/food/sauces#sauces--flavorings"
-  },"10": {
+  },"13": {
     "doc": "Sauces",
     "title": "Condiments",
     "content": "Salty . | Roland Vegan Ponzu Sauce | tamari | shoyu | kala namak aka black salt | . Umami . | nutritional yeast aka “nooch” | miso | roasted sesame oil | garlic powder | black garlic | Su Chili Crisp Mala「甦」麻辣辣油 | Erewhon Organic Roasted Peanut Butter | Brooklyn Delhi Roasted Garlic Achaar | TRUFF Spicy Marinara Sauce | . Spicy . I have an infinite spice tolerance. Be warned. | Melinda’s Ghost Pepper Hot Sauce | TRUFF White Hotter Hot Sauce | harissa sauce | | white pepper powder | . Acid . This is good for blending with bitter foods such as bitter melon and natto . | rice vinegar | yellow mustard | . Sweet . | blended deglet dates | date syrup | dark brown sugar | molasses | stevia | allulose | monk fruit | Trader Joe’s Marshmallows | . ",
     "url": "/blog/food/sauces#condiments",
     
     "relUrl": "/blog/food/sauces#condiments"
-  },"11": {
+  },"14": {
     "doc": "Sauces",
     "title": "Sauces",
     "content": " ",
