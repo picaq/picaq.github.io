@@ -29,7 +29,6 @@ Generics, where any brand works, are in lowercase.
 - roasted sesame oil
 - garlic powder
 - black garlic
-- [Su](https://www.facebook.com/suspicyoil/) Chili Crisp Mala「甦」麻辣辣油
 - [Erewhon](https://erewhon.com/) Organic Roasted Peanut Butter
 - [Brooklyn Delhi](https://brooklyndelhi.com/) Roasted Garlic Achaar
 - [TRUFF][TRUFF] Spicy Marinara Sauce
@@ -40,8 +39,8 @@ I have an infinite spice tolerance. Be warned.
 
 - [Melinda’s](https://melindas.com/) Ghost Pepper Hot Sauce
 - [TRUFF][TRUFF] White Hotter Hot Sauce
+- [Su](https://www.facebook.com/suspicyoil/) Chili Crisp Mala「甦」麻辣辣油
 - harissa sauce
-- 
 - white pepper powder
   
 ### Acid
