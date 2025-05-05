@@ -24,6 +24,8 @@ Generics, where any brand works, are in lowercase.
 
 - nutritional yeast _aka_ “nooch”
 - miso
+- kombu dashi
+- nori
 - roasted sesame oil
 - garlic powder
 - black garlic
@@ -48,6 +50,7 @@ This is good for blending with bitter foods such as bitter melon and natto
 
 - rice vinegar
 - yellow mustard
+- [Choi’s](https://www.choiskimchi.com/) Spicy Napa Kimchi 
 
 ### Sweet
 
