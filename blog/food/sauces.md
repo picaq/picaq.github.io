@@ -37,6 +37,7 @@ I have an infinite spice tolerance. Be warned.
 - [Melinda’s](https://melindas.com/) Ghost Pepper Hot Sauce
 - [TRUFF][TRUFF][blank] White Hotter Hot Sauce
 - harissa sauce
+- white pepper powder
   
 ### Acid
 
