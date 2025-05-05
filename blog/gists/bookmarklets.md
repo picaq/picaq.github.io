@@ -7,7 +7,7 @@ nav_order: 5
 
 # Bookmarklets
 
-Most javascript I write are either in the form of bookmarklets.
+Most javascript I write are in the form of bookmarklets.
 
 Here is its structure:
 
