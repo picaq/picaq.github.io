@@ -15,7 +15,7 @@ Generics, where any brand works, are in lowercase.
 
 ### Salty
 
-- [Roland](https://rolandfoods.com/){:target="_blank"} Vegan Ponzu Sauce
+- [Roland](https://rolandfoods.com/) Vegan Ponzu Sauce
 - tamari
 - shoyu
 - kala namak _aka_ black salt
@@ -26,15 +26,15 @@ Generics, where any brand works, are in lowercase.
 - miso
 - roasted sesame oil
 - garlic powder
-- [Erewhon](https://erewhon.com/){:target="_blank"} Organic Roasted Peanut Butter
-- [Brooklyn Delhi](https://brooklyndelhi.com/){:target="_blank"} Roasted Garlic Achaar
-- [TRUFF][TRUFF]{:target="_blank"} Spicy Marinara Sauce
+- [Erewhon](https://erewhon.com/) Organic Roasted Peanut Butter
+- [Brooklyn Delhi](https://brooklyndelhi.com/) Roasted Garlic Achaar
+- [TRUFF][TRUFF] Spicy Marinara Sauce
 
 ### Spicy
 
 I have an infinite spice tolerance. Be warned. 
 
-- [Melinda’s](https://melindas.com/){:target="_blank"} Ghost Pepper Hot Sauce
+- [Melinda’s](https://melindas.com/) Ghost Pepper Hot Sauce
 - [TRUFF][TRUFF][blank] White Hotter Hot Sauce
 - harissa sauce
   
