@@ -1,19 +1,26 @@
-name: Build and Deploy Jekyll
+# .github/workflows/deploy.yml
+name: Build and Deploy Jekyll Site with Plugins
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main  # or your default branch
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-ruby@v1
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1
+          ruby-version: 3.1  # adjust to your system Ruby if needed
 
       - name: Install dependencies
         run: |
@@ -28,3 +35,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
+          publish_branch: gh-pages
