@@ -11,8 +11,10 @@ but also submodules of the latest stable commits of some pure vanilla html/css/j
 - [EPA UV Index Chart](https://picaq.github.io/epa-uv/) [source](https://github.com/picaq/epa-uv)
 - [Notation Map](https://picaq.github.io/notation-map/) [source](https://github.com/picaq/notation-map)
 - [SleepyTime](https://picaq.github.io/sleepytime/) [source](https://github.com/picaq/picaq.github.io/tree/master/sleepytime)
-- [Boogle Board Game](https://picaq.github.io/JS-HTML-Games/) [source](https://github.com/picaq/JS-HTML-Games)
-- [KimCheese Recipe](https://picaq.github.io/recipe-page/) [source](https://github.com/picaq/recipe-page)
+- [Boogle Board Game](https://picaq.github.io/JS+HTML-Games/) [source](https://github.com/picaq/JS-HTML-Games)
+- [KimCheese Recipe](https://picaq.github.io/kimcheese-recipe/) [source](https://github.com/picaq/recipe-page)
+  - [KimCheese Recipe + bootstrap](https://picaq.github.io/kimcheese-boots/)
+- ~~[WIP/abandoned portfolio page](https://picaq.github.io/portfolio/)~~
 
 ### [repository page](https://github.com/picaq/picaq.github.io)
 ### [my github profile](https://github.com/picaq/)
