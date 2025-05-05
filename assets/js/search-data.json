@@ -29,7 +29,7 @@
   },"4": {
     "doc": "Bookmarklets",
     "title": "Bookmarklets",
-    "content": "Most javascript I write are either in the form of bookmarklets. Here is its structure: . javascript: (()=&gt;{ console.log(\"some code here\"); })(); . Here is how to use one . ",
+    "content": "Most javascript I write are in the form of bookmarklets. Here is its structure: . javascript: (()=&gt;{ console.log(\"some code here\"); })(); . Here is how to use one . ",
     "url": "/blog/gists/javascript/bookmarklets",
     
     "relUrl": "/blog/gists/javascript/bookmarklets"
