@@ -33,6 +33,8 @@ tags: [natto, cashew, cheese]
 4. Adjust consistency to desired viscosity by adding cashew milk while stirring.
 
 The resulting texture and color should resemble nacho cheese.
+![image](https://github.com/user-attachments/assets/9658417e-cf49-43bd-8fae-7a2c73e25605)
+![image](https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3)
 
 
 ### How does it compare to regular nacho cheese?
