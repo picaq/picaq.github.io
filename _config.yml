@@ -58,11 +58,12 @@ plugins:
 head:
   custom_css:
     - assets/css/just-the-docs-custom.css  # Theme will auto-load this
+    - assets/css/just-the-docs-switchable.css
 defaults:
   - scope:
       path: "" # All files
     values:
-      layout: custom-default
+      layout: default
 
 
 # Enable or disable the site search

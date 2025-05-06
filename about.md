@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about
+permalink: /blog
 nav_order: 1
 ---
 
@@ -33,20 +33,21 @@ Current build and deployment times are about 1 minute each for a [2 minute pipel
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
-<!-- - You can find the source code for Minima at GitHub:
+<!-- - Minima at GitHub:
 [jekyll][jekyll-organization] /
 [minima](https://github.com/jekyll/minima) -->
 
-- You can find the source code for Just the Docs at GitHub:
+- Just the Docs at GitHub:
 [just-the-docs][just-the-docs-organization] /
 [just-the-docs](https://github.com/just-the-docs/just-the-docs)
-- You can find the source code for Jekyll at GitHub:
+- Jekyll at GitHub:
 [jekyll][jekyll-organization] /
 [jekyll](https://github.com/jekyll/jekyll)
-- You can find the source code for Mandy’s custom theme at GitHub:
+- Mandy’s custom theme at GitHub:
 [picaq][picaq-org] /
 [picaq.github.io](https://github.com/picaq/picaq.github.io) / [assets/css/just-the-docs-custom.css](https://github.com/picaq/picaq.github.io/blob/master/assets/css/just-the-docs-custom.css)
-
+- Switchable dark/light theme solution thanks to [@Teddy-van-Jerry](https://github.com/Teddy-van-Jerry)<br>
+[Theme Switching Button · Issue #1223 · just-the-docs/just-the-docs](https://github.com/just-the-docs/just-the-docs/issues/1223) 
 
 [jekyll-organization]: https://github.com/jekyll
 [just-the-docs-organization]: https://github.com/just-the-docs
