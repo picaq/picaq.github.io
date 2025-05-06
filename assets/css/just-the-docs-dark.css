@@ -7611,9 +7611,26 @@ div.opaque {
 
 /* debugging */
 /* h1 {color: red !important} */
+:root {
+  --chocolat: #3d2b1d;
+  --ivory: rgb(252, 250, 246);
+}
+
+:root[data-color-scheme=dark], .dark-mode {
+  --color-background: var(--chocolat);
+  --color-foreground: var(--ivory);
+  /* other vars */
+}
+
+:root[data-color-scheme=light], .light-mode {
+  --color-background: var(--ivory);
+  --color-foreground: var(--chocolat);
+  /* other vars */
+}
+
 body {
-  color: #3d2b1d;
-  background-color: rgba(252, 250, 246, 0.965);
+  color: var(--color-foreground);
+  background-color: var(--color-background);
 }
 
 footer ul.nav-list {

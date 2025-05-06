@@ -2,30 +2,30 @@
     "doc": "About",
     "title": "About this blog",
     "content": ". Hello, this is Mandy’s blog. I am a software engineer, graphic designer, illustrator and musician. This Jekyll blog was started to: . | make my README prettier | post my vegan recipes | migrate my gists to a structured, searchable place | more to come! | . ",
-    "url": "/about#about-this-blog",
+    "url": "/blog#about-this-blog",
     
-    "relUrl": "/about#about-this-blog"
+    "relUrl": "/blog#about-this-blog"
   },"1": {
     "doc": "About",
     "title": "Why Jekyll?",
     "content": "There are many CMS options such as WordPress, Squarespace, Wix, and cooler features if I used React, Laraval or Ruby and Rails. Why Jekyll? . | Static sites are blazing fast | Easy fast and free to deploy | A bunch of documentation and prior discussion | Ruby is a joy to use | . Current build and deployment times are about 1 minute each for a 2 minute pipeline. ",
-    "url": "/about#why-jekyll",
+    "url": "/blog#why-jekyll",
     
-    "relUrl": "/about#why-jekyll"
+    "relUrl": "/blog#why-jekyll"
   },"2": {
     "doc": "About",
     "title": "About this Theme",
-    "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . | You can find the source code for Just the Docs at GitHub: just-the-docs / just-the-docs | You can find the source code for Jekyll at GitHub: jekyll / jekyll | You can find the source code for Mandy’s custom theme at GitHub: picaq / picaq.github.io / assets/css/just-the-docs-custom.css | . ",
-    "url": "/about#about-this-theme",
+    "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . | Just the Docs at GitHub: just-the-docs / just-the-docs | Jekyll at GitHub: jekyll / jekyll | Mandy’s custom theme at GitHub: picaq / picaq.github.io / assets/css/just-the-docs-custom.css | Switchable dark/light theme solution thanks to @Teddy-van-Jerry Theme Switching Button · Issue #1223 · just-the-docs/just-the-docs | . ",
+    "url": "/blog#about-this-theme",
     
-    "relUrl": "/about#about-this-theme"
+    "relUrl": "/blog#about-this-theme"
   },"3": {
     "doc": "About",
     "title": "About",
     "content": " ",
-    "url": "/about",
+    "url": "/blog",
     
-    "relUrl": "/about"
+    "relUrl": "/blog"
   },"4": {
     "doc": "Bookmarklets",
     "title": "Bookmarklets",
