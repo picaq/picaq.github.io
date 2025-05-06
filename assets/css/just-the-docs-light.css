@@ -7396,5 +7396,21 @@ footer .nav-list .nav-list-item .nav-list-link {
     display: inline-block;
   }
 }
+/* fine typography headings */
+h1, h2 {
+  transform: translate(-0.028em);
+}
+
+.J {
+  transform: translate(-0.033em);
+}
+
+.B, .D, .E, .F, .H, .K, .L, .N, .P, .R, .T, U {
+  transform: translate(-0.047em);
+}
+
+.A, .I, .M, .S, .V, .W, .X, .Y, .Z {
+  transform: translate(-0.053em);
+}
 
 /*# sourceMappingURL=just-the-docs-light.css.map */
