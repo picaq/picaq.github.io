@@ -49,3 +49,21 @@ footer .nav-list .nav-list-item .nav-list-link {
         display: inline-block;
     }
 }
+
+/* fine typography headings */
+
+h1, h2 {
+    transform: translate(-.028em);
+}
+
+.J  {
+    transform: translate(-.033em);
+}
+
+.B, .D, .E, .F, .H, .K, .L, .N, .P, .R, .T, U  {
+    transform: translate(-.047em);
+}
+
+.A, .I, .M, .S, .V, .W, .X, .Y, .Z  {
+    transform: translate(-.053em);
+}
