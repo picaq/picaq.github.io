@@ -9021,6 +9021,10 @@ html.dark-mode .side-bar + .main .main-header {
 }
 
 /* debugging */
+:root {
+  --debugging-color: rgba(255, 192, 203, 0.296);
+}
+
 /* h1 {color: red !important} */
 /* typography */
 footer ul.nav-list, html.dark-mode footer ul.nav-list {
@@ -9129,12 +9133,32 @@ h1 {
   position: relative;
   right: 1.8rem;
   top: 0;
-  padding: 0.33rem;
+  padding: 0.53rem;
+  border-radius: 33%;
 }
 
 .dark-mode #theme-toggle::before {
   content: "🔅";
   content: "🔆";
+}
+
+.site-title {
+  margin-right: 2.2rem;
+  padding-right: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.dark-mode .site-title:hover, .site-title:hover {
+  background-image: none !important;
+  opacity: 0.92;
+}
+
+.site-header {
+  transition: background-color 0.17s ease-in-out;
+}
+
+.dark-mode .site-header:has(:hover), .site-header:has(:hover) {
+  background-color: hsla(223, 61%, 69%, 0.06);
 }
 
 /*# sourceMappingURL=just-the-docs-light.css.map */
