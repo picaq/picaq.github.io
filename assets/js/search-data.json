@@ -83,41 +83,90 @@
     
     "relUrl": "/blog/gists/javascript"
   },"12": {
+    "doc": "Math & Number",
+    "title": "Math &amp; Number Manipulations",
+    "content": ". | Math &amp; Number Manipulations . | Arithmatic . | factorial | factorial big int | product | split num into arr of digits | sum | randomize | print natural countdown in the console | . | Time conversions . | convert HHMMSS to seconds | convert seconds To HHMMSS | . | Phone Number format . | digits to phone number format and back | . | Currency conversions | Binary &amp; Ascii math . | ascii | integer to binary and back | xor encryption to hex and back | . | . | . ",
+    "url": "/blog/gists/javascript/math#math--number-manipulations",
+    
+    "relUrl": "/blog/gists/javascript/math#math--number-manipulations"
+  },"13": {
+    "doc": "Math & Number",
+    "title": "Arithmatic",
+    "content": "Math JS . factorial . const bang = n =&gt; { if ( n &lt; 2 ) return 1; let fact = 1, i = 2; while (i &lt;= n) {fact*=i; i++}; return fact; } . factorial big int . const bigBang = n =&gt; { if ( n &lt; 2n ) return 1n; let fact = 1n, i = 2n; while (i &lt;= n) {fact*=i; i++}; return fact; } . product . arr.reduce((a, b) =&gt; a * b, 1); . split num into arr of digits . const digitize = int =&gt; { let number = parseInt(int); let sum = 10; let arr = []; while (number &gt; 0) { val = number % 10; sum += val; arr.push(val); number = (number - val) / 10; } console.log(sum); return arr.reverse(); } . sum . arr.reduce((a, b) =&gt; a + b, 0); // slow, iterative sum of 1 + 2 + 3 ... + n of known n O(n) const sum = (n) =&gt; { let val = 0; while (n &gt; 0) { val += n; n--; } return val; } // faster calculation O(1) const sum2 = n =&gt; n * (n + 1)/2; . randomize . let randomize = list =&gt; console.log(list[Math.floor(list.length * Math.random())]); . print natural countdown in the console . (loop = (i) =&gt; { setTimeout(() =&gt; { console.log(i); if (i--) loop(i); }, 300 + Math.floor(Math.random()*200)) })(22); . ",
+    "url": "/blog/gists/javascript/math#arithmatic",
+    
+    "relUrl": "/blog/gists/javascript/math#arithmatic"
+  },"14": {
+    "doc": "Math & Number",
+    "title": "Time conversions",
+    "content": "Convert hh:mm:ss to seconds and back + number formats . convert HHMMSS to seconds . const toSec = str =&gt; str.split(':').reduce((a, time) =&gt; (60 * a) + +time); . convert seconds To HHMMSS . const toHMS = totalSec =&gt; { const hours = Math.floor((totalSec % (60 * 60 * 24)) / (60 * 60)); const minutes = Math.floor((totalSec % (60 * 60)) / (60)); const seconds = Math.floor((totalSec % (60)) ); // removes all leading zeros const hhmmss = `${ hours &gt; 0 ? hours + \":\" : \"\" }${ hours &gt; 0 &amp;&amp; minutes &lt; 10 ? '0' + minutes : minutes }:${ seconds &lt; 10 ? '0' + seconds : seconds }`; // keeps all leading zeros const _0_HMS = `${ hours &lt; 10 ? '0' + hours : hours }:${ minutes &lt; 10 ? '0' + minutes : minutes }:${ seconds &lt; 10 ? '0' + seconds : seconds }`; return _0_HMS; } . ",
+    "url": "/blog/gists/javascript/math#time-conversions",
+    
+    "relUrl": "/blog/gists/javascript/math#time-conversions"
+  },"15": {
+    "doc": "Math & Number",
+    "title": "Phone Number format",
+    "content": "digits to phone number format and back . const formatPhone = digts =&gt; `(${digts.slice(0,3)}) ${digts.slice(3,6)}-${digts.slice(-4)}`; const phoneToNumString = phone =&gt; phone.match(/\\d/g).join(\"\"); . ",
+    "url": "/blog/gists/javascript/math#phone-number-format",
+    
+    "relUrl": "/blog/gists/javascript/math#phone-number-format"
+  },"16": {
+    "doc": "Math & Number",
+    "title": "Currency conversions",
+    "content": "This is based off of this freecodecamp guide: How to Format a Number as Currency in JavaScript . currency.js . // format number to US dollar let usd = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', }); let cad = new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', }); // format number to British pounds let pounds = Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP', }); // format number to Indian rupee let rupee = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', }); // format number to Euro let euro = Intl.NumberFormat('en-DE', { style: 'currency', currency: 'EUR', }); // format number to yuan let yuan = Intl.NumberFormat('cn-CN', { style: 'currency', currency: 'CNY', }); // format number to yen let yen = Intl.NumberFormat('jp-JA', { style: 'currency', currency: 'JPY', }); // format number to won let won = Intl.NumberFormat('kr-KR', { style: 'currency', currency: 'KRW', }); 'Dollars: ' + USDollar.format(price) // Dollars: $143,450.00 `Pounds: ${pounds.format(price)}`; // Pounds: £143,450.00 'Rupees: ' + rupee.format(price); // Rupees: ₹1,43,450.00 `Euro: ${euro.format(price)}`; // Euro: €143,450.00 . ",
+    "url": "/blog/gists/javascript/math#currency-conversions",
+    
+    "relUrl": "/blog/gists/javascript/math#currency-conversions"
+  },"17": {
+    "doc": "Math & Number",
+    "title": "Binary &amp; Ascii math",
+    "content": "binary and ascii math . ascii . a.charCodeAt(0); // get char code int from str char String.fromCharCode(...nums); // convert list of nums to string // convert string to arr of char code nums const charCodes = (string) =&gt; { let nums = []; for (i in string) nums.push(string.charCodeAt(i)); return nums; } // convert hex to string const hex2str = (hex) =&gt; { let outputNums = []; for (let i = 0; i &lt; hex.length; i+=2) { const int = parseInt(hex[i+0] + hex[i+1], 16); outputNums.push(int); } return String.fromCharCode(...outputNums); } // convert string to hex const str2hex = (string) =&gt; { hex = \"\"; for (i in string) hex += string.charCodeAt(i).toString(\"16\").padStart(2, '0'); return hex; } . integer to binary and back . const intBin = int =&gt; int.toString(2); // must be called as a function to work otherwise it will error const binInt = bin =&gt; parseInt(bin, 2); const intHex = int =&gt; int.toString(16); // must be called as a function to work otherwise it will error const hexInt = hex =&gt; parseInt(hex, 16); . xor encryption to hex and back . const xor2hex = (input, key) =&gt; { let output = \"\"; const len = key.length; const toXorHex = (a, b) =&gt; (a ^ b).toString(\"16\").padStart(2, '0'); for (i in input) { output += toXorHex(input.charCodeAt(i), key.charCodeAt(i % len)); }; return output; } const hex2xor = (input, key) =&gt; { let outputNums = []; const len = key.length; for (let i = 0; i &lt; input.length; i+=2) { const int = parseInt(input[i+0] + input[i+1], 16); outputNums.push(int ^ key.charCodeAt(i/2 % len)); } return String.fromCharCode(...outputNums); } . ",
+    "url": "/blog/gists/javascript/math#binary--ascii-math",
+    
+    "relUrl": "/blog/gists/javascript/math#binary--ascii-math"
+  },"18": {
+    "doc": "Math & Number",
+    "title": "Math & Number",
+    "content": " ",
+    "url": "/blog/gists/javascript/math",
+    
+    "relUrl": "/blog/gists/javascript/math"
+  },"19": {
     "doc": "Natto Nacho Cheese",
     "title": "Natto Nacho cheese",
     "content": ". Ingredients . | 50-60 g natto | 1-2 tbsp nooch | 1-1.5 tbsp cashew butter | rice vinegar | tamari | ponzu | yellow mustard | kala namak (and/or salt) | 0.5-2 tsp garlic powder | white pepper powder | 1-2 tsp miso paste (optional) for more umami | sweetener (optional) (date syrup and/or stevia) | cashew milk (variable) | . Instructions . | If the natto is frozen, defrost overnight in the refrigerator. | Stir/whisk natto in a bowl with chopsticks until it becomes stringy and creamy. Using a fork is not reccommended. | Add all liquid ingredients (except for the cashew milk) and salts to taste and whisk til dissolved. | Stir in the rest of the solid ingredients. | Adjust consistency to desired viscosity by adding cashew milk while stirring. | . The resulting texture and color should resemble nacho cheese. How does it compare to regular nacho cheese? . | creamy and slightly sticky just like real nacho cheese | you can customize the level of umami | doesn’t dry out quickly like nacho cheese, where the cheese requires heating to stay melted and the roux dries out and hardens as water evaporates | high protein, low-carb and somewhat low fat | far less oily: the primary source of oil is from the cashew butter | less filler (flour/roux/starch, sodium citrate) means more flavor | can be eaten at room temperature, warmed or chilled | . ",
     "url": "/blog/food/recipes/natto-nacho-cheese#natto-nacho-cheese",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese#natto-nacho-cheese"
-  },"13": {
+  },"20": {
     "doc": "Natto Nacho Cheese",
     "title": "Natto Nacho Cheese",
     "content": " ",
     "url": "/blog/food/recipes/natto-nacho-cheese",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese"
-  },"14": {
+  },"21": {
     "doc": "Recipes",
     "title": "Recipes",
     "content": "Below is a list of my published recipes. For most recipes, a stove is not required. ",
     "url": "/blog/food/recipes",
     
     "relUrl": "/blog/food/recipes"
-  },"15": {
+  },"22": {
     "doc": "Sauces",
     "title": "Sauces &amp; Flavorings",
     "content": "A collection of my personal favorite sauces &amp; flavorings. I will include a link to my preferred brands but not directly to the products (there are multiple sizes). Generics, where any brand works, are in lowercase. ",
     "url": "/blog/food/sauces#sauces--flavorings",
     
     "relUrl": "/blog/food/sauces#sauces--flavorings"
-  },"16": {
+  },"23": {
     "doc": "Sauces",
     "title": "Condiments",
     "content": "Salty . | Roland Vegan Ponzu Sauce | tamari | shoyu | kala namak aka black salt | . Umami . | nutritional yeast aka “nooch” | miso | kombu dashi | nori | roasted sesame oil | garlic powder | black garlic | Erewhon Organic Roasted Peanut Butter | Brooklyn Delhi Roasted Garlic Achaar | TRUFF Spicy Marinara Sauce | . Spicy . I have an infinite spice tolerance. Be warned. | Melinda’s Ghost Pepper Hot Sauce | TRUFF White Hotter Hot Sauce | Su Chili Crisp Mala「甦」麻辣辣油 | harissa sauce | white pepper powder | Huy Fong Sriracha | . Acid . This is good for blending with bitter foods such as bitter melon and natto . | rice vinegar | yellow mustard | Choi’s Spicy Napa Kimchi | . Sweet . | blended deglet dates | date syrup | dark brown sugar | molasses | stevia | allulose | monk fruit | Trader Joe’s Marshmallows | . ",
     "url": "/blog/food/sauces#condiments",
     
     "relUrl": "/blog/food/sauces#condiments"
-  },"17": {
+  },"24": {
     "doc": "Sauces",
     "title": "Sauces",
     "content": " ",
