@@ -78,6 +78,16 @@ h1, h2 {
     padding-top: 0;
 }
 
+.nav-list .nav-list-item .nav-list-link {
+    padding-left: 1.055rem;
+}
+
+@media (min-width: 50rem) {
+    .nav-list .nav-list-item .nav-list-link {
+        padding-left: 2.06rem;
+    }
+}
+
 
 /* color transitions */
 
@@ -129,6 +139,7 @@ h1 { opacity: .92 }
     position: relative;
     right: 1.8rem;
     top: 0;
+    padding: .33rem
 }
 
 .dark-mode #theme-toggle::before {
