@@ -45,7 +45,7 @@ This is the base Jekyll theme. You can find out more info about customizing your
 [jekyll](https://github.com/jekyll/jekyll)
 - Mandy’s custom theme at GitHub:
 [picaq][picaq-org] /
-[picaq.github.io](https://github.com/picaq/picaq.github.io) / [assets/css/just-the-docs-custom.css](https://github.com/picaq/picaq.github.io/blob/master/assets/css/just-the-docs-custom.css)
+[picaq.github.io](https://github.com/picaq/picaq.github.io) / [_sass/custom/custom.scss](https://github.com/picaq/picaq.github.io/blob/master/_sass/custom/custom.scss)
 - Switchable dark/light theme solution thanks to [@Teddy-van-Jerry](https://github.com/Teddy-van-Jerry)<br>
 [Theme Switching Button · Issue #1223 · just-the-docs/just-the-docs](https://github.com/just-the-docs/just-the-docs/issues/1223) 
 
