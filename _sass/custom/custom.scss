@@ -28,29 +28,7 @@
 /* debugging */
 /* h1 {color: red !important} */
 
-// :root {
-//     --chocolat: #3d2b1d;
-//     --ivory: rgb(252, 250, 246);
-// }
-
-// :root[data-color-scheme="dark"], .dark-mode {
-//     --color-background: var(--chocolat);
-//     --color-foreground: var(--ivory);
-//     /* other vars */
-// }
-//   :root[data-color-scheme="light"], .light-mode {
-//     --color-background: var(--ivory);
-//     --color-foreground: var(--chocolat);
-//     /* other vars */
-// }
-  
-
-
-// body {
-//     color: var(--color-foreground);
-//     background-color: var(--color-background);
-// }
-
+/* typography */
 
 footer ul.nav-list, html.dark-mode footer ul.nav-list {
     display: flex;
@@ -99,3 +77,23 @@ h1, h2 {
 .site-footer {
     padding-top: 0;
 }
+
+
+/* color transitions */
+
+a {
+    transition: text-decoration-color .16s ease-in-out;
+}
+
+.main-content-wrap:not(:hover), footer:not(:hover) {
+    a {
+        transition: none;
+    }
+}
+
+h1 { opacity: .92 }
+
+.site-title, h2, h3, h4, h5, h6 {
+    opacity: .82;
+}
+
