@@ -9,7 +9,7 @@ nav_order: 1
 
 ---
 
-Hello, this is [Mandy’s blog](https://picaq.github.io/about). I am a software engineer, graphic designer, illustrator and musician.
+Hello, this is [Mandy’s blog](/blog). I am a software engineer, graphic designer, illustrator and musician.
 
 This Jekyll blog was started to:
 1. make my [README](/#picaqgithubio) prettier
