@@ -7652,7 +7652,7 @@ pre.highlight {
   --link-color: #2c84fa;
   --link-color: cornflowerblue;
   --link-underline-color: #44434d;
-  --link-underline-color-hover: rgba(100, 123, 237, 0.68);
+  --link-underline-color-hover: hsla(222, 79%, 66%, 0.516);
   --white: whitesmoke;
   --off-white: #f5f6fa;
   --off-white: rgba(245, 245, 245, 0.867);
@@ -9075,8 +9075,51 @@ a {
   transition: none;
 }
 
+h1 {
+  opacity: 0.92;
+}
+
 .site-title, h2, h3, h4, h5, h6 {
   opacity: 0.82;
+}
+
+#theme-toggle {
+  --diameter: 0rem;
+  width: var(--diameter);
+  height: var(--diameter);
+  margin-right: 1.2rem;
+  border-radius: 50%;
+  background: none;
+  color: inherit;
+  border: 2pt solid transparent;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#theme-toggle:hover {
+  opacity: 1;
+}
+
+#theme-toggle::before {
+  content: "🌙";
+  content: "🌞";
+  content: "🌜";
+  content: "🔆";
+  content: "🔅";
+  font-size: 1.5rem;
+  line-height: 0;
+  position: relative;
+  right: 1.8rem;
+  top: 0;
+}
+
+.dark-mode #theme-toggle::before {
+  content: "🔅";
+  content: "🔆";
 }
 
 /*# sourceMappingURL=just-the-docs-default.css.map */
