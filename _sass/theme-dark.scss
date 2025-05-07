@@ -1,0 +1,19 @@
+@import "color_schemes/dark";
+
+.dark-mode {
+    --body-background-color: $body-background-color;
+    --body-heading-color: $body-heading-color;
+    --body-text-color: $body-text-color;
+    --link-color: $link-color;
+    --nav-child-link-color: $nav-child-link-color;
+    --sidebar-color: $sidebar-color;
+    --base-button-color: $base-button-color;
+    --btn-primary-color: $btn-primary-color;
+    --code-background-color: $code-background-color;
+    --feedback-color: $feedback-color;
+    --table-background-color: $table-background-color;
+    --search-background-color: $search-background-color;
+    --search-result-preview-color:  $search-result-preview-color;
+    --border-color: $border-color;
+  }
+  

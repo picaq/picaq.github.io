@@ -1,0 +1,97 @@
+// @import "color_schemes/light";
+// @import "color_schemes/dark";
+// @import "theme-light";
+// @import "theme-dark";
+// @import "base";
+
+// h1 {color: red !important}
+
+@import "theme-light";
+@import "theme-dark";
+@import "just-the-docs-switchable.scss";
+
+
+:root[class="light-mode"] {
+    color-scheme: light;
+}
+
+
+:root[class="dark-mode"] {
+    color-scheme: dark;
+}
+
+// :root[class="#{$color-scheme}-mode"] {
+//     color-scheme: $color-scheme;
+// }
+
+
+/* debugging */
+/* h1 {color: red !important} */
+
+// :root {
+//     --chocolat: #3d2b1d;
+//     --ivory: rgb(252, 250, 246);
+// }
+
+// :root[data-color-scheme="dark"], .dark-mode {
+//     --color-background: var(--chocolat);
+//     --color-foreground: var(--ivory);
+//     /* other vars */
+// }
+//   :root[data-color-scheme="light"], .light-mode {
+//     --color-background: var(--ivory);
+//     --color-foreground: var(--chocolat);
+//     /* other vars */
+// }
+  
+
+
+// body {
+//     color: var(--color-foreground);
+//     background-color: var(--color-background);
+// }
+
+
+footer ul.nav-list, html.dark-mode footer ul.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 1em;
+}
+
+footer .nav-list .nav-list-item .nav-list-link, html.dark-mode footer .nav-list .nav-list-item .nav-list-link {
+    padding-right: 1em; padding-left: 0;
+    /* transform: translateY(2em); */
+}
+
+@media screen and (min-width: 50rem) {
+    footer ul.nav-list, html.dark-mode footer ul.nav-list {
+        display: inline;
+        position: static;
+    }
+    footer .nav-list .nav-list-item.external .nav-list-link, html.dark-mode footer .nav-list .nav-list-item.external .nav-list-link {
+        text-align: right;
+        padding-right: 0; padding-left: 0;
+        display: inline-block;
+    }
+}
+
+/* fine typography headings */
+
+h1, h2 {
+    transform: translate(-.028em);
+}
+
+.J  {
+    transform: translate(-.033em);
+}
+
+.B, .D, .E, .F, .H, .K, .L, .N, .P, .R, .T, U  {
+    transform: translate(-.047em);
+}
+
+.A, .I, .M, .S, .V, .W, .X, .Y, .Z  {
+    transform: translate(-.053em);
+}
