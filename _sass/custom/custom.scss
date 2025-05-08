@@ -60,6 +60,19 @@ footer .nav-list .nav-list-item .nav-list-link, html.dark-mode footer .nav-list 
         padding-right: 0; padding-left: 0;
         display: inline-block;
     }
+
+    /* search bar */ 
+    .search-input-wrap, .search-input, .search {
+        // background: var(--debugging-color);
+        max-width: 100%;
+    }
+    .search-active .search-input-wrap {
+        // width: auto; // default css value like unsetting
+        width: -webkit-fill-available
+    }
+    .search-results {
+        width: auto
+    }
 }
 
 /* fine typography headings */
