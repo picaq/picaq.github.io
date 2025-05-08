@@ -114,6 +114,10 @@ h1, h2 {
 
 /* color transitions */
 
+.side-bar + .main .main-header {
+    background-color: inherit;
+}
+
 a {
     transition: text-decoration-color .16s ease-in-out;
 }
