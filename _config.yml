@@ -53,7 +53,6 @@ theme: just-the-docs #  for local development only! saved in _config_dev.yml
 remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-feed
-  - jekyll-gist
 
 head:
   custom_css:
