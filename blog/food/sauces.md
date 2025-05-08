@@ -27,8 +27,10 @@ Generics, where any brand works, are in lowercase.
 - kombu dashi
 - nori
 - roasted sesame oil
+- dried shiitake
 - garlic powder
 - black garlic
+- [Artisana Organics](https://artisanamarket.com/) Raw Organic Cashew Butter
 - [Erewhon](https://erewhon.com/) Organic Roasted Peanut Butter
 - [Brooklyn Delhi](https://brooklyndelhi.com/) Roasted Garlic Achaar
 - [TRUFF][TRUFF] Spicy Marinara Sauce
@@ -43,6 +45,7 @@ I have an infinite spice tolerance. Be warned.
 - harissa sauce
 - white pepper powder
 - [Huy Fong](https://www.huyfong.com/) Sriracha
+- gochujang
   
 ### Acid
 
