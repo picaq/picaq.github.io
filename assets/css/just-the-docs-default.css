@@ -9131,12 +9131,17 @@ h1 {
   font-size: 1.5rem;
   line-height: 0;
   position: relative;
-  right: 1.8rem;
+  right: 1.6rem;
   top: 0;
   padding: 0.53rem;
-  border-radius: 33%;
+  border-radius: 37%;
 }
 
+@media screen and (min-width: 50rem) {
+  #theme-toggle::before {
+    right: 2.1rem;
+  }
+}
 .dark-mode #theme-toggle::before {
   content: "🔅";
   content: "🔆";
