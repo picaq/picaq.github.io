@@ -57,7 +57,7 @@
   },"8": {
     "doc": "Gists",
     "title": "Gists",
-    "content": "My code snippets are hosted on GitHub’s Gists. I plan to move them here eventually. here is a test gist link https://gist.github.com/picaq/0221ab18f8142ad138199d3e6044ec56 . and embed . 400: Invalid request . ",
+    "content": "My code snippets are hosted on GitHub’s Gists. I plan to move them here eventually. ",
     "url": "/blog/gists",
     
     "relUrl": "/blog/gists"
