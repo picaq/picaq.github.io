@@ -183,3 +183,7 @@ h1 { opacity: .92 }
 .dark-mode .site-header:has(:hover), .site-header:has(:hover) {
     background-color: hsla(223, 61%, 69%, 0.06);
 }
+
+#menu-button {
+    cursor: pointer;
+}
