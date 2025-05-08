@@ -210,3 +210,28 @@ h1 { opacity: .92 }
 #menu-button {
     cursor: pointer;
 }
+
+/* swap alpha and numerical counters */
+
+[id="ingredients"] + ol,
+[id$="milk" i] + ol,
+[id$="juice" i] + ol,
+[id$="paste" i] + ol {
+  > li::before {
+    content: counter(step-counter, lower-alpha);
+  }
+
+  > li > ol > li::before {
+    content: counter(sub-counter);
+  }
+  
+}
+  
+[id$="milk"] + ol, [id$="juice"]:first-of-type + ol {
+    li:nth-child(n + 2) {
+        opacity: 0.7;
+    }
+    li:nth-child(4), li:nth-child(5) {
+        opacity: 0.4;
+    }
+}
