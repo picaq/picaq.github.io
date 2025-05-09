@@ -8821,11 +8821,11 @@ html.dark-mode blockquote.attention-title > p:first-child {
   color: #7253ed;
 }
 
-:root[class=light-mode] {
+:root[class^=light-mode] {
   color-scheme: light;
 }
 
-:root[class=dark-mode] {
+:root[class^=dark-mode] {
   color-scheme: dark;
 }
 
