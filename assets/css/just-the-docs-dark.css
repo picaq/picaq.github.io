@@ -9003,4 +9003,25 @@ h1 {
   cursor: pointer;
 }
 
+/* swap alpha and numerical counters */
+[id=ingredients] + ol > li::before,
+[id$=milk i] + ol > li::before,
+[id$=juice i] + ol > li::before,
+[id$=paste i] + ol > li::before {
+  content: counter(step-counter, lower-alpha);
+}
+[id=ingredients] + ol > li > ol > li::before,
+[id$=milk i] + ol > li > ol > li::before,
+[id$=juice i] + ol > li > ol > li::before,
+[id$=paste i] + ol > li > ol > li::before {
+  content: counter(sub-counter);
+}
+
+[id$=milk] + ol li:nth-child(n+2), [id$=juice]:first-of-type + ol li:nth-child(n+2) {
+  opacity: 0.7;
+}
+[id$=milk] + ol li:nth-child(4), [id$=milk] + ol li:nth-child(5), [id$=juice]:first-of-type + ol li:nth-child(4), [id$=juice]:first-of-type + ol li:nth-child(5) {
+  opacity: 0.4;
+}
+
 /*# sourceMappingURL=just-the-docs-dark.css.map */
