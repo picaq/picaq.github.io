@@ -11,12 +11,12 @@
 @import "just-the-docs-switchable.scss";
 
 
-:root[class="light-mode"] {
+:root[class^="light-mode"] {
     color-scheme: light;
 }
 
 
-:root[class="dark-mode"] {
+:root[class^="dark-mode"] {
     color-scheme: dark;
 }
 
