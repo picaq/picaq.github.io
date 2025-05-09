@@ -7,7 +7,7 @@ nav_order: 6
 
 # Math & Number Manipulations
 
-<details open markdown="block">
+<details open markdown="block" class="toc">
   <summary>
     Table of contents
   </summary>
