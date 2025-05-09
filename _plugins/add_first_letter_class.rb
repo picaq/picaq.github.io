@@ -7,7 +7,7 @@ Jekyll::Hooks.register [:pages, :documents], :post_render do |doc|
 end
 
 def add_first_letter_class(html)
-  doc = Nokogiri::HTML::DocumentFragment.parse(html)
+  doc = Nokogiri::HTML.parse(html)  # changed from DocumentFragment.parse
 
   doc.css('h1, h2').each do |node|
     next if node.content.strip.empty?
@@ -16,5 +16,5 @@ def add_first_letter_class(html)
     node['class'] = "#{node['class']} #{first_letter}".strip
   end
 
-  doc.to_html
+  doc.to_html  # this will now include the DOCTYPE
 end
