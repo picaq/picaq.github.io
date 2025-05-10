@@ -1,8 +1,8 @@
-.dark-mode {
+.dark-mode,  [data-theme="dark"] {
   --link-color: #2c84fa;
   --link-color: cornflowerblue;
-  --link-underline-color: #44434d;
-  --link-underline-color-hover: hsla(222, 79%, 66%, 0.516);
+  --link-underline-color: hsla(252, 31%, 84%, 0.2);
+  --link-underline-color-hover: hwb(228 39% 7% / 0.611);
   --white: whitesmoke;
   --off-white: #f5f6fa;
   --off-white: rgba(245, 245, 245, 0.867);
@@ -20,7 +20,7 @@
 }
 
 
-html.dark-mode {
+html.dark-mode, [data-theme="dark"] {
   
   body {
     color: var(--light-grey);
