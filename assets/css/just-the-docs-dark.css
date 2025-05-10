@@ -8831,7 +8831,8 @@ html.dark-mode blockquote.attention-title > p:first-child {
 
 /* debugging */
 :root {
-  --debugging-color: rgba(255, 192, 203, 0.296);
+  --debugging-color: rgba(255, 192, 203, 0.196);
+  --debugging-color: #0000;
 }
 
 /* h1 {color: red !important} */
@@ -8929,12 +8930,14 @@ h1 {
 }
 
 #theme-toggle {
-  --diameter: 0rem;
+  --diameter: 2rem;
   width: var(--diameter);
   height: var(--diameter);
   margin-right: 1.2rem;
+  margin-top: 0.3rem;
+  margin-left: 1rem;
   border-radius: 50%;
-  background: none;
+  background: var(--debugging-color);
   color: inherit;
   border: 2pt solid transparent;
   padding: 0;
@@ -8963,9 +8966,10 @@ h1 {
   font-size: 1.5rem;
   line-height: 0;
   position: relative;
-  right: 1.6rem;
-  top: 0;
-  padding: 0.53rem;
+  left: -0.2rem;
+  top: -0.02rem;
+  padding: 0.3rem;
+  background: var(--debugging-color);
   border-radius: 37%;
 }
 
@@ -8981,7 +8985,7 @@ h1 {
 }
 
 .site-title {
-  margin-right: 2.2rem;
+  margin-right: 0;
   padding-right: 0;
   transition: opacity 0.2s ease-in-out;
 }
