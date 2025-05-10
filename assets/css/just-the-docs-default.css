@@ -7930,6 +7930,7 @@ html.dark-mode .label-red, [data-theme=dark] .label-red {
 }
 html.dark-mode .label-yellow, [data-theme=dark] .label-yellow {
   color: var(--link-underline-color);
+  color: var(--chocolat);
   background-color: #f7d12e;
 }
 html.dark-mode .btn, [data-theme=dark] .btn {
