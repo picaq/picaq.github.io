@@ -6,7 +6,7 @@ nav_order: 6
 tags: [lentil, soup, spicy, mushroom, protein]
 ---
 
-## Mushroom [Ghost Pepper] Marinara Dal
+## Mushroom [ Ghost Pepper ] Marinara Dal
 
 I usually meal prep this in a mason jar or two and eat it over the course of a 1 – 3 weeks.
 <!-- 
@@ -29,7 +29,7 @@ Everything after water is optional and added to taste.
 ### Instructions
 
 1. Rinse and strain the lentils until the water runs clear. It usually takes me 4 – 7 rinses.
-2. Boil the lentils in 3 cups of water (2 if adding mushrooms) for 10 – 20 minutes depending on desired tenderness.
+2. Boil the lentils in 3 cups of water ( 2 if adding mushrooms ) for 10 – 20 minutes depending on desired tenderness.
 3. Stir in the marinara sauce and adjust to taste with the rest of the ingredients.
 4. Optional: re-boil the dal mixture for the flavors to meld together even more.
    
@@ -39,7 +39,7 @@ I would use the original marinara sauce jar as well as the mason jar used to rin
 
 I usually eat this with:
 
-- a slice or two of steamed sourdough bread (because I don’t know how to make idli and this is close enough for me)
+- a slice or two of steamed sourdough bread <br>( because I don’t know how to make idli and this is close enough for me lol )
 - steamed organic green peas
 - pita chips
 - naan
