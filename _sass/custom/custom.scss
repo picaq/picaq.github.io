@@ -240,9 +240,13 @@ h1 { opacity: .92 }
     }
 }
 
-// mushroom marianara dal
+/* fade out optional ingredients */
 
-main > [id$="marinara-dal"] ~ [id="ingredients"] + p + ul> li:nth-child(n + 4) {
+// mushroom marianara dal
+[id$="marinara-dal"] ~ [id="ingredients"] + p + ul> li:nth-child(n + 4),
+// hot sauce sando
+[id^="hot-sauce-sando"] ~ [id="ingredients"] + ul> li:nth-child(n + 4), 
+// natto nacho cheese
+[id^="natto-nacho-cheese"] ~ [id="ingredients"] + ul> li:nth-child(n + 12) {
     opacity: 0.7;
 }
-

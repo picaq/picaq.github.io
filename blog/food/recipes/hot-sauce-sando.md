@@ -12,12 +12,12 @@ tags: [spicy, peanutbutter, creamy, sandwich]
 
 ### Ingredients
 
-- Sriracha (or your favorite hot sauce)
+- Sriracha ( or your favorite hot sauce )
 - peanut butter
-- tamari (optional)
 - sliced bread of choice
-- basil (highly recomended but optional)
-- baby spinach (optional)
+- basil ( highly recomended but optional )
+- tamari ( optional )
+- baby spinach ( optional )
 
 ### Instructions
 

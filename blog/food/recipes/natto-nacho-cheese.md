@@ -19,12 +19,12 @@ tags: [natto, cashew, cheese]
 - tamari
 - ponzu
 - yellow mustard
-- kala namak (and/or salt)
+- kala namak ( and/or salt )
 - 0.5-2 tsp garlic powder
 - white pepper powder
-- 1-2 tsp miso paste (optional) for more umami
-- sweetener (optional) (date syrup and/or stevia)
-- cashew milk (variable)
+- cashew milk ( variable )
+- 1-2 tsp miso paste ( optional ) for more umami
+- sweetener ( optional ) ( date syrup and/or stevia )
 
 ### Instructions
 
