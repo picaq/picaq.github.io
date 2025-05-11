@@ -214,6 +214,7 @@ h1 { opacity: .92 }
     cursor: pointer;
 }
 
+// dairy free milks 
 /* swap alpha and numerical counters */
 
 [id="ingredients"] + ol,
@@ -238,3 +239,10 @@ h1 { opacity: .92 }
         opacity: 0.4;
     }
 }
+
+// mushroom marianara dal
+
+main > [id$="marinara-dal"] ~ [id="ingredients"] + p + ul> li:nth-child(n + 4) {
+    opacity: 0.7;
+}
+
