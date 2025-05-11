@@ -49,6 +49,11 @@ This is the base Jekyll theme. You can find out more info about customizing your
 - Switchable dark/light theme solution thanks to [@Teddy-van-Jerry](https://github.com/Teddy-van-Jerry)<br>
 [Theme Switching Button · Issue #1223 · just-the-docs/just-the-docs](https://github.com/just-the-docs/just-the-docs/issues/1223) 
 
+## Todo
+- [ ] get lunr.js search.json to ignore parsing search.json
+- [ ] index tags to search
+- [ ] ruby and/or shell script to start a post/page faster w/ a command via templates
+
 [jekyll-organization]: https://github.com/jekyll
 [just-the-docs-organization]: https://github.com/just-the-docs
 [picaq-org]: https://github.com/picaq
