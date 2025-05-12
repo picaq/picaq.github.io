@@ -8,7 +8,7 @@ tags: [lentil, soup, spicy, mushroom, protein]
 
 ## Mushroom [ Ghost Pepper ] Marinara Dal
 
-I usually meal prep this in a mason jar or two and eat it over the course of a 1 – 3 weeks.
+I usually meal prep this in a mason jar or two and eat it over the course of 1 – 3 weeks.
 <!-- 
 ![image](https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3){: style="float: right; max-width: 50%; border-radius: .33rem;margin-left: 1rem;"} -->
 
