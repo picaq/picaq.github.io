@@ -43,7 +43,7 @@ The resulting texture and color should resemble nacho cheese.
 - doesn’t dry out quickly like nacho cheese, where the cheese requires heating to stay melted and the roux dries out and hardens as water evaporates
 - high protein, low-carb and somewhat low fat
 - far less oily: the primary source of oil is from the cashew butter
-- less filler (flour/roux/starch, sodium citrate) means more flavor
+- less filler ( flour/roux/starch, sodium citrate ) means more flavor
 - can be eaten at room temperature, warmed or chilled
 
 
