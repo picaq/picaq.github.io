@@ -53,6 +53,7 @@ This is the base Jekyll theme. You can find out more info about customizing your
 - [ ] get lunr.js search.json to ignore parsing search.json
 - [ ] index tags to search
 - [ ] ruby and/or shell script to start a post/page faster w/ a command via templates
+- [ ] update/style code block themes
 
 [jekyll-organization]: https://github.com/jekyll
 [just-the-docs-organization]: https://github.com/just-the-docs
