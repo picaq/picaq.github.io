@@ -14,7 +14,7 @@ tags: [natto, cashew, cheese]
 
 - 50 – 60 g natto
 - 1 – 2 tbsp nooch
-- 1 – 1.5 tbsp cashew butter
+- 1 –1.5 tbsp cashew butter
 - rice vinegar
 - tamari
 - ponzu
