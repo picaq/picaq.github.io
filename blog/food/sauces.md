@@ -8,7 +8,7 @@ nav_order: 4
 # Sauces & Flavorings
 
 A collection of my personal favorite sauces & flavorings.
-I will include a link to my preferred brands but not directly to the products (there are multiple sizes).
+I will include a link to my preferred brands but not directly to the products ( there are multiple sizes ).
 Generics, where any brand works, are in lowercase.
 
 ## Condiments
