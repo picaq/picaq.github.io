@@ -25,11 +25,11 @@ tags: [ramen, cashew, creamy, broth, soy, savory]
 2. Add shoyu to taste.
 3. Stir in all frozen ingredients.
 4. Heat mixture in a microwave or on a stove until boiling. Heating time varies and depends on the mass of ingredients.
-5. Cover and continue heating on the lowest heat setting for 5-10 more minutes.
+5. Cover and continue heating on the lowest heat setting for 5 –10 more minutes.
 6. Use immediately or refrigerate overnight for stronger flavors.
 
 ### Serving Options
 
-- Add to cooked oatmeal or stir in oats with the frozen ingredients (step 4) before heating for savory oats
+- Add to cooked oatmeal or stir in oats with the frozen ingredients ( step 4 ) before heating for savory oats
 - Stir in miso before serving for more umami
 - Crush up and sprinkle nori on top
