@@ -12,18 +12,18 @@ tags: [natto, cashew, cheese]
 
 ### Ingredients
 
-- 50-60 g natto
-- 1-2 tbsp nooch
-- 1-1.5 tbsp cashew butter
+- 50 – 60 g natto
+- 1 – 2 tbsp nooch
+- 1 – 1.5 tbsp cashew butter
 - rice vinegar
 - tamari
 - ponzu
 - yellow mustard
 - kala namak ( and/or salt )
-- 0.5-2 tsp garlic powder
+- 0.5 – 2 tsp garlic powder
 - white pepper powder
 - cashew milk ( variable )
-- 1-2 tsp miso paste ( optional ) for more umami
+- 1 – 2 tsp miso paste ( optional ) for more umami
 - sweetener ( optional ) ( date syrup and/or stevia )
 
 ### Instructions
