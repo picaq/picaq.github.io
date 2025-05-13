@@ -21,7 +21,7 @@ tags: [ramen, cashew, creamy, broth, soy, savory]
 ### Instructions
 
 0. If not already in paste-form, peel black garlic and mash it with a spoon into a paste.
-1. Stir in 1/4 - 3/4 cup warmed soymilk depending on desired consistency.
+1. Stir in 1/4 – 3/4 cup warmed soymilk depending on desired consistency.
 2. Add shoyu to taste.
 3. Stir in all frozen ingredients.
 4. Heat mixture in a microwave or on a stove until boiling. Heating time varies and depends on the mass of ingredients.
