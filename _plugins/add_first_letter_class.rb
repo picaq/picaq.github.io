@@ -13,7 +13,11 @@ def add_first_letter_class(html)
     next if node.content.strip.empty?
 
     first_letter = node.content.strip[0]
-    node['class'] = "#{node['class']} #{first_letter}".strip
+    if node['class'] && !(node['class'].include?(first_letter))
+      node['class'] = "#{node['class']} #{first_letter}".strip
+    elsif node['class'].nil?
+      node['class'] = first_letter
+    end
   end
 
   doc.to_html  # this will now include the DOCTYPE
