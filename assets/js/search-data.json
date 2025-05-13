@@ -22,7 +22,7 @@
   },"3": {
     "doc": "About",
     "title": "Todo",
-    "content": ". | get lunr.js search.json to ignore parsing search.json | index tags to search | ruby and/or shell script to start a post/page faster w/ a command via templates | . ",
+    "content": ". | get lunr.js search.json to ignore parsing search.json | index tags to search | ruby and/or shell script to start a post/page faster w/ a command via templates | update/style code block themes | . ",
     "url": "/blog#todo",
     
     "relUrl": "/blog#todo"
