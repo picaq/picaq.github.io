@@ -21,7 +21,7 @@ tags: [spicy, peanutbutter, creamy, sandwich]
 
 ### Instructions
 
-1. Toast slice(s) of bread (optional but recommended).
+1. Toast slice(s) of bread ( optional but recommended ).
 2. Make the spread: mix peanut butter and Sriracha together, adjust ratios to taste and tolerance. <br>
    Optional: add tamari for saltiness or to thin out the spread.
 3. Spread the mixture on the inside-facing sides of the bread slice(s).
