@@ -8969,24 +8969,49 @@ footer .nav-list .nav-list-item .nav-list-link, html.dark-mode footer .nav-list 
   }
 }
 /* fine typography headings */
-h1, h2 {
+h1 {
   transform: translate(-0.028em);
 }
 
-.J {
+h2 {
+  transform: translate(-0.0186666667em);
+  transform: translate(-0.014em);
+}
+
+.J, .C, .G, .O, .Q {
   transform: translate(-0.033em);
+}
+
+h2.J, h2.C, h2.G, h2.O, h2.Q {
+  transform: translate(-0.022em);
+  transform: translate(-0.0165em);
 }
 
 .A {
   transform: translate(-0.041em);
 }
 
+h2.A {
+  transform: translate(-0.027em);
+  transform: translate(-0.0205em);
+}
+
 .B, .D, .E, .F, .H, .K, .L, .N, .P, .R, .T, .U {
   transform: translate(-0.047em);
 }
 
+h2.B, h2.D, h2.E, h2.F, h2.H, h2.K, h2.L, h2.N, h2.P, h2.R, h2.T, h2.U {
+  transform: translate(-0.031em);
+  transform: translate(-0.0235em);
+}
+
 .I, .M, .S, .V, .W, .X, .Y, .Z {
   transform: translate(-0.053em);
+}
+
+h2.I, h2.M, h2.S, h2.V, h2.W, h2.X, h2.Y, h2.Z {
+  transform: translate(-0.035em);
+  transform: translate(-0.0265em);
 }
 
 .site-footer {
