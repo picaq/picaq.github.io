@@ -78,24 +78,54 @@ footer .nav-list .nav-list-item .nav-list-link, html.dark-mode footer .nav-list 
 
 /* fine typography headings */
 
-h1, h2 {
+h1 {
     transform: translate(-.028em);
+} 
+h2 {
+    transform: translate(-.0186666667em);
+    transform: translate(-.014em); // -1/2 h1
 }
 
-.J  {
+.J, .C, .G, .O, .Q {
     transform: translate(-.033em);
+}
+
+h2 {
+    &.J, &.C, &.G, &.O, &.Q {
+        transform: translate(-.022em); // -2/3 h1
+        transform: translate(-.0165em); // -1/2 h1
+    }
 }
 
 .A {
     transform: translate(-.041em);
 }
 
+h2.A {
+    transform: translate(-.027em);
+    transform: translate(-.0205em);
+}
+
 .B, .D, .E, .F, .H, .K, .L, .N, .P, .R, .T, .U  {
     transform: translate(-.047em);
 }
 
+h2 {
+    &.B, &.D, &.E, &.F, &.H, &.K, &.L, &.N, &.P, &.R, &.T, &.U  {
+        transform: translate(-.031em);
+        transform: translate(-.0235em);
+    }
+}
+
 .I, .M, .S, .V, .W, .X, .Y, .Z  {
     transform: translate(-.053em);
+}
+
+h2 {
+    &.I, &.M, &.S, &.V, &.W, &.X, &.Y, &.Z  {
+        transform: translate(-.035em);
+        transform: translate(-.0265em);
+    }
 }
 
 .site-footer {
