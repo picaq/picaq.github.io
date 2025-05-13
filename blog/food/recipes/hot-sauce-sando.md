@@ -6,7 +6,7 @@ nav_order: 7
 tags: [spicy, peanutbutter, creamy, sandwich]
 ---
 
-## Hot Sauce Sando (or Toast)
+## Hot Sauce Sando ( or Toast )
 
 <!-- image -->
 
@@ -25,7 +25,7 @@ tags: [spicy, peanutbutter, creamy, sandwich]
 2. Make the spread: mix peanut butter and Sriracha together, adjust ratios to taste and tolerance. <br>
    Optional: add tamari for saltiness or to thin out the spread.
 3. Spread the mixture on the inside-facing sides of the bread slice(s).
-4. Optional: top with 1-2 basil leaves and/or baby spinach.
+4. Optional: top with 1 – 2 basil leaves and/or baby spinach.
 
 ### Serving Options
 
