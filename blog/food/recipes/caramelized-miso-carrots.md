@@ -8,11 +8,12 @@ tags: [sweet, savory, sides, carrots, oil-free]
 
 ## Caramelized Miso Carrots
 
-This is Oil-Free!
-
-The ingredients are exteremely basic but for safety, there is an *absolutely necessary* long wait for the cooking vessel to cool down. **Do NOT** peek at the food while cooking!
 <!-- image -->
 ![image](https://github.com/user-attachments/assets/71ae19f0-befa-4f4a-a3af-be751942d124){: style="float: right; max-width: 50%; border-radius: .33rem;margin-left: 1rem;"}
+
+This is Oil-Free!
+
+The ingredients are exteremely basic but for safety, there is an *absolutely necessary* long wait for the cooking vessel to cool down. <br>**Do NOT** peek at the food while cooking!
 
 
 ### Ingredients
@@ -40,3 +41,7 @@ The carrots should look bruised and wrinkly in appearance, sometimes with dark s
 - You can use this as a side dish or eat it as-is.
 - It is a good sandwich or wrap ingredient, goes well with soups, peas or as an accompaniment.
 - After chilling them in the fridge, they can be added to salads or bentos.
+
+### Why not use an insta-pot or pressure cooker?
+
+I don’t have one, and I don’t want to clean a specialized large, separate cooking vessel. If you were able to successfully replicate this recipe those appliances let me know!
