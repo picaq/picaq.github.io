@@ -12,6 +12,8 @@ This is Oil-Free!
 
 The ingredients are exteremely basic but for safety, there is an *absolutely necessary* long wait for the cooking vessel to cool down. **Do NOT** peek at the food while cooking!
 <!-- image -->
+![image](https://github.com/user-attachments/assets/71ae19f0-befa-4f4a-a3af-be751942d124){: style="float: right; max-width: 50%; border-radius: .33rem;margin-left: 1rem;"}
+
 
 ### Ingredients
 
