@@ -20,6 +20,9 @@ The first, if not only, educational and chemically accurate [organic synthesis b
 
 ## Playing
 
-I’m currently playing Dungeons & Dragons 5th edition with [Tiger Kong](https://tigerkong.me/).
+I’m currently playing: 
 
-I play board games on intermittent Wednesday nights.
+- Dungeons & Dragons 5th edition with [Tiger Kong](https://tigerkong.me/).
+- Board games on intermittent Wednesday nights.
+- StarCraft: Brood War
+
