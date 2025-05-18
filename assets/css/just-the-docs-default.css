@@ -8890,4 +8890,12 @@ h1 {
   opacity: 0.7;
 }
 
+table th {
+  table-layout: auto;
+}
+
+th, td {
+  min-width: 2em;
+}
+
 /*# sourceMappingURL=just-the-docs-default.css.map */
