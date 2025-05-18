@@ -280,3 +280,12 @@ h1 { opacity: .92 }
 [id^="natto-nacho-cheese"] ~ [id="ingredients"] + ul> li:nth-child(n + 12) {
     opacity: 0.7;
 }
+
+table th {
+    table-layout: auto;
+    // width: 100%;
+}
+
+th, td {
+    min-width: 2em;
+}
