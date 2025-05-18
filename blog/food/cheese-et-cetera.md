@@ -9,9 +9,9 @@ nav_order: 7
 
 I used to have a really bad cheese addiction. I like yogurt too. 
 
-I am sensitive to saturated fatty acids, and am trying not to clog my arteries.
+Trying not to clog my arteries over here!
 
-I’ve found some tasty alternatives since, but coconut oil is the absolute bane of my existence. Here&nbsp;I&nbsp;will&nbsp;compare&nbsp;the saturated fat content by grams/serving as well as by % weight of the tastiest fermented non-dairy dairy alternatives that I’ve tried so far. Not included are those that I didn’t like.
+Since then, here are some tasty alternatives that I’ve tried so far. Coconut oil is the absolute bane of my existence. Here&nbsp;I&nbsp;will&nbsp;compare&nbsp;the saturated fat content by grams/serving as well as by % weight of the tastiest fermented non-dairy dairy alternatives that I’ve tried so far. Not included are those that I didn’t like.
 
 ## Cheese
 
