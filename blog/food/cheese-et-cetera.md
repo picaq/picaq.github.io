@@ -11,7 +11,7 @@ I used to have a really bad cheese addiction. I like yogurt too.
 
 Trying not to clog my arteries over here!
 
-Since then, here are some tasty alternatives that I’ve tried so far. Coconut oil is the absolute bane of my existence. Here&nbsp;I&nbsp;will&nbsp;compare&nbsp;the saturated fat content by grams/serving as well as by % weight of the tastiest fermented non-dairy dairy alternatives that I’ve tried so far. Not included are those that I didn’t like.
+Here are some tasty alternatives. Coconut oil is the absolute bane of my existence. I&nbsp;will&nbsp;compare&nbsp;the saturated fat content by grams/serving as well as by % weight of the tastiest fermented non-dairy dairy alternatives that I’ve tried so far. Not included are those that I didn’t like.
 
 ## Cheese
 
@@ -41,7 +41,7 @@ Since then, here are some tasty alternatives that I’ve tried so far. Coconut o
 More yogurt less “cheese” (fermented nuts).
 
 ## Lactose Intolerant?
-I’m actually not lactose intolerant at all, hence quitting dairy cheese was so difficult for me.
+I’m actually not lactose intolerant at all, hence quitting dairy cheese was _so_ difficult for me.
 This&nbsp;table&nbsp;format&nbsp;could be useful for anyone dairy-free due to either lactose intolerance or&nbsp;dairy&nbsp;allergies.
 
 
