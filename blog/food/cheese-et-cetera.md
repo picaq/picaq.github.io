@@ -20,7 +20,7 @@ Since then, here are some tasty alternatives that I’ve tried so far. Coconut o
 | Cashew Brie         | The Uncreamery    | Truffle Brie Wheel               | 5           |     1 oz<br>28      |    17.86 | 25   |
 | Almond Gouda        | The Uncreamery    | Smoked Gouda Block               | 4.5         |     1 oz<br>28      |    16.07 | 23   |
 | Cashew Cheddar      | Trader Joe’s      | Cheddar Style Slices             | 3.5         |         22          |    15.91 | 18   |
-| Cashew Mozzarella   | Miyoko’s Creamery | Pourable Cashew Milk Mozzarella™ | 2           |   1/4 cup <br>67    |     2.99 | 10   |
+| Cashew Mozzarella   | Miyoko’s Creamery | Pourable Cashew Milk Mozzarella™ | 2           |   1/4&nbsp;cup <br>67    |     2.99 | 10   |
 | Cashew Brie         | Nuts for Cheese   | Un-Brie-Lievable™                | 5           |     1 oz<br>28      |    17.86 | 25   |
 | Black Garlic Cashew | Nuts for Cheese   | Black Garlic                     | 4.5         |     1 oz<br>28      |    16.07 | 23   |
 
@@ -28,7 +28,7 @@ Since then, here are some tasty alternatives that I’ve tried so far. Coconut o
 
 | Type                        | Brand           | Name                                                      | Fibre (g) | Prot. (g) | Extra Sugar (g) | Sat fat (g) | Serving vol, wt (g) | % wt Sat | % DV |
 | --------------------------- | --------------- | --------------------------------------------------------- | :-------: | :------: | :-------------: | :---------- | :-----------------: | -------: | ---- |
-| Plain Soy                   | Silk            | Plain Soymilk<br>Dairy-Free Yogurt Alternative            |     2     |    7     |        4        | 0.5         |   3/4 cup<br>170    |     0.29 | 3    |
+| Plain Soy                   | Silk            | Plain Soymilk<br>Dairy-Free Yogurt Alternative            |     2     |    7     |        4        | 0.5         |   3/4&nbsp;cup<br>170    |     0.29 | 3    |
 | Strawberry Soy              | Silk            | Soy Milk Dairy-Free Yogurt Alternative                    |     2     |    6     |       12        | 0           |         150         |        0 | 0    |
 | Strawberry Almond           | Silk            | Almond Milk Dairy-Free Yogurt Alternative, Strawberry     |     3     |    5     |       12        | 1           |         150         |     0.67 | 5    |
 | Vanilla Almond              | Silk            | Unsweetened Vanilla Almond Milk Yogurt Alternative        |     6     |    6     |        0        | 1           |         28          |     0.67 | 5    |
