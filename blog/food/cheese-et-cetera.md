@@ -2,7 +2,7 @@
 title: Cheese et Cetera
 parent: Food
 permalink: blog/food/cheese-etc
-nav_order: 5
+nav_order: 7
 ---
 
 # Cheese et Cetera
