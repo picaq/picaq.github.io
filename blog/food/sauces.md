@@ -55,7 +55,7 @@ This is good for blending with bitter foods such as bitter melon and natto
 - yellow mustard
 - Napa Kimchi
   - [Choi’s](https://www.choiskimchi.com/) Spicy Napa Kimchi
-  - [Im Soon Ja](https://imkimchi.com/) Kimchi 林
+  - [Im Soon Ja](https://imkimchi.com/) Vegan Kimchi 비건김치 (林)
 
 ### Sweet
 
