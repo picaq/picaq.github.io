@@ -39,10 +39,10 @@ The tables below compare the saturated fat content by grams/serving as well as b
 
 ## Conclusion
 More yogurt less “cheese” (fermented nuts).
-
+<!--
 ## Lactose Intolerant?
 I’m actually not lactose intolerant at all, hence quitting dairy cheese was _so_ difficult for me.
 This&nbsp;table&nbsp;format&nbsp;could be useful for anyone dairy-free due to either lactose intolerance or&nbsp;dairy&nbsp;allergies.
-
+-->
 
 [TRUFF]: https://www.truff.com/
