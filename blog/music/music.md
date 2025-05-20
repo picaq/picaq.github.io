@@ -11,7 +11,7 @@ I make music and play music.
 
 Ok I mostly transcribe music into formats for specific instruments.
 
-Here’s an app, [Notation Map](/notation-map/), that I’m making to help me pick up new instruments but it is pretty unfinished.
+Here’s an app, [Notation Map](/notation-map/), that I’m making to help me pick up new instruments. It&nbsp;is&nbsp;unfinished.
 
 ## Playing
 
