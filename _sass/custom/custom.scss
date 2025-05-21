@@ -289,3 +289,12 @@ table th {
 th, td {
     min-width: 2em;
 }
+
+
+// youtube video embeds 
+
+iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+
