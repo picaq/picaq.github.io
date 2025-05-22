@@ -52,4 +52,4 @@ I’m currently playing:
 - Violin
 - Recorder
 - Piano
-- Voice (Alto)
+- Voice ( Alto )

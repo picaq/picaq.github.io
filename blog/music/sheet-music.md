@@ -17,18 +17,18 @@ Here’s an app, [Notation Map](/notation-map/), that I’m making to help me pi
 
 ### Violin
 
-The very first piece I transcribed in 2008 or 2009 while I was still in high school, and the first Orisinal entry on ichigos.com, [Winter Bells](https://ichigos.com/sheets/323).
+The very first piece I transcribed in 2008 or 2009 while I was still in high school, and the first Orisinal entry on ichigos.com, [Winter Bells](https://ichigos.com/sheets/323).<br>
 [Youtube cover](https://www.youtube.com/watch?v=YGISv0aDvEg) re-arranged by Sherry Kim for Viola.
 
 
 ### Kalimba tabs?
 
-I get asked this sometimes but I prefer transcribing music into staff notation due to being instrument-agnostic and its ease to adapt to other instruments.
-In the near future I will sort sheet music by chromatic range rather than by instrument.
+I get asked this sometimes but I prefer transcribing music into staff notation due to being instrument-agnostic and its ease to adapt to other instruments.<br>
+In the near future I will sort sheet music by chromatic range rather than by&nbsp;instrument.
 
 ### List of Instruments 
 
-- Kalimba (Mbira)
+- Kalimba ( Mbira )
   - 17 key diatonic
   - 42 chromatic alto
 - Alto Melodica
@@ -40,4 +40,4 @@ In the near future I will sort sheet music by chromatic range rather than by ins
 - Violin
 - Recorder
 - Piano
-- Voice (Alto)
+- Voice ( Alto )
