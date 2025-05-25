@@ -40,11 +40,11 @@ layout: table_wrappers
           {% if page.prepmins or page.cookmins %}
             <dl class="dl-horizontal">
               {% if page.prepmins %}
-              <dt>Preparation time</dt><dd>{{ page.prepmins }} mins<span itemprop="prepTime" class="invisible">PT{{ page.prepmins }}M</span></dd>
+              <dt>Preparation time</dt><dd>{{ page.prepmins }} min{% if page.prepmins != 1 %}s{% endif %}<span itemprop="prepTime" class="invisible">PT{{ page.prepmins }}M</span></dd>
               {% endif %}
-              {% if page.cookmins %}<dt>Cooking time</dt><dd>{{ page.cookmins }} mins<span itemprop="cookTime" class="invisible">PT{{ page.cookmins }}M</span></dd>
+              {% if page.cookmins %}<dt>Cooking time</dt><dd>{{ page.cookmins }} min{% if page.cookmins != 1 %}s{% endif %}<span itemprop="cookTime" class="invisible">PT{{ page.cookmins }}M</span></dd>
               {% endif %}
-              {% if page.yield %}<dt>Yield</dt><dd>{{ page.yield }} servings<span itemprop="recipeYield" class="invisible">{{ page.yield }}</span></dd>
+              {% if page.yield %}<dt>Yield</dt><dd>{{ page.yield }} serving{% if page.yield != 1 %}s{% endif %} <span itemprop="recipeYield" class="invisible">{{ page.yield }}</span></dd>
               {% endif %}
             </dl>
           {% endif %}
