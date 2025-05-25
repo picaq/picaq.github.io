@@ -84,10 +84,7 @@ layout: table_wrappers
 
             <p class="invisible" itemprop="description">{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
 
-            <div itemscope itemprop="author" class="invisible"> 
-              <span itemprop="name">{{ site.title }}</span>
-              <span itemprop="type">person</span> 
-            </div>
+            <span itemscope itemprop="author" itemtype="http://schema.org/Person" name="{{ site.title }}" class="invisible"></span>
 
             <dl>
               {% if page.cuisine %}
