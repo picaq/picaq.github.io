@@ -9172,6 +9172,10 @@ iframe {
   visibility: hidden;
 }
 
+img.invisible {
+  display: none;
+}
+
 .recipe-image {
   float: right;
   max-width: 50%;
