@@ -9170,6 +9170,8 @@ iframe {
 .invisible {
   opacity: 0;
   visibility: hidden;
+  height: 0;
+  position: absolute;
 }
 
 img.invisible {
