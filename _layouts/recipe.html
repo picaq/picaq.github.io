@@ -30,7 +30,7 @@ layout: table_wrappers
             {% include components/children_nav.html %}
           {% endif %}
           
-          <h2 id="{{ page.title | slugify }}"> 
+          <h2 id="{{ page.title | slugify }}" itemprop="name"> 
             <a href="#{{ page.title | slugify }}" class="anchor-heading" aria-labelledby="{{ page.title | slugify }}"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 
             {{ page.title }}
           </h2>
@@ -39,8 +39,13 @@ layout: table_wrappers
 
           {% if page.prepmins or page.cookmins %}
             <dl class="dl-horizontal">
-              {% if page.prepmins %}<dt>Preparation time</dt><dd>{{ page.prepmins }} mins<span itemprop="prepTime" class="invisible">PT{{ page.prepmins }}M</span></dd>{% endif %}
-              {% if page.cookmins %}<dt>Cooking time</dt><dd>{{ page.cookmins }} mins<span itemprop="cookTime" class="invisible">PT{{ page.cookmins }}M</span></dd>{% endif %}
+              {% if page.prepmins %}
+              <dt>Preparation time</dt><dd>{{ page.prepmins }} mins<span itemprop="prepTime" class="invisible">PT{{ page.prepmins }}M</span></dd>
+              {% endif %}
+              {% if page.cookmins %}<dt>Cooking time</dt><dd>{{ page.cookmins }} mins<span itemprop="cookTime" class="invisible">PT{{ page.cookmins }}M
+              {% endif %}
+              {% if page.yield %}<dt>Yield</dt><dd>{{ page.yield }} servings<span itemprop="recipeYield" class="invisible">{{ page.yield }}</span></dd>
+              {% endif %}
             </dl>
           {% endif %}
           
