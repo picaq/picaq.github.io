@@ -2,39 +2,52 @@
 title: Natto Nacho Cheese
 permalink: blog/food/recipes/natto-nacho-cheese
 parent: Recipes
+layout: recipe
 nav_order: 5
 tags: [natto, cashew, cheese]
+ingredients:
+  - 50 – 60 g natto
+  - 1 – 2 tbsp nooch
+  - 1 –1.5 tbsp cashew butter
+  - rice vinegar
+  - tamari
+  - ponzu
+  - yellow mustard
+  - kala namak ( and/or salt )
+  - 0.5 – 2 tsp garlic powder
+  - white pepper powder
+  - cashew milk ( variable )
+  - 1 – 2 tsp miso paste ( optional ) for more umami
+  - sweetener ( optional ) ( date syrup and/or stevia )
+instructions:
+  - If the natto is frozen, defrost overnight in the refrigerator.
+  - Stir/whisk natto in a bowl with chopsticks until it becomes stringy and creamy. Using a fork is not reccommended.
+  - Add all liquid ingredients (except for the cashew milk) and salts to taste and whisk til dissolved.
+  - Stir in the rest of the solid ingredients. 
+  - Adjust consistency to desired viscosity by adding cashew milk while stirring.
+nutrition:
+  calories: 340
+  fatContent: 22
+  proteinContent: 26
+  carbohydrateContent: 23
+prepmins: 2
+cookmins: 7
+date: 2025-04-11 10:20:00 -0700
+image: https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3
+thumbnail: https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3
+tags:
+  - featured
+  - recipe
 ---
 
-## Natto Nacho cheese
-
-![image](https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3){: style="float: right; max-width: 50%; border-radius: .33rem;margin-left: 1rem;"}
-
-### Ingredients
-
-- 50 – 60 g natto
-- 1 – 2 tbsp nooch
-- 1 –1.5 tbsp cashew butter
-- rice vinegar
-- tamari
-- ponzu
-- yellow mustard
-- kala namak ( and/or salt )
-- 0.5 – 2 tsp garlic powder
-- white pepper powder
-- cashew milk ( variable )
-- 1 – 2 tsp miso paste ( optional ) for more umami
-- sweetener ( optional ) ( date syrup and/or stevia )
-
-### Instructions
-
-0. If the natto is frozen, defrost overnight in the refrigerator.
-1. Stir/whisk natto in a bowl with chopsticks until it becomes stringy and creamy. Using a fork is not reccommended.
-2. Add all liquid ingredients (except for the cashew milk) and salts to taste and whisk til dissolved.
-3. Stir in the rest of the solid ingredients. 
-4. Adjust consistency to desired viscosity by adding cashew milk while stirring.
+![image](https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3){: style="float: right; max-width: 50%; border-radius: .33rem;margin-left: 1rem;" :itemprop="image" .invisible}
 
 The resulting texture and color should resemble nacho cheese.
+
+<p class="invisible" itemprop="description">{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+<p class="invisible" itemprop="nutrition" itemscope itemtype="http://schema.org/NutritionInformation"><span itemprop="calories">{{ page.calories | default: 2 }}</span></p>
+<p class="invisible" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><span itemprop="ratingValue">5</span><span itemprop="reviewCount">1</span></p>
+
 
 ### How does it compare to regular nacho cheese?
 

@@ -1,0 +1,90 @@
+---
+layout: table_wrappers
+---
+
+<!DOCTYPE html>
+
+<html lang="{{ site.lang | default: 'en-US' }}">
+{% include head.html %}
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  {% include icons/icons.html %}
+  {% if page.nav_enabled == true %}
+    {% include components/sidebar.html %}
+  {% elsif layout.nav_enabled == true and page.nav_enabled == nil %}
+    {% include components/sidebar.html %}
+  {% elsif site.nav_enabled != false and layout.nav_enabled == nil and page.nav_enabled == nil %}
+    {% include components/sidebar.html %}
+  {% endif %}
+  <div class="main" id="top">
+    {% include components/header.html %}
+    <div class="main-content-wrap">
+      {% include components/breadcrumbs.html %}
+      <div id="main-content" class="main-content" schema="https://schema.org/Recipe">
+        <main>
+
+          {% if page.has_toc != false %}
+            {% include components/children_nav.html %}
+          {% endif %}
+          
+          <h2 id="{{ page.title | slugify }}"> 
+            <a href="#{{ page.title | slugify }}" class="anchor-heading" aria-labelledby="{{ page.title | slugify }}"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 
+            {{ page.title }}
+          </h2>
+
+          <img src="{{ page.image }}" alt="{{ page.title }}" itemprop="image" class="recipe-image">
+
+          {% if page.prepmins or page.cookmins %}
+            <dl class="dl-horizontal">
+              {% if page.prepmins %}<dt>Preparation time</dt><dd>{{ page.prepmins }} mins<span itemprop="prepTime" class="invisible">PT{{ page.prepmins }}M</span></dd>{% endif %}
+              {% if page.cookmins %}<dt>Cooking time</dt><dd>{{ page.cookmins }} mins<span itemprop="cookTime" class="invisible">PT{{ page.cookmins }}M</span></dd>{% endif %}
+            </dl>
+          {% endif %}
+          
+          <h3 id="ingredients"> <a href="#ingredients" class="anchor-heading" aria-labelledby="ingredients"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Ingredients </h3>
+
+          <ul>
+            {% for ingredient in page.ingredients %} 
+              <li itemprop="recipeIngredients">{{ ingredient }}</li>
+            {% endfor %}
+          </ul>
+
+          <h3 id="instructions"> <a href="#instructions" class="anchor-heading" aria-labelledby="instructions"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Instructions </h3>
+
+          <ol itemprop="recipeInstructions">
+            {% for instruction in page.instructions %} 
+            <li>{{ instruction }}</li>
+            {% endfor %}
+          </ol>
+
+          {% if site.heading_anchors != false %}
+            {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
+          {% else %}
+            {{ content }}
+          {% endif %}
+
+          {% if page.nutrition %}
+            <h3 id="nutrition-facts"> <a href="#nutrition-facts" class="anchor-heading" aria-labelledby="nutrition-facts"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Nutrition Facts </h3>
+
+            in grams per serving
+            <dl itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+              <dt>Calories</dt> <dd itemprop="calories">{{ page.nutrition.calories }}</dd>
+              <dt>Fat</dt> <dd itemprop="fatContent">{{ page.nutrition.fatContent }}</dd>
+              <dt>Carbohydrates</dt> <dd itemprop="carbohydrateContent">{{ page.nutrition.carbohydrateContent }}</dd>
+              <dt>Protein</dt> <dd itemprop="proteinContent">{{ page.nutrition.proteinContent }}</dd>
+            </dl>
+          {% endif %}
+        </main>
+        {% include components/footer.html %}
+      </div>
+    </div>
+    {% if site.search_enabled != false %}
+      {% include components/search_footer.html %}
+    {% endif %}
+  </div>
+
+  {% if site.mermaid %}
+    {% include components/mermaid.html %}
+  {% endif %}
+</body>
+</html>

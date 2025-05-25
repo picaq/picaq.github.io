@@ -298,3 +298,15 @@ iframe {
     max-height: 100%;
 }
 
+.invisible {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.recipe-image {
+    float: right; 
+    max-width: 50%; 
+    border-radius: .33rem;
+    margin-left: 1rem;
+}
