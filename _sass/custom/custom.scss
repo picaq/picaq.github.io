@@ -302,6 +302,8 @@ iframe {
     opacity: 0;
     visibility: hidden;
     // display: none;
+    height: 0;
+    position: absolute;
 }
 
 img.invisible {

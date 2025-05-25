@@ -46,14 +46,16 @@ layout: table_wrappers
               {% endif %}
               {% if page.yield %}<dt>Yield</dt><dd>{{ page.yield }} servings<span itemprop="recipeYield" class="invisible">{{ page.yield }}</span></dd>
               {% endif %}
+              {% if site.title %}<span itemprop="author" class="invisible">{{ site.title }}</span>
+              {% endif %}
             </dl>
           {% endif %}
           
           <h3 id="ingredients"> <a href="#ingredients" class="anchor-heading" aria-labelledby="ingredients"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Ingredients </h3>
 
-          <ul>
+          <ul itemprop="recipeIngredients">
             {% for ingredient in page.ingredients %} 
-              <li itemprop="recipeIngredients">{{ ingredient }}</li>
+              <li itemprop="recipeIngredient">{{ ingredient }}</li>
             {% endfor %}
           </ul>
 
@@ -83,6 +85,21 @@ layout: table_wrappers
             </dl>
 
             <p class="invisible" itemprop="description">{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+
+            <dl>
+              {% if page.cuisine %}
+              <dt>cuisine</dt> <dd itemprop="recipeCuisine">{{ page.cuisine }}</dd>
+              {% endif %}
+              {% if page.diet %}
+              <dt>diet</dt> <dd itemprop="recipeDiet">{{ page.diet }}</dd>
+              {% endif %}
+              {% if page.category %}
+              <dt>category</dt> <dd itemprop="recipeCategory">{{ page.category }}</dd>
+              {% endif %}
+              {% if page.keywords %}
+              <dt>keywords</dt> <dd itemprop="keywords">{{ page.keywords | join: ', ' }}</dd>
+              {% endif %}
+            </dl>
 
           {% endif %}
         </main>
