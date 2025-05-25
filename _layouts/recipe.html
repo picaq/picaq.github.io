@@ -21,8 +21,11 @@ layout: table_wrappers
     <div class="main-content-wrap">
       {% include components/breadcrumbs.html %}
       <div id="main-content" class="main-content" schema="https://schema.org/Recipe">
-        <main>
-
+        <main itemscope itemtype="http://schema.org/Recipe">
+            <p class="invisible" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+              <span itemprop="ratingValue">5</span>
+              <span itemprop="reviewCount">1</span>
+            </p>
           {% if page.has_toc != false %}
             {% include components/children_nav.html %}
           {% endif %}
@@ -75,10 +78,6 @@ layout: table_wrappers
             </dl>
 
             <p class="invisible" itemprop="description">{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
-            <p class="invisible" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-              <span itemprop="ratingValue">5</span>
-              <span itemprop="reviewCount">1</span>
-            </p>
 
           {% endif %}
         </main>
