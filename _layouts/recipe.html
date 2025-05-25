@@ -46,7 +46,7 @@ layout: table_wrappers
               {% endif %}
               {% if page.yield %}<dt>Yield</dt><dd>{{ page.yield }} servings<span itemprop="recipeYield" class="invisible">{{ page.yield }}</span></dd>
               {% endif %}
-              {% if site.title %}<span itemprop="author" class="invisible">{{ site.title }}</span>
+              {% if site.title %}<span itemprop="author" type="person" class="invisible">{{ site.title }}</span>
               {% endif %}
             </dl>
           {% endif %}
