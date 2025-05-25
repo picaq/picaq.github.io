@@ -72,7 +72,7 @@ search_enabled: true
 search:
   # Split pages into sections that can be searched individually
   # Supports 1 - 6, default: 2
-  heading_level: 2
+  heading_level: 4
   # Maximum amount of previews per search result
   # Default: 3
   previews: 3
@@ -85,7 +85,7 @@ search:
   # Set the search token separator
   # Default: /[\s\-/]+/
   # Example: enable support for hyphenated search words
-  tokenizer_separator: /[\s/]+/
+  tokenizer_separator: /[\s\./]+/
   # Display the relative url in search results
   # Supports true (default) or false
   rel_url: true
