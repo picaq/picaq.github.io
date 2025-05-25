@@ -73,6 +73,13 @@ layout: table_wrappers
               <dt>Carbohydrates</dt> <dd itemprop="carbohydrateContent">{{ page.nutrition.carbohydrateContent }}</dd>
               <dt>Protein</dt> <dd itemprop="proteinContent">{{ page.nutrition.proteinContent }}</dd>
             </dl>
+
+            <p class="invisible" itemprop="description">{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+            <p class="invisible" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+              <span itemprop="ratingValue">5</span>
+              <span itemprop="reviewCount">1</span>
+            </p>
+
           {% endif %}
         </main>
         {% include components/footer.html %}

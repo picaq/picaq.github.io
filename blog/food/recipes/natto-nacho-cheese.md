@@ -33,6 +33,7 @@ nutrition:
 prepmins: 2
 cookmins: 7
 date: 2025-04-11 10:20:00 -0700
+excerpt: Creamy and slightly sticky just like real nacho cheese!
 image: https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3
 thumbnail: https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3
 tags:
@@ -43,11 +44,6 @@ tags:
 ![image](https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3){: style="float: right; max-width: 50%; border-radius: .33rem;margin-left: 1rem;" :itemprop="image" .invisible}
 
 The resulting texture and color should resemble nacho cheese.
-
-<p class="invisible" itemprop="description">{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
-<p class="invisible" itemprop="nutrition" itemscope itemtype="http://schema.org/NutritionInformation"><span itemprop="calories">{{ page.calories | default: 2 }}</span></p>
-<p class="invisible" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><span itemprop="ratingValue">5</span><span itemprop="reviewCount">1</span></p>
-
 
 ### How does it compare to regular nacho cheese?
 
