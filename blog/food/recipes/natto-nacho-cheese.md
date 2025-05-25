@@ -32,6 +32,7 @@ nutrition:
   carbohydrateContent: 23
 prepmins: 2
 cookmins: 7
+yield: 1
 date: 2025-04-11 10:20:00 -0700
 excerpt: Creamy and slightly sticky just like real nacho cheese!
 image: https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3
