@@ -20,7 +20,7 @@ layout: table_wrappers
     {% include components/header.html %}
     <div class="main-content-wrap">
       {% include components/breadcrumbs.html %}
-      <div id="main-content" class="main-content" schema="https://schema.org/Recipe">
+      <div id="main-content" class="main-content">
         <main itemscope itemtype="http://schema.org/Recipe">
             <p class="invisible" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
               <span itemprop="ratingValue">5</span>
@@ -42,11 +42,9 @@ layout: table_wrappers
               {% if page.prepmins %}
               <dt>Preparation time</dt><dd>{{ page.prepmins }} mins<span itemprop="prepTime" class="invisible">PT{{ page.prepmins }}M</span></dd>
               {% endif %}
-              {% if page.cookmins %}<dt>Cooking time</dt><dd>{{ page.cookmins }} mins<span itemprop="cookTime" class="invisible">PT{{ page.cookmins }}M
+              {% if page.cookmins %}<dt>Cooking time</dt><dd>{{ page.cookmins }} mins<span itemprop="cookTime" class="invisible">PT{{ page.cookmins }}M</span></dd>
               {% endif %}
               {% if page.yield %}<dt>Yield</dt><dd>{{ page.yield }} servings<span itemprop="recipeYield" class="invisible">{{ page.yield }}</span></dd>
-              {% endif %}
-              {% if site.title %}<span itemprop="author" type="person" class="invisible">{{ site.title }}</span>
               {% endif %}
             </dl>
           {% endif %}
@@ -86,6 +84,11 @@ layout: table_wrappers
 
             <p class="invisible" itemprop="description">{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
 
+            <div itemscope itemprop="author" class="invisible"> 
+              <span itemprop="name">{{ site.title }}</span>
+              <span itemprop="type">person</span> 
+            </div>
+
             <dl>
               {% if page.cuisine %}
               <dt>cuisine</dt> <dd itemprop="recipeCuisine">{{ page.cuisine }}</dd>
@@ -100,7 +103,6 @@ layout: table_wrappers
               <dt>keywords</dt> <dd itemprop="keywords">{{ page.keywords | join: ', ' }}</dd>
               {% endif %}
             </dl>
-
           {% endif %}
         </main>
         {% include components/footer.html %}
