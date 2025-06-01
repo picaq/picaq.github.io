@@ -316,3 +316,8 @@ img.invisible {
     border-radius: .33rem;
     margin-left: 1rem;
 }
+
+.main-content img.recipe-image + dl {
+    display: grid;
+    grid-template: auto / 9em 1fr;
+}
