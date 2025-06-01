@@ -8921,4 +8921,9 @@ img.invisible {
   margin-left: 1rem;
 }
 
+.main-content img.recipe-image + dl {
+  display: grid;
+  grid-template: auto/9em 1fr;
+}
+
 /*# sourceMappingURL=just-the-docs-default.css.map */
