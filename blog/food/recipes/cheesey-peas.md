@@ -48,7 +48,7 @@ keywords: pea, protein, cashew, cheese, nachos
 
 ![image](https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3){: style="float: right; max-width: 50%; border-radius: .33rem;margin-left: 1rem;" :itemprop="image" .invisible}
 
-The resulting texture and color should resemble nacho cheese.
+The flavorings should make the peas fresh yet cheesy.
 
 ### More Cheese!
 This recipe is a simplified version of, and the original inspiration for [natto nacho cheese](natto-nacho-cheese).
