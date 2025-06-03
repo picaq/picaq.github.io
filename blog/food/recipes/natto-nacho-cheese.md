@@ -61,5 +61,8 @@ The resulting texture and color should resemble nacho cheese.
 - less filler ( flour/roux/starch, sodium citrate ) means more flavor
 - can be eaten at room temperature, warmed or chilled
 
+### More Cheese!
+This recipe can easily be adapted to make cheesy peas instead.
+
 
 <!-- ![image](https://github.com/user-attachments/assets/9658417e-cf49-43bd-8fae-7a2c73e25605){: style="float: right; width: 50%"} -->
