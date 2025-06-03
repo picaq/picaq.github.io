@@ -34,8 +34,8 @@ cookmins: 4
 yield: 1
 date: 2025-06-13 6:34:00 -0700
 excerpt: Creamy, slightly sticky, cheesy and filling.
-image: https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3
-thumbnail: https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3
+image: https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3
+thumbnail: https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3
 tags:
   - featured
   - recipe
@@ -46,7 +46,7 @@ keywords: pea, protein, cashew, cheese, nachos
 
 ---
 
-![image](https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3){: style="float: right; max-width: 50%; border-radius: .33rem;margin-left: 1rem;" :itemprop="image" .invisible}
+![image](https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3){: style="float: right; max-width: 50%; border-radius: .33rem;margin-left: 1rem;" :itemprop="image" .invisible}
 
 The resulting texture and color should resemble nacho cheese.
 
