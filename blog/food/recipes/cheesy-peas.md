@@ -18,10 +18,10 @@ ingredients:
   - 1 – 2 tsp miso paste ( optional ) for more umami
   - sweetener ( optional ) ( date syrup and/or stevia )
 instructions:
-  - Pour peas into a microwavable bowl alongside all liquid ingredients. If adding powdered ingredients (except for kala namak) stir them in.
+  - Pour peas into a microwavable bowl alongside all liquid ingredients. If adding powdered ingredients ( except for kala namak ) stir them in.
   - Cook at max settings for 3:30 minutes or 90 seconds at max power followed by 2:45 at 20% power. If using a lid, reduce the cooking time by 30 –40 s.
   - let sit for 1 – 2 minutes before touching the heating vessel.
-  - Stir in all solid ingredients (if not done so already), followed by cashew butter and kala namak.
+  - Stir in all solid ingredients ( if not done so already ), followed by cashew butter and kala namak.
   - Stir in the rest of the optional ingredients. 
   
 nutrition:
@@ -46,7 +46,7 @@ keywords: pea, protein, cashew, cheese, nachos
 
 ---
 
-![image](https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3){: style="float: right; max-width: 50%; border-radius: .33rem;margin-left: 1rem;" :itemprop="image" .invisible}
+![image](https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3){:itemprop="image" .invisible}
 
 The flavorings should make the peas fresh yet cheesy.
 

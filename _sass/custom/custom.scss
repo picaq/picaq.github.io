@@ -277,7 +277,8 @@ h1 { opacity: .92 }
 // hot sauce sando
 [id^="hot-sauce-sando"] ~ [id="ingredients"] + ul> li:nth-child(n + 4), 
 // natto nacho cheese
-[id^="natto-nacho-cheese"] ~ [id="ingredients"] + ul> li:nth-child(n + 12) {
+[id^="natto-nacho-cheese"] ~ [id="ingredients"] + ul> li:nth-child(n + 12), 
+[id^="cheesy-peas"] ~ [id="ingredients"] + ul> li:nth-child(n + 10) {
     opacity: 0.7;
 }
 
@@ -312,9 +313,11 @@ img.invisible {
 
 .recipe-image {
     float: right; 
-    max-width: 50%; 
+    max-width: calc(57% - 2rem); 
     border-radius: .33rem;
-    margin-left: 1rem;
+    padding-left: 1rem;
+    object-fit: cover;
+    // min-width: calc(50vw - 2rem);
 }
 
 .main-content img.recipe-image + dl {
