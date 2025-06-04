@@ -1,5 +1,10 @@
 module Jekyll
   class RenderRecipeTag < Liquid::Tag
+    
+    def strip_html(input)
+      input.gsub(/<\/?[^>]*>/, '')
+    end
+    
     def render(context)
       page = context['page']
       site = context['site']
@@ -54,6 +59,26 @@ module Jekyll
         output << "<dt>Fat</dt><dd itemprop=\"fatContent\">#{nutrition['fatContent']}</dd>"
         output << "<dt>Carbohydrates</dt><dd itemprop=\"carbohydrateContent\">#{nutrition['carbohydrateContent']}</dd>"
         output << "<dt>Protein</dt><dd itemprop=\"proteinContent\">#{nutrition['proteinContent']}</dd>"
+        output << "</dl>"
+
+        excerpt = strip_html(context['page']['excerpt'].to_s).gsub(/\n/, ' ')[0..199]
+        output << "<p class=\"invisible\" itemprop=\"description\">#{excerpt}</p>"
+
+        output << "<div itemscope itemprop=\"author\" itemtype=\"http://schema.org/Person\" class=\"invisible\">"
+        output << "<span itemprop=\"name\">#{site['title']}</span>"
+        output << "</div>"
+
+        output << "<dl>"
+
+        output << "<dt>cuisine</dt><dd itemprop=\"recipeCuisine\">#{page['cuisine']}</dd>" if page['cuisine']
+        output << "<dt>diet</dt><dd itemprop=\"recipeDiet\">#{page['diet']}</dd>" if page['diet']
+        output << "<dt>category</dt><dd itemprop=\"recipeCategory\">#{page['category']}</dd>" if page['category']
+
+        if page['keywords']
+          keywords = page['keywords'].is_a?(Array) ? page['keywords'].join(', ') : page['keywords']
+          output << "<dt>keywords</dt><dd itemprop=\"keywords\">#{keywords}</dd>"
+        end
+
         output << "</dl>"
       end
 
