@@ -66,6 +66,7 @@ module Jekyll
 
         output << "<div itemscope itemprop=\"author\" itemtype=\"http://schema.org/Person\" class=\"invisible\">"
         output << "<span itemprop=\"name\">#{site['title']}</span>"
+        output << "<span itemprop=\"url\">https://picaq.github.io</span>"
         output << "</div>"
 
         output << "<dl>"
