@@ -110,9 +110,9 @@ The milk making process follow the same basic formula and instuctions. The only 
 **Beans** : 35 minutes
 {: .label .label-yellow }
 
-For creamier soy milk, it is best to rinse and then warm soak the beans for a few hours, preferably&nbsp;overnight, and then rinse again before blending.
+For creamier soy milk, it is best to rinse and then warm soak the beans for a few hours (2 – 4), and then rinse again before blending or portion out the soaked, rinsed beans into jars in the fridge overnight to blend the next day. For storing the beans overnight, I also add a teaspoon of salt. If you rinse overnight-soaked salted soy beans, the soy milk will end up pretty tasteless and watery so it is preferred to pour the salted soak water into the machine along with the beans.
 
-Before serving, the soy milk foam should be skimmed off the surface.
+Before serving, the soy milk foam, if any, should be skimmed off the surface. Overnight-soaked salted soy beans will cook and blend without forming a foam on top.
   
 #### Soy Milk 
 
