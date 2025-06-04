@@ -48,6 +48,8 @@ keywords: pea, protein, cashew, cheese, nachos
 
 ![image](https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3){:itemprop="image" .invisible}
 
+{% render_recipe %}
+
 The flavorings should make the peas fresh yet cheesy.
 
 ### More Cheese!

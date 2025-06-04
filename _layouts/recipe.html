@@ -22,6 +22,9 @@ layout: table_wrappers
       {% include components/breadcrumbs.html %}
       <div id="main-content" class="main-content">
         <main itemscope itemtype="http://schema.org/Recipe">
+          {% if site.heading_anchors != false %}
+            {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
+          {% endif %}
             <p class="invisible" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
               <span itemprop="ratingValue">5</span>
               <span itemprop="reviewCount">1</span>
@@ -30,79 +33,6 @@ layout: table_wrappers
             {% include components/children_nav.html %}
           {% endif %}
           
-          <h2 id="{{ page.title | slugify }}" itemprop="name"> 
-            <a href="#{{ page.title | slugify }}" class="anchor-heading" aria-labelledby="{{ page.title | slugify }}"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 
-            {{ page.title }}
-          </h2>
-
-          <img src="{{ page.image }}" alt="{{ page.title }}" itemprop="image" class="recipe-image">
-
-          {% if page.prepmins or page.cookmins %}
-            <dl class="dl-horizontal">
-              {% if page.prepmins %}
-              <dt>Preparation time</dt><dd>{{ page.prepmins }} min{% if page.prepmins != 1 %}s{% endif %}<span itemprop="prepTime" class="invisible">PT{{ page.prepmins }}M</span></dd>
-              {% endif %}
-              {% if page.cookmins %}<dt>Cooking time</dt><dd>{{ page.cookmins }} min{% if page.cookmins != 1 %}s{% endif %}<span itemprop="cookTime" class="invisible">PT{{ page.cookmins }}M</span></dd>
-              {% endif %}
-              {% if page.yield %}<dt>Yield</dt><dd>{{ page.yield }} serving{% if page.yield != 1 %}s{% endif %} <span itemprop="recipeYield" class="invisible">{{ page.yield }}</span></dd>
-              {% endif %}
-            </dl>
-          {% endif %}
-          
-          <h3 id="ingredients"> <a href="#ingredients" class="anchor-heading" aria-labelledby="ingredients"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Ingredients </h3>
-
-          <ul itemprop="recipeIngredients">
-            {% for ingredient in page.ingredients %} 
-              <li itemprop="recipeIngredient">{{ ingredient }}</li>
-            {% endfor %}
-          </ul>
-
-          <h3 id="instructions"> <a href="#instructions" class="anchor-heading" aria-labelledby="instructions"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Instructions </h3>
-
-          <ol itemprop="recipeInstructions">
-            {% for instruction in page.instructions %} 
-            <li>{{ instruction }}</li>
-            {% endfor %}
-          </ol>
-
-          {% if site.heading_anchors != false %}
-            {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
-          {% else %}
-            {{ content }}
-          {% endif %}
-
-          {% if page.nutrition %}
-            <h3 id="nutrition-facts"> <a href="#nutrition-facts" class="anchor-heading" aria-labelledby="nutrition-facts"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Nutrition Facts </h3>
-
-            <p><em>in grams per serving</em></p>
-            <dl itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
-              <dt>Calories</dt> <dd itemprop="calories">{{ page.nutrition.calories }}</dd>
-              <dt>Fat</dt> <dd itemprop="fatContent">{{ page.nutrition.fatContent }}</dd>
-              <dt>Carbohydrates</dt> <dd itemprop="carbohydrateContent">{{ page.nutrition.carbohydrateContent }}</dd>
-              <dt>Protein</dt> <dd itemprop="proteinContent">{{ page.nutrition.proteinContent }}</dd>
-            </dl>
-
-            <p class="invisible" itemprop="description">{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
-
-            <div itemscope itemprop="author" itemtype="http://schema.org/Person" class="invisible">
-              <span itemprop="name">{{ site.title }}</span>
-            </div>
-
-            <dl>
-              {% if page.cuisine %}
-              <dt>cuisine</dt> <dd itemprop="recipeCuisine">{{ page.cuisine }}</dd>
-              {% endif %}
-              {% if page.diet %}
-              <dt>diet</dt> <dd itemprop="recipeDiet">{{ page.diet }}</dd>
-              {% endif %}
-              {% if page.category %}
-              <dt>category</dt> <dd itemprop="recipeCategory">{{ page.category }}</dd>
-              {% endif %}
-              {% if page.keywords %}
-              <dt>keywords</dt> <dd itemprop="keywords">{{ page.keywords | join: ', ' }}</dd>
-              {% endif %}
-            </dl>
-          {% endif %}
         </main>
         {% include components/footer.html %}
       </div>
