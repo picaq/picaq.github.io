@@ -274,6 +274,8 @@ h1 { opacity: .92 }
 
 // mushroom marianara dal
 [id$="marinara-dal"] ~ [id="ingredients"] + p + ul> li:nth-child(n + 4),
+// caramelized miso carrots
+[id^="caramelized-miso-carrots"] ~ [id="ingredients"] + ul > li:nth-child(n + 3),
 // hot sauce sando
 [id^="hot-sauce-sando"] ~ [id="ingredients"] + ul> li:nth-child(n + 4), 
 // natto nacho cheese

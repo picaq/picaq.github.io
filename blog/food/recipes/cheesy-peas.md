@@ -24,6 +24,8 @@ instructions:
   - Stir in all solid ingredients ( if not done so already ), followed by cashew butter and kala namak.
   - Stir in the rest of the optional ingredients. 
   
+result_blurb: The flavorings should make the peas fresh yet cheesy.
+description: Fresh, cheesy peas!
 nutrition:
   calories: 180
   fatContent: 22
@@ -33,7 +35,7 @@ prepmins: 2
 cookmins: 4
 yield: 1
 date: 2025-06-13 6:34:00 -0700
-excerpt: Creamy, slightly sticky, cheesy and filling.
+excerpt: Creamy, slightly sticky, cheesy&nbsp;and&nbsp;filling.
 image: https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3
 thumbnail: https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3
 tags:
@@ -46,11 +48,9 @@ keywords: pea, protein, cashew, cheese, nachos
 
 ---
 
-![image](https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3){:itemprop="image" .invisible}
+![image](https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3){:.invisible}
 
 {% render_recipe %}
-
-The flavorings should make the peas fresh yet cheesy.
 
 ### More Cheese!
 This recipe is a simplified version of, and the original inspiration for [natto nacho cheese](natto-nacho-cheese).

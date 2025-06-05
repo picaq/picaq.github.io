@@ -5,6 +5,7 @@ parent: Recipes
 layout: recipe
 nav_order: 5
 tags: [natto, cashew, cheese]
+excerpt: Creamy and slightly sticky just like real&nbsp;nacho&nbsp;cheese!
 ingredients:
   - 50 – 60 g natto
   - 1 – 2 tbsp nooch
@@ -25,6 +26,7 @@ instructions:
   - Add all liquid ingredients (except for the cashew milk) and salts to taste and whisk til dissolved.
   - Stir in the rest of the solid ingredients. 
   - Adjust consistency to desired viscosity by adding cashew milk while stirring.
+result_blurb: The resulting texture and color should resemble nacho cheese.
 nutrition:
   calories: 340
   fatContent: 22
@@ -34,7 +36,6 @@ prepmins: 2
 cookmins: 7
 yield: 1
 date: 2025-04-11 10:20:00 -0700
-excerpt: Creamy and slightly sticky just like real nacho cheese!
 image: https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3
 thumbnail: https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3
 tags:
@@ -47,11 +48,9 @@ keywords: natto, cashew, cheese, nachos
 
 ---
 
-![image](https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3){: style="float: right; max-width: 50%; border-radius: .33rem;margin-left: 1rem;" :itemprop="image" .invisible}
+![image](https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3){:.invisible}
 
 {% render_recipe %}
-
-The resulting texture and color should resemble nacho cheese.
 
 ### How does it compare to regular nacho cheese?
 

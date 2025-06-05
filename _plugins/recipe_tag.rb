@@ -1,8 +1,17 @@
+require "kramdown"
+
 module Jekyll
   class RenderRecipeTag < Liquid::Tag
     
-    def strip_html(input)
-      input.gsub(/<\/?[^>]*>/, '')
+    # def strip_html(input)
+    #   input.gsub(/<\/?[^>]*>/, '')
+    # end
+
+    def markdown_to_html(markdown_input)
+      markdown = <<~MD
+        #{markdown_input}
+      MD
+      Kramdown::Document.new(markdown, input: "GFM").to_html
     end
     
     def render(context)
@@ -13,11 +22,14 @@ module Jekyll
       # You can access any page variable here
       title = page['title']
       image = page['image']
+      excerpt = page['excerpt'] || page['intro_blurb'] || page['intro']
+      description = page['description']
       prepmins = page['prepmins']
       cookmins = page['cookmins']
       recipe_yield = page['yield']
       ingredients = page['ingredients'] || []
       instructions = page['instructions'] || []
+      result_blurb = page['result_blurb']
       nutrition = page['nutrition'] || {}
 
       # You can manually build the HTML string
@@ -28,6 +40,12 @@ module Jekyll
         </h2>
         <img src="#{image}" alt="#{title}" itemprop="image" class="recipe-image">
       HTML
+
+      if excerpt
+        output << "<section itemprop=\"description\">#{markdown_to_html(excerpt)}</section>"
+      else 
+        output << "<p itemprop=\"description\" class=\"invisible\">#{description}</p>"
+      end
 
       if prepmins || cookmins || recipe_yield
         output << "<dl class=\"dl-horizontal\">"
@@ -51,6 +69,10 @@ module Jekyll
       end
       output << "</ol>"
 
+      if result_blurb
+        output << "<section>#{markdown_to_html(result_blurb)}</section>"
+      end
+
       if nutrition.any?
         output << "<h3 id=\"nutrition-facts\"><a href=\"#nutrition-facts\" class=\"anchor-heading\" aria-labelledby=\"nutrition-facts\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg></a> Nutrition Facts</h3>"
         output << "<p><em>in grams per serving</em></p>"
@@ -60,9 +82,6 @@ module Jekyll
         output << "<dt>Carbohydrates</dt><dd itemprop=\"carbohydrateContent\">#{nutrition['carbohydrateContent']}</dd>"
         output << "<dt>Protein</dt><dd itemprop=\"proteinContent\">#{nutrition['proteinContent']}</dd>"
         output << "</dl>"
-
-        excerpt = strip_html(context['page']['excerpt'].to_s).gsub(/\n/, ' ')[0..199]
-        output << "<p class=\"invisible\" itemprop=\"description\">#{excerpt}</p>"
 
         output << "<div itemscope itemprop=\"author\" itemtype=\"http://schema.org/Person\" class=\"invisible\">"
         output << "<span itemprop=\"name\">#{site['title']}</span>"
