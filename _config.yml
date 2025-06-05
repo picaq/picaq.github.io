@@ -23,7 +23,9 @@ email: mandychen.art (@) gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Software engineering, Visual media, Illustration, Musicianship, and Whole food plant-based recipes.
 
-author: Mandy Chen
+author:
+  name: Mandy Chen
+  url: "https://mandychen.art" # adds to SEO author url schema
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://picaq.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: picaq2
