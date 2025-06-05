@@ -9149,6 +9149,7 @@ h1 {
 
 /* fade out optional ingredients */
 [id$=marinara-dal] ~ [id=ingredients] + p + ul > li:nth-child(n+4),
+[id^=caramelized-miso-carrots] ~ [id=ingredients] + ul > li:nth-child(n+3),
 [id^=hot-sauce-sando] ~ [id=ingredients] + ul > li:nth-child(n+4),
 [id^=natto-nacho-cheese] ~ [id=ingredients] + ul > li:nth-child(n+12),
 [id^=cheesy-peas] ~ [id=ingredients] + ul > li:nth-child(n+10) {
