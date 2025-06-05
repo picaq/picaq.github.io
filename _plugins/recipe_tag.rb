@@ -38,7 +38,7 @@ module Jekyll
       end
 
       output << "<h3 id=\"ingredients\"><a href=\"#ingredients\" class=\"anchor-heading\" aria-labelledby=\"ingredients\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg></a> Ingredients</h3>"
-      output << "<ul itemprop=\"recipeIngredients\">"
+      output << "<ul>"
       ingredients.each do |ingredient|
         output << "<li itemprop=\"recipeIngredient\">#{ingredient}</li>"
       end
@@ -72,7 +72,7 @@ module Jekyll
         output << "<dl>"
 
         output << "<dt>cuisine</dt><dd itemprop=\"recipeCuisine\">#{page['cuisine']}</dd>" if page['cuisine']
-        output << "<dt>diet</dt><dd itemprop=\"recipeDiet\">#{page['diet']}</dd>" if page['diet']
+        output << "<dt>diet</dt><dd>#{page['diet']}</dd>" if page['diet']
         output << "<dt>category</dt><dd itemprop=\"recipeCategory\">#{page['category']}</dd>" if page['category']
 
         if page['keywords']
