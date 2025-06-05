@@ -35,8 +35,8 @@ prepmins: 7
 cookmins: 20
 yield: 4 – 5
 date: 2025-05-10 17:40:00 -0700
-image: https://github.com/user-attachments/assets/71ae19f0-befa-4f4a-a3af-be751942d124
-thumbnail: https://github.com/user-attachments/assets/71ae19f0-befa-4f4a-a3af-be751942d124
+image: https://github.com/user-attachments/assets/0013f382-9264-4f01-b59b-242598ca0405
+thumbnail: https://github.com/user-attachments/assets/0013f382-9264-4f01-b59b-242598ca0405
 tags:
   - featured
   - recipe
@@ -47,8 +47,8 @@ keywords: [lentil, soup, spicy, mushroom, protein]
 
 ---
 
-<!-- 
-![image](https://github.com/user-attachments/assets/25ed8af1-600b-44f8-949f-1a5fcfb311e3){:.invisible"} -->
+![image](https://github.com/user-attachments/assets/0013f382-9264-4f01-b59b-242598ca0405){:.invisible}
+
 
 {% render_recipe %}
 
