@@ -5,9 +5,9 @@ permalink: blog/food/recipes/mushroom-marinara-dal
 parent: Recipes
 layout: recipe
 nav_order: 6
-intro: I usually meal prep this in a mason jar or two and eat it over the course of 1 – 3 weeks.
+intro: I usually meal prep this in a mason jar or two and eat it over the course of 1&#x200D; &#x200D;–&#x200D; &#x200D;3&nbsp;weeks.
 description: Spicy, hearty and filling main or side dish that tastes like home.
-ingredients_blurb: Everything after water is optional and added to taste.
+ingredients_blurb: Everything after water is optional and added&nbsp;to&nbsp;taste.
 ingredients:
   - 1 cup red lentils
   - 1 jar of marinara sauce
