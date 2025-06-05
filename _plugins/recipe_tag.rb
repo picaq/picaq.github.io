@@ -42,7 +42,7 @@ module Jekyll
       HTML
 
       if excerpt
-        output << "<aside itemprop=\"description\">#{markdown_to_html(excerpt)}</aside>"
+        output << "<div itemprop=\"description\">#{markdown_to_html(excerpt)}</div>"
       else 
         output << "<p itemprop=\"description\" class=\"invisible\">#{description}</p>"
       end
@@ -70,7 +70,7 @@ module Jekyll
       output << "</ol>"
 
       if result_blurb
-        output << "<aside>#{markdown_to_html(result_blurb)}</aside>"
+        output << "<div>#{markdown_to_html(result_blurb)}</div>"
       end
 
       if nutrition.any?
