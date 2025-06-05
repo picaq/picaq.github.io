@@ -21,6 +21,7 @@ module Jekyll
 
       # You can access any page variable here
       title = page['title']
+      title_override = page['title_override']
       image = page['image']
       excerpt = page['excerpt'] || page['intro_blurb'] || page['intro']
       description = page['description']
@@ -28,6 +29,7 @@ module Jekyll
       cookmins = page['cookmins']
       recipe_yield = page['yield']
       ingredients = page['ingredients'] || []
+      ingredients_blurb = page['ingredients_blurb'] || page['ingredients_intro']
       instructions = page['instructions'] || []
       result_blurb = page['result_blurb']
       nutrition = page['nutrition'] || {}
@@ -36,9 +38,9 @@ module Jekyll
       output = <<~HTML
         <h2 id="#{title.downcase.strip.gsub(' ', '-')}" itemprop="name">
           <a href="##{title.downcase.strip.gsub(' ', '-')}" class="anchor-heading" aria-labelledby="#{title.downcase.strip.gsub(' ', '-')}"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a>
-          #{title}
+          #{title_override ? title_override : title}
         </h2>
-        <img src="#{image}" alt="#{title}" itemprop="image" class="recipe-image">
+        <img src="#{image}" alt="cropped phone picture of #{title}" itemprop="image" class="recipe-image">
       HTML
 
       if excerpt
@@ -56,6 +58,11 @@ module Jekyll
       end
 
       output << "<h3 id=\"ingredients\"><a href=\"#ingredients\" class=\"anchor-heading\" aria-labelledby=\"ingredients\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg></a> Ingredients</h3>"
+
+      if ingredients_blurb
+        output << "#{markdown_to_html(page['ingredients_blurb'])}"
+      end
+
       output << "<ul>"
       ingredients.each do |ingredient|
         output << "<li itemprop=\"recipeIngredient\">#{ingredient}</li>"

@@ -37,7 +37,7 @@ nutrition:
 prepmins: 2
 cookmins: 42
 yield: 1
-date: 2025-06-13 6:34:00 -0700
+date: 2025-05-15 23:44:00 -0700
 image: https://github.com/user-attachments/assets/71ae19f0-befa-4f4a-a3af-be751942d124
 thumbnail: https://github.com/user-attachments/assets/71ae19f0-befa-4f4a-a3af-be751942d124
 tags:
