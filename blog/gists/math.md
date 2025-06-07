@@ -111,6 +111,14 @@ const toHMS = totalSec => {
 }
 ```
 
+### quick convert milliseconds to hh:mm:ss
+
+only works if hh < 24 or ms < 86400000 milliseconds
+
+```js
+new Date(ms).toISOString().slice(11, -5);
+```
+
 ## Phone Number format
 
 ### digits to phone number format and back
