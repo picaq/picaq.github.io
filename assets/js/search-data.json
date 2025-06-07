@@ -533,7 +533,7 @@
   },"76": {
     "doc": "Map",
     "title": "Map Object",
-    "content": "A JavaScript-specific data structure similar to an Object but remembers insertion order and is iterable. It also has far better performance when inserting and deleting keys-value pairs. More info: Map - JavaScript | MDN . ",
+    "content": "A JavaScript-specific data structure similar to an Object but remembers insertion order and is iterable. It also has far better performance when inserting and deleting keys-value pairs. More info: Map - JavaScript | MDN . ",
     "url": "/blog/gists/javascript/map#map-object",
     
     "relUrl": "/blog/gists/javascript/map#map-object"
