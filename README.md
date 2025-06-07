@@ -1,7 +1,7 @@
 # [picaq.github.io](https://picaq.github.io)
 Mandy is hosting stuff
 
-This is my github pages repo. It is live here at [picaq.github.io](https://picaq.github.io) and contains my personal [jekyll blog](https://picaq.github.io/blog)! 
+This is my github pages repo. It is live here at [picaq.github.io](https://picaq.github.io) and contains my [jekyll blog](https://picaq.github.io/blog)! 
 
 [The repository itself](https://github.com/picaq/picaq.github.io) mainly houses the code for [Sarasa Gothic Mono](https://picaq.github.io/sarasa/) typography specimen, 
 but also submodules of the latest stable commits of some pure vanilla html/css/js projects:
