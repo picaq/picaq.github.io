@@ -4,13 +4,8 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 }
 
 theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : prefers ? prefers : 'light';
-isMac = (navigator.platform.startsWith('Mac') || navigator.platform === 'iPhone'); // true or false
-
-if (isMac === 'true') {
-  document.querySelector('#search-input').placeholder = "Search Mandy’s Blog · ⌘ + k";
-} else  {
-  document.querySelector('#search-input').placeholder = "Search Mandy’s Blog · ctrl + k";
-}
+isMac = localStorage.getItem('isMac') ? localStorage.getItem('isMac') : `${navigator.platform.startsWith('Mac') || navigator.platform === 'iPhone'}`;
+// isMac = (navigator.platform.startsWith('Mac') || navigator.platform === 'iPhone'); // true or false
 
 window.addEventListener("DOMContentLoaded", function() {
   const toggleDarkMode = document.getElementById("theme-toggle");
@@ -23,6 +18,12 @@ window.addEventListener("DOMContentLoaded", function() {
     localStorage.setItem('theme', newTheme);
     setTheme(newTheme);
   });
+
+  if (isMac === 'true') {
+    document.querySelector('#search-input').placeholder = "Search Mandy’s Blog · ⌘ + k";
+  } else  {
+    document.querySelector('#search-input').placeholder = "Search Mandy’s Blog · ctrl + k";
+  }
 
   function getTheme() {
     return document.documentElement.classList.contains('dark-mode') ? 'dark' : 'light';
