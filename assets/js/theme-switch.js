@@ -4,7 +4,8 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 }
 
 theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : prefers ? prefers : 'light';
-isMac = (navigator.platform.startsWith('Mac') || navigator.platform === 'iPhone'); // true or false
+isMac = localStorage.getItem('isMac') ? localStorage.getItem('isMac') : `${navigator.platform.startsWith('Mac') || navigator.platform === 'iPhone'}`;
+// isMac = (navigator.platform.startsWith('Mac') || navigator.platform === 'iPhone'); // true or false
 
 if (isMac === 'true') {
   document.querySelector('#search-input').placeholder = "Search Mandy’s Blog · ⌘ + k";
