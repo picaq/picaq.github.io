@@ -21,3 +21,5 @@ I am playing as a Harengon Bard, and this page simply keeps track of my stats, s
 
 
 Actually, I decided to keep track on Obsidian instead.
+
+![image](https://github.com/user-attachments/assets/5dcc7137-bede-43ea-ac0d-bc028f75b0a0){: style="max-width: 50%"}
