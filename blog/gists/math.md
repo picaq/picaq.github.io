@@ -119,6 +119,22 @@ const formatPhone = digts => `(${digts.slice(0,3)}) ${digts.slice(3,6)}-${digts.
 const phoneToNumString = phone => phone.match(/\d/g).join("");
 ```
 
+## Science
+
+### Temperature conversion
+
+chemistry calculations
+
+```js
+const c2f = c => ( c * 9/5 ) + 32;
+const f2c = f => ( f - 32 ) * 5/9;
+
+const c2k = c =>  c + 273.15;
+const k2c = k => k - 273.15;
+
+const f2k = f => f2c(f) + 273.15;
+const k2f = k => c2f(k - 273.15);
+```
 
 ## Currency conversions
 
