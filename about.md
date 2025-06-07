@@ -50,7 +50,7 @@ This is the base Jekyll theme. You can find out more info about customizing your
 [Theme Switching Button · Issue #1223 · just-the-docs/just-the-docs](https://github.com/just-the-docs/just-the-docs/issues/1223) 
 
 ## Todo
-- [ ] get lunr.js to ignore parsing TOC to search.json
+- [x] get lunr.js to ignore parsing TOC to search.json
 - [ ] index tags to search.json
 - [ ] ruby and/or shell script to start a post/page faster w/ a command via templates
 - [ ] update/style code block themes
