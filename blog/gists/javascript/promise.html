@@ -54,4 +54,16 @@
     <span class="nx">console</span><span class="p">.</span><span class="nf">error</span><span class="p">(</span><span class="nx">userCity</span><span class="p">,</span> <span class="dl">'</span><span class="s1">is not found!</span><span class="dl">'</span><span class="p">);</span>
   <span class="p">}</span>
 <span class="p">}</span>
+</code></pre></div></div> <h3 id="wait-before-execution"> <a href="#wait-before-execution" class="anchor-heading" aria-labelledby="wait-before-execution"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Wait Before Execution </h3> <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">wait</span> <span class="o">=</span> <span class="nx">ms</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nc">Promise</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="nf">setTimeout</span><span class="p">(</span><span class="nx">response</span><span class="p">,</span> <span class="nx">ms</span><span class="p">));</span>
+
+<span class="c1">// usage: only works on async or top level functions</span>
+<span class="k">await</span> <span class="nf">wait</span><span class="p">(</span><span class="mi">5000</span><span class="p">);</span> <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">waited 5 seconds</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="c1">// one-liner with less memory and time</span>
+<span class="k">await</span> <span class="k">new</span> <span class="nc">Promise</span><span class="p">(</span><span class="nx">res</span> <span class="o">=&gt;</span> <span class="nf">setTimeout</span><span class="p">(</span><span class="nx">res</span><span class="p">,</span> <span class="nx">ms</span><span class="p">));</span>
+
+<span class="c1">// not need async</span>
+<span class="nf">setTimeout</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">waited 3 seconds</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">},</span> <span class="mi">3000</span><span class="p">);</span>
 </code></pre></div></div> </main> <hr> <footer> <p class="text-small text-grey-dk-100 mb-0">This site uses <a href="https://github.com/just-the-docs/just-the-docs" target="blank">Just the Docs</a>, a documentation theme for Jekyll.</p> <div class="d-flex mt-2"> <p class="text-small text-grey-dk-000 mb-0"> <a href="https://github.com/picaq/picaq.github.io/tree/master/blog/gists/promise.md" target="_blank" id="edit-this-page">Edit this page on GitHub.</a> </p> </div> </footer> </div> </div> <div class="search-overlay"></div> </div> </body> </html>
