@@ -1,11 +1,16 @@
-let theme, prefers, isMac;
+let theme, prefers;
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
   prefers = 'dark';
 }
 
+let isMac = localStorage.getItem('isMac');
+if (isMac === null) {
+  isMac = `${navigator.platform.startsWith('Mac') || navigator.platform === 'iPhone'}`;
+  localStorage.setItem('isMac', isMac);
+}
+
 theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : prefers ? prefers : 'light';
-isMac = localStorage.getItem('isMac') ? localStorage.getItem('isMac') : `${navigator.platform.startsWith('Mac') || navigator.platform === 'iPhone'}`;
-// isMac = (navigator.platform.startsWith('Mac') || navigator.platform === 'iPhone'); // true or false
+
 
 window.addEventListener("DOMContentLoaded", function() {
   const toggleDarkMode = document.getElementById("theme-toggle");
