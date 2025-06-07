@@ -867,130 +867,130 @@
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese"
   },"124": {
-    "doc": "String",
-    "title": "String",
-    "content": " ",
-    "url": "/blog/gists/javascript/string",
-    
-    "relUrl": "/blog/gists/javascript/string"
-  },"125": {
-    "doc": "String",
-    "title": "Count Occurrences of Chars or Substring Occurances in a String",
-    "content": "String manipulation, counting and accounting . const count = (str, subst) =&gt; str.match( new RegExp(subst, \"g\") )?.length || 0; . ",
-    "url": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string",
-    
-    "relUrl": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string"
-  },"126": {
     "doc": "Object",
     "title": "Object",
     "content": "A JavaScript Object that stores key-value pairs. For frequent insertion/deletion and updating, a Map object is preferred. ",
     "url": "/blog/gists/javascript/object",
     
     "relUrl": "/blog/gists/javascript/object"
-  },"127": {
+  },"125": {
     "doc": "Object",
     "title": "Merge Key &amp; Value Arrays",
     "content": "merge arrays of keys and values with matching indexes into an object . Object.fromEntries(arrKeys.map((item,i) =&gt; [item,arrVals[i]])); . ",
     "url": "/blog/gists/javascript/object#merge-key--value-arrays",
     
     "relUrl": "/blog/gists/javascript/object#merge-key--value-arrays"
-  },"128": {
+  },"126": {
     "doc": "Recipes",
     "title": "Recipes",
     "content": "Below is a list of my published recipes. For most recipes, a stove is not required. ",
     "url": "/blog/food/recipes",
     
     "relUrl": "/blog/food/recipes"
-  },"129": {
+  },"127": {
     "doc": "Sauces",
     "title": "Sauces &amp; Flavorings",
     "content": "A collection of my personal favorite sauces &amp; flavorings. I will include a link to my preferred brands but not directly to the products ( there are multiple sizes ). Generics, where any brand works, are in lowercase. ",
     "url": "/blog/food/sauces#sauces--flavorings",
     
     "relUrl": "/blog/food/sauces#sauces--flavorings"
-  },"130": {
+  },"128": {
     "doc": "Sauces",
     "title": "Condiments",
     "content": " ",
     "url": "/blog/food/sauces#condiments",
     
     "relUrl": "/blog/food/sauces#condiments"
-  },"131": {
+  },"129": {
     "doc": "Sauces",
     "title": "Salty",
     "content": ". | Roland Vegan Ponzu Sauce | tamari | shoyu | kala namak aka black salt | . ",
     "url": "/blog/food/sauces#salty",
     
     "relUrl": "/blog/food/sauces#salty"
-  },"132": {
+  },"130": {
     "doc": "Sauces",
     "title": "Umami",
     "content": ". | nutritional yeast aka “nooch” | miso | kombu dashi | nori | roasted sesame oil | dried shiitake | garlic powder | black garlic | Artisana Organics Raw Organic Cashew Butter | Erewhon Organic Roasted Peanut Butter | Brooklyn Delhi Roasted Garlic Achaar | TRUFF Spicy Marinara Sauce | . ",
     "url": "/blog/food/sauces#umami",
     
     "relUrl": "/blog/food/sauces#umami"
-  },"133": {
+  },"131": {
     "doc": "Sauces",
     "title": "Spicy",
     "content": "I have an infinite spice tolerance. Be warned. | Melinda’s Ghost Pepper Hot Sauce | TRUFF White Hotter Hot Sauce | Su Chili Crisp Mala「甦」麻辣辣油 | harissa sauce | white pepper powder | Huy Fong Sriracha | gochujang | . ",
     "url": "/blog/food/sauces#spicy",
     
     "relUrl": "/blog/food/sauces#spicy"
-  },"134": {
+  },"132": {
     "doc": "Sauces",
     "title": "Acid",
     "content": "This is good for blending with bitter foods such as bitter melon and natto . | rice vinegar | yellow mustard | Napa Kimchi . | Choi’s Spicy Napa Kimchi | Im Soon Ja Vegan Kimchi 비건김치 (林) | . | . ",
     "url": "/blog/food/sauces#acid",
     
     "relUrl": "/blog/food/sauces#acid"
-  },"135": {
+  },"133": {
     "doc": "Sauces",
     "title": "Sweet",
     "content": ". | blended deglet dates | date syrup | dark brown sugar | molasses | stevia | allulose | monk fruit | Trader Joe’s Marshmallows | . ",
     "url": "/blog/food/sauces#sweet",
     
     "relUrl": "/blog/food/sauces#sweet"
-  },"136": {
+  },"134": {
     "doc": "Sauces",
     "title": "Sauces",
     "content": " ",
     "url": "/blog/food/sauces",
     
     "relUrl": "/blog/food/sauces"
-  },"137": {
+  },"135": {
     "doc": "Sheet Music",
     "title": "Sheet Music",
     "content": "I make music and play music. ",
     "url": "/blog/music/sheet-music",
     
     "relUrl": "/blog/music/sheet-music"
-  },"138": {
+  },"136": {
     "doc": "Sheet Music",
     "title": "Made",
     "content": "Ok I mostly transcribe music into formats for specific instruments. Here’s an app, Notation Map, that I’m making to help me pick up new instruments. It is unfinished. ",
     "url": "/blog/music/sheet-music#made",
     
     "relUrl": "/blog/music/sheet-music#made"
-  },"139": {
+  },"137": {
     "doc": "Sheet Music",
     "title": "Violin",
     "content": "The very first piece I transcribed in 2008 or 2009 while I was still in high school, and the first Orisinal entry on ichigos.com, Winter Bells. Youtube cover re-arranged by Sherry Kim for Viola. ",
     "url": "/blog/music/sheet-music#violin",
     
     "relUrl": "/blog/music/sheet-music#violin"
-  },"140": {
+  },"138": {
     "doc": "Sheet Music",
     "title": "Kalimba tabs?",
     "content": "I get asked this sometimes but I prefer transcribing music into staff notation due to being instrument-agnostic and its ease to adapt to other instruments. In the near future I will sort sheet music by chromatic range rather than by instrument. ",
     "url": "/blog/music/sheet-music#kalimba-tabs",
     
     "relUrl": "/blog/music/sheet-music#kalimba-tabs"
-  },"141": {
+  },"139": {
     "doc": "Sheet Music",
     "title": "List of Instruments",
     "content": ". | Kalimba ( Mbira ) . | 17 key diatonic | 42 chromatic alto | . | Alto Melodica . | 37 keys from F to F | . | Reyong | Carillion | Cello | Viola | Violin | Recorder | Piano | Voice ( Alto ) | . ",
     "url": "/blog/music/sheet-music#list-of-instruments",
     
     "relUrl": "/blog/music/sheet-music#list-of-instruments"
+  },"140": {
+    "doc": "String",
+    "title": "String",
+    "content": " ",
+    "url": "/blog/gists/javascript/string",
+    
+    "relUrl": "/blog/gists/javascript/string"
+  },"141": {
+    "doc": "String",
+    "title": "Count Occurrences of Chars or Substring Occurances in a String",
+    "content": "String manipulation, counting and accounting . const count = (str, subst) =&gt; str.match( new RegExp(subst, \"g\") )?.length || 0; . ",
+    "url": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string",
+    
+    "relUrl": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string"
   }
 }
