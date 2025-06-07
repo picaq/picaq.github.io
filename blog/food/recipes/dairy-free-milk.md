@@ -11,14 +11,7 @@ tags: [milk, cashew, dairy-free, soy, savory, sweet, almond, oat, fruit, juice, 
 I recently bought a soy milk maker, which is basically a stainless steel blender with a heating element. It&nbsp;has [6 pre-programmed sequences](#pre-programmed-functions). 
 Here&nbsp;are the included recipes in the manual in case I can’t find it.
 
-<details open markdown="block" class="toc">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-- TOC
-{:toc}
-</details>
+{% include toc.html %}
 
 ## Basic Formula
 
