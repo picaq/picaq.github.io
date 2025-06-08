@@ -329,12 +329,25 @@ img.invisible {
 
 @font-face {
     font-family: 'Iosevka';
-    src: url('/sarasa/fonts/Iosevka-Regular.woff2') format('woff2'),;
+    src: url('/sarasa/fonts/Iosevka-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Iosevka';
+    src: url('/sarasa/fonts/Iosevka-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
 code, pre {
   font-family: 'Iosevka', monospace, 'Courier New', Courier, monospace;
+}
+
+code {
+  font-size: .95em;
+  line-height: .2;
 }
