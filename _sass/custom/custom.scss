@@ -345,9 +345,11 @@ img.invisible {
 
 code, pre {
   font-family: 'Iosevka', monospace, 'Courier New', Courier, monospace;
+  font-size: .95em;
+  line-height: 1.27;
 }
 
-code {
-  font-size: .95em;
-  line-height: .2;
+div.highlighter-rouge div.highlight {
+  padding: 1rem;
+  border-radius: 0.33rem;
 }
