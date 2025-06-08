@@ -326,3 +326,15 @@ img.invisible {
     display: grid;
     grid-template: auto / 9em 1fr;
 }
+
+@font-face {
+    font-family: 'Iosevka';
+    src: url('/sarasa/fonts/Iosevka-Regular.woff2') format('woff2'),;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+code, pre {
+  font-family: 'Iosevka', monospace, 'Courier New', Courier, monospace;
+}
