@@ -94,6 +94,24 @@ window.location.href=selectedURL;
 ```
 this needs configuring for longer selections
 
+### toggle dark mode on supported sites
+- useful switching to light theme and back for printing documents into paper or pdf
+- linkedin mods html class; geeks for geeks mods body `dataSet`
+- cord mods body `dataSet`
+```js
+javascript: (()=> {  
+    const html = document.querySelector('html');
+    const htmlClass = html.className;
+    html.className = document?.querySelector('html.theme--dark') 
+                   ? htmlClass.replace('theme--dark ', '') 
+                   : htmlClass.replace('theme', 'theme theme--dark');
+    const bodyData = document.querySelector('body').dataset;
+    bodyData.darkMode = bodyData.darkMode === "true" ? "false" : "true";
+    const bodyData2 = document.querySelector('[data-theme]').dataset;
+    bodyData2.theme = bodyData2.theme === "dark" ? "light" : "dark";
+})();
+```
+
 ### increase video playback speed
 
 ```js
@@ -245,7 +263,23 @@ javascript: (()=> {
 })();
 ```
 
+## Misc
 
+### Mychart open pdf
 
-
+// opens mychart pdf in a full window
+```js
+url = document.querySelector('.pdfobject').src;
+// options:
+// open in a popup
+window.open(url, '_blank').focus();
+// open in current tab
+window.location.href = url;
+```
+personally preferred bookmarklet use-case
+```js
+javascript: (()=> {
+  url = document.querySelector('.pdfobject').src; window.location.href = url;
+})();
+```
 
