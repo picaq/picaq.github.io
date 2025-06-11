@@ -56,4 +56,8 @@
 
   {% include head_custom.html %}
 
+  {% if page.noindex %}
+    <meta name="robots" content="noindex">
+  {% endif %}
+
 </head>

@@ -1,8 +1,10 @@
 ---
 title: Dungeons & Dragons
-permalink: blog/games/dungeons-n-dragons
+permalink: blog/games/dnd
 parent: Games
 nav_order: 3
+layout: default
+noindex: true
 ---
 # Dungeons & Dragons
 
