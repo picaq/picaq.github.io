@@ -9273,6 +9273,42 @@ div.highlighter-rouge div.highlight {
   :has(.toc) h2 + h3 {
     break-before: avoid;
   }
+  main {
+    margin-left: 16rem;
+  }
+  .toc {
+    float: left;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    z-index: 12;
+    max-height: 100vh;
+    background-color: inherit;
+  }
+}
+.table-wrapper, table, th, td {
+  min-width: 1em;
+  width: auto;
+}
+
+th, td {
+  padding: 0.25rem 0.5rem;
+}
+
+h3, .toc, h2 {
+  clear: both;
+}
+
+:has(#spells) .toc ~ .table-wrapper {
+  width: auto;
+  float: right;
+  margin-left: 1rem;
+  max-width: 50%;
+}
+
+:has(.breadcrumb-nav-list-item [href="/blog/games/dnd"]) .table-wrapper:nth-of-type(1) {
+  float: left;
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=just-the-docs-dark.css.map */
