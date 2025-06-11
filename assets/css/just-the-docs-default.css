@@ -8983,6 +8983,13 @@ div.highlighter-rouge div.highlight {
     height: 2em;
     padding-top: 1em;
   }
+  .search-active .search-label {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    padding-left: 1rem;
+    padding-top: 0;
+  }
   .search-label:hover {
     cursor: pointer;
     opacity: 1;
