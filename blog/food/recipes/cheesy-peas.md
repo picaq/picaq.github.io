@@ -48,8 +48,6 @@ keywords: pea, protein, cashew, cheese, nachos
 
 ---
 
-![image](https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3){:.invisible}
-
 {% render_recipe %}
 
 ### More Cheese!
@@ -57,3 +55,5 @@ This recipe is a simplified version of, and the original inspiration for [natto 
 
 
 <!-- ![image](https://github.com/user-attachments/assets/9658417e-cf49-43bd-8fae-7a2c73e25605){: style="float: right; width: 50%"} -->
+
+![image](https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3){:.invisible}

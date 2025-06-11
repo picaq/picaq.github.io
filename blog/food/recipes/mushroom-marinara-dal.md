@@ -47,9 +47,6 @@ keywords: [lentil, soup, spicy, mushroom, protein]
 
 ---
 
-![image](https://github.com/user-attachments/assets/0013f382-9264-4f01-b59b-242598ca0405){:.invisible}
-
-
 {% render_recipe %}
 
 ### Serving Options
@@ -61,3 +58,4 @@ I usually eat this with:
 - pita chips
 - naan
 
+![image](https://github.com/user-attachments/assets/0013f382-9264-4f01-b59b-242598ca0405){:.invisible}

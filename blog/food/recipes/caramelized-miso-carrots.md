@@ -49,8 +49,6 @@ diet: vegan, keto, diabetic
 keywords: sweet, savory, sides, carrots, oil-free
 ---
 
-![image](https://github.com/user-attachments/assets/71ae19f0-befa-4f4a-a3af-be751942d124){:.invisible}
-
 {% render_recipe %}
 
 ### Serving Options
@@ -63,3 +61,6 @@ keywords: sweet, savory, sides, carrots, oil-free
 ### Why not use an instant pot or pressure cooker?
 
 I don’t have one, and I don’t want to clean a specialized large, separate cooking vessel. If you were able to successfully replicate this recipe using those appliances let me know!
+
+
+![image](https://github.com/user-attachments/assets/71ae19f0-befa-4f4a-a3af-be751942d124){:.invisible}

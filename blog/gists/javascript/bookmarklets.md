@@ -208,6 +208,72 @@ swap();
 - css needs can be predefined in the bookmarklet as `css`
 - if pasted in the console or ran as chrome snippet instead, `replace()` becomes available for use and toggled css is modifiable as an argument
 
+## Printing Pages
+
+### insert page break before selected element
+
+since `$0` is only acessible to dev tools this first version cannot be a bookmarklet
+
+1. `ctrl + shift + c` or `⌘ + shift c` to select the element, which will be `$0`
+2. `ctrl + enter` or `⌘ + return` to call the css insertion and insert hr
+3. run `insertHR($0)` in the console to add more `<hr>` to the selected element to page break
+
+```js
+let css = `
+  hr { break-after: page; }
+`;
+
+const injectCSS = css => {
+  let el = document.createElement('style');
+  el.type = 'text/css';
+  el.id='css_injection';
+  el.innerText = css;
+  document.head.appendChild(el);
+};
+
+const swap = () => !document.getElementById('css_injection') ? injectCSS(css) : "";
+const replace = (newCss=css) => {
+  css = newCss;
+  !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').innerText = css;
+};
+
+const insertHr = (selectedNode) => {
+  const hr = document.createElement("hr");
+  const parent = selectedNode.parentNode;
+  parent.insertBefore(hr, selectedNode);
+};
+
+swap();
+insertHr($0);
+```
+
+Alternatively, in conjunction with the [edit content](#edit-content) bookmarklet, `<hr>` is copied into the clipboard and can be pasted in the position of the cursor as a page break. This will work as a bookmarklet.
+
+```js
+javascript: (()=> {  
+  let css = `
+  hr { break-after: page; }
+  @media print { hr { visibility: hidden } }
+`;
+
+const injectCSS = css => {
+  let el = document.createElement('style');
+  el.type = 'text/css';
+  el.id='css_injection';
+  el.innerText = css;
+  document.head.appendChild(el);
+};
+
+const swap = () => !document.getElementById('css_injection') ? injectCSS(css) : "";
+  navigator.clipboard.write([
+  new ClipboardItem({
+    'text/html': new Blob(['<hr>'], { type: 'text/html' }),
+    'text/plain': new Blob(['---'], { type: 'text/plain' })
+  })
+]);
+})();
+```
+
 <!-- ### 
 
 ```js

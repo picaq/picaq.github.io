@@ -401,3 +401,17 @@ div.highlighter-rouge div.highlight {
     top: -.12rem;
   }
 }
+
+/* page breaking for printing */
+
+@media print {
+    // good for printing spells page
+    .page, .page-break, hr
+    // , :has(.toc) p:has(+h2), :has(.toc) p:has(+h3) 
+    { break-after: page; }
+    // .page, .page-break
+    // , :has(.toc) h2 
+    // , :has(.toc) h3 
+    // { break-before: page; }
+    :has(.toc) h2 + h3 { break-before: avoid; }
+}
