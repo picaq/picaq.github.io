@@ -8963,6 +8963,11 @@ div.highlighter-rouge div.highlight {
   box-shadow: none;
 }
 
+.search-label {
+  opacity: 0.66;
+  transition: opacity 0.2s ease-in-out;
+}
+
 @media screen and (max-width: 49.99rem) {
   .search {
     position: absolute;
@@ -8972,6 +8977,15 @@ div.highlighter-rouge div.highlight {
   }
   .side-bar + .main .main-header {
     display: block;
+  }
+  .search-label {
+    position: fixed;
+    height: 2em;
+    padding-top: 1em;
+  }
+  .search-label:hover {
+    cursor: pointer;
+    opacity: 1;
   }
 }
 @media screen and (max-width: 31.249rem) {
