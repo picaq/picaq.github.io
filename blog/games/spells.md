@@ -34,7 +34,6 @@ I am playing as a Harengon Bard, and this page simply keeps track of my stats, s
 
 ### Vicious Mockery
 
-| Basic Information |               |
 | ----------------- | ------------- |
 | School            | Enchantment   |
 | Classes           | Bard          |
@@ -54,7 +53,6 @@ This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th leve
 
 ### Mending
 
-| Basic Information |                                                  |
 | ----------------- | ------------------------------------------------ |
 | School            | Transmutation                                    |
 | Classes           | Artificer, Bard, Cleric, Druid, Sorcerer, Wizard |
@@ -72,7 +70,6 @@ This spell can physically repair a magic item or construct, but the spell can’
 
 ### \*Ray of Frost 1d8
 
-| Basic Information |                             |
 | ----------------- | --------------------------- |
 | School            | Evocation                   |
 | Classes           | Artificer, Sorcerer, Wizard |
@@ -92,7 +89,6 @@ The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level
 
 ### Faerie Fire
 
-| Basic Information |                               |
 | ----------------- | ----------------------------- |
 | School            | Evocation                     |
 | Classes           | Artificer, Bard, Druid        |
@@ -110,7 +106,6 @@ Any attack roll against an affected creature or object has advantage if the atta
 
 ### Healing Word 1d4
 
-| Basic Information |                     |
 | ----------------- | ------------------- |
 | School            | Evocation           |
 | Classes           | Bard, Cleric, Druid |
@@ -130,7 +125,6 @@ When you cast this spell using a spell slot of 2nd level or higher, the healing 
 
 ### Speak with Animals
 
-| Basic Information |                     |
 | ----------------- | ------------------- |
 | School            | Divination          |
 | Classes           | Bard, Druid, Ranger |
@@ -146,7 +140,6 @@ The knowledge and awareness of many beasts is limited by their intelligence, but
 
 ### Comprehend Languages
 
-| Basic Information |                                    |
 | ----------------- | ---------------------------------- |
 | School            | Divination                         |
 | Classes           | Bard, Sorcerer, Warlock, Wizard    |
@@ -164,7 +157,6 @@ This spell doesn’t decode secret messages in a text or glyph, such as an arcan
 
 ### Color Spray
 
-|Basic Information |
 | --- | --- |
 |School|Illusion|
 |Classes|Bard, Sorcerer, Wizard|
@@ -191,7 +183,6 @@ When you cast this spell using a spell slot of 2nd level or higher, roll an addi
 
 ### \*Dancing Light
 
-| Basic Information |                                                          |
 | ----------------- | -------------------------------------------------------- |
 | School            | Evocation                                                |
 | Classes           | Artificer, Bard, Sorcerer, Wizard                        |
@@ -209,7 +200,6 @@ As a bonus action on your turn, you can move the lights up to 60 feet to a new s
 
 ### \*Polymorph
 
-| Basic Information |                                |
 | ----------------- | ------------------------------ |
 | School            | Transmutation                  |
 | Classes           | Bard, Druid, Sorcerer, Wizard  |
