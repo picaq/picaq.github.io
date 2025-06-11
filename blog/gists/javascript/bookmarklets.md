@@ -98,6 +98,7 @@ this needs configuring for longer selections
 - useful switching to light theme and back for printing documents into paper or pdf
 - linkedin mods html class; geeks for geeks mods body `dataSet`
 - cord mods body `dataSet`
+
 ```js
 javascript: (()=> {  
     const html = document.querySelector('html');
@@ -207,13 +208,13 @@ swap();
 - css needs can be predefined in the bookmarklet as `css`
 - if pasted in the console or ran as chrome snippet instead, `replace()` becomes available for use and toggled css is modifiable as an argument
 
-### 
+<!-- ### 
 
 ```js
 javascript: (()=>{
 
 })();
-```
+``` -->
 
 
 ## Leetcode
@@ -267,7 +268,7 @@ javascript: (()=> {
 
 ### Mychart open pdf
 
-// opens mychart pdf in a full window
+opens mychart pdf in a full window
 ```js
 url = document.querySelector('.pdfobject').src;
 // options:
