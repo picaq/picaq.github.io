@@ -9001,5 +9001,14 @@ div.highlighter-rouge div.highlight {
     top: -0.12rem;
   }
 }
+/* page breaking for printing */
+@media print {
+  .page, .page-break, hr {
+    break-after: page;
+  }
+  :has(.toc) h2 + h3 {
+    break-before: avoid;
+  }
+}
 
 /*# sourceMappingURL=just-the-docs-light.css.map */
