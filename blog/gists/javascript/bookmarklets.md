@@ -133,7 +133,6 @@ javascript: (()=>{
 ```
 - toggles a video back and forth between the `originalSpeed` (1x) to a specified preferred speed `speedToggle` (1.3x in this case) 
 - this works on all html5 videos and updates the visual indicator on Udemy specifically to match
-- unlike `document.designMode = 'on' || 'off'`, it displays spelling mistakes and can be applied at the element level ranther than on the whole document.
 
 ### toggle youtube video annotations 
 
@@ -163,6 +162,7 @@ javascript: (()=>{
 ```
 - toggles `contentEditable` property on the body tag. 
 - allows quick, light editing of web page format or content without needing to get into dev tools.
+- unlike `document.designMode = 'on' || 'off'`, it can be applied at the element level ranther than on the whole document. It also displays spelling mistakes .
 
 ### remove all styles
 
