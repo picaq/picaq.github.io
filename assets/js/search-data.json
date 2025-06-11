@@ -526,7 +526,7 @@
   },"75": {
     "doc": "Bookmarklets",
     "title": "increase video playback speed",
-    "content": "javascript: (()=&gt;{ const originalSpeed = 1; const speedToggle = 1.33; const udemyIndicator = document.querySelector('.playback-rate--trigger-text--l7hqr'); const video = document.querySelector('video'); const setSpeed = (speed) =&gt; { video.setAttribute('data-speed', speed); video.playbackRate = speed; udemyIndicator.innerText = speed + 'x'; }; video.getAttribute('data-speed') == speedToggle ? video.playbackRate = setSpeed(originalSpeed) : setSpeed(speedToggle); })(); . | toggles a video back and forth between the originalSpeed (1x) to a specified preferred speed speedToggle (1.3x in this case) | this works on all html5 videos and updates the visual indicator on Udemy specifically to match | unlike document.designMode = 'on' || 'off', it displays spelling mistakes and can be applied at the element level ranther than on the whole document. | . ",
+    "content": "javascript: (()=&gt;{ const originalSpeed = 1; const speedToggle = 1.33; const udemyIndicator = document.querySelector('.playback-rate--trigger-text--l7hqr'); const video = document.querySelector('video'); const setSpeed = (speed) =&gt; { video.setAttribute('data-speed', speed); video.playbackRate = speed; udemyIndicator.innerText = speed + 'x'; }; video.getAttribute('data-speed') == speedToggle ? video.playbackRate = setSpeed(originalSpeed) : setSpeed(speedToggle); })(); . | toggles a video back and forth between the originalSpeed (1x) to a specified preferred speed speedToggle (1.3x in this case) | this works on all html5 videos and updates the visual indicator on Udemy specifically to match | . ",
     "url": "/blog/gists/javascript/bookmarklets#increase-video-playback-speed",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#increase-video-playback-speed"
@@ -554,7 +554,7 @@
   },"79": {
     "doc": "Bookmarklets",
     "title": "edit content",
-    "content": "javascript: (()=&gt;{ let body = document.querySelector(\"body\"); body.contentEditable === 'true' ? body.contentEditable = false : body.contentEditable = true; })(); . | toggles contentEditable property on the body tag. | allows quick, light editing of web page format or content without needing to get into dev tools. | . ",
+    "content": "javascript: (()=&gt;{ let body = document.querySelector(\"body\"); body.contentEditable === 'true' ? body.contentEditable = false : body.contentEditable = true; })(); . | toggles contentEditable property on the body tag. | allows quick, light editing of web page format or content without needing to get into dev tools. | unlike document.designMode = 'on' || 'off', it can be applied at the element level ranther than on the whole document. It also displays spelling mistakes . | . ",
     "url": "/blog/gists/javascript/bookmarklets#edit-content",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#edit-content"
@@ -1756,286 +1756,293 @@
     
     "relUrl": "/blog/food/recipes"
   },"251": {
+    "doc": "Ruby",
+    "title": "Ruby",
+    "content": "Ruby is great, though the only chance I get to use it as of late is writing plugins for this blog. ",
+    "url": "/blog/gists/ruby",
+    
+    "relUrl": "/blog/gists/ruby"
+  },"252": {
     "doc": "Sauces",
     "title": "Sauces &amp; Flavorings",
     "content": "A collection of my personal favorite sauces &amp; flavorings. I will include a link to my preferred brands but not directly to the products ( there are multiple sizes ). Generics, where any brand works, are in lowercase. ",
     "url": "/blog/food/sauces#sauces--flavorings",
     
     "relUrl": "/blog/food/sauces#sauces--flavorings"
-  },"252": {
+  },"253": {
     "doc": "Sauces",
     "title": "Condiments",
     "content": " ",
     "url": "/blog/food/sauces#condiments",
     
     "relUrl": "/blog/food/sauces#condiments"
-  },"253": {
+  },"254": {
     "doc": "Sauces",
     "title": "Salty",
     "content": ". | Roland Vegan Ponzu Sauce | tamari | shoyu | kala namak aka black salt | . ",
     "url": "/blog/food/sauces#salty",
     
     "relUrl": "/blog/food/sauces#salty"
-  },"254": {
+  },"255": {
     "doc": "Sauces",
     "title": "Umami",
     "content": ". | nutritional yeast aka “nooch” | miso | kombu dashi | nori | roasted sesame oil | dried shiitake | garlic powder | black garlic | Artisana Organics Raw Organic Cashew Butter | Erewhon Organic Roasted Peanut Butter | Brooklyn Delhi Roasted Garlic Achaar | TRUFF Spicy Marinara Sauce | . ",
     "url": "/blog/food/sauces#umami",
     
     "relUrl": "/blog/food/sauces#umami"
-  },"255": {
+  },"256": {
     "doc": "Sauces",
     "title": "Spicy",
     "content": "I have an infinite spice tolerance. Be warned. | Melinda’s Ghost Pepper Hot Sauce | TRUFF White Hotter Hot Sauce | Su Chili Crisp Mala「甦」麻辣辣油 | harissa sauce | white pepper powder | Huy Fong Sriracha | gochujang | . ",
     "url": "/blog/food/sauces#spicy",
     
     "relUrl": "/blog/food/sauces#spicy"
-  },"256": {
+  },"257": {
     "doc": "Sauces",
     "title": "Acid",
     "content": "This is good for blending with bitter foods such as bitter melon and natto . | rice vinegar | yellow mustard | Napa Kimchi . | Choi’s Spicy Napa Kimchi | Im Soon Ja Vegan Kimchi 비건김치 (林) | . | . ",
     "url": "/blog/food/sauces#acid",
     
     "relUrl": "/blog/food/sauces#acid"
-  },"257": {
+  },"258": {
     "doc": "Sauces",
     "title": "Sweet",
     "content": ". | blended deglet dates | date syrup | dark brown sugar | molasses | stevia | allulose | monk fruit | Trader Joe’s Marshmallows | . ",
     "url": "/blog/food/sauces#sweet",
     
     "relUrl": "/blog/food/sauces#sweet"
-  },"258": {
+  },"259": {
     "doc": "Sauces",
     "title": "Sauces",
     "content": " ",
     "url": "/blog/food/sauces",
     
     "relUrl": "/blog/food/sauces"
-  },"259": {
+  },"260": {
     "doc": "Sheet Music",
     "title": "Sheet Music",
     "content": "I make music and play music. ",
     "url": "/blog/music/sheet-music",
     
     "relUrl": "/blog/music/sheet-music"
-  },"260": {
+  },"261": {
     "doc": "Sheet Music",
     "title": "Made",
     "content": "Ok I mostly transcribe music into formats for specific instruments. Here’s an app, Notation Map, that I’m making to help me pick up new instruments. It is unfinished. ",
     "url": "/blog/music/sheet-music#made",
     
     "relUrl": "/blog/music/sheet-music#made"
-  },"261": {
+  },"262": {
     "doc": "Sheet Music",
     "title": "Violin",
     "content": "The very first piece I transcribed in 2008 or 2009 while I was still in high school, and the first Orisinal entry on ichigos.com, Winter Bells. Youtube cover re-arranged by Sherry Kim for Viola. ",
     "url": "/blog/music/sheet-music#violin",
     
     "relUrl": "/blog/music/sheet-music#violin"
-  },"262": {
+  },"263": {
     "doc": "Sheet Music",
     "title": "Kalimba tabs?",
     "content": "I get asked this sometimes but I prefer transcribing music into staff notation due to being instrument-agnostic and its ease to adapt to other instruments. In the near future I will sort sheet music by chromatic range rather than by instrument. ",
     "url": "/blog/music/sheet-music#kalimba-tabs",
     
     "relUrl": "/blog/music/sheet-music#kalimba-tabs"
-  },"263": {
+  },"264": {
     "doc": "Sheet Music",
     "title": "List of Instruments",
     "content": ". | Kalimba ( Mbira ) . | 17 key diatonic | 42 chromatic alto | . | Alto Melodica . | 37 keys from F to F | . | Reyong | Carillion | Cello | Viola | Violin | Recorder | Piano | Voice ( Alto ) | . ",
     "url": "/blog/music/sheet-music#list-of-instruments",
     
     "relUrl": "/blog/music/sheet-music#list-of-instruments"
-  },"264": {
+  },"265": {
     "doc": "Spells",
     "title": "Spells",
     "content": "I’m currently playing Dungeons &amp; Dragons 5th edition with Tiger Kong. I am playing as a Harengon Bard, and this page simply keeps track of my stats, spells and cantrips. | Strength | -1 | . | Dexterity | 3 | . | Constitution | 1 | . | Intelligence | 0 | . | Wisdom | 1 | . | Charisma | 3 | . | Bard | Charisma | 13 | 15 | . | spellcasting class | spellcasting ability | spell saveDC | spell attackbonus | . Note: All content on this page is owned by Wizards of the Coast. Search engine indexing is blocked for this page. | Spells . | 0 Cantrips . | Vicious Mockery . | At Higher Levels | . | Mending | *Ray of Frost 1d8 . | At Higher Levels | . | . | 1 3 . | Faerie Fire | Healing Word 1d4 . | At Higher Levels | . | Speak with Animals | Comprehend Languages | Color Spray . | At Higher Levels | . | . | 3 | 4 . | *Dancing Light | *Polymorph | . | 5 | 6 | 7 | 8 | 9 | Source Info | . | . ",
     "url": "/blog/games/dnd/spells",
     
     "relUrl": "/blog/games/dnd/spells"
-  },"265": {
+  },"266": {
     "doc": "Spells",
     "title": "0 Cantrips",
     "content": " ",
     "url": "/blog/games/dnd/spells#0cantrips",
     
     "relUrl": "/blog/games/dnd/spells#0cantrips"
-  },"266": {
+  },"267": {
     "doc": "Spells",
     "title": "Vicious Mockery",
     "content": "| Basic Information |   | . | School | Enchantment | . | Classes | Bard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V | . | Cast Time | 1 Action | . | Range | 60 feet | . You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (thought it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn. ",
     "url": "/blog/games/dnd/spells#vicious-mockery",
     
     "relUrl": "/blog/games/dnd/spells#vicious-mockery"
-  },"267": {
+  },"268": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4). ",
     "url": "/blog/games/dnd/spells#at-higher-levels",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels"
-  },"268": {
+  },"269": {
     "doc": "Spells",
     "title": "Mending",
     "content": "| Basic Information |   | . | School | Transmutation | . | Classes | Artificer, Bard, Cleric, Druid, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V, S, M (two lodestones) | . | Cast Time | 1 Minute | . | Range | Touch | . This spell repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn cloack, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. This spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object. ",
     "url": "/blog/games/dnd/spells#mending",
     
     "relUrl": "/blog/games/dnd/spells#mending"
-  },"269": {
+  },"270": {
     "doc": "Spells",
     "title": "*Ray of Frost 1d8",
     "content": "| Basic Information |   | . | School | Evocation | . | Classes | Artificer, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V, S | . | Cast Time | 1 Action | . | Range | 60 feet | . A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn. ",
     "url": "/blog/games/dnd/spells#ray-of-frost-1d8",
     
     "relUrl": "/blog/games/dnd/spells#ray-of-frost-1d8"
-  },"270": {
+  },"271": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8). ",
     "url": "/blog/games/dnd/spells#at-higher-levels-1",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-1"
-  },"271": {
+  },"272": {
     "doc": "Spells",
     "title": "1 3",
     "content": " ",
     "url": "/blog/games/dnd/spells#13",
     
     "relUrl": "/blog/games/dnd/spells#13"
-  },"272": {
+  },"273": {
     "doc": "Spells",
     "title": "Faerie Fire",
     "content": "| Basic Information |   | . | School | Evocation | . | Classes | Artificer, Bard, Druid | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V | . | Cast Time | 1 Action | . | Range | 60 feet | . Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible. ",
     "url": "/blog/games/dnd/spells#faerie-fire",
     
     "relUrl": "/blog/games/dnd/spells#faerie-fire"
-  },"273": {
+  },"274": {
     "doc": "Spells",
     "title": "Healing Word 1d4",
     "content": "| Basic Information |   | . | School | Evocation | . | Classes | Bard, Cleric, Druid | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V | . | Cast Time | 1 Bonus Action | . | Range | 60 feet | . A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs. ",
     "url": "/blog/games/dnd/spells#healing-word-1d4",
     
     "relUrl": "/blog/games/dnd/spells#healing-word-1d4"
-  },"274": {
+  },"275": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st. ",
     "url": "/blog/games/dnd/spells#at-higher-levels-2",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-2"
-  },"275": {
+  },"276": {
     "doc": "Spells",
     "title": "Speak with Animals",
     "content": "| Basic Information |   | . | School | Divination | . | Classes | Bard, Druid, Ranger | . | Ritual? | Yes | . | Duration | 10 minutes | . | Components | V, S | . | Cast Time | 1 Action | . | Range | Self | . You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM’s discretion. ",
     "url": "/blog/games/dnd/spells#speak-with-animals",
     
     "relUrl": "/blog/games/dnd/spells#speak-with-animals"
-  },"276": {
+  },"277": {
     "doc": "Spells",
     "title": "Comprehend Languages",
     "content": "| Basic Information |   | . | School | Divination | . | Classes | Bard, Sorcerer, Warlock, Wizard | . | Ritual? | Yes | . | Duration | 1 hour | . | Components | V, S, M (a pinch of soot and salt) | . | Cast Time | 1 Action | . | Range | Self | . For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface of which the words are written. It takes about 1 minute to read one page of text. This spell doesn’t decode secret messages in a text or glyph, such as an arcane sigil, that isn’t part of a written language. ",
     "url": "/blog/games/dnd/spells#comprehend-languages",
     
     "relUrl": "/blog/games/dnd/spells#comprehend-languages"
-  },"277": {
+  },"278": {
     "doc": "Spells",
     "title": "Color Spray",
     "content": "| Basic Information |   | . | School | Illusion | . | Classes | Bard, Sorcerer, Wizard | . | Ritual? | No | . | Duration | 1 round | . | Components | V, S, M | . | Cast Time | 1 Action | . | Range | Self (15-foot cone) | . A dazzling array of flashing, colored light springs from your hand. Roll 6d10, the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can’t see). Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the spell ends. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for the creature to be affected. ",
     "url": "/blog/games/dnd/spells#color-spray",
     
     "relUrl": "/blog/games/dnd/spells#color-spray"
-  },"278": {
+  },"279": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st. ",
     "url": "/blog/games/dnd/spells#at-higher-levels-3",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-3"
-  },"279": {
+  },"280": {
     "doc": "Spells",
     "title": "3",
     "content": " ",
     "url": "/blog/games/dnd/spells#3",
     
     "relUrl": "/blog/games/dnd/spells#3"
-  },"280": {
+  },"281": {
     "doc": "Spells",
     "title": "4",
     "content": " ",
     "url": "/blog/games/dnd/spells#4",
     
     "relUrl": "/blog/games/dnd/spells#4"
-  },"281": {
+  },"282": {
     "doc": "Spells",
     "title": "*Dancing Light",
     "content": "| Basic Information |   | . | School | Evocation | . | Classes | Artificer, Bard, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S, M (a bit of phosphorus or wychwood, or a glowworm) | . | Cast Time | 1 Action | . | Range | 120 feet | . You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius. As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell’s range. ",
     "url": "/blog/games/dnd/spells#dancing-light",
     
     "relUrl": "/blog/games/dnd/spells#dancing-light"
-  },"282": {
+  },"283": {
     "doc": "Spells",
     "title": "*Polymorph",
     "content": "| Basic Information |   | . | School | Transmutation | . | Classes | Bard, Druid, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 hour | . | Components | V, S, M (a caterpillar cocoon) | . | Cast Time | 1 Action | . | Range | 60 feet | . 5e Beast List - Dungeons and Dragons Wiki . This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. A shapechanger automatically succeeds on this saving throw. The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target’s (or the target’s level, if it doesn’t have a challenge rating). The target’s game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality. The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn’t reduce the creature’s normal form to 0 hit points, it isn’t knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can’t speak, cast spells, or take any other action that requires hands or speech. The target’s gear melds into the new form. The creature can’t activate, use, wield, or otherwise benefit from any of its equipment. This spell can’t affect a target that has 0 hit points. ",
     "url": "/blog/games/dnd/spells#polymorph",
     
     "relUrl": "/blog/games/dnd/spells#polymorph"
-  },"283": {
+  },"284": {
     "doc": "Spells",
     "title": "5",
     "content": " ",
     "url": "/blog/games/dnd/spells#5",
     
     "relUrl": "/blog/games/dnd/spells#5"
-  },"284": {
+  },"285": {
     "doc": "Spells",
     "title": "6",
     "content": " ",
     "url": "/blog/games/dnd/spells#6",
     
     "relUrl": "/blog/games/dnd/spells#6"
-  },"285": {
+  },"286": {
     "doc": "Spells",
     "title": "7",
     "content": " ",
     "url": "/blog/games/dnd/spells#7",
     
     "relUrl": "/blog/games/dnd/spells#7"
-  },"286": {
+  },"287": {
     "doc": "Spells",
     "title": "8",
     "content": " ",
     "url": "/blog/games/dnd/spells#8",
     
     "relUrl": "/blog/games/dnd/spells#8"
-  },"287": {
+  },"288": {
     "doc": "Spells",
     "title": "9",
     "content": " ",
     "url": "/blog/games/dnd/spells#9",
     
     "relUrl": "/blog/games/dnd/spells#9"
-  },"288": {
+  },"289": {
     "doc": "Spells",
     "title": "Source Info",
     "content": ". | All Spells | Bard Spells | . ",
     "url": "/blog/games/dnd/spells#source-info",
     
     "relUrl": "/blog/games/dnd/spells#source-info"
-  },"289": {
+  },"290": {
     "doc": "String",
     "title": "String",
     "content": " ",
     "url": "/blog/gists/javascript/string",
     
     "relUrl": "/blog/gists/javascript/string"
-  },"290": {
+  },"291": {
     "doc": "String",
     "title": "Count Occurrences of Chars or Substring Occurances in a String",
     "content": "String manipulation, counting and accounting . const count = (str, subst) =&gt; str.match( new RegExp(subst, \"g\") )?.length || 0; . ",
     "url": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string",
     
     "relUrl": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string"
-  },"291": {
+  },"292": {
     "doc": "Typography",
     "title": "Typography",
     "content": " ",
