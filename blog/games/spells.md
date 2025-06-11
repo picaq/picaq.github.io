@@ -162,6 +162,29 @@ You also understand any spoken language that you hear. You also understand any w
 
 This spell doesn’t decode secret messages in a text or glyph, such as an arcane sigil, that isn’t part of a written language.
 
+### Color Spray
+
+|Basic Information |
+| --- | --- |
+|School|Illusion|
+|Classes|Bard, Sorcerer, Wizard|
+|Ritual?|No|
+|Duration|1 round|
+|Components|V, S, M|
+|Cast Time|1 Action|
+|Range|Self (15-foot cone)|
+
+A dazzling array of flashing, colored light springs from your hand.
+
+Roll 6d10, the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can’t see).
+
+Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the spell ends. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for the creature to be affected.
+
+#### At Higher Levels
+
+When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.
+
+
 ## 3
 
 ## 4
@@ -218,3 +241,7 @@ The target’s gear melds into the new form. The creature can’t activate, use,
 
 ## 9
 
+## Source Info
+
+- [All Spells](https://tigerkong.me/dnd/spells/)
+- [Bard Spells](https://tigerkong.me/dnd/spells/spell_lists/Bard%20Spells.html)
