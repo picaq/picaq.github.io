@@ -196,6 +196,8 @@ As a bonus action on your turn, you can move the lights up to 60 feet to a new s
 | Cast Time         | 1 Action                       |
 | Range             | 60 feet                        |
 
+[5e Beast List - Dungeons and Dragons Wiki](https://dnd-wiki.org/wiki/5e_Beast_List) 
+
 This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. A shapechanger automatically succeeds on this saving throw.
 
 The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target’s (or the target’s level, if it doesn’t have a challenge rating). The target’s game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality.
