@@ -33,7 +33,9 @@ Therefore, a finished bookmarklet:
 
 ## Browser Utilities
 
-### Countdown tab
+### countdown tab
+
+As a default, 1.8e+6 is 30 minutes. Use whatever value you like in ms.
 
 ```js
 javascript: (()=> {
@@ -67,7 +69,6 @@ javascript: (()=> {
 ### highlight selection into a link
 
 ```js
-
 javascript: (()=>{
 
 const URL = window.location.href;
