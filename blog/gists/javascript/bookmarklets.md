@@ -265,7 +265,8 @@ const injectCSS = css => {
   document.head.appendChild(el);
 };
 
-const swap = () => !document.getElementById('css_injection') ? injectCSS(css) : "";
+const swap = () => {!document.getElementById('css_injection') && injectCSS(css) };
+swap();
   navigator.clipboard.write([
   new ClipboardItem({
     'text/html': new Blob(['<hr>'], { type: 'text/html' }),
