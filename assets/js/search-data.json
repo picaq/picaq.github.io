@@ -2070,5 +2070,33 @@
     "url": "/blog/design/type",
     
     "relUrl": "/blog/design/type"
+  },"296": {
+    "doc": "CSS",
+    "title": "User Styles",
+    "content": "Custom user-defined style sheets to better browse the web. ",
+    "url": "/blog/gists/css/styles#user-styles",
+    
+    "relUrl": "/blog/gists/css/styles#user-styles"
+  },"297": {
+    "doc": "CSS",
+    "title": "Light Themes &amp; Printing",
+    "content": " ",
+    "url": "/blog/gists/css/styles#light-themes--printing",
+    
+    "relUrl": "/blog/gists/css/styles#light-themes--printing"
+  },"298": {
+    "doc": "CSS",
+    "title": "Notion.site",
+    "content": "ctrl/cmd + shift + L swaps between light and dark themes for your own notion notes but not public ones. Here is a workaround: . [style*=\"color: rgba(255, 255, 255, 0.81)\"] { color: rgba(0, 0, 0, 0.81) !important } [style*=\"background: rgba(255, 255, 255, 0.13)\"] { background: rgba(0, 0, 0, 0.03) !important } #main [style*=\"fill: rgba(255, 255, 255, 0.46)\"], [style*=\"color: rgba(255, 255, 255, 0.46)\"], #main [style*=\"fill: rgba(255, 255, 255\"] { fill: rgba(0, 0, 0, 0.46) !important; color: rgba(0, 0, 0, 0.46) !important; outline: rgba(0, 0, 0, 0.46) !important; } [style*=\"color: rgb(155, 155, 155); fill: rgb(155, 155, 155);\"] { color: rgb(95, 95, 95) !important; fill: rgb(95, 95, 95) !important; } [style=\"display: flex; flex-direction: row;\"] { filter: brightness(.3) } @media screen { [style*=\"background: rgb(25, 25, 25)\"] { background: rgb(225, 225, 225) !important } } @media print { html &gt; body [style*=\"background: rgb(25, 25, 25)\"] { background: white !important } } . ",
+    "url": "/blog/gists/css/styles#notionsite",
+    
+    "relUrl": "/blog/gists/css/styles#notionsite"
+  },"299": {
+    "doc": "CSS",
+    "title": "CSS",
+    "content": " ",
+    "url": "/blog/gists/css/styles",
+    
+    "relUrl": "/blog/gists/css/styles"
   }
 }
