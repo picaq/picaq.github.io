@@ -156,8 +156,12 @@ javascript: (()=>{location.reload()})();
 
 ```js
 javascript: (()=>{
-  let body = document.querySelector("body");
-  body.contentEditable === 'true' ? body.contentEditable = false : body.contentEditable = true;
+  let contenteditable = [...document.querySelectorAll('[contenteditable]')];
+  if ((contenteditable.length) === 0) {
+    let body = document.querySelector("body");
+    body.contentEditable === 'true' ? body.contentEditable = false : body.contentEditable = true;
+  };
+  contenteditable.forEach( el => el.contentEditable === 'true' ? el.contentEditable = false : el.contentEditable = true);
 })();
 ```
 - toggles `contentEditable` property on the body tag. 
