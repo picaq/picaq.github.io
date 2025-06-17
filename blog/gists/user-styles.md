@@ -1,5 +1,5 @@
 ---
-title: CSS
+title: User Styles
 permalink: blog/gists/css/styles
 parent: CSS
 nav_order: 2
