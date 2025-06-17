@@ -156,23 +156,27 @@ javascript: (()=>{location.reload()})();
 
 ```js
 javascript: (()=>{
-  let contenteditable = [...document.querySelectorAll('[contenteditable]')];
-  if ((contenteditable.length) === 0) {
-    let body = document.querySelector("body");
-    body.contentEditable === 'true' ? body.contentEditable = false : body.contentEditable = true;
-  };
-  contenteditable.forEach( el => el.contentEditable === 'true' ? el.contentEditable = false : el.contentEditable = true);
+  let body = document.querySelector("body");
+  body.contentEditable === 'true' ? body.contentEditable = false : body.contentEditable = true;
 })();
 ```
 - toggles `contentEditable` property on the body tag. 
 - allows quick, light editing of web page format or content without needing to get into dev tools.
 - unlike `document.designMode = 'on' || 'off'`, it can be applied at the element level ranther than on the whole document. It also displays spelling mistakes .
 
+### toggle existing contentEditable attributes
+```js
+javascript: (()=>{
+  let contenteditable = [...document.querySelectorAll('[contenteditable]')];
+  contenteditable?.forEach( el => el.contentEditable === 'true' ? el.contentEditable = false : el.contentEditable = true);
+})();
+```
+
 ### remove all styles
 
 ```js
 javascript: (()=>{
-  [...document.querySelectorAll('style'), ...document.querySelectorAll('link[rel="stylesheet"]')].forEach( style => style.remove());
+  [...document.querySelectorAll('style, link[rel="stylesheet"]')].forEach( style => style.remove());
 })();
 ```
 optionally, also remove inline styles. may have unexpected results:
@@ -188,7 +192,7 @@ note: this does not stop scripts from running, it just cleans out html.
 
 ```js
 javascript: (()=>{
-  [...document.querySelectorAll('script')].forEach( script => script.remove());
+  [...document.querySelectorAll('script, noscript')].forEach( script => script.remove());
 })();
 ```
 
