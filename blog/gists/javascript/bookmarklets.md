@@ -182,6 +182,16 @@ javascript: (()=>{
 })();
 ```
 
+### remove all scripts
+
+note: this does not stop scripts from running, it just cleans out html.
+
+```js
+javascript: (()=>{
+  [...document.querySelectorAll('script')].forEach( script => script.remove());
+})();
+```
+
 ### toggle inject CSS
 
 ```js
