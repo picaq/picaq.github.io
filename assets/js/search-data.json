@@ -554,7 +554,7 @@
   },"79": {
     "doc": "Bookmarklets",
     "title": "edit content",
-    "content": "javascript: (()=&gt;{ let body = document.querySelector(\"body\"); body.contentEditable === 'true' ? body.contentEditable = false : body.contentEditable = true; })(); . | toggles contentEditable property on the body tag. | allows quick, light editing of web page format or content without needing to get into dev tools. | unlike document.designMode = 'on' || 'off', it can be applied at the element level ranther than on the whole document. It also displays spelling mistakes . | . ",
+    "content": "javascript: (()=&gt;{ let contenteditable = [...document.querySelectorAll('[contenteditable]')]; if ((contenteditable.length) === 0) { let body = document.querySelector(\"body\"); body.contentEditable === 'true' ? body.contentEditable = false : body.contentEditable = true; }; contenteditable.forEach( el =&gt; el.contentEditable === 'true' ? el.contentEditable = false : el.contentEditable = true); })(); . | toggles contentEditable property on the body tag. | allows quick, light editing of web page format or content without needing to get into dev tools. | unlike document.designMode = 'on' || 'off', it can be applied at the element level ranther than on the whole document. It also displays spelling mistakes . | . ",
     "url": "/blog/gists/javascript/bookmarklets#edit-content",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#edit-content"
