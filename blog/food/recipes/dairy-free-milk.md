@@ -227,8 +227,34 @@ Default temperature settings are in **bold** and may or may not be selectable as
 |            | Time (hh:mm) |  Temp (°C) 0F |   1F   |   2F   |         |
 |-----------:|-------------:|:-------------:|:------:|:------:|:-------:|
 |       Nuts |          :15 |   room temp   |   45   | **60** |    -    |
-|      Juice |           :5 | **room temp** |   45   |   60   |    -    |
+|      Juice |          :05 | **room temp** |   45   |   60   |    -    |
 |      Beans |          :35 |       -       |    -   |    -   | **100** |
 |     Grains |          :10 |       -       |    -   |    -   | **100** |
 |     Yogurt |         8:00 |       -       | **45** |    -   |    -    |
 | Self Clean |          :10 |       -       |    -   |    -   | **100** |
+
+## Custom Usage
+
+### Nuts function at 0F 
+- cuts down the blending time to :08
+- I use this, and/or the Juice function to make fruit smoothies
+- I add in raw rolled oats ( 2 – 3 tbsp ) and/or cooked edamama ( 1/4 – 1/3 cup with its cooking water ) for extra fibre and protein
+
+### Grains function
+I use this to make hot chocolate. It results in very smooth, fluffy and airy hot cocoa.
+
+#### Hot Chocolate 
+  
+1. 4 squares of dark chocolate
+2. 3 – 4 tsp maple syrup and/or dark brown sugar
+3. 2 tsp vanilla extract and/or
+  <br>2 tbsp cacao powder 
+5. dash of salt
+6. any of the above milks ( about 500 – 700 cc )
+7. optional, but recommended: 1 – 2 tbsp soy creamer
+
+## Experiments
+
+- I threw in a piece of guava into a fruit smoothie, skin and seeds included and left the smoothie for some time and it ended up fizzy and boozy
+- I made a fruit smoothie that is exclusively frozen berries plus edamame and it slightly coagulated after left to sit
+  
