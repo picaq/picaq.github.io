@@ -55,7 +55,7 @@ Here is a workaround:
 }
 ```
 
-### Y combinator workatastartup
+### Y Combinator workatastartup.com
 
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
@@ -75,6 +75,16 @@ Here is a workaround:
     [class="company-section my-10"] {
         clear: both;
         padding-top: 1.3rem;
+    }
+    
+    .company-title .company-name {
+        margin: 0 0 .75rem;
+        display: inline-block;
+    }
+
+    .company-title .company-name + div + div {
+        margin: .25rem 0 .05rem;
+        display: inline-block;
     }
     
     .text-xl, .text-2xl {
@@ -109,5 +119,6 @@ Here is a workaround:
     [data-page], [class="w-full rounded bg-sky-100 text-sky-600 flex flex-row justify-between px-3 py-3 border-blue-200 border my-2"], [class="secondary normalwidth company-other-jobs mt-10"], [class="bg-brand w-full mt-2 md:mt-4 sm:px-6 lg:px-8 py-4 overflow-hidden"] {
         display: none;
     }
+
 }
 ```
