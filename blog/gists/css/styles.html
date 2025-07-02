@@ -94,4 +94,56 @@
         <span class="nl">background</span><span class="p">:</span> <span class="nx">white</span> <span class="cp">!important</span>
     <span class="p">}</span>
 <span class="p">}</span>
+</code></pre></div></div> <h3 id="y-combinator-workatastartup"> <a href="#y-combinator-workatastartup" class="anchor-heading" aria-labelledby="y-combinator-workatastartup"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Y combinator workatastartup </h3> <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@import</span> <span class="nf">url</span><span class="p">(</span><span class="s2">'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap'</span><span class="p">);</span>
+
+<span class="k">@media</span> <span class="n">print</span> <span class="p">{</span>
+
+    <span class="nt">body</span> <span class="p">{</span>
+        <span class="nl">max-width</span><span class="p">:</span> <span class="m">40em</span><span class="p">;</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="n">Inter</span><span class="p">;</span>
+        <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.3rem</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nc">.company-logo</span> <span class="p">{</span>
+        <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+        <span class="nl">margin-right</span><span class="p">:</span> <span class="m">1.5rem</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s1">"company-section my-10"</span><span class="o">]</span> <span class="p">{</span>
+        <span class="nl">clear</span><span class="p">:</span> <span class="nb">both</span><span class="p">;</span>
+        <span class="nl">padding-top</span><span class="p">:</span> <span class="m">1.3rem</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="nc">.text-xl</span><span class="o">,</span> <span class="nc">.text-2xl</span> <span class="p">{</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.2rem</span><span class="p">;</span>
+        <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="nc">.text-2xl</span> <span class="p">{</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.5rem</span><span class="p">;</span>
+        <span class="nl">font-weight</span><span class="p">:</span> <span class="m">500</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="nc">.text-xl</span><span class="o">,</span> <span class="nc">.text-2xl</span><span class="o">,</span> <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span> <span class="p">{</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="n">Open</span> <span class="n">Sans</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="nc">.flex</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="nb">flex</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">nav</span> <span class="o">+</span> <span class="nt">div</span>  <span class="p">{</span>
+        <span class="nl">padding</span><span class="p">:</span> <span class="m">1.5rem</span> <span class="m">0</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">nav</span> <span class="o">&gt;</span> <span class="nc">.flex</span> <span class="p">{</span>
+        <span class="nl">gap</span><span class="p">:</span> <span class="m">.25rem</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s1">"company-details my-2 flex flex-wrap md:my-0"</span><span class="o">]</span> <span class="o">*</span> <span class="p">{</span>
+        <span class="nl">padding</span><span class="p">:</span> <span class="m">.13rem</span> <span class="m">.33rem</span> <span class="m">0</span> <span class="m">0</span> <span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="o">[</span><span class="nt">data-page</span><span class="o">],</span> <span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s1">"w-full rounded bg-sky-100 text-sky-600 flex flex-row justify-between px-3 py-3 border-blue-200 border my-2"</span><span class="o">],</span> <span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s1">"secondary normalwidth company-other-jobs mt-10"</span><span class="o">],</span> <span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s1">"bg-brand w-full mt-2 md:mt-4 sm:px-6 lg:px-8 py-4 overflow-hidden"</span><span class="o">]</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div></div> </main> <hr> <footer> <p class="text-small text-grey-dk-100 mb-0">This site uses <a href="https://github.com/just-the-docs/just-the-docs" target="blank">Just the Docs</a>, a documentation theme for Jekyll.</p> <div class="d-flex mt-2"> <p class="text-small text-grey-dk-000 mb-0"> <a href="https://github.com/picaq/picaq.github.io/tree/master/blog/gists/user-styles.md" target="_blank" id="edit-this-page">Edit this page on GitHub.</a> </p> </div> </footer> </div> </div> <div class="search-overlay"></div> </div> </body> </html>

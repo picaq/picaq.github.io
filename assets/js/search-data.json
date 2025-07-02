@@ -2140,5 +2140,12 @@
     "url": "/blog/gists/css/styles#notionsite",
     
     "relUrl": "/blog/gists/css/styles#notionsite"
+  },"306": {
+    "doc": "User Styles",
+    "title": "Y combinator workatastartup",
+    "content": "@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap'); @media print { body { max-width: 40em; font-family: Inter; line-height: 1.3rem; } .company-logo { float: left; margin-right: 1.5rem; } [class=\"company-section my-10\"] { clear: both; padding-top: 1.3rem; } .text-xl, .text-2xl { font-size: 1.2rem; font-weight: 600; } .text-2xl { font-size: 1.5rem; font-weight: 500; } .text-xl, .text-2xl, h1, h2, h3, h4 { font-family: Open Sans; } .flex { display: flex; } nav + div { padding: 1.5rem 0; } nav &gt; .flex { gap: .25rem; } [class=\"company-details my-2 flex flex-wrap md:my-0\"] * { padding: .13rem .33rem 0 0 ; } [data-page], [class=\"w-full rounded bg-sky-100 text-sky-600 flex flex-row justify-between px-3 py-3 border-blue-200 border my-2\"], [class=\"secondary normalwidth company-other-jobs mt-10\"], [class=\"bg-brand w-full mt-2 md:mt-4 sm:px-6 lg:px-8 py-4 overflow-hidden\"] { display: none; } } . ",
+    "url": "/blog/gists/css/styles#y-combinator-workatastartup",
+    
+    "relUrl": "/blog/gists/css/styles#y-combinator-workatastartup"
   }
 }
