@@ -13,7 +13,6 @@ noindex: true
 
 ## Bestow Curse
 
-| Basic Information |                               |
 | ----------------- | ----------------------------- |
 | School            | Necromancy                    |
 | Classes           | Bard, Cleric, Wizard          |

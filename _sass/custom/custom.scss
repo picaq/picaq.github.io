@@ -418,6 +418,8 @@ div.highlighter-rouge div.highlight {
     // toc on each page
     main {
       margin-left: 16rem;  
+      margin-left: 9rem;  
+      z-index: 14 !important;
     }
 
     .toc {
@@ -426,8 +428,13 @@ div.highlighter-rouge div.highlight {
       top: 4rem; left: 0;
       z-index: 12;
       max-height: 100vh;
-      background-color: inherit;
+      background-color: none;
     }
+
+    footer {
+      display: none
+    }
+
 }
     
 
