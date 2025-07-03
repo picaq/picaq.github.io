@@ -9299,15 +9299,20 @@ h3, .toc, h2 {
   clear: both;
 }
 
-:has(#spells) .toc ~ .table-wrapper {
+:has(.breadcrumb-nav-list-item [href="/blog/games/dnd"]) .table-wrapper:nth-of-type(1) {
+  float: left;
+  margin-right: 1rem;
+}
+
+:has(#spells) .toc ~ .table-wrapper, :has([id$=spells]) .toc ~ .table-wrapper {
   width: auto;
   float: right;
   margin-left: 1rem;
   max-width: 50%;
 }
 
-:has(.breadcrumb-nav-list-item [href="/blog/games/dnd"]) .table-wrapper:nth-of-type(1) {
-  float: left;
+:has(.breadcrumb-nav-list-item [href="/blog/games/dnd/bard"]) .table-wrapper:nth-of-type(1) {
+  float: right;
   margin-right: 1rem;
 }
 
