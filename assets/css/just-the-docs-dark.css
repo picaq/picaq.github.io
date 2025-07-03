@@ -9275,6 +9275,8 @@ div.highlighter-rouge div.highlight {
   }
   main {
     margin-left: 16rem;
+    margin-left: 9rem;
+    z-index: 14 !important;
   }
   .toc {
     float: left;
@@ -9283,7 +9285,10 @@ div.highlighter-rouge div.highlight {
     left: 0;
     z-index: 12;
     max-height: 100vh;
-    background-color: inherit;
+    background-color: none;
+  }
+  footer {
+    display: none;
   }
 }
 .table-wrapper, table, th, td {

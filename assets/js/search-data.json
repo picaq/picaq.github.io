@@ -43,7 +43,7 @@
   },"6": {
     "doc": "Bard Level 3 Spells",
     "title": "Bestow Curse",
-    "content": "| Basic Information |   | . | School | Necromancy | . | Classes | Bard, Cleric, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S | . | Cast Time | 1 Action | . | Range | Touch | . You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options: . ",
+    "content": "| School | Necromancy | . | Classes | Bard, Cleric, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S | . | Cast Time | 1 Action | . | Range | Touch | . You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options: . ",
     "url": "/blog/games/dnd/bard/spells-3#bestow-curse",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#bestow-curse"
