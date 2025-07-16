@@ -19,8 +19,8 @@ instructions:
   - While preforating the tofu by stabbing it with a fork, spoon any sauce that pools on the bottom on top of the tofu.
   - Optionally, garnish with greens or nori. 
   
-result_blurb: Super quick filling meal for a hot day.
-description: Fresh, spicy, filling.
+result_blurb: Thats it, it’s already done!
+description: Super quick, spicy and fresh filling meal for a hot day.
 nutrition:
   calories: 330
   fatContent: 20
