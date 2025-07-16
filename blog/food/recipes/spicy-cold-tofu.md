@@ -1,0 +1,54 @@
+---
+title: Spicy Cold Tofu
+permalink: blog/food/recipes/spicy-cold-tofu
+parent: Recipes
+layout: recipe
+nav_order: 8
+tags: [tofu, soy, spicy]
+ingredients:
+  - 1 block of firm tofu 11~16 oz
+  - ponzu
+  - mala chili oil
+  - toasted sesame oil
+  - maple syrup
+  - optional garnish micro greens or crushed nori
+instructions:
+  - Drain the water from a package of tofu. Organic Tofu tastes best.
+  - Lightly press the remaining water out of the tofu.
+  - Pour all of the liquid ingredients to taste on top of the tofu, about 1/2 tsp~1 tbsp each.
+  - While preforating the tofu by stabbing it with a fork, spoon any sauce that pools on the bottom on top of the tofu.
+  - Optionally, garnish with greens or nori. 
+  
+result_blurb: Super quick filling meal for a hot day.
+description: Fresh, spicy, filling.
+nutrition:
+  calories: 330
+  fatContent: 20
+  proteinContent: 32
+  carbohydrateContent: 11
+prepmins: 4
+cookmins: 0
+yield: 1
+date: 2025-07-16 2:08:00 -0700
+excerpt: Creamy, slightly sticky, cheesy&nbsp;and&nbsp;filling.
+image: https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3
+thumbnail: https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3
+tags:
+  - featured
+  - recipe
+cuisine: Chinese
+category: entree
+diet: vegan, keto, diabetic
+keywords: soy, protein, spicy, chili oil
+
+---
+
+{% render_recipe %}
+
+### More Spice!
+
+
+
+<!-- ![image](https://github.com/user-attachments/assets/9658417e-cf49-43bd-8fae-7a2c73e25605){: style="float: right; width: 50%"} -->
+
+![image](https://github.com/user-attachments/assets/0151f588-f623-43e5-807b-f02945034ff3){:.invisible}
