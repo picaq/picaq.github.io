@@ -28,18 +28,18 @@ const getCityValues = async () => {
 
 ### Wait Before Execution
 
-Use between batch downloads or wait before next browser action like clicks/scrolls or in between loops
+Use between batch downloads or to wait in between loops or before a browser action such as click or scroll.
 
 usage: only works on async or top level functions
 ```js
 const wait = ms => new Promise(response => setTimeout(response, ms));
 
-await wait(5000); console.log('waited 5 seconds');
+await wait(5000); // console.log('waited 5 seconds');
 ```
 
-one-liner with less memory and time
+one-liner with less memory and time: useful if only needed once or a known hardcoded delay.
 ```js
-await new Promise(res => setTimeout(res, ms));
+await new Promise(res => setTimeout(res, 5000)); // console.log('quickly waited 5 seconds');
 ```
 
 async not needed
@@ -51,7 +51,7 @@ setTimeout(() => {
 
 #### Batch download all resource links in page
 
-a delay between clicks is needed to prevent rate limiting and browser download limits
+a delay between clicks is needed to prevent rate limiting and browser download limits.
 
 ```js
 const links = [...document.querySelectorAll('a.className')]; // adjust query/class
