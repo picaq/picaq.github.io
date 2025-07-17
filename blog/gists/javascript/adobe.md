@@ -49,7 +49,7 @@ supported js
 ```js
 // Get the root of the bookmark tree
 var myRoot = this.bookmarkRoot;
-var firstBookmark
+var firstBookmark = myRoot[0];
 // for (var i = 0; i <= 42; i++) {
 for (var i = 42; i >= 0; i--) {
   // Create a new bookmark under the root
