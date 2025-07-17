@@ -2052,14 +2052,14 @@
   },"293": {
     "doc": "Promise",
     "title": "Wait Before Execution",
-    "content": "Use between batch downloads or wait before next browser action like clicks/scrolls or in between loops . usage: only works on async or top level functions . const wait = ms =&gt; new Promise(response =&gt; setTimeout(response, ms)); await wait(5000); console.log('waited 5 seconds'); . one-liner with less memory and time . await new Promise(res =&gt; setTimeout(res, ms)); . async not needed . setTimeout(() =&gt; { console.log('waited 3 seconds'); }, 3000); . ",
+    "content": "Use between batch downloads or to wait in between loops or before a browser action such as click or scroll. usage: only works on async or top level functions . const wait = ms =&gt; new Promise(response =&gt; setTimeout(response, ms)); await wait(5000); // console.log('waited 5 seconds'); . one-liner with less memory and time: useful if only needed once or a known hardcoded delay. await new Promise(res =&gt; setTimeout(res, 5000)); // console.log('quickly waited 5 seconds'); . async not needed . setTimeout(() =&gt; { console.log('waited 3 seconds'); }, 3000); . ",
     "url": "/blog/gists/javascript/promise#wait-before-execution",
     
     "relUrl": "/blog/gists/javascript/promise#wait-before-execution"
   },"294": {
     "doc": "Promise",
     "title": "Batch download all resource links in page",
-    "content": "a delay between clicks is needed to prevent rate limiting and browser download limits . const links = [...document.querySelectorAll('a.className')]; // adjust query/class const len = links.length; const timing = 123; const delay = ms =&gt; new Promise(response =&gt; setTimeout(response, ms)); (async () =&gt; { for (let i = 0; i &lt; len; i++) { const a = links[i]; const url = a.href; const filename = decodeURI(a.href.split('/').pop()); a.download = filename; console.log(i + 1, '/', len , filename); a.click(); await delay(timing); // adjust timing } })(); . ",
+    "content": "a delay between clicks is needed to prevent rate limiting and browser download limits. const links = [...document.querySelectorAll('a.className')]; // adjust query/class const len = links.length; const timing = 123; const delay = ms =&gt; new Promise(response =&gt; setTimeout(response, ms)); (async () =&gt; { for (let i = 0; i &lt; len; i++) { const a = links[i]; const url = a.href; const filename = decodeURI(a.href.split('/').pop()); a.download = filename; console.log(i + 1, '/', len , filename); a.click(); await delay(timing); // adjust timing } })(); . ",
     "url": "/blog/gists/javascript/promise#batch-download-all-resource-links-in-page",
     
     "relUrl": "/blog/gists/javascript/promise#batch-download-all-resource-links-in-page"
