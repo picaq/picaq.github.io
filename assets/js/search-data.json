@@ -57,7 +57,7 @@
   },"8": {
     "doc": "Adobe Javascript",
     "title": "Javascript support:",
-    "content": ". | no let, use var | no console.log | no template literals, concatenate strings with + | pages are 0-indexed in js, but 1-index everywhere else | . ",
+    "content": ". | no let, use var | no console.log | no template literals, concatenate strings with + | pages are 0-indexed in js, but 1-index everywhere else | . I recommend writing modern JS and using a transpiler (like Babel) to convert to ES5 and below. ",
     "url": "/blog/gists/javascript/adobe#javascript-support",
     
     "relUrl": "/blog/gists/javascript/adobe#javascript-support"
