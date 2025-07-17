@@ -34,2358 +34,2393 @@
     
     "relUrl": "/blog"
   },"5": {
+    "doc": "Adobe Javascript",
+    "title": "Adobe Javascript",
+    "content": "Files can be automated within Adobe software with scripts. Currently, I am using Adobe Acrobat Pro v.11, which supports really old js . ",
+    "url": "/blog/gists/javascript/adobe",
+    
+    "relUrl": "/blog/gists/javascript/adobe"
+  },"6": {
+    "doc": "Adobe Javascript",
+    "title": "Adobe Acrobat",
+    "content": " ",
+    "url": "/blog/gists/javascript/adobe#adobe-acrobat",
+    
+    "relUrl": "/blog/gists/javascript/adobe#adobe-acrobat"
+  },"7": {
+    "doc": "Adobe Javascript",
+    "title": "How to run Javascript",
+    "content": ". | create or select an element. | Add/Edit js. | paste desired js into it, press OK. | switch to selection mode and click the element to execute. | . ",
+    "url": "/blog/gists/javascript/adobe#how-to-run-javascript",
+    
+    "relUrl": "/blog/gists/javascript/adobe#how-to-run-javascript"
+  },"8": {
+    "doc": "Adobe Javascript",
+    "title": "Javascript support:",
+    "content": ". | no let, use var | no console.log | no template literals, concatenate strings with + | pages are 0-indexed in js, but 1-index everywhere else | . ",
+    "url": "/blog/gists/javascript/adobe#javascript-support",
+    
+    "relUrl": "/blog/gists/javascript/adobe#javascript-support"
+  },"9": {
+    "doc": "Adobe Javascript",
+    "title": "Automatically create bookmark TOC",
+    "content": "original js . // Get the root of the bookmark tree var myRoot = this.bookmarkRoot; for (let i = 0; i &lt;= 42; i++) { console.log(i, 4 + 2*i ); // Create a new bookmark under the root myRoot.createChild(`Lesson ${i}`, `this.pageNum = ${4 + 2*i};`); // Create a child bookmark under the first bookmark var firstBookmark = myRoot.children[i]; firstBookmark.createChild(\"Particle\", `this.pageNum = ${4 + 2*i};`); firstBookmark.createChild(\"Particle\", `this.pageNum = ${4 + 2*i};`); firstBookmark.createChild(\"Particle\", `this.pageNum = ${4 + 2*i};`); } . supported js . // Get the root of the bookmark tree var myRoot = this.bookmarkRoot; var firstBookmark // for (var i = 0; i &lt;= 42; i++) { for (var i = 42; i &gt;= 0; i--) { // Create a new bookmark under the root var val = 3 + 2 * i; myRoot.createChild(\"Lesson \" + i, \"this.pageNum = \" + val + \";\"); // Create a child bookmark under the first bookmark firstBookmark = myRoot.children[0]; firstBookmark.createChild(\"Particle\", \"this.pageNum = \" + val + \";\"); firstBookmark.createChild(\"Particle\", \"this.pageNum = \" + val + \";\"); firstBookmark.createChild(\"Particle\", \"this.pageNum = \" + val + \";\"); } . ",
+    "url": "/blog/gists/javascript/adobe#automatically-create-bookmark-toc",
+    
+    "relUrl": "/blog/gists/javascript/adobe#automatically-create-bookmark-toc"
+  },"10": {
     "doc": "Bard Level 3 Spells",
     "title": "Bard Level 3 Spells",
     "content": ". | Bard Level 3 Spells . | Bestow Curse | Catnap . | At Higher Levels | . | Clairvoyance | Dispel Magic . | At Higher Levels | . | Enemies Abound | Fear | Feign Death | Glyph of Warding . | Explosive Runes | Spell Glyph | . | Hypnotic Pattern | Intellect Fortress . | At Higher Levels | . | Leomund’s Tiny Hut | Major Image . | At Higher Levels | . | Mass Healing Word . | At Higher Levels | . | Nondetection | Plant Growth | Sending | Slow | Speak with Dead | Speak with Plants | Stinking Cloud | Tongues | . | . ",
     "url": "/blog/games/dnd/bard/spells-3",
     
     "relUrl": "/blog/games/dnd/bard/spells-3"
-  },"6": {
+  },"11": {
     "doc": "Bard Level 3 Spells",
     "title": "Bestow Curse",
     "content": "| School | Necromancy | . | Classes | Bard, Cleric, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S | . | Cast Time | 1 Action | . | Range | Touch | . You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options: . ",
     "url": "/blog/games/dnd/bard/spells-3#bestow-curse",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#bestow-curse"
-  },"7": {
+  },"12": {
     "doc": "Bard Level 3 Spells",
     "title": "Catnap",
     "content": "| School | Enchantment | . | Classes | Artificer, Bard, Sorcerer, Wizard | . | Ritual? | No | . | Duration | 10 minutes | . | Components | S, M (a pinch of sand) | . | Cast Time | 1 Action | . | Range | 30 feet | . You make a calming gesture, and up to three willing creatures of your choice that you can see within range fall unconscious for the spell’s duration. The spell ends on a target early if it takes damage or someone uses an action to shake or slap it awake. If a target remains unconscious for the full duration, that target gains the benefit of a short rest, and it can’t be affected by this spell again until it finishes a long rest. ",
     "url": "/blog/games/dnd/bard/spells-3#catnap",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#catnap"
-  },"8": {
+  },"13": {
     "doc": "Bard Level 3 Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional willing creature for each slot level above 3rd. ",
     "url": "/blog/games/dnd/bard/spells-3#at-higher-levels",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#at-higher-levels"
-  },"9": {
+  },"14": {
     "doc": "Bard Level 3 Spells",
     "title": "Clairvoyance",
     "content": "| School | Divination | . | Classes | Bard, Cleric, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 10 minutes | . | Components | V, S, M (a focus worth at least 100 gp, either a jeweled horn for hearing or a glass eye for seeing | . | Cast Time | 10 Minutes | . | Range | 1 mile | . You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can’t be attacked or otherwise interacted with. When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing. A creature that can see the sensor (such as a creature benefitting from see invisibility or truesight) sees a luminous, intangible orb about the size of your fist. ",
     "url": "/blog/games/dnd/bard/spells-3#clairvoyance",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#clairvoyance"
-  },"10": {
+  },"15": {
     "doc": "Bard Level 3 Spells",
     "title": "Dispel Magic",
     "content": "| School | Abjuration | . | Classes | Bard, Cleric, Druid, Paladin, Sorcerer, Warlock, Wizard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V, S | . | Cast Time | 1 Action | . | Range | 120 feet | . Choose any creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a successful check, the spell ends. ",
     "url": "/blog/games/dnd/bard/spells-3#dispel-magic",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#dispel-magic"
-  },"11": {
+  },"16": {
     "doc": "Bard Level 3 Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell’s level is equal to or less than the level of the spell slot you used. ",
     "url": "/blog/games/dnd/bard/spells-3#at-higher-levels-1",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#at-higher-levels-1"
-  },"12": {
+  },"17": {
     "doc": "Bard Level 3 Spells",
     "title": "Enemies Abound",
     "content": "| School |   | . | Classes | Bard, Warlock, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S | . | Cast Time | 1 Action | . | Range | 120 feet | . You reach into the mind of one creature you can see and force it to make an Intelligence saving throw. A creature automatically succeeds if it is immune to being frightened. On a failed save, the target loses the ability to distinguish friend from foe, regarding all creatures it can see as enemies until the spell ends. Each time the target takes damage, it can repeat the saving throw, ending the effect on itself on a success. Whenever the affected creature chooses another creature as a target, it must choose the target at random from among the creatures it can see within range of the attack, spell, or other ability it’s using. If an enemy provokes an opportunity attack from the affected creature, the creature must make that attack if it is able to. ",
     "url": "/blog/games/dnd/bard/spells-3#enemies-abound",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#enemies-abound"
-  },"13": {
+  },"18": {
     "doc": "Bard Level 3 Spells",
     "title": "Fear",
     "content": "| School | Illusion | . | Classes | Bard, Sorcerer, Warlock, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S, M (a white feather or the heart of a hen) | . | Cast Time | 1 Action | . | Range | Self (30-foot cone) | . You project a phantasmal image of a creature’s worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or drop whatever it is holding and become frightened for the duration. While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn’t have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the spell ends for that creature. ",
     "url": "/blog/games/dnd/bard/spells-3#fear",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#fear"
-  },"14": {
+  },"19": {
     "doc": "Bard Level 3 Spells",
     "title": "Feign Death",
     "content": "| School | Necromancy | . | Classes | Bard, Cleric, Druid, Wizard | . | Ritual? | Yes | . | Duration | 1 hour | . | Components | V, S, M (a pinch of graveyard dirt) | . | Cast Time | 1 Action | . | Range | Touch | . You touch a willing creature and put it into a cataleptic state that is indistinguishable from death. For the spell’s duration, or until you use an action to touch the target and dismiss the spell, the target appears dead to all outward inspection and to spells used to determine the target’s status. The target is blinded and incapacitated, and its speed drops to 0. The target has resistance to all damage except psychic damage. If the target is diseased or poisoned when you cast the spell, or becomes diseased or poisoned while under the spell’s effect, the disease and poison have no effect until the spell ends. ",
     "url": "/blog/games/dnd/bard/spells-3#feign-death",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#feign-death"
-  },"15": {
+  },"20": {
     "doc": "Bard Level 3 Spells",
     "title": "Glyph of Warding",
     "content": "| School | Abjuration | . | Classes | Artificer, Bard, Cleric, Wizard | . | Ritual? | No | . | Duration | Until dispelled or triggered | . | Components | V, S, M (incense and powdered diamond worth at least 200 gp, which the spell consumes) | . | Cast Time | 1 Hour | . | Range | Touch | . When you cast this spell, you inscribe a glyph that harms other creatures, either upon a surface (such as a table or a section of floor or wall) or within an object that can be closed (such as a book, a scroll, or a treasure chest) to conceal the glyph. If you choose a surface, the glyph can cover an area of the surface no larger than 10 feet in diameter. If you choose an object, that object must remain in its place; if the object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered. The glyph is nearly invisible and requires a successful Intelligence (Investigation) check against your spell save DC to be found. You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or standing on the glyph, removing another object covering the glyph, approaching within a certain distance of the glyph, or manipulating the object on which the glyph is inscribed. For glyphs inscribed within an object, the most common triggers include opening that object, approaching within a certain distance of the object, or seeing or reading the glyph. Once a glyph is triggered, this spell ends. You can further refine the trigger so the spell activates only under certain circumstances or according to physical characteristics (such as height or weight), creature kind (for example, the ward could be set to affect aberrations or drow), or alignment. You can also set conditions for creatures that don’t trigger the glyph, such as those who say a certain password. When you inscribe the glyph, choose explosive runes or a spell glyph. ",
     "url": "/blog/games/dnd/bard/spells-3#glyph-of-warding",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#glyph-of-warding"
-  },"16": {
+  },"21": {
     "doc": "Bard Level 3 Spells",
     "title": "Explosive Runes",
     "content": "When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on the glyph. The sphere spreads around corners. Each creature in the area must make a Dexterity saving throw. A creature takes 5d8 acid, cold, fire, lightning, or thunder damage on a failed saving throw (your choice when you create the glyph), or half as much damage on a successful one. ",
     "url": "/blog/games/dnd/bard/spells-3#explosive-runes",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#explosive-runes"
-  },"17": {
+  },"22": {
     "doc": "Bard Level 3 Spells",
     "title": "Spell Glyph",
     "content": "You can store a prepared spell of 3rd level or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires concentration, it lasts until the end of its full duration. ",
     "url": "/blog/games/dnd/bard/spells-3#spell-glyph",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#spell-glyph"
-  },"18": {
+  },"23": {
     "doc": "Bard Level 3 Spells",
     "title": "Hypnotic Pattern",
     "content": "| School | Illusion | . | Classes | Bard, Sorcerer, Warlock, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | S, M (a glowing stick of incense or a crystal vial filled with phosphorescent material) | . | Cast Time | 1 Action | . | Range | 120 feet | . You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0. The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor. ",
     "url": "/blog/games/dnd/bard/spells-3#hypnotic-pattern",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#hypnotic-pattern"
-  },"19": {
+  },"24": {
     "doc": "Bard Level 3 Spells",
     "title": "Intellect Fortress",
     "content": "| School | Abjuration | . | Classes | Artificer, Bard, Sorcerer, Warlock, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 hour | . | Components | V | . | Cast Time | 1 Action | . | Range | 30 feet | . For the duration, you or one willing creature you can see within range has resistance to psychic damage, as well as advantage on Intelligence, Wisdom, and Charisma saving throws. ",
     "url": "/blog/games/dnd/bard/spells-3#intellect-fortress",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#intellect-fortress"
-  },"20": {
+  },"25": {
     "doc": "Bard Level 3 Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd. The creatures must be within 30 feet of each other when you target them. ",
     "url": "/blog/games/dnd/bard/spells-3#at-higher-levels-2",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#at-higher-levels-2"
-  },"21": {
+  },"26": {
     "doc": "Bard Level 3 Spells",
     "title": "Leomund’s Tiny Hut",
     "content": "| School | Evocation | . | Classes | Bard, Wizard | . | Ritual? | Yes | . | Duration | 8 hours | . | Components | V, S, M (a small crystal bead) | . | Cast Time | 1 Minute | . | Range | Self (10-foot-radius hemisphere) | . A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area. Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can’t extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside. Until the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside. ",
     "url": "/blog/games/dnd/bard/spells-3#leomunds-tiny-hut",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#leomunds-tiny-hut"
-  },"22": {
+  },"27": {
     "doc": "Bard Level 3 Spells",
     "title": "Major Image",
     "content": "| School | Illusion | . | Classes | Bard, Sorcerer, Warlock, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 10 minutes | . | Components | V, S, M (a bit of fleece) | . | Cast Time | 1 Action | . | Range | 120 feet | . You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot cube. The image appears at a spot that you can see within range and lasts for the duration. It seems completely real, including sounds, smells, and temperature appropriate to the thing depicted. You can’t create sufficient heat or cold to cause damage, a sound loud enough to deal thunder damage or deafen a creature, or a smell that might sicken a creature (like a troglodyte’s stench). As long as you are within range of the illusion, you can use your action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. Similarly, you can cause the illusion to make different sounds at different times, even making it carry on a conversation, for example. Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature. ",
     "url": "/blog/games/dnd/bard/spells-3#major-image",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#major-image"
-  },"23": {
+  },"28": {
     "doc": "Bard Level 3 Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration. ",
     "url": "/blog/games/dnd/bard/spells-3#at-higher-levels-3",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#at-higher-levels-3"
-  },"24": {
+  },"29": {
     "doc": "Bard Level 3 Spells",
     "title": "Mass Healing Word",
     "content": "| School | Evocation | . | Classes | Bard, Cleric | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V | . | Cast Time | 1 Bonus Action | . | Range | 60 feet | . As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs. ",
     "url": "/blog/games/dnd/bard/spells-3#mass-healing-word",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#mass-healing-word"
-  },"25": {
+  },"30": {
     "doc": "Bard Level 3 Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd. ",
     "url": "/blog/games/dnd/bard/spells-3#at-higher-levels-4",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#at-higher-levels-4"
-  },"26": {
+  },"31": {
     "doc": "Bard Level 3 Spells",
     "title": "Nondetection",
     "content": "| School | Abjuration | . | Classes | Bard, Ranger, Wizard | . | Ritual? | No | . | Duration | 8 hours | . | Components | V, S, M (a pinch of diamond dust worth 25 gp sprinkled over the target, which the spell consumes) | . | Cast Time | 1 Action | . | Range | Touch | . For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can’t be targeted by any divination magic or perceived through magical scrying sensors. ",
     "url": "/blog/games/dnd/bard/spells-3#nondetection",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#nondetection"
-  },"27": {
+  },"32": {
     "doc": "Bard Level 3 Spells",
     "title": "Plant Growth",
     "content": "| School | Transmutation | . | Classes | Bard, Druid, Ranger | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V, S | . | Cast Time | Special | . | Range | 150 feet | . This spell channels vitality into plants within a specific area. There are two possible uses for the spell, granting either immediate or long-term benefits. If you cast this spell using 1 action, choose a point within range. All normal plants in a 100-foot radius centered on that point become thick and overgrown. A creature moving through the area must spend 4 feet of movement for every 1 foot it moves. You can exclude one or more areas of any size within the spell’s area from being affected. If you cast this spell over 8 hours, you enrich the land. All plants in a half-mile radius centered on a point within range become enriched for 1 year. The plants yield twice the normal amount of food when harvested. ",
     "url": "/blog/games/dnd/bard/spells-3#plant-growth",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#plant-growth"
-  },"28": {
+  },"33": {
     "doc": "Bard Level 3 Spells",
     "title": "Sending",
     "content": "| School | Evocation | . | Classes | Bard, Cleric, Wizard | . | Ritual? | No | . | Duration | 1 round | . | Components | V, S, M (a short piece of fine copper wire) | . | Cast Time | 1 Action | . | Range | Unlimited | . You send a short message of twenty-five words or less to a creature with you are familiar. The creature hears the message in its mind, regonizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message. You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 5 percent chance that the message doesn’t arrive. ",
     "url": "/blog/games/dnd/bard/spells-3#sending",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#sending"
-  },"29": {
+  },"34": {
     "doc": "Bard Level 3 Spells",
     "title": "Slow",
     "content": "| School | Transmutation | . | Classes | Bard, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S, M (a drop of molasses) | . | Cast Time | 1 Action | . | Range | 120 feet | . You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration. An affected target’s speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can’t use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature’s abilities or magic items, it can’t make more than one melee or ranged attack during its turn. If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn’t take effect until the creature’s next turn, and the creature must use its action on that turn to complete the spell. If it can’t, the spell is wasted. A creature affected by this spell makes another Wisdom saving throw at the end of its turn. On a successful save, the effect ends for it. ",
     "url": "/blog/games/dnd/bard/spells-3#slow",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#slow"
-  },"30": {
+  },"35": {
     "doc": "Bard Level 3 Spells",
     "title": "Speak with Dead",
     "content": "| School | Necromancy | . | Classes | Bard, Cleric, Wizard | . | Ritual? | No | . | Duration | 10 minutes | . | Components | V, S, M (burning incense) | . | Cast Time | 1 Action | . | Range | 10 feet | . You grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and can’t be undead. The spell fails if the corpse was the target of this spell within the last 10 days. Until the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This spell doesn’t return the creature’s soul to its body, only its animating spirit. Thus, the corpse can’t learn new information, doesn’t comprehend anything that has happened since it died, and can’t speculate about future events. ",
     "url": "/blog/games/dnd/bard/spells-3#speak-with-dead",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#speak-with-dead"
-  },"31": {
+  },"36": {
     "doc": "Bard Level 3 Spells",
     "title": "Speak with Plants",
     "content": "| School | Transmutation | . | Classes | Bard, Druid, Ranger | . | Ritual? | No | . | Duration | 10 minutes | . | Components | V, S | . | Cast Time | 1 Action | . | Range | Self (30-foot radius) | . You imbue plants within 30 feet of you with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the spell’s area within the past day, gaining information about creatures that have passed, weather, and other circumstances. You can also turn difficult terrain caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into difficult terrain that lasts for the duration, causing vines and branches to hinder pursuers, for example. Plants might be able to perform other tasks on your behalf, at the DM’s discretion. The spell doesn’t enable plants to uproot themselves and move about, but they can freely move branches, tendrils, and stalks. If a plant creature is in the area, you can communicate with it as if you shared a common language, but you gain no magical ability to influence it. This spell can cause the plants created by the entangle spell to release a restrained creature. ",
     "url": "/blog/games/dnd/bard/spells-3#speak-with-plants",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#speak-with-plants"
-  },"32": {
+  },"37": {
     "doc": "Bard Level 3 Spells",
     "title": "Stinking Cloud",
     "content": "| School | Conjuration | . | Classes | Bard, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S, M (a rotten egg or several skunk cabbage leaves) | . | Cast Time | 1 Action | . | Range | 90 feet | . You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is heavily obscured. The cloud lingers in the air for the duration. Each creature that is completely within the cloud at the start of its turn must make a Constitution saving throw against poison. On a failed save, the creature spends its action that turn retching and reeling. Creatures that don’t need to breathe or are immune to poison automatically succeed on this saving throw. A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round. ",
     "url": "/blog/games/dnd/bard/spells-3#stinking-cloud",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#stinking-cloud"
-  },"33": {
+  },"38": {
     "doc": "Bard Level 3 Spells",
     "title": "Tongues",
     "content": "| School | Divination | . | Classes | Bard, Cleric, Sorcerer, Warlock, Wizard | . | Ritual? | No | . | Duration | 1 hour | . | Components | V, M (a small clay model of a ziggurat) | . | Cast Time | 1 Action | . | Range | Touch | . This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says. ",
     "url": "/blog/games/dnd/bard/spells-3#tongues",
     
     "relUrl": "/blog/games/dnd/bard/spells-3#tongues"
-  },"34": {
+  },"39": {
     "doc": "Bard",
     "title": "Bard",
     "content": "I’m currently playing Dungeons &amp; Dragons 5th edition with Tiger Kong. I am playing as a Harengon Bard, and this page simply keeps track of my stats, spells and cantrips. | Strength | -1 | . | Dexterity | 3 | . | Constitution | 1 | . | Intelligence | 0 | . | Wisdom | 1 | . | Charisma | 3 | . | Bard | Charisma | 13 | 15 | . | spellcasting class | spellcasting ability | spell saveDC | spell attackbonus | . Note: All content on this page is owned by Wizards of the Coast. Search engine indexing is blocked for this page. | Bard . | Basic Features . | Hit Points | Proficiencies | Equipment | . | Spellcasting . | Cantrips | Spell Slots | Spells Known of 1st Level and Higher | Spellcasting Ability | Ritual Casting | Spellcasting Focus | . | Bardic Inspiration | Jack of All Trades | Song of Rest | Bard College . | College of Lore . | Bonus Proficiencies | Cutting Words | Additional Magical Secrets | Peerless Skill | . | College of Satire . | Bonus Proficiencies | Tumbling Fool | Fool’s Insight | Fool’s Luck | . | College of Swords . | Bonus Proficiencies | Fighting Style | Blade Flourish | Extra Attack | Master’s Flourish | . | College of Valor . | Bonus Proficiencies | Combat Inspiration | Extra Attack | Battle Magic | . | College of Whispers . | Psychic Blades | Words of Terror | Mantle of Whispers | Shadow Lore | . | College of Creation . | Mote of Potential | Performance of Creation | Animating Performance . | Dancing Item | . | Creative Crescendo | . | College of Eloquence . | Silver Tongue | Unsettling Words | Unfailing Inspiration | Universal Speech | Infectious Inspiration | . | Expertise | Ability Score Improvement | Font of Inspiration | Countercharm | Magical Secrets | Superior Inspiration | College of Glamour . | Mantle of Inspiration | Enthralling Performance | Mantle of Majesty | Unbreakable Majesty | . | . | . | . Bard Leveling Table | Level | Proficiency Bonus | Features | Cantrips Known | Spells Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th | . | 1st | +2 | Spellcasting, Bardic Inspiration (d6) | 2 | 4 | 2 | — | — | — | — | — | — | — | — | . | 2nd | +2 | Jack of All Trades, Song of Rest (d6) | 2 | 5 | 3 | — | — | — | — | — | — | — | — | . | 3rd | +2 | Bard College, Expertise | 2 | 6 | 4 | 2 | — | — | — | — | — | — | — | . | 4th | +2 | Ability Score Improvement | 3 | 7 | 4 | 3 | — | — | — | — | — | — | — | . | 5th | +3 | Bardic Inspiration (d8), Font of Inspiration | 3 | 8 | 4 | 3 | 2 | — | — | — | — | — | — | . | 6th | +3 | Countercharm, Bard College feature | 3 | 9 | 4 | 3 | 3 | — | — | — | — | — | — | . | 7th | +3 | — | 3 | 10 | 4 | 3 | 3 | 1 | — | — | — | — | — | . | 8th | +3 | Ability Score Improvement | 3 | 11 | 4 | 3 | 3 | 2 | — | — | — | — | — | . | 9th | +4 | Song of Rest (d8) | 3 | 12 | 4 | 3 | 3 | 3 | 1 | — | — | — | — | . | 10th | +4 | Bardic Inspiration (d10), Expertise, Magical Secrets | 4 | 14 | 4 | 3 | 3 | 3 | 2 | — | — | — | — | . | 11th | +4 | — | 4 | 15 | 4 | 3 | 3 | 3 | 2 | 1 | — | — | — | . | 12th | +4 | Ability Score Improvement | 4 | 15 | 4 | 3 | 3 | 3 | 2 | 1 | — | — | — | . | 13th | +5 | Song of Rest (d10) | 4 | 16 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | — | — | . | 14th | +5 | Magical Secrets, Bard College feature | 4 | 18 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | — | — | . | 15th | +5 | Bardic Inspiration (d12) | 4 | 19 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | 1 | - | . | 16th | +5 | Ability Score Improvement | 4 | 19 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | 1 | - | . | 17th | +6 | Song of Rest (d12) | 4 | 20 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | 1 | 1 | . | 18th | +6 | Magical Secrets | 4 | 22 | 4 | 3 | 3 | 3 | 3 | 1 | 1 | 1 | 1 | . | 19th | +6 | Ability Score Improvement | 4 | 22 | 4 | 3 | 3 | 3 | 3 | 2 | 1 | 1 | 1 | . | 20th | +6 | Superior Inspiration | 4 | 22 | 4 | 3 | 3 | 3 | 3 | 2 | 2 | 1 | 1 | . ",
     "url": "/blog/games/dnd/bard",
     
     "relUrl": "/blog/games/dnd/bard"
-  },"35": {
+  },"40": {
     "doc": "Bard",
     "title": "Basic Features",
     "content": " ",
     "url": "/blog/games/dnd/bard#basic-features",
     
     "relUrl": "/blog/games/dnd/bard#basic-features"
-  },"36": {
+  },"41": {
     "doc": "Bard",
     "title": "Hit Points",
     "content": ". | Hit Dice: 1d8 per bard level | Hit Points at 1st Level: 8 + your Constitution modifier | Hit Points at Higher Levels: 1d8 (or 5) + your Constitution modifier per bard level after 1st | . ",
     "url": "/blog/games/dnd/bard#hit-points",
     
     "relUrl": "/blog/games/dnd/bard#hit-points"
-  },"37": {
+  },"42": {
     "doc": "Bard",
     "title": "Proficiencies",
     "content": ". | Armor: Light armor | Weapons: Simple weapons, hand crossbows, longswords, rapiers, shortswords | Tools: Three musical instruments of your choice | Saving Throws: Dexterity, Charisma | Skills: Choose any three | . ",
     "url": "/blog/games/dnd/bard#proficiencies",
     
     "relUrl": "/blog/games/dnd/bard#proficiencies"
-  },"38": {
+  },"43": {
     "doc": "Bard",
     "title": "Equipment",
     "content": ". | (a) a rapier, (b) a longsword, or (c) any simple weapon | (a) a Diplomat’s Pack or (b) an Entertainer’s Pack | (a) a lute or (b) any other musical instrument | Leather armor and a dagger | . Alternatively, you may ignore the equipment from your class and background, and start with 5d4 x 10 gp. ",
     "url": "/blog/games/dnd/bard#equipment",
     
     "relUrl": "/blog/games/dnd/bard#equipment"
-  },"39": {
+  },"44": {
     "doc": "Bard",
     "title": "Spellcasting",
     "content": " ",
     "url": "/blog/games/dnd/bard#spellcasting",
     
     "relUrl": "/blog/games/dnd/bard#spellcasting"
-  },"40": {
+  },"45": {
     "doc": "Bard",
     "title": "Cantrips",
     "content": "You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, learning a 3rd cantrip at 4th level and a 4th at 10th level. ",
     "url": "/blog/games/dnd/bard#cantrips",
     
     "relUrl": "/blog/games/dnd/bard#cantrips"
-  },"41": {
+  },"46": {
     "doc": "Bard",
     "title": "Spell Slots",
     "content": "The Bard table shows how many spell slots you have to cast your bard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest. ",
     "url": "/blog/games/dnd/bard#spell-slots",
     
     "relUrl": "/blog/games/dnd/bard#spell-slots"
-  },"42": {
+  },"47": {
     "doc": "Bard",
     "title": "Spells Known of 1st Level and Higher",
     "content": "You know four 1st-level spells of your choice from the bard spell list. You learn an additional bard spell of your choice at each level except 12th, 16th, 19th, and 20th. Each of these spells must be of a level for which you have spell slots. Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots. ",
     "url": "/blog/games/dnd/bard#spells-known-of-1st-level-and-higher",
     
     "relUrl": "/blog/games/dnd/bard#spells-known-of-1st-level-and-higher"
-  },"43": {
+  },"48": {
     "doc": "Bard",
     "title": "Spellcasting Ability",
     "content": "Charisma is your spellcasting ability for your bard spells. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one. Spell save DC = 8 + your proficiency bonus + your Charisma modifier . Spell Attack modifier = your proficiency bonus + your Charisma modifier . ",
     "url": "/blog/games/dnd/bard#spellcasting-ability",
     
     "relUrl": "/blog/games/dnd/bard#spellcasting-ability"
-  },"44": {
+  },"49": {
     "doc": "Bard",
     "title": "Ritual Casting",
     "content": "You can cast any bard spell you know as a ritual if that spell has the ritual tag. ",
     "url": "/blog/games/dnd/bard#ritual-casting",
     
     "relUrl": "/blog/games/dnd/bard#ritual-casting"
-  },"45": {
+  },"50": {
     "doc": "Bard",
     "title": "Spellcasting Focus",
     "content": "You can use a musical instrument as a spellcasting focus for your bard spells. ",
     "url": "/blog/games/dnd/bard#spellcasting-focus",
     
     "relUrl": "/blog/games/dnd/bard#spellcasting-focus"
-  },"46": {
+  },"51": {
     "doc": "Bard",
     "title": "Bardic Inspiration",
     "content": "You can use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6. Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time. You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level. ",
     "url": "/blog/games/dnd/bard#bardic-inspiration",
     
     "relUrl": "/blog/games/dnd/bard#bardic-inspiration"
-  },"47": {
+  },"52": {
     "doc": "Bard",
     "title": "Jack of All Trades",
     "content": "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus. ",
     "url": "/blog/games/dnd/bard#jack-of-all-trades",
     
     "relUrl": "/blog/games/dnd/bard#jack-of-all-trades"
-  },"48": {
+  },"53": {
     "doc": "Bard",
     "title": "Song of Rest",
     "content": "Beginning at 2nd level, if you or any friendly creatures who can hear you make a performance regain hit points by spending hit dice at the end of the short rest, each of those creatures regains an extra 1d6 hit points. The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level. ",
     "url": "/blog/games/dnd/bard#song-of-rest",
     
     "relUrl": "/blog/games/dnd/bard#song-of-rest"
-  },"49": {
+  },"54": {
     "doc": "Bard",
     "title": "Bard College",
     "content": "At 3rd level, you delve into the advanced techniques of a bard college of your choice. Your choice grants you features at 3rd level and again at 6th and 14th level. | College of Creation | College of Eloquence | College of Glamour | College of Lore | College of Satire | College of Swords | College of Valor | College of Whispers | . ",
     "url": "/blog/games/dnd/bard#bard-college",
     
     "relUrl": "/blog/games/dnd/bard#bard-college"
-  },"50": {
+  },"55": {
     "doc": "Bard",
     "title": "College of Lore",
     "content": " ",
     "url": "/blog/games/dnd/bard#college-of-lore",
     
     "relUrl": "/blog/games/dnd/bard#college-of-lore"
-  },"51": {
+  },"56": {
     "doc": "Bard",
     "title": "Bonus Proficiencies",
     "content": "At 3rd level, you gain proficiency with three skills of your choice. ",
     "url": "/blog/games/dnd/bard#bonus-proficiencies",
     
     "relUrl": "/blog/games/dnd/bard#bonus-proficiencies"
-  },"52": {
+  },"57": {
     "doc": "Bard",
     "title": "Cutting Words",
     "content": "Also at 3rd level, when a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature’s roll. You can choose to use this feature after the creature makes its roll, but before the DM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can’t hear you or if it’s immune to being charmed. ",
     "url": "/blog/games/dnd/bard#cutting-words",
     
     "relUrl": "/blog/games/dnd/bard#cutting-words"
-  },"53": {
+  },"58": {
     "doc": "Bard",
     "title": "Additional Magical Secrets",
     "content": "At 6th level, you learn two spells of your choice from any classes. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don’t count against the number of bard spells you know. ",
     "url": "/blog/games/dnd/bard#additional-magical-secrets",
     
     "relUrl": "/blog/games/dnd/bard#additional-magical-secrets"
-  },"54": {
+  },"59": {
     "doc": "Bard",
     "title": "Peerless Skill",
     "content": "Starting at 14th level, when you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the GM tells you whether you succeed or fail. ",
     "url": "/blog/games/dnd/bard#peerless-skill",
     
     "relUrl": "/blog/games/dnd/bard#peerless-skill"
-  },"55": {
+  },"60": {
     "doc": "Bard",
     "title": "College of Satire",
     "content": "(Unearthed Arcana) . ",
     "url": "/blog/games/dnd/bard#college-of-satire",
     
     "relUrl": "/blog/games/dnd/bard#college-of-satire"
-  },"56": {
+  },"61": {
     "doc": "Bard",
     "title": "Bonus Proficiencies",
     "content": "At 3rd level, you gain proficiency with Thieves’ Tools. You also gain proficiency in Sleight of Hand and one additional skill of your choice. If you are already proficient with either of these, choose another skill proficiency for each proficiency you already have. ",
     "url": "/blog/games/dnd/bard#bonus-proficiencies-1",
     
     "relUrl": "/blog/games/dnd/bard#bonus-proficiencies-1"
-  },"57": {
+  },"62": {
     "doc": "Bard",
     "title": "Tumbling Fool",
     "content": "At 3rd level, as a bonus action, you can tumble. When you tumble, you gain the following benefits for the rest of your turn: . | You gain the benefits of taking the Dash and Disengage actions. | You gain a climbing speed equal to your current speed. | You take half damage from falling. | . ",
     "url": "/blog/games/dnd/bard#tumbling-fool",
     
     "relUrl": "/blog/games/dnd/bard#tumbling-fool"
-  },"58": {
+  },"63": {
     "doc": "Bard",
     "title": "Fool’s Insight",
     "content": "At 6th level, you can cast Detect Thoughts up to a number of times equal to your Charisma modifier. You regain any expended uses of this ability after completing a long rest. If a creature resists your attempt to probe deeper and succeeds at its saving throw against your Detect Thoughts, it immediately suffers an embarrassing social gaffe. ",
     "url": "/blog/games/dnd/bard#fools-insight",
     
     "relUrl": "/blog/games/dnd/bard#fools-insight"
-  },"59": {
+  },"64": {
     "doc": "Bard",
     "title": "Fool’s Luck",
     "content": "At 14th level, you can expend one use of Bardic Inspiration after you fail an ability check, fail a saving throw, or miss with an attack roll. Roll a Bardic Inspiration die and add the number rolled to your attack, saving throw, or ability check, using the new result in place of the failed one. If using this ability grants you a success on the attack, saving throw, or ability check, note the number you rolled on the Bardic Inspiration die. The DM can then apply that result as a penalty to an attack or check you make, and you cannot use this ability again until you suffer this drawback. When the DM invokes this penalty, describe an embarrassing gaffe or mistake you make as part of the affected die roll. ",
     "url": "/blog/games/dnd/bard#fools-luck",
     
     "relUrl": "/blog/games/dnd/bard#fools-luck"
-  },"60": {
+  },"65": {
     "doc": "Bard",
     "title": "College of Swords",
     "content": "(Xanathar’s Guide to Everything) . ",
     "url": "/blog/games/dnd/bard#college-of-swords",
     
     "relUrl": "/blog/games/dnd/bard#college-of-swords"
-  },"61": {
+  },"66": {
     "doc": "Bard",
     "title": "Bonus Proficiencies",
     "content": "At 3rd level, you gain proficiency with medium armor and the scimitar. If you’re proficient with a simple or martial melee weapon, you can use it as a spellcasting focus for your bard spells. ",
     "url": "/blog/games/dnd/bard#bonus-proficiencies-2",
     
     "relUrl": "/blog/games/dnd/bard#bonus-proficiencies-2"
-  },"62": {
+  },"67": {
     "doc": "Bard",
     "title": "Fighting Style",
     "content": "At 3rd level, choose one of the following options. You can’t take a Fighting Style option more than once, even if something in the game lets you choose again. | Dueling: When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon. | Two-Weapon Fighting: When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack. | . ",
     "url": "/blog/games/dnd/bard#fighting-style",
     
     "relUrl": "/blog/games/dnd/bard#fighting-style"
-  },"63": {
+  },"68": {
     "doc": "Bard",
     "title": "Blade Flourish",
     "content": "At 3rd level, whenever you take the Attack action on your turn, your walking speed increases by 10 feet until the end of the turn, and if a weapon attack that you make as part of this action hits a creature, you can use one of the following Blade Flourish options of your choice. You can use only one Blade Flourish option per turn. | Defensive Flourish: You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You also add the number rolled to your AC until the start of your next turn. | Slashing Flourish: You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit and to any other creature of your choice that you can see within 5 feet of you. The damage equals the number you roll on the Bardic Inspiration die. | Mobile Flourish: You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You can also push the target up to 5 feet away from you, plus a number of feet equal to the number you roll on that die. You can then immediately use your reaction to move up to your walking speed to an unoccupied space within 5 feet of the target. | . ",
     "url": "/blog/games/dnd/bard#blade-flourish",
     
     "relUrl": "/blog/games/dnd/bard#blade-flourish"
-  },"64": {
+  },"69": {
     "doc": "Bard",
     "title": "Extra Attack",
     "content": "Starting at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. ",
     "url": "/blog/games/dnd/bard#extra-attack",
     
     "relUrl": "/blog/games/dnd/bard#extra-attack"
-  },"65": {
+  },"70": {
     "doc": "Bard",
     "title": "Master’s Flourish",
     "content": "Starting at 14th level, whenever you use a Blade Flourish option, you can roll a d6 and use it instead of expending a Bardic Inspiration die. ",
     "url": "/blog/games/dnd/bard#masters-flourish",
     
     "relUrl": "/blog/games/dnd/bard#masters-flourish"
-  },"66": {
+  },"71": {
     "doc": "Bard",
     "title": "College of Valor",
     "content": " ",
     "url": "/blog/games/dnd/bard#college-of-valor",
     
     "relUrl": "/blog/games/dnd/bard#college-of-valor"
-  },"67": {
+  },"72": {
     "doc": "Bard",
     "title": "Bonus Proficiencies",
     "content": "At 3rd level, you gain proficiency with medium armor, shields, and martial weapons. ",
     "url": "/blog/games/dnd/bard#bonus-proficiencies-3",
     
     "relUrl": "/blog/games/dnd/bard#bonus-proficiencies-3"
-  },"68": {
+  },"73": {
     "doc": "Bard",
     "title": "Combat Inspiration",
     "content": "Also at 3rd level, a creature that has a Bardic Inspiration die from you can roll that die and add the number rolled to a weapon damage roll it just made. Alternatively, when an attack roll is made against the creature, it can use its reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, after seeing the roll but before knowing whether it hits or misses. ",
     "url": "/blog/games/dnd/bard#combat-inspiration",
     
     "relUrl": "/blog/games/dnd/bard#combat-inspiration"
-  },"69": {
+  },"74": {
     "doc": "Bard",
     "title": "Extra Attack",
     "content": "Starting at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. ",
     "url": "/blog/games/dnd/bard#extra-attack-1",
     
     "relUrl": "/blog/games/dnd/bard#extra-attack-1"
-  },"70": {
+  },"75": {
     "doc": "Bard",
     "title": "Battle Magic",
     "content": "At 14th level, when you use your action to a cast a bard spell, you can make one weapon attack as a bonus action. ",
     "url": "/blog/games/dnd/bard#battle-magic",
     
     "relUrl": "/blog/games/dnd/bard#battle-magic"
-  },"71": {
+  },"76": {
     "doc": "Bard",
     "title": "College of Whispers",
     "content": "(Xanathar’s Guide to Everything) . ",
     "url": "/blog/games/dnd/bard#college-of-whispers",
     
     "relUrl": "/blog/games/dnd/bard#college-of-whispers"
-  },"72": {
+  },"77": {
     "doc": "Bard",
     "title": "Psychic Blades",
     "content": "At 3rd level, when you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an extra 2d6 psychic damage to that target. You can do so only once per round on your turn. The psychic damage increases when you reach certain levels in this class, increasing to 3d6 at 5th level, 5d6 at 10th level, and 8d6 at 15th level. ",
     "url": "/blog/games/dnd/bard#psychic-blades",
     
     "relUrl": "/blog/games/dnd/bard#psychic-blades"
-  },"73": {
+  },"78": {
     "doc": "Bard",
     "title": "Words of Terror",
     "content": "At 3rd level, if you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia in its mind. At the end of the conversation, the target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you or another creature of your choice. The target is frightened in this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged. If the target succeeds on its saving throw, the target has no hint that you tried to frighten it. Once you use this feature, you can’t use it again until you finish a short or long rest. ",
     "url": "/blog/games/dnd/bard#words-of-terror",
     
     "relUrl": "/blog/games/dnd/bard#words-of-terror"
-  },"74": {
+  },"79": {
     "doc": "Bard",
     "title": "Mantle of Whispers",
     "content": "At 6th level, when a humanoid dies within 30 feet of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or you finish a long rest. You can use the shadow as an action. When you do so, it vanishes, magically transforming into a disguise that appears on you. You now look like the dead person, but healthy and alive. This disguise lasts for 1 hour or until you end it as a bonus action. While you’re in the disguise, you gain access to all information that the humanoid would freely share with a casual acquaintance. Such information includes general details on its background and personal life, but doesn’t include secrets. The information is enough that you can pass yourself off as the person by drawing on its memories. Another creature can see through this disguise by succeeding on a Wisdom (Insight) check contested by your Charisma (Deception) check. You gain a +5 bonus to your check. Once you capture a shadow with this feature, you can’t capture another one with it until you finish a short or long rest. ",
     "url": "/blog/games/dnd/bard#mantle-of-whispers",
     
     "relUrl": "/blog/games/dnd/bard#mantle-of-whispers"
-  },"75": {
+  },"80": {
     "doc": "Bard",
     "title": "Shadow Lore",
     "content": "At 14th level, as an action, you magically whisper a phrase that only one creature of your choice within 30 feet of you can hear. The target must make a Wisdom saving throw against your spell save DC. It automatically succeeds if it doesn’t share a language with you or if it can’t hear you. On a successful saving throw, your whisper sounds like unintelligible mumbling and has no effect. On a failed saving throw, the target is charmed by you for the next 8 hours or until you or your allies attack it, damage it, or force it to make a saving throw. It interprets the whispers as a description of its most mortifying secret. You gain no knowledge of this secret, but the target is convinced you know it. The charmed creature obeys your commands for fear that you will reveal its secret. It won’t risk its life for you or fight for you, unless it was already inclined to do so. It grants you favors and gifts it would offer to a close friend. When the effect ends, the creature has no understanding of why it held you in such fear. Once you use this feature, you can’t use it again until you finish a long rest. ",
     "url": "/blog/games/dnd/bard#shadow-lore",
     
     "relUrl": "/blog/games/dnd/bard#shadow-lore"
-  },"76": {
+  },"81": {
     "doc": "Bard",
     "title": "College of Creation",
     "content": "(Tasha’s Cauldron of Everything) . ",
     "url": "/blog/games/dnd/bard#college-of-creation",
     
     "relUrl": "/blog/games/dnd/bard#college-of-creation"
-  },"77": {
+  },"82": {
     "doc": "Bard",
     "title": "Mote of Potential",
     "content": "At 3rd level, whenever you give a creature a Bardic Inspiration die, you can utter a note from the Song of Creation to create a Tiny mote of potential, which orbits within 5 feet of that creature. The mote is intangible and invulnerable, and it lasts until the Bardic Inspiration die is lost. The mote looks like a musical note, a star, a flower, or another symbol of art or life that you choose. When the creature uses the Bardic Inspiration die, the mote provides an additional effect based on whether the die benefits an ability check, an attack roll, or a saving throw, as detailed below: . | Ability Check. When the creature rolls the Bardic Inspiration die to add it to an ability check, the creature can roll the Bardic Inspiration die again and choose which roll to use, as the mote pops and emits colorful, harmless sparks for a moment. | Attack Roll. Immediately after the creature rolls the Bardic Inspiration die to add it to an attack roll against a target, the mote thunderously shatters. The target and each creature of your choice that you can see within 5 feet of it must succeed on a Constitution saving throw against your spell save DC or take thunder damage equal to the number rolled on the Bardic Inspiration die. | Saving Throw. Immediately after the creature rolls the Bardic Inspiration die and adds it to a saving throw, the mote vanishes with the sound of soft music, causing the creature to gain temporary hit points equal to the number rolled on the Bardic Inspiration die plus your Charisma modifier (minimum of 1 temporary hit point). | . ",
     "url": "/blog/games/dnd/bard#mote-of-potential",
     
     "relUrl": "/blog/games/dnd/bard#mote-of-potential"
-  },"78": {
+  },"83": {
     "doc": "Bard",
     "title": "Performance of Creation",
     "content": "At 3rd level, as an action, you can channel the magic of the Song of Creation to create one nonmagical item of your choice in an unoccupied space within 10 feet of you. The item must appear on a surface or in a liquid that can support it. The gp value of the item can’t be more than 20 times your bard level, and the item must be Medium or smaller. The item glimmers softly, and a creature can faintly hear music when touching it. The created item disappears after a number of hours equal to your proficiency bonus. For examples of items you can create, see the equipment chapter of the Player’s Handbook. Once you create an item with this feature, you can’t do so again until you finish a long rest, unless you expend a spell slot of 2nd level or higher to use this feature again. You can have only one item created by this feature at a time; if you use this action and already have an item from this feature, the first one immediately vanishes. The size of the item you can create with this feature increases by one size category when you reach 6th level (Large) and 14th level (Huge). ",
     "url": "/blog/games/dnd/bard#performance-of-creation",
     
     "relUrl": "/blog/games/dnd/bard#performance-of-creation"
-  },"79": {
+  },"84": {
     "doc": "Bard",
     "title": "Animating Performance",
     "content": "At 6th level, as an action, you can target a Large or smaller nonmagical item you can see within 30 feet of you and animate it. The animate item uses the Dancing Item stat block, which uses your proficiency bonus (PB). The item is friendly to you and your companions and obeys your commands. It lives for 1 hour, until it is reduced to 0 hit points, or until you die. In combat, the item shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the item can take any action of its choice, not just Dodge. When you use your Bardic Inspiration feature, you can command the item as part of the same bonus action you use for Bardic Inspiration. Once you animate an item with this feature, you can’t do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use this feature again. You can have only one item animated by this feature at a time; if you use this action and already have a dancing item from this feature, the first one immediately becomes inanimate. Dancing Item . Large or smaller construct . Armor Class: 16 (natural armor) . Hit Points: 10 + 5 times your bard level . Speed: 30 ft., fly 30 ft. (hover) . | STR | DEX | CON | INT | WIS | CHA | . | 18 (+4) | 14 (+2) | 16 (+3) | 4 (-3) | 10 (0) | 6 (-2) | . Damage Immunities: poison, psychic . Condition Immunities: charmed, exhaustion, poisoned, frightened . Senses: darkvision 60 ft., passive Perception 10 . Languages: understands the languages you speak . Proficiency Bonus (PB): equals your bonus . Immutable Form: The item is immune to any spell or effect that would alter its form. Irrepressible Dance: When any creature starts its turn within 10 feet of the item, the item can increase or decrease (your choice) the walking speed of that creature by 10 feet until the end of the turn, provided the item isn’t incapacitated. Actions: . | Force-Empowered Slam. Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target you can see. Hit: 1d10 + PB force damage. | . ",
     "url": "/blog/games/dnd/bard#animating-performance",
     
     "relUrl": "/blog/games/dnd/bard#animating-performance"
-  },"80": {
+  },"85": {
     "doc": "Bard",
     "title": "Creative Crescendo",
     "content": "At 14th level, when you use your Performance of Creation feature, you can create more than one item at once. The number of items equals your Charisma modifier (minimum of two items). If you create an item that would exceed that number, you choose which of the previously created items disappears. Only one of these items can be of the maximum size you can create; the rest must be Small or Tiny. You are no longer limited by gp value when creating items with Performance of Creation. ",
     "url": "/blog/games/dnd/bard#creative-crescendo",
     
     "relUrl": "/blog/games/dnd/bard#creative-crescendo"
-  },"81": {
+  },"86": {
     "doc": "Bard",
     "title": "College of Eloquence",
     "content": "(Tasha’s Cauldron of Everything) . ",
     "url": "/blog/games/dnd/bard#college-of-eloquence",
     
     "relUrl": "/blog/games/dnd/bard#college-of-eloquence"
-  },"82": {
+  },"87": {
     "doc": "Bard",
     "title": "Silver Tongue",
     "content": "At 3rd level, you become a master at saying the right thing at the right time. When you make a Charisma (Persuasion) or Charisma (Deception) check, you can treat a d20 roll of 9 or lower as a 10. ",
     "url": "/blog/games/dnd/bard#silver-tongue",
     
     "relUrl": "/blog/games/dnd/bard#silver-tongue"
-  },"83": {
+  },"88": {
     "doc": "Bard",
     "title": "Unsettling Words",
     "content": "At 3rd level, you can spin words laced with magic that unsettle a creature and cause it to doubt itself. As a bonus action, you can expend one use of your Bardic Inspiration and choose one creature you can see within 60 feet of you. Roll the Bardic Inspiration die. The creature must subtract the number rolled from the next saving throw it makes before the start of your next turn. ",
     "url": "/blog/games/dnd/bard#unsettling-words",
     
     "relUrl": "/blog/games/dnd/bard#unsettling-words"
-  },"84": {
+  },"89": {
     "doc": "Bard",
     "title": "Unfailing Inspiration",
     "content": "At 6th level, your inspiring words are so persuasive that others feel driven to succeed. When a creature adds one of your Bardic Inspiration dice to its ability check, attack roll, or saving throw and the roll fails, the creature can keep the Bardic Inspiration die. ",
     "url": "/blog/games/dnd/bard#unfailing-inspiration",
     
     "relUrl": "/blog/games/dnd/bard#unfailing-inspiration"
-  },"85": {
+  },"90": {
     "doc": "Bard",
     "title": "Universal Speech",
     "content": "At 6th level, you gain the ability to make your speech intelligible to any creature. As an action, choose one or more creatures within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). The chosen creatures can magically understand you, regardless of the language you speak, for 1 hour. Once you use this feature, you can’t use it again until you finish a long rest, unless you expend a spell slot of any level to use it again. ",
     "url": "/blog/games/dnd/bard#universal-speech",
     
     "relUrl": "/blog/games/dnd/bard#universal-speech"
-  },"86": {
+  },"91": {
     "doc": "Bard",
     "title": "Infectious Inspiration",
     "content": "At 14th level, when you successfully inspire someone, the power of your eloquence can now spread to someone else. When a creature within 60 feet of you adds one of your Bardic Inspiration dice to its ability check, attack roll, or saving throw and the roll succeeds, you can use your reaction to encourage a different creature (other than yourself) that can hear you within 60 feet of you, giving it a Bardic Inspiration die without expending any of your Bardic Inspiration uses. You can use this reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest. ",
     "url": "/blog/games/dnd/bard#infectious-inspiration",
     
     "relUrl": "/blog/games/dnd/bard#infectious-inspiration"
-  },"87": {
+  },"92": {
     "doc": "Bard",
     "title": "Expertise",
     "content": "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit. ",
     "url": "/blog/games/dnd/bard#expertise",
     
     "relUrl": "/blog/games/dnd/bard#expertise"
-  },"88": {
+  },"93": {
     "doc": "Bard",
     "title": "Ability Score Improvement",
     "content": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature. ",
     "url": "/blog/games/dnd/bard#ability-score-improvement",
     
     "relUrl": "/blog/games/dnd/bard#ability-score-improvement"
-  },"89": {
+  },"94": {
     "doc": "Bard",
     "title": "Font of Inspiration",
     "content": "Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest. ",
     "url": "/blog/games/dnd/bard#font-of-inspiration",
     
     "relUrl": "/blog/games/dnd/bard#font-of-inspiration"
-  },"90": {
+  },"95": {
     "doc": "Bard",
     "title": "Countercharm",
     "content": "At 6th level, as an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required). ",
     "url": "/blog/games/dnd/bard#countercharm",
     
     "relUrl": "/blog/games/dnd/bard#countercharm"
-  },"91": {
+  },"96": {
     "doc": "Bard",
     "title": "Magical Secrets",
     "content": "At 10th level, choose two spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you and are included in the number in the spells known column of the Bard table. You learn two additional spells from any classes at 14th level and again at 18th level. ",
     "url": "/blog/games/dnd/bard#magical-secrets",
     
     "relUrl": "/blog/games/dnd/bard#magical-secrets"
-  },"92": {
+  },"97": {
     "doc": "Bard",
     "title": "Superior Inspiration",
     "content": "At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use. ",
     "url": "/blog/games/dnd/bard#superior-inspiration",
     
     "relUrl": "/blog/games/dnd/bard#superior-inspiration"
-  },"93": {
+  },"98": {
     "doc": "Bard",
     "title": "College of Glamour",
     "content": "(Xanathar’s Guide to Everything) . ",
     "url": "/blog/games/dnd/bard#college-of-glamour",
     
     "relUrl": "/blog/games/dnd/bard#college-of-glamour"
-  },"94": {
+  },"99": {
     "doc": "Bard",
     "title": "Mantle of Inspiration",
     "content": "At 3rd level, as a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a wondrous appearance. When you do so, choose a number of creatures you can see and that can see you within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one). Each of them gains 5 temporary hit points. When a creature gains these temporary hit points, it can immediately use its reaction to move up to its speed, without provoking opportunity attacks. The number of temporary hit points increases when you reach certain levels in this class, increasing to 8 at 5th level, 11 at 10th level, and 14 at 15th level. ",
     "url": "/blog/games/dnd/bard#mantle-of-inspiration",
     
     "relUrl": "/blog/games/dnd/bard#mantle-of-inspiration"
-  },"95": {
+  },"100": {
     "doc": "Bard",
     "title": "Enthralling Performance",
     "content": "Starting at 3rd level, if you perform for at least 1 minute, you can attempt to inspire wonder in your audience. At the end of the performance, choose a number of humanoids within 60 feet of you who watched and listened to all of it, up to a number equal to your Charisma modifier (minimum of one). Each target must succeed on a Wisdom saving throw against your spell save DC or be charmed by you. While charmed in this way, the target idolizes you, it speaks glowingly of you to anyone who talks to it, and it hinders anyone who opposes you, although it avoids violence unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage, if you attack it, or if it witnesses you attacking or damaging any of its allies. If a target succeeds on its saving throw, the target has no hint that you tried to charm it. Once you use this feature, you can’t use it again until you finish a short or long rest. ",
     "url": "/blog/games/dnd/bard#enthralling-performance",
     
     "relUrl": "/blog/games/dnd/bard#enthralling-performance"
-  },"96": {
+  },"101": {
     "doc": "Bard",
     "title": "Mantle of Majesty",
     "content": "At 6th level, as a bonus action, you cast Command, without expending a spell slot, and you take on an appearance of unearthly beauty for 1 minute or until your concentration ends (as if you were concentrating on a spell). During this time, you can cast Command as a bonus action on each of your turns, without expending a spell slot. Any creature charmed by you automatically fails its saving throw against the Command you cast with this feature. Once you use this feature, you can’t use it again until you finish a long rest. ",
     "url": "/blog/games/dnd/bard#mantle-of-majesty",
     
     "relUrl": "/blog/games/dnd/bard#mantle-of-majesty"
-  },"97": {
+  },"102": {
     "doc": "Bard",
     "title": "Unbreakable Majesty",
     "content": "At 14th level, as a bonus action, you can assume a magically majestic presence for 1 minute or until you are incapacitated. For the duration, whenever any creature tries to attack you for the first time on a turn, the attacker must make a Charisma saving throw against your spell save DC. On a failed save, it can’t attack you on this turn, and it must choose a new target for its attack or the attack is wasted. On a successful save, it can attack you on this turn, but it has disadvantage on any saving throw it makes against your spells on your next turn. Once you assume this majestic presence, you can’t do so again until you finish a short or long rest. ",
     "url": "/blog/games/dnd/bard#unbreakable-majesty",
     
     "relUrl": "/blog/games/dnd/bard#unbreakable-majesty"
-  },"98": {
+  },"103": {
     "doc": "Bookmarklets",
     "title": "Bookmarklets",
     "content": "Most javascript I write are in the form of bookmarklets. Here is its structure: . javascript: (()=&gt;{ console.log(\"some code here\"); })(); . Here is how to use one . ",
     "url": "/blog/gists/javascript/bookmarklets",
     
     "relUrl": "/blog/gists/javascript/bookmarklets"
-  },"99": {
+  },"104": {
     "doc": "Bookmarklets",
     "title": "Formatting",
     "content": "Compared to normal javascript, a finished bookmarklet is similar to minified js with all extraneous whitespace characters removed. Therefore, a finished bookmarklet: . | must not contain comments | all lines must end with semi-colons, even after a closing curly bracket } | new-lines, even in constants and in template strings, are interpreted differently so the use of \\n is preferred | it is best to have a readable formatted bookmarklet in addition to the finished minified version | . | Bookmarklets . | Formatting | Browser Utilities . | countdown tab | highlight selection into a link | toggle dark mode on supported sites | increase video playback speed | toggle youtube video annotations | . | Development Tools . | hard refresh | edit content | toggle existing contentEditable attributes | remove all styles | remove all scripts | toggle inject CSS | . | Printing Pages . | insert page break before selected element | . | Leetcode . | copy leetcode solution into markdown | go to leetcode problem ( from another educational source ) | . | Misc . | Mychart open pdf | . | . | . ",
     "url": "/blog/gists/javascript/bookmarklets#formatting",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#formatting"
-  },"100": {
+  },"105": {
     "doc": "Bookmarklets",
     "title": "Browser Utilities",
     "content": " ",
     "url": "/blog/gists/javascript/bookmarklets#browser-utilities",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#browser-utilities"
-  },"101": {
+  },"106": {
     "doc": "Bookmarklets",
     "title": "countdown tab",
     "content": "As a default, 1.8e+6 is 30 minutes. Use whatever value you like in ms. javascript: (()=&gt; { const startCountdown = (ms = 1.8e+6) =&gt; { const countDownTime = new Date(Date.now() + ms).getTime(); const x = setInterval(() =&gt; { const now = new Date().getTime(); const distance = countDownTime - now; const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); const seconds = Math.floor((distance % (1000 * 60)) / 1000); document.title = `${hours &gt; 0? hours + \":\" : \"\"}${minutes}:${seconds}`; if (distance &lt; 0) { clearInterval(x); document.title = \"done!\"; }; }, 1000); }; startCountdown(); })(); . ",
     "url": "/blog/gists/javascript/bookmarklets#countdown-tab",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#countdown-tab"
-  },"102": {
+  },"107": {
     "doc": "Bookmarklets",
     "title": "highlight selection into a link",
     "content": "javascript: (()=&gt;{ const URL = window.location.href; const copy = content =&gt; { const tempInput = document.createElement(\"textarea\"); document.body.appendChild(tempInput); tempInput.setAttribute(\"id\", \"temporary_input_clipboard\"); document.getElementById(\"temporary_input_clipboard\").value = content; tempInput.select(); document.execCommand(\"copy\"); document.body.removeChild(tempInput); }; const textPrefix = `#:~:text=`; let selection = encodeURI(window.getSelection()).replaceAll('-', '%2D'); selectedURL = URL+'#:~:text='+selection; console.log(selectedURL); copy(selectedURL); window.location.href=selectedURL; })(); . this needs configuring for longer selections . ",
     "url": "/blog/gists/javascript/bookmarklets#highlight-selection-into-a-link",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#highlight-selection-into-a-link"
-  },"103": {
+  },"108": {
     "doc": "Bookmarklets",
     "title": "toggle dark mode on supported sites",
     "content": ". | useful switching to light theme and back for printing documents into paper or pdf | linkedin mods html class; geeks for geeks mods body dataSet | cord mods body dataSet | . javascript: (()=&gt; { const html = document.querySelector('html'); const htmlClass = html.className; html.className = document?.querySelector('html.theme--dark') ? htmlClass.replace('theme--dark ', '') : htmlClass.replace('theme', 'theme theme--dark'); const bodyData = document.querySelector('body').dataset; bodyData.darkMode = bodyData.darkMode === \"true\" ? \"false\" : \"true\"; const bodyData2 = document.querySelector('[data-theme]').dataset; bodyData2.theme = bodyData2.theme === \"dark\" ? \"light\" : \"dark\"; })(); . ",
     "url": "/blog/gists/javascript/bookmarklets#toggle-dark-mode-on-supported-sites",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#toggle-dark-mode-on-supported-sites"
-  },"104": {
+  },"109": {
     "doc": "Bookmarklets",
     "title": "increase video playback speed",
     "content": "javascript: (()=&gt;{ const originalSpeed = 1; const speedToggle = 1.33; const udemyIndicator = document.querySelector('.playback-rate--trigger-text--l7hqr'); const video = document.querySelector('video'); const setSpeed = (speed) =&gt; { video.setAttribute('data-speed', speed); video.playbackRate = speed; udemyIndicator.innerText = speed + 'x'; }; video.getAttribute('data-speed') == speedToggle ? video.playbackRate = setSpeed(originalSpeed) : setSpeed(speedToggle); })(); . | toggles a video back and forth between the originalSpeed (1x) to a specified preferred speed speedToggle (1.3x in this case) | this works on all html5 videos and updates the visual indicator on Udemy specifically to match | . ",
     "url": "/blog/gists/javascript/bookmarklets#increase-video-playback-speed",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#increase-video-playback-speed"
-  },"105": {
+  },"110": {
     "doc": "Bookmarklets",
     "title": "toggle youtube video annotations",
     "content": "javascript: (()=&gt;{ document.querySelector('.ytp-ce-element')?.style?.display === 'none' ? document.querySelectorAll('.ytp-ce-element').forEach(div =&gt; div.style.display = 'block') : document.querySelectorAll('.ytp-ce-element').forEach(div =&gt; div.style.display = 'none'); })(); . ",
     "url": "/blog/gists/javascript/bookmarklets#toggle-youtube-video-annotations",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#toggle-youtube-video-annotations"
-  },"106": {
+  },"111": {
     "doc": "Bookmarklets",
     "title": "Development Tools",
     "content": " ",
     "url": "/blog/gists/javascript/bookmarklets#development-tools",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#development-tools"
-  },"107": {
+  },"112": {
     "doc": "Bookmarklets",
     "title": "hard refresh",
     "content": "javascript: (()=&gt;{location.reload()})(); . ",
     "url": "/blog/gists/javascript/bookmarklets#hard-refresh",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#hard-refresh"
-  },"108": {
+  },"113": {
     "doc": "Bookmarklets",
     "title": "edit content",
     "content": "javascript: (()=&gt;{ let body = document.querySelector(\"body\"); body.contentEditable === 'true' ? body.contentEditable = false : body.contentEditable = true; })(); . | toggles contentEditable property on the body tag. | allows quick, light editing of web page format or content without needing to get into dev tools. | unlike document.designMode = 'on' || 'off', it can be applied at the element level ranther than on the whole document. It also displays spelling mistakes . | . ",
     "url": "/blog/gists/javascript/bookmarklets#edit-content",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#edit-content"
-  },"109": {
+  },"114": {
     "doc": "Bookmarklets",
     "title": "toggle existing contentEditable attributes",
     "content": "javascript: (()=&gt;{ let contenteditable = [...document.querySelectorAll('[contenteditable]')]; contenteditable?.forEach( el =&gt; el.contentEditable === 'true' ? el.contentEditable = false : el.contentEditable = true); })(); . ",
     "url": "/blog/gists/javascript/bookmarklets#toggle-existing-contenteditable-attributes",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#toggle-existing-contenteditable-attributes"
-  },"110": {
+  },"115": {
     "doc": "Bookmarklets",
     "title": "remove all styles",
     "content": "javascript: (()=&gt;{ [...document.querySelectorAll('style, link[rel=\"stylesheet\"]')].forEach( style =&gt; style.remove()); })(); . optionally, also remove inline styles. may have unexpected results: . javascript: (()=&gt;{ [...document.querySelectorAll('[style]')].forEach( el =&gt; el.style = null); })(); . ",
     "url": "/blog/gists/javascript/bookmarklets#remove-all-styles",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#remove-all-styles"
-  },"111": {
+  },"116": {
     "doc": "Bookmarklets",
     "title": "remove all scripts",
     "content": "note: this does not stop scripts from running, it just cleans out html. javascript: (()=&gt;{ [...document.querySelectorAll('script, noscript')].forEach( script =&gt; script.remove()); })(); . ",
     "url": "/blog/gists/javascript/bookmarklets#remove-all-scripts",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#remove-all-scripts"
-  },"112": {
+  },"117": {
     "doc": "Bookmarklets",
     "title": "toggle inject CSS",
     "content": "javascript: (()=&gt;{ let css = ` h1 {color: pink} `; const injectCSS = css =&gt; { let el = document.createElement('style'); el.type = 'text/css'; el.id='css_injection'; el.innerText = css; document.head.appendChild(el); }; const swap = () =&gt; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').remove(); const replace = (newCss=css) =&gt; { css = newCss; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').innerText = css; }; swap(); })(); . | toggle custom css to show on a page | css needs can be predefined in the bookmarklet as css | if pasted in the console or ran as chrome snippet instead, replace() becomes available for use and toggled css is modifiable as an argument | . ",
     "url": "/blog/gists/javascript/bookmarklets#toggle-inject-css",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#toggle-inject-css"
-  },"113": {
+  },"118": {
     "doc": "Bookmarklets",
     "title": "Printing Pages",
     "content": " ",
     "url": "/blog/gists/javascript/bookmarklets#printing-pages",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#printing-pages"
-  },"114": {
+  },"119": {
     "doc": "Bookmarklets",
     "title": "insert page break before selected element",
     "content": "since $0 is only acessible to dev tools this first version cannot be a bookmarklet . | ctrl + shift + c or ⌘ + shift c to select the element, which will be $0 | ctrl + enter or ⌘ + return to call the css insertion and insert hr | run insertHR($0) in the console to add more &lt;hr&gt; to the selected element to page break | . let css = ` hr { break-after: page; } `; const injectCSS = css =&gt; { let el = document.createElement('style'); el.type = 'text/css'; el.id='css_injection'; el.innerText = css; document.head.appendChild(el); }; const swap = () =&gt; !document.getElementById('css_injection') ? injectCSS(css) : \"\"; const replace = (newCss=css) =&gt; { css = newCss; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').innerText = css; }; const insertHr = (selectedNode) =&gt; { const hr = document.createElement(\"hr\"); const parent = selectedNode.parentNode; parent.insertBefore(hr, selectedNode); }; swap(); insertHr($0); . Alternatively, in conjunction with the edit content bookmarklet, &lt;hr&gt; is copied into the clipboard and can be pasted in the position of the cursor as a page break. This will work as a bookmarklet. javascript: (()=&gt; { let css = ` hr { break-after: page; } @media print { hr { visibility: hidden } } `; const injectCSS = css =&gt; { let el = document.createElement('style'); el.type = 'text/css'; el.id='css_injection'; el.innerText = css; document.head.appendChild(el); }; const swap = () =&gt; {!document.getElementById('css_injection') &amp;&amp; injectCSS(css) }; swap(); navigator.clipboard.write([ new ClipboardItem({ 'text/html': new Blob(['&lt;hr&gt;'], { type: 'text/html' }), 'text/plain': new Blob(['---'], { type: 'text/plain' }) }) ]); })(); . ",
     "url": "/blog/gists/javascript/bookmarklets#insert-page-break-before-selected-element",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#insert-page-break-before-selected-element"
-  },"115": {
+  },"120": {
     "doc": "Bookmarklets",
     "title": "Leetcode",
     "content": " ",
     "url": "/blog/gists/javascript/bookmarklets#leetcode",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#leetcode"
-  },"116": {
+  },"121": {
     "doc": "Bookmarklets",
     "title": "copy leetcode solution into markdown",
     "content": "javascript: (()=&gt; { const problem = document.querySelector(\"[id*='content'] div &gt; a\"); const difficulty = document.querySelector(\"[id*='content'] [class*='text-difficulty']\").innerText; const language = document.getElementById('headlessui-popover-button-:r1e:')?.innerText || document.querySelector('[class=\"rounded items-center whitespace-nowrap focus:outline-none inline-flex bg-transparent dark:bg-dark-transparent text-text-secondary dark:text-text-secondary active:bg-transparent dark:active:bg-dark-transparent hover:bg-fill-secondary dark:hover:bg-fill-secondary px-1.5 py-0.5 text-sm font-normal group\"]').innerText; const codeIDE = document.querySelector('.view-lines.monaco-mouse-cursor-text'); const codeLines = [...document.querySelectorAll('.view-lines.monaco-mouse-cursor-text .view-line')]; codeLines.pop(); const sortedLines = codeLines.sort((a, b) =&gt; parseInt(a.style.top.slice(0,-2)) - parseInt(b.style.top.slice(0,-2))); const code = sortedLines.map((line) =&gt; (line.innerText)).join('\\n'); const copy = content =&gt; { const tempInput = document.createElement(\"textarea\"); document.body.appendChild(tempInput); tempInput.setAttribute(\"id\", \"temporary_input_clipboard\"); document.getElementById(\"temporary_input_clipboard\").value = content; tempInput.select(); document.execCommand(\"copy\"); document.body.removeChild(tempInput); }; const value = `[${problem.innerText} ${difficulty === 'Easy' ? '🍐' : difficulty === 'Medium' ? '🍊' : '🍎'}](${problem.href}) ${language !== 'JavaScript' ? language.toLowerCase() + '\\n' : ''}\\`\\`\\`${language === 'JavaScript' ? 'js' : language === 'Ruby' ? 'rb' : language} ${code} \\`\\`\\` `; copy(value); })(); // `value`'s `\\n` at the end of each line must be explicit when minified for a bookmarklet but should be omitted if pasted in the console or chrome snippet . ",
     "url": "/blog/gists/javascript/bookmarklets#copy-leetcode-solution-into-markdown",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#copy-leetcode-solution-into-markdown"
-  },"117": {
+  },"122": {
     "doc": "Bookmarklets",
     "title": "go to leetcode problem ( from another educational source )",
     "content": "javascript: (()=&gt; { let url = new URL(window.location.href); if (url.host = 'www.educative.io' || 'designgurus.io') window.location.href = 'https://leetcode.com/problems/' + url.pathname.split('/').pop().replace('solution-', '') })(); . ",
     "url": "/blog/gists/javascript/bookmarklets#go-to-leetcode-problem-from-another-educational-source",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#go-to-leetcode-problem-from-another-educational-source"
-  },"118": {
+  },"123": {
     "doc": "Bookmarklets",
     "title": "Misc",
     "content": " ",
     "url": "/blog/gists/javascript/bookmarklets#misc",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#misc"
-  },"119": {
+  },"124": {
     "doc": "Bookmarklets",
     "title": "Mychart open pdf",
     "content": "opens mychart pdf in a full window . url = document.querySelector('.pdfobject').src; // options: // open in a popup window.open(url, '_blank').focus(); // open in current tab window.location.href = url; . personally preferred bookmarklet use-case . javascript: (()=&gt; { url = document.querySelector('.pdfobject').src; window.location.href = url; })(); . ",
     "url": "/blog/gists/javascript/bookmarklets#mychart-open-pdf",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#mychart-open-pdf"
-  },"120": {
+  },"125": {
     "doc": "Caramelized Miso Carrots",
     "title": "\n  \n  Caramelized Miso Carrots\n",
     "content": ". This is Oil-Free! . The ingredients are exteremely basic but for safety, there is an absolutely necessary long wait for the cooking vessel to cool down. Do NOT peek at the food while cooking! . Preparation time2 minsPT2MCooking time42 minsPT42MYield1 serving 1 ",
     "url": "/blog/food/recipes/caramelized-miso-carrots#caramelized-miso-carrots",
     
     "relUrl": "/blog/food/recipes/caramelized-miso-carrots#caramelized-miso-carrots"
-  },"121": {
+  },"126": {
     "doc": "Caramelized Miso Carrots",
     "title": " Ingredients",
     "content": ". | 1 cup carrot sticks or carrots chunks | tamari | slivered onions ( optional ) | miso paste ( optional ) | . ",
     "url": "/blog/food/recipes/caramelized-miso-carrots#ingredients",
     
     "relUrl": "/blog/food/recipes/caramelized-miso-carrots#ingredients"
-  },"122": {
+  },"127": {
     "doc": "Caramelized Miso Carrots",
     "title": " Instructions",
     "content": ". | Add carrots and tamari ( to taste ) to a large ceramic bowl. If desired, add onions. Add a splash of water if the ingredients seem dry. | Cover the top of a bowl with a wider, overturned ceramic bowl or plate. | Microwave the carrot bowls for&#58; . | 3 minutes on the highest power, | followed by 2 minutes at 30% power | and finally, 22 minutes on the lowest power setting. | . | Let sit to cool for 15 – 40 minutes before attempting to retrieve or look at the food. DO NOT TOUCH the ceramic bowls until cooling time has elapsed!! | Optional&#58; after cooling, stir in a tsp of miso paste for extra umami. | . The carrots should look bruised and wrinkly in appearance, sometimes with dark spots, but taste sweet, caramelized and savory. The texture is extremely soft and melts in your mouth. It can be refrigerated for a week or two. ",
     "url": "/blog/food/recipes/caramelized-miso-carrots#instructions",
     
     "relUrl": "/blog/food/recipes/caramelized-miso-carrots#instructions"
-  },"123": {
+  },"128": {
     "doc": "Caramelized Miso Carrots",
     "title": " Nutrition Facts",
     "content": "in grams per serving . Calories60Fat0.2Carbohydrates14Protein1 Mandy Chenhttps://picaq.github.io cuisineAmericandietvegan, keto, diabeticcategorysidekeywordssweet, savory, sides, carrots, oil-free ",
     "url": "/blog/food/recipes/caramelized-miso-carrots#nutrition-facts",
     
     "relUrl": "/blog/food/recipes/caramelized-miso-carrots#nutrition-facts"
-  },"124": {
+  },"129": {
     "doc": "Caramelized Miso Carrots",
     "title": "Serving Options",
     "content": ". | You can use this as a side dish or eat it as-is. | It is a good sandwich or wrap ingredient, goes well with soups, peas or as an accompaniment. | After chilling them in the fridge, they can be added to salads or bentos. | This goes well with cheesy peas | . ",
     "url": "/blog/food/recipes/caramelized-miso-carrots#serving-options",
     
     "relUrl": "/blog/food/recipes/caramelized-miso-carrots#serving-options"
-  },"125": {
+  },"130": {
     "doc": "Caramelized Miso Carrots",
     "title": "Why not use an instant pot or pressure cooker?",
     "content": "I don’t have one, and I don’t want to clean a specialized large, separate cooking vessel. If you were able to successfully replicate this recipe using those appliances let me know! . ",
     "url": "/blog/food/recipes/caramelized-miso-carrots#why-not-use-an-instant-pot-or-pressure-cooker",
     
     "relUrl": "/blog/food/recipes/caramelized-miso-carrots#why-not-use-an-instant-pot-or-pressure-cooker"
-  },"126": {
+  },"131": {
     "doc": "Caramelized Miso Carrots",
     "title": "Caramelized Miso Carrots",
     "content": " ",
     "url": "/blog/food/recipes/caramelized-miso-carrots",
     
     "relUrl": "/blog/food/recipes/caramelized-miso-carrots"
-  },"127": {
+  },"132": {
     "doc": "Cheese et Cetera",
     "title": "Cheese et Cetera",
     "content": "I used to have a really bad cheese addiction. I like yogurt too. Trying not to clog my arteries over here! . The tables below compare the saturated fat content by grams/serving as well as by % weight of the tastiest fermented non-dairy dairy alternatives ( that I’ve tried so far ). Not included are those that I didn’t like. Coconut oil is the absolute bane of my existence. ",
     "url": "/blog/food/cheese-etc",
     
     "relUrl": "/blog/food/cheese-etc"
-  },"128": {
+  },"133": {
     "doc": "Cheese et Cetera",
     "title": "Cheese",
     "content": "| Type | Brand | Name | Sat fat (g) | Serving vol, wt (g) | % wt Sat | % DV | . | Cashew Brie | The Uncreamery | Truffle Brie Wheel | 5 | 1 oz28 | 17.86 | 25 | . | Almond Gouda | The Uncreamery | Smoked Gouda Block | 4.5 | 1 oz28 | 16.07 | 23 | . | Cashew Cheddar | Trader Joe’s | Cheddar Style Slices | 3.5 | 22 | 15.91 | 18 | . | Cashew Mozzarella | Miyoko’s Creamery | Pourable Cashew Milk Mozzarella™ | 2 | 1/4 cup 67 | 2.99 | 10 | . | Cashew Brie | Nuts for Cheese | Un-Brie-Lievable™ | 5 | 1 oz28 | 17.86 | 25 | . | Black Garlic Cashew | Nuts for Cheese | Black Garlic | 4.5 | 1 oz28 | 16.07 | 23 | . ",
     "url": "/blog/food/cheese-etc#cheese",
     
     "relUrl": "/blog/food/cheese-etc#cheese"
-  },"129": {
+  },"134": {
     "doc": "Cheese et Cetera",
     "title": "Yogurt",
     "content": "| Type | Brand | Name | Fibre (g) | Prot. (g) | Extra Sugar (g) | Sat fat (g) | Serving vol, wt (g) | % wt Sat | % DV | . | Plain Soy | Silk | Plain Soymilk Dairy-Free Yogurt Alternative | 2 | 7 | 4 | 0.5 | 3/4 cup170 | 0.29 | 3 | . | Vanilla Soy | Silk | Vanilla Soymilk Dairy-Free Yogurt Alternative | 2 | 7 | 12 | 0.5 | 3/4 cup170 | 0.29 | 3 | . | Strawberry Soy | Silk | Soy Milk Dairy-Free Yogurt Alternative | 2 | 6 | 12 | 0* | 150 | 0 | 0 | . | Strawberry Almond | Silk | Almond Milk Dairy-Free Yogurt Alternative, Strawberry | 3 | 5 | 12 | 1 | 150 | 0.67 | 5 | . | Vanilla Almond | Silk | Unsweetened Vanilla Almond Milk Yogurt Alternative | 6 | 6 | 0 | 1 | 28 | 0.67 | 5 | . | Cashew Coconut | Forager Project | Cashew and Coconut Milk Yogurt, Organic Unsweetened Plain | 1 | 3 | 1 | 2 | 5.3 oz150 | 1.33 | 10 | . | VanillaCashew Coconut | Forager Project | Cashew and Coconut Milk Yogurt, Organic Vanilla Bean | 1 | 3 | 8 | 2 | 5.3 oz150 | 1.33 | 10 | . | BlueberryCashew Coconut | Forager Project | Cashewmilk Yogurt, Organic Blueberry | 1 | 3 | 8 | 2 | 5.3 oz150 | 1.33 | 10 | . * This zero saturated fat value might not be accurate due to nutrition facts rounding. ",
     "url": "/blog/food/cheese-etc#yogurt",
     
     "relUrl": "/blog/food/cheese-etc#yogurt"
-  },"130": {
+  },"135": {
     "doc": "Cheese et Cetera",
     "title": "Conclusion",
     "content": "More yogurt less “cheese” (fermented nuts). ",
     "url": "/blog/food/cheese-etc#conclusion",
     
     "relUrl": "/blog/food/cheese-etc#conclusion"
-  },"131": {
+  },"136": {
     "doc": "Cheese et Cetera",
     "title": "More Cheese!",
     "content": "I’ve created some cheesy recipes so far: . | Natto Nacho Cheese | Cheesy Peas | . ",
     "url": "/blog/food/cheese-etc#more-cheese",
     
     "relUrl": "/blog/food/cheese-etc#more-cheese"
-  },"132": {
+  },"137": {
     "doc": "Cheesy Peas",
     "title": "\n  \n  Cheesy Peas\n",
     "content": ". Creamy, slightly sticky, cheesy and filling. Preparation time2 minsPT2MCooking time4 minsPT4MYield1 serving 1 ",
     "url": "/blog/food/recipes/cheesy-peas#cheesy-peas",
     
     "relUrl": "/blog/food/recipes/cheesy-peas#cheesy-peas"
-  },"133": {
+  },"138": {
     "doc": "Cheesy Peas",
     "title": " Ingredients",
     "content": ". | 80 – 100 g frozen green peas | 1 – 2 tbsp nooch | 1 tbsp cashew butter | tamari | ponzu | yellow mustard | kala namak ( and/or salt ) | 0.5 – 2 tsp garlic powder | white pepper powder | 1 – 2 tsp miso paste ( optional ) for more umami | sweetener ( optional ) ( date syrup and/or stevia ) | . ",
     "url": "/blog/food/recipes/cheesy-peas#ingredients",
     
     "relUrl": "/blog/food/recipes/cheesy-peas#ingredients"
-  },"134": {
+  },"139": {
     "doc": "Cheesy Peas",
     "title": " Instructions",
     "content": ". | Pour peas into a microwavable bowl alongside all liquid ingredients. If adding powdered ingredients ( except for kala namak ) stir them in. | Cook at max settings for 3:30 minutes or 90 seconds at max power followed by 2:45 at 20% power. If using a lid, reduce the cooking time by 30 –40 s. | let sit for 1 – 2 minutes before touching the heating vessel. | Stir in all solid ingredients ( if not done so already ), followed by cashew butter and kala namak. | Stir in the rest of the optional ingredients. | . The flavorings should make the peas fresh yet cheesy. ",
     "url": "/blog/food/recipes/cheesy-peas#instructions",
     
     "relUrl": "/blog/food/recipes/cheesy-peas#instructions"
-  },"135": {
+  },"140": {
     "doc": "Cheesy Peas",
     "title": " Nutrition Facts",
     "content": "in grams per serving . Calories180Fat22Carbohydrates23Protein26 Mandy Chenhttps://picaq.github.io cuisineAmericandietvegan, keto, diabeticcategorysidekeywordspea, protein, cashew, cheese, nachos ",
     "url": "/blog/food/recipes/cheesy-peas#nutrition-facts",
     
     "relUrl": "/blog/food/recipes/cheesy-peas#nutrition-facts"
-  },"136": {
+  },"141": {
     "doc": "Cheesy Peas",
     "title": "More Cheese!",
     "content": "This recipe is a simplified version of, and the original inspiration for natto nacho cheese. ",
     "url": "/blog/food/recipes/cheesy-peas#more-cheese",
     
     "relUrl": "/blog/food/recipes/cheesy-peas#more-cheese"
-  },"137": {
+  },"142": {
     "doc": "Cheesy Peas",
     "title": "Cheesy Peas",
     "content": " ",
     "url": "/blog/food/recipes/cheesy-peas",
     
     "relUrl": "/blog/food/recipes/cheesy-peas"
-  },"138": {
+  },"143": {
     "doc": "Chocolate",
     "title": "Chocolate",
     "content": "A collection of my favorite chocolate brands and my opinions about them. ",
     "url": "/blog/food/chocolate",
     
     "relUrl": "/blog/food/chocolate"
-  },"139": {
+  },"144": {
     "doc": "Chocolate",
     "title": "Bars",
     "content": ". | Butler’s Dark Chocolate 70% . | Smooth and melty | . | Erewhon . | like food | expensive | . | Chocolove . | smooth | . | Ghirardelli . | lowest amount of heavy metals | smooth | . | Charles Chocolates . | Fragrant and tasty | expensive | . | Recchiuti . | Fragrant delicate flavors | addictively good | smooth | expensive | . | Bon-Fiction . | fruit/spicy flavors are the best | Mango Menace is addictive | . | . ",
     "url": "/blog/food/chocolate#bars",
     
     "relUrl": "/blog/food/chocolate#bars"
-  },"140": {
+  },"145": {
     "doc": "Chocolate",
     "title": "Hot Cocoa",
     "content": "I usually add 1/2 –1 spoonful of cocoa powder to the mix. Typically made with a mixture of dairy free milks and slightly sweeteened. | Dandelion . | very thick and rich | literally a crushed up dark chocolate bar | multiple flavors: Mission ( spicy ), Mocha | . | Godavari . | smooth | multiple flavors: Chai | . | . ",
     "url": "/blog/food/chocolate#hot-cocoa",
     
     "relUrl": "/blog/food/chocolate#hot-cocoa"
-  },"141": {
+  },"146": {
     "doc": "Fine Type Copy Pasta",
     "title": "Fine Typography Copy Pasta",
     "content": "Common fine typographic characters for optical typing. | Fine Typography Copy Pasta . | Quotes . | double quotes “” | single quotes ‘’ | apostrophe ’ | . | East Asian quotes | Dashes . | em dash — | en dash – | colon | . | Spaces . | thin space (1/5– 1/6 em) | hair space (&lt;  1/6 em) | zero width space (0) | zero width word joiner (0) prevents breaks | Non Breaking . | non breaking space   (1/4 em) | narrow non breaking space (1/4 – 1/5 em) | zero width non breaking space (0) | . | Quad Spaces: constant . | en quad (1/2 em) | em quad (1 em) | . | Spaces Proportional to font width (i.e. if condensed) . | en space (1/2 em) | em space (1 em) | . | Etc . | ogham space mark (1/2 em?) | mongolian vowel separator (0) | medium math space (4/18 em) | figure space (tabular width of digits) | ideographic space (1 em, CJK character width) | tab character | . | . | Alphabet Length . | 6 Alphabets | Turn element into 6 alphabets | misc | . | . | . ",
     "url": "/blog/design/type/copy-pasta#fine-typography-copy-pasta",
     
     "relUrl": "/blog/design/type/copy-pasta#fine-typography-copy-pasta"
-  },"142": {
+  },"147": {
     "doc": "Fine Type Copy Pasta",
     "title": "Quotes",
     "content": " ",
     "url": "/blog/design/type/copy-pasta#quotes",
     
     "relUrl": "/blog/design/type/copy-pasta#quotes"
-  },"143": {
+  },"148": {
     "doc": "Fine Type Copy Pasta",
     "title": "double quotes “”",
     "content": "“” . ",
     "url": "/blog/design/type/copy-pasta#double-quotes-",
     
     "relUrl": "/blog/design/type/copy-pasta#double-quotes-"
-  },"144": {
+  },"149": {
     "doc": "Fine Type Copy Pasta",
     "title": "single quotes ‘’",
     "content": "‘’ . ",
     "url": "/blog/design/type/copy-pasta#single-quotes-",
     
     "relUrl": "/blog/design/type/copy-pasta#single-quotes-"
-  },"145": {
+  },"150": {
     "doc": "Fine Type Copy Pasta",
     "title": "apostrophe ’",
     "content": "’ . ",
     "url": "/blog/design/type/copy-pasta#apostrophe-",
     
     "relUrl": "/blog/design/type/copy-pasta#apostrophe-"
-  },"146": {
+  },"151": {
     "doc": "Fine Type Copy Pasta",
     "title": "East Asian quotes",
     "content": "「」 . 【】 . ",
     "url": "/blog/design/type/copy-pasta#east-asian-quotes",
     
     "relUrl": "/blog/design/type/copy-pasta#east-asian-quotes"
-  },"147": {
+  },"152": {
     "doc": "Fine Type Copy Pasta",
     "title": "Dashes",
     "content": " ",
     "url": "/blog/design/type/copy-pasta#dashes",
     
     "relUrl": "/blog/design/type/copy-pasta#dashes"
-  },"148": {
+  },"153": {
     "doc": "Fine Type Copy Pasta",
     "title": "em dash —",
     "content": " —  . ",
     "url": "/blog/design/type/copy-pasta#em-dash-",
     
     "relUrl": "/blog/design/type/copy-pasta#em-dash-"
-  },"149": {
+  },"154": {
     "doc": "Fine Type Copy Pasta",
     "title": "en dash –",
     "content": " –  . ",
     "url": "/blog/design/type/copy-pasta#en-dash-",
     
     "relUrl": "/blog/design/type/copy-pasta#en-dash-"
-  },"150": {
+  },"155": {
     "doc": "Fine Type Copy Pasta",
     "title": "colon",
     "content": "&amp;#58; . ",
     "url": "/blog/design/type/copy-pasta#colon",
     
     "relUrl": "/blog/design/type/copy-pasta#colon"
-  },"151": {
+  },"156": {
     "doc": "Fine Type Copy Pasta",
     "title": "Spaces",
     "content": " ",
     "url": "/blog/design/type/copy-pasta#spaces",
     
     "relUrl": "/blog/design/type/copy-pasta#spaces"
-  },"152": {
+  },"157": {
     "doc": "Fine Type Copy Pasta",
     "title": "thin space (1/5– 1/6 em)",
     "content": "  . ",
     "url": "/blog/design/type/copy-pasta#thin-space-1516-em",
     
     "relUrl": "/blog/design/type/copy-pasta#thin-space-1516-em"
-  },"153": {
+  },"158": {
     "doc": "Fine Type Copy Pasta",
     "title": "hair space (&lt;  1/6 em)",
     "content": "  . ",
     "url": "/blog/design/type/copy-pasta#hair-space--16-em",
     
     "relUrl": "/blog/design/type/copy-pasta#hair-space--16-em"
-  },"154": {
+  },"159": {
     "doc": "Fine Type Copy Pasta",
     "title": "zero width space (0)",
     "content": "​ . ",
     "url": "/blog/design/type/copy-pasta#zero-width-space-0",
     
     "relUrl": "/blog/design/type/copy-pasta#zero-width-space-0"
-  },"155": {
+  },"160": {
     "doc": "Fine Type Copy Pasta",
     "title": "zero width word joiner (0) prevents breaks",
     "content": "&amp;#x200D; . ",
     "url": "/blog/design/type/copy-pasta#zero-width-word-joiner-0-prevents-breaks",
     
     "relUrl": "/blog/design/type/copy-pasta#zero-width-word-joiner-0-prevents-breaks"
-  },"156": {
+  },"161": {
     "doc": "Fine Type Copy Pasta",
     "title": "Non Breaking",
     "content": " ",
     "url": "/blog/design/type/copy-pasta#non-breaking",
     
     "relUrl": "/blog/design/type/copy-pasta#non-breaking"
-  },"157": {
+  },"162": {
     "doc": "Fine Type Copy Pasta",
     "title": "non breaking space   (1/4 em)",
     "content": "  . ",
     "url": "/blog/design/type/copy-pasta#non-breaking-space--14-em",
     
     "relUrl": "/blog/design/type/copy-pasta#non-breaking-space--14-em"
-  },"158": {
+  },"163": {
     "doc": "Fine Type Copy Pasta",
     "title": "narrow non breaking space (1/4 – 1/5 em)",
     "content": "  . ",
     "url": "/blog/design/type/copy-pasta#narrow-non-breaking-space-1415-em",
     
     "relUrl": "/blog/design/type/copy-pasta#narrow-non-breaking-space-1415-em"
-  },"159": {
+  },"164": {
     "doc": "Fine Type Copy Pasta",
     "title": "zero width non breaking space (0)",
     "content": "﻿ . ",
     "url": "/blog/design/type/copy-pasta#zero-width-non-breaking-space-0",
     
     "relUrl": "/blog/design/type/copy-pasta#zero-width-non-breaking-space-0"
-  },"160": {
+  },"165": {
     "doc": "Fine Type Copy Pasta",
     "title": "Quad Spaces: constant",
     "content": " ",
     "url": "/blog/design/type/copy-pasta#quad-spaces-constant",
     
     "relUrl": "/blog/design/type/copy-pasta#quad-spaces-constant"
-  },"161": {
+  },"166": {
     "doc": "Fine Type Copy Pasta",
     "title": "en quad (1/2 em)",
     "content": "  . ",
     "url": "/blog/design/type/copy-pasta#en-quad-12-em",
     
     "relUrl": "/blog/design/type/copy-pasta#en-quad-12-em"
-  },"162": {
+  },"167": {
     "doc": "Fine Type Copy Pasta",
     "title": "em quad (1 em)",
     "content": "  . ",
     "url": "/blog/design/type/copy-pasta#em-quad-1-em",
     
     "relUrl": "/blog/design/type/copy-pasta#em-quad-1-em"
-  },"163": {
+  },"168": {
     "doc": "Fine Type Copy Pasta",
     "title": "Spaces Proportional to font width (i.e. if condensed)",
     "content": " ",
     "url": "/blog/design/type/copy-pasta#spaces-proportional-to-font-width-ie-if-condensed",
     
     "relUrl": "/blog/design/type/copy-pasta#spaces-proportional-to-font-width-ie-if-condensed"
-  },"164": {
+  },"169": {
     "doc": "Fine Type Copy Pasta",
     "title": "en space (1/2 em)",
     "content": "   . ",
     "url": "/blog/design/type/copy-pasta#en-space-12-em",
     
     "relUrl": "/blog/design/type/copy-pasta#en-space-12-em"
-  },"165": {
+  },"170": {
     "doc": "Fine Type Copy Pasta",
     "title": "em space (1 em)",
     "content": "  . ",
     "url": "/blog/design/type/copy-pasta#em-space-1-em",
     
     "relUrl": "/blog/design/type/copy-pasta#em-space-1-em"
-  },"166": {
+  },"171": {
     "doc": "Fine Type Copy Pasta",
     "title": "Etc",
     "content": " ",
     "url": "/blog/design/type/copy-pasta#etc",
     
     "relUrl": "/blog/design/type/copy-pasta#etc"
-  },"167": {
+  },"172": {
     "doc": "Fine Type Copy Pasta",
     "title": "ogham space mark (1/2 em?)",
     "content": "  . ",
     "url": "/blog/design/type/copy-pasta#ogham-space-mark-12-em",
     
     "relUrl": "/blog/design/type/copy-pasta#ogham-space-mark-12-em"
-  },"168": {
+  },"173": {
     "doc": "Fine Type Copy Pasta",
     "title": "mongolian vowel separator (0)",
     "content": "᠎ . ",
     "url": "/blog/design/type/copy-pasta#mongolian-vowel-separator-0",
     
     "relUrl": "/blog/design/type/copy-pasta#mongolian-vowel-separator-0"
-  },"169": {
+  },"174": {
     "doc": "Fine Type Copy Pasta",
     "title": "medium math space (4/18 em)",
     "content": "  . ",
     "url": "/blog/design/type/copy-pasta#medium-math-space-418-em",
     
     "relUrl": "/blog/design/type/copy-pasta#medium-math-space-418-em"
-  },"170": {
+  },"175": {
     "doc": "Fine Type Copy Pasta",
     "title": "figure space (tabular width of digits)",
     "content": "  . ",
     "url": "/blog/design/type/copy-pasta#figure-space-tabular-width-of-digits",
     
     "relUrl": "/blog/design/type/copy-pasta#figure-space-tabular-width-of-digits"
-  },"171": {
+  },"176": {
     "doc": "Fine Type Copy Pasta",
     "title": "ideographic space (1 em, CJK character width)",
     "content": " 　 . ",
     "url": "/blog/design/type/copy-pasta#ideographic-space-1-em-cjk-character-width",
     
     "relUrl": "/blog/design/type/copy-pasta#ideographic-space-1-em-cjk-character-width"
-  },"172": {
+  },"177": {
     "doc": "Fine Type Copy Pasta",
     "title": "tab character",
     "content": ". Source: Unicode spaces https://jkorpela.fi/chars/spaces.html . ",
     "url": "/blog/design/type/copy-pasta#tab-character",
     
     "relUrl": "/blog/design/type/copy-pasta#tab-character"
-  },"173": {
+  },"178": {
     "doc": "Fine Type Copy Pasta",
     "title": "Alphabet Length",
     "content": "abcdefghijklmnopqrstuvwxyz . ",
     "url": "/blog/design/type/copy-pasta#alphabet-length",
     
     "relUrl": "/blog/design/type/copy-pasta#alphabet-length"
-  },"174": {
+  },"179": {
     "doc": "Fine Type Copy Pasta",
     "title": "6 Alphabets",
     "content": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz . ",
     "url": "/blog/design/type/copy-pasta#6-alphabets",
     
     "relUrl": "/blog/design/type/copy-pasta#6-alphabets"
-  },"175": {
+  },"180": {
     "doc": "Fine Type Copy Pasta",
     "title": "Turn element into 6 alphabets",
     "content": "$0.innerText = \"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\" . ",
     "url": "/blog/design/type/copy-pasta#turn-element-into-6-alphabets",
     
     "relUrl": "/blog/design/type/copy-pasta#turn-element-into-6-alphabets"
-  },"176": {
+  },"181": {
     "doc": "Fine Type Copy Pasta",
     "title": "misc",
     "content": "❀ (⁠ ⁠ꈍ⁠ᴗ⁠ꈍ⁠) ❀ . Web typography: baseline grids made easy (finally!) . ",
     "url": "/blog/design/type/copy-pasta#misc",
     
     "relUrl": "/blog/design/type/copy-pasta#misc"
-  },"177": {
+  },"182": {
     "doc": "Fine Type Copy Pasta",
     "title": "Fine Type Copy Pasta",
     "content": " ",
     "url": "/blog/design/type/copy-pasta",
     
     "relUrl": "/blog/design/type/copy-pasta"
-  },"178": {
+  },"183": {
     "doc": "Creamy Ramen Broth",
     "title": "Creamy Ramen Broth",
     "content": " ",
     "url": "/blog/food/recipes/creamy-ramen-broth",
     
     "relUrl": "/blog/food/recipes/creamy-ramen-broth"
-  },"179": {
+  },"184": {
     "doc": "Creamy Ramen Broth",
     "title": "Ingredients",
     "content": ". | soymilk | frozen edamame | frozen mushrooms | shoyu | black garlic paste | . ",
     "url": "/blog/food/recipes/creamy-ramen-broth#ingredients",
     
     "relUrl": "/blog/food/recipes/creamy-ramen-broth#ingredients"
-  },"180": {
+  },"185": {
     "doc": "Creamy Ramen Broth",
     "title": "Instructions",
     "content": ". | If not already in paste-form, peel black garlic and mash it with a spoon into a paste. | Stir in 1/4 – 3/4 cup warmed soymilk depending on desired consistency. | Add shoyu to taste. | Stir in all frozen ingredients. | Heat mixture in a microwave or on a stove until boiling. Heating time varies and depends on the mass of ingredients. | Cover and continue heating on the lowest heat setting for 5 –10 more minutes. | Use immediately or refrigerate overnight for stronger flavors. | . ",
     "url": "/blog/food/recipes/creamy-ramen-broth#instructions",
     
     "relUrl": "/blog/food/recipes/creamy-ramen-broth#instructions"
-  },"181": {
+  },"186": {
     "doc": "Creamy Ramen Broth",
     "title": "Serving Options",
     "content": ". | Add to cooked oatmeal or stir in oats with the frozen ingredients ( step 4 ) before heating for savory oats | Stir in miso before serving for more umami | Crush up and sprinkle nori on top | . ",
     "url": "/blog/food/recipes/creamy-ramen-broth#serving-options",
     
     "relUrl": "/blog/food/recipes/creamy-ramen-broth#serving-options"
-  },"182": {
+  },"187": {
     "doc": "CSS",
     "title": "Cascading Style Sheets",
     "content": "CSS is painting by numbers. The numbers are your selectors. ",
     "url": "/blog/gists/css#cascading-style-sheets",
     
     "relUrl": "/blog/gists/css#cascading-style-sheets"
-  },"183": {
+  },"188": {
     "doc": "CSS",
     "title": "Codepen Demos",
     "content": ". | Ceiling light button | Flexbox footer | Hanging Quotes &amp; Typography | honeycomb bubble profile pictures | . ",
     "url": "/blog/gists/css#codepen-demos",
     
     "relUrl": "/blog/gists/css#codepen-demos"
-  },"184": {
+  },"189": {
     "doc": "CSS",
     "title": "CSS",
     "content": " ",
     "url": "/blog/gists/css",
     
     "relUrl": "/blog/gists/css"
-  },"185": {
+  },"190": {
     "doc": "Dairy Free Milks",
     "title": "Dairy Free Milks",
     "content": "I recently bought a soy milk maker, which is basically a stainless steel blender with a heating element. It has 6 pre-programmed sequences. Here are the included recipes in the manual in case I can’t find it. | Dairy Free Milks . | Basic Formula . | Ingredients | Instructions | Nut Milks . | Almond Milk | Cashew Milk | Coconut Milk | Walnut Milk | Hazelnut Milk | Hemp Milk | Almond Peanut Milk | . | Bean Milk . | Soy Milk | Oat Soy Milk | Walnut Oat Soy Milk | . | Grain Milks . | Oat Milk | Rice Milk | Oat Rice Paste | . | Juice . | Apple Pineapple Juice | Carrot Honey Juice | . | Yogurt . | Carb Content | Yogurt Instructions | . | . | Machine specifications . | Pre-programmed functions | . | Custom Usage . | Nuts function at 0F | Grains function . | Hot Chocolate | . | . | Experiments | . | . ",
     "url": "/blog/food/recipes/dairy-free-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk"
-  },"186": {
+  },"191": {
     "doc": "Dairy Free Milks",
     "title": "Basic Formula",
     "content": "The milk making process follow the same basic formula and instuctions. The only things you need are the ( a ) main ingredient(s): food, and water ( e ). Sweeterners and flavorings ( b – d ) are optional. ",
     "url": "/blog/food/recipes/dairy-free-milk#basic-formula",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#basic-formula"
-  },"187": {
+  },"192": {
     "doc": "Dairy Free Milks",
     "title": "Ingredients",
     "content": ". | nuts, soy or fruit | sweetener | spices or flavorings | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#ingredients",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#ingredients"
-  },"188": {
+  },"193": {
     "doc": "Dairy Free Milks",
     "title": "Instructions",
     "content": ". | Add ingredients ( a – d ) into the milk maker. | Add water ( e ) above the min but below the max water line. | Press function button ( 10 – 35 minutes ). | Unplug the power cord before pouring out the liquid. | Optionally: strain the milk in a strainer or nut bag. | . ",
     "url": "/blog/food/recipes/dairy-free-milk#instructions",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#instructions"
-  },"189": {
+  },"194": {
     "doc": "Dairy Free Milks",
     "title": "Nut Milks",
     "content": "Nuts : 15 minutes . ",
     "url": "/blog/food/recipes/dairy-free-milk#nut-milks",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#nut-milks"
-  },"190": {
+  },"195": {
     "doc": "Dairy Free Milks",
     "title": "Almond Milk",
     "content": ". | 60 g raw almonds | 4 – 5 pitted dates | 2 tsp vanilla extract pinch of ground cinnamon | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#almond-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#almond-milk"
-  },"191": {
+  },"196": {
     "doc": "Dairy Free Milks",
     "title": "Cashew Milk",
     "content": ". | 60 g raw cashews | 3 – 4 tsp maple syrup | 2 tsp vanilla extract | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#cashew-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#cashew-milk"
-  },"192": {
+  },"197": {
     "doc": "Dairy Free Milks",
     "title": "Coconut Milk",
     "content": ". | 60 g shredded coconut meat | 5 – 6 pitted dates | vanilla pod | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#coconut-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#coconut-milk"
-  },"193": {
+  },"198": {
     "doc": "Dairy Free Milks",
     "title": "Walnut Milk",
     "content": ". | 60 g walnuts | 4 – 5 tsp allulose syrup | 5 – 6 pitted dates | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#walnut-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#walnut-milk"
-  },"194": {
+  },"199": {
     "doc": "Dairy Free Milks",
     "title": "Hazelnut Milk",
     "content": ". | 60 g hazelnuts | 3 – 4 tsp maple syrup | 2 tsp vanilla extract | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#hazelnut-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#hazelnut-milk"
-  },"195": {
+  },"200": {
     "doc": "Dairy Free Milks",
     "title": "Hemp Milk",
     "content": ". | 60 g hulled hemp seeds | 3 – 4 tsp maple syrup | 2 tsp vanilla extract 6 – 7 pitted medjool dates | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#hemp-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#hemp-milk"
-  },"196": {
+  },"201": {
     "doc": "Dairy Free Milks",
     "title": "Almond Peanut Milk",
     "content": ". | 40 g almonds 20 g cooked peanuts | sugar | 2 tsp vanilla extract 6 – 7 pitted medjool dates | dash of salt | oat milk ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#almond-peanut-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#almond-peanut-milk"
-  },"197": {
+  },"202": {
     "doc": "Dairy Free Milks",
     "title": "Bean Milk",
     "content": "Beans : 35 minutes . For creamier soy milk, it is best to rinse and then warm soak the beans for a few hours (2 – 4), and then rinse again before blending or portion out the soaked, rinsed beans into jars in the fridge overnight to blend the next day. For storing the beans overnight, I also add a teaspoon of salt. If you rinse overnight-soaked salted soy beans, the soy milk will end up pretty tasteless and watery so it is preferred to pour the salted soak water into the machine along with the beans. Before serving, the soy milk foam, if any, should be skimmed off the surface. Overnight-soaked salted soy beans will cook and blend without forming a foam on top. ",
     "url": "/blog/food/recipes/dairy-free-milk#bean-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#bean-milk"
-  },"198": {
+  },"203": {
     "doc": "Dairy Free Milks",
     "title": "Soy Milk",
     "content": ". | 60 g soybeans | 3 medjool dates 3 – 4 tsp maple syrup | 2 tsp vanilla extract | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#soy-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#soy-milk"
-  },"199": {
+  },"204": {
     "doc": "Dairy Free Milks",
     "title": "Oat Soy Milk",
     "content": ". | 35 g soybeans 15 g instant oats | sugar to taste | 10 g toasted black sesame seeds | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#oat-soy-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#oat-soy-milk"
-  },"200": {
+  },"205": {
     "doc": "Dairy Free Milks",
     "title": "Walnut Oat Soy Milk",
     "content": ". | 40 g soybeans 10 g oats 10 g walnut (~ 1 whole walnut) | ? | ? | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#walnut-oat-soy-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#walnut-oat-soy-milk"
-  },"201": {
+  },"206": {
     "doc": "Dairy Free Milks",
     "title": "Grain Milks",
     "content": "Grains : 10 minutes . ",
     "url": "/blog/food/recipes/dairy-free-milk#grain-milks",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#grain-milks"
-  },"202": {
+  },"207": {
     "doc": "Dairy Free Milks",
     "title": "Oat Milk",
     "content": ". | 60 g rolled oats | 3 – 4 tsp maple syrup | 2 tsp vanilla extract | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#oat-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#oat-milk"
-  },"203": {
+  },"208": {
     "doc": "Dairy Free Milks",
     "title": "Rice Milk",
     "content": ". | 60 g rice | 3 – 4 tsp maple syrup | 2 tsp vanilla extract and/or 2 tbsp cacao powder | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#rice-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#rice-milk"
-  },"204": {
+  },"209": {
     "doc": "Dairy Free Milks",
     "title": "Oat Rice Paste",
     "content": ". | 12 g each of: . | rice | oats | soy beans | red dates | pine nuts | . | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#oat-rice-paste",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#oat-rice-paste"
-  },"205": {
+  },"210": {
     "doc": "Dairy Free Milks",
     "title": "Juice",
     "content": "Juice : 5 minutes . ",
     "url": "/blog/food/recipes/dairy-free-milk#juice",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#juice"
-  },"206": {
+  },"211": {
     "doc": "Dairy Free Milks",
     "title": "Apple Pineapple Juice",
     "content": ". | 200 g pineapple | 150 g apple | 4 – 5 tsp allulose syrup | dash of salt | water ( just under 1 liter ) | 20 g lemon ( add after blending ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#apple-pineapple-juice",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#apple-pineapple-juice"
-  },"207": {
+  },"212": {
     "doc": "Dairy Free Milks",
     "title": "Carrot Honey Juice",
     "content": ". | 200 g carrot | 170 g apple | 20 ml allulose syrup | any of the above milks ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#carrot-honey-juice",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#carrot-honey-juice"
-  },"208": {
+  },"213": {
     "doc": "Dairy Free Milks",
     "title": "Yogurt",
     "content": "Self Clean : 10 minutes . Yogurt : 8 hours . | 1 quart of any milk | 0, 30 – 45 g sugar and/or blended dates based on the below table | 2 – 3 tbs plain yogurt or a pack of yogurt culture starter | optional: 1/3 cup protein powder for thicker yogurt | . ",
     "url": "/blog/food/recipes/dairy-free-milk#yogurt",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#yogurt"
-  },"209": {
+  },"214": {
     "doc": "Dairy Free Milks",
     "title": "Carb Content",
     "content": "|   | carbs (g) | g /qt | diff (g) | . | oat | 14 | 56 | 0 | . | dairy | 12 | 48 | - | . | soy | 5 | 20 | 30 | . | almond | 1 | 4 | 45 | . todo experiment: use leftover pasta water as carb content to pre-make the milks . ",
     "url": "/blog/food/recipes/dairy-free-milk#carb-content",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#carb-content"
-  },"210": {
+  },"215": {
     "doc": "Dairy Free Milks",
     "title": "Yogurt Instructions",
     "content": ". | sterilize all equipment | add all ingredients | . ",
     "url": "/blog/food/recipes/dairy-free-milk#yogurt-instructions",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#yogurt-instructions"
-  },"211": {
+  },"216": {
     "doc": "Dairy Free Milks",
     "title": "Machine specifications",
     "content": " ",
     "url": "/blog/food/recipes/dairy-free-milk#machine-specifications",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#machine-specifications"
-  },"212": {
+  },"217": {
     "doc": "Dairy Free Milks",
     "title": "Pre-programmed functions",
     "content": "Default temperature settings are in bold and may or may not be selectable as shown: . |   | Time (hh:mm) | Temp (°C) 0F | 1F | 2F |   | . | Nuts | :15 | room temp | 45 | 60 | - | . | Juice | :05 | room temp | 45 | 60 | - | . | Beans | :35 | - | - | - | 100 | . | Grains | :10 | - | - | - | 100 | . | Yogurt | 8:00 | - | 45 | - | - | . | Self Clean | :10 | - | - | - | 100 | . ",
     "url": "/blog/food/recipes/dairy-free-milk#pre-programmed-functions",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#pre-programmed-functions"
-  },"213": {
+  },"218": {
     "doc": "Dairy Free Milks",
     "title": "Custom Usage",
     "content": " ",
     "url": "/blog/food/recipes/dairy-free-milk#custom-usage",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#custom-usage"
-  },"214": {
+  },"219": {
     "doc": "Dairy Free Milks",
     "title": "Nuts function at 0F",
     "content": ". | cuts down the blending time to :08 | I use this, and/or the Juice function to make fruit smoothies | I add in raw rolled oats ( 2 – 3 tbsp ) and/or cooked edamama ( 1/4 – 1/3 cup with its cooking water ) for extra fibre and protein | . ",
     "url": "/blog/food/recipes/dairy-free-milk#nuts-function-at-0f",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#nuts-function-at-0f"
-  },"215": {
+  },"220": {
     "doc": "Dairy Free Milks",
     "title": "Grains function",
     "content": "I use this to make hot chocolate. It results in very smooth, fluffy and airy hot cocoa. ",
     "url": "/blog/food/recipes/dairy-free-milk#grains-function",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#grains-function"
-  },"216": {
+  },"221": {
     "doc": "Dairy Free Milks",
     "title": "Hot Chocolate",
     "content": ". | 4 squares of dark chocolate | 3 – 4 tsp maple syrup and/or dark brown sugar | 2 tsp vanilla extract and/or 2 tbsp cacao powder | dash of salt | any of the above milks ( about 500 – 700 cc ) | optional, but recommended: 1 – 2 tbsp soy creamer | . ",
     "url": "/blog/food/recipes/dairy-free-milk#hot-chocolate",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#hot-chocolate"
-  },"217": {
+  },"222": {
     "doc": "Dairy Free Milks",
     "title": "Experiments",
     "content": ". | I threw in a piece of guava into a fruit smoothie, skin and seeds included and left the smoothie for some time and it ended up fizzy and boozy | I made a fruit smoothie that is exclusively frozen berries plus edamame and it slightly coagulated after left to sit | . ",
     "url": "/blog/food/recipes/dairy-free-milk#experiments",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#experiments"
-  },"218": {
+  },"223": {
     "doc": "Design",
     "title": "Design",
     "content": " ",
     "url": "/blog/design",
     
     "relUrl": "/blog/design"
-  },"219": {
+  },"224": {
     "doc": "Dungeons & Dragons",
     "title": "Dungeons &amp; Dragons",
     "content": "I’m currently playing Dungeons &amp; Dragons 5th edition with Tiger Kong. I am playing as a Harengon Bard, and this page simply keeps track of my stats, spells and cantrips. | Strength | -1 | . | Dexterity | 3 | . | Constitution | 1 | . | Intelligence | 0 | . | Wisdom | 1 | . | Charisma | 3 | . Actually, I decided to keep track on Obsidian instead. ",
     "url": "/blog/games/dnd#dungeons--dragons",
     
     "relUrl": "/blog/games/dnd#dungeons--dragons"
-  },"220": {
+  },"225": {
     "doc": "Dungeons & Dragons",
     "title": "Dungeons & Dragons",
     "content": " ",
     "url": "/blog/games/dnd",
     
     "relUrl": "/blog/games/dnd"
-  },"221": {
+  },"226": {
     "doc": "Food",
     "title": "Food",
     "content": "I am eating primarily whole food plant based. Generally, I also exclude coconut oil. I post my daily meals on Plantee ( invite only ). Recipes and ingredients in what I eat will eventually be found here: . ",
     "url": "/blog/food",
     
     "relUrl": "/blog/food"
-  },"222": {
+  },"227": {
     "doc": "Games",
     "title": "Games",
     "content": "I make games and play games. ",
     "url": "/blog/games",
     
     "relUrl": "/blog/games"
-  },"223": {
+  },"228": {
     "doc": "Games",
     "title": "Made",
     "content": " ",
     "url": "/blog/games#made",
     
     "relUrl": "/blog/games#made"
-  },"224": {
+  },"229": {
     "doc": "Games",
     "title": "A Doll Dress-Up Game",
     "content": "This is a dress up game. Click or tap on the clothes to put them on. Illustrations by the Italian illustrator Jessica Cioffi aka @Loputyn. ",
     "url": "/blog/games#a-doll-dress-up-game",
     
     "relUrl": "/blog/games#a-doll-dress-up-game"
-  },"225": {
+  },"230": {
     "doc": "Games",
     "title": "Boogle Board",
     "content": "Is it Boogle Board or Boggle Board? A classic word search game made with vanilla JavaScript. ",
     "url": "/blog/games#boogle-board",
     
     "relUrl": "/blog/games#boogle-board"
-  },"226": {
+  },"231": {
     "doc": "Games",
     "title": "React! The Organic Chemistry Game",
     "content": "The first, if not only, educational and chemically accurate organic synthesis board game. Made with sweat and tears. Layout and illustrations by me! . ",
     "url": "/blog/games#react-the-organic-chemistry-game",
     
     "relUrl": "/blog/games#react-the-organic-chemistry-game"
-  },"227": {
+  },"232": {
     "doc": "Games",
     "title": "Playing",
     "content": "I’m currently playing: . | Dungeons &amp; Dragons 5th edition with Tiger Kong. | Board games on intermittent Wednesday nights. | StarCraft: Brood War | Pokémon GO | . ",
     "url": "/blog/games#playing",
     
     "relUrl": "/blog/games#playing"
-  },"228": {
+  },"233": {
     "doc": "Gists",
     "title": "Gists",
     "content": "My code snippets are hosted on GitHub’s Gists. I plan to move them here eventually. ",
     "url": "/blog/gists",
     
     "relUrl": "/blog/gists"
-  },"229": {
+  },"234": {
     "doc": "Hot Sauce Sando",
     "title": "Hot Sauce Sando ( or Toast )",
     "content": " ",
     "url": "/blog/food/recipes/hot-sauce-sando#hot-sauce-sando-or-toast",
     
     "relUrl": "/blog/food/recipes/hot-sauce-sando#hot-sauce-sando-or-toast"
-  },"230": {
+  },"235": {
     "doc": "Hot Sauce Sando",
     "title": "Ingredients",
     "content": ". | Sriracha ( or your favorite hot sauce ) | peanut butter | sliced bread of choice | basil ( highly recomended but optional ) | tamari ( optional ) | baby spinach ( optional ) | . ",
     "url": "/blog/food/recipes/hot-sauce-sando#ingredients",
     
     "relUrl": "/blog/food/recipes/hot-sauce-sando#ingredients"
-  },"231": {
+  },"236": {
     "doc": "Hot Sauce Sando",
     "title": "Instructions",
     "content": ". | Toast slice(s) of bread ( optional but recommended ). | Make the spread: mix peanut butter and Sriracha together, adjust ratios to taste and tolerance. Optional: add tamari for saltiness or to thin out the spread. | Spread the mixture on the inside-facing sides of the bread slice(s). | Optional: top with 1 – 2 basil leaves and/or baby spinach. | . ",
     "url": "/blog/food/recipes/hot-sauce-sando#instructions",
     
     "relUrl": "/blog/food/recipes/hot-sauce-sando#instructions"
-  },"232": {
+  },"237": {
     "doc": "Hot Sauce Sando",
     "title": "Serving Options",
     "content": ". | Using a single slice of toasted bread would make this a Hot Sauce Toast. | You can turn this into a sandwich by clamping 2+ toasts together. | I also like spreading a bit garlic achaar or harissa sauce on top for extra flavor depth. | With the breads subbed for rice paper, veggies doubled and spread halved, the contents could be made into a Vietnamese spring roll. | . ",
     "url": "/blog/food/recipes/hot-sauce-sando#serving-options",
     
     "relUrl": "/blog/food/recipes/hot-sauce-sando#serving-options"
-  },"233": {
+  },"238": {
     "doc": "Hot Sauce Sando",
     "title": "Hot Sauce Sando",
     "content": " ",
     "url": "/blog/food/recipes/hot-sauce-sando",
     
     "relUrl": "/blog/food/recipes/hot-sauce-sando"
-  },"234": {
+  },"239": {
     "doc": "JavaScript",
     "title": "JavaScript",
     "content": "Most javascript I write are either in the form of bookmarklets or ran directly in the console. ",
     "url": "/blog/gists/javascript",
     
     "relUrl": "/blog/gists/javascript"
-  },"235": {
+  },"240": {
     "doc": "Map",
     "title": "Map Object",
     "content": "A JavaScript-specific data structure similar to an Object but remembers insertion order and is iterable. It also has far better performance when inserting and deleting keys-value pairs. More info: Map - JavaScript | MDN . ",
     "url": "/blog/gists/javascript/map#map-object",
     
     "relUrl": "/blog/gists/javascript/map#map-object"
-  },"236": {
+  },"241": {
     "doc": "Map",
     "title": "Increment &amp; Decrement",
     "content": "let mapObj = new Map(); const incrementMapVal = (map, key) =&gt; { const currentValue = map.has(key) ? map.get(key) : 0; map.set(key, currentValue + 1); } const decrementMapVal = (map, key) =&gt; { const currentValue = map.has(key) &amp;&amp; map.get(key); currentValue &gt; 1 ? map.set(key, currentValue - 1) : map.delete(key); } . ",
     "url": "/blog/gists/javascript/map#increment--decrement",
     
     "relUrl": "/blog/gists/javascript/map#increment--decrement"
-  },"237": {
+  },"242": {
     "doc": "Map",
     "title": "Map",
     "content": " ",
     "url": "/blog/gists/javascript/map",
     
     "relUrl": "/blog/gists/javascript/map"
-  },"238": {
+  },"243": {
     "doc": "Math & Number",
     "title": "Math &amp; Number Manipulations",
     "content": ". | Math &amp; Number Manipulations . | Arithmatic . | factorial | factorial big int | product | split num into arr of digits | sum | randomize | print natural countdown in the console | . | Time conversions . | convert HHMMSS to seconds | convert seconds To HHMMSS | quick convert milliseconds to hh:mm:ss | . | Phone Number format . | digits to phone number format and back | . | Science . | Temperature conversion | . | Currency conversions | Binary &amp; Ascii math . | ascii | integer to binary and back | xor encryption to hex and back | . | . | . ",
     "url": "/blog/gists/javascript/math#math--number-manipulations",
     
     "relUrl": "/blog/gists/javascript/math#math--number-manipulations"
-  },"239": {
+  },"244": {
     "doc": "Math & Number",
     "title": "Arithmatic",
     "content": "Math JS . ",
     "url": "/blog/gists/javascript/math#arithmatic",
     
     "relUrl": "/blog/gists/javascript/math#arithmatic"
-  },"240": {
+  },"245": {
     "doc": "Math & Number",
     "title": "factorial",
     "content": "const bang = n =&gt; { if ( n &lt; 2 ) return 1; let fact = 1, i = 2; while (i &lt;= n) {fact*=i; i++}; return fact; } . ",
     "url": "/blog/gists/javascript/math#factorial",
     
     "relUrl": "/blog/gists/javascript/math#factorial"
-  },"241": {
+  },"246": {
     "doc": "Math & Number",
     "title": "factorial big int",
     "content": "const bigBang = n =&gt; { if ( n &lt; 2n ) return 1n; let fact = 1n, i = 2n; while (i &lt;= n) {fact*=i; i++}; return fact; } . ",
     "url": "/blog/gists/javascript/math#factorial-big-int",
     
     "relUrl": "/blog/gists/javascript/math#factorial-big-int"
-  },"242": {
+  },"247": {
     "doc": "Math & Number",
     "title": "product",
     "content": "arr.reduce((a, b) =&gt; a * b, 1); . ",
     "url": "/blog/gists/javascript/math#product",
     
     "relUrl": "/blog/gists/javascript/math#product"
-  },"243": {
+  },"248": {
     "doc": "Math & Number",
     "title": "split num into arr of digits",
     "content": "const digitize = int =&gt; { let number = parseInt(int); let sum = 10; let arr = []; while (number &gt; 0) { val = number % 10; sum += val; arr.push(val); number = (number - val) / 10; } console.log(sum); return arr.reverse(); } . ",
     "url": "/blog/gists/javascript/math#split-num-into-arr-of-digits",
     
     "relUrl": "/blog/gists/javascript/math#split-num-into-arr-of-digits"
-  },"244": {
+  },"249": {
     "doc": "Math & Number",
     "title": "sum",
     "content": "arr.reduce((a, b) =&gt; a + b, 0); // slow, iterative sum of 1 + 2 + 3 ... + n of known n O(n) const sum = (n) =&gt; { let val = 0; while (n &gt; 0) { val += n; n--; } return val; } // faster calculation O(1) const sum2 = n =&gt; n * (n + 1)/2; . ",
     "url": "/blog/gists/javascript/math#sum",
     
     "relUrl": "/blog/gists/javascript/math#sum"
-  },"245": {
+  },"250": {
     "doc": "Math & Number",
     "title": "randomize",
     "content": "let randomize = list =&gt; console.log(list[Math.floor(list.length * Math.random())]); . ",
     "url": "/blog/gists/javascript/math#randomize",
     
     "relUrl": "/blog/gists/javascript/math#randomize"
-  },"246": {
+  },"251": {
     "doc": "Math & Number",
     "title": "print natural countdown in the console",
     "content": "(loop = (i) =&gt; { setTimeout(() =&gt; { console.log(i); if (i--) loop(i); }, 300 + Math.floor(Math.random()*200)) })(22); . ",
     "url": "/blog/gists/javascript/math#print-natural-countdown-in-the-console",
     
     "relUrl": "/blog/gists/javascript/math#print-natural-countdown-in-the-console"
-  },"247": {
+  },"252": {
     "doc": "Math & Number",
     "title": "Time conversions",
     "content": "Convert hh:mm:ss to seconds and back + number formats . ",
     "url": "/blog/gists/javascript/math#time-conversions",
     
     "relUrl": "/blog/gists/javascript/math#time-conversions"
-  },"248": {
+  },"253": {
     "doc": "Math & Number",
     "title": "convert HHMMSS to seconds",
     "content": "const toSec = str =&gt; str.split(':').reduce((a, time) =&gt; (60 * a) + +time); . ",
     "url": "/blog/gists/javascript/math#convert-hhmmss-to-seconds",
     
     "relUrl": "/blog/gists/javascript/math#convert-hhmmss-to-seconds"
-  },"249": {
+  },"254": {
     "doc": "Math & Number",
     "title": "convert seconds To HHMMSS",
     "content": "const toHMS = totalSec =&gt; { const hours = Math.floor((totalSec % (60 * 60 * 24)) / (60 * 60)); const minutes = Math.floor((totalSec % (60 * 60)) / (60)); const seconds = Math.floor((totalSec % (60)) ); // removes all leading zeros const hhmmss = `${ hours &gt; 0 ? hours + \":\" : \"\" }${ hours &gt; 0 &amp;&amp; minutes &lt; 10 ? '0' + minutes : minutes }:${ seconds &lt; 10 ? '0' + seconds : seconds }`; // keeps all leading zeros const _0_HMS = `${ hours &lt; 10 ? '0' + hours : hours }:${ minutes &lt; 10 ? '0' + minutes : minutes }:${ seconds &lt; 10 ? '0' + seconds : seconds }`; return _0_HMS; } . ",
     "url": "/blog/gists/javascript/math#convert-seconds-to-hhmmss",
     
     "relUrl": "/blog/gists/javascript/math#convert-seconds-to-hhmmss"
-  },"250": {
+  },"255": {
     "doc": "Math & Number",
     "title": "quick convert milliseconds to hh:mm:ss",
     "content": "only works if hh &lt; 24 or ms &lt; 86400000 milliseconds . new Date(ms).toISOString().slice(11, -5); . ",
     "url": "/blog/gists/javascript/math#quick-convert-milliseconds-to-hhmmss",
     
     "relUrl": "/blog/gists/javascript/math#quick-convert-milliseconds-to-hhmmss"
-  },"251": {
+  },"256": {
     "doc": "Math & Number",
     "title": "Phone Number format",
     "content": " ",
     "url": "/blog/gists/javascript/math#phone-number-format",
     
     "relUrl": "/blog/gists/javascript/math#phone-number-format"
-  },"252": {
+  },"257": {
     "doc": "Math & Number",
     "title": "digits to phone number format and back",
     "content": "const formatPhone = digts =&gt; `(${digts.slice(0,3)}) ${digts.slice(3,6)}-${digts.slice(-4)}`; const phoneToNumString = phone =&gt; phone.match(/\\d/g).join(\"\"); . ",
     "url": "/blog/gists/javascript/math#digits-to-phone-number-format-and-back",
     
     "relUrl": "/blog/gists/javascript/math#digits-to-phone-number-format-and-back"
-  },"253": {
+  },"258": {
     "doc": "Math & Number",
     "title": "Science",
     "content": " ",
     "url": "/blog/gists/javascript/math#science",
     
     "relUrl": "/blog/gists/javascript/math#science"
-  },"254": {
+  },"259": {
     "doc": "Math & Number",
     "title": "Temperature conversion",
     "content": "chemistry calculations . const c2f = c =&gt; ( c * 9/5 ) + 32; const f2c = f =&gt; ( f - 32 ) * 5/9; const c2k = c =&gt; c + 273.15; const k2c = k =&gt; k - 273.15; const f2k = f =&gt; f2c(f) + 273.15; const k2f = k =&gt; c2f(k - 273.15); . ",
     "url": "/blog/gists/javascript/math#temperature-conversion",
     
     "relUrl": "/blog/gists/javascript/math#temperature-conversion"
-  },"255": {
+  },"260": {
     "doc": "Math & Number",
     "title": "Currency conversions",
     "content": "This is based off of this freecodecamp guide: How to Format a Number as Currency in JavaScript . currency.js . // format number to US dollar let usd = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', }); let cad = new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', }); // format number to British pounds let pounds = Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP', }); // format number to Indian rupee let rupee = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', }); // format number to Euro let euro = Intl.NumberFormat('en-DE', { style: 'currency', currency: 'EUR', }); // format number to yuan let yuan = Intl.NumberFormat('cn-CN', { style: 'currency', currency: 'CNY', }); // format number to yen let yen = Intl.NumberFormat('jp-JA', { style: 'currency', currency: 'JPY', }); // format number to won let won = Intl.NumberFormat('kr-KR', { style: 'currency', currency: 'KRW', }); 'Dollars: ' + USDollar.format(price) // Dollars: $143,450.00 `Pounds: ${pounds.format(price)}`; // Pounds: £143,450.00 'Rupees: ' + rupee.format(price); // Rupees: ₹1,43,450.00 `Euro: ${euro.format(price)}`; // Euro: €143,450.00 . ",
     "url": "/blog/gists/javascript/math#currency-conversions",
     
     "relUrl": "/blog/gists/javascript/math#currency-conversions"
-  },"256": {
+  },"261": {
     "doc": "Math & Number",
     "title": "Binary &amp; Ascii math",
     "content": "binary and ascii math . ",
     "url": "/blog/gists/javascript/math#binary--ascii-math",
     
     "relUrl": "/blog/gists/javascript/math#binary--ascii-math"
-  },"257": {
+  },"262": {
     "doc": "Math & Number",
     "title": "ascii",
     "content": "a.charCodeAt(0); // get char code int from str char String.fromCharCode(...nums); // convert list of nums to string // convert string to arr of char code nums const charCodes = (string) =&gt; { let nums = []; for (i in string) nums.push(string.charCodeAt(i)); return nums; } // convert hex to string const hex2str = (hex) =&gt; { let outputNums = []; for (let i = 0; i &lt; hex.length; i+=2) { const int = parseInt(hex[i+0] + hex[i+1], 16); outputNums.push(int); } return String.fromCharCode(...outputNums); } // convert string to hex const str2hex = (string) =&gt; { hex = \"\"; for (i in string) hex += string.charCodeAt(i).toString(\"16\").padStart(2, '0'); return hex; } . ",
     "url": "/blog/gists/javascript/math#ascii",
     
     "relUrl": "/blog/gists/javascript/math#ascii"
-  },"258": {
+  },"263": {
     "doc": "Math & Number",
     "title": "integer to binary and back",
     "content": "const intBin = int =&gt; int.toString(2); // must be called as a function to work otherwise it will error const binInt = bin =&gt; parseInt(bin, 2); const intHex = int =&gt; int.toString(16); // must be called as a function to work otherwise it will error const hexInt = hex =&gt; parseInt(hex, 16); . ",
     "url": "/blog/gists/javascript/math#integer-to-binary-and-back",
     
     "relUrl": "/blog/gists/javascript/math#integer-to-binary-and-back"
-  },"259": {
+  },"264": {
     "doc": "Math & Number",
     "title": "xor encryption to hex and back",
     "content": "const xor2hex = (input, key) =&gt; { let output = \"\"; const len = key.length; const toXorHex = (a, b) =&gt; (a ^ b).toString(\"16\").padStart(2, '0'); for (i in input) { output += toXorHex(input.charCodeAt(i), key.charCodeAt(i % len)); }; return output; } const hex2xor = (input, key) =&gt; { let outputNums = []; const len = key.length; for (let i = 0; i &lt; input.length; i+=2) { const int = parseInt(input[i+0] + input[i+1], 16); outputNums.push(int ^ key.charCodeAt(i/2 % len)); } return String.fromCharCode(...outputNums); } . ",
     "url": "/blog/gists/javascript/math#xor-encryption-to-hex-and-back",
     
     "relUrl": "/blog/gists/javascript/math#xor-encryption-to-hex-and-back"
-  },"260": {
+  },"265": {
     "doc": "Math & Number",
     "title": "Math & Number",
     "content": " ",
     "url": "/blog/gists/javascript/math",
     
     "relUrl": "/blog/gists/javascript/math"
-  },"261": {
+  },"266": {
     "doc": "Mushroom Marinara Dal",
     "title": "\n  \n  Mushroom [ Ghost Pepper ] Marinara Dal\n",
     "content": ". I usually meal prep this in a mason jar or two and eat it over the course of 1‍ ‍–‍ ‍3 weeks. Preparation time7 minsPT7MCooking time20 minsPT20MYield4 – 5 servings 4 – 5 ",
     "url": "/blog/food/recipes/mushroom-marinara-dal#mushroom-marinara-dal",
     
     "relUrl": "/blog/food/recipes/mushroom-marinara-dal#mushroom-marinara-dal"
-  },"262": {
+  },"267": {
     "doc": "Mushroom Marinara Dal",
     "title": " Ingredients",
     "content": "Everything after water is optional and added to taste. | 1 cup red lentils | 1 jar of marinara sauce | 2 – 3 cups of kombu dashi or water | 1 cup sliced mushrooms | tomato paste | ghost pepper hot sauce | vegan ponzu | tamari | pepper powder | . ",
     "url": "/blog/food/recipes/mushroom-marinara-dal#ingredients",
     
     "relUrl": "/blog/food/recipes/mushroom-marinara-dal#ingredients"
-  },"263": {
+  },"268": {
     "doc": "Mushroom Marinara Dal",
     "title": " Instructions",
     "content": ". | Optional&#58; start pre-boiling the cooking water or kombu. | Rinse and strain the lentils until the water runs clear. It usually takes me 4 – 7 rinses. | Boil the lentils in 3 cups of water ( 2 if adding mushrooms ) for 10 – 20 minutes depending on desired tenderness. | Stir in the marinara sauce and adjust to taste with the rest of the ingredients. | Optional&#58; re-boil the dal mixture for the flavors to meld together even more. | . I would use the original marinara sauce jar as well as the mason jar used to rinse and cook the lentils to store leftovers in the fridge for up to 3 weeks. ",
     "url": "/blog/food/recipes/mushroom-marinara-dal#instructions",
     
     "relUrl": "/blog/food/recipes/mushroom-marinara-dal#instructions"
-  },"264": {
+  },"269": {
     "doc": "Mushroom Marinara Dal",
     "title": " Nutrition Facts",
     "content": "in grams per serving . Calories340Fat14Carbohydrates40Protein16 Mandy Chenhttps://picaq.github.io cuisineAmerican, fusiondietvegancategorysoup, mainkeywordslentil, soup, spicy, mushroom, protein ",
     "url": "/blog/food/recipes/mushroom-marinara-dal#nutrition-facts",
     
     "relUrl": "/blog/food/recipes/mushroom-marinara-dal#nutrition-facts"
-  },"265": {
+  },"270": {
     "doc": "Mushroom Marinara Dal",
     "title": "Serving Options",
     "content": "I usually eat this with: . | a slice or two of steamed sourdough bread ( because I don’t know how to make idli and this is close enough for me lol ) | steamed organic green peas | pita chips | naan | . ",
     "url": "/blog/food/recipes/mushroom-marinara-dal#serving-options",
     
     "relUrl": "/blog/food/recipes/mushroom-marinara-dal#serving-options"
-  },"266": {
+  },"271": {
     "doc": "Mushroom Marinara Dal",
     "title": "Mushroom Marinara Dal",
     "content": " ",
     "url": "/blog/food/recipes/mushroom-marinara-dal",
     
     "relUrl": "/blog/food/recipes/mushroom-marinara-dal"
-  },"267": {
+  },"272": {
     "doc": "Music",
     "title": "Music",
     "content": "I make music and play music. ",
     "url": "/blog/music",
     
     "relUrl": "/blog/music"
-  },"268": {
+  },"273": {
     "doc": "Music",
     "title": "Made",
     "content": "Ok I mostly transcribe music into formats for specific instruments. Here’s an app, Notation Map, that I’m making to help me pick up new instruments. It is unfinished. ",
     "url": "/blog/music#made",
     
     "relUrl": "/blog/music#made"
-  },"269": {
+  },"274": {
     "doc": "Music",
     "title": "Playing",
     "content": "I’m currently playing: . ",
     "url": "/blog/music#playing",
     
     "relUrl": "/blog/music#playing"
-  },"270": {
+  },"275": {
     "doc": "Music",
     "title": "Balinese Gamelan",
     "content": " ",
     "url": "/blog/music#balinese-gamelan",
     
     "relUrl": "/blog/music#balinese-gamelan"
-  },"271": {
+  },"276": {
     "doc": "Music",
     "title": "Gangsa",
     "content": " ",
     "url": "/blog/music#gangsa",
     
     "relUrl": "/blog/music#gangsa"
-  },"272": {
+  },"277": {
     "doc": "Music",
     "title": "Gong",
     "content": " ",
     "url": "/blog/music#gong",
     
     "relUrl": "/blog/music#gong"
-  },"273": {
+  },"278": {
     "doc": "Music",
     "title": "Kalimba",
     "content": " ",
     "url": "/blog/music#kalimba",
     
     "relUrl": "/blog/music#kalimba"
-  },"274": {
+  },"279": {
     "doc": "Music",
     "title": "Diatonic",
     "content": "17-key diatonic C4 to E6 . ",
     "url": "/blog/music#diatonic",
     
     "relUrl": "/blog/music#diatonic"
-  },"275": {
+  },"280": {
     "doc": "Music",
     "title": "Chromatic Alto",
     "content": "42-key chromatic E3 to E6♭ . ",
     "url": "/blog/music#chromatic-alto",
     
     "relUrl": "/blog/music#chromatic-alto"
-  },"276": {
+  },"281": {
     "doc": "Music",
     "title": "Played",
     "content": ". | Alto Melodica . | 37 keys from F to F | . | Reyong | Carillion | Cello | Viola | Violin | Recorder | Piano | Voice ( Alto ) | . ",
     "url": "/blog/music#played",
     
     "relUrl": "/blog/music#played"
-  },"277": {
+  },"282": {
     "doc": "Natto Nacho Cheese",
     "title": "\n  \n  Natto Nacho Cheese\n",
     "content": ". Creamy and slightly sticky just like real nacho cheese! . Preparation time2 minsPT2MCooking time7 minsPT7MYield1 serving 1 ",
     "url": "/blog/food/recipes/natto-nacho-cheese#natto-nacho-cheese",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese#natto-nacho-cheese"
-  },"278": {
+  },"283": {
     "doc": "Natto Nacho Cheese",
     "title": " Ingredients",
     "content": ". | 50 – 60 g natto | 1 – 2 tbsp nooch | 1 –1.5 tbsp cashew butter | rice vinegar | tamari | ponzu | yellow mustard | kala namak ( and/or salt ) | 0.5 – 2 tsp garlic powder | white pepper powder | cashew milk ( variable ) | 1 – 2 tsp miso paste ( optional ) for more umami | sweetener ( optional ) ( date syrup and/or stevia ) | . ",
     "url": "/blog/food/recipes/natto-nacho-cheese#ingredients",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese#ingredients"
-  },"279": {
+  },"284": {
     "doc": "Natto Nacho Cheese",
     "title": " Instructions",
     "content": ". | If the natto is frozen, defrost overnight in the refrigerator. | Stir/whisk natto in a bowl with chopsticks until it becomes stringy and creamy. Using a fork is not reccommended. | Add all liquid ingredients (except for the cashew milk) and salts to taste and whisk til dissolved. | Stir in the rest of the solid ingredients. | Adjust consistency to desired viscosity by adding cashew milk while stirring. | . The resulting texture and color should resemble nacho cheese. ",
     "url": "/blog/food/recipes/natto-nacho-cheese#instructions",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese#instructions"
-  },"280": {
+  },"285": {
     "doc": "Natto Nacho Cheese",
     "title": " Nutrition Facts",
     "content": "in grams per serving . Calories340Fat22Carbohydrates23Protein26 Mandy Chenhttps://picaq.github.io cuisineAmericandietvegan, keto, diabeticcategorysnackkeywordsnatto, cashew, cheese, nachos ",
     "url": "/blog/food/recipes/natto-nacho-cheese#nutrition-facts",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese#nutrition-facts"
-  },"281": {
+  },"286": {
     "doc": "Natto Nacho Cheese",
     "title": "How does it compare to regular nacho cheese?",
     "content": ". | creamy and slightly sticky just like real nacho cheese | you can customize the level of umami | doesn’t dry out quickly like nacho cheese, where the cheese requires heating to stay melted and the roux dries out and hardens as water evaporates | high protein, low-carb and somewhat low fat | far less oily: the primary source of oil is from the cashew butter | less filler ( flour/roux/starch, sodium citrate ) means more flavor | can be eaten at room temperature, warmed or chilled | . ",
     "url": "/blog/food/recipes/natto-nacho-cheese#how-does-it-compare-to-regular-nacho-cheese",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese#how-does-it-compare-to-regular-nacho-cheese"
-  },"282": {
+  },"287": {
     "doc": "Natto Nacho Cheese",
     "title": "More Cheese!",
     "content": "This recipe can easily be adapted to make cheesy peas instead. ",
     "url": "/blog/food/recipes/natto-nacho-cheese#more-cheese",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese#more-cheese"
-  },"283": {
+  },"288": {
     "doc": "Natto Nacho Cheese",
     "title": "Natto Nacho Cheese",
     "content": ". ",
     "url": "/blog/food/recipes/natto-nacho-cheese",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese"
-  },"284": {
+  },"289": {
     "doc": "Object",
     "title": "Object",
     "content": "A JavaScript Object that stores key-value pairs. For frequent insertion/deletion and updating, a Map object is preferred. ",
     "url": "/blog/gists/javascript/object",
     
     "relUrl": "/blog/gists/javascript/object"
-  },"285": {
+  },"290": {
     "doc": "Object",
     "title": "Merge Key &amp; Value Arrays",
     "content": "merge arrays of keys and values with matching indexes into an object . Object.fromEntries(arrKeys.map((item,i) =&gt; [item,arrVals[i]])); . ",
     "url": "/blog/gists/javascript/object#merge-key--value-arrays",
     
     "relUrl": "/blog/gists/javascript/object#merge-key--value-arrays"
-  },"286": {
+  },"291": {
     "doc": "Promise",
     "title": "Promise",
     "content": " ",
     "url": "/blog/gists/javascript/promise",
     
     "relUrl": "/blog/gists/javascript/promise"
-  },"287": {
+  },"292": {
     "doc": "Promise",
     "title": "Try Catch &amp; Error",
     "content": "Try catch and await async in a network API request . const getCityValues = async () =&gt; { try { const response = await fetch( `https://data.epa.gov/efservice/getEnvirofactsUVHourly/CITY/Seattle/STATE/WA/JSON` ); const jsonData = await response.json(); console.log(jsonData); } catch (error) { console.error(error.message); console.error(userCity, 'is not found!'); } } . ",
     "url": "/blog/gists/javascript/promise#try-catch--error",
     
     "relUrl": "/blog/gists/javascript/promise#try-catch--error"
-  },"288": {
+  },"293": {
     "doc": "Promise",
     "title": "Wait Before Execution",
     "content": "const wait = ms =&gt; new Promise(response =&gt; setTimeout(response, ms)); // usage: only works on async or top level functions await wait(5000); console.log('waited 5 seconds'); // one-liner with less memory and time await new Promise(res =&gt; setTimeout(res, ms)); // not need async setTimeout(() =&gt; { console.log('waited 3 seconds'); }, 3000); . ",
     "url": "/blog/gists/javascript/promise#wait-before-execution",
     
     "relUrl": "/blog/gists/javascript/promise#wait-before-execution"
-  },"289": {
+  },"294": {
     "doc": "Recipes",
     "title": "Recipes",
     "content": "Below is a list of my published recipes. For most recipes, a stove is not required. If you would like to submit a recipe review ( with review text and a star rating out of 5 ) or a suggestion, feel free to contact me, create an issue or a pull request to do so. Edit this page on GitHub on the bottom of any page brings you to the source code. ",
     "url": "/blog/food/recipes",
     
     "relUrl": "/blog/food/recipes"
-  },"290": {
+  },"295": {
     "doc": "Ruby",
     "title": "Ruby",
     "content": "Ruby is great, though the only chance I get to use it as of late is writing plugins for this blog. The ruby-practice repository contains my most-visted ruby notes. ruby-koans is my progress learning ruby by testing edge cases. ",
     "url": "/blog/gists/ruby",
     
     "relUrl": "/blog/gists/ruby"
-  },"291": {
+  },"296": {
     "doc": "Sauces",
     "title": "Sauces &amp; Flavorings",
     "content": "A collection of my personal favorite sauces &amp; flavorings. I will include a link to my preferred brands but not directly to the products ( there are multiple sizes ). Generics, where any brand works, are in lowercase. ",
     "url": "/blog/food/sauces#sauces--flavorings",
     
     "relUrl": "/blog/food/sauces#sauces--flavorings"
-  },"292": {
+  },"297": {
     "doc": "Sauces",
     "title": "Condiments",
     "content": " ",
     "url": "/blog/food/sauces#condiments",
     
     "relUrl": "/blog/food/sauces#condiments"
-  },"293": {
+  },"298": {
     "doc": "Sauces",
     "title": "Salty",
     "content": ". | Roland Vegan Ponzu Sauce | tamari | shoyu | kala namak aka black salt | . ",
     "url": "/blog/food/sauces#salty",
     
     "relUrl": "/blog/food/sauces#salty"
-  },"294": {
+  },"299": {
     "doc": "Sauces",
     "title": "Umami",
     "content": ". | nutritional yeast aka “nooch” | miso | kombu dashi | nori | roasted sesame oil | dried shiitake | garlic powder | black garlic | Artisana Organics Raw Organic Cashew Butter | Erewhon Organic Roasted Peanut Butter | Brooklyn Delhi Roasted Garlic Achaar | TRUFF Spicy Marinara Sauce | . ",
     "url": "/blog/food/sauces#umami",
     
     "relUrl": "/blog/food/sauces#umami"
-  },"295": {
+  },"300": {
     "doc": "Sauces",
     "title": "Spicy",
     "content": "I have an infinite spice tolerance. Be warned. | Melinda’s Ghost Pepper Hot Sauce | TRUFF White Hotter Hot Sauce | Su Chili Crisp Mala「甦」麻辣辣油 | harissa sauce | white pepper powder | Huy Fong Sriracha | gochujang | . ",
     "url": "/blog/food/sauces#spicy",
     
     "relUrl": "/blog/food/sauces#spicy"
-  },"296": {
+  },"301": {
     "doc": "Sauces",
     "title": "Acid",
     "content": "This is good for blending with bitter foods such as bitter melon and natto . | rice vinegar | yellow mustard | Napa Kimchi . | Choi’s Spicy Napa Kimchi | Im Soon Ja Vegan Kimchi 비건김치 (林) | . | . ",
     "url": "/blog/food/sauces#acid",
     
     "relUrl": "/blog/food/sauces#acid"
-  },"297": {
+  },"302": {
     "doc": "Sauces",
     "title": "Sweet",
     "content": ". | blended deglet dates | date syrup | dark brown sugar | molasses | stevia | allulose | monk fruit | Trader Joe’s Marshmallows | . ",
     "url": "/blog/food/sauces#sweet",
     
     "relUrl": "/blog/food/sauces#sweet"
-  },"298": {
+  },"303": {
     "doc": "Sauces",
     "title": "Sauces",
     "content": " ",
     "url": "/blog/food/sauces",
     
     "relUrl": "/blog/food/sauces"
-  },"299": {
+  },"304": {
     "doc": "Sheet Music",
     "title": "Sheet Music",
     "content": "I make music and play music. ",
     "url": "/blog/music/sheet-music",
     
     "relUrl": "/blog/music/sheet-music"
-  },"300": {
+  },"305": {
     "doc": "Sheet Music",
     "title": "Made",
     "content": "Ok I mostly transcribe music into formats for specific instruments. Here’s an app, Notation Map, that I’m making to help me pick up new instruments. It is unfinished. ",
     "url": "/blog/music/sheet-music#made",
     
     "relUrl": "/blog/music/sheet-music#made"
-  },"301": {
+  },"306": {
     "doc": "Sheet Music",
     "title": "Violin",
     "content": "The very first piece I transcribed in 2008 or 2009 while I was still in high school, and the first Orisinal entry on ichigos.com, Winter Bells. Youtube cover re-arranged by Sherry Kim for Viola. ",
     "url": "/blog/music/sheet-music#violin",
     
     "relUrl": "/blog/music/sheet-music#violin"
-  },"302": {
+  },"307": {
     "doc": "Sheet Music",
     "title": "Kalimba tabs?",
     "content": "I get asked this sometimes but I prefer transcribing music into staff notation due to being instrument-agnostic and its ease to adapt to other instruments. In the near future I will sort sheet music by chromatic range rather than by instrument. ",
     "url": "/blog/music/sheet-music#kalimba-tabs",
     
     "relUrl": "/blog/music/sheet-music#kalimba-tabs"
-  },"303": {
+  },"308": {
     "doc": "Sheet Music",
     "title": "List of Instruments",
     "content": ". | Kalimba ( Mbira ) . | 17 key diatonic | 42 chromatic alto | . | Alto Melodica . | 37 keys from F to F | . | Reyong | Carillion | Cello | Viola | Violin | Recorder | Piano | Voice ( Alto ) | . ",
     "url": "/blog/music/sheet-music#list-of-instruments",
     
     "relUrl": "/blog/music/sheet-music#list-of-instruments"
-  },"304": {
+  },"309": {
     "doc": "Spells",
     "title": "Spells",
     "content": "I’m currently playing Dungeons &amp; Dragons 5th edition with Tiger Kong. I am playing as a Harengon Bard, and this page simply keeps track of my stats, spells and cantrips. | Strength | -1 | . | Dexterity | 3 | . | Constitution | 1 | . | Intelligence | 0 | . | Wisdom | 1 | . | Charisma | 3 | . | Bard | Charisma | 13 | 15 | . | spellcasting class | spellcasting ability | spell saveDC | spell attackbonus | . Note: All content on this page is owned by Wizards of the Coast. Search engine indexing is blocked for this page. | Spells . | 0 Cantrips . | Vicious Mockery . | At Higher Levels | . | Mending | *Ray of Frost 1d8 . | At Higher Levels | . | . | 1 3 . | Faerie Fire | Healing Word 1d4 . | At Higher Levels | . | Speak with Animals | Comprehend Languages | Color Spray . | At Higher Levels | . | . | 3 | 4 . | *Dancing Light | *Polymorph | . | 5 | 6 | 7 | 8 | 9 | Source Info | . | . ",
     "url": "/blog/games/dnd/spells",
     
     "relUrl": "/blog/games/dnd/spells"
-  },"305": {
+  },"310": {
     "doc": "Spells",
     "title": "0 Cantrips",
     "content": " ",
     "url": "/blog/games/dnd/spells#0cantrips",
     
     "relUrl": "/blog/games/dnd/spells#0cantrips"
-  },"306": {
+  },"311": {
     "doc": "Spells",
     "title": "Vicious Mockery",
     "content": "| School | Enchantment | . | Classes | Bard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V | . | Cast Time | 1 Action | . | Range | 60 feet | . You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (thought it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn. ",
     "url": "/blog/games/dnd/spells#vicious-mockery",
     
     "relUrl": "/blog/games/dnd/spells#vicious-mockery"
-  },"307": {
+  },"312": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4). ",
     "url": "/blog/games/dnd/spells#at-higher-levels",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels"
-  },"308": {
+  },"313": {
     "doc": "Spells",
     "title": "Mending",
     "content": "| School | Transmutation | . | Classes | Artificer, Bard, Cleric, Druid, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V, S, M (two lodestones) | . | Cast Time | 1 Minute | . | Range | Touch | . This spell repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn cloack, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. This spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object. ",
     "url": "/blog/games/dnd/spells#mending",
     
     "relUrl": "/blog/games/dnd/spells#mending"
-  },"309": {
+  },"314": {
     "doc": "Spells",
     "title": "*Ray of Frost 1d8",
     "content": "| School | Evocation | . | Classes | Artificer, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V, S | . | Cast Time | 1 Action | . | Range | 60 feet | . A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn. ",
     "url": "/blog/games/dnd/spells#ray-of-frost-1d8",
     
     "relUrl": "/blog/games/dnd/spells#ray-of-frost-1d8"
-  },"310": {
+  },"315": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8). ",
     "url": "/blog/games/dnd/spells#at-higher-levels-1",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-1"
-  },"311": {
+  },"316": {
     "doc": "Spells",
     "title": "1 3",
     "content": " ",
     "url": "/blog/games/dnd/spells#13",
     
     "relUrl": "/blog/games/dnd/spells#13"
-  },"312": {
+  },"317": {
     "doc": "Spells",
     "title": "Faerie Fire",
     "content": "| School | Evocation | . | Classes | Artificer, Bard, Druid | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V | . | Cast Time | 1 Action | . | Range | 60 feet | . Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible. ",
     "url": "/blog/games/dnd/spells#faerie-fire",
     
     "relUrl": "/blog/games/dnd/spells#faerie-fire"
-  },"313": {
+  },"318": {
     "doc": "Spells",
     "title": "Healing Word 1d4",
     "content": "| School | Evocation | . | Classes | Bard, Cleric, Druid | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V | . | Cast Time | 1 Bonus Action | . | Range | 60 feet | . A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs. ",
     "url": "/blog/games/dnd/spells#healing-word-1d4",
     
     "relUrl": "/blog/games/dnd/spells#healing-word-1d4"
-  },"314": {
+  },"319": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st. ",
     "url": "/blog/games/dnd/spells#at-higher-levels-2",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-2"
-  },"315": {
+  },"320": {
     "doc": "Spells",
     "title": "Speak with Animals",
     "content": "| School | Divination | . | Classes | Bard, Druid, Ranger | . | Ritual? | Yes | . | Duration | 10 minutes | . | Components | V, S | . | Cast Time | 1 Action | . | Range | Self | . You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM’s discretion. ",
     "url": "/blog/games/dnd/spells#speak-with-animals",
     
     "relUrl": "/blog/games/dnd/spells#speak-with-animals"
-  },"316": {
+  },"321": {
     "doc": "Spells",
     "title": "Comprehend Languages",
     "content": "| School | Divination | . | Classes | Bard, Sorcerer, Warlock, Wizard | . | Ritual? | Yes | . | Duration | 1 hour | . | Components | V, S, M (a pinch of soot and salt) | . | Cast Time | 1 Action | . | Range | Self | . For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface of which the words are written. It takes about 1 minute to read one page of text. This spell doesn’t decode secret messages in a text or glyph, such as an arcane sigil, that isn’t part of a written language. ",
     "url": "/blog/games/dnd/spells#comprehend-languages",
     
     "relUrl": "/blog/games/dnd/spells#comprehend-languages"
-  },"317": {
+  },"322": {
     "doc": "Spells",
     "title": "Color Spray",
     "content": "| School | Illusion | . | Classes | Bard, Sorcerer, Wizard | . | Ritual? | No | . | Duration | 1 round | . | Components | V, S, M | . | Cast Time | 1 Action | . | Range | Self (15-foot cone) | . A dazzling array of flashing, colored light springs from your hand. Roll 6d10, the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can’t see). Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the spell ends. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for the creature to be affected. ",
     "url": "/blog/games/dnd/spells#color-spray",
     
     "relUrl": "/blog/games/dnd/spells#color-spray"
-  },"318": {
+  },"323": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st. ",
     "url": "/blog/games/dnd/spells#at-higher-levels-3",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-3"
-  },"319": {
+  },"324": {
     "doc": "Spells",
     "title": "3",
     "content": " ",
     "url": "/blog/games/dnd/spells#3",
     
     "relUrl": "/blog/games/dnd/spells#3"
-  },"320": {
+  },"325": {
     "doc": "Spells",
     "title": "4",
     "content": " ",
     "url": "/blog/games/dnd/spells#4",
     
     "relUrl": "/blog/games/dnd/spells#4"
-  },"321": {
+  },"326": {
     "doc": "Spells",
     "title": "*Dancing Light",
     "content": "| School | Evocation | . | Classes | Artificer, Bard, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S, M (a bit of phosphorus or wychwood, or a glowworm) | . | Cast Time | 1 Action | . | Range | 120 feet | . You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius. As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell’s range. ",
     "url": "/blog/games/dnd/spells#dancing-light",
     
     "relUrl": "/blog/games/dnd/spells#dancing-light"
-  },"322": {
+  },"327": {
     "doc": "Spells",
     "title": "*Polymorph",
     "content": "| School | Transmutation | . | Classes | Bard, Druid, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 hour | . | Components | V, S, M (a caterpillar cocoon) | . | Cast Time | 1 Action | . | Range | 60 feet | . 5e Beast List - Dungeons and Dragons Wiki . This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. A shapechanger automatically succeeds on this saving throw. The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target’s (or the target’s level, if it doesn’t have a challenge rating). The target’s game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality. The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn’t reduce the creature’s normal form to 0 hit points, it isn’t knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can’t speak, cast spells, or take any other action that requires hands or speech. The target’s gear melds into the new form. The creature can’t activate, use, wield, or otherwise benefit from any of its equipment. This spell can’t affect a target that has 0 hit points. ",
     "url": "/blog/games/dnd/spells#polymorph",
     
     "relUrl": "/blog/games/dnd/spells#polymorph"
-  },"323": {
+  },"328": {
     "doc": "Spells",
     "title": "5",
     "content": " ",
     "url": "/blog/games/dnd/spells#5",
     
     "relUrl": "/blog/games/dnd/spells#5"
-  },"324": {
+  },"329": {
     "doc": "Spells",
     "title": "6",
     "content": " ",
     "url": "/blog/games/dnd/spells#6",
     
     "relUrl": "/blog/games/dnd/spells#6"
-  },"325": {
+  },"330": {
     "doc": "Spells",
     "title": "7",
     "content": " ",
     "url": "/blog/games/dnd/spells#7",
     
     "relUrl": "/blog/games/dnd/spells#7"
-  },"326": {
+  },"331": {
     "doc": "Spells",
     "title": "8",
     "content": " ",
     "url": "/blog/games/dnd/spells#8",
     
     "relUrl": "/blog/games/dnd/spells#8"
-  },"327": {
+  },"332": {
     "doc": "Spells",
     "title": "9",
     "content": " ",
     "url": "/blog/games/dnd/spells#9",
     
     "relUrl": "/blog/games/dnd/spells#9"
-  },"328": {
+  },"333": {
     "doc": "Spells",
     "title": "Source Info",
     "content": ". | All Spells | Bard Spells | . ",
     "url": "/blog/games/dnd/spells#source-info",
     
     "relUrl": "/blog/games/dnd/spells#source-info"
-  },"329": {
+  },"334": {
     "doc": "Spicy Cold Tofu",
     "title": "\n  \n  Spicy Cold Tofu\n",
     "content": ". Quick, fresh, spicy, filling. Preparation time4 minsPT4MCooking time0 minsPT0MYield1 serving 1 ",
     "url": "/blog/food/recipes/spicy-cold-tofu#spicy-cold-tofu",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#spicy-cold-tofu"
-  },"330": {
+  },"335": {
     "doc": "Spicy Cold Tofu",
     "title": " Ingredients",
     "content": ". | 1 block of firm tofu, about 11~16 oz | ponzu | mala chili oil | toasted sesame oil | maple syrup | optional&#58; micro greens or crushed nori | . ",
     "url": "/blog/food/recipes/spicy-cold-tofu#ingredients",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#ingredients"
-  },"331": {
+  },"336": {
     "doc": "Spicy Cold Tofu",
     "title": " Instructions",
     "content": ". | Drain the water from a package of tofu. Organic Tofu tastes best. | Lightly press the remaining water out of the tofu. | Pour all of the liquid ingredients to taste on top of the tofu, about 1/2 tsp~1 tbsp each. | While preforating the tofu by stabbing it with a fork, spoon any sauce that pools on the bottom on top of the tofu. | Optionally, garnish with greens or nori. | . Thats it, it’s already done! . ",
     "url": "/blog/food/recipes/spicy-cold-tofu#instructions",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#instructions"
-  },"332": {
+  },"337": {
     "doc": "Spicy Cold Tofu",
     "title": " Nutrition Facts",
     "content": "in grams per serving . Calories330Fat20Carbohydrates11Protein32 Mandy Chenhttps://picaq.github.io cuisineChinesedietvegan, keto, diabeticcategoryentreekeywordssoy, protein, spicy, chili oil ",
     "url": "/blog/food/recipes/spicy-cold-tofu#nutrition-facts",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#nutrition-facts"
-  },"333": {
+  },"338": {
     "doc": "Spicy Cold Tofu",
     "title": "More Spice!",
     "content": ". ",
     "url": "/blog/food/recipes/spicy-cold-tofu#more-spice",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#more-spice"
-  },"334": {
+  },"339": {
     "doc": "Spicy Cold Tofu",
     "title": "Spicy Cold Tofu",
     "content": " ",
     "url": "/blog/food/recipes/spicy-cold-tofu",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu"
-  },"335": {
+  },"340": {
     "doc": "String",
     "title": "String",
     "content": " ",
     "url": "/blog/gists/javascript/string",
     
     "relUrl": "/blog/gists/javascript/string"
-  },"336": {
+  },"341": {
     "doc": "String",
     "title": "Count Occurrences of Chars or Substring Occurances in a String",
     "content": "String manipulation, counting and accounting . const count = (str, subst) =&gt; str.match( new RegExp(subst, \"g\") )?.length || 0; . ",
     "url": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string",
     
     "relUrl": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string"
-  },"337": {
+  },"342": {
     "doc": "Typography",
     "title": "Typography",
     "content": " ",
     "url": "/blog/design/type",
     
     "relUrl": "/blog/design/type"
-  },"338": {
+  },"343": {
     "doc": "User Styles",
     "title": "User Styles",
     "content": "Custom user-defined style sheets to better browse the web. ",
     "url": "/blog/gists/css/styles",
     
     "relUrl": "/blog/gists/css/styles"
-  },"339": {
+  },"344": {
     "doc": "User Styles",
     "title": "Light Themes &amp; Printing",
     "content": " ",
     "url": "/blog/gists/css/styles#light-themes--printing",
     
     "relUrl": "/blog/gists/css/styles#light-themes--printing"
-  },"340": {
+  },"345": {
     "doc": "User Styles",
     "title": "Notion.site",
     "content": "ctrl/cmd + shift + L swaps between light and dark themes for your own notion notes but not public ones. Here is a workaround: . [style*=\"color: rgba(255, 255, 255, 0.81)\"] { color: rgba(0, 0, 0, 0.81) !important } [style*=\"background: rgba(255, 255, 255, 0.13)\"] { background: rgba(0, 0, 0, 0.03) !important } #main [style*=\"fill: rgba(255, 255, 255, 0.46)\"], [style*=\"color: rgba(255, 255, 255, 0.46)\"], #main [style*=\"fill: rgba(255, 255, 255\"] { fill: rgba(0, 0, 0, 0.46) !important; color: rgba(0, 0, 0, 0.46) !important; outline: rgba(0, 0, 0, 0.46) !important; } [style*=\"color: rgb(155, 155, 155); fill: rgb(155, 155, 155);\"] { color: rgb(95, 95, 95) !important; fill: rgb(95, 95, 95) !important; } [style=\"display: flex; flex-direction: row;\"] { filter: brightness(.3) } @media screen { [style*=\"background: rgb(25, 25, 25)\"] { background: rgb(225, 225, 225) !important } } @media print { html &gt; body [style*=\"background: rgb(25, 25, 25)\"] { background: white !important } } . ",
     "url": "/blog/gists/css/styles#notionsite",
     
     "relUrl": "/blog/gists/css/styles#notionsite"
-  },"341": {
+  },"346": {
     "doc": "User Styles",
     "title": "Y Combinator workatastartup.com",
     "content": "@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap'); @media print { body { max-width: 40em; font-family: Inter; line-height: 1.3rem; } .company-logo { float: left; margin-right: 1.5rem; } [class=\"company-section my-10\"] { clear: both; padding-top: 1.3rem; } .company-title .company-name { margin: 0 0 .75rem; display: inline-block; } .company-title .company-name + div + div { margin: .25rem 0 .05rem; display: inline-block; } .text-xl, .text-2xl { font-size: 1.2rem; font-weight: 600; } .text-2xl { font-size: 1.5rem; font-weight: 500; } .text-xl, .text-2xl, h1, h2, h3, h4 { font-family: Open Sans; } .flex { display: flex; } nav + div { padding: 1.5rem 0; } nav &gt; .flex { gap: .25rem; } [class=\"company-details my-2 flex flex-wrap md:my-0\"] * { padding: .13rem .33rem 0 0 ; } [data-page], [class=\"w-full rounded bg-sky-100 text-sky-600 flex flex-row justify-between px-3 py-3 border-blue-200 border my-2\"], [class=\"secondary normalwidth company-other-jobs mt-10\"], [class=\"bg-brand w-full mt-2 md:mt-4 sm:px-6 lg:px-8 py-4 overflow-hidden\"] { display: none; } } . ",
