@@ -28,6 +28,7 @@ Therefore, a finished bookmarklet:
 - all lines **must end with semi-colons**, even after a closing curly bracket `}`
 - new-lines, even in constants and in template strings, are interpreted differently so the use of `\n` is preferred
 - it is best to have a readable formatted bookmarklet in addition to the finished minified version
+- bookmarklets *do not run* when Javascript is blocked or turned off for a page, but usually still runs in the console
 
 {% include toc.html %}
 
