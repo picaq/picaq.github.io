@@ -7,7 +7,7 @@ nav_order: 3
 
 # Fine Typography for Reading
 
-Common fine typographic adjustments for optical margin alignment and minimum obtrusiveness.
+Common fine typographic adjustments for optical margin alignment. Primarily dealing with hanging quotes and orphans.
 
 {% include toc.html %}
 
