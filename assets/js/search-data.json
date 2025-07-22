@@ -2073,7 +2073,7 @@
   },"296": {
     "doc": "Typography for Reading",
     "title": "Fine Typography for Reading",
-    "content": "Common fine typographic characters for optical typing. | Fine Typography for Reading . | classes | spacings | orphans and widows | edge cases . | news typography | add quote classes | . | . | . original gist: Fine typography for the web . | the easiest way to edit and update CSS is with the Stylus plugin to specify user styles | a js bookmarklet or snippet is used to inject quote classes for styling | . | if no external chrome plugin is preferred, CSS can be injected with this bookmarklet | chrome extension coming soon? maybe? | . view the codepen here . ",
+    "content": "Common fine typographic adjustments for optical margin alignment and minimum obtrusiveness. | Fine Typography for Reading . | classes | spacings | orphans and widows | edge cases | news typography css | add quote classes js | . | . original gist: Fine typography for the web . | the easiest way to edit and update CSS is with the Stylus plugin to specify user styles | a js bookmarklet or snippet is used to inject quote classes for styling | . | if no external chrome plugin is preferred, CSS can be injected with this bookmarklet | chrome extension coming soon? maybe? | . view the codepen here . ",
     "url": "/blog/design/type/reading#fine-typography-for-reading",
     
     "relUrl": "/blog/design/type/reading#fine-typography-for-reading"
@@ -2107,18 +2107,18 @@
     "relUrl": "/blog/design/type/reading#edge-cases"
   },"301": {
     "doc": "Typography for Reading",
-    "title": "news typography",
+    "title": "news typography css",
     "content": "/* ==UserStyle== @name news typography @namespace github.com/openstyles/stylus @version 1.0.0 @description A new userstyle @author PicaQ ==/UserStyle== */ @-moz-document domain(\"independent.co.uk\"), url-prefix(\"https://\"), domain(\"nytimes.com\") { :root { --open: .33em; /* Open sans*/ --hang-nyt: .4584em; /* nyt-imperial, Indy Serif, georgia */ --hang: var(--hang-nyt); --single: .593; } .hanging-quote { text-indent: calc(var(--hang) * -1); } .single-quote { text-indent: calc(var(--hang) * var(--single) * -1); } span.hanging-quote, span.single-quote { display: inline-block; } .before-quote { padding-right: var(--hang); } .before-single-quote { padding-right: calc(var(--hang) * var(--single)); } } @-moz-document domain(\"quantamagazine.org\") { :root { --hang: .65em /* Merriweather */ } } . ",
-    "url": "/blog/design/type/reading#news-typography",
+    "url": "/blog/design/type/reading#news-typography-css",
     
-    "relUrl": "/blog/design/type/reading#news-typography"
+    "relUrl": "/blog/design/type/reading#news-typography-css"
   },"302": {
     "doc": "Typography for Reading",
-    "title": "add quote classes",
-    "content": "javascript: (()=&gt;{ const paragraphs = [...document.querySelectorAll('p')]; // ~ 108 letters per line /3 = 36 ; /4 = 27 ; /5 = 21 const sliceDepth = 30; // removes orphans const noBreak = s =&gt; s.slice(0, s.length-sliceDepth) + s.slice(-sliceDepth).replace(/ /g, ' '); paragraphs.forEach( p =&gt; p.innerText = noBreak(p.innerText)); paragraphs.forEach( p =&gt; p.innerText[0] === \"“\" ? p.className = p.className + \" hanging-quote\" : \"\"); paragraphs.forEach( p =&gt; p.innerHTML = p.innerHTML .replace(/((\\w+[^\\w\\s]?\\s)(?=“\\w+))(“\\w+)/g, \"&lt;span class='before-quote'&gt;$1&lt;/span&gt;&lt;span class='hanging-quote'&gt;$3&lt;/span&gt;\") .replace(/((\\w+[^\\w\\s]?\\s)(?=‘\\w+))(‘\\w+)/g, \"&lt;span class='before-single-quote'&gt;$1&lt;/span&gt;&lt;span class='single-quote'&gt;$3&lt;/span&gt;\") ); })(); . ",
-    "url": "/blog/design/type/reading#add-quote-classes",
+    "title": "add quote classes js",
+    "content": "remember to remove the comments if using this as a bookmarklet . javascript: (()=&gt;{ const paragraphs = [...document.querySelectorAll('p')]; // ~ 108 letters per line /3 = 36 ; /4 = 27 ; /5 = 21 const sliceDepth = 30; // removes orphans const noBreak = s =&gt; s.slice(0, s.length-sliceDepth) + s.slice(-sliceDepth).replace(/ /g, ' '); paragraphs.forEach( p =&gt; p.innerText = noBreak(p.innerText)); paragraphs.forEach( p =&gt; p.innerText[0] === \"“\" ? p.className = p.className + \" hanging-quote\" : \"\"); paragraphs.forEach( p =&gt; p.innerHTML = p.innerHTML .replace(/((\\w+[^\\w\\s]?\\s)(?=“\\w+))(“\\w+)/g, \"&lt;span class='before-quote'&gt;$1&lt;/span&gt;&lt;span class='hanging-quote'&gt;$3&lt;/span&gt;\") .replace(/((\\w+[^\\w\\s]?\\s)(?=‘\\w+))(‘\\w+)/g, \"&lt;span class='before-single-quote'&gt;$1&lt;/span&gt;&lt;span class='single-quote'&gt;$3&lt;/span&gt;\") ); })(); . ",
+    "url": "/blog/design/type/reading#add-quote-classes-js",
     
-    "relUrl": "/blog/design/type/reading#add-quote-classes"
+    "relUrl": "/blog/design/type/reading#add-quote-classes-js"
   },"303": {
     "doc": "Typography for Reading",
     "title": "Typography for Reading",
