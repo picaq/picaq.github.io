@@ -2073,7 +2073,7 @@
   },"296": {
     "doc": "Typography for Reading",
     "title": "Fine Typography for Reading",
-    "content": "Common fine typographic adjustments for optical margin alignment and minimum obtrusiveness. | Fine Typography for Reading . | classes | spacings | orphans and widows | edge cases | news typography css | add quote classes js | . | . original gist: Fine typography for the web . | the easiest way to edit and update CSS is with the Stylus plugin to specify user styles | a js bookmarklet or snippet is used to inject quote classes for styling | . | if no external chrome plugin is preferred, CSS can be injected with this bookmarklet | chrome extension coming soon? maybe? | . view the codepen here . ",
+    "content": "Common fine typographic adjustments for optical margin alignment. Primarily dealing with hanging quotes and orphans. | Fine Typography for Reading . | classes | spacings | orphans and widows | edge cases | news typography css | add quote classes js | . | . original gist: Fine typography for the web . | the easiest way to edit and update CSS is with the Stylus plugin to specify user styles | a js bookmarklet or snippet is used to inject quote classes for styling | . | if no external chrome plugin is preferred, CSS can be injected with this bookmarklet | chrome extension coming soon? maybe? | . view the codepen here . ",
     "url": "/blog/design/type/reading#fine-typography-for-reading",
     
     "relUrl": "/blog/design/type/reading#fine-typography-for-reading"
