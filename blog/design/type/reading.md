@@ -2,12 +2,12 @@
 title: Typography for Reading
 permalink: blog/design/type/reading
 parent: Typography
-nav_order: 1
+nav_order: 3
 ---
 
 # Fine Typography for Reading
 
-Common fine typographic characters for optical typing.
+Common fine typographic adjustments for optical margin alignment and minimum obtrusiveness.
 
 {% include toc.html %}
 
@@ -16,7 +16,7 @@ original gist: [Fine typography for the web](https://gist.github.com/picaq/3b29e
 1. the easiest way to edit and update CSS is with the Stylus plugin to specify user styles
 2. a js bookmarklet or snippet is used to inject quote classes for styling
 
-- if no external chrome plugin is preferred, CSS can be [injected with this bookmarklet](https://gist.github.com/picaq/24a3c6d85583373f93c12dfae43e03ec#file-toggleinjectcss-js)
+- if no external chrome plugin is preferred, CSS can be [injected with this bookmarklet](/blog/gists/javascript/bookmarklets#toggle-inject-css)
 - chrome extension coming soon? maybe?
 
 view the [codepen here](https://codepen.io/picaq/pen/PorGQaR)
@@ -44,7 +44,7 @@ view the [codepen here](https://codepen.io/picaq/pen/PorGQaR)
 - need to encounter more text content variations to accomodate edge cases
 - unfortunately, fine typography is optically and manually adjusted, in which case the [edit content bookmarklet](https://gist.github.com/picaq/24a3c6d85583373f93c12dfae43e03ec#file-editcontent-js) comes in handy
 
-### news typography
+## news typography css
 ```css
 /* ==UserStyle==
 @name           news typography
@@ -89,7 +89,8 @@ view the [codepen here](https://codepen.io/picaq/pen/PorGQaR)
     }
 }
 ```
-### add quote classes
+## add quote classes js
+remember to remove the comments if using this as a bookmarklet
 ```js
 javascript: (()=>{  
 
