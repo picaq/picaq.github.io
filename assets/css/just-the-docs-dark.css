@@ -9276,6 +9276,7 @@ div.highlighter-rouge div.highlight {
   main {
     margin-left: 16rem;
     margin-left: 9rem;
+    margin-left: 12rem;
     z-index: 14 !important;
   }
   .toc {
@@ -9283,12 +9284,30 @@ div.highlighter-rouge div.highlight {
     position: fixed;
     top: 4rem;
     left: 0;
+    top: 0rem;
+    left: -0.7rem;
     z-index: 12;
     max-height: 100vh;
     background-color: none;
   }
-  footer {
+  ul#markdown-toc {
+    padding-left: 0.75rem !important;
+  }
+  ul#markdown-toc li::before {
+    content: "";
+  }
+  .table-wrapper {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  footer, .side-bar {
     display: none;
+  }
+  * {
+    opacity: 1 !important;
+    color: black;
+  }
+  h2, h3, h4 {
+    color: darkblue !important;
   }
 }
 .table-wrapper, table, th, td {
