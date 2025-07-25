@@ -176,6 +176,20 @@ Starting with the creature that has the lowest current hit points, each creature
 
 When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.
 
+## 2
+
+Cloud of Daggers
+School	Conjuration
+Classes	Bard, Sorcerer, Warlock, Wizard
+Ritual?	No
+Duration	Concentration, up to 1 minute
+Components	V, S, M (a sliver of glass)
+Cast Time	1 Action
+Range	60 feet
+You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes 4d4 slashing damage when it enters the spell’s area for the first time on a turn or starts its turn there.
+
+At Higher Levels
+When you cast this spell using a spell slot of 3rd level or higher, the damage increases
 
 ## 3
 
