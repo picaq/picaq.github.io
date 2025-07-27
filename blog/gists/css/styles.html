@@ -151,7 +151,18 @@
     <span class="nc">.flex</span> <span class="p">{</span>
         <span class="nl">display</span><span class="p">:</span> <span class="nb">flex</span><span class="p">;</span>
     <span class="p">}</span>
+<span class="nc">.text-sm</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">.875rem</span><span class="p">;</span>
+    <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.25rem</span><span class="p">;</span>
+<span class="p">}</span>
 
+<span class="nc">.gap-x-6</span> <span class="p">{</span>
+    <span class="nl">-moz-column-gap</span><span class="p">:</span> <span class="m">1.5rem</span><span class="p">;</span>
+    <span class="nl">column-gap</span><span class="p">:</span> <span class="m">1.5rem</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.flex-row</span> <span class="p">{</span>
+    <span class="nl">flex-direction</span><span class="p">:</span> <span class="nb">row</span><span class="p">;</span>
+<span class="p">}</span>
     <span class="nt">nav</span> <span class="o">+</span> <span class="nt">div</span>  <span class="p">{</span>
         <span class="nl">padding</span><span class="p">:</span> <span class="m">1.5rem</span> <span class="m">0</span><span class="p">;</span>
     <span class="p">}</span>
@@ -162,10 +173,25 @@
     <span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s1">"company-details my-2 flex flex-wrap md:my-0"</span><span class="o">]</span> <span class="o">*</span> <span class="p">{</span>
         <span class="nl">padding</span><span class="p">:</span> <span class="m">.13rem</span> <span class="m">.33rem</span> <span class="m">0</span> <span class="m">0</span> <span class="p">;</span>
     <span class="p">}</span>
-
-    <span class="o">[</span><span class="nt">data-page</span><span class="o">],</span> <span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s1">"w-full rounded bg-sky-100 text-sky-600 flex flex-row justify-between px-3 py-3 border-blue-200 border my-2"</span><span class="o">],</span> <span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s1">"secondary normalwidth company-other-jobs mt-10"</span><span class="o">],</span> <span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s1">"bg-brand w-full mt-2 md:mt-4 sm:px-6 lg:px-8 py-4 overflow-hidden"</span><span class="o">]</span> <span class="p">{</span>
+    <span class="nt">a</span> <span class="nt">img</span> <span class="p">{</span><span class="nl">padding</span><span class="p">:</span> <span class="m">1.2rem</span> <span class="m">1.2rem</span> <span class="m">0</span> <span class="m">0</span><span class="p">}</span>
+<span class="c">/*     [data-page] */</span>
+<span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s1">"ycdc-card mt-8 sm:w-[300px]"</span><span class="o">],</span>
+    <span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s1">"w-full rounded bg-sky-100 text-sky-600 flex flex-row justify-between px-3 py-3 border-blue-200 border my-2"</span><span class="o">]</span>
+    <span class="o">,</span> <span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s1">"secondary normalwidth company-other-jobs mt-10"</span><span class="o">]</span>
+    <span class="o">,</span> <span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s1">"bg-brand w-full mt-2 md:mt-4 sm:px-6 lg:px-8 py-4 overflow-hidden"</span><span class="o">],</span>
+    <span class="o">[</span><span class="nt">id</span><span class="o">^=</span><span class="s1">"WaasShowJobPage-react-component"</span><span class="o">]</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nc">.mx-auto.max-w-ycdc-page</span> <span class="o">&gt;</span> <span class="nt">section</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">2</span><span class="o">),</span>
+    <span class="o">[</span><span class="nt">id</span><span class="o">^=</span><span class="s1">"WaasShowJobPage-react-component"</span><span class="o">]</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nc">.mx-auto.max-w-ycdc-page</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="o">,</span>
+    <span class="o">[</span><span class="nt">id</span><span class="o">^=</span><span class="s1">"WaasShowJobPage-react-component"</span><span class="o">]</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nc">.no-scroll-behind.relative.isolate.z-10</span><span class="o">,</span>
+    <span class="nt">footer</span><span class="o">,</span>
+    <span class="o">[</span><span class="nt">id</span><span class="o">^=</span><span class="s1">"WaasShowJobPage-react-component"</span><span class="o">]</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nc">.mx-auto.max-w-ycdc-page</span> <span class="o">&gt;</span> <span class="nt">section</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nc">.flex-grow.space-y-5</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nc">.ycdc-card.max-w-2xl</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nc">.mt-6.border-t.border-gray-300.pt-6.text-sm</span>
+    <span class="p">{</span>
         <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="o">[</span><span class="nt">id</span><span class="o">^=</span><span class="s1">"WaasShowJobPage-react-component"</span><span class="o">]</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nc">.mx-auto.max-w-ycdc-page</span> <span class="o">&gt;</span> <span class="nt">section</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nc">.flex-grow.space-y-5</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span> <span class="cp">!important</span><span class="p">;</span>
     <span class="p">}</span>
 
 <span class="p">}</span>
+
 </code></pre></div></div> </main> <hr> <footer> <p class="text-small text-grey-dk-100 mb-0">This site uses <a href="https://github.com/just-the-docs/just-the-docs" target="blank">Just the Docs</a>, a documentation theme for Jekyll.</p> <div class="d-flex mt-2"> <p class="text-small text-grey-dk-000 mb-0"> <a href="https://github.com/picaq/picaq.github.io/tree/master/blog/gists/user-styles.md" target="_blank" id="edit-this-page">Edit this page on GitHub.</a> </p> </div> </footer> </div> </div> <div class="search-overlay"></div> </div> </body> </html>
