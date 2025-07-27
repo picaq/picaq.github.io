@@ -56,7 +56,6 @@ Here is a workaround:
 ```
 
 ### Y Combinator workatastartup.com
-
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
@@ -104,7 +103,18 @@ Here is a workaround:
     .flex {
         display: flex;
     }
+.text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
 
+.gap-x-6 {
+    -moz-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+}
+.flex-row {
+    flex-direction: row;
+}
     nav + div  {
         padding: 1.5rem 0;
     }
@@ -115,10 +125,25 @@ Here is a workaround:
     [class="company-details my-2 flex flex-wrap md:my-0"] * {
         padding: .13rem .33rem 0 0 ;
     }
-
-    [data-page], [class="w-full rounded bg-sky-100 text-sky-600 flex flex-row justify-between px-3 py-3 border-blue-200 border my-2"], [class="secondary normalwidth company-other-jobs mt-10"], [class="bg-brand w-full mt-2 md:mt-4 sm:px-6 lg:px-8 py-4 overflow-hidden"] {
+    a img {padding: 1.2rem 1.2rem 0 0}
+/*     [data-page] */
+[class="ycdc-card mt-8 sm:w-[300px]"],
+    [class="w-full rounded bg-sky-100 text-sky-600 flex flex-row justify-between px-3 py-3 border-blue-200 border my-2"]
+    , [class="secondary normalwidth company-other-jobs mt-10"]
+    , [class="bg-brand w-full mt-2 md:mt-4 sm:px-6 lg:px-8 py-4 overflow-hidden"],
+    [id^="WaasShowJobPage-react-component"] > div.mx-auto.max-w-ycdc-page > section > div > div:nth-child(2),
+    [id^="WaasShowJobPage-react-component"] > div.mx-auto.max-w-ycdc-page > div,
+    [id^="WaasShowJobPage-react-component"] > div.no-scroll-behind.relative.isolate.z-10,
+    footer,
+    [id^="WaasShowJobPage-react-component"] > div.mx-auto.max-w-ycdc-page > section > div > div.flex-grow.space-y-5 > div.ycdc-card.max-w-2xl > div.mt-6.border-t.border-gray-300.pt-6.text-sm
+    {
         display: none;
+    }
+    
+    [id^="WaasShowJobPage-react-component"] > div.mx-auto.max-w-ycdc-page > section > div > div.flex-grow.space-y-5 {
+    display: block !important;
     }
 
 }
+
 ```
