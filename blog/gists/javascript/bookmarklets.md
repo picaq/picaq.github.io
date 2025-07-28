@@ -145,6 +145,29 @@ javascript: (()=>{
 })();
 ```
 
+### language learning audio conversion
+
+I am currently learning Indonesian with [Selamat datang!](https://web.uvic.ca/lancenrd/indonesian/intro/index.htm) and refreshing Cantonese with [Learn Cantonese! 學廣東話!](https://cantonese.ca/).
+
+For these really old websites, the audio links open in a new tab. To play the audio file as intended, this script converts all anchor links with audio to contain a playable `<audio>`.
+
+Test the improved UX on the below pages with and without running this bookmarklet: 
+- [Introduction: some nouns and colours](https://web.uvic.ca/lancenrd/indonesian/intro/explan1.htm) 
+- [Cantonese: Pronunciation guide 發音](https://cantonese.ca/pronunciation.html) 
+  
+```js
+javascript: (()=>{
+  [...document.querySelectorAll('a[href$="mp3"], a[href$="wav"]')]
+    .forEach( a => {
+      let audio = document.createElement("audio"); 
+          a.appendChild(audio); audio.src = a.href; 
+          a.setAttribute('onclick', `document.querySelector('audio[src="${a.href}"]').play()`); 
+          a.removeAttribute('target'); 
+          a.removeAttribute('href'); 
+    } );
+})();
+```
+
 ## Development Tools
 
 ### hard refresh
