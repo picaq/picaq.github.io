@@ -167,6 +167,7 @@ javascript: (()=>{
     } );
 })();
 ```
+`onclick` can be changed to `onmouseover` which saves on the clicking action but can be a little bit chaotic.
 
 ## Development Tools
 
