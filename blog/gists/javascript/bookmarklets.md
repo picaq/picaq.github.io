@@ -28,7 +28,8 @@ Therefore, a finished bookmarklet:
 - all lines **must end with semi-colons**, even after a closing curly bracket `}`
 - new-lines, even in constants and in template strings, are interpreted differently so the use of `\n` is preferred
 - it is best to have a readable formatted bookmarklet in addition to the finished minified version
-- bookmarklets *do not run* when Javascript is blocked or turned off for a page, but usually still runs in the console
+- bookmarklets *do not run* when Javascript is blocked or turned off for a page, or if you are trying to modify the contents of an iframe, but usually still runs in the console
+- to modify the contents of an iframe, it must be selected in the dev tools before running the code in the console
 
 {% include toc.html %}
 
@@ -398,4 +399,3 @@ javascript: (()=> {
   url = document.querySelector('.pdfobject').src; window.location.href = url;
 })();
 ```
-
