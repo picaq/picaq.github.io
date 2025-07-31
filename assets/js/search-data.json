@@ -2360,7 +2360,7 @@
   },"337": {
     "doc": "Typography for Reading",
     "title": "Fine Typography for Reading",
-    "content": "Common fine typographic adjustments for optical margin alignment. Primarily dealing with hanging quotes and orphans. | Fine Typography for Reading . | classes | spacings | orphans and widows | edge cases | news typography css | add quote classes js | . | . original gist: Fine typography for the web . | the easiest way to edit and update CSS is with the Stylus plugin to specify user styles | a js bookmarklet or snippet is used to inject quote classes for styling | . | if no external chrome plugin is preferred, CSS can be injected with this bookmarklet | chrome extension coming soon? maybe? | . view the codepen here . ",
+    "content": "Common fine typographic adjustments for optical margin alignment. Primarily dealing with hanging quotes and orphans. | Fine Typography for Reading . | classes | spacings | orphans and widows | edge cases | news typography css | add quote classes js | Chrome Extension | . | . original gist: Fine typography for the web . | the easiest way to edit and update CSS is with the Stylus plugin to specify user styles | a js bookmarklet or snippet is used to inject quote classes for styling | . | if no external chrome plugin is preferred, CSS can be injected with this bookmarklet | chrome extension coming soon? maybe? | . view the codepen here . ",
     "url": "/blog/design/type/reading#fine-typography-for-reading",
     
     "relUrl": "/blog/design/type/reading#fine-typography-for-reading"
@@ -2408,383 +2408,390 @@
     "relUrl": "/blog/design/type/reading#add-quote-classes-js"
   },"344": {
     "doc": "Typography for Reading",
+    "title": "Chrome Extension",
+    "content": "I am currently working on a chrome extension that does this automatically! Keep your eyes peeled. ",
+    "url": "/blog/design/type/reading#chrome-extension",
+    
+    "relUrl": "/blog/design/type/reading#chrome-extension"
+  },"345": {
+    "doc": "Typography for Reading",
     "title": "Typography for Reading",
     "content": " ",
     "url": "/blog/design/type/reading",
     
     "relUrl": "/blog/design/type/reading"
-  },"345": {
+  },"346": {
     "doc": "Recipes",
     "title": "Recipes",
     "content": "Below is a list of my published recipes. For most recipes, a stove is not required. If you would like to submit a recipe review ( with review text and a star rating out of 5 ) or a suggestion, feel free to contact me, create an issue or a pull request to do so. Edit this page on GitHub on the bottom of any page brings you to the source code. ",
     "url": "/blog/food/recipes",
     
     "relUrl": "/blog/food/recipes"
-  },"346": {
+  },"347": {
     "doc": "Ruby",
     "title": "Ruby",
     "content": "Ruby is great, though the only chance I get to use it as of late is writing plugins for this blog. The ruby-practice repository contains my most-visted ruby notes. ruby-koans is my progress learning ruby by testing edge cases. ",
     "url": "/blog/gists/ruby",
     
     "relUrl": "/blog/gists/ruby"
-  },"347": {
+  },"348": {
     "doc": "Sauces",
     "title": "Sauces &amp; Flavorings",
     "content": "A collection of my personal favorite sauces &amp; flavorings. I will include a link to my preferred brands but not directly to the products ( there are multiple sizes ). Generics, where any brand works, are in lowercase. ",
     "url": "/blog/food/sauces#sauces--flavorings",
     
     "relUrl": "/blog/food/sauces#sauces--flavorings"
-  },"348": {
+  },"349": {
     "doc": "Sauces",
     "title": "Condiments",
     "content": " ",
     "url": "/blog/food/sauces#condiments",
     
     "relUrl": "/blog/food/sauces#condiments"
-  },"349": {
+  },"350": {
     "doc": "Sauces",
     "title": "Salty",
     "content": ". | Roland Vegan Ponzu Sauce | tamari | shoyu | kala namak aka black salt | . ",
     "url": "/blog/food/sauces#salty",
     
     "relUrl": "/blog/food/sauces#salty"
-  },"350": {
+  },"351": {
     "doc": "Sauces",
     "title": "Umami",
     "content": ". | nutritional yeast aka “nooch” | miso | kombu dashi | nori | roasted sesame oil | dried shiitake | garlic powder | black garlic | Artisana Organics Raw Organic Cashew Butter | Erewhon Organic Roasted Peanut Butter | Brooklyn Delhi Roasted Garlic Achaar | TRUFF Spicy Marinara Sauce | . ",
     "url": "/blog/food/sauces#umami",
     
     "relUrl": "/blog/food/sauces#umami"
-  },"351": {
+  },"352": {
     "doc": "Sauces",
     "title": "Spicy",
     "content": "I have an infinite spice tolerance. Be warned. | Melinda’s Ghost Pepper Hot Sauce | TRUFF White Hotter Hot Sauce | Su Chili Crisp Mala「甦」麻辣辣油 | harissa sauce | white pepper powder | Huy Fong Sriracha | gochujang | . ",
     "url": "/blog/food/sauces#spicy",
     
     "relUrl": "/blog/food/sauces#spicy"
-  },"352": {
+  },"353": {
     "doc": "Sauces",
     "title": "Acid",
     "content": "This is good for blending with bitter foods such as bitter melon and natto . | rice vinegar | yellow mustard | Napa Kimchi . | Choi’s Spicy Napa Kimchi | Im Soon Ja Vegan Kimchi 비건김치 (林) | . | . ",
     "url": "/blog/food/sauces#acid",
     
     "relUrl": "/blog/food/sauces#acid"
-  },"353": {
+  },"354": {
     "doc": "Sauces",
     "title": "Sweet",
     "content": ". | blended deglet dates | date syrup | dark brown sugar | molasses | stevia | allulose | monk fruit | Trader Joe’s Marshmallows | . ",
     "url": "/blog/food/sauces#sweet",
     
     "relUrl": "/blog/food/sauces#sweet"
-  },"354": {
+  },"355": {
     "doc": "Sauces",
     "title": "Sauces",
     "content": " ",
     "url": "/blog/food/sauces",
     
     "relUrl": "/blog/food/sauces"
-  },"355": {
+  },"356": {
     "doc": "Sheet Music",
     "title": "Sheet Music",
     "content": "I make music and play music. ",
     "url": "/blog/music/sheet-music",
     
     "relUrl": "/blog/music/sheet-music"
-  },"356": {
+  },"357": {
     "doc": "Sheet Music",
     "title": "Made",
     "content": "Ok I mostly transcribe music into formats for specific instruments. Here’s an app, Notation Map, that I’m making to help me pick up new instruments. It is unfinished. ",
     "url": "/blog/music/sheet-music#made",
     
     "relUrl": "/blog/music/sheet-music#made"
-  },"357": {
+  },"358": {
     "doc": "Sheet Music",
     "title": "Violin",
     "content": "The very first piece I transcribed in 2008 or 2009 while I was still in high school, and the first Orisinal entry on ichigos.com, Winter Bells. Youtube cover re-arranged by Sherry Kim for Viola. ",
     "url": "/blog/music/sheet-music#violin",
     
     "relUrl": "/blog/music/sheet-music#violin"
-  },"358": {
+  },"359": {
     "doc": "Sheet Music",
     "title": "Kalimba tabs?",
     "content": "I get asked this sometimes but I prefer transcribing music into staff notation due to being instrument-agnostic and its ease to adapt to other instruments. In the near future I will sort sheet music by chromatic range rather than by instrument. ",
     "url": "/blog/music/sheet-music#kalimba-tabs",
     
     "relUrl": "/blog/music/sheet-music#kalimba-tabs"
-  },"359": {
+  },"360": {
     "doc": "Sheet Music",
     "title": "List of Instruments",
     "content": ". | Kalimba ( Mbira ) . | 17 key diatonic | 42 chromatic alto | . | Alto Melodica . | 37 keys from F to F | . | Reyong | Carillion | Cello | Viola | Violin | Recorder | Piano | Voice ( Alto ) | . ",
     "url": "/blog/music/sheet-music#list-of-instruments",
     
     "relUrl": "/blog/music/sheet-music#list-of-instruments"
-  },"360": {
+  },"361": {
     "doc": "Spells",
     "title": "Spells",
     "content": "I’m currently playing Dungeons &amp; Dragons 5th edition with Tiger Kong. I am playing as a Harengon Bard, and this page simply keeps track of my stats, spells and cantrips. | Strength | -1 | . | Dexterity | 3 | . | Constitution | 1 | . | Intelligence | 0 | . | Wisdom | 1 | . | Charisma | 3 | . | Bard | Charisma | 13 | 15 | . | spellcasting class | spellcasting ability | spell saveDC | spell attackbonus | . Note: All content on this page is owned by Wizards of the Coast. Search engine indexing is blocked for this page. | Spells . | 0 Cantrips . | Vicious Mockery . | At Higher Levels | . | Mending | *Ray of Frost 1d8 . | At Higher Levels | . | . | 1 3 . | Faerie Fire | Healing Word 1d4 . | At Higher Levels | . | Speak with Animals | Comprehend Languages | Color Spray . | At Higher Levels | . | . | 2 | 3 | 4 . | *Dancing Light | *Polymorph | . | 5 | 6 | 7 | 8 | 9 | Source Info | . | . ",
     "url": "/blog/games/dnd/spells",
     
     "relUrl": "/blog/games/dnd/spells"
-  },"361": {
+  },"362": {
     "doc": "Spells",
     "title": "0 Cantrips",
     "content": " ",
     "url": "/blog/games/dnd/spells#0cantrips",
     
     "relUrl": "/blog/games/dnd/spells#0cantrips"
-  },"362": {
+  },"363": {
     "doc": "Spells",
     "title": "Vicious Mockery",
     "content": "| School | Enchantment | . | Classes | Bard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V | . | Cast Time | 1 Action | . | Range | 60 feet | . You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (thought it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn. ",
     "url": "/blog/games/dnd/spells#vicious-mockery",
     
     "relUrl": "/blog/games/dnd/spells#vicious-mockery"
-  },"363": {
+  },"364": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4). ",
     "url": "/blog/games/dnd/spells#at-higher-levels",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels"
-  },"364": {
+  },"365": {
     "doc": "Spells",
     "title": "Mending",
     "content": "| School | Transmutation | . | Classes | Artificer, Bard, Cleric, Druid, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V, S, M (two lodestones) | . | Cast Time | 1 Minute | . | Range | Touch | . This spell repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn cloack, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. This spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object. ",
     "url": "/blog/games/dnd/spells#mending",
     
     "relUrl": "/blog/games/dnd/spells#mending"
-  },"365": {
+  },"366": {
     "doc": "Spells",
     "title": "*Ray of Frost 1d8",
     "content": "| School | Evocation | . | Classes | Artificer, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V, S | . | Cast Time | 1 Action | . | Range | 60 feet | . A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn. ",
     "url": "/blog/games/dnd/spells#ray-of-frost-1d8",
     
     "relUrl": "/blog/games/dnd/spells#ray-of-frost-1d8"
-  },"366": {
+  },"367": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8). ",
     "url": "/blog/games/dnd/spells#at-higher-levels-1",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-1"
-  },"367": {
+  },"368": {
     "doc": "Spells",
     "title": "1 3",
     "content": " ",
     "url": "/blog/games/dnd/spells#13",
     
     "relUrl": "/blog/games/dnd/spells#13"
-  },"368": {
+  },"369": {
     "doc": "Spells",
     "title": "Faerie Fire",
     "content": "| School | Evocation | . | Classes | Artificer, Bard, Druid | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V | . | Cast Time | 1 Action | . | Range | 60 feet | . Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible. ",
     "url": "/blog/games/dnd/spells#faerie-fire",
     
     "relUrl": "/blog/games/dnd/spells#faerie-fire"
-  },"369": {
+  },"370": {
     "doc": "Spells",
     "title": "Healing Word 1d4",
     "content": "| School | Evocation | . | Classes | Bard, Cleric, Druid | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V | . | Cast Time | 1 Bonus Action | . | Range | 60 feet | . A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs. ",
     "url": "/blog/games/dnd/spells#healing-word-1d4",
     
     "relUrl": "/blog/games/dnd/spells#healing-word-1d4"
-  },"370": {
+  },"371": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st. ",
     "url": "/blog/games/dnd/spells#at-higher-levels-2",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-2"
-  },"371": {
+  },"372": {
     "doc": "Spells",
     "title": "Speak with Animals",
     "content": "| School | Divination | . | Classes | Bard, Druid, Ranger | . | Ritual? | Yes | . | Duration | 10 minutes | . | Components | V, S | . | Cast Time | 1 Action | . | Range | Self | . You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM’s discretion. ",
     "url": "/blog/games/dnd/spells#speak-with-animals",
     
     "relUrl": "/blog/games/dnd/spells#speak-with-animals"
-  },"372": {
+  },"373": {
     "doc": "Spells",
     "title": "Comprehend Languages",
     "content": "| School | Divination | . | Classes | Bard, Sorcerer, Warlock, Wizard | . | Ritual? | Yes | . | Duration | 1 hour | . | Components | V, S, M (a pinch of soot and salt) | . | Cast Time | 1 Action | . | Range | Self | . For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface of which the words are written. It takes about 1 minute to read one page of text. This spell doesn’t decode secret messages in a text or glyph, such as an arcane sigil, that isn’t part of a written language. ",
     "url": "/blog/games/dnd/spells#comprehend-languages",
     
     "relUrl": "/blog/games/dnd/spells#comprehend-languages"
-  },"373": {
+  },"374": {
     "doc": "Spells",
     "title": "Color Spray",
     "content": "| School | Illusion | . | Classes | Bard, Sorcerer, Wizard | . | Ritual? | No | . | Duration | 1 round | . | Components | V, S, M | . | Cast Time | 1 Action | . | Range | Self (15-foot cone) | . A dazzling array of flashing, colored light springs from your hand. Roll 6d10, the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can’t see). Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the spell ends. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for the creature to be affected. ",
     "url": "/blog/games/dnd/spells#color-spray",
     
     "relUrl": "/blog/games/dnd/spells#color-spray"
-  },"374": {
+  },"375": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st. ",
     "url": "/blog/games/dnd/spells#at-higher-levels-3",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-3"
-  },"375": {
+  },"376": {
     "doc": "Spells",
     "title": "2",
     "content": "Cloud of Daggers School Conjuration Classes Bard, Sorcerer, Warlock, Wizard Ritual? No Duration Concentration, up to 1 minute Components V, S, M (a sliver of glass) Cast Time 1 Action Range 60 feet You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes 4d4 slashing damage when it enters the spell’s area for the first time on a turn or starts its turn there. At Higher Levels When you cast this spell using a spell slot of 3rd level or higher, the damage increases . ",
     "url": "/blog/games/dnd/spells#2",
     
     "relUrl": "/blog/games/dnd/spells#2"
-  },"376": {
+  },"377": {
     "doc": "Spells",
     "title": "3",
     "content": " ",
     "url": "/blog/games/dnd/spells#3",
     
     "relUrl": "/blog/games/dnd/spells#3"
-  },"377": {
+  },"378": {
     "doc": "Spells",
     "title": "4",
     "content": " ",
     "url": "/blog/games/dnd/spells#4",
     
     "relUrl": "/blog/games/dnd/spells#4"
-  },"378": {
+  },"379": {
     "doc": "Spells",
     "title": "*Dancing Light",
     "content": "| School | Evocation | . | Classes | Artificer, Bard, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S, M (a bit of phosphorus or wychwood, or a glowworm) | . | Cast Time | 1 Action | . | Range | 120 feet | . You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius. As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell’s range. ",
     "url": "/blog/games/dnd/spells#dancing-light",
     
     "relUrl": "/blog/games/dnd/spells#dancing-light"
-  },"379": {
+  },"380": {
     "doc": "Spells",
     "title": "*Polymorph",
     "content": "| School | Transmutation | . | Classes | Bard, Druid, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 hour | . | Components | V, S, M (a caterpillar cocoon) | . | Cast Time | 1 Action | . | Range | 60 feet | . 5e Beast List - Dungeons and Dragons Wiki . This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. A shapechanger automatically succeeds on this saving throw. The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target’s (or the target’s level, if it doesn’t have a challenge rating). The target’s game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality. The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn’t reduce the creature’s normal form to 0 hit points, it isn’t knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can’t speak, cast spells, or take any other action that requires hands or speech. The target’s gear melds into the new form. The creature can’t activate, use, wield, or otherwise benefit from any of its equipment. This spell can’t affect a target that has 0 hit points. ",
     "url": "/blog/games/dnd/spells#polymorph",
     
     "relUrl": "/blog/games/dnd/spells#polymorph"
-  },"380": {
+  },"381": {
     "doc": "Spells",
     "title": "5",
     "content": " ",
     "url": "/blog/games/dnd/spells#5",
     
     "relUrl": "/blog/games/dnd/spells#5"
-  },"381": {
+  },"382": {
     "doc": "Spells",
     "title": "6",
     "content": " ",
     "url": "/blog/games/dnd/spells#6",
     
     "relUrl": "/blog/games/dnd/spells#6"
-  },"382": {
+  },"383": {
     "doc": "Spells",
     "title": "7",
     "content": " ",
     "url": "/blog/games/dnd/spells#7",
     
     "relUrl": "/blog/games/dnd/spells#7"
-  },"383": {
+  },"384": {
     "doc": "Spells",
     "title": "8",
     "content": " ",
     "url": "/blog/games/dnd/spells#8",
     
     "relUrl": "/blog/games/dnd/spells#8"
-  },"384": {
+  },"385": {
     "doc": "Spells",
     "title": "9",
     "content": " ",
     "url": "/blog/games/dnd/spells#9",
     
     "relUrl": "/blog/games/dnd/spells#9"
-  },"385": {
+  },"386": {
     "doc": "Spells",
     "title": "Source Info",
     "content": ". | All Spells | Bard Spells | . ",
     "url": "/blog/games/dnd/spells#source-info",
     
     "relUrl": "/blog/games/dnd/spells#source-info"
-  },"386": {
+  },"387": {
     "doc": "Spicy Cold Tofu",
     "title": "\n  \n  Spicy Cold Tofu\n",
     "content": ". Quick, fresh, spicy, filling. Preparation time4 minsPT4MCooking time0 minsPT0MYield1 serving 1 ",
     "url": "/blog/food/recipes/spicy-cold-tofu#spicy-cold-tofu",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#spicy-cold-tofu"
-  },"387": {
+  },"388": {
     "doc": "Spicy Cold Tofu",
     "title": " Ingredients",
     "content": ". | 1 block of firm tofu, about 11~16 oz | ponzu | mala chili oil | toasted sesame oil | maple syrup | optional&#58; micro greens or crushed nori | . ",
     "url": "/blog/food/recipes/spicy-cold-tofu#ingredients",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#ingredients"
-  },"388": {
+  },"389": {
     "doc": "Spicy Cold Tofu",
     "title": " Instructions",
     "content": ". | Drain the water from a package of tofu. Organic Tofu tastes best. | Lightly press the remaining water out of the tofu. | Pour all of the liquid ingredients to taste on top of the tofu, about 1/2 tsp~1 tbsp each. | While preforating the tofu by stabbing it with a fork, spoon any sauce that pools on the bottom on top of the tofu. | Optionally, garnish with greens or nori. | . Thats it, it’s already done! . ",
     "url": "/blog/food/recipes/spicy-cold-tofu#instructions",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#instructions"
-  },"389": {
+  },"390": {
     "doc": "Spicy Cold Tofu",
     "title": " Nutrition Facts",
     "content": "in grams per serving . Calories330Fat20Carbohydrates11Protein32 Mandy Chenhttps://picaq.github.io cuisineChinesedietvegan, keto, diabeticcategoryentreekeywordssoy, protein, spicy, chili oil ",
     "url": "/blog/food/recipes/spicy-cold-tofu#nutrition-facts",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#nutrition-facts"
-  },"390": {
+  },"391": {
     "doc": "Spicy Cold Tofu",
     "title": "More Spice!",
     "content": ". ",
     "url": "/blog/food/recipes/spicy-cold-tofu#more-spice",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#more-spice"
-  },"391": {
+  },"392": {
     "doc": "Spicy Cold Tofu",
     "title": "Spicy Cold Tofu",
     "content": " ",
     "url": "/blog/food/recipes/spicy-cold-tofu",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu"
-  },"392": {
+  },"393": {
     "doc": "String",
     "title": "String",
     "content": " ",
     "url": "/blog/gists/javascript/string",
     
     "relUrl": "/blog/gists/javascript/string"
-  },"393": {
+  },"394": {
     "doc": "String",
     "title": "Count Occurrences of Chars or Substring Occurances in a String",
     "content": "String manipulation, counting and accounting . const count = (str, subst) =&gt; str.match( new RegExp(subst, \"g\") )?.length || 0; . ",
     "url": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string",
     
     "relUrl": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string"
-  },"394": {
+  },"395": {
     "doc": "Typography",
     "title": "Typography",
     "content": " ",
     "url": "/blog/design/type",
     
     "relUrl": "/blog/design/type"
-  },"395": {
+  },"396": {
     "doc": "User Styles",
     "title": "User Styles",
     "content": "Custom user-defined style sheets to better browse the web. ",
     "url": "/blog/gists/css/styles",
     
     "relUrl": "/blog/gists/css/styles"
-  },"396": {
+  },"397": {
     "doc": "User Styles",
     "title": "Light Themes &amp; Printing",
     "content": " ",
     "url": "/blog/gists/css/styles#light-themes--printing",
     
     "relUrl": "/blog/gists/css/styles#light-themes--printing"
-  },"397": {
+  },"398": {
     "doc": "User Styles",
     "title": "Notion.site",
     "content": "ctrl/cmd + shift + L swaps between light and dark themes for your own notion notes but not public ones. Here is a workaround: . [style*=\"color: rgba(255, 255, 255, 0.81)\"] { color: rgba(0, 0, 0, 0.81) !important } [style*=\"background: rgba(255, 255, 255, 0.13)\"] { background: rgba(0, 0, 0, 0.03) !important } #main [style*=\"fill: rgba(255, 255, 255, 0.46)\"], [style*=\"color: rgba(255, 255, 255, 0.46)\"], #main [style*=\"fill: rgba(255, 255, 255\"] { fill: rgba(0, 0, 0, 0.46) !important; color: rgba(0, 0, 0, 0.46) !important; outline: rgba(0, 0, 0, 0.46) !important; } [style*=\"color: rgb(155, 155, 155); fill: rgb(155, 155, 155);\"] { color: rgb(95, 95, 95) !important; fill: rgb(95, 95, 95) !important; } [style=\"display: flex; flex-direction: row;\"] { filter: brightness(.3) } @media screen { [style*=\"background: rgb(25, 25, 25)\"] { background: rgb(225, 225, 225) !important } } @media print { html &gt; body [style*=\"background: rgb(25, 25, 25)\"] { background: white !important } } . ",
     "url": "/blog/gists/css/styles#notionsite",
     
     "relUrl": "/blog/gists/css/styles#notionsite"
-  },"398": {
+  },"399": {
     "doc": "User Styles",
     "title": "Y Combinator workatastartup.com",
     "content": "@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap'); @media print { body { max-width: 40em; font-family: Inter; line-height: 1.3rem; } .company-logo { float: left; margin-right: 1.5rem; } [class=\"company-section my-10\"] { clear: both; padding-top: 1.3rem; } .company-title .company-name { margin: 0 0 .75rem; display: inline-block; } .company-title .company-name + div + div { margin: .25rem 0 .05rem; display: inline-block; } .text-xl, .text-2xl { font-size: 1.2rem; font-weight: 600; } .text-2xl { font-size: 1.5rem; font-weight: 500; } .text-xl, .text-2xl, h1, h2, h3, h4 { font-family: Open Sans; } .flex { display: flex; } .text-sm { font-size: .875rem; line-height: 1.25rem; } .gap-x-6 { -moz-column-gap: 1.5rem; column-gap: 1.5rem; } .flex-row { flex-direction: row; } nav + div { padding: 1.5rem 0; } nav &gt; .flex { gap: .25rem; } [class=\"company-details my-2 flex flex-wrap md:my-0\"] * { padding: .13rem .33rem 0 0 ; } a img {padding: 1.2rem 1.2rem 0 0} /* [data-page] */ [class=\"ycdc-card mt-8 sm:w-[300px]\"], [class=\"w-full rounded bg-sky-100 text-sky-600 flex flex-row justify-between px-3 py-3 border-blue-200 border my-2\"] , [class=\"secondary normalwidth company-other-jobs mt-10\"] , [class=\"bg-brand w-full mt-2 md:mt-4 sm:px-6 lg:px-8 py-4 overflow-hidden\"], [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; section &gt; div &gt; div:nth-child(2), [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; div, [id^=\"WaasShowJobPage-react-component\"] &gt; div.no-scroll-behind.relative.isolate.z-10, footer, [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; section &gt; div &gt; div.flex-grow.space-y-5 &gt; div.ycdc-card.max-w-2xl &gt; div.mt-6.border-t.border-gray-300.pt-6.text-sm { display: none; } [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; section &gt; div &gt; div.flex-grow.space-y-5 { display: block !important; } } . ",
