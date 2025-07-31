@@ -109,3 +109,7 @@ javascript: (()=>{
                     );
 })();
 ```
+
+## Chrome Extension
+
+I am currently working on a [chrome extension](https://github.com/picaq/chrome-extensions-samples/tree/audio-link-player/functional-samples/tutorial.hello-world) that does this automatically! Keep your eyes peeled.
