@@ -269,7 +269,7 @@ since `$0` is only acessible to dev tools this first version cannot be a bookmar
 
 ```js
 let css = `
-  hr { break-after: page; }
+  .break { break-after: page; }
 `;
 
 const injectCSS = css => {
@@ -288,6 +288,7 @@ const replace = (newCss=css) => {
 
 const insertHr = (selectedNode) => {
   const hr = document.createElement("hr");
+  hr.className = "break";
   const parent = selectedNode.parentNode;
   parent.insertBefore(hr, selectedNode);
 };
@@ -301,8 +302,8 @@ Alternatively, in conjunction with the [edit content](#edit-content) bookmarklet
 ```js
 javascript: (()=> {  
   let css = `
-  hr { break-after: page; }
-  @media print { hr { visibility: hidden } }
+  hr.break { break-after: page; }
+  @media print { hr.break { visibility: hidden } }
 `;
 
 const injectCSS = css => {
@@ -317,11 +318,12 @@ const swap = () => {!document.getElementById('css_injection') && injectCSS(css) 
 swap();
   navigator.clipboard.write([
   new ClipboardItem({
-    'text/html': new Blob(['<hr>'], { type: 'text/html' }),
+    'text/html': new Blob(['<hr class="break">'], { type: 'text/html' }),
     'text/plain': new Blob(['---'], { type: 'text/plain' })
   })
 ]);
 })();
+
 ```
 
 <!-- ### 
