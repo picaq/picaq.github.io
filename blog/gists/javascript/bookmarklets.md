@@ -326,6 +326,17 @@ swap();
 
 ```
 
+### fit svg into full screen viewport
+
+```js
+javascript: (()=> {  
+  const svg = document.querySelector('svg');
+  svg.style.maxHeight ='100vh';
+  svg.style.maxWidth ='100vw';
+})();
+```
+
+
 <!-- ### 
 
 ```js
