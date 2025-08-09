@@ -112,4 +112,4 @@ javascript: (()=>{
 
 ## Chrome Extension
 
-I am currently working on a [chrome extension](https://github.com/picaq/chrome-extensions-samples/tree/audio-link-player/functional-samples/tutorial.hello-world) that does this automatically! Keep your eyes peeled.
+I am currently working on a [chrome extension](https://github.com/picaq/all-in-one-qol-chrome-extension) that does this automatically! Keep your eyes peeled.
