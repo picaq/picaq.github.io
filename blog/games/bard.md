@@ -22,7 +22,7 @@ I am playing as a Harengon Bard, and this page simply keeps track of my stats, s
 | Charisma     | 3  |
 
 
-| Bard                   | Charisma                 | 13               | 15                    |
+| Bard                   | Charisma                 | 13               | 5                    |
 | ---------------------- | ------------------------ | ---------------- | --------------------- |
 | spellcasting <br>class | spellcasting <br>ability | spell save<br>DC | spell attack<br>bonus |
 

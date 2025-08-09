@@ -22,7 +22,7 @@ I am playing as a Harengon Bard, and this page simply keeps track of my stats, s
 | Charisma     | 3  |
 
 
-| Bard                   | Charisma                 | 13               | 15                    |
+| Bard                   | Charisma                 | 13               | 5                    |
 | ---------------------- | ------------------------ | ---------------- | --------------------- |
 | spellcasting <br>class | spellcasting <br>ability | spell save<br>DC | spell attack<br>bonus |
 
@@ -68,7 +68,7 @@ As long as the break or tear is no larger than 1 foot in any dimension, you mend
 
 This spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object.
 
-### \*Ray of Frost 1d8
+### \*Ray of Frost 1d8 dmg
 
 | ----------------- | --------------------------- |
 | School            | Evocation                   |
@@ -85,9 +85,14 @@ A frigid beam of blue-white light streaks toward a creature within range. Make a
 
 The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
-## 1 3
+## 1 ▢ ▢ ▢ ▢ / 4
+<details closed markdown="block">
+  <summary>
+    <h3 style="display:inline-block; text-decoration: line-through;
+"> Faerie Fire </h3>
 
-### Faerie Fire
+  </summary>
+
 
 | ----------------- | ----------------------------- |
 | School            | Evocation                     |
@@ -103,8 +108,11 @@ Each object in a 20-foot cube within range is outlined in blue, green, or violet
 Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.
 
 Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible.
+</details>
 
-### Healing Word 1d4
+
+
+### Healing Word 1d4 + 3 char
 
 | ----------------- | ------------------- |
 | School            | Evocation           |
@@ -176,20 +184,36 @@ Starting with the creature that has the lowest current hit points, each creature
 
 When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.
 
-## 2
+## 2 ▢ ▢ / 2
 
-Cloud of Daggers
-School	Conjuration
-Classes	Bard, Sorcerer, Warlock, Wizard
-Ritual?	No
-Duration	Concentration, up to 1 minute
-Components	V, S, M (a sliver of glass)
-Cast Time	1 Action
-Range	60 feet
-You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes 4d4 slashing damage when it enters the spell’s area for the first time on a turn or starts its turn there.
+### Cloud of Daggers 4d4
 
-At Higher Levels
-When you cast this spell using a spell slot of 3rd level or higher, the damage increases
+|---|---|
+|School|Conjuration|
+|Classes|Bard, Sorcerer, Warlock, Wizard|
+|Ritual?|No|
+|Duration|Concentration, up to 1 minute|
+|Components|V, S, M (a sliver of glass)|
+|Cast Time|1 Action|
+|Range|60 feet|
+
+You fill the air with spinning daggers in a *cube 5 feet on each side*, centered on a point you choose within range. A creature takes **4d4 slashing damage** when it enters the spell’s area for the first time on a turn or starts its turn there.
+
+
+### Heat Metal 2d8
+
+|---|---|
+|School|Transmutation|
+|Classes|Artificer, Bard, Druid|
+|Ritual?|No|
+|Duration|Concentration, up to 1 minute|
+|Components|V, S, M (a piece of iron and a flame)|
+|Cast Time|1 Action|
+|Range|60 feet|
+
+Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes **2d8 fire damage** when you cast the spell. Until the spell ends, you *can use a bonus action on each of your subsequent turns to cause this damage again*.
+
+If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn’t drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn.
 
 ## 3
 
