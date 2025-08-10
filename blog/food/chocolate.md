@@ -32,6 +32,9 @@ A collection of my favorite chocolate brands and my opinions about them.
 - Bon-Fiction
   - fruit/spicy flavors are the best
   - Mango Menace is addictive
+- Lindt Intense Orange
+  - fragrant
+  - orange pieces too sugary
 
 ## Hot Cocoa
 
