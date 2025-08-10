@@ -35,6 +35,9 @@ A collection of my favorite chocolate brands and my opinions about them.
 - Lindt Intense Orange
   - fragrant
   - orange pieces too sugary
+- Brookside Açaí & Blueberry Flavors
+  - berry fruit variety
+  - fruit pieces too sugary
 
 ## Hot Cocoa
 
