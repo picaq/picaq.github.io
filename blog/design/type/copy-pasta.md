@@ -128,7 +128,7 @@ Common fine typographic characters for optical typing.
 ```
 	
 ```
-Source: Unicode spaces https://jkorpela.fi/chars/spaces.html
+Source: [Unicode spaces](https://jkorpela.fi/chars/spaces.html)
 
 ## Alphabet Length
 ```
