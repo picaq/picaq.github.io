@@ -7799,6 +7799,8 @@ pre.highlight {
   --medium-grey: #959396;
   --charcoal-grey: #262529;
   --charcoal-grey: #1b1a1e;
+  --codeblock-bg: #31343f;
+  --codeblock-text: #dee2f7;
 }
 
 html.dark-mode body, [data-theme=dark] body {
@@ -8171,7 +8173,7 @@ html.dark-mode thead th, [data-theme=dark] thead th {
   border-bottom: var(--unified-border-style);
 }
 html.dark-mode :not(pre, figure) > code, [data-theme=dark] :not(pre, figure) > code {
-  background-color: #31343f;
+  background-color: var(--codeblock-bg);
   border: var(--unified-border-style);
 }
 html.dark-mode a:visited code, [data-theme=dark] a:visited code {
@@ -8182,7 +8184,7 @@ html.dark-mode div.listingblock > div.content,
 html.dark-mode figure.highlight, [data-theme=dark] div.highlighter-rouge,
 [data-theme=dark] div.listingblock > div.content,
 [data-theme=dark] figure.highlight {
-  background-color: #31343f;
+  background-color: var(--codeblock-bg);
   box-shadow: none;
 }
 html.dark-mode div.highlighter-rouge > button,
@@ -8190,8 +8192,8 @@ html.dark-mode div.listingblock > div.content > button,
 html.dark-mode figure.highlight > button, [data-theme=dark] div.highlighter-rouge > button,
 [data-theme=dark] div.listingblock > div.content > button,
 [data-theme=dark] figure.highlight > button {
-  border: 0.75rem solid #31343f;
-  background-color: #31343f;
+  border: 0.75rem solid var(--codeblock-bg);
+  background-color: var(--codeblock-bg);
   color: var(--light-grey);
 }
 html.dark-mode div.highlighter-rouge > button svg,
@@ -8204,7 +8206,7 @@ html.dark-mode figure.highlight > button svg, [data-theme=dark] div.highlighter-
 html.dark-mode .highlight .table-wrapper td,
 html.dark-mode .highlight .table-wrapper pre, [data-theme=dark] .highlight .table-wrapper td,
 [data-theme=dark] .highlight .table-wrapper pre {
-  background-color: #31343f;
+  background-color: var(--codeblock-bg);
   border: 0;
 }
 html.dark-mode .code-example,
@@ -8230,6 +8232,15 @@ html.dark-mode .listingblock > .title + figure.highlight, [data-theme=dark] .cod
   border-right: var(--unified-border-style);
   border-bottom: var(--unified-border-style);
   border-left: var(--unified-border-style);
+}
+html.dark-mode .highlight,
+html.dark-mode pre.highlight, [data-theme=dark] .highlight,
+[data-theme=dark] pre.highlight {
+  background: var(--codeblock-bg);
+  color: var(--codeblock-text);
+}
+html.dark-mode .highlight pre, [data-theme=dark] .highlight pre {
+  background: var(--codeblock-bg);
 }
 html.dark-mode .text-grey-dk-000, [data-theme=dark] .text-grey-dk-000 {
   color: var(--medium-grey) !important;
