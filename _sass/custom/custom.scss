@@ -481,3 +481,24 @@ h3, .toc, h2 {
   float: right;
   margin-right: 1rem;
 }
+
+// optinoal code block language labels
+
+// [class*="language-"]::before {
+//     display: block;
+//     position: absolute;
+//     right: .75rem;
+//     top: .5rem;
+//     opacity: .75;
+//     font-size: small;
+// }
+// .language-js::before {
+//     content: "js";
+// }
+// .language-html::before {
+//     content: "html";
+// }
+// .language-css::before {
+//     content: "css";
+// }
+
