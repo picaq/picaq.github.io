@@ -1170,7 +1170,7 @@
   },"167": {
     "doc": "Bookmarklets",
     "title": "Open pdf",
-    "content": "open the pdf from a pdf viewer viewer or iframe into the current tab . javascript: window.location = document.querySelector('[href$=pdf]').href . ",
+    "content": "open the pdf from a pdf viewer or iframe into the current tab . javascript: window.location = document.querySelector('[href$=pdf]').href . ",
     "url": "/blog/gists/javascript/bookmarklets#open-pdf",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#open-pdf"
