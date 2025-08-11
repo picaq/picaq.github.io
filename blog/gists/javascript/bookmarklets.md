@@ -395,7 +395,15 @@ javascript: (()=> {
 
 ## Misc
 
-### Mychart open pdf
+### Open pdf
+
+open the pdf from a pdf viewer or iframe into the current tab
+
+```js
+javascript: window.location = document.querySelector('[href$=pdf]').href
+```
+
+#### Mychart open pdf
 
 opens mychart pdf in a full window
 ```js

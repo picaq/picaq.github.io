@@ -11,6 +11,17 @@ Custom user-defined style sheets to better browse the web.
 
 ## Light Themes & Printing
 
+
+### ReMarkable
+
+When a pdf is printed, this prints to the exact size of the ReMarkable 2 or Paper Pro screen size
+```css
+@page {
+    size: 210mm 280mm; /* <- width height */
+    margin: 0;
+}
+```
+
 ### Notion.site
 
 ctrl/cmd + shift +  L swaps between light and dark themes for your own notion notes but not public ones. <br>
