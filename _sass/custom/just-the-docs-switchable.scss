@@ -17,6 +17,8 @@
   --medium-grey: #959396;
   --charcoal-grey: #262529;
   --charcoal-grey: #1b1a1e;
+  --codeblock-bg: #31343f;
+  --codeblock-text: #dee2f7;
 }
 
 
@@ -466,7 +468,7 @@ html.dark-mode, [data-theme="dark"] {
   }
 
   :not(pre, figure) > code {
-    background-color: #31343f;
+    background-color: var(--codeblock-bg);
     border: var(--unified-border-style);
   }
 
@@ -477,15 +479,15 @@ html.dark-mode, [data-theme="dark"] {
   div.highlighter-rouge,
   div.listingblock > div.content,
   figure.highlight {
-    background-color: #31343f;
+    background-color: var(--codeblock-bg);
     box-shadow: none;
   }
 
   div.highlighter-rouge > button,
   div.listingblock > div.content > button,
   figure.highlight > button {
-    border: 0.75rem solid #31343f;
-    background-color: #31343f;
+    border: 0.75rem solid var(--codeblock-bg);
+    background-color: var(--codeblock-bg);
     color: var(--light-grey);
   }
 
@@ -497,7 +499,7 @@ html.dark-mode, [data-theme="dark"] {
 
   .highlight .table-wrapper td,
   .highlight .table-wrapper pre {
-    background-color: #31343f;
+    background-color: var(--codeblock-bg);
     border: 0;
   }
 
@@ -519,15 +521,15 @@ html.dark-mode, [data-theme="dark"] {
     border-left: var(--unified-border-style);
   }
 
-  // .highlight,
-  // pre.highlight {
-  //   background: #31343f;
-  //   color: #dee2f7;
-  // }
+  .highlight,
+  pre.highlight {
+    background: var(--codeblock-bg);
+    color: var(--codeblock-text);
+  }
 
-  // .highlight pre {
-  //   background: #31343f;
-  // }
+  .highlight pre {
+    background: var(--codeblock-bg);
+  }
 
   .text-grey-dk-000 {
     color: var(--medium-grey) !important;
