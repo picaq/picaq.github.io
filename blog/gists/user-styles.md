@@ -14,7 +14,7 @@ Custom user-defined style sheets to better browse the web.
 
 ### ReMarkable
 
-When a pdf is printed, this prints to the exact size of the ReMarkable 2 or Paper Pro screen size
+When a website is “printed” by your browser to a pdf, this prints to the exact size of the ReMarkable 2 or Paper Pro screen content size. Especially noticeable when content is on a dark background.
 ```css
 @page {
     size: 210mm 280mm; /* <- width height */
