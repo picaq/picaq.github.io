@@ -26,8 +26,8 @@ The tables below compare the saturated fat content by grams/serving as well as b
 
 ## Yogurt
 
-| Type                        | Brand           | Name                                                      | Fibre (g) | Prot. (g) | Extra Sugar (g) | Sat fat (g) | Serving vol, wt (g) | % wt Sat | % DV |
-| --------------------------- | --------------- | --------------------------------------------------------- | :-------: | :------: | :-------------: | :---------- | :-----------------: | -------: | ---- |
+| Type                        | Brand           | Name                                                         | Fibre (g) | Prot. (g) | Extra Sugar (g) | Sat fat (g) | Serving vol, wt (g) | % wt Sat | % DV |
+| --------------------------- | --------------- | ------------------------------------------------------------ | :-------: | :------: | :-------------: | :---------- | :-----------------: | -------: | ---- |
 | Plain Soy                   | [Silk][silk]            | Plain Soymilk <br>Dairy-Free Yogurt Alternative            |     2     |    7     |        4        | 0.5         |   3/4&nbsp;cup<br>170    |     0.29 | 3    |
 | Vanilla Soy                 | [Silk][silk]            | Vanilla Soymilk <br>Dairy-Free Yogurt Alternative          |     2     |    7     |      **12**       | 0.5         |   3/4&nbsp;cup<br>170    |     0.29 | 3    |
 | Strawberry Soy              | [Silk][silk]            | Soy Milk Dairy-Free Yogurt Alternative                    |     2     |    6     |       **12**        | 0*          |         150         |        0 | 0    |
@@ -36,6 +36,10 @@ The tables below compare the saturated fat content by grams/serving as well as b
 | Cashew Coconut              | [Forager Project][forager] | Cashew and Coconut Milk Yogurt, Organic Unsweetened Plain |     1     |    3     |        1        | **2**           |    5.3 oz<br>150    |     1.33 | 10   |
 | Vanilla<br>Cashew Coconut   | [Forager Project][forager] | Cashew and Coconut Milk Yogurt, Organic Vanilla Bean      |     1     |    3     |        8        | **2**           |    5.3 oz<br>150    |     1.33 | 10   |
 | Blueberry<br>Cashew Coconut | [Forager Project][forager] | Cashewmilk Yogurt, Organic Blueberry                      |     1     |    3     |        8        | **2**           |    5.3 oz<br>150    |     1.33 | 10   |
+| Vanilla Coconut             | [So Delicious][sodelicious] | unsweetened vanilla coconut yogurt alternative   |     2     |    <1     |        0        |  **4.5**   |    3/4 cup<br>170     |  2.65  |  23   |
+| Vanilla Coconut             | [Oui by Yoplait][oui]  | Dairy-Free Vanilla Yogurt coconut dairy alternative   |     0     |     1     |        11       |    **8**   |    5 oz<br>141        |  5.67  |  39   |
+| Mango Coconut               | [Oui by Yoplait][oui]  | Dairy-Free Mango coconut dairy alternative            |     0     |     1     |        11       |    **8**   |    5 oz<br>141        |  5.67  |  39   |
+| Strawberry Coconut          | [Oui by Yoplait][oui]  | Dairy-Free Strawberry coconut dairy alternative       |     0     |     1     |        12       |    **7**   |    5 oz<br>141        |  4.96  |  33   |
 
 \* *This zero saturated fat value might not be accurate due to nutrition facts rounding.*
 
@@ -57,3 +61,5 @@ This&nbsp;table&nbsp;format&nbsp;could be useful for anyone dairy-free due to ei
 [nuts]: https://nutsforcheese.com/
 [tjs]: https://www.traderjoes.com/home
 [miyokos]: https://www.miyokos.com/
+[sodelicious]: https://sodeliciousdairyfree.com/
+[oui]: https://www.ouibyyoplait.com/products/dairy-free
