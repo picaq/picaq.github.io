@@ -393,6 +393,21 @@ javascript: (()=> {
 })();
 ```
 
+## Reddit
+
+swap between old reddit and new reddit
+```js
+javascript: 
+const oldReddit = "old.reddit.com";
+const newReddit = "www.reddit.com";
+
+const https = "https://";
+const path = window.location.pathname;
+
+if (window.location.hostname = oldReddit) window.location = https + newReddit + path;
+else if (window.location.hostname = newReddit) window.location = https + oldReddit + path;
+```
+
 ## Misc
 
 ### Open pdf
