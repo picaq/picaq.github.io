@@ -38,6 +38,11 @@ A collection of my favorite chocolate brands and my opinions about them.
 - Brookside Açaí & Blueberry Flavors
   - berry fruit variety
   - fruit pieces too sugary
+- HU SALTY Dark Chocolate 70% Cacao
+  - tasty
+  - not too sweet
+  - 100% compostable packaging
+  - fair trade
 
 ## Hot Cocoa
 
