@@ -43,6 +43,9 @@ A collection of my favorite chocolate brands and my opinions about them.
   - not too sweet
   - 100% compostable packaging
   - fair trade
+- Endangered Species Chocolate almonds & sea salt
+  - not too sweet
+  
 
 ## Hot Cocoa
 

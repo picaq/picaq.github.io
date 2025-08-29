@@ -257,6 +257,12 @@ swap();
 - css needs can be predefined in the bookmarklet as `css`
 - if pasted in the console or ran as chrome snippet instead, `replace()` becomes available for use and toggled css is modifiable as an argument
 
+### remove extra newlines (\n)
+```js
+[...document.querySelectorAll('code')].forEach( code => code.innerText = code.innerText.replaceAll('\n\n', '\n'))
+```
+
+
 ## Printing Pages
 
 ### insert page break before selected element
