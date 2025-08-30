@@ -72,7 +72,103 @@
 <li class="nav-list-item external"> <a href="https://github.com/picaq" class="nav-list-link external" target="_blank" rel="noopener noreferrer"> @picaq <svg viewbox="0 0 24 24" aria-labelledby="svg-external-link-title"><use xlink:href="#svg-external-link"></use></svg> </a> </li>
 <li class="nav-list-item external"> <a href="https://www.linkedin.com/in/mandy-chen-picaq/" class="nav-list-link external" target="_blank" rel="noopener noreferrer"> in/mandy-chen-picaq <svg viewbox="0 0 24 24" aria-labelledby="svg-external-link-title"><use xlink:href="#svg-external-link"></use></svg> </a> </li>
 <li class="nav-list-item external"> <a href="https://twitter.com/picaq2" class="nav-list-link external" target="_blank" rel="noopener noreferrer"> x/picaq2 <svg viewbox="0 0 24 24" aria-labelledby="svg-external-link-title"><use xlink:href="#svg-external-link"></use></svg> </a> </li>
-</ul> <p>© 2025 <a href="https://mandychen.art" target="_blank">Mandy Chen</a>. All rights reserved.</p> <p style="padding-right:.215em;">Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a></p> </footer> </div> <div class="main" id="top"> <div id="main-header" class="main-header"> <div class="search" role="search"> <div class="search-input-wrap"> <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Mandy’s Blog" aria-label="Search Mandy’s Blog" autocomplete="off"> <label for="search-input" class="search-label"><svg viewbox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label> </div> <div id="search-results" class="search-results"></div> </div> </div> <div class="main-content-wrap"> <nav aria-label="Breadcrumb" class="breadcrumb-nav"> <ol class="breadcrumb-nav-list"> <li class="breadcrumb-nav-list-item"><a href="/blog/gists">Gists</a></li> <li class="breadcrumb-nav-list-item"><a href="/blog/gists/css">CSS</a></li> <li class="breadcrumb-nav-list-item"><span>User Styles</span></li> </ol> </nav> <div id="main-content" class="main-content"> <main> <h1 id="user-styles" class="U"> <a href="#user-styles" class="anchor-heading" aria-labelledby="user-styles"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> User Styles </h1> <p>Custom user-defined style sheets to better browse the web.</p> <h2 id="light-themes--printing" class="L"> <a href="#light-themes--printing" class="anchor-heading" aria-labelledby="light-themes--printing"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Light Themes &amp; Printing </h2> <h3 id="remarkable"> <a href="#remarkable" class="anchor-heading" aria-labelledby="remarkable"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> ReMarkable </h3> <p>When a website is “printed” by your browser to a pdf, this prints to the exact size of the ReMarkable 2 or Paper Pro screen content size. Especially noticeable when content is on a dark background.</p> <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@page</span> <span class="p">{</span>
+</ul> <p>© 2025 <a href="https://mandychen.art" target="_blank">Mandy Chen</a>. All rights reserved.</p> <p style="padding-right:.215em;">Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a></p> </footer> </div> <div class="main" id="top"> <div id="main-header" class="main-header"> <div class="search" role="search"> <div class="search-input-wrap"> <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Mandy’s Blog" aria-label="Search Mandy’s Blog" autocomplete="off"> <label for="search-input" class="search-label"><svg viewbox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label> </div> <div id="search-results" class="search-results"></div> </div> </div> <div class="main-content-wrap"> <nav aria-label="Breadcrumb" class="breadcrumb-nav"> <ol class="breadcrumb-nav-list"> <li class="breadcrumb-nav-list-item"><a href="/blog/gists">Gists</a></li> <li class="breadcrumb-nav-list-item"><a href="/blog/gists/css">CSS</a></li> <li class="breadcrumb-nav-list-item"><span>User Styles</span></li> </ol> </nav> <div id="main-content" class="main-content"> <main> <h1 id="user-styles" class="U"> <a href="#user-styles" class="anchor-heading" aria-labelledby="user-styles"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> User Styles </h1> <p>Custom user-defined style sheets to better browse the web.</p> <h2 id="monaco--codemirror-editors" class="M"> <a href="#monaco--codemirror-editors" class="anchor-heading" aria-labelledby="monaco--codemirror-editors"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Monaco &amp; CodeMirror editors </h2> <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* fixes offset cursor in editor */</span>
+<span class="nc">.monaco-editor</span> <span class="nc">.view-lines</span> <span class="nc">.view-line</span><span class="o">,</span> <span class="nc">.cm-line</span> <span class="p">{</span>
+    <span class="c">/* for iosevka: editor font size * 1.10138462 */</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">110.138462%</span> <span class="cp">!important</span><span class="p">;</span> 
+    <span class="nl">font-family</span><span class="p">:</span> <span class="n">Iosevka</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">font-feature-settings</span><span class="p">:</span> <span class="s1">"liga"</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">code</span><span class="o">,</span> <span class="nt">pre</span><span class="o">,</span> <span class="nc">.tio-markdown_code</span><span class="o">,</span> <span class="o">[</span><span class="nt">id</span><span class="o">^=</span><span class="s1">"file"</span><span class="o">],</span> <span class="nc">.file-info</span><span class="o">,</span> <span class="nc">.CodeMirror-linenumber</span><span class="o">,</span> <span class="nf">#copilot-button-positioner</span><span class="o">,</span> <span class="nc">.cm-gutterElement</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="n">Iosevka</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="nl">font-feature-settings</span><span class="p">:</span> <span class="s1">"liga"</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* remove horrendous dots in coderpad */</span>
+<span class="nc">.monaco-editor</span> <span class="nc">.mtkw</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nx">#0000</span> <span class="cp">!important</span>
+<span class="p">}</span>
+
+<span class="c">/* cursor */</span> 
+    <span class="nc">.cursor.monaco-mouse-cursor-text</span><span class="o">,</span>
+    <span class="nc">.cm-cursor.cm-cursor-primary</span>
+<span class="p">{</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="nx">#e9b6c5bf</span> <span class="cp">!important</span><span class="p">;</span>
+        <span class="nl">border-color</span><span class="p">:</span> <span class="nx">#e9b6c5bf</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* colors */</span>
+
+<span class="nd">:root</span> <span class="p">{</span>
+         <span class="py">--comment-green</span><span class="p">:</span> <span class="nx">#6a9955</span><span class="p">;</span>
+    <span class="py">--comment-steel-blue</span><span class="p">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">97</span><span class="p">,</span> <span class="m">124</span><span class="p">,</span> <span class="m">149</span><span class="p">)</span> <span class="cp">!important</span><span class="p">;</span>
+          <span class="py">--keyword-pink</span><span class="p">:</span> <span class="nx">#c586c0</span><span class="p">;</span>
+         <span class="py">--keyword-lilac</span><span class="p">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">177</span><span class="p">,</span> <span class="m">135</span><span class="p">,</span> <span class="m">232</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c">/* matching bracket colors */</span>
+
+<span class="nc">.view-line</span> <span class="nc">.mtk3</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="l">--comment-steel-blue</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.bracket-highlighting-0</span><span class="o">,</span> <span class="nc">.bracket-highlighting-3</span><span class="o">,</span> <span class="nc">.bracket-highlighting-6</span><span class="o">,</span> <span class="nc">.bracket-highlighting-9</span><span class="o">,</span> <span class="nc">.bracket-highlighting-12</span><span class="o">,</span> <span class="nc">.bracket-highlighting-15</span><span class="o">,</span> <span class="nc">.bracket-highlighting-18</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nx">#ffd700a6</span> <span class="cp">!important</span>
+<span class="p">}</span>
+
+<span class="nc">.view-line</span> <span class="nc">.mtk13</span><span class="o">,</span> <span class="nc">.mtk9.bracket-highlighting-1</span><span class="o">,</span> <span class="nc">.bracket-highlighting-4</span><span class="o">,</span> <span class="nc">.bracket-highlighting-7</span><span class="o">,</span> <span class="nc">.bracket-highlighting-10</span><span class="o">,</span> <span class="nc">.bracket-highlighting-13</span><span class="o">,</span> <span class="nc">.bracket-highlighting-16</span><span class="o">,</span> <span class="nc">.bracket-highlighting-19</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="l">--keyword-pink</span><span class="p">)</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.bracket-highlighting-2</span><span class="o">,</span> <span class="nc">.bracket-highlighting-5</span><span class="o">,</span> <span class="nc">.bracket-highlighting-8</span><span class="o">,</span> <span class="nc">.bracket-highlighting-11</span><span class="o">,</span> <span class="nc">.bracket-highlighting-14</span><span class="o">,</span> <span class="nc">.bracket-highlighting-17</span><span class="o">,</span> <span class="nc">.bracket-highlighting-20</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nx">cornflowerblue</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* colors */</span>
+
+<span class="nt">div</span><span class="nc">.CodeMirror</span> <span class="nt">span</span><span class="nc">.CodeMirror-matchingbracket</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">115</span><span class="p">,</span> <span class="m">176</span><span class="p">,</span> <span class="m">112</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.cm-s-textmate</span> <span class="nt">span</span><span class="nc">.cm-property</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">rgba</span><span class="p">(</span><span class="m">219</span><span class="p">,</span> <span class="m">210</span><span class="p">,</span> <span class="m">198</span><span class="p">,</span> <span class="m">.89</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.cm-s-textmate</span> <span class="nt">span</span><span class="nc">.cm-def</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">122</span><span class="p">,</span> <span class="m">158</span><span class="p">,</span> <span class="m">208</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.cm-s-textmate</span> <span class="nt">span</span><span class="nc">.cm-keyword</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nx">#b187e8</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.cm-s-textmate</span> <span class="nt">span</span><span class="nc">.cm-variable-2</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">140</span><span class="p">,</span> <span class="m">190</span><span class="p">,</span> <span class="m">198</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.cm-s-textmate</span> <span class="nt">span</span><span class="nc">.cm-comment</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">97</span><span class="p">,</span> <span class="m">124</span><span class="p">,</span> <span class="m">149</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.cm-s-textmate</span> <span class="nt">span</span><span class="nc">.cm-operator</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">86</span><span class="p">,</span> <span class="m">166</span><span class="p">,</span> <span class="m">114</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.cm-s-textmate</span> <span class="nt">span</span><span class="nc">.cm-number</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">90</span><span class="p">,</span> <span class="m">185</span><span class="p">,</span> <span class="m">196</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.view-lines</span> <span class="p">{</span>
+      <span class="c">/* softer colors */</span>
+    <span class="nl">filter</span><span class="p">:</span> <span class="nf">saturate</span><span class="p">(</span><span class="m">0.7</span><span class="p">)</span> <span class="nf">brightness</span><span class="p">(</span><span class="m">1</span><span class="p">)</span> <span class="nf">sepia</span><span class="p">(</span><span class="m">0.1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.tio-markdown_img</span> <span class="p">{</span>
+    <span class="nl">filter</span><span class="p">:</span> <span class="nf">invert</span><span class="p">(</span><span class="m">.894</span><span class="p">)</span> <span class="nf">hue-rotate</span><span class="p">(</span><span class="m">177deg</span><span class="p">);</span>
+    <span class="nl">opacity</span><span class="p">:</span> <span class="m">.67</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div> <h2 id="light-themes--printing" class="L"> <a href="#light-themes--printing" class="anchor-heading" aria-labelledby="light-themes--printing"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Light Themes &amp; Printing </h2> <h3 id="remarkable"> <a href="#remarkable" class="anchor-heading" aria-labelledby="remarkable"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> ReMarkable </h3> <p>When a website is “printed” by your browser to a pdf, this prints to the exact size of the ReMarkable 2 or Paper Pro screen content size. Especially noticeable when content is on a dark background.</p> <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@page</span> <span class="p">{</span>
     <span class="nl">size</span><span class="p">:</span> <span class="m">210mm</span> <span class="m">280mm</span><span class="p">;</span> <span class="c">/* &lt;- width height */</span>
     <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
 <span class="p">}</span>
