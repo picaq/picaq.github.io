@@ -131,6 +131,7 @@ When a website is “printed” by your browser to a pdf, this prints to the exa
     }
 }    
 ```
+more info on printing [CSS print page styling | DocuSeal](https://www.docuseal.com/blog/css-print-page-style) 
 
 ### Notion.site
 
