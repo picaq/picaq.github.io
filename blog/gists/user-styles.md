@@ -117,10 +117,19 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 
 When a website is “printed” by your browser to a pdf, this prints to the exact size of the ReMarkable 2 or Paper Pro screen content size. Especially noticeable when content is on a dark background.
 ```css
-@page {
+@media print {
+    @page {
     size: 210mm 280mm; /* <- width height */
-    margin: 0;
-}
+    margin-top: 0.25in;
+    margin-bottom: 0.25in;
+    margin-left: 0;
+    margin-right: 0;
+    }
+    
+    body {
+        zoom: 88%;
+    }
+}    
 ```
 
 ### Notion.site
