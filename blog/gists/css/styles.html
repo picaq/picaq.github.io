@@ -168,10 +168,19 @@
     <span class="nl">filter</span><span class="p">:</span> <span class="nf">invert</span><span class="p">(</span><span class="m">.894</span><span class="p">)</span> <span class="nf">hue-rotate</span><span class="p">(</span><span class="m">177deg</span><span class="p">);</span>
     <span class="nl">opacity</span><span class="p">:</span> <span class="m">.67</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div></div> <h2 id="light-themes--printing" class="L"> <a href="#light-themes--printing" class="anchor-heading" aria-labelledby="light-themes--printing"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Light Themes &amp; Printing </h2> <h3 id="remarkable"> <a href="#remarkable" class="anchor-heading" aria-labelledby="remarkable"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> ReMarkable </h3> <p>When a website is “printed” by your browser to a pdf, this prints to the exact size of the ReMarkable 2 or Paper Pro screen content size. Especially noticeable when content is on a dark background.</p> <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@page</span> <span class="p">{</span>
+</code></pre></div></div> <h2 id="light-themes--printing" class="L"> <a href="#light-themes--printing" class="anchor-heading" aria-labelledby="light-themes--printing"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Light Themes &amp; Printing </h2> <h3 id="remarkable"> <a href="#remarkable" class="anchor-heading" aria-labelledby="remarkable"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> ReMarkable </h3> <p>When a website is “printed” by your browser to a pdf, this prints to the exact size of the ReMarkable 2 or Paper Pro screen content size. Especially noticeable when content is on a dark background.</p> <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="n">print</span> <span class="p">{</span>
+    <span class="k">@page</span> <span class="p">{</span>
     <span class="nl">size</span><span class="p">:</span> <span class="m">210mm</span> <span class="m">280mm</span><span class="p">;</span> <span class="c">/* &lt;- width height */</span>
-    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
-<span class="p">}</span>
+    <span class="nl">margin-top</span><span class="p">:</span> <span class="m">0.25in</span><span class="p">;</span>
+    <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">0.25in</span><span class="p">;</span>
+    <span class="nl">margin-left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">margin-right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="nt">body</span> <span class="p">{</span>
+        <span class="py">zoom</span><span class="p">:</span> <span class="m">88%</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>    
 </code></pre></div></div> <h3 id="notionsite"> <a href="#notionsite" class="anchor-heading" aria-labelledby="notionsite"><svg viewbox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Notion.site </h3> <p>ctrl/cmd + shift + L swaps between light and dark themes for your own notion notes but not public ones. <br> Here is a workaround:</p> <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span><span class="nt">style</span><span class="o">*=</span><span class="s1">"color: rgba(255, 255, 255, 0.81)"</span><span class="o">]</span> <span class="p">{</span>
     <span class="nl">color</span><span class="p">:</span> <span class="nf">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.81</span><span class="p">)</span> <span class="cp">!important</span>
 <span class="p">}</span>
