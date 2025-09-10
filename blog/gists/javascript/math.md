@@ -250,10 +250,16 @@ const str2hex = (string) => {
 
 ```js
 const intBin = int => int.toString(2); // must be called as a function to work otherwise it will error
+const intBin = int => int.toString(2).padStart(8, '0'); // padstart optional to fill 8 bit slots
 const binInt = bin => parseInt(bin, 2);
 
 const intHex = int => int.toString(16); // must be called as a function to work otherwise it will error
 const hexInt = hex => parseInt(hex, 16);
+```
+
+#### string to binary
+```
+str.split('').map( a => intBin(a.charCodeAt(0)).padStart(8, '0') ).join(" ")
 ```
 
 ### xor encryption to hex and back
