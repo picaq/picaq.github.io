@@ -10,7 +10,7 @@ nav_order: 5
 CSS is painting by numbers. The numbers are your selectors.
 
 ## Codepen Demos
-
+- [3D Scatter Chart of Balloons Plotted with Highcharts](https://codepen.io/picaq/pen/pvjXxWd) 
 - [Ceiling light button](https://codepen.io/picaq/pen/RwmQOwZ)
 - [Flexbox footer](https://codepen.io/picaq/pen/NWYObBY)
 - [Hanging Quotes & Typography](https://codepen.io/picaq/pen/PorGQaR)
