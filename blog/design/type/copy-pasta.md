@@ -102,6 +102,11 @@ Common fine typographic characters for optical typing.
 ```
  
 ```
+### New Lines
+#### line feed (\n)
+```
+
+```
 
 ### Etc
 #### ogham space mark (1/2 em?)
