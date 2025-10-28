@@ -113,3 +113,7 @@ javascript: (()=>{
 ## Chrome Extension
 
 I am currently working on a [chrome extension](https://github.com/picaq/all-in-one-qol-chrome-extension) that does this automatically! Keep your eyes peeled.
+
+Todo: 
+- [ ] create non-default icons & branding
+- [ ] [publish](https://developer.chrome.com/docs/webstore/publish) to the chrome web store
