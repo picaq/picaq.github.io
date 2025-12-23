@@ -238,7 +238,7 @@ Default temperature settings are in **bold** and may or may not be selectable as
 ### Nuts function at 0F 
 - cuts down the blending time to :08
 - I use this, and/or the Juice function to make fruit smoothies
-- I add in raw rolled oats ( 2 – 3 tbsp ) and/or cooked edamama ( 1/4 – 1/3 cup with its cooking water ) for extra fibre and protein
+- I add in raw rolled oats ( 2 – 3 tbsp ) and/or cooked edamame ( 1/4 – 1/3 cup with its cooking water ) for extra fibre and protein
 
 ### Grains function
 I use this to make hot chocolate. It results in very smooth, fluffy and airy hot cocoa.
