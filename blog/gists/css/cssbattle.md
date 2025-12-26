@@ -22,6 +22,7 @@ I started to play [CSSBattle](https://cssbattle.dev/)
 <div></div>
 </div>
 <style>
+  .code-example { padding: 0; min-height: 300px }
   #target--24122025 + .code-example div {
     width: 170px;
     height: 40px;
@@ -78,7 +79,6 @@ I started to play [CSSBattle](https://cssbattle.dev/)
 <div></div>
 </div>
 <style>
-  .code-example { padding: 0}
   #target--23122025 + .code-example div {
     width: 80px;
     height: 80px;
@@ -143,5 +143,90 @@ I started to play [CSSBattle](https://cssbattle.dev/)
     background: #2D3464;
     height: 100px
   } 
+</style>
+```
+
+## [Target  (25/12/2025)](https://cssbattle.dev/play/MjOjFgW5rP2qbY8aQxbm) 
+
+<div class="code-example">
+<div></div><div></div><div></div><div></div><div></div>
+</div>
+
+<style>
+  #target--25122025 + .code-example div {
+    width: 20px;
+    height: 20px;
+    background: #0F6B38;
+  }
+  
+  #target--25122025 + .code-example div + div {
+    width: 50px
+  }
+  #target--25122025 + .code-example div + div + div {
+    width: 80px
+  }
+  #target--25122025 + .code-example div + div + div + div {
+    width: 110px
+  }
+  #target--25122025 + .code-example div + div + div + div + div {
+    width: 140px
+  }
+
+  #target--25122025 + .code-example div:first-child {
+    background: #FFCA00
+  }
+  #target--25122025 + .code-example div:nth-child(2n) {
+    background: #1BBC63
+  }
+
+  #target--25122025 + .code-example {
+    background: #11092D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 15px);
+    justify-content: center;
+    gap: 20px;
+  }
+</style>
+
+```html
+<div></div><div></div><div></div><div></div><div></div>
+<style>
+  div {
+    width: 20px;
+    height: 20px;
+    background: #0F6B38;
+  }
+  
+  div + div {
+    width: 50px
+  }
+  div + div + div {
+    width: 80px
+  }
+  div + div + div + div {
+    width: 110px
+  }
+  div + div + div + div + div {
+    width: 140px
+  }
+
+  div:first-child {
+    background: #FFCA00
+  }
+  div:nth-child(2n) {
+    background: #1BBC63
+  }
+
+  body {
+    background: #11092D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 15px);
+    justify-content: center;
+    gap: 20px;
+  }
 </style>
 ```
