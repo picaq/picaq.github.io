@@ -230,3 +230,100 @@ I started to play [CSSBattle](https://cssbattle.dev/)
   }
 </style>
 ```
+
+## [Target  (26/12/2025)](https://cssbattle.dev/play/xUfql84OBialk8b35bUv) 
+
+<div class="code-example">
+<article>
+  <section>
+    <div></div>
+    <div></div>
+  </section>
+  <section>
+    <div></div>
+    <div></div>
+  </section>
+</article>
+</div>
+<style>
+  #target--26122025 + .code-example div {
+    width: 60px;
+    height: 60px;
+    background: #EEC8EA;
+    display: inline-block;
+    margin: 8px;
+    transform: rotate(-10deg);
+  }
+  #target--26122025 + .code-example section:first-child > div:last-child,
+  #target--26122025 + .code-example section:last-child > div:first-child
+  {
+    transform: rotate(10deg)
+  }
+  
+  #target--26122025 + .code-example {
+    background: #A82973;
+    align-items: center;
+    display: flex;
+  }
+  #target--26122025 + .code-example article {
+    margin: auto;
+    transform:translate(-.1px, 1.95px)
+  }
+</style>
+
+```html
+<article>
+  <section>
+    <div></div>
+    <div></div>
+  </section>
+  <section>
+    <div></div>
+    <div></div>
+  </section>
+</article>
+
+<style>
+ div {
+    width: 60px;
+    height: 60px;
+    background: #EEC8EA;
+    display: inline-block;
+    margin: 8px;
+    transform: rotate(-10deg);
+  }
+  section:first-child > div:last-child,
+  section:last-child > div:first-child
+  {
+    transform: rotate(10deg)
+  }
+  
+  body {
+    background: #A82973;
+    align-items: center;
+    display: flex;
+  }
+  article {
+    margin: auto;
+    transform:translate(-.1px, 1.95px)
+  }
+</style>
+```
+
+<!-- 
+## [Target  (27/12/2025)](https://cssbattle.dev/play/) 
+
+<div class="code-example">  
+
+</div>
+
+<style>
+  #target--27122025 + .code-example {
+    
+  }
+</style>
+
+```html
+
+``` -->
+
