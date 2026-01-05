@@ -12,7 +12,6 @@ I started to play [CSSBattle](https://cssbattle.dev/)
 {% include toc.html %}
 
 ## [Target  (24/12/2025)](https://cssbattle.dev/play/H9JrvODFbvSNLt55U6CA) 
-
 <div class="code-example">
 
 <div></div>
@@ -22,7 +21,12 @@ I started to play [CSSBattle](https://cssbattle.dev/)
 <div></div>
 </div>
 <style>
-  .code-example { padding: 0; min-height: 300px }
+  .code-example { padding: 0; min-height: 300px; width: 400px; max-width: 100%}
+  @media only screen and (min-width: 1080px) { 
+    .code-example { float: right; transition: transform .12s ease-in-out; }  [class*="highlighter"] { max-width: 350px;} 
+    .code-example { transform: translate(1rem) 
+    }
+  }
   #target--24122025 + .code-example div {
     width: 170px;
     height: 40px;
