@@ -7,9 +7,73 @@ nav_order: 10
 
 ## Promise
 
-### Try Catch & Error
+### Async / Await & .then() chain
+
+Using async/await
+
+```js
+const url = `https://someapi.com/${somevars}`;
+
+const response = await fetch(url);
+const text = await response.text();
+const json = await response.json();
+
+console.log(text, json); 
+```
+
+.then() chain
+
+```js
+const response = () => fetch(url)
+  .then(response => response.json())
+  .then(json => {
+    console.log(json); 
+  });
+
+response();
+```
+
+#### Try Catch & Error
 
 Try catch and await async in a network API request
+
+Using async/await with try/catch
+
+```js
+try {
+  const response = await fetch(url);
+  
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  
+  const json = await response.json();
+  console.log(json);
+} catch (error) {
+  console.error('Error fetching data:', error);
+}
+```
+
+Using `.then()` chain with `.catch()`
+
+```js
+fetch(url)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.text();
+  })
+  .then(text => {
+    console.log(text); // "some string"
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
+```
+
+
+example
 
 ```js
 const getCityValues = async () => {
