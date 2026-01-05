@@ -21,7 +21,9 @@ I started to play [CSSBattle](https://cssbattle.dev/)
 <div></div>
 </div>
 <style>
-  .code-example { padding: 0; min-height: 300px; width: 400px; max-width: 100%}
+  .main-content .code-example * { box-sizing: content-box; /* default to override jekyll theme */}
+  .code-example { padding: 0; min-height: 300px; width: 400px; max-width: 100%; overflow: hidden; }
+  .main-content h2 + .code-example { margin-top: 0}
   @media only screen and (min-width: 1080px) { 
     .code-example { float: right; transition: transform .12s ease-in-out; }  [class*="highlighter"] { max-width: 350px;} 
     .code-example { transform: translate(1rem) 
@@ -314,6 +316,155 @@ I started to play [CSSBattle](https://cssbattle.dev/)
 </style>
 ```
 
+
+## [Target  (4/1/2026)](https://cssbattle.dev/play/j9uSZ9BT1SQoSv0nT1XH)  
+
+<div class="code-example">  
+<div><p></p></div>
+</div>
+
+<style>
+  #target--412026 + .code-example {
+    background: #4C455B;
+    display: flex;
+  }
+
+  #target--412026 + .code-example div {
+    width: 240px;
+    height: 140px;
+    margin: auto;
+    border: 20px solid #8AB8B6;
+    border-width: 30px 20px;
+    box-sizing: content-box; /* default to override jekyll theme */
+  }
+  #target--412026 + .code-example div::before
+  , #target--412026 + .code-example div::after 
+  {
+    content: "";
+    width: 60px;
+    height: 240px;
+    display: block;
+    background: #F3EAD2;
+    position: absolute; /* unpredictable, use relative instead */
+    z-index: -1;
+  }
+  #target--412026 + .code-example div::after {
+    right: 80px
+  }
+  #target--412026 + .code-example p {
+    background: #8AB8B6;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -16px;
+    z-index: -2;
+  }
+  
+</style>
+
+```html
+<div><p></p></div>
+<style>
+  div {
+    width: 240px;
+    height: 140px;
+    margin: auto;
+    border: 20px solid #8AB8B6;
+    border-width: 30px 20px;
+  }
+  div::before
+  , div::after 
+  {
+    content: "";
+    width: 60px;
+    height: 240px;
+    display: block;
+    background: #F3EAD2;
+    position: absolute;
+    top: 30px;
+    z-index: -1;
+  }
+  div::after {
+    right: 80px
+  }
+  body {
+    background: #4C455B;
+    display: flex;
+  }
+  p {
+    background: #8AB8B6;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -16px;
+    z-index: -2;
+  }
+</style>
+```
+
+
+## [Target  (5/1/2026)](https://cssbattle.dev/play/Blb7MuTMOoVdpEa6CYY3) 
+
+<div class="code-example">  
+<div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+<style>
+  #target--512026 + .code-example div {
+    width: 56px;
+    height: 170px;
+    background: #EFEB99;
+    display: inline-block;
+  }
+  #target--512026 + .code-example > div:nth-child(-n+3) {
+    margin-right: 56px;
+  }
+  #target--512026 + .code-example > div:nth-child(n+5) {
+    margin-left: 56px;
+    position: relative;
+    top: -40px;
+  }
+  #target--512026 + .code-example > div:nth-child(6) {
+    margin-left: 52px;
+  }
+  #target--512026 + .code-example {
+    background: #8647E6;
+    padding: 0 3px 0 4px; margin: 0;
+    width: 414px;
+    height: 307px;
+    transform: translate(1.93rem);
+  }
+</style>
+
+```html
+<div></div><div></div>
+<style>
+  div {
+    width: 56px;
+    height: 170px;
+    background: #EFEB99;
+    display: inline-block;
+  }
+  div:nth-child(-n+3) {
+    margin-right: 56px;
+  }
+  div:nth-child(n+5) {
+    margin-left: 56px;
+    position: relative;
+    top: -40px;
+  }
+  div:nth-child(6) {
+    margin-left: 52px;
+  }
+  body {
+    background: #8647E6;
+    margin: 0 4px;
+  }
+</style>
+```
+
+
+[:nth-child() - CSS \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:nth-child) 
+
 <!-- 
 ## [Target  (27/12/2025)](https://cssbattle.dev/play/) 
 
@@ -322,7 +473,7 @@ I started to play [CSSBattle](https://cssbattle.dev/)
 </div>
 
 <style>
-  #target--27122025 + .code-example {
+  #target--412026 + .code-example {
     
   }
 </style>
