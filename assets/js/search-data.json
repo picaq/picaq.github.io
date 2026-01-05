@@ -2101,7 +2101,7 @@
   },"300": {
     "doc": ":has()",
     "title": "Examples",
-    "content": "Ceiling light button . ",
+    "content": "Ceiling light button . hover over element to select parent and siblings . ",
     "url": "/blog/gists/css/has#examples",
     
     "relUrl": "/blog/gists/css/has#examples"
