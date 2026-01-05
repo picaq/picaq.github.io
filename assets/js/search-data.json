@@ -2535,7 +2535,7 @@
   },"362": {
     "doc": "Promise",
     "title": "Async / Await &amp; .then() chain",
-    "content": "Using async/await . const url = `https://someapi.com/${somevars}`; const response = await fetch(url); const text = await response.text(); const json = await response.json(); console.log(text, json); .then() chain . fetch(url) .then(response =&gt; response.json()) .then(json =&gt; { console.log(json); }); . ",
+    "content": "Using async/await . const url = `https://someapi.com/${somevars}`; const response = await fetch(url); const text = await response.text(); const json = await response.json(); console.log(text, json); .then() chain . const response = () =&gt; fetch(url) .then(response =&gt; response.json()) .then(json =&gt; { console.log(json); }); response(); . ",
     "url": "/blog/gists/javascript/promise#async--await--then-chain",
     
     "relUrl": "/blog/gists/javascript/promise#async--await--then-chain"
