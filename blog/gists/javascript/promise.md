@@ -5,11 +5,11 @@ parent: JavaScript
 nav_order: 10
 ---
 
-## Promise
+# Promise
 
-### Async / Await & .then() chain
+## Async / Await & .then() chain
 
-Using async/await
+### Using async/await
 
 ```js
 const url = `https://someapi.com/${somevars}`;
@@ -21,7 +21,7 @@ const json = await response.json();
 console.log(text, json); 
 ```
 
-.then() chain
+### .then() chain
 
 ```js
 const response = () => fetch(url)
@@ -33,11 +33,11 @@ const response = () => fetch(url)
 response();
 ```
 
-#### Try Catch & Error
+### Try Catch & Error
 
 Try catch and await async in a network API request
 
-Using async/await with try/catch
+#### Using async/await with try/catch
 
 ```js
 try {
@@ -54,7 +54,7 @@ try {
 }
 ```
 
-Using `.then()` chain with `.catch()`
+#### Using `.then()` chain with `.catch()`
 
 ```js
 fetch(url)
@@ -72,8 +72,7 @@ fetch(url)
   });
 ```
 
-
-example
+#### example
 
 ```js
 const getCityValues = async () => {
@@ -88,6 +87,36 @@ const getCityValues = async () => {
     console.error(userCity, 'is not found!');
   }
 }
+```
+
+#### CORS
+
+bypass CORS with a proxy
+
+```js
+const getData = async (hr = time) => {
+  try {
+    const response = await fetch(
+      'https://corsproxy.io/' +
+        `https://apidata.com/treasure/${String(hr).padStart(2,'0')}.json`,
+      {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET',
+          'Access-Control-Allow-Headers':
+            'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With',
+        },
+      }
+    );
+    const jsonData = await response.json();
+    console.log(jsonData);
+    cache[hr] = jsonData; // add api response data to cache
+    doSomething(hr);
+    
+  } catch (error) {
+    console.error(error.message);
+  };
+};
 ```
 
 ### Wait Before Execution
