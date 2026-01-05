@@ -25,6 +25,10 @@ aka Accordion UI, Expansion panel
 </details>
 ```
 
+## Examples
+
+[Flexbox footer](https://codepen.io/picaq/pen/NWYObBY) 
+
 ## More info
 
 [The details and summary elements, again - scottohara.me](https://www.scottohara.me/blog/2022/09/12/details-summary.html) 
