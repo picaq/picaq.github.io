@@ -13,6 +13,8 @@ nav_order: 6
 
 [Math JS](https://gist.github.com/picaq/f111966c514437abc150fb4ee7d28c3b)
 ### factorial
+
+1 * 2 * 3 * 4 * 5 ... n
 ```js
 const bang = n => {
   if ( n < 2 ) return 1;
@@ -21,6 +23,16 @@ const bang = n => {
   return fact;
 }
 ```
+n ... 5 * 4 * 3 * 2 * 1
+```js
+const factorial = n => {
+  if (n <= 1) return 1;
+  let val = n, accumulator = n;
+  while (val > 1) accumulator*=--val;
+  return accumulator; 
+}
+```
+
 ### factorial big int
 ```js
 const bigBang = n => {
