@@ -2234,7 +2234,7 @@
   },"319": {
     "doc": "Math & Number",
     "title": "factorial",
-    "content": "const bang = n =&gt; { if ( n &lt; 2 ) return 1; let fact = 1, i = 2; while (i &lt;= n) {fact*=i; i++}; return fact; } . ",
+    "content": "1 * 2 * 3 * 4 * 5 … n . const bang = n =&gt; { if ( n &lt; 2 ) return 1; let fact = 1, i = 2; while (i &lt;= n) {fact*=i; i++}; return fact; } . n … 5 * 4 * 3 * 2 * 1 . const factorial = n =&gt; { if (n &lt;= 1) return 1; let val = n, accumulator = n; while (val &gt; 1) accumulator*=--val; return accumulator; } . ",
     "url": "/blog/gists/javascript/math#factorial",
     
     "relUrl": "/blog/gists/javascript/math#factorial"
