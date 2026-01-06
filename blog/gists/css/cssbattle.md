@@ -465,16 +465,85 @@ I started to play [CSSBattle](https://cssbattle.dev/)
 
 [:nth-child() - CSS \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:nth-child) 
 
+
+## [Target  (6/1/2026)](https://cssbattle.dev/play/XrZWUyRrxmJ7J8uh21xD) 
+
+<div class="code-example">  
+  <div></div>
+</div>
+
+<style>
+  #target--612026 + .code-example  div {
+    width: 60px;
+    height: 60px;
+    background: #38483C;
+    margin: auto;
+  }
+  #target--612026 + .code-example div::before, #target--612026 + .code-example div::after {
+    content: "";
+    background: #C36768;
+    width: 180px;
+    height: 40px;
+    position: relative;
+    display: block;
+    top: 10px;
+    left: -100px;
+    border: solid #38483C;
+    border-width: 0 40px;
+    z-index: -1;
+  }
+  #target--612026 + .code-example div::after {
+    top: -30px;
+    transform: rotate(90deg);
+  }
+  #target--612026 + .code-example {
+    background: #F3EAD2;
+    display: flex;
+  }
+</style>
+
+```html
+<div></div>
+<style>
+  div {
+    width: 60px;
+    height: 60px;
+    background: #38483C;
+    margin: auto;
+  }
+  div::before, div::after {
+    content: "";
+    background: #C36768;
+    width: 180px;
+    height: 40px;
+    position: relative;
+    display: block;
+    top: 10px;
+    left: -100px;
+    border: solid #38483C;
+    border-width: 0 40px;
+    z-index: -1;
+  }
+  div::after {
+    top: -30px;
+    transform: rotate(90deg);
+  }
+  body {
+    background: #F3EAD2;
+    display: flex;
+  }
+</style>
+```
+
 <!-- 
 ## [Target  (27/12/2025)](https://cssbattle.dev/play/) 
 
 <div class="code-example">  
-
+  <div></div>
 </div>
 
 <style>
-  #target--412026 + .code-example {
-    
+  #target--412026 + .code-example {    
   }
 </style>
 
