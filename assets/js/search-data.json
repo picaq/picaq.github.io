@@ -1667,7 +1667,7 @@
   },"238": {
     "doc": "CSSBattle",
     "title": "CSSBattle",
-    "content": "I started to play CSSBattle . | CSSBattle . | Target (24/12/2025) | Target (23/12/2025) | Target (25/12/2025) | Target (26/12/2025) | Target (4/1/2026) | Target (5/1/2026) | . | . ",
+    "content": "I started to play CSSBattle . | CSSBattle . | Target (24/12/2025) | Target (23/12/2025) | Target (25/12/2025) | Target (26/12/2025) | Target (4/1/2026) | Target (5/1/2026) | Target (6/1/2026) | . | . ",
     "url": "/blog/gists/css/cssbattle",
     
     "relUrl": "/blog/gists/css/cssbattle"
@@ -1714,1469 +1714,1476 @@
     
     "relUrl": "/blog/gists/css/cssbattle#target--512026"
   },"245": {
+    "doc": "CSSBattle",
+    "title": "Target  (6/1/2026)",
+    "content": "&lt;div&gt;&lt;/div&gt; &lt;style&gt; div { width: 60px; height: 60px; background: #38483C; margin: auto; } div::before, div::after { content: \"\"; background: #C36768; width: 180px; height: 40px; position: relative; display: block; top: 10px; left: -100px; border: solid #38483C; border-width: 0 40px; z-index: -1; } div::after { top: -30px; transform: rotate(90deg); } body { background: #F3EAD2; display: flex; } &lt;/style&gt; . ",
+    "url": "/blog/gists/css/cssbattle#target--612026",
+    
+    "relUrl": "/blog/gists/css/cssbattle#target--612026"
+  },"246": {
     "doc": "Dairy Free Milks",
     "title": "Dairy Free Milks",
     "content": "I recently bought a soy milk maker, which is basically a stainless steel blender with a heating element. It has 6 pre-programmed sequences. Here are the included recipes in the manual in case I can’t find it. | Dairy Free Milks . | Basic Formula . | Ingredients | Instructions | Nut Milks . | Almond Milk | Cashew Milk | Coconut Milk | Walnut Milk | Hazelnut Milk | Hemp Milk | Almond Peanut Milk | . | Bean Milk . | Soy Milk | Oat Soy Milk | Walnut Oat Soy Milk | . | Grain Milks . | Oat Milk | Rice Milk | Oat Rice Paste | . | Juice . | Apple Pineapple Juice | Carrot Honey Juice | . | Yogurt . | Carb Content | Yogurt Instructions | . | . | Machine specifications . | Pre-programmed functions | . | Custom Usage . | Nuts function at 0F | Grains function . | Hot Chocolate | . | . | Experiments | . | . ",
     "url": "/blog/food/recipes/dairy-free-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk"
-  },"246": {
+  },"247": {
     "doc": "Dairy Free Milks",
     "title": "Basic Formula",
     "content": "The milk making process follow the same basic formula and instuctions. The only things you need are the ( a ) main ingredient(s): food, and water ( e ). Sweeterners and flavorings ( b – d ) are optional. ",
     "url": "/blog/food/recipes/dairy-free-milk#basic-formula",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#basic-formula"
-  },"247": {
+  },"248": {
     "doc": "Dairy Free Milks",
     "title": "Ingredients",
     "content": ". | nuts, soy or fruit | sweetener | spices or flavorings | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#ingredients",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#ingredients"
-  },"248": {
+  },"249": {
     "doc": "Dairy Free Milks",
     "title": "Instructions",
     "content": ". | Add ingredients ( a – d ) into the milk maker. | Add water ( e ) above the min but below the max water line. | Press function button ( 10 – 35 minutes ). | Unplug the power cord before pouring out the liquid. | Optionally: strain the milk in a strainer or nut bag. | . ",
     "url": "/blog/food/recipes/dairy-free-milk#instructions",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#instructions"
-  },"249": {
+  },"250": {
     "doc": "Dairy Free Milks",
     "title": "Nut Milks",
     "content": "Nuts : 15 minutes . ",
     "url": "/blog/food/recipes/dairy-free-milk#nut-milks",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#nut-milks"
-  },"250": {
+  },"251": {
     "doc": "Dairy Free Milks",
     "title": "Almond Milk",
     "content": ". | 60 g raw almonds | 4 – 5 pitted dates | 2 tsp vanilla extract pinch of ground cinnamon | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#almond-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#almond-milk"
-  },"251": {
+  },"252": {
     "doc": "Dairy Free Milks",
     "title": "Cashew Milk",
     "content": ". | 60 g raw cashews | 3 – 4 tsp maple syrup | 2 tsp vanilla extract | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#cashew-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#cashew-milk"
-  },"252": {
+  },"253": {
     "doc": "Dairy Free Milks",
     "title": "Coconut Milk",
     "content": ". | 60 g shredded coconut meat | 5 – 6 pitted dates | vanilla pod | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#coconut-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#coconut-milk"
-  },"253": {
+  },"254": {
     "doc": "Dairy Free Milks",
     "title": "Walnut Milk",
     "content": ". | 60 g walnuts | 4 – 5 tsp allulose syrup | 5 – 6 pitted dates | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#walnut-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#walnut-milk"
-  },"254": {
+  },"255": {
     "doc": "Dairy Free Milks",
     "title": "Hazelnut Milk",
     "content": ". | 60 g hazelnuts | 3 – 4 tsp maple syrup | 2 tsp vanilla extract | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#hazelnut-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#hazelnut-milk"
-  },"255": {
+  },"256": {
     "doc": "Dairy Free Milks",
     "title": "Hemp Milk",
     "content": ". | 60 g hulled hemp seeds | 3 – 4 tsp maple syrup | 2 tsp vanilla extract 6 – 7 pitted medjool dates | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#hemp-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#hemp-milk"
-  },"256": {
+  },"257": {
     "doc": "Dairy Free Milks",
     "title": "Almond Peanut Milk",
     "content": ". | 40 g almonds 20 g cooked peanuts | sugar | 2 tsp vanilla extract 6 – 7 pitted medjool dates | dash of salt | oat milk ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#almond-peanut-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#almond-peanut-milk"
-  },"257": {
+  },"258": {
     "doc": "Dairy Free Milks",
     "title": "Bean Milk",
     "content": "Beans : 35 minutes . For creamier soy milk, it is best to rinse and then warm soak the beans for a few hours (2 – 4), and then rinse again before blending or portion out the soaked, rinsed beans into jars in the fridge overnight to blend the next day. For storing the beans overnight, I also add a teaspoon of salt. If you rinse overnight-soaked salted soy beans, the soy milk will end up pretty tasteless and watery so it is preferred to pour the salted soak water into the machine along with the beans. Before serving, the soy milk foam, if any, should be skimmed off the surface. Overnight-soaked salted soy beans will cook and blend without forming a foam on top. ",
     "url": "/blog/food/recipes/dairy-free-milk#bean-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#bean-milk"
-  },"258": {
+  },"259": {
     "doc": "Dairy Free Milks",
     "title": "Soy Milk",
     "content": ". | 60 g soybeans | 3 medjool dates 3 – 4 tsp maple syrup | 2 tsp vanilla extract | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#soy-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#soy-milk"
-  },"259": {
+  },"260": {
     "doc": "Dairy Free Milks",
     "title": "Oat Soy Milk",
     "content": ". | 35 g soybeans 15 g instant oats | sugar to taste | 10 g toasted black sesame seeds | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#oat-soy-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#oat-soy-milk"
-  },"260": {
+  },"261": {
     "doc": "Dairy Free Milks",
     "title": "Walnut Oat Soy Milk",
     "content": ". | 40 g soybeans 10 g oats 10 g walnut (~ 1 whole walnut) | ? | ? | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#walnut-oat-soy-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#walnut-oat-soy-milk"
-  },"261": {
+  },"262": {
     "doc": "Dairy Free Milks",
     "title": "Grain Milks",
     "content": "Grains : 10 minutes . ",
     "url": "/blog/food/recipes/dairy-free-milk#grain-milks",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#grain-milks"
-  },"262": {
+  },"263": {
     "doc": "Dairy Free Milks",
     "title": "Oat Milk",
     "content": ". | 60 g rolled oats | 3 – 4 tsp maple syrup | 2 tsp vanilla extract | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#oat-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#oat-milk"
-  },"263": {
+  },"264": {
     "doc": "Dairy Free Milks",
     "title": "Rice Milk",
     "content": ". | 60 g rice | 3 – 4 tsp maple syrup | 2 tsp vanilla extract and/or 2 tbsp cacao powder | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#rice-milk",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#rice-milk"
-  },"264": {
+  },"265": {
     "doc": "Dairy Free Milks",
     "title": "Oat Rice Paste",
     "content": ". | 12 g each of: . | rice | oats | soy beans | red dates | pine nuts | . | dash of salt | water ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#oat-rice-paste",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#oat-rice-paste"
-  },"265": {
+  },"266": {
     "doc": "Dairy Free Milks",
     "title": "Juice",
     "content": "Juice : 5 minutes . ",
     "url": "/blog/food/recipes/dairy-free-milk#juice",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#juice"
-  },"266": {
+  },"267": {
     "doc": "Dairy Free Milks",
     "title": "Apple Pineapple Juice",
     "content": ". | 200 g pineapple | 150 g apple | 4 – 5 tsp allulose syrup | dash of salt | water ( just under 1 liter ) | 20 g lemon ( add after blending ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#apple-pineapple-juice",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#apple-pineapple-juice"
-  },"267": {
+  },"268": {
     "doc": "Dairy Free Milks",
     "title": "Carrot Honey Juice",
     "content": ". | 200 g carrot | 170 g apple | 20 ml allulose syrup | any of the above milks ( just under 1 liter ) | . ",
     "url": "/blog/food/recipes/dairy-free-milk#carrot-honey-juice",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#carrot-honey-juice"
-  },"268": {
+  },"269": {
     "doc": "Dairy Free Milks",
     "title": "Yogurt",
     "content": "Self Clean : 10 minutes . Yogurt : 8 hours . | 1 quart of any milk | 0, 30 – 45 g sugar and/or blended dates based on the below table | 2 – 3 tbs plain yogurt or a pack of yogurt culture starter | optional: 1/3 cup protein powder for thicker yogurt | . ",
     "url": "/blog/food/recipes/dairy-free-milk#yogurt",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#yogurt"
-  },"269": {
+  },"270": {
     "doc": "Dairy Free Milks",
     "title": "Carb Content",
     "content": "|   | carbs (g) | g /qt | diff (g) | . | oat | 14 | 56 | 0 | . | dairy | 12 | 48 | - | . | soy | 5 | 20 | 30 | . | almond | 1 | 4 | 45 | . todo experiment: use leftover pasta water as carb content to pre-make the milks . ",
     "url": "/blog/food/recipes/dairy-free-milk#carb-content",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#carb-content"
-  },"270": {
+  },"271": {
     "doc": "Dairy Free Milks",
     "title": "Yogurt Instructions",
     "content": ". | sterilize all equipment | add all ingredients | . ",
     "url": "/blog/food/recipes/dairy-free-milk#yogurt-instructions",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#yogurt-instructions"
-  },"271": {
+  },"272": {
     "doc": "Dairy Free Milks",
     "title": "Machine specifications",
     "content": " ",
     "url": "/blog/food/recipes/dairy-free-milk#machine-specifications",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#machine-specifications"
-  },"272": {
+  },"273": {
     "doc": "Dairy Free Milks",
     "title": "Pre-programmed functions",
     "content": "Default temperature settings are in bold and may or may not be selectable as shown: . |   | Time (hh:mm) | Temp (°C) 0F | 1F | 2F |   | . | Nuts | :15 | room temp | 45 | 60 | - | . | Juice | :05 | room temp | 45 | 60 | - | . | Beans | :35 | - | - | - | 100 | . | Grains | :10 | - | - | - | 100 | . | Yogurt | 8:00 | - | 45 | - | - | . | Self Clean | :10 | - | - | - | 100 | . ",
     "url": "/blog/food/recipes/dairy-free-milk#pre-programmed-functions",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#pre-programmed-functions"
-  },"273": {
+  },"274": {
     "doc": "Dairy Free Milks",
     "title": "Custom Usage",
     "content": " ",
     "url": "/blog/food/recipes/dairy-free-milk#custom-usage",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#custom-usage"
-  },"274": {
+  },"275": {
     "doc": "Dairy Free Milks",
     "title": "Nuts function at 0F",
     "content": ". | cuts down the blending time to :08 | I use this, and/or the Juice function to make fruit smoothies | I add in raw rolled oats ( 2 – 3 tbsp ) and/or cooked edamame ( 1/4 – 1/3 cup with its cooking water ) for extra fibre and protein | . ",
     "url": "/blog/food/recipes/dairy-free-milk#nuts-function-at-0f",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#nuts-function-at-0f"
-  },"275": {
+  },"276": {
     "doc": "Dairy Free Milks",
     "title": "Grains function",
     "content": "I use this to make hot chocolate. It results in very smooth, fluffy and airy hot cocoa. ",
     "url": "/blog/food/recipes/dairy-free-milk#grains-function",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#grains-function"
-  },"276": {
+  },"277": {
     "doc": "Dairy Free Milks",
     "title": "Hot Chocolate",
     "content": ". | 4 squares of dark chocolate | 3 – 4 tsp maple syrup and/or dark brown sugar | 2 tsp vanilla extract and/or 2 tbsp cacao powder | dash of salt | any of the above milks ( about 500 – 700 cc ) | optional, but recommended: 1 – 2 tbsp soy creamer | . ",
     "url": "/blog/food/recipes/dairy-free-milk#hot-chocolate",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#hot-chocolate"
-  },"277": {
+  },"278": {
     "doc": "Dairy Free Milks",
     "title": "Experiments",
     "content": ". | I threw in a piece of guava into a fruit smoothie, skin and seeds included and left the smoothie for some time and it ended up fizzy and boozy | I made a fruit smoothie that is exclusively frozen berries plus edamame and it slightly coagulated after left to sit | . ",
     "url": "/blog/food/recipes/dairy-free-milk#experiments",
     
     "relUrl": "/blog/food/recipes/dairy-free-milk#experiments"
-  },"278": {
+  },"279": {
     "doc": "Debugging",
     "title": "Debugging",
     "content": " ",
     "url": "/blog/gists/css/debugging",
     
     "relUrl": "/blog/gists/css/debugging"
-  },"279": {
+  },"280": {
     "doc": "Debugging",
     "title": "CSS Reset Styles or Normalize",
     "content": "* { margin: 0; padding: 0 } . ",
     "url": "/blog/gists/css/debugging#css-reset-styles-or-normalize",
     
     "relUrl": "/blog/gists/css/debugging#css-reset-styles-or-normalize"
-  },"280": {
+  },"281": {
     "doc": "Debugging",
     "title": "X-Ray Positioning with Pink Glass Effect",
     "content": "* { background-color: #c001 !important} . ",
     "url": "/blog/gists/css/debugging#x-ray-positioning-with-pink-glass-effect",
     
     "relUrl": "/blog/gists/css/debugging#x-ray-positioning-with-pink-glass-effect"
-  },"281": {
+  },"282": {
     "doc": "Debugging",
     "title": "Toggle with bookmarklet",
     "content": "javascript: (()=&gt;{ let css = ` * { background-color: #c001 !important} `; const injectCSS = css =&gt; { let el = document.createElement('style'); el.type = 'text/css'; el.id='css_injection'; el.innerText = css; document.head.appendChild(el); }; const swap = () =&gt; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').remove(); const replace = (newCss=css) =&gt; { css = newCss; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').innerText = css; }; swap(); })(); . ",
     "url": "/blog/gists/css/debugging#toggle-with-bookmarklet",
     
     "relUrl": "/blog/gists/css/debugging#toggle-with-bookmarklet"
-  },"282": {
+  },"283": {
     "doc": "Design",
     "title": "Design",
     "content": " ",
     "url": "/blog/design",
     
     "relUrl": "/blog/design"
-  },"283": {
+  },"284": {
     "doc": "Details",
     "title": "Details",
     "content": "aka Accordion UI, Expansion panel . summary title detailed info that unravels and folds &lt;details open&gt; &lt;summary&gt;summary title&lt;/summary&gt; detailed info that unravels and folds &lt;/details&gt; . ",
     "url": "/blog/gists/html/details",
     
     "relUrl": "/blog/gists/html/details"
-  },"284": {
+  },"285": {
     "doc": "Details",
     "title": "Examples",
     "content": "Flexbox footer . ",
     "url": "/blog/gists/html/details#examples",
     
     "relUrl": "/blog/gists/html/details#examples"
-  },"285": {
+  },"286": {
     "doc": "Details",
     "title": "More info",
     "content": "The details and summary elements, again - scottohara.me . ",
     "url": "/blog/gists/html/details#more-info",
     
     "relUrl": "/blog/gists/html/details#more-info"
-  },"286": {
+  },"287": {
     "doc": "Dungeons & Dragons",
     "title": "Dungeons &amp; Dragons",
     "content": "I’m currently playing Dungeons &amp; Dragons 5th edition with Tiger Kong. I am playing as a Harengon Bard, and this page simply keeps track of my stats, spells and cantrips. | Strength | -1 | . | Dexterity | 3 | . | Constitution | 1 | . | Intelligence | 0 | . | Wisdom | 1 | . | Charisma | 3 | . Actually, I decided to keep track on Obsidian instead. ",
     "url": "/blog/games/dnd#dungeons--dragons",
     
     "relUrl": "/blog/games/dnd#dungeons--dragons"
-  },"287": {
+  },"288": {
     "doc": "Dungeons & Dragons",
     "title": "Dungeons & Dragons",
     "content": " ",
     "url": "/blog/games/dnd",
     
     "relUrl": "/blog/games/dnd"
-  },"288": {
+  },"289": {
     "doc": "Fashion",
     "title": "Fashion",
     "content": " ",
     "url": "/blog/fashion",
     
     "relUrl": "/blog/fashion"
-  },"289": {
+  },"290": {
     "doc": "Food",
     "title": "Food",
     "content": "I am eating primarily whole food plant based. Generally, I also exclude coconut oil. I post my daily meals on Plantee ( invite only ). Recipes and ingredients in what I eat will eventually be found here: . ",
     "url": "/blog/food",
     
     "relUrl": "/blog/food"
-  },"290": {
+  },"291": {
     "doc": "Games",
     "title": "Games",
     "content": "I make games and play games. ",
     "url": "/blog/games",
     
     "relUrl": "/blog/games"
-  },"291": {
+  },"292": {
     "doc": "Games",
     "title": "Made",
     "content": " ",
     "url": "/blog/games#made",
     
     "relUrl": "/blog/games#made"
-  },"292": {
+  },"293": {
     "doc": "Games",
     "title": "A Doll Dress-Up Game",
     "content": "This is a dress up game. Click or tap on the clothes to put them on. Illustrations by the Italian illustrator Jessica Cioffi aka @Loputyn. ",
     "url": "/blog/games#a-doll-dress-up-game",
     
     "relUrl": "/blog/games#a-doll-dress-up-game"
-  },"293": {
+  },"294": {
     "doc": "Games",
     "title": "Boogle Board",
     "content": "Is it Boogle Board or Boggle Board? A classic word search game made with vanilla JavaScript. ",
     "url": "/blog/games#boogle-board",
     
     "relUrl": "/blog/games#boogle-board"
-  },"294": {
+  },"295": {
     "doc": "Games",
     "title": "React! The Organic Chemistry Game",
     "content": "The first, if not only, educational and chemically accurate organic synthesis board game. Made with sweat and tears. Layout and illustrations by me! . ",
     "url": "/blog/games#react-the-organic-chemistry-game",
     
     "relUrl": "/blog/games#react-the-organic-chemistry-game"
-  },"295": {
+  },"296": {
     "doc": "Games",
     "title": "Playing",
     "content": "I’m currently playing: . | Dungeons &amp; Dragons 5th edition with Tiger Kong. | Board games on intermittent Wednesday nights. | StarCraft: Brood War | Pokémon GO | . ",
     "url": "/blog/games#playing",
     
     "relUrl": "/blog/games#playing"
-  },"296": {
+  },"297": {
     "doc": "Gists",
     "title": "Gists",
     "content": "My code snippets are hosted on GitHub’s Gists. I plan to move them here eventually. ",
     "url": "/blog/gists",
     
     "relUrl": "/blog/gists"
-  },"297": {
+  },"298": {
     "doc": "Gists",
     "title": "Latest: git",
     "content": " ",
     "url": "/blog/gists#latest-git",
     
     "relUrl": "/blog/gists#latest-git"
-  },"298": {
+  },"299": {
     "doc": "Gists",
     "title": "update feature branch with latest changes to main/master",
     "content": "in the feature branch: . alias gmm='git fetch origin `git branch -l master main | sed 's/^* //'` &amp;&amp; git merge `git branch -l master main | sed 's/^* //'`' . ",
     "url": "/blog/gists#update-feature-branch-with-latest-changes-to-mainmaster",
     
     "relUrl": "/blog/gists#update-feature-branch-with-latest-changes-to-mainmaster"
-  },"299": {
+  },"300": {
     "doc": "Gists",
     "title": "set upstream for a new branch",
     "content": "function newupstream { git push --set-upstream origin `git rev-parse --abbrev-ref HEAD` } # use this to set upstream for a new branch . ",
     "url": "/blog/gists#set-upstream-for-a-new-branch",
     
     "relUrl": "/blog/gists#set-upstream-for-a-new-branch"
-  },"300": {
+  },"301": {
     "doc": ":has()",
     "title": ":has()",
     "content": " ",
     "url": "/blog/gists/css/has",
     
     "relUrl": "/blog/gists/css/has"
-  },"301": {
+  },"302": {
     "doc": ":has()",
     "title": "Parent Selector",
     "content": "div.parent:has(#unique-descendent) { background: pink; } . ",
     "url": "/blog/gists/css/has#parent-selector",
     
     "relUrl": "/blog/gists/css/has#parent-selector"
-  },"302": {
+  },"303": {
     "doc": ":has()",
     "title": "Sibling Selector",
     "content": "hover over element to select all siblings after itself in the document flow .parent li:nth-child(5n):hover, .parent li:nth-child(5n):hover ~ li:nth-child(5n) . ",
     "url": "/blog/gists/css/has#sibling-selector",
     
     "relUrl": "/blog/gists/css/has#sibling-selector"
-  },"303": {
+  },"304": {
     "doc": ":has()",
     "title": "Previous Sibling Selector",
     "content": "hover over element to select all previous siblings before itself .parent li:nth-child(5n):hover, .parent li:nth-child(5n):has(~ li:nth-child(5n):hover) . ",
     "url": "/blog/gists/css/has#previous-sibling-selector",
     
     "relUrl": "/blog/gists/css/has#previous-sibling-selector"
-  },"304": {
+  },"305": {
     "doc": ":has()",
     "title": "Examples",
     "content": "Ceiling light button . hover over element to select parent and siblings . ",
     "url": "/blog/gists/css/has#examples",
     
     "relUrl": "/blog/gists/css/has#examples"
-  },"305": {
+  },"306": {
     "doc": ":has()",
     "title": "Sarasa Gothic Mono: Human Language Support",
     "content": "commit: add previous sibling selector support with css :has() · picaq/picaq.github.io@be1657d . demo: picaq.github.io/sarasa/#human-language-support . ",
     "url": "/blog/gists/css/has#sarasa-gothic-mono-human-language-support",
     
     "relUrl": "/blog/gists/css/has#sarasa-gothic-mono-human-language-support"
-  },"306": {
+  },"307": {
     "doc": "Hot Sauce Sando",
     "title": "Hot Sauce Sando ( or Toast )",
     "content": " ",
     "url": "/blog/food/recipes/hot-sauce-sando#hot-sauce-sando-or-toast",
     
     "relUrl": "/blog/food/recipes/hot-sauce-sando#hot-sauce-sando-or-toast"
-  },"307": {
+  },"308": {
     "doc": "Hot Sauce Sando",
     "title": "Ingredients",
     "content": ". | Sriracha ( or your favorite hot sauce ) | peanut butter | sliced bread of choice | basil ( highly recomended but optional ) | tamari ( optional ) | baby spinach ( optional ) | . ",
     "url": "/blog/food/recipes/hot-sauce-sando#ingredients",
     
     "relUrl": "/blog/food/recipes/hot-sauce-sando#ingredients"
-  },"308": {
+  },"309": {
     "doc": "Hot Sauce Sando",
     "title": "Instructions",
     "content": ". | Toast slice(s) of bread ( optional but recommended ). | Make the spread: mix peanut butter and Sriracha together, adjust ratios to taste and tolerance. Optional: add tamari for saltiness or to thin out the spread. | Spread the mixture on the inside-facing sides of the bread slice(s). | Optional: top with 1 – 2 basil leaves and/or baby spinach. | . ",
     "url": "/blog/food/recipes/hot-sauce-sando#instructions",
     
     "relUrl": "/blog/food/recipes/hot-sauce-sando#instructions"
-  },"309": {
+  },"310": {
     "doc": "Hot Sauce Sando",
     "title": "Serving Options",
     "content": ". | Using a single slice of toasted bread would make this a Hot Sauce Toast. | You can turn this into a sandwich by clamping 2+ toasts together. | I also like spreading a bit garlic achaar or harissa sauce on top for extra flavor depth. | With the breads subbed for rice paper, veggies doubled and spread halved, the contents could be made into a Vietnamese spring roll. | . ",
     "url": "/blog/food/recipes/hot-sauce-sando#serving-options",
     
     "relUrl": "/blog/food/recipes/hot-sauce-sando#serving-options"
-  },"310": {
+  },"311": {
     "doc": "Hot Sauce Sando",
     "title": "Hot Sauce Sando",
     "content": " ",
     "url": "/blog/food/recipes/hot-sauce-sando",
     
     "relUrl": "/blog/food/recipes/hot-sauce-sando"
-  },"311": {
+  },"312": {
     "doc": "HTML",
     "title": "Hyper Text Markup Language",
     "content": "HTML . ",
     "url": "/blog/gists/html#hyper-text-markup-language",
     
     "relUrl": "/blog/gists/html#hyper-text-markup-language"
-  },"312": {
+  },"313": {
     "doc": "HTML",
     "title": "HTML",
     "content": " ",
     "url": "/blog/gists/html",
     
     "relUrl": "/blog/gists/html"
-  },"313": {
+  },"314": {
     "doc": "JavaScript",
     "title": "JavaScript",
     "content": "Most javascript I write are either in the form of bookmarklets or ran directly in the console. ",
     "url": "/blog/gists/javascript",
     
     "relUrl": "/blog/gists/javascript"
-  },"314": {
+  },"315": {
     "doc": "Map",
     "title": "Map Object",
     "content": "A JavaScript-specific data structure similar to an Object but remembers insertion order and is iterable. It also has far better performance when inserting and deleting keys-value pairs. More info: Map - JavaScript | MDN . ",
     "url": "/blog/gists/javascript/map#map-object",
     
     "relUrl": "/blog/gists/javascript/map#map-object"
-  },"315": {
+  },"316": {
     "doc": "Map",
     "title": "Increment &amp; Decrement",
     "content": "let mapObj = new Map(); const incrementMapVal = (map, key) =&gt; { const currentValue = map.has(key) ? map.get(key) : 0; map.set(key, currentValue + 1); } const decrementMapVal = (map, key) =&gt; { const currentValue = map.has(key) &amp;&amp; map.get(key); currentValue &gt; 1 ? map.set(key, currentValue - 1) : map.delete(key); } . ",
     "url": "/blog/gists/javascript/map#increment--decrement",
     
     "relUrl": "/blog/gists/javascript/map#increment--decrement"
-  },"316": {
+  },"317": {
     "doc": "Map",
     "title": "Map",
     "content": " ",
     "url": "/blog/gists/javascript/map",
     
     "relUrl": "/blog/gists/javascript/map"
-  },"317": {
+  },"318": {
     "doc": "Math & Number",
     "title": "Math &amp; Number Manipulations",
     "content": ". | Math &amp; Number Manipulations . | Arithmatic . | factorial | factorial big int | product | split num into arr of digits | sum | randomize | print natural countdown in the console | . | Time conversions . | convert HHMMSS to seconds | convert seconds To HHMMSS | quick convert milliseconds to hh:mm:ss | . | Phone Number format . | digits to phone number format and back | . | Science . | Temperature conversion | . | Currency conversions | Binary &amp; Ascii math . | ascii | integer to binary and back . | string to binary | . | xor encryption to hex and back | . | . | . ",
     "url": "/blog/gists/javascript/math#math--number-manipulations",
     
     "relUrl": "/blog/gists/javascript/math#math--number-manipulations"
-  },"318": {
+  },"319": {
     "doc": "Math & Number",
     "title": "Arithmatic",
     "content": "Math JS . ",
     "url": "/blog/gists/javascript/math#arithmatic",
     
     "relUrl": "/blog/gists/javascript/math#arithmatic"
-  },"319": {
+  },"320": {
     "doc": "Math & Number",
     "title": "factorial",
     "content": "1 * 2 * 3 * 4 * 5 … n . const bang = n =&gt; { if ( n &lt; 2 ) return 1; let fact = 1, i = 2; while (i &lt;= n) {fact*=i; i++}; return fact; } . n … 5 * 4 * 3 * 2 * 1 . const factorial = n =&gt; { if (n &lt;= 1) return 1; let val = n, accumulator = n; while (val &gt; 1) accumulator*=--val; return accumulator; } . ",
     "url": "/blog/gists/javascript/math#factorial",
     
     "relUrl": "/blog/gists/javascript/math#factorial"
-  },"320": {
+  },"321": {
     "doc": "Math & Number",
     "title": "factorial big int",
     "content": "const bigBang = n =&gt; { if ( n &lt; 2n ) return 1n; let fact = 1n, i = 2n; while (i &lt;= n) {fact*=i; i++}; return fact; } . ",
     "url": "/blog/gists/javascript/math#factorial-big-int",
     
     "relUrl": "/blog/gists/javascript/math#factorial-big-int"
-  },"321": {
+  },"322": {
     "doc": "Math & Number",
     "title": "product",
     "content": "arr.reduce((a, b) =&gt; a * b, 1); . ",
     "url": "/blog/gists/javascript/math#product",
     
     "relUrl": "/blog/gists/javascript/math#product"
-  },"322": {
+  },"323": {
     "doc": "Math & Number",
     "title": "split num into arr of digits",
     "content": "const digitize = int =&gt; { let number = parseInt(int); let sum = 10; let arr = []; while (number &gt; 0) { val = number % 10; sum += val; arr.push(val); number = (number - val) / 10; } console.log(sum); return arr.reverse(); } . ",
     "url": "/blog/gists/javascript/math#split-num-into-arr-of-digits",
     
     "relUrl": "/blog/gists/javascript/math#split-num-into-arr-of-digits"
-  },"323": {
+  },"324": {
     "doc": "Math & Number",
     "title": "sum",
     "content": "arr.reduce((a, b) =&gt; a + b, 0); // slow, iterative sum of 1 + 2 + 3 ... + n of known n O(n) const sum = (n) =&gt; { let val = 0; while (n &gt; 0) { val += n; n--; } return val; } // faster calculation O(1) const sum2 = n =&gt; n * (n + 1)/2; . ",
     "url": "/blog/gists/javascript/math#sum",
     
     "relUrl": "/blog/gists/javascript/math#sum"
-  },"324": {
+  },"325": {
     "doc": "Math & Number",
     "title": "randomize",
     "content": "let randomize = list =&gt; console.log(list[Math.floor(list.length * Math.random())]); . ",
     "url": "/blog/gists/javascript/math#randomize",
     
     "relUrl": "/blog/gists/javascript/math#randomize"
-  },"325": {
+  },"326": {
     "doc": "Math & Number",
     "title": "print natural countdown in the console",
     "content": "(loop = (i) =&gt; { setTimeout(() =&gt; { console.log(i); if (i--) loop(i); }, 300 + Math.floor(Math.random()*200)) })(22); . ",
     "url": "/blog/gists/javascript/math#print-natural-countdown-in-the-console",
     
     "relUrl": "/blog/gists/javascript/math#print-natural-countdown-in-the-console"
-  },"326": {
+  },"327": {
     "doc": "Math & Number",
     "title": "Time conversions",
     "content": "Convert hh:mm:ss to seconds and back + number formats . ",
     "url": "/blog/gists/javascript/math#time-conversions",
     
     "relUrl": "/blog/gists/javascript/math#time-conversions"
-  },"327": {
+  },"328": {
     "doc": "Math & Number",
     "title": "convert HHMMSS to seconds",
     "content": "const toSec = str =&gt; str.split(':').reduce((a, time) =&gt; (60 * a) + +time); . ",
     "url": "/blog/gists/javascript/math#convert-hhmmss-to-seconds",
     
     "relUrl": "/blog/gists/javascript/math#convert-hhmmss-to-seconds"
-  },"328": {
+  },"329": {
     "doc": "Math & Number",
     "title": "convert seconds To HHMMSS",
     "content": "const toHMS = totalSec =&gt; { const hours = Math.floor((totalSec % (60 * 60 * 24)) / (60 * 60)); const minutes = Math.floor((totalSec % (60 * 60)) / (60)); const seconds = Math.floor((totalSec % (60)) ); // removes all leading zeros const hhmmss = `${ hours &gt; 0 ? hours + \":\" : \"\" }${ hours &gt; 0 &amp;&amp; minutes &lt; 10 ? '0' + minutes : minutes }:${ seconds &lt; 10 ? '0' + seconds : seconds }`; // keeps all leading zeros const _0_HMS = `${ hours &lt; 10 ? '0' + hours : hours }:${ minutes &lt; 10 ? '0' + minutes : minutes }:${ seconds &lt; 10 ? '0' + seconds : seconds }`; return _0_HMS; } . ",
     "url": "/blog/gists/javascript/math#convert-seconds-to-hhmmss",
     
     "relUrl": "/blog/gists/javascript/math#convert-seconds-to-hhmmss"
-  },"329": {
+  },"330": {
     "doc": "Math & Number",
     "title": "quick convert milliseconds to hh:mm:ss",
     "content": "only works if hh &lt; 24 or ms &lt; 86400000 milliseconds . new Date(ms).toISOString().slice(11, -5); . ",
     "url": "/blog/gists/javascript/math#quick-convert-milliseconds-to-hhmmss",
     
     "relUrl": "/blog/gists/javascript/math#quick-convert-milliseconds-to-hhmmss"
-  },"330": {
+  },"331": {
     "doc": "Math & Number",
     "title": "Phone Number format",
     "content": " ",
     "url": "/blog/gists/javascript/math#phone-number-format",
     
     "relUrl": "/blog/gists/javascript/math#phone-number-format"
-  },"331": {
+  },"332": {
     "doc": "Math & Number",
     "title": "digits to phone number format and back",
     "content": "const formatPhone = digts =&gt; `(${digts.slice(0,3)}) ${digts.slice(3,6)}-${digts.slice(-4)}`; const phoneToNumString = phone =&gt; phone.match(/\\d/g).join(\"\"); . ",
     "url": "/blog/gists/javascript/math#digits-to-phone-number-format-and-back",
     
     "relUrl": "/blog/gists/javascript/math#digits-to-phone-number-format-and-back"
-  },"332": {
+  },"333": {
     "doc": "Math & Number",
     "title": "Science",
     "content": " ",
     "url": "/blog/gists/javascript/math#science",
     
     "relUrl": "/blog/gists/javascript/math#science"
-  },"333": {
+  },"334": {
     "doc": "Math & Number",
     "title": "Temperature conversion",
     "content": "chemistry calculations . const c2f = c =&gt; ( c * 9/5 ) + 32; const f2c = f =&gt; ( f - 32 ) * 5/9; const c2k = c =&gt; c + 273.15; const k2c = k =&gt; k - 273.15; const f2k = f =&gt; f2c(f) + 273.15; const k2f = k =&gt; c2f(k - 273.15); . ",
     "url": "/blog/gists/javascript/math#temperature-conversion",
     
     "relUrl": "/blog/gists/javascript/math#temperature-conversion"
-  },"334": {
+  },"335": {
     "doc": "Math & Number",
     "title": "Currency conversions",
     "content": "This is based off of this freecodecamp guide: How to Format a Number as Currency in JavaScript . currency.js . // format number to US dollar let usd = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', }); let cad = new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', }); // format number to British pounds let pounds = Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP', }); // format number to Indian rupee let rupee = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', }); // format number to Euro let euro = Intl.NumberFormat('en-DE', { style: 'currency', currency: 'EUR', }); // format number to yuan let yuan = Intl.NumberFormat('cn-CN', { style: 'currency', currency: 'CNY', }); // format number to yen let yen = Intl.NumberFormat('jp-JA', { style: 'currency', currency: 'JPY', }); // format number to won let won = Intl.NumberFormat('kr-KR', { style: 'currency', currency: 'KRW', }); 'Dollars: ' + USDollar.format(price) // Dollars: $143,450.00 `Pounds: ${pounds.format(price)}`; // Pounds: £143,450.00 'Rupees: ' + rupee.format(price); // Rupees: ₹1,43,450.00 `Euro: ${euro.format(price)}`; // Euro: €143,450.00 . ",
     "url": "/blog/gists/javascript/math#currency-conversions",
     
     "relUrl": "/blog/gists/javascript/math#currency-conversions"
-  },"335": {
+  },"336": {
     "doc": "Math & Number",
     "title": "Binary &amp; Ascii math",
     "content": "binary and ascii math . ",
     "url": "/blog/gists/javascript/math#binary--ascii-math",
     
     "relUrl": "/blog/gists/javascript/math#binary--ascii-math"
-  },"336": {
+  },"337": {
     "doc": "Math & Number",
     "title": "ascii",
     "content": "a.charCodeAt(0); // get char code int from str char String.fromCharCode(...nums); // convert list of nums to string // convert string to arr of char code nums const charCodes = (string) =&gt; { let nums = []; for (i in string) nums.push(string.charCodeAt(i)); return nums; } // convert hex to string const hex2str = (hex) =&gt; { let outputNums = []; for (let i = 0; i &lt; hex.length; i+=2) { const int = parseInt(hex[i+0] + hex[i+1], 16); outputNums.push(int); } return String.fromCharCode(...outputNums); } // convert string to hex const str2hex = (string) =&gt; { hex = \"\"; for (i in string) hex += string.charCodeAt(i).toString(\"16\").padStart(2, '0'); return hex; } . ",
     "url": "/blog/gists/javascript/math#ascii",
     
     "relUrl": "/blog/gists/javascript/math#ascii"
-  },"337": {
+  },"338": {
     "doc": "Math & Number",
     "title": "integer to binary and back",
     "content": "const intBin = int =&gt; int.toString(2); // must be called as a function to work otherwise it will error const intBin = int =&gt; int.toString(2).padStart(8, '0'); // padstart optional to fill 8 bit slots const binInt = bin =&gt; parseInt(bin, 2); const intHex = int =&gt; int.toString(16); // must be called as a function to work otherwise it will error const hexInt = hex =&gt; parseInt(hex, 16); . ",
     "url": "/blog/gists/javascript/math#integer-to-binary-and-back",
     
     "relUrl": "/blog/gists/javascript/math#integer-to-binary-and-back"
-  },"338": {
+  },"339": {
     "doc": "Math & Number",
     "title": "string to binary",
     "content": "str.split('').map( a =&gt; intBin(a.charCodeAt(0)).padStart(8, '0') ).join(\" \") . ",
     "url": "/blog/gists/javascript/math#string-to-binary",
     
     "relUrl": "/blog/gists/javascript/math#string-to-binary"
-  },"339": {
+  },"340": {
     "doc": "Math & Number",
     "title": "xor encryption to hex and back",
     "content": "const xor2hex = (input, key) =&gt; { let output = \"\"; const len = key.length; const toXorHex = (a, b) =&gt; (a ^ b).toString(\"16\").padStart(2, '0'); for (i in input) { output += toXorHex(input.charCodeAt(i), key.charCodeAt(i % len)); }; return output; } const hex2xor = (input, key) =&gt; { let outputNums = []; const len = key.length; for (let i = 0; i &lt; input.length; i+=2) { const int = parseInt(input[i+0] + input[i+1], 16); outputNums.push(int ^ key.charCodeAt(i/2 % len)); } return String.fromCharCode(...outputNums); } . ",
     "url": "/blog/gists/javascript/math#xor-encryption-to-hex-and-back",
     
     "relUrl": "/blog/gists/javascript/math#xor-encryption-to-hex-and-back"
-  },"340": {
+  },"341": {
     "doc": "Math & Number",
     "title": "Math & Number",
     "content": " ",
     "url": "/blog/gists/javascript/math",
     
     "relUrl": "/blog/gists/javascript/math"
-  },"341": {
+  },"342": {
     "doc": "Media Queries",
     "title": "@media queries",
     "content": "@media only screen and (min-width: 50rem) { p { color: pink; } } . ",
     "url": "/blog/gists/css/media-query#media-queries",
     
     "relUrl": "/blog/gists/css/media-query#media-queries"
-  },"342": {
+  },"343": {
     "doc": "Media Queries",
     "title": "Media Queries",
     "content": " ",
     "url": "/blog/gists/css/media-query",
     
     "relUrl": "/blog/gists/css/media-query"
-  },"343": {
+  },"344": {
     "doc": "Moisturizers",
     "title": "Moisturizers",
     "content": " ",
     "url": "/blog/skincare/moisturizers",
     
     "relUrl": "/blog/skincare/moisturizers"
-  },"344": {
+  },"345": {
     "doc": "Moisturizers",
     "title": "Sprays",
     "content": "These are in my current repertoire . | Avène Thermal Spring Water | Avène USA . | it’s just sterile water | . | Magic Molecule | Hypochlorous Acid Solution . | less moisturizing more sanitizing | . | Glow Recipe- Watermelon Glow Ultra-Fine Mist | MAY COOP Raw Morning Dew “MAPLE SPA MIST” | May Coop US Official | The Luminous Dewy Skin Mist - Refreshing Face Mist | Tatcha | . ",
     "url": "/blog/skincare/moisturizers#sprays",
     
     "relUrl": "/blog/skincare/moisturizers#sprays"
-  },"345": {
+  },"346": {
     "doc": "Mushroom Marinara Dal",
     "title": "\n  \n  Mushroom [ Ghost Pepper ] Marinara Dal\n",
     "content": ". I usually meal prep this in a mason jar or two and eat it over the course of 1‍ ‍–‍ ‍3 weeks. Preparation time7 minsPT7MCooking time20 minsPT20MYield4 – 5 servings 4 – 5 ",
     "url": "/blog/food/recipes/mushroom-marinara-dal#mushroom-marinara-dal",
     
     "relUrl": "/blog/food/recipes/mushroom-marinara-dal#mushroom-marinara-dal"
-  },"346": {
+  },"347": {
     "doc": "Mushroom Marinara Dal",
     "title": " Ingredients",
     "content": "Everything after water is optional and added to taste. | 1 cup red lentils | 1 jar of marinara sauce | 2 – 3 cups of kombu dashi or water | 1 cup sliced mushrooms | tomato paste | ghost pepper hot sauce | vegan ponzu | tamari | pepper powder | . ",
     "url": "/blog/food/recipes/mushroom-marinara-dal#ingredients",
     
     "relUrl": "/blog/food/recipes/mushroom-marinara-dal#ingredients"
-  },"347": {
+  },"348": {
     "doc": "Mushroom Marinara Dal",
     "title": " Instructions",
     "content": ". | Optional&#58; start pre-boiling the cooking water or kombu. | Rinse and strain the lentils until the water runs clear. It usually takes me 4 – 7 rinses. | Boil the lentils in 3 cups of water ( 2 if adding mushrooms ) for 10 – 20 minutes depending on desired tenderness. | Stir in the marinara sauce and adjust to taste with the rest of the ingredients. | Optional&#58; re-boil the dal mixture for the flavors to meld together even more. | . I would use the original marinara sauce jar as well as the mason jar used to rinse and cook the lentils to store leftovers in the fridge for up to 3 weeks. ",
     "url": "/blog/food/recipes/mushroom-marinara-dal#instructions",
     
     "relUrl": "/blog/food/recipes/mushroom-marinara-dal#instructions"
-  },"348": {
+  },"349": {
     "doc": "Mushroom Marinara Dal",
     "title": " Nutrition Facts",
     "content": "in grams per serving . Calories340Fat14Carbohydrates40Protein16 Mandy Chenhttps://picaq.github.io cuisineAmerican, fusiondietvegancategorysoup, mainkeywordslentil, soup, spicy, mushroom, protein ",
     "url": "/blog/food/recipes/mushroom-marinara-dal#nutrition-facts",
     
     "relUrl": "/blog/food/recipes/mushroom-marinara-dal#nutrition-facts"
-  },"349": {
+  },"350": {
     "doc": "Mushroom Marinara Dal",
     "title": "Serving Options",
     "content": "I usually eat this with: . | a slice or two of steamed sourdough bread ( because I don’t know how to make idli and this is close enough for me lol ) | steamed organic green peas | pita chips | naan | . ",
     "url": "/blog/food/recipes/mushroom-marinara-dal#serving-options",
     
     "relUrl": "/blog/food/recipes/mushroom-marinara-dal#serving-options"
-  },"350": {
+  },"351": {
     "doc": "Mushroom Marinara Dal",
     "title": "Mushroom Marinara Dal",
     "content": " ",
     "url": "/blog/food/recipes/mushroom-marinara-dal",
     
     "relUrl": "/blog/food/recipes/mushroom-marinara-dal"
-  },"351": {
+  },"352": {
     "doc": "Music",
     "title": "Music",
     "content": "I make music and play music. ",
     "url": "/blog/music",
     
     "relUrl": "/blog/music"
-  },"352": {
+  },"353": {
     "doc": "Music",
     "title": "Made",
     "content": "Ok I mostly transcribe music into formats for specific instruments. Here’s an app, Notation Map, that I’m making to help me pick up new instruments. It is unfinished. ",
     "url": "/blog/music#made",
     
     "relUrl": "/blog/music#made"
-  },"353": {
+  },"354": {
     "doc": "Music",
     "title": "Playing",
     "content": "I’m currently playing: . ",
     "url": "/blog/music#playing",
     
     "relUrl": "/blog/music#playing"
-  },"354": {
+  },"355": {
     "doc": "Music",
     "title": "Balinese Gamelan",
     "content": " ",
     "url": "/blog/music#balinese-gamelan",
     
     "relUrl": "/blog/music#balinese-gamelan"
-  },"355": {
+  },"356": {
     "doc": "Music",
     "title": "Gangsa",
     "content": " ",
     "url": "/blog/music#gangsa",
     
     "relUrl": "/blog/music#gangsa"
-  },"356": {
+  },"357": {
     "doc": "Music",
     "title": "Gong",
     "content": " ",
     "url": "/blog/music#gong",
     
     "relUrl": "/blog/music#gong"
-  },"357": {
+  },"358": {
     "doc": "Music",
     "title": "Kalimba",
     "content": " ",
     "url": "/blog/music#kalimba",
     
     "relUrl": "/blog/music#kalimba"
-  },"358": {
+  },"359": {
     "doc": "Music",
     "title": "Diatonic",
     "content": "17-key diatonic C4 to E6 . ",
     "url": "/blog/music#diatonic",
     
     "relUrl": "/blog/music#diatonic"
-  },"359": {
+  },"360": {
     "doc": "Music",
     "title": "Chromatic Alto",
     "content": "42-key chromatic E3 to E6♭ . ",
     "url": "/blog/music#chromatic-alto",
     
     "relUrl": "/blog/music#chromatic-alto"
-  },"360": {
+  },"361": {
     "doc": "Music",
     "title": "Played",
     "content": ". | Alto Melodica . | 37 keys from F to F | . | Reyong | Carillion | Cello | Viola | Violin | Recorder | Piano | Voice ( Alto ) | . ",
     "url": "/blog/music#played",
     
     "relUrl": "/blog/music#played"
-  },"361": {
+  },"362": {
     "doc": "Natto Nacho Cheese",
     "title": "\n  \n  Natto Nacho Cheese\n",
     "content": ". Creamy and slightly sticky just like real nacho cheese! . Preparation time2 minsPT2MCooking time7 minsPT7MYield1 serving 1 ",
     "url": "/blog/food/recipes/natto-nacho-cheese#natto-nacho-cheese",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese#natto-nacho-cheese"
-  },"362": {
+  },"363": {
     "doc": "Natto Nacho Cheese",
     "title": " Ingredients",
     "content": ". | 50 – 60 g natto | 1 – 2 tbsp nooch | 1 –1.5 tbsp cashew butter | rice vinegar | tamari | ponzu | yellow mustard | kala namak ( and/or salt ) | 0.5 – 2 tsp garlic powder | white pepper powder | cashew milk ( variable ) | 1 – 2 tsp miso paste ( optional ) for more umami | sweetener ( optional ) ( date syrup and/or stevia ) | . ",
     "url": "/blog/food/recipes/natto-nacho-cheese#ingredients",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese#ingredients"
-  },"363": {
+  },"364": {
     "doc": "Natto Nacho Cheese",
     "title": " Instructions",
     "content": ". | If the natto is frozen, defrost overnight in the refrigerator. | Stir/whisk natto in a bowl with chopsticks until it becomes stringy and creamy. Using a fork is not reccommended. | Add all liquid ingredients (except for the cashew milk) and salts to taste and whisk til dissolved. | Stir in the rest of the solid ingredients. | Adjust consistency to desired viscosity by adding cashew milk while stirring. | . The resulting texture and color should resemble nacho cheese. ",
     "url": "/blog/food/recipes/natto-nacho-cheese#instructions",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese#instructions"
-  },"364": {
+  },"365": {
     "doc": "Natto Nacho Cheese",
     "title": " Nutrition Facts",
     "content": "in grams per serving . Calories340Fat22Carbohydrates23Protein26 Mandy Chenhttps://picaq.github.io cuisineAmericandietvegan, keto, diabeticcategorysnackkeywordsnatto, cashew, cheese, nachos ",
     "url": "/blog/food/recipes/natto-nacho-cheese#nutrition-facts",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese#nutrition-facts"
-  },"365": {
+  },"366": {
     "doc": "Natto Nacho Cheese",
     "title": "How does it compare to regular nacho cheese?",
     "content": ". | creamy and slightly sticky just like real nacho cheese | you can customize the level of umami | doesn’t dry out quickly like nacho cheese, where the cheese requires heating to stay melted and the roux dries out and hardens as water evaporates | high protein, low-carb and somewhat low fat | far less oily: the primary source of oil is from the cashew butter | less filler ( flour/roux/starch, sodium citrate ) means more flavor | can be eaten at room temperature, warmed or chilled | . ",
     "url": "/blog/food/recipes/natto-nacho-cheese#how-does-it-compare-to-regular-nacho-cheese",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese#how-does-it-compare-to-regular-nacho-cheese"
-  },"366": {
+  },"367": {
     "doc": "Natto Nacho Cheese",
     "title": "More Cheese!",
     "content": "This recipe can easily be adapted to make cheesy peas instead. ",
     "url": "/blog/food/recipes/natto-nacho-cheese#more-cheese",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese#more-cheese"
-  },"367": {
+  },"368": {
     "doc": "Natto Nacho Cheese",
     "title": "Natto Nacho Cheese",
     "content": ". ",
     "url": "/blog/food/recipes/natto-nacho-cheese",
     
     "relUrl": "/blog/food/recipes/natto-nacho-cheese"
-  },"368": {
+  },"369": {
     "doc": "Object",
     "title": "Object",
     "content": "A JavaScript Object that stores key-value pairs. For frequent insertion/deletion and updating, a Map object is preferred. ",
     "url": "/blog/gists/javascript/object",
     
     "relUrl": "/blog/gists/javascript/object"
-  },"369": {
+  },"370": {
     "doc": "Object",
     "title": "Merge Key &amp; Value Arrays",
     "content": "merge arrays of keys and values with matching indexes into an object . Object.fromEntries(arrKeys.map((item,i) =&gt; [item,arrVals[i]])); . ",
     "url": "/blog/gists/javascript/object#merge-key--value-arrays",
     
     "relUrl": "/blog/gists/javascript/object#merge-key--value-arrays"
-  },"370": {
+  },"371": {
     "doc": "Promise",
     "title": "Promise",
     "content": " ",
     "url": "/blog/gists/javascript/promise",
     
     "relUrl": "/blog/gists/javascript/promise"
-  },"371": {
+  },"372": {
     "doc": "Promise",
     "title": "Async / Await &amp; .then() chain",
     "content": " ",
     "url": "/blog/gists/javascript/promise#async--await--then-chain",
     
     "relUrl": "/blog/gists/javascript/promise#async--await--then-chain"
-  },"372": {
+  },"373": {
     "doc": "Promise",
     "title": "Using async/await",
     "content": "const url = `https://someapi.com/${somevars}`; const response = await fetch(url); const text = await response.text(); const json = await response.json(); console.log(text, json); . ",
     "url": "/blog/gists/javascript/promise#using-asyncawait",
     
     "relUrl": "/blog/gists/javascript/promise#using-asyncawait"
-  },"373": {
+  },"374": {
     "doc": "Promise",
     "title": ".then() chain",
     "content": "const response = () =&gt; fetch(url) .then(response =&gt; response.json()) .then(json =&gt; { console.log(json); }); response(); . ",
     "url": "/blog/gists/javascript/promise#then-chain",
     
     "relUrl": "/blog/gists/javascript/promise#then-chain"
-  },"374": {
+  },"375": {
     "doc": "Promise",
     "title": "Try Catch &amp; Error",
     "content": "Try catch and await async in a network API request . ",
     "url": "/blog/gists/javascript/promise#try-catch--error",
     
     "relUrl": "/blog/gists/javascript/promise#try-catch--error"
-  },"375": {
+  },"376": {
     "doc": "Promise",
     "title": "Using async/await with try/catch",
     "content": "try { const response = await fetch(url); if (!response.ok) { throw new Error(`HTTP error! status: ${response.status}`); } const json = await response.json(); console.log(json); } catch (error) { console.error('Error fetching data:', error); } . ",
     "url": "/blog/gists/javascript/promise#using-asyncawait-with-trycatch",
     
     "relUrl": "/blog/gists/javascript/promise#using-asyncawait-with-trycatch"
-  },"376": {
+  },"377": {
     "doc": "Promise",
     "title": "Using .then() chain with .catch()",
     "content": "fetch(url) .then(response =&gt; { if (!response.ok) { throw new Error(`HTTP error! status: ${response.status}`); } return response.text(); }) .then(text =&gt; { console.log(text); // \"some string\" }) .catch(error =&gt; { console.error('Error fetching data:', error); }); . ",
     "url": "/blog/gists/javascript/promise#using-then-chain-with-catch",
     
     "relUrl": "/blog/gists/javascript/promise#using-then-chain-with-catch"
-  },"377": {
+  },"378": {
     "doc": "Promise",
     "title": "example",
     "content": "const getCityValues = async () =&gt; { try { const response = await fetch( `https://data.epa.gov/efservice/getEnvirofactsUVHourly/CITY/Seattle/STATE/WA/JSON` ); const jsonData = await response.json(); console.log(jsonData); } catch (error) { console.error(error.message); console.error(userCity, 'is not found!'); } } . ",
     "url": "/blog/gists/javascript/promise#example",
     
     "relUrl": "/blog/gists/javascript/promise#example"
-  },"378": {
+  },"379": {
     "doc": "Promise",
     "title": "CORS",
     "content": "bypass CORS with a proxy . const getData = async (hr = time) =&gt; { try { const response = await fetch( 'https://corsproxy.io/' + `https://apidata.com/treasure/${String(hr).padStart(2,'0')}.json`, { headers: { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET', 'Access-Control-Allow-Headers': 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With', }, } ); const jsonData = await response.json(); console.log(jsonData); cache[hr] = jsonData; // add api response data to cache doSomething(hr); } catch (error) { console.error(error.message); }; }; . ",
     "url": "/blog/gists/javascript/promise#cors",
     
     "relUrl": "/blog/gists/javascript/promise#cors"
-  },"379": {
+  },"380": {
     "doc": "Promise",
     "title": "Wait Before Execution",
     "content": "Use between batch downloads or to wait in between loops or before a browser action such as click or scroll. usage: only works on async or top level functions . const wait = ms =&gt; new Promise(response =&gt; setTimeout(response, ms)); await wait(5000); // console.log('waited 5 seconds'); . one-liner with less memory and time: useful if only needed once or a known hardcoded delay. await new Promise(res =&gt; setTimeout(res, 5000)); // console.log('quickly waited 5 seconds'); . async not needed . setTimeout(() =&gt; { console.log('waited 3 seconds'); }, 3000); . ",
     "url": "/blog/gists/javascript/promise#wait-before-execution",
     
     "relUrl": "/blog/gists/javascript/promise#wait-before-execution"
-  },"380": {
+  },"381": {
     "doc": "Promise",
     "title": "Batch download all resource links in page",
     "content": "a delay between clicks is needed to prevent rate limiting and browser download limits. const links = [...document.querySelectorAll('a.className')]; // adjust query/class const len = links.length; const timing = 123; const delay = ms =&gt; new Promise(response =&gt; setTimeout(response, ms)); (async () =&gt; { for (let i = 0; i &lt; len; i++) { const a = links[i]; const url = a.href; const filename = decodeURI(a.href.split('/').pop()); a.download = filename; console.log(i + 1, '/', len , filename); a.click(); await delay(timing); // adjust timing } })(); . ",
     "url": "/blog/gists/javascript/promise#batch-download-all-resource-links-in-page",
     
     "relUrl": "/blog/gists/javascript/promise#batch-download-all-resource-links-in-page"
-  },"381": {
+  },"382": {
     "doc": "Python",
     "title": "Python",
     "content": "I don’t really know much python syntax but its useful for processing data and batch file conversions. ",
     "url": "/blog/gists/python",
     
     "relUrl": "/blog/gists/python"
-  },"382": {
+  },"383": {
     "doc": "Typography for Reading",
     "title": "Fine Typography for Reading",
     "content": "Common fine typographic adjustments for optical margin alignment. Primarily dealing with hanging quotes and orphans. | Fine Typography for Reading . | classes | spacings | orphans and widows | edge cases | news typography css | add quote classes js | Chrome Extension | . | . original gist: Fine typography for the web . | the easiest way to edit and update CSS is with the Stylus plugin to specify user styles | a js bookmarklet or snippet is used to inject quote classes for styling | . | if no external chrome plugin is preferred, CSS can be injected with this bookmarklet | chrome extension coming soon? maybe? | . view the codepen here . ",
     "url": "/blog/design/type/reading#fine-typography-for-reading",
     
     "relUrl": "/blog/design/type/reading#fine-typography-for-reading"
-  },"383": {
+  },"384": {
     "doc": "Typography for Reading",
     "title": "classes",
     "content": ".hanging-quote : content that starts with a double opening quote “ .single-quote : content that starts with single opening quote ‘ .before-quote : word chunk before the hanging double quote .before-single-quote : word chunk before the hanging single quote . ",
     "url": "/blog/design/type/reading#classes",
     
     "relUrl": "/blog/design/type/reading#classes"
-  },"384": {
+  },"385": {
     "doc": "Typography for Reading",
     "title": "spacings",
     "content": ". | since negative text-indent is used to hang quotes, the “before” chunk gets the same additional positive padding to the right in order to prevent collisions | hang width proportion is manually determined based on each typeface or font. The width of the double quote is measured based on the em width | single quote is thinner than a double quote, and is approximated to be about 60% of the width of the double quote. May vary based on typeface or font | . ",
     "url": "/blog/design/type/reading#spacings",
     
     "relUrl": "/blog/design/type/reading#spacings"
-  },"385": {
+  },"386": {
     "doc": "Typography for Reading",
     "title": "orphans and widows",
     "content": ". | orphans are prevented by replacing normal whitespace with &amp;nbsp; at the end of each paragraph, determined by the slice depth | slice depth should be proportional to the measure or max-width (more accurately, in terms of number of characters or letters) and is currently not dynamic or responsive | currently, this method breaks all anchor tags and links in the content | widows are generally not a problem in web typography, since multiple columns are uncommon and unpopular | . ",
     "url": "/blog/design/type/reading#orphans-and-widows",
     
     "relUrl": "/blog/design/type/reading#orphans-and-widows"
-  },"386": {
+  },"387": {
     "doc": "Typography for Reading",
     "title": "edge cases",
     "content": ". | need to encounter more text content variations to accomodate edge cases | unfortunately, fine typography is optically and manually adjusted, in which case the edit content bookmarklet comes in handy | . ",
     "url": "/blog/design/type/reading#edge-cases",
     
     "relUrl": "/blog/design/type/reading#edge-cases"
-  },"387": {
+  },"388": {
     "doc": "Typography for Reading",
     "title": "news typography css",
     "content": "/* ==UserStyle== @name news typography @namespace github.com/openstyles/stylus @version 1.0.0 @description A new userstyle @author PicaQ ==/UserStyle== */ @-moz-document domain(\"independent.co.uk\"), url-prefix(\"https://\"), domain(\"nytimes.com\") { :root { --open: .33em; /* Open sans*/ --hang-nyt: .4584em; /* nyt-imperial, Indy Serif, georgia */ --hang: var(--hang-nyt); --single: .593; } .hanging-quote { text-indent: calc(var(--hang) * -1); } .single-quote { text-indent: calc(var(--hang) * var(--single) * -1); } span.hanging-quote, span.single-quote { display: inline-block; } .before-quote { padding-right: var(--hang); } .before-single-quote { padding-right: calc(var(--hang) * var(--single)); } } @-moz-document domain(\"quantamagazine.org\") { :root { --hang: .65em /* Merriweather */ } } . ",
     "url": "/blog/design/type/reading#news-typography-css",
     
     "relUrl": "/blog/design/type/reading#news-typography-css"
-  },"388": {
+  },"389": {
     "doc": "Typography for Reading",
     "title": "add quote classes js",
     "content": "remember to remove the comments if using this as a bookmarklet . javascript: (()=&gt;{ const paragraphs = [...document.querySelectorAll('p')]; // ~ 108 letters per line /3 = 36 ; /4 = 27 ; /5 = 21 const sliceDepth = 30; // removes orphans const noBreak = s =&gt; s.slice(0, s.length-sliceDepth) + s.slice(-sliceDepth).replace(/ /g, ' '); paragraphs.forEach( p =&gt; p.innerText = noBreak(p.innerText)); paragraphs.forEach( p =&gt; p.innerText[0] === \"“\" ? p.className = p.className + \" hanging-quote\" : \"\"); paragraphs.forEach( p =&gt; p.innerHTML = p.innerHTML .replace(/((\\w+[^\\w\\s]?\\s)(?=“\\w+))(“\\w+)/g, \"&lt;span class='before-quote'&gt;$1&lt;/span&gt;&lt;span class='hanging-quote'&gt;$3&lt;/span&gt;\") .replace(/((\\w+[^\\w\\s]?\\s)(?=‘\\w+))(‘\\w+)/g, \"&lt;span class='before-single-quote'&gt;$1&lt;/span&gt;&lt;span class='single-quote'&gt;$3&lt;/span&gt;\") ); })(); . ",
     "url": "/blog/design/type/reading#add-quote-classes-js",
     
     "relUrl": "/blog/design/type/reading#add-quote-classes-js"
-  },"389": {
+  },"390": {
     "doc": "Typography for Reading",
     "title": "Chrome Extension",
     "content": "I am currently working on a chrome extension that does this automatically! Keep your eyes peeled. Todo: . | create non-default icons &amp; branding | publish to the chrome web store | . ",
     "url": "/blog/design/type/reading#chrome-extension",
     
     "relUrl": "/blog/design/type/reading#chrome-extension"
-  },"390": {
+  },"391": {
     "doc": "Typography for Reading",
     "title": "Typography for Reading",
     "content": " ",
     "url": "/blog/design/type/reading",
     
     "relUrl": "/blog/design/type/reading"
-  },"391": {
+  },"392": {
     "doc": "Recipes",
     "title": "Recipes",
     "content": "Below is a list of my published recipes. For most recipes, a stove is not required. If you would like to submit a recipe review ( with review text and a star rating out of 5 ) or a suggestion, feel free to contact me, create an issue or a pull request to do so. Edit this page on GitHub on the bottom of any page brings you to the source code. ",
     "url": "/blog/food/recipes",
     
     "relUrl": "/blog/food/recipes"
-  },"392": {
+  },"393": {
     "doc": "Ruby",
     "title": "Ruby",
     "content": "Ruby is great, though the only chance I get to use it as of late is writing plugins for this blog. The ruby-practice repository contains my most-visted ruby notes. ruby-koans is my progress learning ruby by testing edge cases. ",
     "url": "/blog/gists/ruby",
     
     "relUrl": "/blog/gists/ruby"
-  },"393": {
+  },"394": {
     "doc": "Sauces",
     "title": "Sauces &amp; Flavorings",
     "content": "A collection of my personal favorite sauces &amp; flavorings. I will include a link to my preferred brands but not directly to the products ( there are multiple sizes ). Generics, where any brand works, are in lowercase. ",
     "url": "/blog/food/sauces#sauces--flavorings",
     
     "relUrl": "/blog/food/sauces#sauces--flavorings"
-  },"394": {
+  },"395": {
     "doc": "Sauces",
     "title": "Condiments",
     "content": " ",
     "url": "/blog/food/sauces#condiments",
     
     "relUrl": "/blog/food/sauces#condiments"
-  },"395": {
+  },"396": {
     "doc": "Sauces",
     "title": "Salty",
     "content": ". | Roland Vegan Ponzu Sauce | tamari | shoyu | kala namak aka black salt | . ",
     "url": "/blog/food/sauces#salty",
     
     "relUrl": "/blog/food/sauces#salty"
-  },"396": {
+  },"397": {
     "doc": "Sauces",
     "title": "Umami",
     "content": ". | nutritional yeast aka “nooch” | miso | kombu dashi | nori | roasted sesame oil | dried shiitake | garlic powder | black garlic | Artisana Organics Raw Organic Cashew Butter | Erewhon Organic Roasted Peanut Butter | Brooklyn Delhi Roasted Garlic Achaar | TRUFF Spicy Marinara Sauce | . ",
     "url": "/blog/food/sauces#umami",
     
     "relUrl": "/blog/food/sauces#umami"
-  },"397": {
+  },"398": {
     "doc": "Sauces",
     "title": "Spicy",
     "content": "I have an infinite spice tolerance. Be warned. | Melinda’s Ghost Pepper Hot Sauce | TRUFF White Hotter Hot Sauce | Su Chili Crisp Mala「甦」麻辣辣油 | harissa sauce | white pepper powder | Huy Fong Sriracha | gochujang | . ",
     "url": "/blog/food/sauces#spicy",
     
     "relUrl": "/blog/food/sauces#spicy"
-  },"398": {
+  },"399": {
     "doc": "Sauces",
     "title": "Acid",
     "content": "This is good for blending with bitter foods such as bitter melon and natto . | rice vinegar | yellow mustard | Napa Kimchi . | Choi’s Spicy Napa Kimchi | Im Soon Ja Vegan Kimchi 비건김치 (林) | . | . ",
     "url": "/blog/food/sauces#acid",
     
     "relUrl": "/blog/food/sauces#acid"
-  },"399": {
+  },"400": {
     "doc": "Sauces",
     "title": "Sweet",
     "content": ". | blended deglet dates | date syrup | dark brown sugar | molasses | stevia | allulose | monk fruit | Trader Joe’s Marshmallows | . ",
     "url": "/blog/food/sauces#sweet",
     
     "relUrl": "/blog/food/sauces#sweet"
-  },"400": {
+  },"401": {
     "doc": "Sauces",
     "title": "Sauces",
     "content": " ",
     "url": "/blog/food/sauces",
     
     "relUrl": "/blog/food/sauces"
-  },"401": {
+  },"402": {
     "doc": "Search Terms",
     "title": "Search Terms",
     "content": " ",
     "url": "/blog/fashion/search-terms",
     
     "relUrl": "/blog/fashion/search-terms"
-  },"402": {
+  },"403": {
     "doc": "Search Terms",
     "title": "TaoBao",
     "content": " ",
     "url": "/blog/fashion/search-terms#taobao",
     
     "relUrl": "/blog/fashion/search-terms#taobao"
-  },"403": {
+  },"404": {
     "doc": "Search Terms",
     "title": "Brand &amp; Shop Names",
     "content": "MIST夕雾工作室 . ",
     "url": "/blog/fashion/search-terms#brand--shop-names",
     
     "relUrl": "/blog/fashion/search-terms#brand--shop-names"
-  },"404": {
+  },"405": {
     "doc": "Search Terms",
     "title": "Korean",
     "content": " ",
     "url": "/blog/fashion/search-terms#korean",
     
     "relUrl": "/blog/fashion/search-terms#korean"
-  },"405": {
+  },"406": {
     "doc": "Search Terms",
     "title": "Material 소재",
     "content": "소재 . cotton . 면 . tencel, rayon . 텐셀 . polyester . 폴리에스테르 . ",
     "url": "/blog/fashion/search-terms#material-%EC%86%8C%EC%9E%AC",
     
     "relUrl": "/blog/fashion/search-terms#material-소재"
-  },"406": {
+  },"407": {
     "doc": "Sheet Music",
     "title": "Sheet Music",
     "content": "I make music and play music. ",
     "url": "/blog/music/sheet-music",
     
     "relUrl": "/blog/music/sheet-music"
-  },"407": {
+  },"408": {
     "doc": "Sheet Music",
     "title": "Made",
     "content": "Ok I mostly transcribe music into formats for specific instruments. Here’s an app, Notation Map, that I’m making to help me pick up new instruments. It is unfinished. ",
     "url": "/blog/music/sheet-music#made",
     
     "relUrl": "/blog/music/sheet-music#made"
-  },"408": {
+  },"409": {
     "doc": "Sheet Music",
     "title": "Violin",
     "content": "The very first piece I transcribed in 2008 or 2009 while I was still in high school, and the first Orisinal entry on ichigos.com, Winter Bells. Youtube cover re-arranged by Sherry Kim for Viola. ",
     "url": "/blog/music/sheet-music#violin",
     
     "relUrl": "/blog/music/sheet-music#violin"
-  },"409": {
+  },"410": {
     "doc": "Sheet Music",
     "title": "Kalimba tabs?",
     "content": "I get asked this sometimes but I prefer transcribing music into staff notation due to being instrument-agnostic and its ease to adapt to other instruments. In the near future I will sort sheet music by chromatic range rather than by instrument. ",
     "url": "/blog/music/sheet-music#kalimba-tabs",
     
     "relUrl": "/blog/music/sheet-music#kalimba-tabs"
-  },"410": {
+  },"411": {
     "doc": "Sheet Music",
     "title": "List of Instruments",
     "content": ". | Kalimba ( Mbira ) . | 17 key diatonic | 42 chromatic alto | . | Alto Melodica . | 37 keys from F to F | . | Reyong | Carillion | Cello | Viola | Violin | Recorder | Piano | Voice ( Alto ) | . ",
     "url": "/blog/music/sheet-music#list-of-instruments",
     
     "relUrl": "/blog/music/sheet-music#list-of-instruments"
-  },"411": {
+  },"412": {
     "doc": "Skincare",
     "title": "Skincare",
     "content": "Skin is the largest organ and the first barrier of defense. I am a longtime sufferer of sunburn, acne, eczema, dry skin and keratosis pillaris, all of which have been resolved or managed. Topics to be included: . | Light: . | UV defense tactics | sunscreen, parasols, UPF clothing, window filters | red/blue light therapy | . | Vitamins! (mostly C, E &amp; polyphenols) . | foods such as fruits, protein and tremella | topical vitamins and antioxidants | . | Moisture . | moisturizers . | humectants | occlusives | . | skin sprays | favorite product ingredient breakdown | . | Oil . | hair/skin/nail oiling | oil blotting papers | . | . ",
     "url": "/blog/skincare",
     
     "relUrl": "/blog/skincare"
-  },"412": {
+  },"413": {
     "doc": "Spells",
     "title": "Spells",
     "content": "I’m currently playing Dungeons &amp; Dragons 5th edition with Tiger Kong. I am playing as a Harengon Bard, and this page simply keeps track of my stats, spells and cantrips. | Strength | -1 | . | Dexterity | 3 | . | Constitution | 1 | . | Intelligence | 0 | . | Wisdom | 1 | . | Charisma | 3 | . | Bard | Charisma | 13 | 5 | . | spellcasting class | spellcasting ability | spell saveDC | spell attackbonus | . Note: All content on this page is owned by Wizards of the Coast. Search engine indexing is blocked for this page. | Spells . | 0 Cantrips . | Vicious Mockery . | At Higher Levels | . | Mending | *Ray of Frost 1d8 dmg . | At Higher Levels | . | . | 1 ▢ ▢ ▢ ▢ / 4 . | Healing Word 1d4 + 3 char . | At Higher Levels | . | Speak with Animals | Comprehend Languages | Color Spray . | At Higher Levels | . | . | 2 ▢ ▢ / 2 . | Cloud of Daggers 4d4 | Heat Metal 2d8 | . | 3 | 4 . | *Dancing Light | *Polymorph | . | 5 | 6 | 7 | 8 | 9 | Source Info | . | . ",
     "url": "/blog/games/dnd/spells",
     
     "relUrl": "/blog/games/dnd/spells"
-  },"413": {
+  },"414": {
     "doc": "Spells",
     "title": "0 Cantrips",
     "content": " ",
     "url": "/blog/games/dnd/spells#0cantrips",
     
     "relUrl": "/blog/games/dnd/spells#0cantrips"
-  },"414": {
+  },"415": {
     "doc": "Spells",
     "title": "Vicious Mockery",
     "content": "| School | Enchantment | . | Classes | Bard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V | . | Cast Time | 1 Action | . | Range | 60 feet | . You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (thought it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn. ",
     "url": "/blog/games/dnd/spells#vicious-mockery",
     
     "relUrl": "/blog/games/dnd/spells#vicious-mockery"
-  },"415": {
+  },"416": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4). ",
     "url": "/blog/games/dnd/spells#at-higher-levels",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels"
-  },"416": {
+  },"417": {
     "doc": "Spells",
     "title": "Mending",
     "content": "| School | Transmutation | . | Classes | Artificer, Bard, Cleric, Druid, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V, S, M (two lodestones) | . | Cast Time | 1 Minute | . | Range | Touch | . This spell repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn cloack, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. This spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object. ",
     "url": "/blog/games/dnd/spells#mending",
     
     "relUrl": "/blog/games/dnd/spells#mending"
-  },"417": {
+  },"418": {
     "doc": "Spells",
     "title": "*Ray of Frost 1d8 dmg",
     "content": "| School | Evocation | . | Classes | Artificer, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V, S | . | Cast Time | 1 Action | . | Range | 60 feet | . A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn. ",
     "url": "/blog/games/dnd/spells#ray-of-frost-1d8-dmg",
     
     "relUrl": "/blog/games/dnd/spells#ray-of-frost-1d8-dmg"
-  },"418": {
+  },"419": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8). ",
     "url": "/blog/games/dnd/spells#at-higher-levels-1",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-1"
-  },"419": {
+  },"420": {
     "doc": "Spells",
     "title": "1 ▢ ▢ ▢ ▢ / 4",
     "content": " ",
     "url": "/blog/games/dnd/spells#14",
     
     "relUrl": "/blog/games/dnd/spells#14"
-  },"420": {
+  },"421": {
     "doc": "Spells",
     "title": " Faerie Fire ",
     "content": "| School | Evocation | . | Classes | Artificer, Bard, Druid | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V | . | Cast Time | 1 Action | . | Range | 60 feet | . Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible. ",
     "url": "/blog/games/dnd/spells",
     
     "relUrl": "/blog/games/dnd/spells"
-  },"421": {
+  },"422": {
     "doc": "Spells",
     "title": "Healing Word 1d4 + 3 char",
     "content": "| School | Evocation | . | Classes | Bard, Cleric, Druid | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V | . | Cast Time | 1 Bonus Action | . | Range | 60 feet | . A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs. ",
     "url": "/blog/games/dnd/spells#healing-word-1d4--3-char",
     
     "relUrl": "/blog/games/dnd/spells#healing-word-1d4--3-char"
-  },"422": {
+  },"423": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st. ",
     "url": "/blog/games/dnd/spells#at-higher-levels-2",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-2"
-  },"423": {
+  },"424": {
     "doc": "Spells",
     "title": "Speak with Animals",
     "content": "| School | Divination | . | Classes | Bard, Druid, Ranger | . | Ritual? | Yes | . | Duration | 10 minutes | . | Components | V, S | . | Cast Time | 1 Action | . | Range | Self | . You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM’s discretion. ",
     "url": "/blog/games/dnd/spells#speak-with-animals",
     
     "relUrl": "/blog/games/dnd/spells#speak-with-animals"
-  },"424": {
+  },"425": {
     "doc": "Spells",
     "title": "Comprehend Languages",
     "content": "| School | Divination | . | Classes | Bard, Sorcerer, Warlock, Wizard | . | Ritual? | Yes | . | Duration | 1 hour | . | Components | V, S, M (a pinch of soot and salt) | . | Cast Time | 1 Action | . | Range | Self | . For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface of which the words are written. It takes about 1 minute to read one page of text. This spell doesn’t decode secret messages in a text or glyph, such as an arcane sigil, that isn’t part of a written language. ",
     "url": "/blog/games/dnd/spells#comprehend-languages",
     
     "relUrl": "/blog/games/dnd/spells#comprehend-languages"
-  },"425": {
+  },"426": {
     "doc": "Spells",
     "title": "Color Spray",
     "content": "| School | Illusion | . | Classes | Bard, Sorcerer, Wizard | . | Ritual? | No | . | Duration | 1 round | . | Components | V, S, M | . | Cast Time | 1 Action | . | Range | Self (15-foot cone) | . A dazzling array of flashing, colored light springs from your hand. Roll 6d10, the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can’t see). Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the spell ends. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for the creature to be affected. ",
     "url": "/blog/games/dnd/spells#color-spray",
     
     "relUrl": "/blog/games/dnd/spells#color-spray"
-  },"426": {
+  },"427": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st. ",
     "url": "/blog/games/dnd/spells#at-higher-levels-3",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-3"
-  },"427": {
+  },"428": {
     "doc": "Spells",
     "title": "2 ▢ ▢ / 2",
     "content": " ",
     "url": "/blog/games/dnd/spells#22",
     
     "relUrl": "/blog/games/dnd/spells#22"
-  },"428": {
+  },"429": {
     "doc": "Spells",
     "title": "Cloud of Daggers 4d4",
     "content": "| School | Conjuration | . | Classes | Bard, Sorcerer, Warlock, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S, M (a sliver of glass) | . | Cast Time | 1 Action | . | Range | 60 feet | . You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes 4d4 slashing damage when it enters the spell’s area for the first time on a turn or starts its turn there. ",
     "url": "/blog/games/dnd/spells#cloud-of-daggers-4d4",
     
     "relUrl": "/blog/games/dnd/spells#cloud-of-daggers-4d4"
-  },"429": {
+  },"430": {
     "doc": "Spells",
     "title": "Heat Metal 2d8",
     "content": "| School | Transmutation | . | Classes | Artificer, Bard, Druid | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S, M (a piece of iron and a flame) | . | Cast Time | 1 Action | . | Range | 60 feet | . Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again. If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn’t drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn. ",
     "url": "/blog/games/dnd/spells#heat-metal-2d8",
     
     "relUrl": "/blog/games/dnd/spells#heat-metal-2d8"
-  },"430": {
+  },"431": {
     "doc": "Spells",
     "title": "3",
     "content": " ",
     "url": "/blog/games/dnd/spells#3",
     
     "relUrl": "/blog/games/dnd/spells#3"
-  },"431": {
+  },"432": {
     "doc": "Spells",
     "title": "4",
     "content": " ",
     "url": "/blog/games/dnd/spells#4",
     
     "relUrl": "/blog/games/dnd/spells#4"
-  },"432": {
+  },"433": {
     "doc": "Spells",
     "title": "*Dancing Light",
     "content": "| School | Evocation | . | Classes | Artificer, Bard, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S, M (a bit of phosphorus or wychwood, or a glowworm) | . | Cast Time | 1 Action | . | Range | 120 feet | . You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius. As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell’s range. ",
     "url": "/blog/games/dnd/spells#dancing-light",
     
     "relUrl": "/blog/games/dnd/spells#dancing-light"
-  },"433": {
+  },"434": {
     "doc": "Spells",
     "title": "*Polymorph",
     "content": "| School | Transmutation | . | Classes | Bard, Druid, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 hour | . | Components | V, S, M (a caterpillar cocoon) | . | Cast Time | 1 Action | . | Range | 60 feet | . 5e Beast List - Dungeons and Dragons Wiki . This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. A shapechanger automatically succeeds on this saving throw. The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target’s (or the target’s level, if it doesn’t have a challenge rating). The target’s game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality. The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn’t reduce the creature’s normal form to 0 hit points, it isn’t knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can’t speak, cast spells, or take any other action that requires hands or speech. The target’s gear melds into the new form. The creature can’t activate, use, wield, or otherwise benefit from any of its equipment. This spell can’t affect a target that has 0 hit points. ",
     "url": "/blog/games/dnd/spells#polymorph",
     
     "relUrl": "/blog/games/dnd/spells#polymorph"
-  },"434": {
+  },"435": {
     "doc": "Spells",
     "title": "5",
     "content": " ",
     "url": "/blog/games/dnd/spells#5",
     
     "relUrl": "/blog/games/dnd/spells#5"
-  },"435": {
+  },"436": {
     "doc": "Spells",
     "title": "6",
     "content": " ",
     "url": "/blog/games/dnd/spells#6",
     
     "relUrl": "/blog/games/dnd/spells#6"
-  },"436": {
+  },"437": {
     "doc": "Spells",
     "title": "7",
     "content": " ",
     "url": "/blog/games/dnd/spells#7",
     
     "relUrl": "/blog/games/dnd/spells#7"
-  },"437": {
+  },"438": {
     "doc": "Spells",
     "title": "8",
     "content": " ",
     "url": "/blog/games/dnd/spells#8",
     
     "relUrl": "/blog/games/dnd/spells#8"
-  },"438": {
+  },"439": {
     "doc": "Spells",
     "title": "9",
     "content": " ",
     "url": "/blog/games/dnd/spells#9",
     
     "relUrl": "/blog/games/dnd/spells#9"
-  },"439": {
+  },"440": {
     "doc": "Spells",
     "title": "Source Info",
     "content": ". | All Spells | Bard Spells | . ",
     "url": "/blog/games/dnd/spells#source-info",
     
     "relUrl": "/blog/games/dnd/spells#source-info"
-  },"440": {
+  },"441": {
     "doc": "Spicy Cold Tofu",
     "title": "\n  \n  Spicy Cold Tofu\n",
     "content": ". Quick, fresh, spicy, filling. Preparation time4 minsPT4MCooking time0 minsPT0MYield1 serving 1 ",
     "url": "/blog/food/recipes/spicy-cold-tofu#spicy-cold-tofu",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#spicy-cold-tofu"
-  },"441": {
+  },"442": {
     "doc": "Spicy Cold Tofu",
     "title": " Ingredients",
     "content": ". | 1 block of firm tofu, about 11~16 oz | ponzu | mala chili oil | toasted sesame oil | maple syrup | optional&#58; micro greens or crushed nori | . ",
     "url": "/blog/food/recipes/spicy-cold-tofu#ingredients",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#ingredients"
-  },"442": {
+  },"443": {
     "doc": "Spicy Cold Tofu",
     "title": " Instructions",
     "content": ". | Drain the water from a package of tofu. Organic Tofu tastes best. | Lightly press the remaining water out of the tofu. | Pour all of the liquid ingredients to taste on top of the tofu, about 1/2 tsp~1 tbsp each. | While preforating the tofu by stabbing it with a fork, spoon any sauce that pools on the bottom on top of the tofu. | Optionally, garnish with greens or nori. | . Thats it, it’s already done! . ",
     "url": "/blog/food/recipes/spicy-cold-tofu#instructions",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#instructions"
-  },"443": {
+  },"444": {
     "doc": "Spicy Cold Tofu",
     "title": " Nutrition Facts",
     "content": "in grams per serving . Calories330Fat20Carbohydrates11Protein32 Mandy Chenhttps://picaq.github.io cuisineChinesedietvegan, keto, diabeticcategoryentreekeywordssoy, protein, spicy, chili oil ",
     "url": "/blog/food/recipes/spicy-cold-tofu#nutrition-facts",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#nutrition-facts"
-  },"444": {
+  },"445": {
     "doc": "Spicy Cold Tofu",
     "title": "More Spice!",
     "content": ". ",
     "url": "/blog/food/recipes/spicy-cold-tofu#more-spice",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#more-spice"
-  },"445": {
+  },"446": {
     "doc": "Spicy Cold Tofu",
     "title": "Spicy Cold Tofu",
     "content": " ",
     "url": "/blog/food/recipes/spicy-cold-tofu",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu"
-  },"446": {
+  },"447": {
     "doc": "String",
     "title": "String",
     "content": " ",
     "url": "/blog/gists/javascript/string",
     
     "relUrl": "/blog/gists/javascript/string"
-  },"447": {
+  },"448": {
     "doc": "String",
     "title": "Count Occurrences of Chars or Substring Occurances in a String",
     "content": "String manipulation, counting and accounting . const count = (str, subst) =&gt; str.match( new RegExp(subst, \"g\") )?.length || 0; . ",
     "url": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string",
     
     "relUrl": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string"
-  },"448": {
+  },"449": {
     "doc": "Typography",
     "title": "Typography",
     "content": " ",
     "url": "/blog/design/type",
     
     "relUrl": "/blog/design/type"
-  },"449": {
+  },"450": {
     "doc": "User Styles",
     "title": "User Styles",
     "content": "Custom user-defined style sheets to better browse the web. ",
     "url": "/blog/gists/css/styles",
     
     "relUrl": "/blog/gists/css/styles"
-  },"450": {
+  },"451": {
     "doc": "User Styles",
     "title": "Monaco &amp; CodeMirror editors",
     "content": "/* fixes offset cursor in editor */ .monaco-editor .view-lines .view-line, .cm-line { /* for iosevka: editor font size * 1.10138462 */ font-size: 110.138462% !important; font-family: Iosevka !important; font-feature-settings: \"liga\" 0; } code, pre, .tio-markdown_code, [id^=\"file\"], .file-info, .CodeMirror-linenumber, #copilot-button-positioner, .cm-gutterElement { font-family: Iosevka !important; font-feature-settings: \"liga\" 0; } /* remove horrendous dots in coderpad */ .monaco-editor .mtkw { color: #0000 !important } /* cursor */ .cursor.monaco-mouse-cursor-text, .cm-cursor.cm-cursor-primary { background-color: #e9b6c5bf !important; border-color: #e9b6c5bf !important; } /* colors */ :root { --comment-green: #6a9955; --comment-steel-blue: rgb(97, 124, 149) !important; --keyword-pink: #c586c0; --keyword-lilac: rgb(177, 135, 232); } /* matching bracket colors */ .view-line .mtk3 { color: var(--comment-steel-blue); } .bracket-highlighting-0, .bracket-highlighting-3, .bracket-highlighting-6, .bracket-highlighting-9, .bracket-highlighting-12, .bracket-highlighting-15, .bracket-highlighting-18 { color: #ffd700a6 !important } .view-line .mtk13, .mtk9.bracket-highlighting-1, .bracket-highlighting-4, .bracket-highlighting-7, .bracket-highlighting-10, .bracket-highlighting-13, .bracket-highlighting-16, .bracket-highlighting-19 { color: var(--keyword-pink) !important; } .bracket-highlighting-2, .bracket-highlighting-5, .bracket-highlighting-8, .bracket-highlighting-11, .bracket-highlighting-14, .bracket-highlighting-17, .bracket-highlighting-20 { color: cornflowerblue !important; } /* colors */ div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(115, 176, 112); } .cm-s-textmate span.cm-property { color: rgba(219, 210, 198, .89); } .cm-s-textmate span.cm-def { color: rgb(122, 158, 208); } .cm-s-textmate span.cm-keyword { color: #b187e8; } .cm-s-textmate span.cm-variable-2 { color: rgb(140, 190, 198); } .cm-s-textmate span.cm-comment { color: rgb(97, 124, 149); } .cm-s-textmate span.cm-operator { color: rgb(86, 166, 114); } .cm-s-textmate span.cm-number { color: rgb(90, 185, 196); } .view-lines { /* softer colors */ filter: saturate(0.7) brightness(1) sepia(0.1); } .tio-markdown_img { filter: invert(.894) hue-rotate(177deg); opacity: .67; } . ",
     "url": "/blog/gists/css/styles#monaco--codemirror-editors",
     
     "relUrl": "/blog/gists/css/styles#monaco--codemirror-editors"
-  },"451": {
+  },"452": {
     "doc": "User Styles",
     "title": "Light Themes &amp; Printing",
     "content": " ",
     "url": "/blog/gists/css/styles#light-themes--printing",
     
     "relUrl": "/blog/gists/css/styles#light-themes--printing"
-  },"452": {
+  },"453": {
     "doc": "User Styles",
     "title": "ReMarkable",
     "content": "When a website is “printed” by your browser to a pdf, this prints to the exact size of the ReMarkable 2 or Paper Pro screen content size. Especially noticeable when content is on a dark background. @media print { @page { size: 210mm 280mm; /* &lt;- width height */ margin-top: 0.25in; margin-bottom: 0.25in; margin-left: 0; margin-right: 0; } body { zoom: 88%; } } . more info on printing CSS print page styling | DocuSeal . ",
     "url": "/blog/gists/css/styles#remarkable",
     
     "relUrl": "/blog/gists/css/styles#remarkable"
-  },"453": {
+  },"454": {
     "doc": "User Styles",
     "title": "Notion.site",
     "content": "ctrl/cmd + shift + L swaps between light and dark themes for your own notion notes but not public ones. Here is a workaround: . [style*=\"color: rgba(255, 255, 255, 0.81)\"] { color: rgba(0, 0, 0, 0.81) !important } [style*=\"background: rgba(255, 255, 255, 0.13)\"] { background: rgba(0, 0, 0, 0.03) !important } #main [style*=\"fill: rgba(255, 255, 255, 0.46)\"], [style*=\"color: rgba(255, 255, 255, 0.46)\"], #main [style*=\"fill: rgba(255, 255, 255\"] { fill: rgba(0, 0, 0, 0.46) !important; color: rgba(0, 0, 0, 0.46) !important; outline: rgba(0, 0, 0, 0.46) !important; } [style*=\"color: rgb(155, 155, 155); fill: rgb(155, 155, 155);\"] { color: rgb(95, 95, 95) !important; fill: rgb(95, 95, 95) !important; } [style=\"display: flex; flex-direction: row;\"] { filter: brightness(.3) } @media screen { [style*=\"background: rgb(25, 25, 25)\"] { background: rgb(225, 225, 225) !important } } @media print { html &gt; body [style*=\"background: rgb(25, 25, 25)\"] { background: white !important } } . ",
     "url": "/blog/gists/css/styles#notionsite",
     
     "relUrl": "/blog/gists/css/styles#notionsite"
-  },"454": {
+  },"455": {
     "doc": "User Styles",
     "title": "Y Combinator workatastartup.com",
     "content": "@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap'); @media print { body { max-width: 40em; font-family: Inter; line-height: 1.3rem; } .company-logo { float: left; margin-right: 1.5rem; } [class=\"company-section my-10\"] { clear: both; padding-top: 1.3rem; } .company-title .company-name { margin: 0 0 .75rem; display: inline-block; } .company-title .company-name + div + div { margin: .25rem 0 .05rem; display: inline-block; } .text-xl, .text-2xl { font-size: 1.2rem; font-weight: 600; } .text-2xl { font-size: 1.5rem; font-weight: 500; } .text-xl, .text-2xl, h1, h2, h3, h4 { font-family: Open Sans; } .flex { display: flex; } .text-sm { font-size: .875rem; line-height: 1.25rem; } .gap-x-6 { -moz-column-gap: 1.5rem; column-gap: 1.5rem; } .flex-row { flex-direction: row; } nav + div { padding: 1.5rem 0; } nav &gt; .flex { gap: .25rem; } [class=\"company-details my-2 flex flex-wrap md:my-0\"] * { padding: .13rem .33rem 0 0 ; } a img {padding: 1.2rem 1.2rem 0 0} /* [data-page] */ [class=\"ycdc-card mt-8 sm:w-[300px]\"], [class=\"w-full rounded bg-sky-100 text-sky-600 flex flex-row justify-between px-3 py-3 border-blue-200 border my-2\"] , [class=\"secondary normalwidth company-other-jobs mt-10\"] , [class=\"bg-brand w-full mt-2 md:mt-4 sm:px-6 lg:px-8 py-4 overflow-hidden\"], [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; section &gt; div &gt; div:nth-child(2), [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; div, [id^=\"WaasShowJobPage-react-component\"] &gt; div.no-scroll-behind.relative.isolate.z-10, footer, [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; section &gt; div &gt; div.flex-grow.space-y-5 &gt; div.ycdc-card.max-w-2xl &gt; div.mt-6.border-t.border-gray-300.pt-6.text-sm { display: none; } [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; section &gt; div &gt; div.flex-grow.space-y-5 { display: block !important; } } . ",
