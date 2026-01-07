@@ -535,6 +535,82 @@ I started to play [CSSBattle](https://cssbattle.dev/)
 </style>
 ```
 
+
+## [Target  (7/1/2026)](https://cssbattle.dev/play/uDLV0PMB1y2pcpTCka6f) 
+
+<div class="code-example">  
+  <div></div>
+  <div></div>
+</div>
+
+<style>
+  #target--712026 + .code-example div {
+    width: 160px;
+    height: 70px;
+    background: #CF6939;
+    margin: 0;
+  }
+  #target--712026 + .code-example div:nth-child(2) {
+    width: 110px;
+  }
+  #target--712026 + .code-example {
+    background: #2F434E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #target--712026 + .code-example div::before, #target--712026 + .code-example div::after {
+    content: "";
+    width: 110px;
+    height: 70px;
+    background: inherit;
+    display: block;
+    position: relative;
+    left: -50px;
+    top: -30px;
+  }
+  #target--712026 + .code-example div::after {
+    left: 50px;
+    top: -40px;
+  }
+</style>
+
+```html
+<div></div>
+<div></div>
+<style>
+  div {
+    width: 160px;
+    height: 70px;
+    background: #CF6939;
+    margin: 0;
+  }
+  div:nth-child(2) {
+    width: 110px;
+  }
+  body {
+    background: #2F434E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div::before, div::after {
+    content: "";
+    width: 110px;
+    height: 70px;
+    background: inherit;
+    display: block;
+    position: relative;
+    left: -50px;
+    top: -30px;
+  }
+  div::after {
+    left: 50px;
+    top: -40px;
+  }
+</style>
+```
+
 <!-- 
 ## [Target  (27/12/2025)](https://cssbattle.dev/play/) 
 
