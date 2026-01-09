@@ -611,6 +611,151 @@ I started to play [CSSBattle](https://cssbattle.dev/)
 </style>
 ```
 
+
+## [Target  (8/1/2026)](https://cssbattle.dev/play/yP1VuaIYYF5x5SVRHKha) 
+
+<div class="code-example">  
+  <div></div><div></div>
+  <div></div><div></div>
+</div>
+
+<style>
+  #target--812026 + .code-example  div {
+    width: 90px;
+    height: 40px;
+    background: #EE7667;
+    margin: 32px 27px
+  }
+  #target--812026 + .code-example  div::after {
+    content: "";
+    position: relative;
+    background: inherit;
+    display: block;
+    width: 90px;
+    height: 40px;
+    rotate: 90deg;
+    top: 25px;
+  }
+  #target--812026 + .code-example  div:nth-child(n + 3) {
+    background: #84BE8D;
+    rotate: 180deg;
+  }
+  #target--812026 + .code-example {
+    background: #F2EAA8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 76px;
+  }
+</style>
+
+```html
+<div></div><div></div>
+<div></div><div></div>
+<style>
+  div {
+    width: 90px;
+    height: 40px;
+    background: #EE7667;
+    margin: 32px 27px
+  }
+  div::after {
+    content: "";
+    position: relative;
+    background: inherit;
+    display: block;
+    width: 90px;
+    height: 40px;
+    rotate: 90deg;
+    top: 25px;
+  }
+  div:nth-child(n + 3) {
+    background: #84BE8D;
+    rotate: 180deg;
+  }
+  body {
+    background: #F2EAA8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 76px;
+  }
+</style>
+```
+
+
+## [Target  (9/1/2026)](https://cssbattle.dev/play/ovIjmZr8PqZQPyBINrTa) 
+
+<div class="code-example">  
+  <div></div>
+  <div></div>
+</div>
+
+<style>
+  #target--912026 + .code-example div {
+    width: 100%;
+    height: 125px;
+    background: #2B2A4A;
+    margin: 0 70px
+  }
+  #target--912026 + .code-example div::after {
+    content: "";
+    display: block;
+    position: relative;
+    right: 0;
+    background: #ECE3DF;
+    width: 70px;
+    height: calc(100% - 25px);
+    margin-left: calc(100% - 140px);
+  }
+  #target--912026 + .code-example div + div {
+    margin: 50px 20px -70px 0;
+    width: calc(100% - 70px);
+  }
+  #target--912026 + .code-example div + div::after {
+    margin-left: 0;
+    top: 25px;
+  }
+  #target--912026 + .code-example {
+    margin: 0;
+    background: #ECE3DF
+  }
+</style>
+
+```html
+<div></div>
+<div></div>
+<style>
+  div {
+    width: 100%;
+    height: 125px;
+    background: #2B2A4A;
+    margin: 0 70px
+  }
+  div::after {
+    content: "";
+    display: block;
+    position: relative;
+    right: 0;
+    background: #ECE3DF;
+    width: 70px;
+    height: calc(100% - 25px);
+    margin-left: calc(100% - 140px);
+  }
+  div + div {
+    margin: 50px 20px -70px 0;
+    width: calc(100% - 70px);
+  }
+  div + div::after {
+    margin-left: 0;
+    top: 25px;
+  }
+  body {
+    margin: 0;
+    background: #ECE3DF
+  }
+</style>
+```
 <!-- 
 ## [Target  (27/12/2025)](https://cssbattle.dev/play/) 
 
