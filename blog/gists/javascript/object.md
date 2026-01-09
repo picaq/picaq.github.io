@@ -16,3 +16,7 @@ merge arrays of keys and values with matching indexes into an object
 ```js
 Object.fromEntries(arrKeys.map((item,i) => [item,arrVals[i]]));
 ```
+
+
+### Source:
+[Object.entries() - JavaScript \| MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) 
