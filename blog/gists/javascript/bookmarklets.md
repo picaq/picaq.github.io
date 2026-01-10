@@ -16,6 +16,13 @@ javascript: (()=>{
     console.log("some code here");
 })();
 ```
+you can also just run javascript like so:
+
+```js
+javascript: console.log("some code here");
+```
+however, if you declare constants or variables here you cannot re-declare them unless the page is refreshed (it’s just like running js in the console).
+
 
 Here is [how to use one](https://gist.github.com/picaq/24a3c6d85583373f93c12dfae43e03ec)
 
@@ -412,6 +419,19 @@ const path = window.location.pathname;
 
 if (window.location.hostname = oldReddit) window.location = https + newReddit + path;
 else if (window.location.hostname = newReddit) window.location = https + oldReddit + path;
+```
+
+## Amazon
+
+print subscribe and save total price in the console
+
+```js
+javascript: (()=>{
+  const itemPrices = [...document.querySelectorAll(".subscription-price-container")];
+  const prices = itemPrices.map( itemPrice => itemPrice.innerText );
+  const total = prices.map( price => price.slice(1) ).reduce( (a, b) => parseFloat(a) + parseFloat(b), 0);
+  console.log(...prices, total);
+})();
 ```
 
 ## Misc
