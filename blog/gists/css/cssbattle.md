@@ -756,6 +756,170 @@ I started to play [CSSBattle](https://cssbattle.dev/)
   }
 </style>
 ```
+
+## [Target  (11/1/2026)](https://cssbattle.dev/play/9hxdHn3366ofYtrDhBUX) 
+
+<div class="code-example">  
+  <div><span></span><span></span></div>
+</div>
+
+<style>
+  #target--1112026 + .code-example span {
+    display: inline-block;
+    height: 10px;
+    background: #F9EAF1;
+    width: 100%;
+    position: relative;
+    top: -120px
+  }
+  #target--1112026 + .code-example  span + span {
+    background: #4C455B;
+    margin-top: 10px;
+  }
+  #target--1112026 + .code-example div {
+    margin: auto;
+    width: 40px;
+    height: 50px;
+    background: #5AA4B7;
+  }
+  #target--1112026 + .code-example div::before, #target--1112026 + .code-example div::after {
+    content: "";
+    background: #F9EAF1;    
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 130px;
+    top: -80px;
+    z-index: -1;
+  }
+  #target--1112026 + .code-example div::after {
+    background: #4C455B;
+    left: -80px;
+    top: -160px;    
+  }
+  #target--1112026 + .code-example {
+    background: #5AA4B7;
+    display: flex;
+  }
+</style>
+
+```html
+<div><span></span><span></span></div>
+<style>
+  span {
+    display: inline-block;
+    height: 10px;
+    background: #F9EAF1;
+    width: 100%;
+    position: relative;
+    top: -120px
+  }
+  span + span {
+    background: #4C455B;
+    margin-top: 10px;
+  }
+  div {
+    margin: auto;
+    width: 40px;
+    height: 50px;
+    background: #5AA4B7;
+  }
+  div::before, div::after {
+    content: "";
+    background: #F9EAF1;    
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 130px;
+    top: -80px;
+    z-index: -1;
+  }
+  div::after {
+    background: #4C455B;
+    left: -80px;
+    top: -160px;    
+  }
+  body {
+    background: #5AA4B7;
+    display: flex;
+  }
+</style>
+```
+
+## [Target  (12/1/2026)](https://cssbattle.dev/play/Bf06jT3koVDIaafany6b) 
+
+<div class="code-example">  
+  <div></div>
+</div>
+
+<style>
+  #target--1212026 + .code-example  div {
+    width: calc(100%-60px);
+    height: 100%;
+    background: inherit;
+    margin-top: 60px;
+    border: 60px solid #222222;
+    border-radius: 120px;
+  }
+  #target--1212026 + .code-example   div::after, #target--1212026 + .code-example  div::before {
+    content: "";
+    width: 40px;
+    height: 120px;
+    display: block;
+    border: inherit;
+    border-top: 0;
+    background: inherit;
+    position: relative;
+    top: -420px;
+    left: 60px;
+  }
+  #target--1212026 + .code-example   div::before {
+    width: 150%;
+    height: 100%;
+    top: 60px;
+    left: -130px;
+  }
+  #target--1212026 + .code-example {
+    background: #FADE8B;
+    margin: 0;
+  }
+</style>
+
+```html
+<div></div>
+<style>
+  div {
+    width: calc(100%-60px);
+    height: 100%;
+    background: inherit;
+    margin-top: 60px;
+    border: 60px solid #222222;
+    border-radius: 120px;
+  }
+  div::after, div::before {
+    content: "";
+    width: 40px;
+    height: 120px;
+    display: block;
+    border: inherit;
+    border-top: 0;
+    background: inherit;
+    position: relative;
+    top: -420px;
+    left: 60px;
+  }
+  div::before {
+    width: 150%;
+    height: 100%;
+    top: 60px;
+    left: -130px;
+  }
+  body {
+    background: #FADE8B;
+    margin: 0;
+  }
+</style>
+```
 <!-- 
 ## [Target  (27/12/2025)](https://cssbattle.dev/play/) 
 
