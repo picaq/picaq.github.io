@@ -920,6 +920,21 @@ I started to play [CSSBattle](https://cssbattle.dev/)
   }
 </style>
 ```
+
+## [Target  (27/12/2025)](https://cssbattle.dev/play/) 
+
+<div class="code-example">  
+  <div></div>
+</div>
+
+<style>
+  #target--412026 + .code-example {    
+  }
+</style>
+
+```html
+
+```
 <!-- 
 ## [Target  (27/12/2025)](https://cssbattle.dev/play/) 
 
