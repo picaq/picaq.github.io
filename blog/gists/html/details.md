@@ -25,6 +25,17 @@ aka Accordion UI, Expansion panel
 </details>
 ```
 
+## Styling
+
+### hide triangular marker
+
+```css
+summary::-webkit-details-marker, summary::marker {
+  display: none;
+}
+```
+
+
 ## Examples
 
 [Flexbox footer](https://codepen.io/picaq/pen/NWYObBY) 
