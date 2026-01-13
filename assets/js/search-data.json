@@ -1674,7 +1674,7 @@
   },"239": {
     "doc": "CSSBattle",
     "title": "CSSBattle",
-    "content": "I started to play CSSBattle . | CSSBattle . | Target (24/12/2025) | Target (23/12/2025) | Target (25/12/2025) | Target (26/12/2025) | Target (4/1/2026) | Target (5/1/2026) | Target (6/1/2026) | Target (7/1/2026) | Target (8/1/2026) | Target (9/1/2026) | Target (11/1/2026) | Target (12/1/2026) | Target (27/12/2025) | . | . ",
+    "content": "I started to play CSSBattle . | CSSBattle . | Target (24/12/2025) | Target (23/12/2025) | Target (25/12/2025) | Target (26/12/2025) | Target (4/1/2026) | Target (5/1/2026) | Target (6/1/2026) | Target (7/1/2026) | Target (8/1/2026) | Target (9/1/2026) | Target (11/1/2026) | Target (12/1/2026) | Target (13/1/2026) | . | . ",
     "url": "/blog/gists/css/cssbattle",
     
     "relUrl": "/blog/gists/css/cssbattle"
@@ -1764,11 +1764,11 @@
     "relUrl": "/blog/gists/css/cssbattle#target--1212026"
   },"252": {
     "doc": "CSSBattle",
-    "title": "Target  (27/12/2025)",
-    "content": ". ",
-    "url": "/blog/gists/css/cssbattle#target--27122025",
+    "title": "Target  (13/1/2026)",
+    "content": ". &lt;div&gt;&lt;/div&gt; &lt;p&gt;&lt;/p&gt; &lt;div&gt;&lt;/div&gt; &lt;style&gt; div, p { width: 50px; height: 50px; background: #194247; margin: 0 auto; position: relative; } p { border-radius: 100% } div::before, div::after { content: \"\"; width: 100%; height: 120px; display: block; position: inherit; top: 50px; background: inherit; margin-top: 10px; } div::after { height: inherit } body { background: #45B45B; margin: 30px -33px; display: flex; } &lt;/style&gt; . ",
+    "url": "/blog/gists/css/cssbattle#target--1312026",
     
-    "relUrl": "/blog/gists/css/cssbattle#target--27122025"
+    "relUrl": "/blog/gists/css/cssbattle#target--1312026"
   },"253": {
     "doc": "Dairy Free Milks",
     "title": "Dairy Free Milks",
