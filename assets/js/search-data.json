@@ -1009,14 +1009,14 @@
   },"144": {
     "doc": "Bookmarklets",
     "title": "Bookmarklets",
-    "content": "Most javascript I write are in the form of bookmarklets. Here is its structure: . javascript: (()=&gt;{ console.log(\"some code here\"); })(); . you can also just run javascript like so: . javascript: console.log(\"some code here\"); . however, if you declare constants or variables here you cannot re-declare them unless the page is refreshed (it’s just like running js in the console). Here is how to use one . ",
+    "content": "Most javascript I write are in the form of bookmarklets. Here is its structure: . javascript: (()=&gt;{ console.log(\"some code here\"); })(); . you can also just run javascript like so: . javascript: console.log(\"some code here\"); . however, if you declare constants or variables here you cannot re-declare them unless the page is refreshed (it’s just like running js in the console). Here is how to use one . You can also create a bookmarklet out of any js code with Bookmarkleter . Bookmarklets (as blue links with 🔖) can be dragged and dropped into your bookmarks bar or clicked to invoke its behavior. ",
     "url": "/blog/gists/javascript/bookmarklets",
     
     "relUrl": "/blog/gists/javascript/bookmarklets"
   },"145": {
     "doc": "Bookmarklets",
     "title": "Formatting",
-    "content": "Compared to normal javascript, a finished bookmarklet is similar to minified js with all extraneous whitespace characters removed. Therefore, a finished bookmarklet: . | must not contain comments | all lines must end with semi-colons, even after a closing curly bracket } | new-lines, even in constants and in template strings, are interpreted differently so the use of \\n is preferred | it is best to have a readable formatted bookmarklet in addition to the finished minified version | bookmarklets do not run when Javascript is blocked or turned off for a page, or if you are trying to modify the contents of an iframe, but usually still runs in the console | to modify the contents of an iframe, it must be selected in the dev tools before running the code in the console | . | Bookmarklets . | Formatting | Browser Utilities . | countdown tab | highlight selection into a link | toggle dark mode on supported sites | increase video playback speed | toggle youtube video annotations | language learning audio conversion | . | Development Tools . | hard refresh | edit content | toggle existing contentEditable attributes | remove all styles | remove all scripts | toggle inject CSS | remove extra newlines (\\n) | . | Printing Pages . | insert page break before selected element | fit svg into full screen viewport | . | Leetcode . | copy leetcode solution into markdown | go to leetcode problem ( from another educational source ) | . | Reddit | Amazon | Misc . | Open pdf . | Mychart open pdf | . | . | . | . ",
+    "content": "Compared to normal javascript, a finished bookmarklet is similar to minified js with all extraneous whitespace characters removed. Therefore, a finished bookmarklet: . | must not contain comments | all lines must end with semi-colons, even after a closing curly bracket } | new-lines, even in constants and in template strings, are interpreted differently so the use of \\n is preferred | it is best to have a readable formatted bookmarklet in addition to the finished minified version | bookmarklets do not run when Javascript is blocked or turned off for a page, or if you are trying to modify the contents of an iframe, but usually still runs in the console | to modify the contents of an iframe, it must be selected in the dev tools before running the code in the console | . | Bookmarklets . | Formatting | Browser Utilities . | countdown tab | highlight selection into a link aka Text Fragments | toggle dark mode on supported sites | increase video playback speed | toggle youtube video annotations | language learning audio conversion | . | Development Tools . | hard refresh | edit content | toggle existing contentEditable attributes | remove all styles | remove all scripts | toggle inject CSS | remove extra newlines (\\n) | . | Printing Pages . | insert page break before selected element | fit svg into full screen viewport | . | Leetcode . | copy leetcode solution into markdown | go to leetcode problem ( from another educational source ) | . | Reddit | Amazon | Misc . | Open pdf . | Mychart open pdf | . | . | . | . ",
     "url": "/blog/gists/javascript/bookmarklets#formatting",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#formatting"
@@ -1030,17 +1030,17 @@
   },"147": {
     "doc": "Bookmarklets",
     "title": "countdown tab",
-    "content": "As a default, 1.8e+6 is 30 minutes. Use whatever value you like in ms. javascript: (()=&gt; { const startCountdown = (ms = 1.8e+6) =&gt; { const countDownTime = new Date(Date.now() + ms).getTime(); const x = setInterval(() =&gt; { const now = new Date().getTime(); const distance = countDownTime - now; const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); const seconds = Math.floor((distance % (1000 * 60)) / 1000); document.title = `${hours &gt; 0? hours + \":\" : \"\"}${minutes}:${seconds}`; if (distance &lt; 0) { clearInterval(x); document.title = \"done!\"; }; }, 1000); }; startCountdown(); })(); . ",
+    "content": "As a default, 1.8e+6 is 30 minutes. Use whatever value you like in ms. 30 minute countdown . javascript: (()=&gt; { const startCountdown = (ms = 1.8e+6) =&gt; { const countDownTime = new Date(Date.now() + ms).getTime(); const x = setInterval(() =&gt; { const now = new Date().getTime(); const distance = countDownTime - now; const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); const seconds = Math.floor((distance % (1000 * 60)) / 1000); document.title = `${hours &gt; 0? hours + \":\" : \"\"}${minutes}:${seconds}`; if (distance &lt; 0) { clearInterval(x); document.title = \"done!\"; }; }, 1000); }; startCountdown(); })(); . ",
     "url": "/blog/gists/javascript/bookmarklets#countdown-tab",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#countdown-tab"
   },"148": {
     "doc": "Bookmarklets",
-    "title": "highlight selection into a link",
-    "content": "javascript: (()=&gt;{ const URL = window.location.href; const copy = content =&gt; { const tempInput = document.createElement(\"textarea\"); document.body.appendChild(tempInput); tempInput.setAttribute(\"id\", \"temporary_input_clipboard\"); document.getElementById(\"temporary_input_clipboard\").value = content; tempInput.select(); document.execCommand(\"copy\"); document.body.removeChild(tempInput); }; const textPrefix = `#:~:text=`; let selection = encodeURI(window.getSelection()).replaceAll('-', '%2D'); selectedURL = URL+'#:~:text='+selection; console.log(selectedURL); copy(selectedURL); window.location.href=selectedURL; })(); . this needs configuring for longer selections . ",
-    "url": "/blog/gists/javascript/bookmarklets#highlight-selection-into-a-link",
+    "title": "highlight selection into a link aka Text Fragments",
+    "content": "it will update in the url bar as well as copy the link to your clipboard . highlink . javascript: (()=&gt;{ const URL = window.location.href; const copy = content =&gt; { const tempInput = document.createElement(\"textarea\"); document.body.appendChild(tempInput); tempInput.setAttribute(\"id\", \"temporary_input_clipboard\"); document.getElementById(\"temporary_input_clipboard\").value = content; tempInput.select(); document.execCommand(\"copy\"); document.body.removeChild(tempInput); }; const textPrefix = `#:~:text=`; let selection = encodeURI(window.getSelection()).replaceAll('-', '%2D'); selectedURL = URL+'#:~:text='+selection; console.log(selectedURL); copy(selectedURL); window.location.href=selectedURL; })(); . this needs configuring for longer selections . ",
+    "url": "/blog/gists/javascript/bookmarklets#highlight-selection-into-a-link-aka-text-fragments",
     
-    "relUrl": "/blog/gists/javascript/bookmarklets#highlight-selection-into-a-link"
+    "relUrl": "/blog/gists/javascript/bookmarklets#highlight-selection-into-a-link-aka-text-fragments"
   },"149": {
     "doc": "Bookmarklets",
     "title": "toggle dark mode on supported sites",
@@ -1086,7 +1086,7 @@
   },"155": {
     "doc": "Bookmarklets",
     "title": "edit content",
-    "content": "javascript: (()=&gt;{ let body = document.querySelector(\"body\"); body.contentEditable === 'true' ? body.contentEditable = false : body.contentEditable = true; })(); . | toggles contentEditable property on the body tag. | allows quick, light editing of web page format or content without needing to get into dev tools. | unlike document.designMode = 'on' || 'off', it can be applied at the element level ranther than on the whole document. It also displays spelling mistakes . | . ",
+    "content": "edit . javascript: (()=&gt;{ let body = document.querySelector(\"body\"); body.contentEditable === 'true' ? body.contentEditable = false : body.contentEditable = true; })(); . | toggles contentEditable property on the body tag. | allows quick, light editing of web page format or content without needing to get into dev tools. | unlike document.designMode = 'on' || 'off', it can be applied at the element level ranther than on the whole document. It also displays spelling mistakes . | . ",
     "url": "/blog/gists/javascript/bookmarklets#edit-content",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#edit-content"
@@ -2024,7 +2024,7 @@
   },"289": {
     "doc": "Debugging",
     "title": "Toggle with bookmarklet",
-    "content": "javascript: (()=&gt;{ let css = ` * { background-color: #c001 !important} `; const injectCSS = css =&gt; { let el = document.createElement('style'); el.type = 'text/css'; el.id='css_injection'; el.innerText = css; document.head.appendChild(el); }; const swap = () =&gt; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').remove(); const replace = (newCss=css) =&gt; { css = newCss; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').innerText = css; }; swap(); })(); . ",
+    "content": "pink glass . javascript: (()=&gt;{ let css = ` * { background-color: #c001 !important} `; const injectCSS = css =&gt; { let el = document.createElement('style'); el.type = 'text/css'; el.id='css_injection'; el.innerText = css; document.head.appendChild(el); }; const swap = () =&gt; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').remove(); const replace = (newCss=css) =&gt; { css = newCss; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').innerText = css; }; swap(); })(); . ",
     "url": "/blog/gists/css/debugging#toggle-with-bookmarklet",
     
     "relUrl": "/blog/gists/css/debugging#toggle-with-bookmarklet"
@@ -3207,7 +3207,7 @@
   },"458": {
     "doc": "Squint Test",
     "title": "Debugging CSS",
-    "content": ". | Checks for the visual heirarchy of all visible elements. | Visually checks for consistent typographic color, or type color. | . This mimics the Squint Test to determine type color consistency without causing excessive eye strain. html { filter: blur(.36rem); transition: filter .09s ease-out; } . Toggle it on/off with this bookmarklet script . javascript: (()=&gt;{ let css = ` html { filter: blur(.36rem); transition: filter .09s ease-out; } `; const injectCSS = css =&gt; { let el = document.createElement('style'); el.type = 'text/css'; el.id='css_injection'; el.innerText = css; document.head.appendChild(el); }; const swap = () =&gt; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').remove(); const replace = (newCss=css) =&gt; { css = newCss; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').innerText = css; }; swap(); })(); . ",
+    "content": ". | Checks for the visual heirarchy of all visible elements. | Visually checks for consistent typographic color, or type color. | . This mimics the Squint Test to determine type color consistency without causing excessive eye strain. html { filter: blur(.36rem); transition: filter .09s ease-out; } . Toggle it on/off with this bookmarklet script: squint . javascript: (()=&gt;{ let css = ` html { filter: blur(.36rem); transition: filter .09s ease-out; } `; const injectCSS = css =&gt; { let el = document.createElement('style'); el.type = 'text/css'; el.id='css_injection'; el.innerText = css; document.head.appendChild(el); }; const swap = () =&gt; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').remove(); const replace = (newCss=css) =&gt; { css = newCss; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').innerText = css; }; swap(); })(); . ",
     "url": "/blog/design/squint#debugging-css",
     
     "relUrl": "/blog/design/squint#debugging-css"

@@ -91,7 +91,7 @@
   <span class="nl">filter</span><span class="p">:</span> <span class="nf">blur</span><span class="p">(</span><span class="m">.36rem</span><span class="p">);</span>
   <span class="nl">transition</span><span class="p">:</span> <span class="n">filter</span> <span class="m">.09s</span> <span class="nb">ease-out</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div></div> <p>Toggle it on/off with this bookmarklet script</p> <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">javascript</span><span class="p">:</span> <span class="p">(()</span><span class="o">=&gt;</span><span class="p">{</span>
+</code></pre></div></div> <p>Toggle it on/off with this bookmarklet script: <a href="javascript:void%20function(){let%20a=`%20html%20{%20%20%20filter:%20blur(.36rem);%20%20%20transition:%20filter%20.09s%20ease-out;%20}%20`;const%20b=a=%3E{let%20b=document.createElement(%22style%22);b.type=%22text/css%22,b.id=%22css_injection%22,b.innerText=a,document.head.appendChild(b)},c=()=%3Edocument.getElementById(%22css_injection%22)%3Fdocument.getElementById(%22css_injection%22).remove():b(a);c()}();">squint</a></p> <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">javascript</span><span class="p">:</span> <span class="p">(()</span><span class="o">=&gt;</span><span class="p">{</span>
 
 <span class="kd">let</span> <span class="nx">css</span> <span class="o">=</span> <span class="s2">`
 html {

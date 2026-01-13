@@ -9351,4 +9351,11 @@ h3, .toc, h2 {
   margin-right: 1rem;
 }
 
+a[href^="javascript:"]::before {
+  content: "🔖 ";
+  vertical-align: sub;
+  margin-right: -0.04em;
+  opacity: 0.75;
+}
+
 /*# sourceMappingURL=just-the-docs-dark.css.map */
