@@ -9,11 +9,12 @@ nav_order: 3
 
 <!-- {% include toc.html %} -->
 
-Debugging CSS to visually check for consistent [typographic color](https://design.tutsplus.com/articles/typographic-readability-and-legibility--webdesign-12211#toc-g8li-typographic-color).
+## Debugging CSS
 
-As well as to check for the visual heirarchy of all visible elements.
+- Checks for the visual heirarchy of all visible elements.
+- Visually checks for consistent [typographic color][evato tuts type color], or type color.
 
-This mimics the Squint Test view to determine type color consistency without causing excessive eye strain.
+This mimics the [Squint Test][squint test numi blog] to determine type color consistency without causing excessive eye strain.
 
 ```css
 html {
@@ -53,6 +54,9 @@ swap();
 })();
 ```
 
-Sources:
-[Typographic Readability and Legibility \| Envato Tuts+](https://design.tutsplus.com/articles/typographic-readability-and-legibility--webdesign-12211#toc-g8li-typographic-color) 
-[The Squint Test: Accessibility Test for Every Interface \| NUMI Blog](https://www.numi.tech/post/the-squint-test-accessibility-test-for-every-interface) 
+## Sources:
+- [Typographic Readability and Legibility \| Envato Tuts+][evato tuts type color]
+- [The Squint Test: Accessibility Test for Every Interface \| NUMI Blog][squint test numi blog]
+
+[evato tuts type color]: https://design.tutsplus.com/articles/typographic-readability-and-legibility--webdesign-12211#toc-g8li-typographic-color
+[squint test numi blog]: https://www.numi.tech/post/the-squint-test-accessibility-test-for-every-interface
