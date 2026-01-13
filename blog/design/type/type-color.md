@@ -11,9 +11,12 @@ nav_order: 3
 
 Debugging CSS to visually check for consistent [typographic color](https://design.tutsplus.com/articles/typographic-readability-and-legibility--webdesign-12211#toc-g8li-typographic-color)
 
+This mimics the squinting view to determine type color consistency without causing excessive eye strain.
+
 ```css
-html, body {
-  filter: blur(.3rem)
+html {
+  filter: blur(.36rem);
+  transition: filter .09s ease-out;
 }
 ```
 
@@ -23,8 +26,9 @@ Toggle it on/off with this bookmarklet script
 javascript: (()=>{
 
 let css = `
-html, body {
-  filter: blur(.3rem)
+html {
+  filter: blur(.36rem);
+  transition: filter .09s ease-out;
 }
 `;
 
