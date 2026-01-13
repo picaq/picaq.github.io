@@ -23,7 +23,12 @@ html {
 }
 ```
 
-Toggle it on/off with this bookmarklet script
+Toggle it on/off with this bookmarklet script: [squint](javascript:void%20function(){let%20a=`
+html%20{
+%20%20filter:%20blur(.36rem);
+%20%20transition:%20filter%20.09s%20ease-out;
+}
+`;const%20b=a=%3E{let%20b=document.createElement(%22style%22);b.type=%22text/css%22,b.id=%22css_injection%22,b.innerText=a,document.head.appendChild(b)},c=()=%3Edocument.getElementById(%22css_injection%22)%3Fdocument.getElementById(%22css_injection%22).remove():b(a);c()}();)
 
 ```js
 javascript: (()=>{
