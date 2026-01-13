@@ -482,6 +482,13 @@ h3, .toc, h2 {
   margin-right: 1rem;
 }
 
+a[href^="javascript:"]::before {
+    content: "🔖 ";
+    vertical-align: sub;
+    margin-right: -.04em;
+    opacity: .75;
+}
+
 // optinoal code block language labels
 
 // [class*="language-"]::before {

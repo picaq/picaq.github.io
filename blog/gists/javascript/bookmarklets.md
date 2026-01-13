@@ -26,6 +26,10 @@ however, if you declare constants or variables here you cannot re-declare them u
 
 Here is [how to use one](https://gist.github.com/picaq/24a3c6d85583373f93c12dfae43e03ec)
 
+You can also create a bookmarklet out of any js code with [Bookmarkleter](https://chriszarate.github.io/bookmarkleter/) 
+
+Bookmarklets (as blue links with 🔖) can be dragged and dropped into your bookmarks bar or clicked to invoke its behavior.
+
 ## Formatting
 
 Compared to normal javascript, a finished bookmarklet is similar to minified js with all extraneous whitespace characters removed.
@@ -46,6 +50,7 @@ Therefore, a finished bookmarklet:
 
 As a default, 1.8e+6 is 30 minutes. Use whatever value you like in ms.
 
+[30 minute countdown](javascript:void%20function(){((a=18e5)=%3E{const%20b=new%20Date(Date.now()+a).getTime(),c=setInterval(()=%3E{var%20a=Math.floor;const%20d=new%20Date().getTime(),e=b-d,f=a(e%2586400000/3600000),g=a(e%253600000/60000),h=a(e%2560000/1e3);document.title=`${0%3Cf%3Ff+%22:%22:%22%22}${g}:${h}`,0%3Ee%26%26(clearInterval(c),document.title=%22done!%22)},1e3)})()}();)
 ```js
 javascript: (()=> {
   
@@ -75,7 +80,11 @@ javascript: (()=> {
 })();
 ```
 
-### highlight selection into a link
+### highlight selection into a link aka Text Fragments
+
+it will update in the url bar as well as copy the link to your clipboard
+
+[highlink](javascript:void%20function(){const%20a=window.location.href;let%20b=encodeURI(window.getSelection()).replaceAll(%22-%22,%22%252D%22);selectedURL=a+%22%23:~:text=%22+b,console.log(selectedURL),(a=%3E{const%20b=document.createElement(%22textarea%22);document.body.appendChild(b),b.setAttribute(%22id%22,%22temporary_input_clipboard%22),document.getElementById(%22temporary_input_clipboard%22).value=a,b.select(),document.execCommand(%22copy%22),document.body.removeChild(b)})(selectedURL),window.location.href=selectedURL}();)
 
 ```js
 javascript: (()=>{
@@ -190,6 +199,8 @@ javascript: (()=>{location.reload()})();
 ```
 
 ### edit content
+
+[edit](javascript:void%20function(){let%20a=document.querySelector(%22body%22);a.contentEditable=%22true%22!==a.contentEditable}();)
 
 ```js
 javascript: (()=>{
