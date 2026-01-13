@@ -921,19 +921,77 @@ I started to play [CSSBattle](https://cssbattle.dev/)
 </style>
 ```
 
-## [Target  (27/12/2025)](https://cssbattle.dev/play/) 
+## [Target  (13/1/2026)](https://cssbattle.dev/play/8cVtvhpdnVUSsC118WZh) 
 
 <div class="code-example">  
+  <div></div>
+    <p></p>
   <div></div>
 </div>
 
 <style>
-  #target--412026 + .code-example {    
+  #target--1312026 + .code-example div, #target--1312026 + .code-example p {
+    width: 50px;
+    height: 50px;
+    background: #194247;
+    margin: 0 auto;
+    position: relative;
+  }
+  #target--1312026 + .code-example p { border-radius: 100% }
+  #target--1312026 + .code-example div::before, #target--1312026 + .code-example div::after {
+    content: "";
+    width: 100%;
+    height: 120px;
+    display: block;
+    position: inherit;
+    top: 50px;
+    background: inherit;
+    margin-top: 10px;
+  }
+  #target--1312026 + .code-example div::after { height: inherit }
+
+  #target--1312026 + .code-example {
+    background: #45B45B;
+    margin: 0;
+    padding: 30px 0;
+    display: flex;
   }
 </style>
 
 ```html
+<div></div>
+<p></p>
+<div></div>
+<style>
+  div, p {
+    width: 50px;
+    height: 50px;
+    background: #194247;
+    margin: 0 auto;
+    position: relative;
+  }
 
+  p { border-radius: 100% }
+
+  div::before, div::after {
+    content: "";
+    width: 100%;
+    height: 120px;
+    display: block;
+    position: inherit;
+    top: 50px;
+    background: inherit;
+    margin-top: 10px;
+  }
+  
+  div::after { height: inherit }
+
+  body {
+    background: #45B45B;
+    margin: 30px -33px;
+    display: flex;
+  }
+</style>
 ```
 <!-- 
 ## [Target  (27/12/2025)](https://cssbattle.dev/play/) 
