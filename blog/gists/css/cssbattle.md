@@ -993,6 +993,83 @@ I started to play [CSSBattle](https://cssbattle.dev/)
   }
 </style>
 ```
+
+## [Target  (14/1/2026)](https://cssbattle.dev/play/dGdurOfM5EDe0pJ3acq7) 
+
+<div class="code-example">  
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<style>
+  #target--1412026 + .code-example div {
+    width: 50px;
+    height: 50px;
+    background: #FFD0FA;
+    border-radius: 70%;
+    margin: 0 auto
+  }
+  #target--1412026 + .code-example div::after {
+    content:"";
+    display: block;
+    width: inherit;
+    height: 120px;
+    background: inherit;
+    position: relative;
+    top: 60px;
+    left: -30px;
+  }
+  #target--1412026 + .code-example div:nth-of-type(n+3) {
+    rotate: 180deg;
+    transform: translateY(-15px);
+  }
+  #target--1412026 + .code-example {
+    background: #A82973;
+    padding: 30px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+  }
+</style>
+
+```html
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<style>
+  div {
+    width: 50px;
+    height: 50px;
+    background: #FFD0FA;
+    border-radius: 70%;
+    margin: 0 auto
+  }
+  div::after {
+    content:"";
+    display: block;
+    width: inherit;
+    height: 120px;
+    background: inherit;
+    position: relative;
+    top: 60px;
+    left: -30px;
+  }
+  div:nth-of-type(n+3) {
+    rotate: 180deg;
+    transform: translateY(-15px);
+  }
+  body {
+    background: #A82973;
+    margin: 30px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+  }
+</style>
+```
 <!-- 
 ## [Target  (27/12/2025)](https://cssbattle.dev/play/) 
 
