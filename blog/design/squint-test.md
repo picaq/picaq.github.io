@@ -9,12 +9,10 @@ nav_order: 3
 
 <!-- {% include toc.html %} -->
 
-## Debugging CSS
-
 - Checks for the visual heirarchy of all visible elements.
 - Visually checks for consistent [typographic color][evato tuts type color], or type color.
 
-This mimics the [Squint Test][squint test numi blog] to determine type color consistency without causing excessive eye strain.
+This mimics the [Squint Test for Accessibility][squint test numi blog] to determine type color consistency without causing excessive eye strain.
 
 ```css
 html {

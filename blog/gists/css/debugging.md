@@ -54,3 +54,7 @@ swap();
 <!-- ```css
 
 ``` -->
+
+## Related
+
+[Squint Test](../../design/squint)
