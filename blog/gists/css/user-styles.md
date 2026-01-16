@@ -108,6 +108,12 @@ div.CodeMirror span.CodeMirror-matchingbracket {
     filter: invert(.894) hue-rotate(177deg);
     opacity: .67;
 }
+
+/* top spacing for greatfrontend.com */
+.lines-content,
+.margin-view-overlays
+{ translate: 0 0.5rem; }
+
 ```
 
 ## Light Themes & Printing
