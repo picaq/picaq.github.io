@@ -14,7 +14,7 @@ MIST夕雾工作室
 ```
 
 
-## Korean
+## Korean 한국어
 
 ### Material 소재
 
@@ -27,12 +27,53 @@ cotton
 면
 ```
 
-tencel, rayon
+#### tencel, rayon
 ```
 텐셀
 ```
 
-polyester
+#### polyester
 ```
 폴리에스테르
+```
+
+## Japanese 日本語
+
+### Material
+
+#### silk thread
+```
+絹糸
+```
+
+#### cotton
+
+```
+(わた)
+  綿
+```
+```
+コットン 
+```
+
+### Fabric Composition
+
+#### outer fabric
+```
+表地
+```
+
+#### inner lining
+```
+裏地
+```
+
+#### other materials
+```
+別地
+```
+
+country of origin
+```
+原産国
 ```
