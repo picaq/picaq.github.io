@@ -22,7 +22,7 @@ MIST夕雾工作室
 소재
 ```
 
-cotton
+#### cotton
 ```
 면
 ```
@@ -37,13 +37,20 @@ cotton
 폴리에스테르
 ```
 
+
 ## Japanese 日本語
 
-### Material
+### Material 素材
+
+```
+(そざい)
+  素材
+```
 
 #### silk thread
 ```
-絹糸
+(けんし)
+  絹糸
 ```
 
 #### cotton
@@ -73,7 +80,36 @@ cotton
 別地
 ```
 
-country of origin
+#### country of origin
 ```
 原産国
 ```
+
+
+### Size
+
+```
+サイズ
+```
+
+#### bust
+```
+胸
+```
+
+#### waist
+```
+腰
+```
+
+### Color
+
+```
+カラー
+```
+
+```
+色
+```
+
+
