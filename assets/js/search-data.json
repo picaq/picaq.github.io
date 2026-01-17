@@ -2962,431 +2962,473 @@
   },"423": {
     "doc": "Search Terms",
     "title": "Material 소재",
-    "content": "소재 . cotton . 면 . ",
+    "content": "소재 . ",
     "url": "/blog/fashion/search-terms#material-%EC%86%8C%EC%9E%AC",
     
     "relUrl": "/blog/fashion/search-terms#material-소재"
   },"424": {
+    "doc": "Search Terms",
+    "title": "cotton",
+    "content": "면 . ",
+    "url": "/blog/fashion/search-terms#cotton",
+    
+    "relUrl": "/blog/fashion/search-terms#cotton"
+  },"425": {
     "doc": "Search Terms",
     "title": "tencel, rayon",
     "content": "텐셀 . ",
     "url": "/blog/fashion/search-terms#tencel-rayon",
     
     "relUrl": "/blog/fashion/search-terms#tencel-rayon"
-  },"425": {
+  },"426": {
     "doc": "Search Terms",
     "title": "polyester",
     "content": "폴리에스테르 . ",
     "url": "/blog/fashion/search-terms#polyester",
     
     "relUrl": "/blog/fashion/search-terms#polyester"
-  },"426": {
+  },"427": {
     "doc": "Search Terms",
     "title": "Japanese 日本語",
     "content": " ",
     "url": "/blog/fashion/search-terms#japanese-%E6%97%A5%E6%9C%AC%E8%AA%9E",
     
     "relUrl": "/blog/fashion/search-terms#japanese-日本語"
-  },"427": {
-    "doc": "Search Terms",
-    "title": "Material",
-    "content": " ",
-    "url": "/blog/fashion/search-terms#material",
-    
-    "relUrl": "/blog/fashion/search-terms#material"
   },"428": {
     "doc": "Search Terms",
+    "title": "Material 素材",
+    "content": "(そざい) 素材 . ",
+    "url": "/blog/fashion/search-terms#material-%E7%B4%A0%E6%9D%90",
+    
+    "relUrl": "/blog/fashion/search-terms#material-素材"
+  },"429": {
+    "doc": "Search Terms",
     "title": "silk thread",
-    "content": "絹糸 . ",
+    "content": "(けんし) 絹糸 . ",
     "url": "/blog/fashion/search-terms#silk-thread",
     
     "relUrl": "/blog/fashion/search-terms#silk-thread"
-  },"429": {
+  },"430": {
     "doc": "Search Terms",
     "title": "cotton",
     "content": "(わた) 綿 . コットン . ",
-    "url": "/blog/fashion/search-terms#cotton",
+    "url": "/blog/fashion/search-terms#cotton-1",
     
-    "relUrl": "/blog/fashion/search-terms#cotton"
-  },"430": {
+    "relUrl": "/blog/fashion/search-terms#cotton-1"
+  },"431": {
     "doc": "Search Terms",
     "title": "Fabric Composition",
     "content": " ",
     "url": "/blog/fashion/search-terms#fabric-composition",
     
     "relUrl": "/blog/fashion/search-terms#fabric-composition"
-  },"431": {
+  },"432": {
     "doc": "Search Terms",
     "title": "outer fabric",
     "content": "表地 . ",
     "url": "/blog/fashion/search-terms#outer-fabric",
     
     "relUrl": "/blog/fashion/search-terms#outer-fabric"
-  },"432": {
+  },"433": {
     "doc": "Search Terms",
     "title": "inner lining",
     "content": "裏地 . ",
     "url": "/blog/fashion/search-terms#inner-lining",
     
     "relUrl": "/blog/fashion/search-terms#inner-lining"
-  },"433": {
+  },"434": {
     "doc": "Search Terms",
     "title": "other materials",
-    "content": "別地 . country of origin . 原産国 . ",
+    "content": "別地 . ",
     "url": "/blog/fashion/search-terms#other-materials",
     
     "relUrl": "/blog/fashion/search-terms#other-materials"
-  },"434": {
+  },"435": {
+    "doc": "Search Terms",
+    "title": "country of origin",
+    "content": "原産国 . ",
+    "url": "/blog/fashion/search-terms#country-of-origin",
+    
+    "relUrl": "/blog/fashion/search-terms#country-of-origin"
+  },"436": {
+    "doc": "Search Terms",
+    "title": "Size",
+    "content": "サイズ . ",
+    "url": "/blog/fashion/search-terms#size",
+    
+    "relUrl": "/blog/fashion/search-terms#size"
+  },"437": {
+    "doc": "Search Terms",
+    "title": "bust",
+    "content": "胸 . ",
+    "url": "/blog/fashion/search-terms#bust",
+    
+    "relUrl": "/blog/fashion/search-terms#bust"
+  },"438": {
+    "doc": "Search Terms",
+    "title": "waist",
+    "content": "腰 . ",
+    "url": "/blog/fashion/search-terms#waist",
+    
+    "relUrl": "/blog/fashion/search-terms#waist"
+  },"439": {
+    "doc": "Search Terms",
+    "title": "Color",
+    "content": "カラー . 色 . ",
+    "url": "/blog/fashion/search-terms#color",
+    
+    "relUrl": "/blog/fashion/search-terms#color"
+  },"440": {
     "doc": "Sheet Music",
     "title": "Sheet Music",
     "content": "I make music and play music. ",
     "url": "/blog/music/sheet-music",
     
     "relUrl": "/blog/music/sheet-music"
-  },"435": {
+  },"441": {
     "doc": "Sheet Music",
     "title": "Made",
     "content": "Ok I mostly transcribe music into formats for specific instruments. Here’s an app, Notation Map, that I’m making to help me pick up new instruments. It is unfinished. ",
     "url": "/blog/music/sheet-music#made",
     
     "relUrl": "/blog/music/sheet-music#made"
-  },"436": {
+  },"442": {
     "doc": "Sheet Music",
     "title": "Violin",
     "content": "The very first piece I transcribed in 2008 or 2009 while I was still in high school, and the first Orisinal entry on ichigos.com, Winter Bells. Youtube cover re-arranged by Sherry Kim for Viola. ",
     "url": "/blog/music/sheet-music#violin",
     
     "relUrl": "/blog/music/sheet-music#violin"
-  },"437": {
+  },"443": {
     "doc": "Sheet Music",
     "title": "Kalimba tabs?",
     "content": "I get asked this sometimes but I prefer transcribing music into staff notation due to being instrument-agnostic and its ease to adapt to other instruments. In the near future I will sort sheet music by chromatic range rather than by instrument. ",
     "url": "/blog/music/sheet-music#kalimba-tabs",
     
     "relUrl": "/blog/music/sheet-music#kalimba-tabs"
-  },"438": {
+  },"444": {
     "doc": "Sheet Music",
     "title": "List of Instruments",
     "content": ". | Kalimba ( Mbira ) . | 17 key diatonic | 42 chromatic alto | . | Alto Melodica . | 37 keys from F to F | . | Reyong | Carillion | Cello | Viola | Violin | Recorder | Piano | Voice ( Alto ) | . ",
     "url": "/blog/music/sheet-music#list-of-instruments",
     
     "relUrl": "/blog/music/sheet-music#list-of-instruments"
-  },"439": {
+  },"445": {
     "doc": "Skincare",
     "title": "Skincare",
     "content": "Skin is the largest organ and the first barrier of defense. I am a longtime sufferer of sunburn, acne, eczema, dry skin and keratosis pillaris, all of which have been resolved or managed. Topics to be included: . | Light: . | UV defense tactics | sunscreen, parasols, UPF clothing, window filters | red/blue light therapy | . | Vitamins! (mostly C, E &amp; polyphenols) . | foods such as fruits, protein and tremella | topical vitamins and antioxidants | . | Moisture . | moisturizers . | humectants | occlusives | . | skin sprays | favorite product ingredient breakdown | . | Oil . | hair/skin/nail oiling | oil blotting papers | . | . ",
     "url": "/blog/skincare",
     
     "relUrl": "/blog/skincare"
-  },"440": {
+  },"446": {
     "doc": "Spells",
     "title": "Spells",
     "content": "I’m currently playing Dungeons &amp; Dragons 5th edition with Tiger Kong. I am playing as a Harengon Bard, and this page simply keeps track of my stats, spells and cantrips. | Strength | -1 | . | Dexterity | 3 | . | Constitution | 1 | . | Intelligence | 0 | . | Wisdom | 1 | . | Charisma | 3 | . | Bard | Charisma | 13 | 5 | . | spellcasting class | spellcasting ability | spell saveDC | spell attackbonus | . Note: All content on this page is owned by Wizards of the Coast. Search engine indexing is blocked for this page. | Spells . | 0 Cantrips . | Vicious Mockery . | At Higher Levels | . | Mending | *Ray of Frost 1d8 dmg . | At Higher Levels | . | . | 1 ▢ ▢ ▢ ▢ / 4 . | Healing Word 1d4 + 3 char . | At Higher Levels | . | Speak with Animals | Comprehend Languages | Color Spray . | At Higher Levels | . | . | 2 ▢ ▢ / 2 . | Cloud of Daggers 4d4 | Heat Metal 2d8 | . | 3 | 4 . | *Dancing Light | *Polymorph | . | 5 | 6 | 7 | 8 | 9 | Source Info | . | . ",
     "url": "/blog/games/dnd/spells",
     
     "relUrl": "/blog/games/dnd/spells"
-  },"441": {
+  },"447": {
     "doc": "Spells",
     "title": "0 Cantrips",
     "content": " ",
     "url": "/blog/games/dnd/spells#0cantrips",
     
     "relUrl": "/blog/games/dnd/spells#0cantrips"
-  },"442": {
+  },"448": {
     "doc": "Spells",
     "title": "Vicious Mockery",
     "content": "| School | Enchantment | . | Classes | Bard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V | . | Cast Time | 1 Action | . | Range | 60 feet | . You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (thought it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn. ",
     "url": "/blog/games/dnd/spells#vicious-mockery",
     
     "relUrl": "/blog/games/dnd/spells#vicious-mockery"
-  },"443": {
+  },"449": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4). ",
     "url": "/blog/games/dnd/spells#at-higher-levels",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels"
-  },"444": {
+  },"450": {
     "doc": "Spells",
     "title": "Mending",
     "content": "| School | Transmutation | . | Classes | Artificer, Bard, Cleric, Druid, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V, S, M (two lodestones) | . | Cast Time | 1 Minute | . | Range | Touch | . This spell repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn cloack, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. This spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object. ",
     "url": "/blog/games/dnd/spells#mending",
     
     "relUrl": "/blog/games/dnd/spells#mending"
-  },"445": {
+  },"451": {
     "doc": "Spells",
     "title": "*Ray of Frost 1d8 dmg",
     "content": "| School | Evocation | . | Classes | Artificer, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V, S | . | Cast Time | 1 Action | . | Range | 60 feet | . A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn. ",
     "url": "/blog/games/dnd/spells#ray-of-frost-1d8-dmg",
     
     "relUrl": "/blog/games/dnd/spells#ray-of-frost-1d8-dmg"
-  },"446": {
+  },"452": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8). ",
     "url": "/blog/games/dnd/spells#at-higher-levels-1",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-1"
-  },"447": {
+  },"453": {
     "doc": "Spells",
     "title": "1 ▢ ▢ ▢ ▢ / 4",
     "content": " ",
     "url": "/blog/games/dnd/spells#14",
     
     "relUrl": "/blog/games/dnd/spells#14"
-  },"448": {
+  },"454": {
     "doc": "Spells",
     "title": " Faerie Fire ",
     "content": "| School | Evocation | . | Classes | Artificer, Bard, Druid | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V | . | Cast Time | 1 Action | . | Range | 60 feet | . Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible. ",
     "url": "/blog/games/dnd/spells",
     
     "relUrl": "/blog/games/dnd/spells"
-  },"449": {
+  },"455": {
     "doc": "Spells",
     "title": "Healing Word 1d4 + 3 char",
     "content": "| School | Evocation | . | Classes | Bard, Cleric, Druid | . | Ritual? | No | . | Duration | Instantaneous | . | Components | V | . | Cast Time | 1 Bonus Action | . | Range | 60 feet | . A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs. ",
     "url": "/blog/games/dnd/spells#healing-word-1d4--3-char",
     
     "relUrl": "/blog/games/dnd/spells#healing-word-1d4--3-char"
-  },"450": {
+  },"456": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st. ",
     "url": "/blog/games/dnd/spells#at-higher-levels-2",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-2"
-  },"451": {
+  },"457": {
     "doc": "Spells",
     "title": "Speak with Animals",
     "content": "| School | Divination | . | Classes | Bard, Druid, Ranger | . | Ritual? | Yes | . | Duration | 10 minutes | . | Components | V, S | . | Cast Time | 1 Action | . | Range | Self | . You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM’s discretion. ",
     "url": "/blog/games/dnd/spells#speak-with-animals",
     
     "relUrl": "/blog/games/dnd/spells#speak-with-animals"
-  },"452": {
+  },"458": {
     "doc": "Spells",
     "title": "Comprehend Languages",
     "content": "| School | Divination | . | Classes | Bard, Sorcerer, Warlock, Wizard | . | Ritual? | Yes | . | Duration | 1 hour | . | Components | V, S, M (a pinch of soot and salt) | . | Cast Time | 1 Action | . | Range | Self | . For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface of which the words are written. It takes about 1 minute to read one page of text. This spell doesn’t decode secret messages in a text or glyph, such as an arcane sigil, that isn’t part of a written language. ",
     "url": "/blog/games/dnd/spells#comprehend-languages",
     
     "relUrl": "/blog/games/dnd/spells#comprehend-languages"
-  },"453": {
+  },"459": {
     "doc": "Spells",
     "title": "Color Spray",
     "content": "| School | Illusion | . | Classes | Bard, Sorcerer, Wizard | . | Ritual? | No | . | Duration | 1 round | . | Components | V, S, M | . | Cast Time | 1 Action | . | Range | Self (15-foot cone) | . A dazzling array of flashing, colored light springs from your hand. Roll 6d10, the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can’t see). Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the spell ends. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for the creature to be affected. ",
     "url": "/blog/games/dnd/spells#color-spray",
     
     "relUrl": "/blog/games/dnd/spells#color-spray"
-  },"454": {
+  },"460": {
     "doc": "Spells",
     "title": "At Higher Levels",
     "content": "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st. ",
     "url": "/blog/games/dnd/spells#at-higher-levels-3",
     
     "relUrl": "/blog/games/dnd/spells#at-higher-levels-3"
-  },"455": {
+  },"461": {
     "doc": "Spells",
     "title": "2 ▢ ▢ / 2",
     "content": " ",
     "url": "/blog/games/dnd/spells#22",
     
     "relUrl": "/blog/games/dnd/spells#22"
-  },"456": {
+  },"462": {
     "doc": "Spells",
     "title": "Cloud of Daggers 4d4",
     "content": "| School | Conjuration | . | Classes | Bard, Sorcerer, Warlock, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S, M (a sliver of glass) | . | Cast Time | 1 Action | . | Range | 60 feet | . You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes 4d4 slashing damage when it enters the spell’s area for the first time on a turn or starts its turn there. ",
     "url": "/blog/games/dnd/spells#cloud-of-daggers-4d4",
     
     "relUrl": "/blog/games/dnd/spells#cloud-of-daggers-4d4"
-  },"457": {
+  },"463": {
     "doc": "Spells",
     "title": "Heat Metal 2d8",
     "content": "| School | Transmutation | . | Classes | Artificer, Bard, Druid | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S, M (a piece of iron and a flame) | . | Cast Time | 1 Action | . | Range | 60 feet | . Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again. If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn’t drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn. ",
     "url": "/blog/games/dnd/spells#heat-metal-2d8",
     
     "relUrl": "/blog/games/dnd/spells#heat-metal-2d8"
-  },"458": {
+  },"464": {
     "doc": "Spells",
     "title": "3",
     "content": " ",
     "url": "/blog/games/dnd/spells#3",
     
     "relUrl": "/blog/games/dnd/spells#3"
-  },"459": {
+  },"465": {
     "doc": "Spells",
     "title": "4",
     "content": " ",
     "url": "/blog/games/dnd/spells#4",
     
     "relUrl": "/blog/games/dnd/spells#4"
-  },"460": {
+  },"466": {
     "doc": "Spells",
     "title": "*Dancing Light",
     "content": "| School | Evocation | . | Classes | Artificer, Bard, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 minute | . | Components | V, S, M (a bit of phosphorus or wychwood, or a glowworm) | . | Cast Time | 1 Action | . | Range | 120 feet | . You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius. As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell’s range. ",
     "url": "/blog/games/dnd/spells#dancing-light",
     
     "relUrl": "/blog/games/dnd/spells#dancing-light"
-  },"461": {
+  },"467": {
     "doc": "Spells",
     "title": "*Polymorph",
     "content": "| School | Transmutation | . | Classes | Bard, Druid, Sorcerer, Wizard | . | Ritual? | No | . | Duration | Concentration, up to 1 hour | . | Components | V, S, M (a caterpillar cocoon) | . | Cast Time | 1 Action | . | Range | 60 feet | . 5e Beast List - Dungeons and Dragons Wiki . This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. A shapechanger automatically succeeds on this saving throw. The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target’s (or the target’s level, if it doesn’t have a challenge rating). The target’s game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality. The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn’t reduce the creature’s normal form to 0 hit points, it isn’t knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can’t speak, cast spells, or take any other action that requires hands or speech. The target’s gear melds into the new form. The creature can’t activate, use, wield, or otherwise benefit from any of its equipment. This spell can’t affect a target that has 0 hit points. ",
     "url": "/blog/games/dnd/spells#polymorph",
     
     "relUrl": "/blog/games/dnd/spells#polymorph"
-  },"462": {
+  },"468": {
     "doc": "Spells",
     "title": "5",
     "content": " ",
     "url": "/blog/games/dnd/spells#5",
     
     "relUrl": "/blog/games/dnd/spells#5"
-  },"463": {
+  },"469": {
     "doc": "Spells",
     "title": "6",
     "content": " ",
     "url": "/blog/games/dnd/spells#6",
     
     "relUrl": "/blog/games/dnd/spells#6"
-  },"464": {
+  },"470": {
     "doc": "Spells",
     "title": "7",
     "content": " ",
     "url": "/blog/games/dnd/spells#7",
     
     "relUrl": "/blog/games/dnd/spells#7"
-  },"465": {
+  },"471": {
     "doc": "Spells",
     "title": "8",
     "content": " ",
     "url": "/blog/games/dnd/spells#8",
     
     "relUrl": "/blog/games/dnd/spells#8"
-  },"466": {
+  },"472": {
     "doc": "Spells",
     "title": "9",
     "content": " ",
     "url": "/blog/games/dnd/spells#9",
     
     "relUrl": "/blog/games/dnd/spells#9"
-  },"467": {
+  },"473": {
     "doc": "Spells",
     "title": "Source Info",
     "content": ". | All Spells | Bard Spells | . ",
     "url": "/blog/games/dnd/spells#source-info",
     
     "relUrl": "/blog/games/dnd/spells#source-info"
-  },"468": {
+  },"474": {
     "doc": "Spicy Cold Tofu",
     "title": "\n  \n  Spicy Cold Tofu\n",
     "content": ". Quick, fresh, spicy, filling. Preparation time4 minsPT4MCooking time0 minsPT0MYield1 serving 1 ",
     "url": "/blog/food/recipes/spicy-cold-tofu#spicy-cold-tofu",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#spicy-cold-tofu"
-  },"469": {
+  },"475": {
     "doc": "Spicy Cold Tofu",
     "title": " Ingredients",
     "content": ". | 1 block of firm tofu, about 11~16 oz | ponzu | mala chili oil | toasted sesame oil | maple syrup | optional&#58; micro greens or crushed nori | . ",
     "url": "/blog/food/recipes/spicy-cold-tofu#ingredients",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#ingredients"
-  },"470": {
+  },"476": {
     "doc": "Spicy Cold Tofu",
     "title": " Instructions",
     "content": ". | Drain the water from a package of tofu. Organic Tofu tastes best. | Lightly press the remaining water out of the tofu. | Pour all of the liquid ingredients to taste on top of the tofu, about 1/2 tsp~1 tbsp each. | While preforating the tofu by stabbing it with a fork, spoon any sauce that pools on the bottom on top of the tofu. | Optionally, garnish with greens or nori. | . Thats it, it’s already done! . ",
     "url": "/blog/food/recipes/spicy-cold-tofu#instructions",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#instructions"
-  },"471": {
+  },"477": {
     "doc": "Spicy Cold Tofu",
     "title": " Nutrition Facts",
     "content": "in grams per serving . Calories330Fat20Carbohydrates11Protein32 Mandy Chenhttps://picaq.github.io cuisineChinesedietvegan, keto, diabeticcategoryentreekeywordssoy, protein, spicy, chili oil ",
     "url": "/blog/food/recipes/spicy-cold-tofu#nutrition-facts",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#nutrition-facts"
-  },"472": {
+  },"478": {
     "doc": "Spicy Cold Tofu",
     "title": "More Spice!",
     "content": ". ",
     "url": "/blog/food/recipes/spicy-cold-tofu#more-spice",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu#more-spice"
-  },"473": {
+  },"479": {
     "doc": "Spicy Cold Tofu",
     "title": "Spicy Cold Tofu",
     "content": " ",
     "url": "/blog/food/recipes/spicy-cold-tofu",
     
     "relUrl": "/blog/food/recipes/spicy-cold-tofu"
-  },"474": {
+  },"480": {
     "doc": "Squint Test",
     "title": "Squint Test",
     "content": ". | Checks for the visual heirarchy of all visible elements. | Visually checks for consistent typographic color, or type color. | . This mimics the Squint Test for Accessibility to determine type color consistency without causing excessive eye strain. html { filter: blur(.36rem); transition: filter .09s ease-out; } . Toggle it on/off with this bookmarklet script: squint . javascript: (()=&gt;{ let css = ` html { filter: blur(.36rem); transition: filter .09s ease-out; } `; const injectCSS = css =&gt; { let el = document.createElement('style'); el.type = 'text/css'; el.id='css_injection'; el.innerText = css; document.head.appendChild(el); }; const swap = () =&gt; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').remove(); const replace = (newCss=css) =&gt; { css = newCss; !document.getElementById('css_injection') ? injectCSS(css) : document.getElementById('css_injection').innerText = css; }; swap(); })(); . ",
     "url": "/blog/design/squint",
     
     "relUrl": "/blog/design/squint"
-  },"475": {
+  },"481": {
     "doc": "Squint Test",
     "title": "Sources:",
     "content": ". | Typographic Readability and Legibility | Envato Tuts+ | The Squint Test: Accessibility Test for Every Interface | NUMI Blog | . ",
     "url": "/blog/design/squint#sources",
     
     "relUrl": "/blog/design/squint#sources"
-  },"476": {
+  },"482": {
     "doc": "String",
     "title": "String",
     "content": " ",
     "url": "/blog/gists/javascript/string",
     
     "relUrl": "/blog/gists/javascript/string"
-  },"477": {
+  },"483": {
     "doc": "String",
     "title": "Count Occurrences of Chars or Substring Occurances in a String",
     "content": "String manipulation, counting and accounting . const count = (str, subst) =&gt; str.match( new RegExp(subst, \"g\") )?.length || 0; . ",
     "url": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string",
     
     "relUrl": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string"
-  },"478": {
+  },"484": {
     "doc": "Typography",
     "title": "Typography",
     "content": " ",
     "url": "/blog/design/type",
     
     "relUrl": "/blog/design/type"
-  },"479": {
+  },"485": {
     "doc": "User Styles",
     "title": "User Styles",
     "content": "Custom user-defined style sheets to better browse the web. ",
     "url": "/blog/gists/css/styles",
     
     "relUrl": "/blog/gists/css/styles"
-  },"480": {
+  },"486": {
     "doc": "User Styles",
     "title": "Monaco &amp; CodeMirror editors",
     "content": "/* fixes offset cursor in editor */ .monaco-editor .view-lines .view-line, .cm-line { /* for iosevka: editor font size * 1.10138462 */ font-size: 110.138462% !important; font-family: Iosevka !important; font-feature-settings: \"liga\" 0; } code, pre, .tio-markdown_code, [id^=\"file\"], .file-info, .CodeMirror-linenumber, #copilot-button-positioner, .cm-gutterElement { font-family: Iosevka !important; font-feature-settings: \"liga\" 0; } /* remove horrendous dots in coderpad */ .monaco-editor .mtkw { color: #0000 !important } /* cursor */ .cursor.monaco-mouse-cursor-text, .cm-cursor.cm-cursor-primary { background-color: #e9b6c5bf !important; border-color: #e9b6c5bf !important; } /* colors */ :root { --comment-green: #6a9955; --comment-steel-blue: rgb(97, 124, 149) !important; --keyword-pink: #c586c0; --keyword-lilac: rgb(177, 135, 232); } /* matching bracket colors */ .view-line .mtk3 { color: var(--comment-steel-blue); } .bracket-highlighting-0, .bracket-highlighting-3, .bracket-highlighting-6, .bracket-highlighting-9, .bracket-highlighting-12, .bracket-highlighting-15, .bracket-highlighting-18 { color: #ffd700a6 !important } .view-line .mtk13, .mtk9.bracket-highlighting-1, .bracket-highlighting-4, .bracket-highlighting-7, .bracket-highlighting-10, .bracket-highlighting-13, .bracket-highlighting-16, .bracket-highlighting-19 { color: var(--keyword-pink) !important; } .bracket-highlighting-2, .bracket-highlighting-5, .bracket-highlighting-8, .bracket-highlighting-11, .bracket-highlighting-14, .bracket-highlighting-17, .bracket-highlighting-20 { color: cornflowerblue !important; } /* colors */ div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(115, 176, 112); } .cm-s-textmate span.cm-property { color: rgba(219, 210, 198, .89); } .cm-s-textmate span.cm-def { color: rgb(122, 158, 208); } .cm-s-textmate span.cm-keyword { color: #b187e8; } .cm-s-textmate span.cm-variable-2 { color: rgb(140, 190, 198); } .cm-s-textmate span.cm-comment { color: rgb(97, 124, 149); } .cm-s-textmate span.cm-operator { color: rgb(86, 166, 114); } .cm-s-textmate span.cm-number { color: rgb(90, 185, 196); } .view-lines { /* softer colors */ filter: saturate(0.7) brightness(1) sepia(0.1); } .tio-markdown_img { filter: invert(.894) hue-rotate(177deg); opacity: .67; } /* top spacing for greatfrontend.com */ .lines-content, .margin-view-overlays { translate: 0 0.5rem; } . ",
     "url": "/blog/gists/css/styles#monaco--codemirror-editors",
     
     "relUrl": "/blog/gists/css/styles#monaco--codemirror-editors"
-  },"481": {
+  },"487": {
     "doc": "User Styles",
     "title": "Light Themes &amp; Printing",
     "content": " ",
     "url": "/blog/gists/css/styles#light-themes--printing",
     
     "relUrl": "/blog/gists/css/styles#light-themes--printing"
-  },"482": {
+  },"488": {
     "doc": "User Styles",
     "title": "ReMarkable",
     "content": "When a website is “printed” by your browser to a pdf, this prints to the exact size of the ReMarkable 2 or Paper Pro screen content size. Especially noticeable when content is on a dark background. @media print { @page { size: 210mm 280mm; /* &lt;- width height */ margin-top: 0.25in; margin-bottom: 0.25in; margin-left: 0; margin-right: 0; } body { zoom: 88%; } } . more info on printing CSS print page styling | DocuSeal . ",
     "url": "/blog/gists/css/styles#remarkable",
     
     "relUrl": "/blog/gists/css/styles#remarkable"
-  },"483": {
+  },"489": {
     "doc": "User Styles",
     "title": "Notion.site",
     "content": "ctrl/cmd + shift + L swaps between light and dark themes for your own notion notes but not public ones. Here is a workaround: . [style*=\"color: rgba(255, 255, 255, 0.81)\"] { color: rgba(0, 0, 0, 0.81) !important } [style*=\"background: rgba(255, 255, 255, 0.13)\"] { background: rgba(0, 0, 0, 0.03) !important } #main [style*=\"fill: rgba(255, 255, 255, 0.46)\"], [style*=\"color: rgba(255, 255, 255, 0.46)\"], #main [style*=\"fill: rgba(255, 255, 255\"] { fill: rgba(0, 0, 0, 0.46) !important; color: rgba(0, 0, 0, 0.46) !important; outline: rgba(0, 0, 0, 0.46) !important; } [style*=\"color: rgb(155, 155, 155); fill: rgb(155, 155, 155);\"] { color: rgb(95, 95, 95) !important; fill: rgb(95, 95, 95) !important; } [style=\"display: flex; flex-direction: row;\"] { filter: brightness(.3) } @media screen { [style*=\"background: rgb(25, 25, 25)\"] { background: rgb(225, 225, 225) !important } } @media print { html &gt; body [style*=\"background: rgb(25, 25, 25)\"] { background: white !important } } . ",
     "url": "/blog/gists/css/styles#notionsite",
     
     "relUrl": "/blog/gists/css/styles#notionsite"
-  },"484": {
+  },"490": {
     "doc": "User Styles",
     "title": "Y Combinator workatastartup.com",
     "content": "@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap'); @media print { body { max-width: 40em; font-family: Inter; line-height: 1.3rem; } .company-logo { float: left; margin-right: 1.5rem; } [class=\"company-section my-10\"] { clear: both; padding-top: 1.3rem; } .company-title .company-name { margin: 0 0 .75rem; display: inline-block; } .company-title .company-name + div + div { margin: .25rem 0 .05rem; display: inline-block; } .text-xl, .text-2xl { font-size: 1.2rem; font-weight: 600; } .text-2xl { font-size: 1.5rem; font-weight: 500; } .text-xl, .text-2xl, h1, h2, h3, h4 { font-family: Open Sans; } .flex { display: flex; } .text-sm { font-size: .875rem; line-height: 1.25rem; } .gap-x-6 { -moz-column-gap: 1.5rem; column-gap: 1.5rem; } .flex-row { flex-direction: row; } nav + div { padding: 1.5rem 0; } nav &gt; .flex { gap: .25rem; } [class=\"company-details my-2 flex flex-wrap md:my-0\"] * { padding: .13rem .33rem 0 0 ; } a img {padding: 1.2rem 1.2rem 0 0} /* [data-page] */ [class=\"ycdc-card mt-8 sm:w-[300px]\"], [class=\"w-full rounded bg-sky-100 text-sky-600 flex flex-row justify-between px-3 py-3 border-blue-200 border my-2\"] , [class=\"secondary normalwidth company-other-jobs mt-10\"] , [class=\"bg-brand w-full mt-2 md:mt-4 sm:px-6 lg:px-8 py-4 overflow-hidden\"], [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; section &gt; div &gt; div:nth-child(2), [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; div, [id^=\"WaasShowJobPage-react-component\"] &gt; div.no-scroll-behind.relative.isolate.z-10, footer, [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; section &gt; div &gt; div.flex-grow.space-y-5 &gt; div.ycdc-card.max-w-2xl &gt; div.mt-6.border-t.border-gray-300.pt-6.text-sm { display: none; } [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; section &gt; div &gt; div.flex-grow.space-y-5 { display: block !important; } } . ",
