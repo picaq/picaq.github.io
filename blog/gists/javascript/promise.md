@@ -72,6 +72,14 @@ fetch(url)
   });
 ```
 
+#### format with es6 arrow function
+
+```js
+const functionName = async (parameters) => {
+  // asynchronous operations with await
+};
+```
+
 #### example
 
 ```js
