@@ -97,6 +97,17 @@ let randomize = list => console.log(list[Math.floor(list.length * Math.random())
 })(22);
 ```
 
+### use setInterval correctly with named functions
+
+```js
+
+const getAQI = pm => {
+  // do some math here
+  return someValue;
+};
+
+setInterval(getAQI, 200000); // do NOT use a function call i.e. setInterval(getAQI(), 200000)
+```
 
 ## Time conversions
 
