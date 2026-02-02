@@ -3463,5 +3463,12 @@
     "url": "/blog/gists/css/styles#y-combinator-workatastartupcom",
     
     "relUrl": "/blog/gists/css/styles#y-combinator-workatastartupcom"
+  },"495": {
+    "doc": "User Styles",
+    "title": "Remove canvas background animations",
+    "content": "example: luma . [class*=\"canvas\"], canvas { display: none !important; } . ",
+    "url": "/blog/gists/css/styles#remove-canvas-background-animations",
+    
+    "relUrl": "/blog/gists/css/styles#remove-canvas-background-animations"
   }
 }
