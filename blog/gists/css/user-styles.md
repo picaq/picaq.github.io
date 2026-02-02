@@ -274,4 +274,12 @@ Here is a workaround:
 
 }
 
+
+```
+### Remove canvas background animations
+example: luma
+```
+[class*="canvas"], canvas {
+    display: none !important;
+}
 ```
