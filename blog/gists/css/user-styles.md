@@ -20,7 +20,7 @@ Custom user-defined style sheets to better browse the web.
     font-feature-settings: "liga" 0;
 }
 
-code, pre, .tio-markdown_code, [id^="file"], .file-info, .CodeMirror-linenumber, #copilot-button-positioner, .cm-gutterElement {
+code, pre, .tio-markdown_code, [id^="file"]:not(h2), .file-info, .CodeMirror-linenumber, #copilot-button-positioner, .cm-gutterElement {
     font-family: Iosevka !important;
     font-feature-settings: "liga" 0;
 }
