@@ -1,7 +1,7 @@
 ---
 title: WSL
 permalink: blog/gists/sh/wsl
-parent: Gists
+parent: Shell
 nav_order: 6
 ---
 
