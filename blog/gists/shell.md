@@ -22,3 +22,17 @@ output looks like
 -rw-r--r-- 1 picaq picaq 112M Feb  9 20:04 structured_data.ndjson
 ```
 
+### Encryption
+
+use GPG to encrypt with a passphrase
+
+```
+gpg -c filename.txt
+```
+will create `filename.txt.gpg`
+
+to decrypt
+```
+gog -d filename.txt.gpg
+```
+will cat the contents into the terminal
