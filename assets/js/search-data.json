@@ -3158,7 +3158,7 @@
   },"451": {
     "doc": "Shell",
     "title": "Encryption",
-    "content": "use GPG to encrypt with a passphrase . gpg -c filename.txt . will create filename.txt.gpg . to decrypt . gog -d filename.txt.gpg . will cat the contents into the terminal . ",
+    "content": "use GPG to encrypt with a passphrase . gpg -c filename.txt . will create filename.txt.gpg . to decrypt . gpg -d filename.txt.gpg . will cat the contents into the terminal . ",
     "url": "/blog/gists/sh#encryption",
     
     "relUrl": "/blog/gists/sh#encryption"
