@@ -33,6 +33,6 @@ will create `filename.txt.gpg`
 
 to decrypt
 ```sh
-gog -d filename.txt.gpg
+gpg -d filename.txt.gpg
 ```
 will cat the contents into the terminal
