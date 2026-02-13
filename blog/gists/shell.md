@@ -26,13 +26,13 @@ output looks like
 
 use GPG to encrypt with a passphrase
 
-```
+```sh
 gpg -c filename.txt
 ```
 will create `filename.txt.gpg`
 
 to decrypt
-```
+```sh
 gog -d filename.txt.gpg
 ```
 will cat the contents into the terminal
