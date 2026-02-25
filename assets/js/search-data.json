@@ -3499,13 +3499,41 @@
     
     "relUrl": "/blog/gists/css/styles#remove-canvas-background-animations"
   },"500": {
+    "doc": "Vegan Fish Flavor",
+    "title": "Vegan Fish Flavor",
+    "content": "The secret formula for vegan fish flavor is: . | protein ( legumes / beans ) | salt ( shoyu, ponzu ) | acid ( vinegar, citrus ) | . ",
+    "url": "/blog/food/vegan-fish-flavor",
+    
+    "relUrl": "/blog/food/vegan-fish-flavor"
+  },"501": {
+    "doc": "Vegan Fish Flavor",
+    "title": "Recipes",
+    "content": " ",
+    "url": "/blog/food/vegan-fish-flavor#recipes",
+    
+    "relUrl": "/blog/food/vegan-fish-flavor#recipes"
+  },"502": {
+    "doc": "Vegan Fish Flavor",
+    "title": "Fishy Edamame",
+    "content": ". | frozen edamame ( ¾ cup ) | shoyu ( 1½ tbsp ) | cherry tomatoes ( 3 – 5, optional ) | grated or minced ginger ( 1 cm³, optional ) | . blast in the microwave with a ceramic lid on . ",
+    "url": "/blog/food/vegan-fish-flavor#fishy-edamame",
+    
+    "relUrl": "/blog/food/vegan-fish-flavor#fishy-edamame"
+  },"503": {
+    "doc": "Vegan Fish Flavor",
+    "title": "Fishy Marinated Sprouts",
+    "content": ". | green lentil sprouts ( 1 mason jar full ) | yuzu ponzu sauce ( 2 tbsp ) | white rice vinegar ( 1 tbsp ) | . marinate overnight in the fridge . ",
+    "url": "/blog/food/vegan-fish-flavor#fishy-marinated-sprouts",
+    
+    "relUrl": "/blog/food/vegan-fish-flavor#fishy-marinated-sprouts"
+  },"504": {
     "doc": "WSL",
     "title": "Shell Scripting",
     "content": "I primarily use ZSH . ",
     "url": "/blog/gists/sh/wsl#shell-scripting",
     
     "relUrl": "/blog/gists/sh/wsl#shell-scripting"
-  },"501": {
+  },"505": {
     "doc": "WSL",
     "title": "WSL",
     "content": "remove :Zone.Identifier and .crdownload:com.dropbox.attrs from files downloaded into Ubuntu partition . rm *:Zone.Identifier *crdownload:com.dropbox.attrs . ",
