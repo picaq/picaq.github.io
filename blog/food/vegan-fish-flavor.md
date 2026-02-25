@@ -16,16 +16,16 @@ The secret formula for vegan fish flavor is:
 ## Recipes 
 
 ### Fishy Edamame
-- frozen edamame ( ¾ cup )
-- shoyu ( 1½ tbsp )
+- frozen edamame ( ¾ cup )
+- shoyu (1½ tbsp )
 - cherry tomatoes ( 3 – 5, optional )
-- grated or minced ginger ( 1 cm³, optional )
+- grated or minced ginger (1 cm³, optional )
 
 blast in the microwave with a ceramic lid on
 
 ### Fishy Marinated Sprouts
-- green lentil sprouts ( 1 mason jar full )
-- yuzu ponzu sauce ( 2 tbsp )
-- white rice vinegar ( 1 tbsp )
+- green lentil sprouts (1 mason jar full )
+- yuzu ponzu sauce ( 2 tbsp )
+- white rice vinegar (1 tbsp )
 
 marinate overnight in the fridge
