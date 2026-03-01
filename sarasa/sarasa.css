@@ -274,7 +274,7 @@ h2, h3, h4, h5 {
 
 
 /* strong,  */
-[id$="alphabet" i] + p, [id$="alphabet" i] + p + p, [id$="nese" i] + p, [id$="korean" i] + p, [id$="alphabet" i] + p {
+[id$="alphabet" i] + p, [id$="alphabet" i] + p + p, [id$="-characters" i] + p, [id$="-characters" i] + p + p, [id$="nese" i] + p, [id$="korean" i] + p, [id$="alphabet" i] + p {
     letter-spacing: calc(1em + .5rem) ;
     line-height: calc(1.75em + .85rem) ;
     /* font-weight: 400 ; */
@@ -283,7 +283,7 @@ h2, h3, h4, h5 {
     overflow-wrap: break-word;
 }
 
-[id$="alphabet" i] + p, [id$="alphabet" i] + p + p, [id$="nese" i] + p, [id$="korean" i] + p, [id$="alphabet" i] + p, [id$="ligatures" i] + p,  h2::after, h3::after {
+[id$="alphabet" i] + p, [id$="alphabet" i] + p + p, [id$="-characters" i] + p, [id$="-characters" i] + p + p, [id$="nese" i] + p, [id$="korean" i] + p, [id$="alphabet" i] + p, [id$="ligatures" i] + p,  h2::after, h3::after {
     font-size: 2rem;
     font-weight: 300;
     transition: font-weight .22s ease, font-size .24s ease-in-out;
