@@ -13,7 +13,7 @@ Teaching tools & scripts for a smoother classroom experience
 ### Fullscreen Presentation
 [fullscreen](javascript: document?.fullscreenElement || document.querySelector(%27body%27).requestFullscreen();)
 ```js
-javascript: document?.fullscreenElement || document.querySelector('body').requestFullscreen();
+javascript: document?.fullscreenElement || document.querySelector('html').requestFullscreen();
 ```
 
 ### Class Timer
