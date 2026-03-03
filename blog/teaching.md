@@ -20,6 +20,11 @@ javascript: document?.fullscreenElement || document.querySelector('body').reques
 
 [timer](javascript:void%20function(){const%20a=new%20Date,b=a.getDay(),c=a=%3E{const%20b=a.split(%22:%22);return%2060*(60*parseInt(b[0])+parseInt(b[1]))},d=[[%229:00%22,%2210:05%22,%2210:50%22,%2212:30%22,%2214:00%22],[%228:40%22,%229:50%22,%2210:50%22,%2211:40%22,%2213:30%22],[%229:00%22,%2210:05%22,%2211:10%22],[%229:00%22,%2210:05%22,%2210:55%22,%2212:00%22],[%229:00%22,%2210:05%22,%2210:55%22,%2212:25%22]][b-1],e=d.map(a=%3Ec(a)),f=a.getHours(),g=a.getMinutes(),h=a.getSeconds(),i=`${0%3Cf%3Ff+%22:%22:%22%22}${0%3Cf%26%2610%3Eg%3F%220%22+g:g}:${10%3Eh%3F%220%22+h:h}`,j=60*(60*f)+60*g+h,k=(()=%3E{for(let%20a=0;a%3C=e.length;a++)if(e[a]%3Ej)return%20e[a]})()-j-300,l=Math.floor(k/60);window.location=`https://www.google.com/search%3Fq=set+timer+for+${l}+minutes+${k%2560}+seconds`}();)
 
+- Each inner array of `endTimes` is indexed to the day of the weekday: Monday Tuesday Wednesday Thursday Friday
+  - Times are in military time HH:mm
+- `cleanup` is the number of minutes in seconds subtracted from the end of class for cleaning up
+- [edit](javascript:void%20function(){let%20a=document.querySelector(%22body%22);a.contentEditable=%22true%22!==a.contentEditable}();) these values in the below codeblock before updating the bookmark if the class schedule changes
+
 ```js
 javascript: (()=>{
 
