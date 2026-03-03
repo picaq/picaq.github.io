@@ -3459,7 +3459,7 @@
   },"494": {
     "doc": "Teaching",
     "title": "Fullscreen Presentation",
-    "content": "fullscreen . javascript: document?.fullscreenElement || document.querySelector('body').requestFullscreen(); . ",
+    "content": "fullscreen . javascript: document?.fullscreenElement || document.querySelector('html').requestFullscreen(); . ",
     "url": "/blog/teaching#fullscreen-presentation",
     
     "relUrl": "/blog/teaching#fullscreen-presentation"
