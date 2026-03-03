@@ -3443,97 +3443,125 @@
     
     "relUrl": "/blog/gists/javascript/string#count-occurrences-of-chars-or-substring-occurances-in-a-string"
   },"492": {
+    "doc": "Teaching",
+    "title": "Teaching",
+    "content": "Teaching tools &amp; scripts for a smoother classroom experience . ",
+    "url": "/blog/teaching",
+    
+    "relUrl": "/blog/teaching"
+  },"493": {
+    "doc": "Teaching",
+    "title": "Browser Scripts &amp; Bookmarklets",
+    "content": " ",
+    "url": "/blog/teaching#browser-scripts--bookmarklets",
+    
+    "relUrl": "/blog/teaching#browser-scripts--bookmarklets"
+  },"494": {
+    "doc": "Teaching",
+    "title": "Fullscreen Presentation",
+    "content": "fullscreen . javascript: document?.fullscreenElement || document.querySelector('body').requestFullscreen(); . ",
+    "url": "/blog/teaching#fullscreen-presentation",
+    
+    "relUrl": "/blog/teaching#fullscreen-presentation"
+  },"495": {
+    "doc": "Teaching",
+    "title": "Class Timer",
+    "content": "timer . javascript: (()=&gt;{ const endTimes = [ ['9:00', '10:05', '10:50', '12:30', '14:00'], ['8:40', '9:50', '10:50', '11:40', '13:30'], ['9:00', '10:05', '11:10'], ['9:00', '10:05', '10:55', '12:00'], ['9:00', '10:05', '10:55', '12:25'], ]; const cleanup = 5 * 60; const today = new Date(); const day = today.getDay(); const hhmmtoSeconds = (time) =&gt; { const split = time.split(':'); return 60 * (60 * parseInt(split[0]) + parseInt(split[1])); }; const todayEndTimes = endTimes[day-1]; const todayEndTimeSeconds = todayEndTimes.map( time =&gt; hhmmtoSeconds(time) ); const hours = today.getHours(); const minutes = today.getMinutes(); const seconds = today.getSeconds(); const formattedNow = `${ hours &gt; 0 ? hours + \":\" : \"\" }${ hours &gt; 0 &amp;&amp; minutes &lt; 10 ? '0' + minutes : minutes }:${ seconds &lt; 10 ? '0' + seconds : seconds }`; const secondsNow = hours * 60 * 60 + minutes * 60 + seconds; const getEndTimeSeconds = () =&gt; { for ( let i = 0; i &lt;= todayEndTimeSeconds.length; i++) { if (todayEndTimeSeconds[i] &gt; secondsNow) return todayEndTimeSeconds[i]; }; }; const diff = getEndTimeSeconds()-secondsNow-cleanup; const endMins = Math.floor(diff / 60); const endSecs = diff % 60; window.location = `https://www.google.com/search?q=set+timer+for+${endMins}+minutes+${endSecs}+seconds`; })(); . ",
+    "url": "/blog/teaching#class-timer",
+    
+    "relUrl": "/blog/teaching#class-timer"
+  },"496": {
     "doc": "Typography",
     "title": "Typography",
     "content": " ",
     "url": "/blog/design/type",
     
     "relUrl": "/blog/design/type"
-  },"493": {
+  },"497": {
     "doc": "User Styles",
     "title": "User Styles",
     "content": "Custom user-defined style sheets to better browse the web. ",
     "url": "/blog/gists/css/styles",
     
     "relUrl": "/blog/gists/css/styles"
-  },"494": {
+  },"498": {
     "doc": "User Styles",
     "title": "Monaco &amp; CodeMirror editors",
     "content": "/* fixes offset cursor in editor */ .monaco-editor .view-lines .view-line, .cm-line { /* for iosevka: editor font size * 1.10138462 */ font-size: 110.138462% !important; font-family: Iosevka !important; font-feature-settings: \"liga\" 0; } code, pre, .tio-markdown_code, [id^=\"file\"]:not(h2), .file-info, .CodeMirror-linenumber, #copilot-button-positioner, .cm-gutterElement { font-family: Iosevka !important; font-feature-settings: \"liga\" 0; } /* remove horrendous dots in coderpad */ .monaco-editor .mtkw { color: #0000 !important } /* cursor */ .cursor.monaco-mouse-cursor-text, .cm-cursor.cm-cursor-primary { background-color: #e9b6c5bf !important; border-color: #e9b6c5bf !important; } /* colors */ :root { --comment-green: #6a9955; --comment-steel-blue: rgb(97, 124, 149) !important; --keyword-pink: #c586c0; --keyword-lilac: rgb(177, 135, 232); } /* matching bracket colors */ .view-line .mtk3 { color: var(--comment-steel-blue); } .bracket-highlighting-0, .bracket-highlighting-3, .bracket-highlighting-6, .bracket-highlighting-9, .bracket-highlighting-12, .bracket-highlighting-15, .bracket-highlighting-18 { color: #ffd700a6 !important } .view-line .mtk13, .mtk9.bracket-highlighting-1, .bracket-highlighting-4, .bracket-highlighting-7, .bracket-highlighting-10, .bracket-highlighting-13, .bracket-highlighting-16, .bracket-highlighting-19 { color: var(--keyword-pink) !important; } .bracket-highlighting-2, .bracket-highlighting-5, .bracket-highlighting-8, .bracket-highlighting-11, .bracket-highlighting-14, .bracket-highlighting-17, .bracket-highlighting-20 { color: cornflowerblue !important; } /* colors */ div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(115, 176, 112); } .cm-s-textmate span.cm-property { color: rgba(219, 210, 198, .89); } .cm-s-textmate span.cm-def { color: rgb(122, 158, 208); } .cm-s-textmate span.cm-keyword { color: #b187e8; } .cm-s-textmate span.cm-variable-2 { color: rgb(140, 190, 198); } .cm-s-textmate span.cm-comment { color: rgb(97, 124, 149); } .cm-s-textmate span.cm-operator { color: rgb(86, 166, 114); } .cm-s-textmate span.cm-number { color: rgb(90, 185, 196); } .view-lines { /* softer colors */ filter: saturate(0.7) brightness(1) sepia(0.1); } .tio-markdown_img { filter: invert(.894) hue-rotate(177deg); opacity: .67; } /* top spacing for greatfrontend.com */ .lines-content, .margin-view-overlays { translate: 0 0.5rem; } . ",
     "url": "/blog/gists/css/styles#monaco--codemirror-editors",
     
     "relUrl": "/blog/gists/css/styles#monaco--codemirror-editors"
-  },"495": {
+  },"499": {
     "doc": "User Styles",
     "title": "Light Themes &amp; Printing",
     "content": " ",
     "url": "/blog/gists/css/styles#light-themes--printing",
     
     "relUrl": "/blog/gists/css/styles#light-themes--printing"
-  },"496": {
+  },"500": {
     "doc": "User Styles",
     "title": "ReMarkable",
     "content": "When a website is “printed” by your browser to a pdf, this prints to the exact size of the ReMarkable 2 or Paper Pro screen content size. Especially noticeable when content is on a dark background. @media print { @page { size: 210mm 280mm; /* &lt;- width height */ margin-top: 0.25in; margin-bottom: 0.25in; margin-left: 0; margin-right: 0; } body { zoom: 88%; } } . more info on printing CSS print page styling | DocuSeal . ",
     "url": "/blog/gists/css/styles#remarkable",
     
     "relUrl": "/blog/gists/css/styles#remarkable"
-  },"497": {
+  },"501": {
     "doc": "User Styles",
     "title": "Notion.site",
     "content": "ctrl/cmd + shift + L swaps between light and dark themes for your own notion notes but not public ones. Here is a workaround: . [style*=\"color: rgba(255, 255, 255, 0.81)\"] { color: rgba(0, 0, 0, 0.81) !important } [style*=\"background: rgba(255, 255, 255, 0.13)\"] { background: rgba(0, 0, 0, 0.03) !important } #main [style*=\"fill: rgba(255, 255, 255, 0.46)\"], [style*=\"color: rgba(255, 255, 255, 0.46)\"], #main [style*=\"fill: rgba(255, 255, 255\"] { fill: rgba(0, 0, 0, 0.46) !important; color: rgba(0, 0, 0, 0.46) !important; outline: rgba(0, 0, 0, 0.46) !important; } [style*=\"color: rgb(155, 155, 155); fill: rgb(155, 155, 155);\"] { color: rgb(95, 95, 95) !important; fill: rgb(95, 95, 95) !important; } [style=\"display: flex; flex-direction: row;\"] { filter: brightness(.3) } @media screen { [style*=\"background: rgb(25, 25, 25)\"] { background: rgb(225, 225, 225) !important } } @media print { html &gt; body [style*=\"background: rgb(25, 25, 25)\"] { background: white !important } } . ",
     "url": "/blog/gists/css/styles#notionsite",
     
     "relUrl": "/blog/gists/css/styles#notionsite"
-  },"498": {
+  },"502": {
     "doc": "User Styles",
     "title": "Y Combinator workatastartup.com",
     "content": "@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap'); @media print { body { max-width: 40em; font-family: Inter; line-height: 1.3rem; } .company-logo { float: left; margin-right: 1.5rem; } [class=\"company-section my-10\"] { clear: both; padding-top: 1.3rem; } .company-title .company-name { margin: 0 0 .75rem; display: inline-block; } .company-title .company-name + div + div { margin: .25rem 0 .05rem; display: inline-block; } .text-xl, .text-2xl { font-size: 1.2rem; font-weight: 600; } .text-2xl { font-size: 1.5rem; font-weight: 500; } .text-xl, .text-2xl, h1, h2, h3, h4 { font-family: Open Sans; } .flex { display: flex; } .text-sm { font-size: .875rem; line-height: 1.25rem; } .gap-x-6 { -moz-column-gap: 1.5rem; column-gap: 1.5rem; } .flex-row { flex-direction: row; } nav + div { padding: 1.5rem 0; } nav &gt; .flex { gap: .25rem; } [class=\"company-details my-2 flex flex-wrap md:my-0\"] * { padding: .13rem .33rem 0 0 ; } a img {padding: 1.2rem 1.2rem 0 0} /* [data-page] */ [class=\"ycdc-card mt-8 sm:w-[300px]\"], [class=\"w-full rounded bg-sky-100 text-sky-600 flex flex-row justify-between px-3 py-3 border-blue-200 border my-2\"] , [class=\"secondary normalwidth company-other-jobs mt-10\"] , [class=\"bg-brand w-full mt-2 md:mt-4 sm:px-6 lg:px-8 py-4 overflow-hidden\"], [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; section &gt; div &gt; div:nth-child(2), [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; div, [id^=\"WaasShowJobPage-react-component\"] &gt; div.no-scroll-behind.relative.isolate.z-10, footer, [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; section &gt; div &gt; div.flex-grow.space-y-5 &gt; div.ycdc-card.max-w-2xl &gt; div.mt-6.border-t.border-gray-300.pt-6.text-sm { display: none; } [id^=\"WaasShowJobPage-react-component\"] &gt; div.mx-auto.max-w-ycdc-page &gt; section &gt; div &gt; div.flex-grow.space-y-5 { display: block !important; } } . ",
     "url": "/blog/gists/css/styles#y-combinator-workatastartupcom",
     
     "relUrl": "/blog/gists/css/styles#y-combinator-workatastartupcom"
-  },"499": {
+  },"503": {
     "doc": "User Styles",
     "title": "Remove canvas background animations",
     "content": "example: luma . [class*=\"canvas\"], canvas { display: none !important; } . ",
     "url": "/blog/gists/css/styles#remove-canvas-background-animations",
     
     "relUrl": "/blog/gists/css/styles#remove-canvas-background-animations"
-  },"500": {
+  },"504": {
     "doc": "Vegan Fish Flavor",
     "title": "Vegan Fish Flavor",
     "content": "The secret formula for vegan fish flavor is: . | protein ( legumes / beans ) | salt ( shoyu, ponzu ) | acid ( vinegar, citrus ) | . ",
     "url": "/blog/food/vegan-fish-flavor",
     
     "relUrl": "/blog/food/vegan-fish-flavor"
-  },"501": {
+  },"505": {
     "doc": "Vegan Fish Flavor",
     "title": "Recipes",
     "content": " ",
     "url": "/blog/food/vegan-fish-flavor#recipes",
     
     "relUrl": "/blog/food/vegan-fish-flavor#recipes"
-  },"502": {
+  },"506": {
     "doc": "Vegan Fish Flavor",
     "title": "Fishy Edamame",
     "content": ". | frozen edamame ( ¾ cup ) | shoyu (1½ tbsp ) | cherry tomatoes ( 3 – 5, optional ) | grated or minced ginger (1 cm³, optional ) | . blast in the microwave with a ceramic lid on . ",
     "url": "/blog/food/vegan-fish-flavor#fishy-edamame",
     
     "relUrl": "/blog/food/vegan-fish-flavor#fishy-edamame"
-  },"503": {
+  },"507": {
     "doc": "Vegan Fish Flavor",
     "title": "Fishy Marinated Sprouts",
     "content": ". | green lentil sprouts (1 mason jar full ) | yuzu ponzu sauce ( 2 tbsp ) | white rice vinegar (1 tbsp ) | . marinate overnight in the fridge . ",
     "url": "/blog/food/vegan-fish-flavor#fishy-marinated-sprouts",
     
     "relUrl": "/blog/food/vegan-fish-flavor#fishy-marinated-sprouts"
-  },"504": {
+  },"508": {
     "doc": "WSL",
     "title": "Shell Scripting",
     "content": "I primarily use ZSH . ",
     "url": "/blog/gists/sh/wsl#shell-scripting",
     
     "relUrl": "/blog/gists/sh/wsl#shell-scripting"
-  },"505": {
+  },"509": {
     "doc": "WSL",
     "title": "WSL",
     "content": "remove :Zone.Identifier and .crdownload:com.dropbox.attrs from files downloaded into Ubuntu partition . rm *:Zone.Identifier *crdownload:com.dropbox.attrs . ",
