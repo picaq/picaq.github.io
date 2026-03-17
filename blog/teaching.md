@@ -35,7 +35,7 @@ const endTimes = [
     ['9:00', '10:05', '10:55', '12:30', '14:00'],
     ['9:00', '10:05', '10:55', '12:25'],
 ];
-const cleanup = 5 * 60;
+const cleanup = 3 * 60;
 
 const today = new Date();
 const day = today.getDay();
