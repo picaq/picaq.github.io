@@ -3459,7 +3459,7 @@
   },"494": {
     "doc": "Teaching",
     "title": "Convert Presentation to fill window (mobile present)",
-    "content": "mobile present . javascript: (()=&gt;{ const loc = window.location; const host = loc.host, pathname = loc.pathname, url = loc.href; if (host === 'docs.google.com' &amp;&amp; pathname.includes(\"/presentation\")) { const path = pathname.match(/\\/presentation\\/d\\/.*\\//)[0]; window.location.href = 'https://' + host + path + 'mobilepresent' }; })(); . ",
+    "content": "📱 present . javascript: (()=&gt;{ const copy = content =&gt; { const tempInput = document.createElement(\"textarea\"); document.body.appendChild(tempInput); tempInput.setAttribute(\"id\", \"temporary_input_clipboard\"); document.getElementById(\"temporary_input_clipboard\").value = content; tempInput.select(); document.execCommand(\"copy\"); document.body.removeChild(tempInput); } const loc = window.location; const host = loc.host, pathname = loc.pathname, url = loc.href; if (host === 'docs.google.com' &amp;&amp; pathname.includes(\"/presentation\")) { const path = pathname.match(/\\/presentation\\/d\\/.*\\//)[0]; presentation = 'https://' + host + path + 'mobilepresent'; copy(presentation); window.location.href = presentation; }; })(); . ",
     "url": "/blog/teaching#convert-presentation-to-fill-window-mobile-present",
     
     "relUrl": "/blog/teaching#convert-presentation-to-fill-window-mobile-present"
