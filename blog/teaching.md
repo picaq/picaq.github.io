@@ -11,15 +11,26 @@ Teaching tools & scripts for a smoother classroom experience
 ## Browser Scripts & Bookmarklets
 
 ### Convert Presentation to fill window (mobile present)
-[mobile present](javascript:void%20function(){const%20a=window.location,b=a.host,c=a.pathname,d=a.href;if(%22docs.google.com%22===b%26%26c.includes(%22/presentation%22)){const%20a=c.match(/\/presentation\/d\/.*\//)[0];window.location.href=%22https://%22+b+a+%22mobilepresent%22}}();)
+[📱 present](javascript:void%20function(){const%20a=a=%3E{const%20b=document.createElement(%22textarea%22);document.body.appendChild(b),b.setAttribute(%22id%22,%22temporary_input_clipboard%22),document.getElementById(%22temporary_input_clipboard%22).value=a,b.select(),document.execCommand(%22copy%22),document.body.removeChild(b)},b=window.location,c=b.host,d=b.pathname,e=b.href;if(%22docs.google.com%22===c%26%26d.includes(%22/presentation%22)){const%20b=d.match(/\/presentation\/d\/.*\//)[0];presentation=%22https://%22+c+b+%22mobilepresent%22,a(presentation),window.location.href=presentation}}();)
 ```js
 javascript: (()=>{
+  const copy = content => {    
+      const tempInput = document.createElement("textarea");
+      document.body.appendChild(tempInput);
+      tempInput.setAttribute("id", "temporary_input_clipboard");
+      document.getElementById("temporary_input_clipboard").value = content;
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+  }
   const loc = window.location;
   const host = loc.host, pathname = loc.pathname, url = loc.href;
   
   if (host === 'docs.google.com' && pathname.includes("/presentation")) {
       const path = pathname.match(/\/presentation\/d\/.*\//)[0];
-      window.location.href = 'https://' + host + path + 'mobilepresent'
+      presentation = 'https://' + host + path + 'mobilepresent';
+      copy(presentation);
+      window.location.href = presentation;
   };
 })();
 ```
