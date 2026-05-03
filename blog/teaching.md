@@ -10,6 +10,21 @@ Teaching tools & scripts for a smoother classroom experience
 
 ## Browser Scripts & Bookmarklets
 
+### Convert Presentation to fill window (mobile present)
+[mobile present](javascript:void%20function(){const%20a=window.location,b=a.host,c=a.pathname,d=a.href;if(%22docs.google.com%22===b%26%26c.includes(%22/presentation%22)){const%20a=c.match(/\/presentation\/d\/.*\//)[0];window.location.href=%22https://%22+b+a+%22mobilepresent%22}}();)
+```js
+javascript: (()=>{
+  const loc = window.location;
+  const host = loc.host, pathname = loc.pathname, url = loc.href;
+  
+  if (host === 'docs.google.com' && pathname.includes("/presentation")) {
+      const path = pathname.match(/\/presentation\/d\/.*\//)[0];
+      window.location.href = 'https://' + host + path + 'mobilepresent'
+  };
+})();
+```
+
+
 ### Fullscreen Presentation
 [fullscreen](javascript: document?.fullscreenElement || document.querySelector(%27html%27).requestFullscreen();)
 ```js
