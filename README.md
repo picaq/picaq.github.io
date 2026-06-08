@@ -22,6 +22,7 @@ but also submodules of the latest stable commits of some pure vanilla html/css/j
 ### linkedin [in/mandy-chen-picaq](https://www.linkedin.com/in/mandy-chen-picaq/)
 ### codepen ( i ♡ css & data viz ) [codepen.io/picaq](https://codepen.io/picaq)
 - [Ceiling light button](https://codepen.io/picaq/pen/RwmQOwZ)
+- [Ceiling light bright game](https://codepen.io/picaq/pen/VYmjzvY)
 - [Flexbox footer](https://codepen.io/picaq/pen/NWYObBY)
 - [Hanging Quotes & Typography](https://codepen.io/picaq/pen/PorGQaR)
 - [honeycomb bubble profile pictures](https://codepen.io/picaq/pen/wvLbwLe)
