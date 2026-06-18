@@ -278,14 +278,14 @@ Here is a workaround:
 ```
 ### Remove canvas background animations
 example: luma
-```
+```css
 [class*="canvas"], canvas {
     display: none !important;
 }
 ```
 
 ### Replace Canva gradient nav bar color
-```
+```css
 [dir] .hOSklA.jxyQAA {
     background: #79575d;
 }
