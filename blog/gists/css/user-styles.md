@@ -283,3 +283,10 @@ example: luma
     display: none !important;
 }
 ```
+
+### Replace Canva gradient nav bar color
+```
+[dir] .hOSklA.jxyQAA {
+    background: #79575d;
+}
+```
