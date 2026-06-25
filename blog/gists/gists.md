@@ -8,7 +8,14 @@ nav_order: 1
 My code snippets are hosted on [GitHub’s Gists](https://gist.github.com/picaq). <br>
 I plan to move them here eventually.
 
-## Latest: git 
+## Latest: git / github CLI
+
+### checkout branch by PR number
+
+```sh
+gh pr checkout <PR_NUMBER>
+```
+
 ### update feature branch with latest changes to main/master
 in the feature branch:
 ```sh
