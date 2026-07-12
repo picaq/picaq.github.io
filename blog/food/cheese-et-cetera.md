@@ -9,7 +9,7 @@ nav_order: 7
 
 I used to have a really bad cheese addiction. I like yogurt too. 
 
-Trying not to clog my arteries over here!
+This table is an attempt to minimize saturated fat intake.
 
 The tables below compare the saturated fat content by grams/serving as well as by % weight of the tastiest fermented non-dairy dairy alternatives ( that I’ve tried so far ). Not included are those that I didn’t&nbsp;like. Coconut oil is the absolute bane of my existence. 
 
