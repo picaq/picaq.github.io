@@ -23,6 +23,12 @@ I’m currently playing:
 
 ### Balinese Gamelan
 
+I am a member of the Gong Kebyar performance group at [Gamelan Sekar Jaya](https://www.gsj.org/), primarily performing with gangsa kantilan.
+
+#### Performances
+- [Yerba Buena Gardens Festival](https://ybgfestival.org/event/gamelan-sekar-jaya-2026/) June 6 2026
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/b_6f2crLAx8?si=551QbJJ7lZ6j7wAN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Gangsa
