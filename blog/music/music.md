@@ -17,6 +17,10 @@ Here’s an app, [Notation Map](/notation-map/), that I’m making to help me pi
 
 I am studying cello under the tutelage of [Leo Baluk](https://sfcmc.org/faculty/leo-baluk/).
 
+## Teaching
+
+I am teaching ukelele to elementary school students with El Cerrito Recreation.
+
 ## Playing
 
 I’m currently playing: 
