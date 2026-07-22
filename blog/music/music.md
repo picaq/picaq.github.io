@@ -13,6 +13,10 @@ Ok I mostly transcribe music into formats for specific instruments.
 
 Here’s an app, [Notation Map](/notation-map/), that I’m making to help me pick up new instruments. It&nbsp;is&nbsp;unfinished.
 
+## Studying
+
+I am studying cello under the tutelage of [Leo Baluk](https://sfcmc.org/faculty/leo-baluk/).
+
 ## Playing
 
 I’m currently playing: 
