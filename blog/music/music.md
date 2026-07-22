@@ -19,7 +19,7 @@ I am studying cello under the tutelage of [Leo Baluk](https://sfcmc.org/faculty/
 
 ## Teaching
 
-I am teaching ukelele to elementary school students with El Cerrito Recreation.
+I am teaching ukelele to elementary school students with [El Cerrito Recreation](https://www.elcerrito.gov/140/Recreation).
 
 ## Playing
 
