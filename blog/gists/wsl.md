@@ -16,6 +16,12 @@ remove :Zone.Identifier and .crdownload:com.dropbox.attrs from files downloaded 
 rm *:Zone.Identifier *crdownload:com.dropbox.attrs
 ```
 
+remove all zone.identifier from downloads to linux in dir
+```sh
+find . -type f -name "*:Zone.Identifier" -delete
+```
+
+
 
 
 
