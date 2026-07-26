@@ -350,7 +350,32 @@ class ExistingTest < Minitest::Test
   # blog/gists/wsl.md declares `permalink: blog/gists/sh/wsl`, so the file is not
   # where the permalink implies. It still has to be found.
   def test_finds_a_page_whose_file_path_differs_from_its_permalink
-    assert_equal ["blog/gists/wsl.md"], opened("page", "gists/sh/wsl")
+    out, _err, code = new_page("-n", "page", "gists/sh/wsl")
+    assert_equal 0, code
+    assert_match(%r{^exists\s+blog/gists/wsl\.md$}, out)
+  end
+
+  # ...and it belongs under blog/gists/sh/ to match its breadcrumbs.
+  def test_offers_to_move_it_under_the_folder_its_permalink_implies
+    out, _err, = new_page("-n", "page", "gists/sh/wsl")
+    assert_match(%r{^would move\s+blog/gists/wsl\.md -> blog/gists/sh/wsl\.md$}, out)
+  end
+
+  # blog/design/type/type.md sits inside its folder, which is one of the two
+  # legitimate placements — it must be left exactly where it is.
+  def test_does_not_move_an_index_that_is_already_conventional
+    out, _err, = new_page("-n", "folder", "design/type")
+    refute_match(/move/, out)
+  end
+
+  # blog/games/dungeons-n-dragons.md is the section at blog/games/dnd. Looking
+  # up by filename alone would invent a second D&D section next to it.
+  def test_finds_a_section_by_permalink_rather_than_filename
+    assert_equal "Dungeons & Dragons", front_matter("page", "games/dnd/warlock", "Warlock")["parent"]
+  end
+
+  def test_does_not_invent_a_duplicate_section_index
+    refute_includes written("page", "games/dnd/warlock", "Warlock"), "blog/games/dnd.md"
   end
 
   # blog/design/type/ keeps its index inside rather than one level up.
@@ -362,6 +387,139 @@ class ExistingTest < Minitest::Test
     before = File.read(File.join(BLOG, "skincare", "moisturizers.md"))
     new_page("page", "skincare/moisturizers")
     assert_equal before, File.read(File.join(BLOG, "skincare", "moisturizers.md"))
+  end
+
+  def test_there_is_no_way_to_force_an_overwrite
+    _out, err, code = new_page("--force", "page", "skincare/moisturizers")
+    refute_equal 0, code
+    assert_match(/invalid option/, err)
+    refute_match(/\.rb:\d+:in/, err, "should not print a backtrace")
+  end
+end
+
+# A page and a sub-section index occupy the same path, so promoting one to the
+# other must not touch the file — it only needs a directory for the children.
+class PromoteToSectionTest < Minitest::Test
+  include Runner
+
+  PAGE = File.join(BLOG, "food", "#{SCRATCH}.md")
+  DIR  = File.join(BLOG, "food", SCRATCH)
+
+  def setup
+    File.write(PAGE, <<~MD)
+      ---
+      title: Zz Scaffold Test
+      permalink: blog/food/#{SCRATCH}
+      parent: Food
+      nav_order: 9
+      ---
+
+      # Zz Scaffold Test
+
+      prose that must survive
+    MD
+  end
+
+  def teardown
+    FileUtils.rm_f(PAGE)
+    FileUtils.rm_rf(DIR)
+  end
+
+  def test_makes_the_directory_for_an_existing_page
+    out, _err, code = new_page("folder", "food/#{SCRATCH}")
+    assert_equal 0, code
+    assert_match(/^exists\s/, out)
+    assert Dir.exist?(DIR), "children have nowhere to live"
+  end
+
+  def test_leaves_the_existing_file_byte_identical
+    before = File.read(PAGE)
+    new_page("folder", "food/#{SCRATCH}")
+    assert_equal before, File.read(PAGE)
+  end
+
+  def test_is_idempotent
+    2.times { new_page("folder", "food/#{SCRATCH}") }
+    assert Dir.exist?(DIR)
+  end
+
+  def test_a_child_is_parented_to_the_promoted_page
+    new_page("folder", "food/#{SCRATCH}")
+    new_page("page", "food/#{SCRATCH}/gin", "Gin")
+
+    fm = YAML.safe_load(
+      File.read(File.join(DIR, "gin.md")).match(/\A---\s*\n(.*?\n?)^---\s*\n/m)[1]
+    )
+    assert_equal "Zz Scaffold Test", fm["parent"]
+    assert_equal "blog/food/#{SCRATCH}/gin", fm["permalink"]
+  end
+
+  def test_a_dry_run_makes_no_directory
+    new_page("-n", "folder", "food/#{SCRATCH}")
+    refute Dir.exist?(DIR)
+  end
+end
+
+# Moving a page to match its permalink, for real.
+class RelocateTest < Minitest::Test
+  include Runner
+
+  STRAY  = File.join(BLOG, "food", "#{SCRATCH}-stray.md")
+  TARGET = File.join(BLOG, "food", SCRATCH, "stray.md")
+  BODY   = <<~MD
+    ---
+    title: Stray
+    permalink: blog/food/#{SCRATCH}/stray
+    parent: Food
+    nav_order: 9
+    ---
+
+    # Stray
+
+    prose that must survive the move
+  MD
+
+  def setup
+    FileUtils.mkdir_p(File.dirname(STRAY))
+    File.write(STRAY, BODY)
+  end
+
+  def teardown
+    FileUtils.rm_f(STRAY)
+    FileUtils.rm_rf(File.join(BLOG, "food", SCRATCH))
+  end
+
+  def test_moves_the_file_to_where_its_permalink_points
+    new_page("page", "food/#{SCRATCH}/stray")
+    assert File.file?(TARGET), "not moved"
+    refute File.exist?(STRAY), "left behind at the old path"
+  end
+
+  def test_content_survives_the_move_byte_for_byte
+    new_page("page", "food/#{SCRATCH}/stray")
+    assert_equal BODY, File.read(TARGET)
+  end
+
+  def test_a_dry_run_moves_nothing
+    new_page("-n", "page", "food/#{SCRATCH}/stray")
+    assert File.file?(STRAY)
+    refute File.exist?(TARGET)
+  end
+
+  def test_running_twice_is_a_no_op
+    2.times { new_page("page", "food/#{SCRATCH}/stray") }
+    assert_equal BODY, File.read(TARGET)
+  end
+
+  # Never clobber: if something already sits at the destination, leave both alone.
+  def test_refuses_to_move_onto_an_occupied_path
+    FileUtils.mkdir_p(File.dirname(TARGET))
+    File.write(TARGET, "already here\n")
+
+    _out, err, = new_page("page", "food/#{SCRATCH}/stray")
+    assert_match(/already taken/, err)
+    assert_equal "already here\n", File.read(TARGET)
+    assert File.file?(STRAY), "the stray file should still be there"
   end
 end
 

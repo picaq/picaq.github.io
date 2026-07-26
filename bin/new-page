@@ -65,9 +65,20 @@ end
 
 # Top-level sections keep their index inside the folder ( blog/food/food.md );
 # sub-sections keep it one level up ( blog/food/recipes.md ). Accept either.
-def section_index(dir)
+def conventional_index_paths(dir)
   base = File.basename(dir)
-  ["#{BLOG}/#{dir}/#{base}.md", "#{BLOG}/#{File.dirname(dir)}/#{base}.md"].find { |p| File.file?(p) }
+  ["#{BLOG}/#{dir}/#{base}.md", "#{BLOG}/#{File.dirname(dir)}/#{base}.md"]
+end
+
+# ...but the filename need not resemble the permalink at all: blog/games/
+# dungeons-n-dragons.md is the section at blog/games/dnd. Fall back to matching
+# on permalink, or we'd invent a second section next to one that already exists.
+def section_index(dir)
+  by_name = conventional_index_paths(dir).find { |p| File.file?(p) }
+  return by_name if by_name
+
+  found = pages.find { |_p, fm| fm["permalink"].to_s.delete_prefix("/").chomp("/") == "blog/#{dir}" }
+  found && found[0]
 end
 
 # ...and place a new one by the same rule.
@@ -202,11 +213,47 @@ def open_in_editor(path, options)
   warn "could not run `#{OPEN_WITH.join(" ")} #{relative}` — open it yourself"
 end
 
-# Returns the body on a write, or nil when the file was already there.
+# Makes the directory a section needs to hold its children. Reported only when
+# it is the sole new thing, since otherwise "wrote <index>.md" already implies it.
+def ensure_dir(dir, options, announce: false)
+  return if Dir.exist?(dir)
+
+  FileUtils.mkdir_p(dir) unless options[:dry_run]
+  puts "#{options[:dry_run] ? "would make" : "made"}    #{dir.delete_prefix("#{ROOT}/")}/" if announce
+end
+
+# Put a file where its permalink says it belongs, so the tree matches the
+# breadcrumbs. Content is never touched and the permalink never changes, so the
+# rendered URL is identical either way — only the layout on disk moves.
+def relocate(from, to, options)
+  return from if from == to
+
+  if File.exist?(to)
+    warn "not moving #{from.delete_prefix("#{ROOT}/")}: #{to.delete_prefix("#{ROOT}/")} is already taken"
+    return from
+  end
+
+  from_rel = from.delete_prefix("#{ROOT}/")
+  to_rel   = to.delete_prefix("#{ROOT}/")
+
+  unless options[:dry_run]
+    ensure_dir(File.dirname(to), options)
+    tracked = system("git", "ls-files", "--error-unmatch", from_rel,
+                     chdir: ROOT, out: File::NULL, err: File::NULL)
+    # git mv keeps the history attached to the file
+    FileUtils.mv(from, to) unless tracked && system("git", "mv", from_rel, to_rel, chdir: ROOT)
+  end
+
+  puts "#{options[:dry_run] ? "would move" : "moved"}   #{from_rel} -> #{to_rel}"
+  to
+end
+
+# Returns the body on a write, or nil when the file was already there. Existing
+# files are never written over — there is no flag to make it do so.
 def write(path, body, options)
   relative = path.delete_prefix("#{ROOT}/")
 
-  if File.exist?(path) && !options[:force]
+  if File.exist?(path)
     puts "exists  #{relative}"
     open_in_editor(path, options)
     return nil
@@ -267,17 +314,23 @@ parser = OptionParser.new do |o|
   o.separator "    folder internet/domain           -> blog/internet/domain   ( domain is a section )"
   o.separator ""
   o.separator "  Missing sections in the path are created as it goes. TITLE defaults"
-  o.separator "  to the last segment, title-cased. Anything that already exists is"
-  o.separator "  opened for editing instead of being recreated."
+  o.separator "  to the last segment, title-cased."
+  o.separator ""
+  o.separator "  Existing files are never written over. Anything already there is"
+  o.separator "  opened for editing instead, and asking for an existing page as a"
+  o.separator "  folder just makes the directory its children need."
   o.separator ""
   o.on("-o", "--nav-order N",  Integer, "override the computed nav_order")  { |v| options[:nav_order] = v }
   o.on("-p", "--parent TITLE", "override the derived parent title")         { |v| options[:parent] = v }
-  o.on("-f", "--force",        "overwrite an existing file")                { options[:force] = true }
   o.on("-n", "--dry-run",      "print the result instead of writing it")    { options[:dry_run] = true }
   o.on("-N", "--no-open",      "don't open anything in #{OPEN_WITH.first || "an editor"}") { options[:no_open] = true }
   o.on("-h", "--help",         "show this message")                         { puts o; exit }
 end
-parser.parse!
+begin
+  parser.parse!
+rescue OptionParser::ParseError => e
+  abort "#{e.message}\n\n#{parser}"
+end
 
 type  = ARGV.shift
 path  = ARGV.shift
@@ -311,8 +364,15 @@ end
 
 if type == "folder"
   # Already there? Open it rather than refusing — you probably meant to edit it.
-  if (found = existing_at("blog/#{path}", section_index(path))) && !options[:force]
+  # A sub-section's index and a plain page occupy the same path, so a page being
+  # promoted to a section needs no file change at all: it is already in the right
+  # place. All that's missing is somewhere for its children to live.
+  if (found = existing_at("blog/#{path}", section_index(path)))
     puts "exists  #{found.delete_prefix("#{ROOT}/")}"
+    # Both index conventions are legitimate, so only relocate an index that sits
+    # at neither of them — blog/design/type/type.md is already where it belongs.
+    found = relocate(found, new_index_path(path), options) unless conventional_index_paths(path).include?(found)
+    ensure_dir("#{BLOG}/#{path}", options, announce: true)
     open_in_editor(found, options)
     exit
   end
@@ -323,8 +383,9 @@ if type == "folder"
   puts "\n#{body}" if options[:dry_run]
   puts "next:  bin/new-page page #{path}/some-page"
 else
-  if (found = existing_at("blog/#{path}", "#{BLOG}/#{path}.md")) && !options[:force]
+  if (found = existing_at("blog/#{path}", "#{BLOG}/#{path}.md"))
     puts "exists  #{found.delete_prefix("#{ROOT}/")}"
+    found = relocate(found, "#{BLOG}/#{path}.md", options)
     open_in_editor(found, options)
     exit
   end
