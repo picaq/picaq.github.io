@@ -4,7 +4,7 @@
 #
 #   ruby test/new_page_test.rb
 #
-# Run with plain ruby, not `bundle exec` — minitest ships with ruby but is not in
+# Run with plain ruby, not `bundle exec`: minitest ships with ruby but is not in
 # the Gemfile, and the script itself is stdlib-only by design.
 #
 # Almost everything here uses --dry-run, so the real blog/ tree is never touched.
@@ -23,6 +23,10 @@ BLOG    = File.join(ROOT, "blog")
 SCRATCH = "zz-scaffold-test"
 
 module Runner
+  def titlecase(slug)
+    slug.split("-").map(&:capitalize).join(" ")
+  end
+
   # Keep the editor out of it unless a test is specifically about opening.
   NO_OPEN = { "NEW_PAGE_OPEN" => "" }.freeze
 
@@ -109,25 +113,30 @@ class PathTest < Minitest::Test
 end
 
 # The reported bug: making a page and its folder in one command.
+#
+# These all use SCRATCH paths rather than a plausible name like internet/domain.
+# That one was a hypothetical until it became a real committed page, at which
+# point every test using it started reporting "exists" instead.
 class MissingSectionTest < Minitest::Test
   include Runner
 
   def test_creates_the_missing_section_then_the_page
-    assert_equal ["blog/internet/internet.md", "blog/internet/domain.md"],
-                 written("page", "internet/domain")
+    assert_equal ["blog/#{SCRATCH}/#{SCRATCH}.md", "blog/#{SCRATCH}/domain.md"],
+                 written("page", "#{SCRATCH}/domain")
   end
 
   def test_the_page_is_parented_to_the_section_it_just_made
-    assert_equal "Internet", front_matter("page", "internet/domain")["parent"]
+    assert_equal titlecase(SCRATCH), front_matter("page", "#{SCRATCH}/domain")["parent"]
   end
 
   def test_creates_a_whole_missing_chain
-    assert_equal ["blog/a/a.md", "blog/a/b.md", "blog/a/b/c.md", "blog/a/b/c/d.md"],
-                 written("page", "a/b/c/d")
+    assert_equal ["blog/#{SCRATCH}/#{SCRATCH}.md", "blog/#{SCRATCH}/b.md",
+                  "blog/#{SCRATCH}/b/c.md", "blog/#{SCRATCH}/b/c/d.md"],
+                 written("page", "#{SCRATCH}/b/c/d")
   end
 
   def test_writes_the_section_once_not_twice
-    paths = written("folder", "internet/domain", "Domain")
+    paths = written("folder", "#{SCRATCH}/domain", "Domain")
     assert_equal paths.uniq, paths, "a section was written more than once"
   end
 
@@ -136,12 +145,12 @@ class MissingSectionTest < Minitest::Test
   end
 
   def test_warns_when_the_result_is_deeper_than_the_theme_renders
-    _out, err, = new_page("-n", "page", "a/b/c/d")
+    _out, err, = new_page("-n", "page", "#{SCRATCH}/b/c/d")
     assert_match(/4 levels deep/, err)
   end
 
   def test_does_not_warn_at_three_levels
-    _out, err, = new_page("-n", "page", "a/b/c")
+    _out, err, = new_page("-n", "page", "#{SCRATCH}/b/c")
     refute_match(/levels deep/, err)
   end
 end
@@ -150,7 +159,7 @@ class TitleTest < Minitest::Test
   include Runner
 
   def test_defaults_to_the_title_cased_slug
-    assert_equal "Domain", front_matter("page", "internet/domain")["title"]
+    assert_equal "Domain", front_matter("page", "#{SCRATCH}/domain")["title"]
   end
 
   def test_hyphens_become_spaces_in_the_default
@@ -198,9 +207,9 @@ class ParentTest < Minitest::Test
   end
 
   def test_an_override_does_not_leak_onto_sections_made_on_the_way
-    # --parent belongs to the page, not to blog/internet invented alongside it
+    # --parent belongs to the page, not to the section invented alongside it
     fm = YAML.safe_load(
-      body("page", "internet/domain", "--parent", "Shell")
+      body("page", "#{SCRATCH}/domain", "--parent", "Shell")
         .match(/\A---\s*\n(.*?\n?)^---\s*\n/m)[1]
     )
     assert_equal "Shell", fm["parent"]
@@ -222,7 +231,7 @@ class NavOrderTest < Minitest::Test
   end
 
   def test_a_page_in_a_brand_new_section_starts_at_one
-    assert_equal 1, front_matter("page", "internet/domain")["nav_order"]
+    assert_equal 1, front_matter("page", "#{SCRATCH}/domain")["nav_order"]
   end
 
   def test_can_be_overridden
@@ -362,7 +371,7 @@ class ExistingTest < Minitest::Test
   end
 
   # blog/design/type/type.md sits inside its folder, which is one of the two
-  # legitimate placements — it must be left exactly where it is.
+  # legitimate placements: it must be left exactly where it is.
   def test_does_not_move_an_index_that_is_already_conventional
     out, _err, = new_page("-n", "folder", "design/type")
     refute_match(/move/, out)
@@ -398,7 +407,7 @@ class ExistingTest < Minitest::Test
 end
 
 # A page and a sub-section index occupy the same path, so promoting one to the
-# other must not touch the file — it only needs a directory for the children.
+# other must not touch the file: it only needs a directory for the children.
 class PromoteToSectionTest < Minitest::Test
   include Runner
 

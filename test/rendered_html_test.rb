@@ -50,7 +50,7 @@ module Site
     raise "jekyll build failed:\n#{err}" unless status.success?
   end
 
-  # Only the pages Jekyll renders from this blog's markdown — not the vendored
+  # Only the pages Jekyll renders from this blog's markdown: not the vendored
   # standalone projects, whose markup isn't maintained here.
   def self.rendered_pages
     Dir.glob("#{Site::SITE}/blog/**/*.html") + ["#{Site::SITE}/blog.html", "#{Site::SITE}/index.html"].select { |f| File.file?(f) }
