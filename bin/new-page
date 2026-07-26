@@ -1,0 +1,247 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# new-page — scaffold a blog page, recipe, or section folder.
+#
+# The nav tree on this site is built from front matter, not from where files sit
+# on disk: `parent:` is a string match against another page's `title:`. This
+# script looks that link up for you and works out the permalink and the next
+# free nav_order, so a new page starts out correctly wired in.
+#
+#   bin/new-page                                  # interactive
+#   bin/new-page page   skincare     "Sunscreen"
+#   bin/new-page recipe food/recipes "Miso Soup"
+#   bin/new-page folder travel       "Travel"     # new top-level section
+#   bin/new-page folder food/drinks  "Drinks"     # new sub-section under Food
+#
+# See CLAUDE.md for how the conventions it follows were derived.
+
+require "yaml"
+require "optparse"
+require "fileutils"
+
+ROOT      = File.expand_path("..", __dir__)
+BLOG      = File.join(ROOT, "blog")
+TEMPLATES = File.join(ROOT, "_templates")
+TYPES     = %w[page recipe folder].freeze
+
+# just-the-docs renders at most three levels of nav.
+MAX_NAV_DEPTH = 3
+
+FRONT_MATTER = /\A---\s*\n(.*?\n?)^---\s*\n/m
+PLACEHOLDER  = /\{\{([A-Z_]+)\}\}/
+
+# ---------------------------------------------------------------- reading
+
+def front_matter(path)
+  match = File.read(path, encoding: "UTF-8").match(FRONT_MATTER)
+  return {} unless match
+
+  YAML.safe_load(match[1], permitted_classes: [Date, Time], aliases: true) || {}
+rescue StandardError
+  {} # a page we can't parse just doesn't participate in the lookups below
+end
+
+# Every markdown page that takes part in the blog nav: everything under blog/,
+# plus about.md at the root ( permalink /blog, the section's landing page ).
+def pages
+  @pages ||= (Dir.glob("#{BLOG}/**/*.md") + Dir.glob("#{ROOT}/*.md"))
+             .reject { |f| f.include?("/_site/") || f.include?("/.jekyll-cache/") }
+             .map    { |f| [f, front_matter(f)] }
+             .select { |_f, fm| fm["permalink"].to_s.sub(%r{\A/}, "").start_with?("blog") }
+end
+
+# Top-level sections keep their index inside the folder ( blog/food/food.md );
+# sub-sections keep it one level up ( blog/food/recipes.md ). Accept either.
+def section_index(rel_dir)
+  base = File.basename(rel_dir)
+  ["#{BLOG}/#{rel_dir}/#{base}.md", "#{BLOG}/#{File.dirname(rel_dir)}/#{base}.md"]
+    .find { |p| File.file?(p) }
+end
+
+# ...and place a new one by the same rule.
+def new_index_path(rel_dir)
+  base = File.basename(rel_dir)
+  rel_dir.include?("/") ? "#{BLOG}/#{File.dirname(rel_dir)}/#{base}.md" : "#{BLOG}/#{rel_dir}/#{base}.md"
+end
+
+def section_title(rel_dir)
+  index = section_index(rel_dir)
+  index && front_matter(index)["title"]
+end
+
+def existing_folders
+  Dir.glob("#{BLOG}/**/*/")
+     .reject { |d| d.include?("/_site/") || d.include?("/.jekyll-cache/") }
+     .map    { |d| d.delete_prefix("#{BLOG}/").chomp("/") }
+     .sort
+end
+
+# ---------------------------------------------------------------- deriving
+
+# Siblings are pages sharing a `parent:`, wherever they live on disk — several
+# pages sit outside the folder their nav position implies. nav_order need not be
+# unique ( ties break alphabetically ), so max + 1 is always safe.
+def next_nav_order(parent_title)
+  orders = pages.filter_map do |_path, fm|
+    next unless fm["parent"] == parent_title
+
+    Integer(fm["nav_order"], exception: false)
+  end
+  (orders.max || 0) + 1
+end
+
+def nav_depth(title, seen = [])
+  return seen.size if title.nil? || seen.include?(title)
+
+  _path, fm = pages.find { |_p, f| f["title"] == title }
+  return seen.size + 1 unless fm
+
+  nav_depth(fm["parent"], seen + [title])
+end
+
+def slugify(title)
+  title.unicode_normalize(:nfd)      # "Crème Brûlée" -> "creme-brulee" rather
+       .gsub(/\p{Mn}/, "")           # than "cr-me-br-l-e"
+       .downcase
+       .gsub("&", " and ")
+       .gsub(/[^a-z0-9]+/, "-")
+       .delete_prefix("-").delete_suffix("-")
+end
+
+# Emit a value the way Psych would, so titles like ":has()" or "Yes" come back
+# out of YAML as the strings they went in as.
+def yaml_scalar(value)
+  YAML.dump("k" => value.to_s).sub(/\A---\n/, "").delete_prefix("k: ").chomp
+end
+
+# ---------------------------------------------------------------- rendering
+
+# Substitution is a literal {{UPPERCASE}} swap, so Liquid survives untouched:
+# {% render_recipe %} and {% include toc.html %} aren't {{...}} at all, and
+# {{ site.title }} has spaces and lowercase. A line whose placeholder resolves
+# to nothing is dropped entirely — that's how `parent:` disappears on a
+# top-level section. The block form of gsub avoids \& backreference expansion.
+def render(template, vars)
+  File.read(template, encoding: "UTF-8").lines.filter_map do |line|
+    next if line.scan(PLACEHOLDER).flatten.any? { |key| vars[key].to_s.empty? }
+
+    line.gsub(PLACEHOLDER) { vars[Regexp.last_match(1)].to_s }
+  end.join
+end
+
+# ---------------------------------------------------------------- prompting
+
+def interactive?
+  $stdin.tty?
+end
+
+def ask(label, default = nil)
+  abort "missing #{label.downcase}, and there's no terminal to prompt on. See --help." unless interactive?
+
+  loop do
+    print default.to_s.empty? ? "#{label}: " : "#{label} [#{default}]: "
+    $stdout.flush
+    answer = $stdin.gets or abort("\naborted")
+    answer = answer.strip
+    return answer          unless answer.empty?
+    return default.to_s    unless default.to_s.empty?
+  end
+end
+
+def write(path, body, force:, dry_run:)
+  if File.exist?(path) && !force
+    abort "refusing to overwrite #{path.delete_prefix("#{ROOT}/")} ( pass --force to replace it )"
+  end
+
+  unless dry_run
+    FileUtils.mkdir_p(File.dirname(path))
+    File.write(path, body)
+  end
+  puts "#{dry_run ? "would write" : "wrote"}  #{path.delete_prefix("#{ROOT}/")}"
+end
+
+# ---------------------------------------------------------------- main
+
+options = {}
+parser = OptionParser.new do |o|
+  o.banner = "usage: bin/new-page [page|recipe|folder] [FOLDER] [TITLE] [options]"
+  o.separator ""
+  o.separator "  FOLDER is a path under blog/, e.g. food/recipes"
+  o.separator "  For the folder type, FOLDER is the new section's path."
+  o.separator ""
+  o.on("-s", "--slug SLUG",     "filename and permalink slug ( default: from title )") { |v| options[:slug] = v }
+  o.on("-o", "--nav-order N",   Integer, "override the computed nav_order")            { |v| options[:nav_order] = v }
+  o.on("-p", "--parent TITLE",  "override the derived parent title")                   { |v| options[:parent] = v }
+  o.on("-f", "--force",         "overwrite an existing file")                          { options[:force] = true }
+  o.on("-n", "--dry-run",       "print the result instead of writing it")              { options[:dry_run] = true }
+  o.on("-h", "--help",          "show this message")                                   { puts o; exit }
+end
+parser.parse!
+
+type   = ARGV.shift
+folder = ARGV.shift
+title  = ARGV.join(" ")
+
+type = ask("Type? #{TYPES.join("/")}") while type.nil? || !TYPES.include?(type)
+
+if folder.to_s.empty?
+  puts "\nexisting folders: #{existing_folders.join(", ")}\n\n" if interactive?
+  folder = ask(type == "folder" ? "New folder path under blog/" : "Folder")
+end
+folder = folder.delete_prefix("blog/").delete_prefix("/").chomp("/")
+
+title = ask("Title") if title.empty?
+
+vars = { "TITLE" => yaml_scalar(title) }
+
+if type == "folder"
+  abort "blog/#{folder} already has a section index at " \
+        "#{section_index(folder).delete_prefix("#{ROOT}/")}" if section_index(folder) && !options[:force]
+
+  parent  = options[:parent] || (folder.include?("/") ? section_title(File.dirname(folder)) : nil)
+  if folder.include?("/") && parent.nil?
+    abort "no section index found for blog/#{File.dirname(folder)} — create it first:\n" \
+          "  bin/new-page folder #{File.dirname(folder)} \"Title\""
+  end
+
+  target   = new_index_path(folder)
+  template = "#{TEMPLATES}/section-index.md"
+  vars["PERMALINK"] = "blog/#{folder}"
+else
+  unless Dir.exist?("#{BLOG}/#{folder}")
+    abort "blog/#{folder} does not exist. To create it:\n" \
+          "  bin/new-page folder #{folder} \"Title\""
+  end
+
+  parent = options[:parent] || section_title(folder)
+  if parent.nil?
+    abort "no section index found for blog/#{folder} — pages there would have no parent.\n" \
+          "Create one with:  bin/new-page folder #{folder} \"Title\"\n" \
+          "or pass --parent \"Some Existing Title\"."
+  end
+
+  slug     = options[:slug] || slugify(title)
+  target   = "#{BLOG}/#{folder}/#{slug}.md"
+  template = "#{TEMPLATES}/#{type}.md"
+  vars["PERMALINK"] = "blog/#{folder}/#{slug}"
+  vars["DATE"]      = Time.now.strftime("%Y-%m-%d %-H:%M:%S %z")
+end
+
+vars["PARENT"]    = parent && yaml_scalar(parent)
+vars["NAV_ORDER"] = options[:nav_order] || next_nav_order(parent)
+
+depth = parent ? nav_depth(parent) + 1 : 1
+warn "note: this sits #{depth} levels deep; just-the-docs only renders " \
+     "#{MAX_NAV_DEPTH}, so it will not appear in the sidebar." if depth > MAX_NAV_DEPTH
+
+body = render(template, vars)
+write(target, body, force: options[:force], dry_run: options[:dry_run])
+
+if options[:dry_run]
+  puts
+  puts body
+elsif type == "folder"
+  FileUtils.mkdir_p("#{BLOG}/#{folder}")
+  puts "next:  bin/new-page page #{folder} \"Some Page\""
+end
