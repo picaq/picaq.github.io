@@ -42,6 +42,15 @@ so `page internet/domain` writes both `blog/internet/internet.md` and
 slug comes from the path rather than the title, the two can differ, which is the
 usual case here — `design/squint` with title `Squint Test`.
 
+**Anything that already exists is opened rather than recreated**, so the same
+command works whether you're starting a page or going back to edit one. Existing
+pages are matched on `permalink`, not on file path, which is what finds
+`blog/gists/wsl.md` from `gists/sh/wsl`.
+
+Every file it writes is opened with `code`. Override with `NEW_PAGE_OPEN=vim`,
+suppress for one run with `--no-open`, or turn it off entirely with
+`NEW_PAGE_OPEN=`. `--dry-run` never opens anything.
+
 Templates live in `_templates/` and are plain editable markdown. Placeholders are
 literal `{{UPPERCASE}}` tokens swapped by string replacement, chosen so Liquid
 survives untouched — `{% render_recipe %}` and `{% include toc.html %}` aren't

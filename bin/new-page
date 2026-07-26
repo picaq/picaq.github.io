@@ -87,6 +87,16 @@ def section_exists?(dir)
   CREATED.key?(dir) || !section_index(dir).nil?
 end
 
+# A page's file path usually mirrors its permalink, but not always — blog/gists/
+# wsl.md declares `permalink: blog/gists/sh/wsl`. Match on the permalink first so
+# an existing page is recognised wherever it happens to sit.
+def existing_at(permalink, fallback)
+  found = pages.find { |_p, fm| fm["permalink"].to_s.delete_prefix("/").chomp("/") == permalink }
+  return found[0] if found
+
+  fallback if fallback && File.file?(fallback)
+end
+
 def existing_folders
   Dir.glob("#{BLOG}/**/*/")
      .reject { |d| d.include?("/_site/") || d.include?("/.jekyll-cache/") }
@@ -179,16 +189,35 @@ def ask(label, default = nil)
   end
 end
 
+# Set NEW_PAGE_OPEN to another command to use a different editor, or to nothing
+# at all to stop it opening anything.
+OPEN_WITH = ENV.fetch("NEW_PAGE_OPEN", "code").split
+
+def open_in_editor(path, options)
+  return if options[:dry_run] || options[:no_open] || OPEN_WITH.empty?
+
+  relative = path.delete_prefix("#{ROOT}/")
+  return unless system(*OPEN_WITH, relative, chdir: ROOT).nil?
+
+  warn "could not run `#{OPEN_WITH.join(" ")} #{relative}` — open it yourself"
+end
+
+# Returns the body on a write, or nil when the file was already there.
 def write(path, body, options)
+  relative = path.delete_prefix("#{ROOT}/")
+
   if File.exist?(path) && !options[:force]
-    abort "refusing to overwrite #{path.delete_prefix("#{ROOT}/")} ( pass --force to replace it )"
+    puts "exists  #{relative}"
+    open_in_editor(path, options)
+    return nil
   end
 
   unless options[:dry_run]
     FileUtils.mkdir_p(File.dirname(path))
     File.write(path, body)
   end
-  puts "#{options[:dry_run] ? "would write" : "wrote"}  #{path.delete_prefix("#{ROOT}/")}"
+  puts "#{options[:dry_run] ? "would write" : "wrote"}  #{relative}"
+  open_in_editor(path, options)
   body
 end
 
@@ -238,13 +267,15 @@ parser = OptionParser.new do |o|
   o.separator "    folder internet/domain           -> blog/internet/domain   ( domain is a section )"
   o.separator ""
   o.separator "  Missing sections in the path are created as it goes. TITLE defaults"
-  o.separator "  to the last segment, title-cased."
+  o.separator "  to the last segment, title-cased. Anything that already exists is"
+  o.separator "  opened for editing instead of being recreated."
   o.separator ""
-  o.on("-o", "--nav-order N",  Integer, "override the computed nav_order") { |v| options[:nav_order] = v }
-  o.on("-p", "--parent TITLE", "override the derived parent title")        { |v| options[:parent] = v }
-  o.on("-f", "--force",        "overwrite an existing file")               { options[:force] = true }
-  o.on("-n", "--dry-run",      "print the result instead of writing it")   { options[:dry_run] = true }
-  o.on("-h", "--help",         "show this message")                        { puts o; exit }
+  o.on("-o", "--nav-order N",  Integer, "override the computed nav_order")  { |v| options[:nav_order] = v }
+  o.on("-p", "--parent TITLE", "override the derived parent title")         { |v| options[:parent] = v }
+  o.on("-f", "--force",        "overwrite an existing file")                { options[:force] = true }
+  o.on("-n", "--dry-run",      "print the result instead of writing it")    { options[:dry_run] = true }
+  o.on("-N", "--no-open",      "don't open anything in #{OPEN_WITH.first || "an editor"}") { options[:no_open] = true }
+  o.on("-h", "--help",         "show this message")                         { puts o; exit }
 end
 parser.parse!
 
@@ -279,8 +310,11 @@ if title.empty?
 end
 
 if type == "folder"
-  if section_exists?(path) && !options[:force]
-    abort "blog/#{path} already has a section index at #{section_index(path).delete_prefix("#{ROOT}/")}"
+  # Already there? Open it rather than refusing — you probably meant to edit it.
+  if (found = existing_at("blog/#{path}", section_index(path))) && !options[:force]
+    puts "exists  #{found.delete_prefix("#{ROOT}/")}"
+    open_in_editor(found, options)
+    exit
   end
 
   build_missing_sections(folders, options)
@@ -289,6 +323,12 @@ if type == "folder"
   puts "\n#{body}" if options[:dry_run]
   puts "next:  bin/new-page page #{path}/some-page"
 else
+  if (found = existing_at("blog/#{path}", "#{BLOG}/#{path}.md")) && !options[:force]
+    puts "exists  #{found.delete_prefix("#{ROOT}/")}"
+    open_in_editor(found, options)
+    exit
+  end
+
   build_missing_sections(folders, options)
 
   parent = options[:parent] || (folders.any? ? section_title(folders.join("/")) : nil)

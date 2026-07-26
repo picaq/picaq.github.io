@@ -23,9 +23,18 @@ BLOG    = File.join(ROOT, "blog")
 SCRATCH = "zz-scaffold-test"
 
 module Runner
+  # Keep the editor out of it unless a test is specifically about opening.
+  NO_OPEN = { "NEW_PAGE_OPEN" => "" }.freeze
+
   def new_page(*args)
-    out, err, status = Open3.capture3(SCRIPT, *args)
+    out, err, status = Open3.capture3(NO_OPEN, SCRIPT, *args)
     [out, err, status.exitstatus]
+  end
+
+  # Paths the script hands to the editor, with echo standing in for `code`.
+  def opened(*args)
+    out, _err, _status = Open3.capture3({ "NEW_PAGE_OPEN" => "echo OPENED" }, SCRIPT, *args)
+    out.scan(/^OPENED (\S+)$/).flatten
   end
 
   # Everything a dry run says it would write, in order.
@@ -148,10 +157,12 @@ class TitleTest < Minitest::Test
     assert_equal "Miso Soup", front_matter("recipe", "food/recipes/miso-soup")["title"]
   end
 
+  # blog/design/squint is taken, so use a free slug to show the same shape:
+  # a short path with a longer title, which is how most pages here are set up.
   def test_an_explicit_title_wins_and_the_slug_stays_short
-    fm = front_matter("page", "design/squint", "Squint Test")
-    assert_equal "Squint Test", fm["title"]
-    assert_equal "blog/design/squint", fm["permalink"]
+    fm = front_matter("page", "design/kern", "Kerning and Tracking")
+    assert_equal "Kerning and Tracking", fm["title"]
+    assert_equal "blog/design/kern", fm["permalink"]
   end
 end
 
@@ -305,18 +316,6 @@ end
 class FailureTest < Minitest::Test
   include Runner
 
-  def test_refuses_to_overwrite_an_existing_page
-    _out, err, code = new_page("-n", "page", "skincare/moisturizers")
-    refute_equal 0, code
-    assert_match(/refusing to overwrite/, err)
-  end
-
-  def test_refuses_to_re_create_an_existing_section
-    _out, err, code = new_page("-n", "folder", "skincare", "Skincare")
-    refute_equal 0, code
-    assert_match(/already has a section index/, err)
-  end
-
   def test_rejects_an_unknown_type
     _out, _err, code = new_page("-n", "widget", "skincare/zz-test")
     refute_equal 0, code
@@ -327,6 +326,42 @@ class FailureTest < Minitest::Test
     refute_equal 0, code
     assert_match(/no terminal to prompt on/, err)
     refute_match(/backtrace|\.rb:\d+:in/, err)
+  end
+end
+
+# Something that already exists is opened for editing, not recreated.
+class ExistingTest < Minitest::Test
+  include Runner
+
+  def test_an_existing_page_is_reported_and_succeeds
+    out, _err, code = new_page("page", "skincare/moisturizers")
+    assert_equal 0, code
+    assert_match(%r{^exists\s+blog/skincare/moisturizers\.md$}, out)
+  end
+
+  def test_an_existing_page_is_opened
+    assert_equal ["blog/skincare/moisturizers.md"], opened("page", "skincare/moisturizers")
+  end
+
+  def test_an_existing_section_is_opened
+    assert_equal ["blog/skincare/skincare.md"], opened("folder", "skincare")
+  end
+
+  # blog/gists/wsl.md declares `permalink: blog/gists/sh/wsl`, so the file is not
+  # where the permalink implies. It still has to be found.
+  def test_finds_a_page_whose_file_path_differs_from_its_permalink
+    assert_equal ["blog/gists/wsl.md"], opened("page", "gists/sh/wsl")
+  end
+
+  # blog/design/type/ keeps its index inside rather than one level up.
+  def test_finds_a_section_index_that_sits_inside_its_folder
+    assert_equal ["blog/design/type/type.md"], opened("folder", "design/type")
+  end
+
+  def test_nothing_is_written_when_it_already_exists
+    before = File.read(File.join(BLOG, "skincare", "moisturizers.md"))
+    new_page("page", "skincare/moisturizers")
+    assert_equal before, File.read(File.join(BLOG, "skincare", "moisturizers.md"))
   end
 end
 
@@ -358,5 +393,18 @@ class WriteTest < Minitest::Test
   def test_dry_run_writes_nothing
     new_page("-n", "page", "#{SCRATCH}/domain")
     refute File.exist?("#{BLOG}/#{SCRATCH}/#{SCRATCH}.md")
+  end
+
+  def test_opens_every_file_it_creates
+    assert_equal ["blog/#{SCRATCH}/#{SCRATCH}.md", "blog/#{SCRATCH}/domain.md"],
+                 opened("page", "#{SCRATCH}/domain")
+  end
+
+  def test_a_dry_run_opens_nothing
+    assert_empty opened("-n", "page", "#{SCRATCH}/domain")
+  end
+
+  def test_no_open_opens_nothing
+    assert_empty opened("--no-open", "page", "#{SCRATCH}/domain")
   end
 end
