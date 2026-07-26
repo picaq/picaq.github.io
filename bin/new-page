@@ -1,0 +1,408 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# new-page: scaffold a blog page, recipe, or section folder.
+#
+# The path you type is the permalink. What the last segment means depends on the
+# type: for a page or recipe it is the page itself, for a folder it is a section.
+# Any section in the path that doesn't exist yet gets created on the way.
+#
+#   bin/new-page                                       # interactive
+#   bin/new-page page   internet/domain                # section + page in one go
+#   bin/new-page page   design/squint    "Squint Test"
+#   bin/new-page recipe food/recipes/miso-soup "Miso Soup"
+#   bin/new-page folder internet/domain  "Domain"      # domain as a section instead
+#
+# The nav tree here is built from front matter, not from where files sit on disk:
+# `parent:` is a string match against another page's `title:`. This works that out
+# for you, along with the next free nav_order.
+#
+# See CLAUDE.md for how the conventions it follows were derived.
+
+require "yaml"
+require "optparse"
+require "fileutils"
+
+ROOT      = File.expand_path("..", __dir__)
+BLOG      = File.join(ROOT, "blog")
+TEMPLATES = File.join(ROOT, "_templates")
+TYPES     = %w[page recipe folder].freeze
+
+# just-the-docs renders at most three levels of nav.
+MAX_NAV_DEPTH = 3
+
+FRONT_MATTER = /\A---\s*\n(.*?\n?)^---\s*\n/m
+PLACEHOLDER  = /\{\{([A-Z_]+)\}\}/
+
+# Sections created during this run, so later lookups can see them before they
+# exist on disk: which is also what makes --dry-run report the whole cascade.
+CREATED = {}          # dir   => title
+CREATED_PARENT = {}   # title => parent title, so nav depth counts them too
+
+# ---------------------------------------------------------------- reading
+
+# `title: :has()` is a real page here, and psych reads a leading colon as a
+# Symbol: permit it, then put the colon back so the value matches what the file
+# actually says. Without this the page raises and is silently skipped.
+def front_matter(path)
+  match = File.read(path, encoding: "UTF-8").match(FRONT_MATTER)
+  return {} unless match
+
+  parsed = YAML.safe_load(match[1], permitted_classes: [Date, Time, Symbol], aliases: true) || {}
+  parsed.transform_values { |value| value.is_a?(Symbol) ? ":#{value}" : value }
+rescue StandardError
+  {} # a page we can't parse just doesn't participate in the lookups below
+end
+
+# Every markdown page that takes part in the blog nav: everything under blog/,
+# plus about.md at the root ( permalink /blog, the section's landing page ).
+def pages
+  (Dir.glob("#{BLOG}/**/*.md") + Dir.glob("#{ROOT}/*.md"))
+    .reject { |f| f.include?("/_site/") || f.include?("/.jekyll-cache/") }
+    .map    { |f| [f, front_matter(f)] }
+    .select { |_f, fm| fm["permalink"].to_s.sub(%r{\A/}, "").start_with?("blog") }
+end
+
+# Top-level sections keep their index inside the folder ( blog/food/food.md );
+# sub-sections keep it one level up ( blog/food/recipes.md ). Accept either.
+def conventional_index_paths(dir)
+  base = File.basename(dir)
+  ["#{BLOG}/#{dir}/#{base}.md", "#{BLOG}/#{File.dirname(dir)}/#{base}.md"]
+end
+
+# ...but the filename need not resemble the permalink at all: blog/games/
+# dungeons-n-dragons.md is the section at blog/games/dnd. Fall back to matching
+# on permalink, or we'd invent a second section next to one that already exists.
+def section_index(dir)
+  by_name = conventional_index_paths(dir).find { |p| File.file?(p) }
+  return by_name if by_name
+
+  found = pages.find { |_p, fm| fm["permalink"].to_s.delete_prefix("/").chomp("/") == "blog/#{dir}" }
+  found && found[0]
+end
+
+# ...and place a new one by the same rule.
+def new_index_path(dir)
+  base = File.basename(dir)
+  dir.include?("/") ? "#{BLOG}/#{File.dirname(dir)}/#{base}.md" : "#{BLOG}/#{dir}/#{base}.md"
+end
+
+def section_title(dir)
+  return CREATED[dir] if CREATED.key?(dir)
+
+  index = section_index(dir)
+  index && front_matter(index)["title"]
+end
+
+def section_exists?(dir)
+  CREATED.key?(dir) || !section_index(dir).nil?
+end
+
+# A page's file path usually mirrors its permalink, but not always: blog/gists/
+# wsl.md declares `permalink: blog/gists/sh/wsl`. Match on the permalink first so
+# an existing page is recognised wherever it happens to sit.
+def existing_at(permalink, fallback)
+  found = pages.find { |_p, fm| fm["permalink"].to_s.delete_prefix("/").chomp("/") == permalink }
+  return found[0] if found
+
+  fallback if fallback && File.file?(fallback)
+end
+
+def existing_folders
+  Dir.glob("#{BLOG}/**/*/")
+     .reject { |d| d.include?("/_site/") || d.include?("/.jekyll-cache/") }
+     .map    { |d| d.delete_prefix("#{BLOG}/").chomp("/") }
+     .sort
+end
+
+# ---------------------------------------------------------------- deriving
+
+# Siblings are pages sharing a `parent:`, wherever they live on disk: several
+# pages sit outside the folder their nav position implies. nav_order need not be
+# unique ( ties break alphabetically ), so max + 1 is always safe.
+def next_nav_order(parent_title)
+  orders = pages.filter_map do |_path, fm|
+    next unless fm["parent"] == parent_title
+
+    Integer(fm["nav_order"], exception: false)
+  end
+  (orders.max || 0) + 1
+end
+
+def nav_depth(title, seen = [])
+  return seen.size if title.nil? || seen.include?(title)
+  return nav_depth(CREATED_PARENT[title], seen + [title]) if CREATED_PARENT.key?(title)
+
+  _path, fm = pages.find { |_p, f| f["title"] == title }
+  return seen.size + 1 unless fm
+
+  nav_depth(fm["parent"], seen + [title])
+end
+
+def warn_if_too_deep(parent)
+  depth = parent ? nav_depth(parent) + 1 : 1
+  return if depth <= MAX_NAV_DEPTH
+
+  warn "note: this sits #{depth} levels deep; just-the-docs only renders " \
+       "#{MAX_NAV_DEPTH}, so it will not appear in the sidebar."
+end
+
+def slugify(text)
+  text.unicode_normalize(:nfd)      # "Crème Brûlée" -> "creme-brulee" rather
+      .gsub(/\p{Mn}/, "")           # than "cr-me-br-l-e"
+      .downcase
+      .gsub("&", " and ")
+      .gsub(/[^a-z0-9]+/, "-")
+      .delete_prefix("-").delete_suffix("-")
+end
+
+def titlecase(slug)
+  slug.split("-").map(&:capitalize).join(" ")
+end
+
+# Emit a value the way Psych would, so titles like ":has()" or "Yes" come back
+# out of YAML as the strings they went in as.
+def yaml_scalar(value)
+  YAML.dump("k" => value.to_s).sub(/\A---\n/, "").delete_prefix("k: ").chomp
+end
+
+# ---------------------------------------------------------------- rendering
+
+# Substitution is a literal {{UPPERCASE}} swap, so Liquid survives untouched:
+# {% render_recipe %} and {% include toc.html %} aren't {{...}} at all, and
+# {{ site.title }} has spaces and lowercase. A line whose placeholder resolves
+# to nothing is dropped entirely: that's how `parent:` disappears on a
+# top-level section. The block form of gsub avoids \& backreference expansion.
+def render(template, vars)
+  File.read(template, encoding: "UTF-8").lines.filter_map do |line|
+    next if line.scan(PLACEHOLDER).flatten.any? { |key| vars[key].to_s.empty? }
+
+    line.gsub(PLACEHOLDER) { vars[Regexp.last_match(1)].to_s }
+  end.join
+end
+
+# ---------------------------------------------------------------- prompting
+
+def interactive?
+  $stdin.tty?
+end
+
+def ask(label, default = nil)
+  abort "missing #{label.downcase}, and there's no terminal to prompt on. See --help." unless interactive?
+
+  loop do
+    print default.to_s.empty? ? "#{label}: " : "#{label} [#{default}]: "
+    $stdout.flush
+    answer = $stdin.gets or abort("\naborted")
+    answer = answer.strip
+    return answer       unless answer.empty?
+    return default.to_s unless default.to_s.empty?
+  end
+end
+
+# Set NEW_PAGE_OPEN to another command to use a different editor, or to nothing
+# at all to stop it opening anything.
+OPEN_WITH = ENV.fetch("NEW_PAGE_OPEN", "code").split
+
+def open_in_editor(path, options)
+  return if options[:dry_run] || options[:no_open] || OPEN_WITH.empty?
+
+  relative = path.delete_prefix("#{ROOT}/")
+  return unless system(*OPEN_WITH, relative, chdir: ROOT).nil?
+
+  warn "could not run `#{OPEN_WITH.join(" ")} #{relative}`: open it yourself"
+end
+
+# Makes the directory a section needs to hold its children. Reported only when
+# it is the sole new thing, since otherwise "wrote <index>.md" already implies it.
+def ensure_dir(dir, options, announce: false)
+  return if Dir.exist?(dir)
+
+  FileUtils.mkdir_p(dir) unless options[:dry_run]
+  puts "#{options[:dry_run] ? "would make" : "made"}    #{dir.delete_prefix("#{ROOT}/")}/" if announce
+end
+
+# Put a file where its permalink says it belongs, so the tree matches the
+# breadcrumbs. Content is never touched and the permalink never changes, so the
+# rendered URL is identical either way: only the layout on disk moves.
+def relocate(from, to, options)
+  return from if from == to
+
+  if File.exist?(to)
+    warn "not moving #{from.delete_prefix("#{ROOT}/")}: #{to.delete_prefix("#{ROOT}/")} is already taken"
+    return from
+  end
+
+  from_rel = from.delete_prefix("#{ROOT}/")
+  to_rel   = to.delete_prefix("#{ROOT}/")
+
+  unless options[:dry_run]
+    ensure_dir(File.dirname(to), options)
+    tracked = system("git", "ls-files", "--error-unmatch", from_rel,
+                     chdir: ROOT, out: File::NULL, err: File::NULL)
+    # git mv keeps the history attached to the file
+    FileUtils.mv(from, to) unless tracked && system("git", "mv", from_rel, to_rel, chdir: ROOT)
+  end
+
+  puts "#{options[:dry_run] ? "would move" : "moved"}   #{from_rel} -> #{to_rel}"
+  to
+end
+
+# Returns the body on a write, or nil when the file was already there. Existing
+# files are never written over: there is no flag to make it do so.
+def write(path, body, options)
+  relative = path.delete_prefix("#{ROOT}/")
+
+  if File.exist?(path)
+    puts "exists  #{relative}"
+    open_in_editor(path, options)
+    return nil
+  end
+
+  unless options[:dry_run]
+    FileUtils.mkdir_p(File.dirname(path))
+    File.write(path, body)
+  end
+  puts "#{options[:dry_run] ? "would write" : "wrote"}  #{relative}"
+  open_in_editor(path, options)
+  body
+end
+
+# ---------------------------------------------------------------- building
+
+def build_section(dir, title, options)
+  parent = options[:parent] || (dir.include?("/") ? section_title(File.dirname(dir)) : nil)
+  vars = {
+    "TITLE"     => yaml_scalar(title),
+    "PERMALINK" => "blog/#{dir}",
+    "PARENT"    => parent && yaml_scalar(parent),
+    "NAV_ORDER" => options[:nav_order] || next_nav_order(parent)
+  }
+
+  body = write(new_index_path(dir), render("#{TEMPLATES}/section-index.md", vars), options)
+  FileUtils.mkdir_p("#{BLOG}/#{dir}") unless options[:dry_run]
+  CREATED[dir] = title
+  CREATED_PARENT[title] = parent
+  body
+end
+
+# Walk the path and create whatever section is missing along the way, so that
+# `page internet/domain` can invent blog/internet without a second command.
+def build_missing_sections(folders, options)
+  folders.each_index do |i|
+    dir = folders[0..i].join("/")
+    next if section_exists?(dir)
+
+    default = titlecase(File.basename(dir))
+    title   = interactive? ? ask("new section blog/#{dir}, title", default) : default
+    # overrides belong to the page being made, not to sections invented on the way
+    build_section(dir, title, options.merge(nav_order: nil, parent: nil))
+  end
+end
+
+# ---------------------------------------------------------------- main
+
+options = {}
+parser = OptionParser.new do |o|
+  o.banner = "usage: bin/new-page [page|recipe|folder] PATH [TITLE] [options]"
+  o.separator ""
+  o.separator "  PATH is the permalink under blog/, and the type says what its last"
+  o.separator "  segment is:"
+  o.separator ""
+  o.separator "    page   internet/domain           -> blog/internet/domain   ( domain is the page )"
+  o.separator "    recipe food/recipes/miso-soup    -> blog/food/recipes/miso-soup"
+  o.separator "    folder internet/domain           -> blog/internet/domain   ( domain is a section )"
+  o.separator ""
+  o.separator "  Missing sections in the path are created as it goes. TITLE defaults"
+  o.separator "  to the last segment, title-cased."
+  o.separator ""
+  o.separator "  Existing files are never written over. Anything already there is"
+  o.separator "  opened for editing instead, and asking for an existing page as a"
+  o.separator "  folder just makes the directory its children need."
+  o.separator ""
+  o.on("-o", "--nav-order N",  Integer, "override the computed nav_order")  { |v| options[:nav_order] = v }
+  o.on("-p", "--parent TITLE", "override the derived parent title")         { |v| options[:parent] = v }
+  o.on("-n", "--dry-run",      "print the result instead of writing it")    { options[:dry_run] = true }
+  o.on("-N", "--no-open",      "don't open anything in #{OPEN_WITH.first || "an editor"}") { options[:no_open] = true }
+  o.on("-h", "--help",         "show this message")                         { puts o; exit }
+end
+begin
+  parser.parse!
+rescue OptionParser::ParseError => e
+  abort "#{e.message}\n\n#{parser}"
+end
+
+type  = ARGV.shift
+path  = ARGV.shift
+title = ARGV.join(" ")
+
+type = ask("Type? #{TYPES.join("/")}") while type.nil? || !TYPES.include?(type)
+
+if path.to_s.empty?
+  puts "\nexisting folders: #{existing_folders.join(", ")}\n\n" if interactive?
+  path = ask("Path under blog/")
+end
+path = path.delete_prefix("blog/").delete_prefix("/").chomp("/")
+
+# Normalize every segment, so "food/Crème Brûlée" lands at food/creme-brulee. The
+# folders that already exist are all in this form, so it's a no-op for them.
+segments = path.split("/").map { |segment| slugify(segment) }.reject(&:empty?)
+abort "PATH is empty" if segments.empty?
+path = segments.join("/")
+
+# For a folder the whole path is the section, so its ancestors are everything but
+# the last segment. For a page the last segment is the page itself.
+slug    = type == "folder" ? nil : segments.pop
+folders = type == "folder" ? segments[0..-2] : segments
+
+abort "PATH needs a page name, e.g. #{type} internet/domain" if type != "folder" && slug.to_s.empty?
+
+if title.empty?
+  default = titlecase(slug || File.basename(path))
+  title   = interactive? ? ask("Title", default) : default
+end
+
+if type == "folder"
+  # Already there? Open it rather than refusing: you probably meant to edit it.
+  # A sub-section's index and a plain page occupy the same path, so a page being
+  # promoted to a section needs no file change at all: it is already in the right
+  # place. All that's missing is somewhere for its children to live.
+  if (found = existing_at("blog/#{path}", section_index(path)))
+    puts "exists  #{found.delete_prefix("#{ROOT}/")}"
+    # Both index conventions are legitimate, so only relocate an index that sits
+    # at neither of them: blog/design/type/type.md is already where it belongs.
+    found = relocate(found, new_index_path(path), options) unless conventional_index_paths(path).include?(found)
+    ensure_dir("#{BLOG}/#{path}", options, announce: true)
+    open_in_editor(found, options)
+    exit
+  end
+
+  build_missing_sections(folders, options)
+  warn_if_too_deep(options[:parent] || (folders.any? ? section_title(folders.join("/")) : nil))
+  body = build_section(path, title, options)
+  puts "\n#{body}" if options[:dry_run]
+  puts "next:  bin/new-page page #{path}/some-page"
+else
+  if (found = existing_at("blog/#{path}", "#{BLOG}/#{path}.md"))
+    puts "exists  #{found.delete_prefix("#{ROOT}/")}"
+    found = relocate(found, "#{BLOG}/#{path}.md", options)
+    open_in_editor(found, options)
+    exit
+  end
+
+  build_missing_sections(folders, options)
+
+  parent = options[:parent] || (folders.any? ? section_title(folders.join("/")) : nil)
+  vars = {
+    "TITLE"     => yaml_scalar(title),
+    "PERMALINK" => "blog/#{path}",
+    "PARENT"    => parent && yaml_scalar(parent),
+    "NAV_ORDER" => options[:nav_order] || next_nav_order(parent),
+    "DATE"      => Time.now.strftime("%Y-%m-%d %-H:%M:%S %z")
+  }
+
+  warn_if_too_deep(parent)
+
+  body = write("#{BLOG}/#{path}.md", render("#{TEMPLATES}/#{type}.md", vars), options)
+  puts "\n#{body}" if options[:dry_run]
+end
