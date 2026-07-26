@@ -28,17 +28,25 @@ module Runner
     [out, err, status.exitstatus]
   end
 
-  # The rendered file a dry run prints after its "would write <path>" line.
+  # Everything a dry run says it would write, in order.
+  def written(*args)
+    out, err, code = new_page("-n", *args)
+    raise "expected success, got exit #{code}\n#{err}" unless code.zero?
+
+    out.scan(/^would write\s+(\S+)$/).flatten
+  end
+
+  # The rendered file a dry run prints after its "would write" lines.
   def body(*args)
     out, err, code = new_page("-n", *args)
     raise "expected success, got exit #{code}\n#{err}" unless code.zero?
 
-    out.split("\n", 2).last.lstrip
+    out[/^---\s*$.*/m]
   end
 
   def front_matter(*args)
-    raw = body(*args).match(/\A---\s*\n(.*?\n?)^---\s*\n/m)[1]
-    YAML.safe_load(raw, permitted_classes: [Date, Time])
+    YAML.safe_load(body(*args).match(/\A---\s*\n(.*?\n?)^---\s*\n/m)[1],
+                   permitted_classes: [Date, Time, Symbol])
   end
 
   # An oracle for nav_order that doesn't share code with the script: read every
@@ -57,25 +65,93 @@ module Runner
   end
 end
 
-# Slugs come from the title, and the title can be anything.
-class SlugTest < Minitest::Test
+# The path is the permalink, and the type decides what its last segment means.
+class PathTest < Minitest::Test
   include Runner
 
-  def test_accents_are_transliterated_not_stripped
-    assert_equal "blog/food/creme-brulee", front_matter("page", "food", "Crème Brûlée")["permalink"]
+  def test_for_a_page_the_last_segment_is_the_page
+    assert_equal "blog/skincare/sunscreen", front_matter("page", "skincare/sunscreen")["permalink"]
   end
 
-  def test_ampersand_becomes_the_word_and
-    assert_equal "blog/food/salt-and-pepper", front_matter("page", "food", "Salt & Pepper")["permalink"]
+  def test_for_a_folder_the_whole_path_is_the_section
+    assert_equal ["blog/#{SCRATCH}/inner.md"], written("folder", "#{SCRATCH}/inner", "Inner")[-1..]
+    assert_equal "blog/#{SCRATCH}/inner", front_matter("folder", "#{SCRATCH}/inner", "Inner")["permalink"]
   end
 
-  def test_punctuation_collapses_to_a_single_hyphen
-    assert_equal "blog/food/has", front_matter("page", "food", ":has()")["permalink"]
+  def test_a_page_with_no_folder_lands_at_the_top_level
+    fm = front_matter("page", "teaching-notes")
+    assert_equal "blog/teaching-notes", fm["permalink"]
+    refute fm.key?("parent")
   end
 
-  def test_slug_can_be_overridden
-    fm = front_matter("page", "food", "Cheese et Cetera", "--slug", "cheese-etc")
-    assert_equal "blog/food/cheese-etc", fm["permalink"]
+  def test_a_leading_blog_prefix_is_tolerated
+    assert_equal "blog/skincare/sunscreen", front_matter("page", "blog/skincare/sunscreen")["permalink"]
+  end
+
+  def test_segments_are_normalized
+    assert_equal "blog/food/creme-brulee", front_matter("page", "food/Crème Brûlée")["permalink"]
+  end
+
+  def test_an_empty_path_is_rejected
+    _out, err, code = new_page("-n", "page", "/")
+    refute_equal 0, code
+    assert_match(/PATH is empty/, err)
+  end
+end
+
+# The reported bug: making a page and its folder in one command.
+class MissingSectionTest < Minitest::Test
+  include Runner
+
+  def test_creates_the_missing_section_then_the_page
+    assert_equal ["blog/internet/internet.md", "blog/internet/domain.md"],
+                 written("page", "internet/domain")
+  end
+
+  def test_the_page_is_parented_to_the_section_it_just_made
+    assert_equal "Internet", front_matter("page", "internet/domain")["parent"]
+  end
+
+  def test_creates_a_whole_missing_chain
+    assert_equal ["blog/a/a.md", "blog/a/b.md", "blog/a/b/c.md", "blog/a/b/c/d.md"],
+                 written("page", "a/b/c/d")
+  end
+
+  def test_writes_the_section_once_not_twice
+    paths = written("folder", "internet/domain", "Domain")
+    assert_equal paths.uniq, paths, "a section was written more than once"
+  end
+
+  def test_existing_sections_are_left_alone
+    assert_equal ["blog/skincare/sunscreen.md"], written("page", "skincare/sunscreen")
+  end
+
+  def test_warns_when_the_result_is_deeper_than_the_theme_renders
+    _out, err, = new_page("-n", "page", "a/b/c/d")
+    assert_match(/4 levels deep/, err)
+  end
+
+  def test_does_not_warn_at_three_levels
+    _out, err, = new_page("-n", "page", "a/b/c")
+    refute_match(/levels deep/, err)
+  end
+end
+
+class TitleTest < Minitest::Test
+  include Runner
+
+  def test_defaults_to_the_title_cased_slug
+    assert_equal "Domain", front_matter("page", "internet/domain")["title"]
+  end
+
+  def test_hyphens_become_spaces_in_the_default
+    assert_equal "Miso Soup", front_matter("recipe", "food/recipes/miso-soup")["title"]
+  end
+
+  def test_an_explicit_title_wins_and_the_slug_stays_short
+    fm = front_matter("page", "design/squint", "Squint Test")
+    assert_equal "Squint Test", fm["title"]
+    assert_equal "blog/design/squint", fm["permalink"]
   end
 end
 
@@ -86,16 +162,16 @@ class ParentTest < Minitest::Test
 
   def test_parent_is_the_index_title_not_the_directory_name
     # directory is "javascript", the title is "JavaScript"
-    assert_equal "JavaScript", front_matter("page", "gists/javascript", "Zz Test")["parent"]
+    assert_equal "JavaScript", front_matter("page", "gists/javascript/zz-test")["parent"]
   end
 
   def test_finds_an_index_that_lives_inside_the_folder
-    assert_equal "Skincare", front_matter("page", "skincare", "Zz Test")["parent"]
+    assert_equal "Skincare", front_matter("page", "skincare/zz-test")["parent"]
   end
 
   def test_finds_an_index_that_lives_one_level_up
     # blog/food/recipes/ keeps its index at blog/food/recipes.md
-    assert_equal "Recipes", front_matter("recipe", "food/recipes", "Zz Test")["parent"]
+    assert_equal "Recipes", front_matter("recipe", "food/recipes/zz-test")["parent"]
   end
 
   def test_a_top_level_section_gets_no_parent_line_at_all
@@ -107,7 +183,16 @@ class ParentTest < Minitest::Test
   end
 
   def test_parent_can_be_overridden
-    assert_equal "Shell", front_matter("page", "gists", "Zz Test", "--parent", "Shell")["parent"]
+    assert_equal "Shell", front_matter("page", "gists/zz-test", "--parent", "Shell")["parent"]
+  end
+
+  def test_an_override_does_not_leak_onto_sections_made_on_the_way
+    # --parent belongs to the page, not to blog/internet invented alongside it
+    fm = YAML.safe_load(
+      body("page", "internet/domain", "--parent", "Shell")
+        .match(/\A---\s*\n(.*?\n?)^---\s*\n/m)[1]
+    )
+    assert_equal "Shell", fm["parent"]
   end
 end
 
@@ -116,17 +201,21 @@ class NavOrderTest < Minitest::Test
 
   def test_is_one_past_the_highest_sibling
     expected = max_nav_order_under("Skincare") + 1
-    assert_equal expected, front_matter("page", "skincare", "Zz Test")["nav_order"]
+    assert_equal expected, front_matter("page", "skincare/zz-test")["nav_order"]
   end
 
   def test_groups_siblings_by_parent_not_by_directory
     # blog/gists/wsl.md sits in gists/ but belongs to Shell
     expected = max_nav_order_under("Shell") + 1
-    assert_equal expected, front_matter("page", "gists", "Zz Test", "--parent", "Shell")["nav_order"]
+    assert_equal expected, front_matter("page", "gists/zz-test", "--parent", "Shell")["nav_order"]
+  end
+
+  def test_a_page_in_a_brand_new_section_starts_at_one
+    assert_equal 1, front_matter("page", "internet/domain")["nav_order"]
   end
 
   def test_can_be_overridden
-    assert_equal 42, front_matter("page", "skincare", "Zz Test", "--nav-order", "42")["nav_order"]
+    assert_equal 42, front_matter("page", "skincare/zz-test", "--nav-order", "42")["nav_order"]
   end
 end
 
@@ -135,17 +224,24 @@ class YamlSafetyTest < Minitest::Test
   include Runner
 
   def test_a_colon_in_the_title_does_not_break_the_document
-    assert_equal "Tips: Do This", front_matter("page", "food", "Tips: Do This")["title"]
+    assert_equal "Tips: Do This", front_matter("page", "food/tips", "Tips: Do This")["title"]
   end
 
   def test_a_numeric_title_stays_a_string
-    title = front_matter("page", "food", "42")["title"]
+    title = front_matter("page", "food/answer", "42")["title"]
     assert_equal "42", title
     assert_instance_of String, title
   end
 
   def test_an_ampersand_title_round_trips
-    assert_equal "Dungeons & Dragons", front_matter("page", "games", "Dungeons & Dragons")["title"]
+    assert_equal "Dungeons & Dragons", front_matter("page", "games/dnd2", "Dungeons & Dragons")["title"]
+  end
+
+  # blog/gists/css/has.md is `title: :has()`, which psych reads as a Symbol.
+  # If the script drops that page it also drops it from every lookup.
+  def test_a_symbol_title_page_still_participates_in_lookups
+    expected = max_nav_order_under("CSS") + 1
+    assert_equal expected, front_matter("page", "gists/css/zz-test")["nav_order"]
   end
 end
 
@@ -153,7 +249,7 @@ class RecipeTemplateTest < Minitest::Test
   include Runner
 
   def recipe_body
-    body("recipe", "food/recipes", "Zz Test Recipe")
+    body("recipe", "food/recipes/zz-test-recipe")
   end
 
   def test_liquid_survives_substitution_untouched
@@ -161,7 +257,7 @@ class RecipeTemplateTest < Minitest::Test
   end
 
   def test_uses_the_recipe_layout
-    assert_equal "recipe", front_matter("recipe", "food/recipes", "Zz Test")["layout"]
+    assert_equal "recipe", front_matter("recipe", "food/recipes/zz-test")["layout"]
   end
 
   def test_date_uses_the_unpadded_hour_format_of_existing_recipes
@@ -190,7 +286,7 @@ class RecipeTemplateTest < Minitest::Test
 
   def test_nutrition_subkeys_are_present_so_the_gated_block_renders
     # recipe_tag.rb:83 renders cuisine/diet/category/keywords only if nutrition.any?
-    assert front_matter("recipe", "food/recipes", "Zz Test")["nutrition"].any?
+    assert front_matter("recipe", "food/recipes/zz-test")["nutrition"].any?
   end
 end
 
@@ -198,11 +294,11 @@ class PageTemplateTest < Minitest::Test
   include Runner
 
   def test_omits_layout_so_the_site_default_applies
-    refute front_matter("page", "skincare", "Zz Test").key?("layout")
+    refute front_matter("page", "skincare/zz-test").key?("layout")
   end
 
   def test_opens_with_an_h1_matching_the_title
-    assert_includes body("page", "skincare", "Zz Test Page"), "# Zz Test Page"
+    assert_includes body("page", "skincare/zz-test", "Zz Test Page"), "# Zz Test Page"
   end
 end
 
@@ -210,27 +306,20 @@ class FailureTest < Minitest::Test
   include Runner
 
   def test_refuses_to_overwrite_an_existing_page
-    _out, err, code = new_page("-n", "page", "skincare", "Moisturizers")
+    _out, err, code = new_page("-n", "page", "skincare/moisturizers")
     refute_equal 0, code
     assert_match(/refusing to overwrite/, err)
-  end
-
-  def test_rejects_a_folder_that_does_not_exist
-    _out, err, code = new_page("-n", "page", "no-such-folder", "Zz Test")
-    refute_equal 0, code
-    assert_match(/does not exist/, err)
-  end
-
-  def test_rejects_a_sub_section_whose_parent_section_is_missing
-    _out, err, code = new_page("-n", "folder", "no-such-folder/deeper", "Zz Test")
-    refute_equal 0, code
-    assert_match(/no section index found/, err)
   end
 
   def test_refuses_to_re_create_an_existing_section
     _out, err, code = new_page("-n", "folder", "skincare", "Skincare")
     refute_equal 0, code
     assert_match(/already has a section index/, err)
+  end
+
+  def test_rejects_an_unknown_type
+    _out, _err, code = new_page("-n", "widget", "skincare/zz-test")
+    refute_equal 0, code
   end
 
   def test_fails_cleanly_when_it_cannot_prompt
@@ -250,24 +339,24 @@ class WriteTest < Minitest::Test
     FileUtils.rm_f(File.join(BLOG, "#{SCRATCH}.md"))
   end
 
-  def test_creates_a_section_then_a_page_that_finds_it_as_parent
-    _out, err, code = new_page("folder", SCRATCH, "Zz Scaffold Test")
-    assert_equal 0, code, err
-    assert File.file?("#{BLOG}/#{SCRATCH}/#{SCRATCH}.md"), "section index not written"
-
-    _out, err, code = new_page("page", SCRATCH, "First Page")
+  def test_creates_the_section_and_the_page_in_one_command
+    _out, err, code = new_page("page", "#{SCRATCH}/domain")
     assert_equal 0, code, err
 
-    page = "#{BLOG}/#{SCRATCH}/first-page.md"
-    assert File.file?(page), "page not written"
+    index = "#{BLOG}/#{SCRATCH}/#{SCRATCH}.md"
+    page  = "#{BLOG}/#{SCRATCH}/domain.md"
+    assert File.file?(index), "section index not written"
+    assert File.file?(page),  "page not written"
 
     fm = YAML.safe_load(File.read(page).match(/\A---\s*\n(.*?\n?)^---\s*\n/m)[1])
-    assert_equal "Zz Scaffold Test", fm["parent"], "did not read the new section's title"
-    assert_equal "blog/#{SCRATCH}/first-page", fm["permalink"]
+    assert_equal "Domain", fm["title"]
+    assert_equal "blog/#{SCRATCH}/domain", fm["permalink"]
+    assert_equal YAML.safe_load(File.read(index).match(/\A---\s*\n(.*?\n?)^---\s*\n/m)[1])["title"],
+                 fm["parent"]
   end
 
   def test_dry_run_writes_nothing
-    new_page("-n", "folder", SCRATCH, "Zz Scaffold Test")
+    new_page("-n", "page", "#{SCRATCH}/domain")
     refute File.exist?("#{BLOG}/#{SCRATCH}/#{SCRATCH}.md")
   end
 end

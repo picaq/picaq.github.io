@@ -3,16 +3,19 @@
 
 # new-page — scaffold a blog page, recipe, or section folder.
 #
-# The nav tree on this site is built from front matter, not from where files sit
-# on disk: `parent:` is a string match against another page's `title:`. This
-# script looks that link up for you and works out the permalink and the next
-# free nav_order, so a new page starts out correctly wired in.
+# The path you type is the permalink. What the last segment means depends on the
+# type: for a page or recipe it is the page itself, for a folder it is a section.
+# Any section in the path that doesn't exist yet gets created on the way.
 #
-#   bin/new-page                                  # interactive
-#   bin/new-page page   skincare     "Sunscreen"
-#   bin/new-page recipe food/recipes "Miso Soup"
-#   bin/new-page folder travel       "Travel"     # new top-level section
-#   bin/new-page folder food/drinks  "Drinks"     # new sub-section under Food
+#   bin/new-page                                       # interactive
+#   bin/new-page page   internet/domain                # section + page in one go
+#   bin/new-page page   design/squint    "Squint Test"
+#   bin/new-page recipe food/recipes/miso-soup "Miso Soup"
+#   bin/new-page folder internet/domain  "Domain"      # domain as a section instead
+#
+# The nav tree here is built from front matter, not from where files sit on disk:
+# `parent:` is a string match against another page's `title:`. This works that out
+# for you, along with the next free nav_order.
 #
 # See CLAUDE.md for how the conventions it follows were derived.
 
@@ -30,6 +33,11 @@ MAX_NAV_DEPTH = 3
 
 FRONT_MATTER = /\A---\s*\n(.*?\n?)^---\s*\n/m
 PLACEHOLDER  = /\{\{([A-Z_]+)\}\}/
+
+# Sections created during this run, so later lookups can see them before they
+# exist on disk — which is also what makes --dry-run report the whole cascade.
+CREATED = {}          # dir   => title
+CREATED_PARENT = {}   # title => parent title, so nav depth counts them too
 
 # ---------------------------------------------------------------- reading
 
@@ -49,29 +57,34 @@ end
 # Every markdown page that takes part in the blog nav: everything under blog/,
 # plus about.md at the root ( permalink /blog, the section's landing page ).
 def pages
-  @pages ||= (Dir.glob("#{BLOG}/**/*.md") + Dir.glob("#{ROOT}/*.md"))
-             .reject { |f| f.include?("/_site/") || f.include?("/.jekyll-cache/") }
-             .map    { |f| [f, front_matter(f)] }
-             .select { |_f, fm| fm["permalink"].to_s.sub(%r{\A/}, "").start_with?("blog") }
+  (Dir.glob("#{BLOG}/**/*.md") + Dir.glob("#{ROOT}/*.md"))
+    .reject { |f| f.include?("/_site/") || f.include?("/.jekyll-cache/") }
+    .map    { |f| [f, front_matter(f)] }
+    .select { |_f, fm| fm["permalink"].to_s.sub(%r{\A/}, "").start_with?("blog") }
 end
 
 # Top-level sections keep their index inside the folder ( blog/food/food.md );
 # sub-sections keep it one level up ( blog/food/recipes.md ). Accept either.
-def section_index(rel_dir)
-  base = File.basename(rel_dir)
-  ["#{BLOG}/#{rel_dir}/#{base}.md", "#{BLOG}/#{File.dirname(rel_dir)}/#{base}.md"]
-    .find { |p| File.file?(p) }
+def section_index(dir)
+  base = File.basename(dir)
+  ["#{BLOG}/#{dir}/#{base}.md", "#{BLOG}/#{File.dirname(dir)}/#{base}.md"].find { |p| File.file?(p) }
 end
 
 # ...and place a new one by the same rule.
-def new_index_path(rel_dir)
-  base = File.basename(rel_dir)
-  rel_dir.include?("/") ? "#{BLOG}/#{File.dirname(rel_dir)}/#{base}.md" : "#{BLOG}/#{rel_dir}/#{base}.md"
+def new_index_path(dir)
+  base = File.basename(dir)
+  dir.include?("/") ? "#{BLOG}/#{File.dirname(dir)}/#{base}.md" : "#{BLOG}/#{dir}/#{base}.md"
 end
 
-def section_title(rel_dir)
-  index = section_index(rel_dir)
+def section_title(dir)
+  return CREATED[dir] if CREATED.key?(dir)
+
+  index = section_index(dir)
   index && front_matter(index)["title"]
+end
+
+def section_exists?(dir)
+  CREATED.key?(dir) || !section_index(dir).nil?
 end
 
 def existing_folders
@@ -97,6 +110,7 @@ end
 
 def nav_depth(title, seen = [])
   return seen.size if title.nil? || seen.include?(title)
+  return nav_depth(CREATED_PARENT[title], seen + [title]) if CREATED_PARENT.key?(title)
 
   _path, fm = pages.find { |_p, f| f["title"] == title }
   return seen.size + 1 unless fm
@@ -104,13 +118,25 @@ def nav_depth(title, seen = [])
   nav_depth(fm["parent"], seen + [title])
 end
 
-def slugify(title)
-  title.unicode_normalize(:nfd)      # "Crème Brûlée" -> "creme-brulee" rather
-       .gsub(/\p{Mn}/, "")           # than "cr-me-br-l-e"
-       .downcase
-       .gsub("&", " and ")
-       .gsub(/[^a-z0-9]+/, "-")
-       .delete_prefix("-").delete_suffix("-")
+def warn_if_too_deep(parent)
+  depth = parent ? nav_depth(parent) + 1 : 1
+  return if depth <= MAX_NAV_DEPTH
+
+  warn "note: this sits #{depth} levels deep; just-the-docs only renders " \
+       "#{MAX_NAV_DEPTH}, so it will not appear in the sidebar."
+end
+
+def slugify(text)
+  text.unicode_normalize(:nfd)      # "Crème Brûlée" -> "creme-brulee" rather
+      .gsub(/\p{Mn}/, "")           # than "cr-me-br-l-e"
+      .downcase
+      .gsub("&", " and ")
+      .gsub(/[^a-z0-9]+/, "-")
+      .delete_prefix("-").delete_suffix("-")
+end
+
+def titlecase(slug)
+  slug.split("-").map(&:capitalize).join(" ")
 end
 
 # Emit a value the way Psych would, so titles like ":has()" or "Yes" come back
@@ -148,104 +174,134 @@ def ask(label, default = nil)
     $stdout.flush
     answer = $stdin.gets or abort("\naborted")
     answer = answer.strip
-    return answer          unless answer.empty?
-    return default.to_s    unless default.to_s.empty?
+    return answer       unless answer.empty?
+    return default.to_s unless default.to_s.empty?
   end
 end
 
-def write(path, body, force:, dry_run:)
-  if File.exist?(path) && !force
+def write(path, body, options)
+  if File.exist?(path) && !options[:force]
     abort "refusing to overwrite #{path.delete_prefix("#{ROOT}/")} ( pass --force to replace it )"
   end
 
-  unless dry_run
+  unless options[:dry_run]
     FileUtils.mkdir_p(File.dirname(path))
     File.write(path, body)
   end
-  puts "#{dry_run ? "would write" : "wrote"}  #{path.delete_prefix("#{ROOT}/")}"
+  puts "#{options[:dry_run] ? "would write" : "wrote"}  #{path.delete_prefix("#{ROOT}/")}"
+  body
+end
+
+# ---------------------------------------------------------------- building
+
+def build_section(dir, title, options)
+  parent = options[:parent] || (dir.include?("/") ? section_title(File.dirname(dir)) : nil)
+  vars = {
+    "TITLE"     => yaml_scalar(title),
+    "PERMALINK" => "blog/#{dir}",
+    "PARENT"    => parent && yaml_scalar(parent),
+    "NAV_ORDER" => options[:nav_order] || next_nav_order(parent)
+  }
+
+  body = write(new_index_path(dir), render("#{TEMPLATES}/section-index.md", vars), options)
+  FileUtils.mkdir_p("#{BLOG}/#{dir}") unless options[:dry_run]
+  CREATED[dir] = title
+  CREATED_PARENT[title] = parent
+  body
+end
+
+# Walk the path and create whatever section is missing along the way, so that
+# `page internet/domain` can invent blog/internet without a second command.
+def build_missing_sections(folders, options)
+  folders.each_index do |i|
+    dir = folders[0..i].join("/")
+    next if section_exists?(dir)
+
+    default = titlecase(File.basename(dir))
+    title   = interactive? ? ask("new section blog/#{dir}, title", default) : default
+    # overrides belong to the page being made, not to sections invented on the way
+    build_section(dir, title, options.merge(nav_order: nil, parent: nil))
+  end
 end
 
 # ---------------------------------------------------------------- main
 
 options = {}
 parser = OptionParser.new do |o|
-  o.banner = "usage: bin/new-page [page|recipe|folder] [FOLDER] [TITLE] [options]"
+  o.banner = "usage: bin/new-page [page|recipe|folder] PATH [TITLE] [options]"
   o.separator ""
-  o.separator "  FOLDER is a path under blog/, e.g. food/recipes"
-  o.separator "  For the folder type, FOLDER is the new section's path."
+  o.separator "  PATH is the permalink under blog/, and the type says what its last"
+  o.separator "  segment is:"
   o.separator ""
-  o.on("-s", "--slug SLUG",     "filename and permalink slug ( default: from title )") { |v| options[:slug] = v }
-  o.on("-o", "--nav-order N",   Integer, "override the computed nav_order")            { |v| options[:nav_order] = v }
-  o.on("-p", "--parent TITLE",  "override the derived parent title")                   { |v| options[:parent] = v }
-  o.on("-f", "--force",         "overwrite an existing file")                          { options[:force] = true }
-  o.on("-n", "--dry-run",       "print the result instead of writing it")              { options[:dry_run] = true }
-  o.on("-h", "--help",          "show this message")                                   { puts o; exit }
+  o.separator "    page   internet/domain           -> blog/internet/domain   ( domain is the page )"
+  o.separator "    recipe food/recipes/miso-soup    -> blog/food/recipes/miso-soup"
+  o.separator "    folder internet/domain           -> blog/internet/domain   ( domain is a section )"
+  o.separator ""
+  o.separator "  Missing sections in the path are created as it goes. TITLE defaults"
+  o.separator "  to the last segment, title-cased."
+  o.separator ""
+  o.on("-o", "--nav-order N",  Integer, "override the computed nav_order") { |v| options[:nav_order] = v }
+  o.on("-p", "--parent TITLE", "override the derived parent title")        { |v| options[:parent] = v }
+  o.on("-f", "--force",        "overwrite an existing file")               { options[:force] = true }
+  o.on("-n", "--dry-run",      "print the result instead of writing it")   { options[:dry_run] = true }
+  o.on("-h", "--help",         "show this message")                        { puts o; exit }
 end
 parser.parse!
 
-type   = ARGV.shift
-folder = ARGV.shift
-title  = ARGV.join(" ")
+type  = ARGV.shift
+path  = ARGV.shift
+title = ARGV.join(" ")
 
 type = ask("Type? #{TYPES.join("/")}") while type.nil? || !TYPES.include?(type)
 
-if folder.to_s.empty?
+if path.to_s.empty?
   puts "\nexisting folders: #{existing_folders.join(", ")}\n\n" if interactive?
-  folder = ask(type == "folder" ? "New folder path under blog/" : "Folder")
+  path = ask("Path under blog/")
 end
-folder = folder.delete_prefix("blog/").delete_prefix("/").chomp("/")
+path = path.delete_prefix("blog/").delete_prefix("/").chomp("/")
 
-title = ask("Title") if title.empty?
+# Normalize every segment, so "food/Crème Brûlée" lands at food/creme-brulee. The
+# folders that already exist are all in this form, so it's a no-op for them.
+segments = path.split("/").map { |segment| slugify(segment) }.reject(&:empty?)
+abort "PATH is empty" if segments.empty?
+path = segments.join("/")
 
-vars = { "TITLE" => yaml_scalar(title) }
+# For a folder the whole path is the section, so its ancestors are everything but
+# the last segment. For a page the last segment is the page itself.
+slug    = type == "folder" ? nil : segments.pop
+folders = type == "folder" ? segments[0..-2] : segments
+
+abort "PATH needs a page name, e.g. #{type} internet/domain" if type != "folder" && slug.to_s.empty?
+
+if title.empty?
+  default = titlecase(slug || File.basename(path))
+  title   = interactive? ? ask("Title", default) : default
+end
 
 if type == "folder"
-  abort "blog/#{folder} already has a section index at " \
-        "#{section_index(folder).delete_prefix("#{ROOT}/")}" if section_index(folder) && !options[:force]
-
-  parent  = options[:parent] || (folder.include?("/") ? section_title(File.dirname(folder)) : nil)
-  if folder.include?("/") && parent.nil?
-    abort "no section index found for blog/#{File.dirname(folder)} — create it first:\n" \
-          "  bin/new-page folder #{File.dirname(folder)} \"Title\""
+  if section_exists?(path) && !options[:force]
+    abort "blog/#{path} already has a section index at #{section_index(path).delete_prefix("#{ROOT}/")}"
   end
 
-  target   = new_index_path(folder)
-  template = "#{TEMPLATES}/section-index.md"
-  vars["PERMALINK"] = "blog/#{folder}"
+  build_missing_sections(folders, options)
+  warn_if_too_deep(options[:parent] || (folders.any? ? section_title(folders.join("/")) : nil))
+  body = build_section(path, title, options)
+  puts "\n#{body}" if options[:dry_run]
+  puts "next:  bin/new-page page #{path}/some-page"
 else
-  unless Dir.exist?("#{BLOG}/#{folder}")
-    abort "blog/#{folder} does not exist. To create it:\n" \
-          "  bin/new-page folder #{folder} \"Title\""
-  end
+  build_missing_sections(folders, options)
 
-  parent = options[:parent] || section_title(folder)
-  if parent.nil?
-    abort "no section index found for blog/#{folder} — pages there would have no parent.\n" \
-          "Create one with:  bin/new-page folder #{folder} \"Title\"\n" \
-          "or pass --parent \"Some Existing Title\"."
-  end
+  parent = options[:parent] || (folders.any? ? section_title(folders.join("/")) : nil)
+  vars = {
+    "TITLE"     => yaml_scalar(title),
+    "PERMALINK" => "blog/#{path}",
+    "PARENT"    => parent && yaml_scalar(parent),
+    "NAV_ORDER" => options[:nav_order] || next_nav_order(parent),
+    "DATE"      => Time.now.strftime("%Y-%m-%d %-H:%M:%S %z")
+  }
 
-  slug     = options[:slug] || slugify(title)
-  target   = "#{BLOG}/#{folder}/#{slug}.md"
-  template = "#{TEMPLATES}/#{type}.md"
-  vars["PERMALINK"] = "blog/#{folder}/#{slug}"
-  vars["DATE"]      = Time.now.strftime("%Y-%m-%d %-H:%M:%S %z")
-end
+  warn_if_too_deep(parent)
 
-vars["PARENT"]    = parent && yaml_scalar(parent)
-vars["NAV_ORDER"] = options[:nav_order] || next_nav_order(parent)
-
-depth = parent ? nav_depth(parent) + 1 : 1
-warn "note: this sits #{depth} levels deep; just-the-docs only renders " \
-     "#{MAX_NAV_DEPTH}, so it will not appear in the sidebar." if depth > MAX_NAV_DEPTH
-
-body = render(template, vars)
-write(target, body, force: options[:force], dry_run: options[:dry_run])
-
-if options[:dry_run]
-  puts
-  puts body
-elsif type == "folder"
-  FileUtils.mkdir_p("#{BLOG}/#{folder}")
-  puts "next:  bin/new-page page #{folder} \"Some Page\""
+  body = write("#{BLOG}/#{path}.md", render("#{TEMPLATES}/#{type}.md", vars), options)
+  puts "\n#{body}" if options[:dry_run]
 end

@@ -24,12 +24,23 @@ no `package.json`.
 ## Scaffolding new pages
 
 ```sh
-bin/new-page                                  # interactive
-bin/new-page page   skincare     "Sunscreen"
-bin/new-page recipe food/recipes "Miso Soup"
-bin/new-page folder travel       "Travel"     # new top-level section
-bin/new-page folder food/drinks  "Drinks"     # new sub-section under Food
+bin/new-page                                            # interactive
+bin/new-page page   internet/domain                     # section + page in one go
+bin/new-page page   design/squint          "Squint Test"
+bin/new-page recipe food/recipes/miso-soup "Miso Soup"
+bin/new-page folder travel                 "Travel"     # new top-level section
+bin/new-page folder internet/domain        "Domain"     # domain as a section instead
 ```
+
+**The path you type is the permalink**, and the type decides what its last
+segment means — for `page`/`recipe` it is the page itself, for `folder` it is a
+section. Any section in the path that doesn't exist yet is created on the way,
+so `page internet/domain` writes both `blog/internet/internet.md` and
+`blog/internet/domain.md`.
+
+`TITLE` is optional and defaults to the last segment, title-cased. Because the
+slug comes from the path rather than the title, the two can differ, which is the
+usual case here — `design/squint` with title `Squint Test`.
 
 Templates live in `_templates/` and are plain editable markdown. Placeholders are
 literal `{{UPPERCASE}}` tokens swapped by string replacement, chosen so Liquid
@@ -92,7 +103,7 @@ repo root, with `permalink: /blog`.
 - The slug is often deliberately **shorter than the filename**: `squint-test.md` →
   `blog/design/squint`, `shell.md` → `blog/gists/sh`, `dungeons-n-dragons.md` →
   `blog/games/dnd`. Recipes are the exception — filename matches slug for all 8.
-  (`bin/new-page --slug` exists for this.)
+  (`bin/new-page` takes the slug from the path, so this needs no extra flag.)
 - **`nav_order`:** hand-assigned small int, **not unique and not sequential**.
   Recipes alone has four collision pairs. Ties break alphabetically by title, so
   collisions are harmless; never renumber siblings to "fix" them.
