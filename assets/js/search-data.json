@@ -3606,7 +3606,7 @@
   },"515": {
     "doc": "WSL",
     "title": "WSL",
-    "content": "remove :Zone.Identifier and .crdownload:com.dropbox.attrs from files downloaded into Ubuntu partition . rm *:Zone.Identifier *crdownload:com.dropbox.attrs . ",
+    "content": "remove :Zone.Identifier and .crdownload:com.dropbox.attrs from files downloaded into Ubuntu partition . rm *:Zone.Identifier *crdownload:com.dropbox.attrs . remove all zone.identifier from downloads to linux in dir . find . -type f -name \"*:Zone.Identifier\" -delete . ",
     "url": "/blog/gists/sh/wsl",
     
     "relUrl": "/blog/gists/sh/wsl"
