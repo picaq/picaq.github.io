@@ -77,6 +77,29 @@ top-level section.
 Jekyll ignores any path segment starting with `_` (`entry_filter.rb:59`), so
 `_templates/` needs no `exclude:` entry.
 
+## Tests
+
+```sh
+ruby test/all.rb                  # everything
+ruby test/new_page_test.rb        # the script, mostly --dry-run
+ruby test/rendered_html_test.rb   # links and permalinks in _site
+```
+
+Plain `ruby`, **not** `bundle exec` — minitest ships with Ruby but isn't in the
+`Gemfile`, and the script is stdlib-only on purpose.
+
+`rendered_html_test.rb` builds `_site` itself when it's missing or older than the
+sources, then checks that every internal link resolves, that every `permalink`
+emits a file, and that no two pages claim the same one. Links are checked against
+**rendered HTML**, not source: a page's file can move without its permalink
+changing, so only the output says whether a link really resolves.
+
+Two prefix lists in that file stop it crying wolf — `SEPARATE_PROJECTS`
+(`notation-map`, `epa-uv`, …) are sibling GitHub Pages sites built from their own
+repos, live at `picaq.github.io/<name>/` but absent from this build; `VENDORED`
+covers the standalone HTML projects and submodules, whose markup isn't maintained
+here.
+
 ## How the blog is actually structured
 
 **It is not a Jekyll collection and does not use `_posts`.** `_posts/` holds only
