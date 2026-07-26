@@ -33,11 +33,15 @@ PLACEHOLDER  = /\{\{([A-Z_]+)\}\}/
 
 # ---------------------------------------------------------------- reading
 
+# `title: :has()` is a real page here, and psych reads a leading colon as a
+# Symbol — permit it, then put the colon back so the value matches what the file
+# actually says. Without this the page raises and is silently skipped.
 def front_matter(path)
   match = File.read(path, encoding: "UTF-8").match(FRONT_MATTER)
   return {} unless match
 
-  YAML.safe_load(match[1], permitted_classes: [Date, Time], aliases: true) || {}
+  parsed = YAML.safe_load(match[1], permitted_classes: [Date, Time, Symbol], aliases: true) || {}
+  parsed.transform_values { |value| value.is_a?(Symbol) ? ":#{value}" : value }
 rescue StandardError
   {} # a page we can't parse just doesn't participate in the lookups below
 end
