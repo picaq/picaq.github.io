@@ -57,7 +57,7 @@ Currently, non-destructive customizations to the theme are documented in pull re
 ## Todo
 - [x] get lunr.js to ignore parsing TOC to search.json
 - [ ] index tags to search.json
-- [ ] ruby and/or shell script to start a post/page faster w/ a command via templates
+- [x] ruby and/or shell script to start a post/page faster w/ a command via templates
 - [ ] update/style code block themes
 - [ ] get last-edited and created/published dates from git history
 
