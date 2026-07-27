@@ -9,6 +9,14 @@ nav_order: 1
 
 Domains are website names. otherwise they would just be IP addresses.
 
+## Domain Registrars
+
+Check who owns the domain name and which registrar it is registered to
+
+- [ICANN Lookup](https://lookup.icann.org/en) 
+- [Free Whois Lookup - Whois IP Search & Whois Domain Lookup \| Whois.com](https://www.whois.com/whois/) 
+    - you can also check via https://www.whois.com/whois/\<domain.com\>
+
 ## DNS Flush
 
 Do this after a domain name transfer to a new host so your website renders under the new domain faster.
