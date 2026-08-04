@@ -3648,9 +3648,37 @@
   },"521": {
     "doc": "WSL",
     "title": "WSL",
-    "content": "remove :Zone.Identifier and .crdownload:com.dropbox.attrs from files downloaded into Ubuntu partition . rm *:Zone.Identifier *crdownload:com.dropbox.attrs . remove all zone.identifier from downloads to linux in dir . find . -type f -name \"*:Zone.Identifier\" -delete . ",
+    "content": " ",
     "url": "/blog/gists/sh/wsl",
     
     "relUrl": "/blog/gists/sh/wsl"
+  },"522": {
+    "doc": "WSL",
+    "title": "downloads",
+    "content": "remove :Zone.Identifier and .crdownload:com.dropbox.attrs from files downloaded into Ubuntu partition . rm *:Zone.Identifier *crdownload:com.dropbox.attrs . remove all zone.identifier from downloads to linux in dir . find . -type f -name \"*:Zone.Identifier\" -delete . ",
+    "url": "/blog/gists/sh/wsl#downloads",
+    
+    "relUrl": "/blog/gists/sh/wsl#downloads"
+  },"523": {
+    "doc": "WSL",
+    "title": "get wifi password",
+    "content": "netsh.exe wlan show profile name=\"&lt;Wifi Name&gt;\" key=clear | grep \"Key Content\" . ",
+    "url": "/blog/gists/sh/wsl#get-wifi-password",
+    
+    "relUrl": "/blog/gists/sh/wsl#get-wifi-password"
+  },"524": {
+    "doc": "WSL",
+    "title": "Unix",
+    "content": " ",
+    "url": "/blog/gists/sh/wsl#unix",
+    
+    "relUrl": "/blog/gists/sh/wsl#unix"
+  },"525": {
+    "doc": "WSL",
+    "title": "password protect txt file with vim",
+    "content": "vim -x &lt;new or existing filename&gt; . ",
+    "url": "/blog/gists/sh/wsl#password-protect-txt-file-with-vim",
+    
+    "relUrl": "/blog/gists/sh/wsl#password-protect-txt-file-with-vim"
   }
 }
