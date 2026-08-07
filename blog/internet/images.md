@@ -28,3 +28,17 @@ generally, I want the image to have the same name as before so I have this shell
 ```sh
 function compress { cwebp -q 100 "$@" -o "$@.webp" }
 ```
+
+to compress an entire directory of images for later use
+
+```sh
+quality=100
+suffix=-q100
+outdir=Folder-Name$suffix
+mkdir -p "$outdir"
+
+for img in *.(jpg|jpeg|png|webp)(.N); do
+  cwebp -q $quality "$img" -o "$outdir/$img$suffix.webp"
+done
+```
+this folder would live inside the input folder. you can move it elsewhere
