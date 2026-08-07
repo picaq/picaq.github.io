@@ -2311,7 +2311,7 @@
   },"330": {
     "doc": "Images",
     "title": "Image Compression",
-    "content": "Compress image size with minimal loss with webp format. install webp to get access to cwebp. apt install webp . In my experience, the -lossless &amp; -near_lossless flags increased image sizes if converted from already compressed jpeg and png files. cwebp -q 100 \"imageName.jpg\" -o \"imageName.webp\" . generally, I want the image to have the same name as before so I have this shell function . function compress { cwebp -q 100 \"$@\" -o \"$@.webp\" } . ",
+    "content": "Compress image size with minimal loss with webp format. install webp to get access to cwebp. apt install webp . In my experience, the -lossless &amp; -near_lossless flags increased image sizes if converted from already compressed jpeg and png files. cwebp -q 100 \"imageName.jpg\" -o \"imageName.webp\" . generally, I want the image to have the same name as before so I have this shell function . function compress { cwebp -q 100 \"$@\" -o \"$@.webp\" } . to compress an entire directory of images for later use . quality=100 suffix=-q100 outdir=Folder-Name$suffix mkdir -p \"$outdir\" for img in *.(jpg|jpeg|png|webp)(.N); do cwebp -q $quality \"$img\" -o \"$outdir/$img$suffix.webp\" done . this folder would live inside the input folder. you can move it elsewhere . ",
     "url": "/blog/internet/images#image-compression",
     
     "relUrl": "/blog/internet/images#image-compression"
