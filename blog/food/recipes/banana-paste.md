@@ -37,13 +37,14 @@ nutrition:
 prepmins: 1
 cookmins: 8
 yield: 1
-image:
-thumbnail:
+image: https://github.com/user-attachments/assets/908c5a90-5c06-4287-8380-fa3fc6a96a80
+thumbnail: https://github.com/user-attachments/assets/908c5a90-5c06-4287-8380-fa3fc6a96a80
 tags: [featured, recipe]
 cuisine: American
 diet: vegan
 category: 
 keywords: banana, fruit, paste, topping
 ---
+![image](https://github.com/user-attachments/assets/908c5a90-5c06-4287-8380-fa3fc6a96a80){:.invisible}
 
 {% render_recipe %}
