@@ -19,7 +19,7 @@ instructions:
   - add cinnamon and water or almond milk to the cup
   - microwave at 100% power for 55 s, 30% for 99 s, 20% for 3:33 minutes
   - stir for 20 s, ensuring banana paste sticks to the bottom and bottom walls of the cup
-  - microwave 99 s at 100% 
+  - microwave at 100% for 99 s
   - stir
   - if you want the paste to be less liquidy, microwave at 30% for 99 s
   - if you want the paste to taste smokier, microwave at 100% for 99 s
