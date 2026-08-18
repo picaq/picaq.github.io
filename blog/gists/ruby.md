@@ -7,7 +7,7 @@ nav_order: 5
 
 # Ruby
 
-Ruby is great. The primarily use it to write [plugins for this blog](https://github.com/picaq/picaq.github.io/tree/master/_plugins).
+Ruby is great. I primarily use it to write [plugins for this blog](https://github.com/picaq/picaq.github.io/tree/master/_plugins).
 
 Lately, I’ve begun to document these changes as [pull requests](https://github.com/picaq/picaq.github.io/pulls?q=is%3Apr+-label%3Adependencies+label%3Aruby);
 
