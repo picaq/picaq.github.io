@@ -3067,7 +3067,7 @@
   },"438": {
     "doc": "Ruby",
     "title": "Ruby",
-    "content": "Ruby is great, though the only chance I get to use it as of late is writing plugins for this blog. The ruby-practice repository contains my most-visted ruby notes. ruby-koans is my progress learning ruby by testing edge cases. ",
+    "content": "Ruby is great. The primarily use it to write plugins for this blog. Lately, I’ve begun to document these changes as pull requests; . The ruby-practice repository contains my most-visted ruby notes. ruby-koans is my progress learning ruby by testing edge cases. ",
     "url": "/blog/gists/ruby",
     
     "relUrl": "/blog/gists/ruby"
