@@ -136,6 +136,39 @@ Common fine typographic characters for optical typing.
 ```
 Source: [Unicode spaces](https://jkorpela.fi/chars/spaces.html)
 
+## Symbols
+
+### Fractions
+
+typically used for cooking
+
+generate more with [Unicode Fraction Creator](https://lights0123.com/fractions/)
+
+### half 1/2
+```
+½
+```
+
+### third 1/3
+```
+⅓
+```
+
+#### two thirds 2/3
+```
+⅔
+```
+
+### quarter 1/4
+```
+¼
+```
+#### three quarters 3/4
+
+```
+¾
+```
+
 ## Alphabet Length
 ```
 abcdefghijklmnopqrstuvwxyz
