@@ -42,7 +42,7 @@ thumbnail: https://github.com/user-attachments/assets/908c5a90-5c06-4287-8380-fa
 tags: [featured, recipe]
 cuisine: American
 diet: vegan
-category: 
+category: dessert
 keywords: banana, fruit, paste, topping
 ---
 ![image](https://github.com/user-attachments/assets/908c5a90-5c06-4287-8380-fa3fc6a96a80){:.invisible}
