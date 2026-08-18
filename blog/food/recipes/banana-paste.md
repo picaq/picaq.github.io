@@ -28,7 +28,13 @@ result_blurb:          # markdown ok
 # nutrition gates the cuisine / diet / category / keywords block below.
 # The keys below count as present even while blank, so that block renders
 # either way. to suppress it, delete these four lines and leave `nutrition:` bare.
+  |
+  ### how do I use this??
   I use this as a precursor to oatmeal. When rolled oats and water is mixed in and left to soak for a few minutes, the resulting liquid can be squeezed out as banana oat milk. The leftover oats have a texture similar to overnight oats.
+
+  You can also eat it straight or on top of vanilla ice cream after cooling it for a few minutes. Stirring willl accelerate its cooldown.
+
+  Stirring in a bit of molasses at the last step will impart a smokey honey flavor to the banana paste.
 nutrition:
   calories: 110
   fatContent: 0
