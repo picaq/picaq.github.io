@@ -22,7 +22,7 @@ instructions:
   - microwave at 100% for 99 s
   - stir
   - if you want the paste to be less liquidy, microwave at 30% for 99 s
-  - if you want the paste to taste smokier, microwave at 100% for 99 s
+  - if you want the paste to taste smokier, microwave at 60% for 99 s
   - stir in molasses to taste if desired (recommended)
 result_blurb:          # markdown ok
 # nutrition gates the cuisine / diet / category / keywords block below.
