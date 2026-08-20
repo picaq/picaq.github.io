@@ -69,3 +69,6 @@ keywords: banana, fruit, paste, topping
 
 ### why did my banana turn pink??
 you added too much water. long term cooking in lower temperatures polymerizes leucoanthocyanidins into anthocyanins. we are aimig for caramelization (maillard reaction) at higher temperatures. your banana will taste fruitier
+
+### why is my banana burnt!?
+forgot to add water, not enough water, or too much cooking time/ too high power. maybe you want to create a smoky flavor, but not at the cost of creating acrylamides. 
