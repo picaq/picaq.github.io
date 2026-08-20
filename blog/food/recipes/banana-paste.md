@@ -17,7 +17,7 @@ ingredients:
 instructions:
   - with a spoon, slice banana into thirds or coins into a microwaveable cup
   - add cinnamon and water or almond milk to the cup
-  - microwave at 100% power for 55 s, 30% for 99 s, 20% for 3:33 minutes
+  - microwave at 100% power for 66 s, 30% for 99 s, 20% for 3:33 minutes
   - stir for 20 s, ensuring banana paste sticks to the bottom and bottom walls of the cup
   - microwave at 100% for 99 s
   - stir
@@ -36,7 +36,14 @@ result_blurb:          # markdown ok
 
   Stirring in a bit of molasses at the last step will impart a smokey honey flavor to the banana paste.
   ### caramel banana candy 
-  when the banana paste is dough-like and no longer runny, cool it down to near room temperature and wrap it in wax paper or candy wrappers. Refrigerate for 40 minutes or more to make soft caramel banana candy.
+  stir in molasses. when the banana paste is dough-like and no longer runny, cool it down to near room temperature and wrap it in wax paper or candy wrappers. Refrigerate for 40 minutes or more to make soft caramel banana candy.
+  ### experiments
+  - adding a splash of soymilk at step 4: stir resulted in sweet fluffy similar to sweet potato but less caramelized taste. Needed more drying cycles.
+  ### future experiments
+  - rum instead of water, or add rum at one of the last steps
+  - soymilk instead of water
+  - vary protein/fat/salt at different stages of heating
+  
 nutrition:
   calories: 100
   fatContent: 0
