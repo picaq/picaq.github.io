@@ -39,6 +39,7 @@ result_blurb:          # markdown ok
   stir in molasses. when the banana paste is dough-like and no longer runny, cool it down to near room temperature and wrap it in wax paper or candy wrappers. Refrigerate for 40 minutes or more to make soft caramel banana candy.
   ### experiments
   - adding a splash of soymilk at step 4: stir resulted in sweet fluffy similar to sweet potato but less caramelized taste. Needed more drying cycles.
+  
   ### future experiments
   - rum instead of water, or add rum at one of the last steps
   - soymilk instead of water
