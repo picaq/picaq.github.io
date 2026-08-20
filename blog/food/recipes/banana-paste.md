@@ -38,9 +38,9 @@ result_blurb:          # markdown ok
   ### caramel banana candy 
   when the banana paste is dough-like and no longer runny, cool it down to near room temperature and wrap it in wax paper or candy wrappers. Refrigerate for 40 minutes or more to make soft caramel banana candy.
 nutrition:
-  calories: 110
+  calories: 100
   fatContent: 0
-  carbohydrateContent: 28
+  carbohydrateContent: 25
   proteinContent: 1
 prepmins: 1
 cookmins: 8
