@@ -35,18 +35,9 @@ result_blurb:          # markdown ok
   You can also eat it straight or on top of vanilla ice cream after cooling it for a few minutes. Stirring willl accelerate its cooldown.
 
   Stirring in a bit of molasses at the last step will impart a smokey honey flavor to the banana paste.
+
   ### caramel banana candy 
   stir in molasses. when the banana paste is dough-like and no longer runny, cool it down to near room temperature and wrap it in wax paper or candy wrappers. Refrigerate for 40 minutes or more to make soft caramel banana candy.
-  ### experiments
-  - adding a splash of soymilk at step 4: stir resulted in sweet fluffy similar to sweet potato but less caramelized taste. Needed more drying cycles.
-  
-  ### future experiments
-  - rum instead of water, or add rum at one of the last steps
-  - soymilk instead of water
-  - vary protein/fat/salt at different stages of heating
-
-  ### why did my banana turn pink??
-  - you added too much water. long term cooking in lower temperatures polymerized leucoanthocyanidins into anthocyanins rather than the caramelization (maillard reaction) at higher temperatures. your banana will taste fruitier
   
 nutrition:
   calories: 100
@@ -67,3 +58,14 @@ keywords: banana, fruit, paste, topping
 ![image](https://github.com/user-attachments/assets/908c5a90-5c06-4287-8380-fa3fc6a96a80){:.invisible}
 
 {% render_recipe %}
+
+### experiments
+- adding a splash of soymilk at step 4: stir resulted in sweet fluffy similar to sweet potato but less caramelized taste. Needed more drying cycles.
+  
+### future experiments
+- rum instead of water, or add rum at one of the last steps
+- soymilk instead of water
+- vary protein/fat/salt at different stages of heating
+
+### why did my banana turn pink??
+you added too much water. long term cooking in lower temperatures polymerizes leucoanthocyanidins into anthocyanins. we are aimig for caramelization (maillard reaction) at higher temperatures. your banana will taste fruitier
