@@ -11,6 +11,8 @@ nav_order: 8
 
 ### Page content selector
 
+you don’t need css in js or component-level css!
+
 For Sqarespace specifically, but applicable to any other CMS or page organization style where classNames are difficult to apply, target, use or invoke, this keeps consistent styling within their content pages without bleeding the styles into other pages.
 
 this will select all `<h3>` in a page `body` that follows the `head` that contains meta tags `<meta content="The Title Name... etc">`
