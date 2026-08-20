@@ -35,6 +35,8 @@ result_blurb:          # markdown ok
   You can also eat it straight or on top of vanilla ice cream after cooling it for a few minutes. Stirring willl accelerate its cooldown.
 
   Stirring in a bit of molasses at the last step will impart a smokey honey flavor to the banana paste.
+  ### caramel banana candy 
+  when the banana paste is dough-like and no longer runny, cool it down to near room temperature and wrap it in wax paper or candy wrappers. Refrigerate for 40 minutes or more to make soft caramel banana candy.
 nutrition:
   calories: 110
   fatContent: 0
