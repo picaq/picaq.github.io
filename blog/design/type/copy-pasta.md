@@ -144,26 +144,26 @@ typically used for cooking
 
 generate more with [Unicode Fraction Creator](https://lights0123.com/fractions/)
 
-### half 1/2
+#### half 1/2
 ```
 ½
 ```
 
-### third 1/3
+#### third 1/3
 ```
 ⅓
 ```
 
-#### two thirds 2/3
+##### two thirds 2/3
 ```
 ⅔
 ```
 
-### quarter 1/4
+#### quarter 1/4
 ```
 ¼
 ```
-#### three quarters 3/4
+##### three quarters 3/4
 
 ```
 ¾
