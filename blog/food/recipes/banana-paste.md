@@ -43,6 +43,9 @@ result_blurb:          # markdown ok
   - rum instead of water, or add rum at one of the last steps
   - soymilk instead of water
   - vary protein/fat/salt at different stages of heating
+
+  ### why did my banana turn pink??
+  - you added too much water. long term cooking in lower temperatures polymerized leucoanthocyanidins into anthocyanins rather than the caramelization (maillard reaction) at higher temperatures. your banana will taste fruitier
   
 nutrition:
   calories: 100
