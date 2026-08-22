@@ -11,7 +11,12 @@ I primarily use ZSH
 
 ## Files
 
-list filesize not in bytes
+### list the top 10 newest files in dir
+```sh
+ls -lt | head -n 11
+```
+
+### list filesize in MB & KB instead of bytes
 ```sh
 ls -lh filename
 ```
@@ -24,14 +29,14 @@ output looks like
 
 ### Encryption
 
-use GPG to encrypt with a passphrase
+#### use GPG to encrypt with a passphrase
 
 ```sh
 gpg -c filename.txt
 ```
 will create `filename.txt.gpg`
 
-to decrypt
+#### to decrypt
 ```sh
 gpg -d filename.txt.gpg
 ```
