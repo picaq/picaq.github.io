@@ -61,11 +61,13 @@ keywords: banana, fruit, paste, topping
 
 ### experiments
 - adding a splash of soymilk at step 4: stir resulted in sweet fluffy similar to sweet potato but less caramelized taste. Needed more drying cycles.
+- soymilk instead of water at step 2: much richer and sweeter taste. adds 2–4 calories. may need an additional drying cycle.
   
 ### future experiments
 - rum instead of water, or add rum at one of the last steps
-- soymilk instead of water
 - vary protein/fat/salt at different stages of heating
+- a few drops of vanilla at the end to simulate rum
+- ginger or cardamom in the beginning to simulate an alcoholic bite
 
 ### why did my banana turn pink??
 you added too much water. long term cooking in lower temperatures polymerizes leucoanthocyanidins into anthocyanins. we are aimig for caramelization (maillard reaction) at higher temperatures. your banana will taste fruitier
