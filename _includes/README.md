@@ -7,6 +7,7 @@ This is my github pages repo. It is live here at [picaq.github.io](https://picaq
 but also submodules of the latest stable commits of some pure vanilla html/css/js projects:
 - [Sarasa Gothic Mono](https://picaq.github.io/sarasa/) [source](https://github.com/picaq/picaq.github.io/tree/master/sarasa)
 - [EPA UV Index Chart](https://picaq.github.io/epa-uv/) [source](https://github.com/picaq/epa-uv)
+- [Pebble Transit Minute](https://github.com/picaq/pebble-transit-arrivals)[Pebble Transit Minute](https://github.com/picaq/pebble-transit-arrivals)
 - [Notation Map](https://picaq.github.io/notation-map/) [source](https://github.com/picaq/notation-map)
 - [SleepyTime](https://picaq.github.io/sleepytime/) [source](https://github.com/picaq/picaq.github.io/tree/master/sleepytime)
 - [Boogle Board Game](https://picaq.github.io/JS-HTML-Games/) [source](https://github.com/picaq/JS-HTML-Games)
@@ -26,3 +27,7 @@ but also submodules of the latest stable commits of some pure vanilla html/css/j
 - [Flexbox footer](https://codepen.io/picaq/pen/NWYObBY)
 - [Hanging Quotes & Typography](https://codepen.io/picaq/pen/PorGQaR)
 - [honeycomb bubble profile pictures](https://codepen.io/picaq/pen/wvLbwLe)
+
+### hackathon projects (finalists!)
+- [Bloom: Your pregnancy nutrition companion](https://growing-glow-pal.lovable.app/onboarding) [source](https://github.com/Hackteam-Presidio/bloom)
+- [Kickademy: learn soccer moves](https://corgi-kick-academy.lovable.app)
