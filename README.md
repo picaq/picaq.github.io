@@ -29,7 +29,7 @@ but also submodules of the latest stable commits of some pure vanilla html/css/j
 - [honeycomb bubble profile pictures](https://codepen.io/picaq/pen/wvLbwLe)
 
 ### hackathon projects (finalists!)
-- [Bloom: Your pregnancy nutrition companion](https://growing-glow-pal.lovable.app/onboarding) [source](https://github.com/Hackteam-Presidio/bloom)
+- [Bloom: Your pregnancy nutrition companion](https://growing-glow-pal.lovable.app/onboarding) [source](https://github.com/Hackteam-Presidio/bloom)
 - [Kickademy: learn soccer moves](https://corgi-kick-academy.lovable.app)
 
 ## if you want to run this project locally
