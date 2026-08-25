@@ -6,6 +6,7 @@ This is my github pages repo. It is live here at [picaq.github.io](https://picaq
 [The repository itself](https://github.com/picaq/picaq.github.io) mainly houses the code for [Sarasa Gothic Mono](https://picaq.github.io/sarasa/) typography specimen, 
 but also submodules of the latest stable commits of some pure vanilla html/css/js projects:
 - [Sarasa Gothic Mono](https://picaq.github.io/sarasa/) [source](https://github.com/picaq/picaq.github.io/tree/master/sarasa)
+- [Pebble Transit Minute](https://github.com/picaq/pebble-transit-arrivals)
 - [EPA UV Index Chart](https://picaq.github.io/epa-uv/) [source](https://github.com/picaq/epa-uv)
 - [Notation Map](https://picaq.github.io/notation-map/) [source](https://github.com/picaq/notation-map)
 - [SleepyTime](https://picaq.github.io/sleepytime/) [source](https://github.com/picaq/picaq.github.io/tree/master/sleepytime)
@@ -26,6 +27,10 @@ but also submodules of the latest stable commits of some pure vanilla html/css/j
 - [Flexbox footer](https://codepen.io/picaq/pen/NWYObBY)
 - [Hanging Quotes & Typography](https://codepen.io/picaq/pen/PorGQaR)
 - [honeycomb bubble profile pictures](https://codepen.io/picaq/pen/wvLbwLe)
+
+### hackathon projects (finalists!)
+- [Bloom: Your pregnancy nutrition companion](https://growing-glow-pal.lovable.app/onboarding) [source](https://github.com/Hackteam-Presidio/bloom)
+- [Kickademy: learn soccer moves](https://corgi-kick-academy.lovable.app)
 
 ## if you want to run this project locally
 
