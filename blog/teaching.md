@@ -10,7 +10,13 @@ Teaching tools & scripts for a smoother classroom experience
 
 ## Browser Scripts & Bookmarklets
 
-### Convert Presentation to fill window (mobile present)
+### Open Object PDF resources in new tabs
+[open pdfs](javascript:void%20function(){[...document.querySelectorAll(%22object[type=\%22application/pdf\%22]%22)].forEach(a=%3Ewindow.open(a.data,%22_blank%22))}();)
+```js
+javascript: [...document.querySelectorAll('object[type="application/pdf"]')].forEach(obj => window.open(obj.data, '_blank'));
+```
+
+### Convert Google Slides Presentation to fill window (mobile present)
 [📱 present](javascript:void%20function(){const%20a=a=%3E{const%20b=document.createElement(%22textarea%22);document.body.appendChild(b),b.setAttribute(%22id%22,%22temporary_input_clipboard%22),document.getElementById(%22temporary_input_clipboard%22).value=a,b.select(),document.execCommand(%22copy%22),document.body.removeChild(b)},b=window.location,c=b.host,d=b.pathname,e=b.href;if(%22docs.google.com%22===c%26%26d.includes(%22/presentation%22)){const%20b=d.match(/\/presentation\/d\/.*\//)[0];presentation=%22https://%22+c+b+%22mobilepresent%22,a(presentation),window.location.href=presentation}}();)
 ```js
 javascript: (()=>{
