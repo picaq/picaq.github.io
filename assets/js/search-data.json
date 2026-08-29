@@ -3718,7 +3718,7 @@
   },"531": {
     "doc": "Teaching",
     "title": "Open Object PDF resources in new tabs",
-    "content": "open pdfs . javascript: [...document.querySelectorAll('object[type=\"application/pdf\"]')].forEach(obj =&gt; window.open(obj.data, '_blank')); . ",
+    "content": "todo: add delay so both files open . open pdfs . javascript: [...document.querySelectorAll('object[type=\"application/pdf\"]')].forEach(obj =&gt; window.open(obj.data, '_blank')); . ",
     "url": "/blog/teaching#open-object-pdf-resources-in-new-tabs",
     
     "relUrl": "/blog/teaching#open-object-pdf-resources-in-new-tabs"
