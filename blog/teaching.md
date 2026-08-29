@@ -11,6 +11,9 @@ Teaching tools & scripts for a smoother classroom experience
 ## Browser Scripts & Bookmarklets
 
 ### Open Object PDF resources in new tabs
+
+todo: add delay so both files open
+
 [open pdfs](javascript:void%20function(){[...document.querySelectorAll(%22object[type=\%22application/pdf\%22]%22)].forEach(a=%3Ewindow.open(a.data,%22_blank%22))}();)
 ```js
 javascript: [...document.querySelectorAll('object[type="application/pdf"]')].forEach(obj => window.open(obj.data, '_blank'));
