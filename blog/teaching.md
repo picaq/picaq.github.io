@@ -12,11 +12,42 @@ Teaching tools & scripts for a smoother classroom experience
 
 ### Open Object PDF resources in new tabs
 
-todo: add delay so both files open
+#### Open first pdf
 
-[open pdfs](javascript:void%20function(){[...document.querySelectorAll(%22object[type=\%22application/pdf\%22]%22)].forEach(a=%3Ewindow.open(a.data,%22_blank%22))}();)
+[open pdf](javascript:void%20function(){[...document.querySelectorAll(%22object[type=\%22application/pdf\%22]%22)].forEach(a=%3Ewindow.open(a.data,%22_blank%22))}();)
 ```js
 javascript: [...document.querySelectorAll('object[type="application/pdf"]')].forEach(obj => window.open(obj.data, '_blank'));
+```
+
+#### Open pdfs sequentially on every click
+
+[open pdfs](javascript:(()=>{let m=document.head.querySelector('meta[name="pdfidx"]');if(!m){m=document.createElement('meta');m.name='pdfidx';m.content=0;document.head.appendChild(m)}const u=[...document.querySelectorAll('object[type="application/pdf"],embed[type="application/pdf"]')].map(o=>o.data||o.src).filter(Boolean),i=+m.content||0;if(i>=u.length){m.content=0;alert('opened all '+u.length+', counter reset')}else{window.open(u[i],'_blank');m.content=i+1;document.title='['+(i+1)+'/'+u.length+'] '+document.title.replace(/^\[\d+\/\d+\] /,'')}})();void 0)
+```js
+javascript:(() => {
+  let m = document.head.querySelector('meta[name="pdfidx"]');
+  if (!m) {
+    m = document.createElement('meta');
+    m.name = 'pdfidx';
+    m.content = 0;
+    document.head.appendChild(m);
+  }
+
+  const urls = [...document.querySelectorAll('object[type="application/pdf"],embed[type="application/pdf"]')]
+    .map(o => o.data || o.src)
+    .filter(Boolean);
+
+  const i = +m.content || 0;
+
+  if (i >= urls.length) {
+    m.content = 0;
+    alert(`opened all ${urls.length}, counter reset`);
+    return;
+  }
+
+  window.open(urls[i], '_blank');
+  m.content = i + 1;
+  document.title = `[${i + 1}/${urls.length}] ` + document.title.replace(/^\[\d+\/\d+\] /, '');
+})();
 ```
 
 ### Convert Google Slides Presentation to fill window (mobile present)
