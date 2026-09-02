@@ -21,7 +21,7 @@ javascript: [...document.querySelectorAll('object[type="application/pdf"]')].for
 
 #### Open pdfs sequentially on every click
 
-[open pdfs](javascript:(()=>{let m=document.head.querySelector('meta[name="pdfidx"]');if(!m){m=document.createElement('meta');m.name='pdfidx';m.content=0;document.head.appendChild(m)}const u=[...document.querySelectorAll('object[type="application/pdf"],embed[type="application/pdf"]')].map(o=>o.data||o.src).filter(Boolean),i=+m.content||0;if(i>=u.length){m.content=0;alert('opened all '+u.length+', counter reset')}else{window.open(u[i],'_blank');m.content=i+1;document.title='['+(i+1)+'/'+u.length+'] '+document.title.replace(/^\[\d+\/\d+\] /,'')}})();void 0)
+[open pdfs](javascript:void%20function(){let%20a=document.head.querySelector(%22meta[name=\%22pdfidx\%22]%22);a||(a=document.createElement(%22meta%22),a.name=%22pdfidx%22,a.content=0,document.head.appendChild(a));const%20b=[...document.querySelectorAll(%22object[type=\%22application/pdf\%22],embed[type=\%22application/pdf\%22]%22)].map(a=%3Ea.data||a.src).filter(Boolean),c=+a.content||0;return%20c%3E=b.length%3F(a.content=0,void%20alert(`opened%20all%20${b.length},%20counter%20reset`)):void(window.open(b[c],%22_blank%22),a.content=c+1,document.title=`[${c+1}/${b.length}]%20`+document.title.replace(/^\[\d+\/\d+\]%20/,%22%22))}();)
 ```js
 javascript:(() => {
   let m = document.head.querySelector('meta[name="pdfidx"]');
