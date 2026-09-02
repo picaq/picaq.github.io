@@ -3732,7 +3732,7 @@
   },"533": {
     "doc": "Teaching",
     "title": "Open pdfs sequentially on every click",
-    "content": "open pdfs}else{window.open(u[i],’_blank’);m.content=i+1;document.title=’[’+(i+1)+’/’+u.length+’] ‘+document.title.replace(/^[\\d+\\/\\d+] /,’’)}})();void 0) . javascript:(() =&gt; { let m = document.head.querySelector('meta[name=\"pdfidx\"]'); if (!m) { m = document.createElement('meta'); m.name = 'pdfidx'; m.content = 0; document.head.appendChild(m); } const urls = [...document.querySelectorAll('object[type=\"application/pdf\"],embed[type=\"application/pdf\"]')] .map(o =&gt; o.data || o.src) .filter(Boolean); const i = +m.content || 0; if (i &gt;= urls.length) { m.content = 0; alert(`opened all ${urls.length}, counter reset`); return; } window.open(urls[i], '_blank'); m.content = i + 1; document.title = `[${i + 1}/${urls.length}] ` + document.title.replace(/^\\[\\d+\\/\\d+\\] /, ''); })(); . ",
+    "content": "open pdfs . javascript:(() =&gt; { let m = document.head.querySelector('meta[name=\"pdfidx\"]'); if (!m) { m = document.createElement('meta'); m.name = 'pdfidx'; m.content = 0; document.head.appendChild(m); } const urls = [...document.querySelectorAll('object[type=\"application/pdf\"],embed[type=\"application/pdf\"]')] .map(o =&gt; o.data || o.src) .filter(Boolean); const i = +m.content || 0; if (i &gt;= urls.length) { m.content = 0; alert(`opened all ${urls.length}, counter reset`); return; } window.open(urls[i], '_blank'); m.content = i + 1; document.title = `[${i + 1}/${urls.length}] ` + document.title.replace(/^\\[\\d+\\/\\d+\\] /, ''); })(); . ",
     "url": "/blog/teaching#open-pdfs-sequentially-on-every-click",
     
     "relUrl": "/blog/teaching#open-pdfs-sequentially-on-every-click"
