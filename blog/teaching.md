@@ -7,6 +7,7 @@ nav_order: 3
 # Teaching
 
 Teaching tools & scripts for a smoother classroom experience
+These were essential when I was teaching elementary school STEAM & computer science programs at SFUSD.
 
 ## Browser Scripts & Bookmarklets
 
