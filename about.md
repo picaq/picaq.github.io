@@ -9,7 +9,8 @@ nav_order: 1
 
 ---
 
-Hello, this is [Mandy’s blog](/blog). I am a software engineer, graphic designer, illustrator and musician. <br>Currently, I [teach](/blog/teaching) elementary school STEAM programs at SFUSD.
+Hello, this is [Mandy’s blog](/blog). I am a software engineer, graphic designer, illustrator and musician.
+Currently, I am making developer experience tools @ Sony.
 
 This Jekyll blog was started to:
 1. make my [README](/#picaqgithubio) prettier
