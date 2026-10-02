@@ -428,8 +428,24 @@ const newReddit = "www.reddit.com";
 const https = "https://";
 const path = window.location.pathname;
 
-if (window.location.hostname = oldReddit) window.location = https + newReddit + path;
-else if (window.location.hostname = newReddit) window.location = https + oldReddit + path;
+if (window.location.hostname === oldReddit) window.location = https + newReddit + path;
+else if (window.location.hostname === newReddit) window.location = https + oldReddit + path;
+```
+
+## Local Development
+
+```js
+javascript:
+const prod = "picaq.github.io";
+const localhost = "localhost";
+const port = "4000";
+
+const https = "https://";
+const http = "http://";
+const path = window.location.pathname;
+
+if (window.location.hostname === prod) window.location = http + localhost + ":" + path;
+else if (window.location.hostname === localhost) window.location = https + prod + path;
 ```
 
 ## Amazon
