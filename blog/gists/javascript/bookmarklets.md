@@ -444,7 +444,7 @@ const https = "https://";
 const http = "http://";
 const path = window.location.pathname;
 
-if (window.location.hostname === prod) window.location = http + localhost + ":" + path;
+if (window.location.hostname === prod) window.location = http + localhost + ":" + port + path;
 else if (window.location.hostname === localhost) window.location = https + prod + path;
 ```
 
