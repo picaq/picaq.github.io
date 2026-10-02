@@ -1261,7 +1261,7 @@
   },"180": {
     "doc": "Bookmarklets",
     "title": "Local Development",
-    "content": "javascript: const prod = \"picaq.github.io\"; const localhost = \"localhost\"; const port = \"4000\"; const https = \"https://\"; const http = \"http://\"; const path = window.location.pathname; if (window.location.hostname === prod) window.location = http + localhost + \":\" + path; else if (window.location.hostname === localhost) window.location = https + prod + path; . ",
+    "content": "javascript: const prod = \"picaq.github.io\"; const localhost = \"localhost\"; const port = \"4000\"; const https = \"https://\"; const http = \"http://\"; const path = window.location.pathname; if (window.location.hostname === prod) window.location = http + localhost + \":\" + port + path; else if (window.location.hostname === localhost) window.location = https + prod + path; . ",
     "url": "/blog/gists/javascript/bookmarklets#local-development",
     
     "relUrl": "/blog/gists/javascript/bookmarklets#local-development"
