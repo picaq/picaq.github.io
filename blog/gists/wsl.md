@@ -34,3 +34,11 @@ netsh.exe wlan show profile name="<Wifi Name>" key=clear | grep "Key Content"
 ```sh
 vim -x <new or existing filename>
 ```
+
+## Mac
+
+kill all terminals (from vs code or something)
+
+```sh
+killall -9 Terminal
+```
