@@ -3897,5 +3897,12 @@
     "url": "/blog/gists/sh/wsl#password-protect-txt-file-with-vim",
     
     "relUrl": "/blog/gists/sh/wsl#password-protect-txt-file-with-vim"
+  },"557": {
+    "doc": "WSL",
+    "title": "Mac",
+    "content": "kill all terminals (from vs code or something) . killall -9 Terminal . ",
+    "url": "/blog/gists/sh/wsl#mac",
+    
+    "relUrl": "/blog/gists/sh/wsl#mac"
   }
 }
